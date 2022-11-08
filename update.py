@@ -287,9 +287,12 @@ def main(dataset_path: anyio.Path, mount_point: anyio.Path) -> None:
             "parentds",
             "--how=ff-only",
             "-r",
-            "-R",
-            "1",
+            "-R1",
         ],
+        check=True,
+    )
+    subprocess.run(
+        ["datalad", "get", "-d", str(dataset_path), "-r", "-R1", "-J5", "-n"],
         check=True,
     )
     hs = HealthStatus(
