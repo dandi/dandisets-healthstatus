@@ -12,6 +12,7 @@ from signal import SIGINT
 import subprocess
 import sys
 import textwrap
+from time import sleep
 from typing import Optional
 import anyio
 from anyio.streams.memory import MemoryObjectReceiveStream
@@ -98,7 +99,7 @@ class HealthStatus:
     run_data: RunData = field(default_factory=RunData.get)
 
     async def run(self) -> None:
-        summary: dict[str, dict[str, str]]
+        summary: dict[str, dict[str, str]] = {}
         async for dandiset in self.aiterdandisets():
             log.info("Found Dandiset %s", dandiset.identifier)
             report = await dandiset.test_assets()
@@ -167,8 +168,7 @@ class Dandiset:
 
         dirs = deque([self.path])
         while dirs:
-            d = dirs.popleft()
-            async for p in d.iterdir():
+            async for p in dirs.popleft().iterdir():
                 if p.name in (
                     ".dandi",
                     ".datalad",
@@ -225,6 +225,7 @@ class DandisetReport:
         yaml.default_flow_style = False
         out = io.StringIO()
         yaml.dump(status, out)
+        await reportdir.mkdir(parents=True, exist_ok=True)
         await (reportdir / "status.yaml").write_text(out.getvalue())
         for testname, report in self.tests.items():
             if report.failed:
@@ -285,7 +286,6 @@ def main(dataset_path: anyio.Path, mount_point: anyio.Path) -> None:
             "--follow",
             "parentds",
             "--how=ff-only",
-            "-J5",
             "-r",
             "-R",
             "1",
@@ -297,10 +297,19 @@ def main(dataset_path: anyio.Path, mount_point: anyio.Path) -> None:
         reports_root=anyio.Path(__file__).parent,
     )
     with subprocess.Popen(
-        ["datalad-fuse", "-d", str(dataset_path), "--foreground", str(mount_point)],
+        [
+            "datalad",
+            "fusefs",
+            "-d",
+            str(dataset_path),
+            "--foreground",
+            "--mode-transparent",
+            str(mount_point),
+        ],
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
     ) as p:
+        sleep(3)
         try:
             anyio.run(hs.run)
         finally:

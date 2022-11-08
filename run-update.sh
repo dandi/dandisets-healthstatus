@@ -13,7 +13,7 @@ git pull
 
 "$PYTHON" -m virtualenv --clear venv
 . venv/bin/activate
-pip install -r requirements.txt
+pip install -q -r requirements.txt
 python update.py -d "$DANDISETS_PATH" -m "$MOUNT_PATH"
 
 git add .
