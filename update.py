@@ -7,22 +7,29 @@ from datetime import datetime
 import io
 import logging
 import math
+import os
+import pathlib
 import re
+from shutil import rmtree
 from signal import SIGINT
 import subprocess
 import sys
+import tempfile
 import textwrap
 from time import sleep
 from typing import Optional
 import anyio
 from anyio.streams.memory import MemoryObjectReceiveStream
 import click
+import requests
 from ruamel.yaml import YAML
 
 if sys.version_info[:2] >= (3, 8):
     from importlib.metadata import version
 else:
     from importlib_metadata import version
+
+MATNWB_INSTALL_DIR = pathlib.Path(__file__).with_name("matnwb")
 
 PACKAGES_TO_VERSION = ["pynwb", "hdmf"]
 
@@ -51,7 +58,33 @@ async def pynwb_open_load_ns(asset: Asset) -> TestResult:
         )
 
 
-TESTS = [pynwb_open_load_ns]
+async def matnwb_nwbRead(asset: Asset) -> TestResult:
+    tempdir = tempfile.mkdtemp()
+    r = await anyio.run_process(
+        [
+            "matlab",
+            "-nodesktop",
+            "-batch",
+            f"nwb = nwbRead({str(asset.filepath)!r}, 'savedir', {tempdir!r})",
+        ],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        env={**os.environ, "MATLABPATH": str(MATNWB_INSTALL_DIR)},
+        check=False,
+    )
+    await anyio.to_thread.run_sync(rmtree, tempdir)
+    if r.returncode == 0:
+        return TestResult(testname="matnwb_nwbRead", asset=asset, success=True)
+    else:
+        return TestResult(
+            testname="matnwb_nwbRead",
+            asset=asset,
+            success=False,
+            output=r.stdout.decode("utf-8", "surrogateescape"),
+        )
+
+
+TESTS = [pynwb_open_load_ns, matnwb_nwbRead]
 
 
 @dataclass
@@ -232,7 +265,7 @@ class DandisetReport:
                 async with await (
                     reportdir
                     / f"{run_data.timestamp:%Y.%m.%d.%H.%M.%S}_{testname}_errors.log"
-                ).open("w") as fp:
+                ).open("w", encoding="utf-8", errors="surrogateescape") as fp:
                     for r in report.failed:
                         assert r.output is not None
                         await fp.write(
@@ -277,6 +310,7 @@ def main(dataset_path: anyio.Path, mount_point: anyio.Path) -> None:
         datefmt="%Y-%m-%d %H:%M:%S",
         level=logging.DEBUG,
     )
+    log.info("Updating Dandisets dataset ...")
     subprocess.run(
         [
             "datalad",
@@ -295,10 +329,12 @@ def main(dataset_path: anyio.Path, mount_point: anyio.Path) -> None:
         ["datalad", "get", "-d", str(dataset_path), "-r", "-R1", "-J5", "-n"],
         check=True,
     )
+    matnwb_version = install_matnwb()
     hs = HealthStatus(
         backup_root=mount_point,
         reports_root=anyio.Path(__file__).parent,
     )
+    hs.run_data.versions["matnwb"] = matnwb_version
     with open("fuse.log", "wb") as fp:
         with subprocess.Popen(
             [
@@ -324,6 +360,51 @@ def main(dataset_path: anyio.Path, mount_point: anyio.Path) -> None:
 
 def get_package_versions() -> dict[str, str]:
     return {pkg: version(pkg) for pkg in PACKAGES_TO_VERSION}
+
+
+def install_matnwb() -> str:
+    # Returns the matnwb version
+    if MATNWB_INSTALL_DIR.exists():
+        rmtree(MATNWB_INSTALL_DIR)
+    MATNWB_INSTALL_DIR.mkdir(parents=True)
+    with requests.Session() as s:
+        log.info("Fetching latest matnwb version ...")
+        r = s.get(
+            "https://api.github.com/repos/NeurodataWithoutBorders/matnwb/releases/latest"
+        )
+        r.raise_for_status()
+        data = r.json()
+        version = data["tag_name"]
+        assert isinstance(version, str)
+        log.info("Found version %s", version)
+        with tempfile.NamedTemporaryFile() as fp:
+            with s.get(data["tarball_url"], stream=True) as r:
+                r.raise_for_status()
+                for chunk in r.iter_content(65535):
+                    fp.write(chunk)
+            subprocess.run(
+                [
+                    "tar",
+                    "zxf",
+                    "-C",
+                    str(MATNWB_INSTALL_DIR),
+                    "--strip-components=1",
+                    fp.name,
+                ],
+                check=True,
+            )
+    subprocess.run(
+        [
+            "matlab",
+            "-nodesktop",
+            "-sd",
+            str(MATNWB_INSTALL_DIR),
+            "-batch",
+            "generateCore()",
+        ],
+        check=True,
+    )
+    return version
 
 
 if __name__ == "__main__":
