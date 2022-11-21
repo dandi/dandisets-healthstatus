@@ -215,8 +215,8 @@ class DandisetReport:
             "tests": [
                 {
                     "name": name,
-                    "assets_ok": [r.asset.asset_path for r in report.passed],
-                    "assets_nok": [r.asset.asset_path for r in report.failed],
+                    "assets_ok": sorted(r.asset.asset_path for r in report.passed),
+                    "assets_nok": sorted(r.asset.asset_path for r in report.failed),
                 }
                 for name, report in self.tests.items()
             ],
