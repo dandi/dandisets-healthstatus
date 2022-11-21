@@ -6,5 +6,5 @@ nox.options.reuse_existing_virtualenvs = True
 @nox.session
 def typing(session):
     session.install("-r", "requirements.txt")
-    session.install("mypy")
+    session.install("mypy", "types-requests")
     session.run("mypy", "update.py")
