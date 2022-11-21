@@ -85,6 +85,7 @@ async def matnwb_nwbRead(asset: Asset) -> TestResult:
 
 
 TESTS = [pynwb_open_load_ns, matnwb_nwbRead]
+TEST_NAMES = [t.__name__ for t in TESTS]
 
 
 @dataclass
@@ -132,22 +133,42 @@ class HealthStatus:
     run_data: RunData = field(default_factory=RunData.get)
 
     async def run(self) -> None:
-        summary: dict[str, dict[str, str]] = {}
+        all_reports: list[DandisetReport] = []
         async for dandiset in self.aiterdandisets():
             log.info("Found Dandiset %s", dandiset.identifier)
             report = await dandiset.test_assets()
             await report.dump(self.reports_root / dandiset.identifier, self.run_data)
-            summary[dandiset.identifier] = report.summary()
+            all_reports.append(report)
         async with await (self.reports_root / "README.md").open("w") as fp:
+            ok_dandiset_qty = 0
+            ok_asset_qty = 0
+            fail_dandiset_qty = 0
+            fail_asset_qty = 0
+            test_summaries = {tn: TestSummary(tn) for tn in TEST_NAMES}
+            for r in all_reports:
+                for tn in TEST_NAMES:
+                    passed, failed = r.tests[tn].counts()
+                    ok_asset_qty += passed
+                    fail_asset_qty += failed
+                    if failed:
+                        fail_dandiset_qty += 1
+                    else:
+                        ok_dandiset_qty += 1
+                    test_summaries[tn].register(r.identifier, r.tests[tn])
             await fp.write(
-                "| Dandiset | " + " | ".join(t.__name__ for t in TESTS) + " |\n"
+                "| Test / (Dandisets/assets)"
+                f" | Passed ({ok_dandiset_qty}/{ok_asset_qty})"
+                f" | Failed ({fail_dandiset_qty}/{fail_asset_qty}) |\n"
             )
+            await fp.write("| --- | --- | --- |\n")
+            for tn in TEST_NAMES:
+                await fp.write(test_summaries[tn].as_row() + "\n")
+            await fp.write("\n")
+            await fp.write("| Dandiset | " + " | ".join(TEST_NAMES) + " |\n")
             await fp.write("| --- | " + " | ".join("---" for _ in TESTS) + " |\n")
-            for did, tests in sorted(summary.items()):
+            for did, tests in sorted((r.identifier, r.summary()) for r in all_reports):
                 await fp.write(
-                    f"| {did} | "
-                    + " | ".join(tests.get(t.__name__, "\u2014") for t in TESTS)
-                    + " |\n"
+                    f"| {did} | " + " | ".join(tests[tn] for tn in TEST_NAMES) + " |\n"
                 )
 
     async def aiterdandisets(self) -> AsyncIterator[Dandiset]:
@@ -168,7 +189,7 @@ class Dandiset:
     commit: str
 
     async def test_assets(self) -> DandisetReport:
-        report = DandisetReport(commit=self.commit)
+        report = DandisetReport(identifier=self.identifier, commit=self.commit)
 
         async def dowork(rec: MemoryObjectReceiveStream[TestCase]) -> None:
             async with rec:
@@ -221,6 +242,7 @@ class Dandiset:
 
 @dataclass
 class DandisetReport:
+    identifier: str
     commit: str
     nassets: int = 0
     tests: dict[str, TestReport] = field(
@@ -234,10 +256,7 @@ class DandisetReport:
             self.tests[r.testname].failed.append(r)
 
     def summary(self) -> dict[str, str]:
-        return {
-            testname: f"{len(report.passed)} passed, {len(report.failed)} failed"
-            for testname, report in self.tests.items()
-        }
+        return {testname: self.tests[testname].summary() for testname in TEST_NAMES}
 
     async def dump(self, reportdir: anyio.Path, run_data: RunData) -> None:
         status = {
@@ -279,6 +298,49 @@ class DandisetReport:
 class TestReport:
     passed: list[TestResult] = field(init=False, default_factory=list)
     failed: list[TestResult] = field(init=False, default_factory=list)
+
+    def counts(self) -> tuple[int, int]:
+        return (len(self.passed), len(self.failed))
+
+    def summary(self) -> str:
+        passed, failed = self.counts()
+        if passed == failed == 0:
+            return "\u2014"
+        else:
+            return f"{passed} passed, {failed} failed"
+
+
+@dataclass
+class TestSummary:
+    name: str
+    dandisets_passed: int = 0
+    assets_passed: int = 0
+    dandisets_failed: dict[str, int] = field(default_factory=dict)
+    assets_failed: int = 0
+
+    def register(self, dandiset_id: str, report: TestReport) -> None:
+        passed, failed = report.counts()
+        self.assets_passed += passed
+        if failed:
+            self.dandisets_failed[dandiset_id] = failed
+            self.assets_failed += failed
+        else:
+            self.dandisets_passed += 1
+
+    def as_row(self) -> str:
+        s = f"| {self.name} | "
+        if self.dandisets_passed:
+            s += f"{self.dandisets_passed}/{self.assets_passed}"
+        else:
+            s += "\u2014"
+        s += " | "
+        if self.dandisets_failed:
+            s += f"{len(self.dandisets_failed)}/{self.assets_failed}: " + ", ".join(
+                f"[{did}]({did}/status.yaml)/{failed}"
+                for did, failed in sorted(self.dandisets_failed.items())
+            )
+        s += " |"
+        return s
 
 
 @dataclass
