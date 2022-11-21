@@ -299,24 +299,27 @@ def main(dataset_path: anyio.Path, mount_point: anyio.Path) -> None:
         backup_root=mount_point,
         reports_root=anyio.Path(__file__).parent,
     )
-    with subprocess.Popen(
-        [
-            "datalad",
-            "fusefs",
-            "-d",
-            str(dataset_path),
-            "--foreground",
-            "--mode-transparent",
-            str(mount_point),
-        ],
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-    ) as p:
-        sleep(3)
-        try:
-            anyio.run(hs.run)
-        finally:
-            p.send_signal(SIGINT)
+    with open("fuse.log", "wb") as fp:
+        with subprocess.Popen(
+            [
+                "datalad",
+                "-l",
+                "debug",
+                "fusefs",
+                "-d",
+                str(dataset_path),
+                "--foreground",
+                "--mode-transparent",
+                str(mount_point),
+            ],
+            stdout=fp,
+            stderr=fp,
+        ) as p:
+            sleep(3)
+            try:
+                anyio.run(hs.run)
+            finally:
+                p.send_signal(SIGINT)
 
 
 def get_package_versions() -> dict[str, str]:
