@@ -132,13 +132,21 @@ class HealthStatus:
     reports_root: anyio.Path
     run_data: RunData = field(default_factory=RunData.get)
 
-    async def run(self) -> None:
+    async def run(self, dandisets: list[str]) -> None:
         all_reports: list[DandisetReport] = []
-        async for dandiset in self.aiterdandisets():
-            log.info("Found Dandiset %s", dandiset.identifier)
-            report = await dandiset.test_assets()
-            await report.dump(self.reports_root / dandiset.identifier, self.run_data)
-            all_reports.append(report)
+        if dandisets:
+            for did in dandisets:
+                log.info("Scanning Dandiset %s", did)
+                ds = await self.get_dandiset(did)
+                report = await ds.test_assets()
+                await report.dump(self.reports_root / ds.identifier, self.run_data)
+                all_reports.append(report)
+        else:
+            async for ds in self.aiterdandisets():
+                log.info("Found Dandiset %s", ds.identifier)
+                report = await ds.test_assets()
+                await report.dump(self.reports_root / ds.identifier, self.run_data)
+                all_reports.append(report)
         async with await (self.reports_root / "README.md").open("w") as fp:
             ok_dandiset_qty = 0
             ok_asset_qty = 0
@@ -180,6 +188,13 @@ class HealthStatus:
                 yield Dandiset(
                     identifier=p.name, path=p, commit=r.stdout.decode("utf-8").strip()
                 )
+
+    async def get_dandiset(self, identifier: str) -> Dandiset:
+        p = self.backup_root / identifier
+        r = await anyio.run_process(["git", "show", "-s", "--format=%H"], cwd=str(p))
+        return Dandiset(
+            identifier=identifier, path=p, commit=r.stdout.decode("utf-8").strip()
+        )
 
 
 @dataclass
@@ -366,7 +381,10 @@ class Asset:
     type=click.Path(file_okay=False, exists=True, path_type=anyio.Path),
     required=True,
 )
-def main(dataset_path: anyio.Path, mount_point: anyio.Path) -> None:
+@click.argument("dandisets", nargs=-1)
+def main(
+    dataset_path: anyio.Path, mount_point: anyio.Path, dandisets: list[str]
+) -> None:
     logging.basicConfig(
         format="%(asctime)s [%(levelname)-8s] %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
@@ -415,7 +433,7 @@ def main(dataset_path: anyio.Path, mount_point: anyio.Path) -> None:
         ) as p:
             sleep(3)
             try:
-                anyio.run(hs.run)
+                anyio.run(hs.run, dandisets)
             finally:
                 p.send_signal(SIGINT)
 
