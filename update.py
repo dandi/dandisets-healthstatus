@@ -448,10 +448,10 @@ def install_matnwb() -> str:
                 [
                     "tar",
                     "zxf",
+                    fp.name,
                     "-C",
                     str(MATNWB_INSTALL_DIR),
                     "--strip-components=1",
-                    fp.name,
                 ],
                 check=True,
             )
