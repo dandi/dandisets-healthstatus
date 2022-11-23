@@ -133,51 +133,54 @@ class HealthStatus:
     run_data: RunData = field(default_factory=RunData.get)
 
     async def run(self, dandisets: list[str]) -> None:
-        all_reports: list[DandisetReport] = []
         if dandisets:
             for did in dandisets:
                 log.info("Scanning Dandiset %s", did)
                 ds = await self.get_dandiset(did)
                 report = await ds.test_assets()
                 await report.dump(self.reports_root / ds.identifier, self.run_data)
-                all_reports.append(report)
         else:
+            all_reports: list[DandisetReport] = []
             async for ds in self.aiterdandisets():
                 log.info("Found Dandiset %s", ds.identifier)
                 report = await ds.test_assets()
                 await report.dump(self.reports_root / ds.identifier, self.run_data)
                 all_reports.append(report)
-        async with await (self.reports_root / "README.md").open("w") as fp:
-            ok_dandiset_qty = 0
-            ok_asset_qty = 0
-            fail_dandiset_qty = 0
-            fail_asset_qty = 0
-            test_summaries = {tn: TestSummary(tn) for tn in TEST_NAMES}
-            for r in all_reports:
-                for tn in TEST_NAMES:
-                    passed, failed = r.tests[tn].counts()
-                    ok_asset_qty += passed
-                    fail_asset_qty += failed
-                    if failed:
-                        fail_dandiset_qty += 1
-                    else:
-                        ok_dandiset_qty += 1
-                    test_summaries[tn].register(r.identifier, r.tests[tn])
-            await fp.write(
-                "| Test / (Dandisets/assets)"
-                f" | Passed ({ok_dandiset_qty}/{ok_asset_qty})"
-                f" | Failed ({fail_dandiset_qty}/{fail_asset_qty}) |\n"
-            )
-            await fp.write("| --- | --- | --- |\n")
-            for tn in TEST_NAMES:
-                await fp.write(test_summaries[tn].as_row() + "\n")
-            await fp.write("\n")
-            await fp.write("| Dandiset | " + " | ".join(TEST_NAMES) + " |\n")
-            await fp.write("| --- | " + " | ".join("---" for _ in TESTS) + " |\n")
-            for did, tests in sorted((r.identifier, r.summary()) for r in all_reports):
+            async with await (self.reports_root / "README.md").open("w") as fp:
+                ok_dandiset_qty = 0
+                ok_asset_qty = 0
+                fail_dandiset_qty = 0
+                fail_asset_qty = 0
+                test_summaries = {tn: TestSummary(tn) for tn in TEST_NAMES}
+                for r in all_reports:
+                    for tn in TEST_NAMES:
+                        passed, failed = r.tests[tn].counts()
+                        ok_asset_qty += passed
+                        fail_asset_qty += failed
+                        if failed:
+                            fail_dandiset_qty += 1
+                        else:
+                            ok_dandiset_qty += 1
+                        test_summaries[tn].register(r.identifier, r.tests[tn])
                 await fp.write(
-                    f"| {did} | " + " | ".join(tests[tn] for tn in TEST_NAMES) + " |\n"
+                    "| Test / (Dandisets/assets)"
+                    f" | Passed ({ok_dandiset_qty}/{ok_asset_qty})"
+                    f" | Failed ({fail_dandiset_qty}/{fail_asset_qty}) |\n"
                 )
+                await fp.write("| --- | --- | --- |\n")
+                for tn in TEST_NAMES:
+                    await fp.write(test_summaries[tn].as_row() + "\n")
+                await fp.write("\n")
+                await fp.write("| Dandiset | " + " | ".join(TEST_NAMES) + " |\n")
+                await fp.write("| --- | " + " | ".join("---" for _ in TESTS) + " |\n")
+                for did, tests in sorted(
+                    (r.identifier, r.summary()) for r in all_reports
+                ):
+                    await fp.write(
+                        f"| {did} | "
+                        + " | ".join(tests[tn] for tn in TEST_NAMES)
+                        + " |\n"
+                    )
 
     async def aiterdandisets(self) -> AsyncIterator[Dandiset]:
         async for p in self.backup_root.iterdir():
