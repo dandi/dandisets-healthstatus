@@ -59,20 +59,18 @@ async def pynwb_open_load_ns(asset: Asset) -> TestResult:
 
 
 async def matnwb_nwbRead(asset: Asset) -> TestResult:
-    tempdir = tempfile.mkdtemp()
     r = await anyio.run_process(
         [
             "matlab",
             "-nodesktop",
             "-batch",
-            f"nwb = nwbRead({str(asset.filepath)!r}, 'savedir', {tempdir!r})",
+            f"nwb = nwbRead({str(asset.filepath)!r}, 'savedir', '/mnt/fast/dandi/dandisets-healthstatus')",
         ],
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
         env={**os.environ, "MATLABPATH": str(MATNWB_INSTALL_DIR)},
         check=False,
     )
-    await anyio.to_thread.run_sync(rmtree, tempdir)
     if r.returncode == 0:
         return TestResult(testname="matnwb_nwbRead", asset=asset, success=True)
     else:
