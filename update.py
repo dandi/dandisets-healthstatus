@@ -399,8 +399,6 @@ def main(dataset_path: anyio.Path, mount_point: anyio.Path) -> None:
         with subprocess.Popen(
             [
                 "datalad",
-                "-l",
-                "debug",
                 "fusefs",
                 "-d",
                 str(dataset_path),
