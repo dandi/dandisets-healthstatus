@@ -270,10 +270,15 @@ class DandisetReport:
             "tests": [
                 {
                     "name": name,
-                    "assets_ok": sorted(r.asset.asset_path for r in report.passed),
-                    "assets_nok": sorted(r.asset.asset_path for r in report.failed),
+                    "assets_ok": sorted(
+                        r.asset.asset_path for r in self.tests[name].passed
+                    ),
+                    "assets_nok": sorted(
+                        r.asset.asset_path for r in self.tests[name].failed
+                    ),
                 }
-                for name, report in self.tests.items()
+                for name in TEST_NAMES
+                if name in self.tests
             ],
         }
         yaml = YAML(typ="safe")
