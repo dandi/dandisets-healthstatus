@@ -31,6 +31,8 @@ else:
 
 MATNWB_INSTALL_DIR = pathlib.Path(__file__).with_name("matnwb")
 
+MATNWB_SAVEDIR = "/mnt/fast/dandi/dandisets-healthstatus"
+
 PACKAGES_TO_VERSION = ["pynwb", "hdmf"]
 
 PYNWB_OPEN_LOAD_NS_SCRIPT = anyio.Path(__file__).with_name("pynwb_open_load_ns.py")
@@ -64,7 +66,10 @@ async def matnwb_nwbRead(asset: Asset) -> TestResult:
             "matlab",
             "-nodesktop",
             "-batch",
-            f"nwb = nwbRead({str(asset.filepath)!r}, 'savedir', '/mnt/fast/dandi/dandisets-healthstatus')",
+            (
+                f"nwb = nwbRead({str(asset.filepath)!r}, 'savedir',"
+                f" {MATNWB_SAVEDIR!r})"
+            ),
         ],
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
