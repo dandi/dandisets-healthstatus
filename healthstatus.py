@@ -4,6 +4,7 @@ from collections import defaultdict, deque
 from collections.abc import AsyncIterator, Awaitable, Callable
 from dataclasses import dataclass, field
 from datetime import datetime
+from enum import Enum
 import io
 import logging
 import math
@@ -37,31 +38,56 @@ PACKAGES_TO_VERSION = ["pynwb", "hdmf"]
 
 PYNWB_OPEN_LOAD_NS_SCRIPT = anyio.Path(__file__).with_name("pynwb_open_load_ns.py")
 
+TIMEOUT = 3600
+
 WORKERS_PER_DANDISET = 64
 
 log = logging.getLogger()
 
 
-async def pynwb_open_load_ns(asset: Asset) -> TestResult:
-    r = await anyio.run_process(
-        [sys.executable, str(PYNWB_OPEN_LOAD_NS_SCRIPT), str(asset.filepath)],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT,
-        check=False,
-    )
-    if r.returncode == 0:
-        return TestResult(testname="pynwb_open_load_ns", asset=asset, success=True)
+async def run_test_command(
+    testname: str,
+    asset: Asset,
+    command: list[str],
+    env: Optional[dict[str, str]] = None,
+) -> TestResult:
+    if env is not None:
+        env = {**os.environ, **env}
+    try:
+        async with anyio.fail_after(TIMEOUT):
+            r = await anyio.run_process(
+                command,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                check=False,
+                env=env,
+            )
+    except TimeoutError:
+        return TestResult(testname=testname, asset=asset, outcome=Outcome.TIMEOUT)
     else:
-        return TestResult(
-            testname="pynwb_open_load_ns",
-            asset=asset,
-            success=False,
-            output=r.stdout.decode("utf-8", "surrogateescape"),
-        )
+        if r.returncode == 0:
+            return TestResult(testname=testname, asset=asset, outcome=Outcome.PASS)
+        else:
+            return TestResult(
+                testname=testname,
+                asset=asset,
+                outcome=Outcome.FAIL,
+                output=r.stdout.decode("utf-8", "surrogateescape"),
+            )
+
+
+async def pynwb_open_load_ns(asset: Asset) -> TestResult:
+    return await run_test_command(
+        "pynwb_open_load_ns",
+        asset,
+        [sys.executable, str(PYNWB_OPEN_LOAD_NS_SCRIPT), str(asset.filepath)],
+    )
 
 
 async def matnwb_nwbRead(asset: Asset) -> TestResult:
-    r = await anyio.run_process(
+    return await run_test_command(
+        "matnwb_nwbRead",
+        asset,
         [
             "matlab",
             "-nodesktop",
@@ -71,20 +97,8 @@ async def matnwb_nwbRead(asset: Asset) -> TestResult:
                 f" {MATNWB_SAVEDIR!r})"
             ),
         ],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT,
-        env={**os.environ, "MATLABPATH": str(MATNWB_INSTALL_DIR)},
-        check=False,
+        env={"MATLABPATH": str(MATNWB_INSTALL_DIR)},
     )
-    if r.returncode == 0:
-        return TestResult(testname="matnwb_nwbRead", asset=asset, success=True)
-    else:
-        return TestResult(
-            testname="matnwb_nwbRead",
-            asset=asset,
-            success=False,
-            output=r.stdout.decode("utf-8", "surrogateescape"),
-        )
 
 
 TESTS = [pynwb_open_load_ns, matnwb_nwbRead]
@@ -103,16 +117,22 @@ class TestCase:
             self.asset.dandiset_id,
             self.asset.asset_path,
             r.testname,
-            "PASSED" if r.success else "FAILED",
+            r.outcome.name,
         )
         return r
+
+
+class Outcome(Enum):
+    PASS = "pass"
+    FAIL = "fail"
+    TIMEOUT = "timeout"
 
 
 @dataclass
 class TestResult:
     testname: str
     asset: Asset
-    success: bool
+    outcome: Outcome
     output: Optional[str] = None
 
 
@@ -143,27 +163,38 @@ class HealthStatus:
             await report.dump(self.reports_root / dandiset.identifier, self.run_data)
             all_reports.append(report)
         async with await (self.reports_root / "README.md").open("w") as fp:
-            ok_dandiset_qty = 0
-            ok_asset_qty = 0
-            fail_dandiset_qty = 0
-            fail_asset_qty = 0
+            dandiset_qtys = {
+                Outcome.PASS: 0,
+                Outcome.FAIL: 0,
+                Outcome.TIMEOUT: 0,
+            }
+            asset_qtys = {
+                Outcome.PASS: 0,
+                Outcome.FAIL: 0,
+                Outcome.TIMEOUT: 0,
+            }
             test_summaries = {tn: TestSummary(tn) for tn in TEST_NAMES}
             for r in all_reports:
                 for tn in TEST_NAMES:
-                    passed, failed = r.tests[tn].counts()
-                    ok_asset_qty += passed
-                    fail_asset_qty += failed
+                    passed, failed, timedout = r.tests[tn].counts()
+                    asset_qtys[Outcome.PASS] += passed
+                    asset_qtys[Outcome.FAIL] += failed
+                    asset_qtys[Outcome.TIMEOUT] += timedout
                     if failed:
-                        fail_dandiset_qty += 1
-                    else:
-                        ok_dandiset_qty += 1
+                        dandiset_qtys[Outcome.FAIL] += 1
+                    if timedout:
+                        dandiset_qtys[Outcome.TIMEOUT] += 1
+                    if not failed and not timedout:
+                        dandiset_qtys[Outcome.PASS] += 1
                     test_summaries[tn].register(r.identifier, r.tests[tn])
             await fp.write(
                 "| Test / (Dandisets/assets)"
-                f" | Passed ({ok_dandiset_qty}/{ok_asset_qty})"
-                f" | Failed ({fail_dandiset_qty}/{fail_asset_qty}) |\n"
+                f" | Passed ({dandiset_qtys[Outcome.PASS]}/{asset_qtys[Outcome.PASS]})"
+                f" | Failed ({dandiset_qtys[Outcome.FAIL]}/{asset_qtys[Outcome.FAIL]})"
+                f" | Timed Out ({dandiset_qtys[Outcome.TIMEOUT]}"
+                f"/{asset_qtys[Outcome.TIMEOUT]}) |\n"
             )
-            await fp.write("| --- | --- | --- |\n")
+            await fp.write("| --- | --- | --- | --- |\n")
             for tn in TEST_NAMES:
                 await fp.write(test_summaries[tn].as_row() + "\n")
             await fp.write("\n")
@@ -253,10 +284,7 @@ class DandisetReport:
     )
 
     def register_test_result(self, r: TestResult) -> None:
-        if r.success:
-            self.tests[r.testname].passed.append(r)
-        else:
-            self.tests[r.testname].failed.append(r)
+        self.tests[r.testname].by_outcome[r.outcome].append(r)
 
     def summary(self) -> dict[str, str]:
         return {testname: self.tests[testname].summary() for testname in TEST_NAMES}
@@ -275,6 +303,9 @@ class DandisetReport:
                     ),
                     "assets_nok": sorted(
                         r.asset.asset_path for r in self.tests[name].failed
+                    ),
+                    "assets_timeout": sorted(
+                        r.asset.asset_path for r in self.tests[name].timedout
                     ),
                 }
                 for name in TEST_NAMES
@@ -304,18 +335,31 @@ class DandisetReport:
 
 @dataclass
 class TestReport:
-    passed: list[TestResult] = field(init=False, default_factory=list)
-    failed: list[TestResult] = field(init=False, default_factory=list)
+    by_outcome: dict[Outcome, list[TestResult]] = field(
+        init=False, default_factory=lambda: defaultdict(list)
+    )
 
-    def counts(self) -> tuple[int, int]:
-        return (len(self.passed), len(self.failed))
+    @property
+    def passed(self) -> list[TestResult]:
+        return self.by_outcome[Outcome.PASS]
+
+    @property
+    def failed(self) -> list[TestResult]:
+        return self.by_outcome[Outcome.FAIL]
+
+    @property
+    def timedout(self) -> list[TestResult]:
+        return self.by_outcome[Outcome.TIMEOUT]
+
+    def counts(self) -> tuple[int, int, int]:
+        return (len(self.passed), len(self.failed), len(self.timedout))
 
     def summary(self) -> str:
-        passed, failed = self.counts()
-        if passed == failed == 0:
+        passed, failed, timedout = self.counts()
+        if passed == failed == timedout == 0:
             return "\u2014"
         else:
-            return f"{passed} passed, {failed} failed"
+            return f"{passed} passed, {failed} failed, {timedout} timed out"
 
 
 @dataclass
@@ -325,14 +369,19 @@ class TestSummary:
     assets_passed: int = 0
     dandisets_failed: dict[str, int] = field(default_factory=dict)
     assets_failed: int = 0
+    dandisets_timedout: dict[str, int] = field(default_factory=dict)
+    assets_timedout: int = 0
 
     def register(self, dandiset_id: str, report: TestReport) -> None:
-        passed, failed = report.counts()
+        passed, failed, timedout = report.counts()
         self.assets_passed += passed
         if failed:
             self.dandisets_failed[dandiset_id] = failed
             self.assets_failed += failed
-        else:
+        if timedout:
+            self.dandisets_timedout[dandiset_id] = timedout
+            self.assets_timedout += timedout
+        if not failed and not timedout:
             self.dandisets_passed += 1
 
     def as_row(self) -> str:
@@ -347,6 +396,15 @@ class TestSummary:
                 f"[{did}]({did}/status.yaml)/{failed}"
                 for did, failed in sorted(self.dandisets_failed.items())
             )
+        else:
+            s += "\u2014"
+        if self.dandisets_timedout:
+            s += f"{len(self.dandisets_timedout)}/{self.assets_timedout}: " + ", ".join(
+                f"[{did}]({did}/status.yaml)/{timedout}"
+                for did, timedout in sorted(self.dandisets_timedout.items())
+            )
+        else:
+            s += "\u2014"
         s += " |"
         return s
 
