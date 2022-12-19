@@ -40,7 +40,7 @@ PYNWB_OPEN_LOAD_NS_SCRIPT = anyio.Path(__file__).with_name("pynwb_open_load_ns.p
 
 TIMEOUT = 3600
 
-WORKERS_PER_DANDISET = 64
+WORKERS_PER_DANDISET = 5
 
 log = logging.getLogger()
 
@@ -155,13 +155,29 @@ class HealthStatus:
     reports_root: anyio.Path
     run_data: RunData = field(default_factory=RunData.get)
 
-    async def run(self) -> None:
+    async def run(self, dandiset_jobs: int) -> None:
         all_reports: list[DandisetReport] = []
-        async for dandiset in self.aiterdandisets():
-            log.info("Found Dandiset %s", dandiset.identifier)
-            report = await dandiset.test_assets()
-            await report.dump(self.reports_root / dandiset.identifier, self.run_data)
-            all_reports.append(report)
+
+        async def dowork(rec: MemoryObjectReceiveStream[Dandiset]) -> None:
+            async with rec:
+                async for dandiset in rec:
+                    log.info("Processing Dandiset %s", dandiset.identifier)
+                    report = await dandiset.test_assets()
+                    await report.dump(
+                        self.reports_root / dandiset.identifier, self.run_data
+                    )
+                    all_reports.append(report)
+
+        async with anyio.create_task_group() as tg:
+            sender, receiver = anyio.create_memory_object_stream(math.inf)
+            async with receiver:
+                for _ in range(dandiset_jobs):
+                    tg.start_soon(dowork, receiver.clone())
+            async with sender:
+                async for dandiset in self.aiterdandisets():
+                    log.info("Found Dandiset %s", dandiset.identifier)
+                    await sender.send(dandiset)
+
         async with await (self.reports_root / "README.md").open("w") as fp:
             dandiset_qtys = {
                 Outcome.PASS: 0,
@@ -432,7 +448,15 @@ class Asset:
     type=click.Path(file_okay=False, exists=True, path_type=anyio.Path),
     required=True,
 )
-def main(dataset_path: anyio.Path, mount_point: anyio.Path) -> None:
+@click.option(
+    "-J",
+    "--dandiset-jobs",
+    type=int,
+    default=1,
+    help="Number of Dandisets to process at once",
+    show_default=True,
+)
+def main(dataset_path: anyio.Path, mount_point: anyio.Path, dandiset_jobs: int) -> None:
     logging.basicConfig(
         format="%(asctime)s [%(levelname)-8s] %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
@@ -479,7 +503,7 @@ def main(dataset_path: anyio.Path, mount_point: anyio.Path) -> None:
         ) as p:
             sleep(3)
             try:
-                anyio.run(hs.run)
+                anyio.run(hs.run, dandiset_jobs)
             finally:
                 p.send_signal(SIGINT)
 
