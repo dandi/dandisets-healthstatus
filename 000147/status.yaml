@@ -1,20 +1,36 @@
-dandiset_version: a3bc60c557b6cf532f49fc2d70db6178096ddf3a
-last_run: 2022-11-16 14:20:34.805786-05:00
+dandiset_version: 403dd69149823f6335dd8ede6b1e73e70e6fd76f
+last_run: 2022-12-15 10:59:47.526056-05:00
 nassets: 11
 tests:
 - assets_nok: []
   assets_ok:
+  - sub-P1/sub-P1_ses-2018-09-10_ecephys.nwb
+  - sub-P1/sub-P1_ses-2018-09-17a_ecephys.nwb
+  - sub-P1/sub-P1_ses-2018-09-17b_ecephys.nwb
   - sub-P1/sub-P1_ses-2018-09-24_ecephys.nwb
   - sub-P1/sub-P1_ses-2018-09-26_ecephys.nwb
   - sub-P1/sub-P1_ses-2018-10-01_ecephys.nwb
   - sub-P1/sub-P1_ses-2018-10-12_ecephys.nwb
-  - sub-P1/sub-P1_ses-2018-09-17b_ecephys.nwb
-  - sub-P1/sub-P1_ses-2018-09-10_ecephys.nwb
   - sub-P1/sub-P1_ses-2018-10-15_ecephys.nwb
-  - sub-P1/sub-P1_ses-2018-10-22_ecephys.nwb
-  - sub-P1/sub-P1_ses-2018-09-17a_ecephys.nwb
   - sub-P1/sub-P1_ses-2018-10-17_ecephys.nwb
+  - sub-P1/sub-P1_ses-2018-10-22_ecephys.nwb
+  assets_timeout: []
   name: pynwb_open_load_ns
+- assets_nok: []
+  assets_ok:
+  - sub-P1/sub-P1_ses-2018-09-10_ecephys.nwb
+  - sub-P1/sub-P1_ses-2018-09-17a_ecephys.nwb
+  - sub-P1/sub-P1_ses-2018-09-17b_ecephys.nwb
+  - sub-P1/sub-P1_ses-2018-09-24_ecephys.nwb
+  - sub-P1/sub-P1_ses-2018-09-26_ecephys.nwb
+  - sub-P1/sub-P1_ses-2018-10-01_ecephys.nwb
+  - sub-P1/sub-P1_ses-2018-10-12_ecephys.nwb
+  - sub-P1/sub-P1_ses-2018-10-15_ecephys.nwb
+  - sub-P1/sub-P1_ses-2018-10-17_ecephys.nwb
+  - sub-P1/sub-P1_ses-2018-10-22_ecephys.nwb
+  assets_timeout: []
+  name: matnwb_nwbRead
 versions:
   hdmf: 3.4.7
+  matnwb: v2.5.0.0
   pynwb: 2.2.0

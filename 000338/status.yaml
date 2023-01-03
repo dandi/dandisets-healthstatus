@@ -1,7 +1,20 @@
-dandiset_version: e799c9d92e6df75003617dfa286ce9d76fbf93cf
-last_run: 2022-11-16 14:20:34.805786-05:00
-nassets: 1
-tests: []
+dandiset_version: 914a2efb1ea0f889ac8569c98db07196425bc247
+last_run: 2022-12-15 10:59:47.526056-05:00
+nassets: 3
+tests:
+- assets_nok: []
+  assets_ok:
+  - sub-001/sub-001_ses-20170101.nwb
+  - sub-002/sub-002_ses-20160101.nwb
+  assets_timeout: []
+  name: pynwb_open_load_ns
+- assets_nok: []
+  assets_ok:
+  - sub-002/sub-002_ses-20160101.nwb
+  assets_timeout:
+  - sub-001/sub-001_ses-20170101.nwb
+  name: matnwb_nwbRead
 versions:
   hdmf: 3.4.7
+  matnwb: v2.5.0.0
   pynwb: 2.2.0

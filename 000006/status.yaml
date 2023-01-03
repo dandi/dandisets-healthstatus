@@ -1,5 +1,5 @@
 dandiset_version: bc0da49526df865b703935ab96b7331ba2f3c6f9
-last_run: 2022-12-05 08:46:08.910282-05:00
+last_run: 2022-12-15 10:59:47.526056-05:00
 nassets: 54
 tests:
 - assets_nok: []
@@ -57,6 +57,7 @@ tests:
   - sub-anm372907/sub-anm372907_ses-20170613.nwb
   - sub-anm372909/sub-anm372909_ses-20170520.nwb
   - sub-anm372909/sub-anm372909_ses-20170522.nwb
+  assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-anm369962/sub-anm369962_ses-20170309.nwb
@@ -113,6 +114,7 @@ tests:
   - sub-anm372909/sub-anm372909_ses-20170520.nwb
   - sub-anm372909/sub-anm372909_ses-20170522.nwb
   assets_ok: []
+  assets_timeout: []
   name: matnwb_nwbRead
 versions:
   hdmf: 3.4.7

@@ -1,5 +1,5 @@
 dandiset_version: 8c742275482631e86bb8eca7cdc67c1ffd83574d
-last_run: 2022-11-23 16:42:55.712429-05:00
+last_run: 2022-12-15 10:59:47.526056-05:00
 nassets: 211
 tests:
 - assets_nok: []
@@ -214,8 +214,15 @@ tests:
   - sub-an066/sub-an066_ses-20150211_obj-1uyc237.nwb
   - sub-an066/sub-an066_ses-20150211_obj-f0ajmr.nwb
   - sub-an066/sub-an066_ses-20150211_obj-hssdpk.nwb
+  assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - sub-an041/sub-an041_ses-20140903_obj-6pdvnd.nwb
+  - sub-an044/sub-an044_ses-20141006_obj-n18815.nwb
+  - sub-an063/sub-an063_ses-20150204_obj-1383d52.nwb
+  - sub-an063/sub-an063_ses-20150209_obj-1gjcsui.nwb
+  - sub-an063/sub-an063_ses-20150212_obj-20zoqo.nwb
+  assets_ok:
   - sub-an041/sub-an041_ses-20140821_obj-17pzgym.nwb
   - sub-an041/sub-an041_ses-20140821_obj-jpt9d0.nwb
   - sub-an041/sub-an041_ses-20140823_obj-14abxhj.nwb
@@ -224,38 +231,36 @@ tests:
   - sub-an041/sub-an041_ses-20140823_obj-9l0ag0.nwb
   - sub-an041/sub-an041_ses-20140823_obj-c486zn.nwb
   - sub-an041/sub-an041_ses-20140823_obj-m2u696.nwb
+  - sub-an041/sub-an041_ses-20140825_obj-1k6balg.nwb
   - sub-an041/sub-an041_ses-20140825_obj-a0owv2.nwb
+  - sub-an041/sub-an041_ses-20140825_obj-kghsci.nwb
   - sub-an041/sub-an041_ses-20140825_obj-mqj7rw.nwb
   - sub-an041/sub-an041_ses-20140825_obj-tu036r.nwb
+  - sub-an041/sub-an041_ses-20140825_obj-w5c8hn.nwb
+  - sub-an041/sub-an041_ses-20140826_obj-16dkvj5.nwb
   - sub-an041/sub-an041_ses-20140826_obj-1bb5khy.nwb
   - sub-an041/sub-an041_ses-20140826_obj-1hrk62p.nwb
+  - sub-an041/sub-an041_ses-20140826_obj-1i6sh43.nwb
+  - sub-an041/sub-an041_ses-20140826_obj-1jgvhk8.nwb
   - sub-an041/sub-an041_ses-20140826_obj-1k8h9e8.nwb
   - sub-an041/sub-an041_ses-20140826_obj-1mwtqg6.nwb
   - sub-an041/sub-an041_ses-20140826_obj-1q44jv8.nwb
+  - sub-an041/sub-an041_ses-20140826_obj-4sg0j7.nwb
   - sub-an041/sub-an041_ses-20140826_obj-9afqt.nwb
   - sub-an041/sub-an041_ses-20140827_obj-134wql9.nwb
+  - sub-an041/sub-an041_ses-20140827_obj-1gtn1pi.nwb
   - sub-an041/sub-an041_ses-20140827_obj-1jai2xh.nwb
   - sub-an041/sub-an041_ses-20140827_obj-1p56f6o.nwb
-  - sub-an041/sub-an041_ses-20140827_obj-vooo3f.nwb
-  assets_ok:
-  - sub-an041/sub-an041_ses-20140825_obj-1k6balg.nwb
-  - sub-an041/sub-an041_ses-20140825_obj-kghsci.nwb
-  - sub-an041/sub-an041_ses-20140825_obj-w5c8hn.nwb
-  - sub-an041/sub-an041_ses-20140826_obj-16dkvj5.nwb
-  - sub-an041/sub-an041_ses-20140826_obj-1i6sh43.nwb
-  - sub-an041/sub-an041_ses-20140826_obj-1jgvhk8.nwb
-  - sub-an041/sub-an041_ses-20140826_obj-4sg0j7.nwb
-  - sub-an041/sub-an041_ses-20140827_obj-1gtn1pi.nwb
   - sub-an041/sub-an041_ses-20140827_obj-5qz3iv.nwb
   - sub-an041/sub-an041_ses-20140827_obj-dfhd5h.nwb
   - sub-an041/sub-an041_ses-20140827_obj-fcd5is.nwb
+  - sub-an041/sub-an041_ses-20140827_obj-vooo3f.nwb
   - sub-an041/sub-an041_ses-20140903_obj-11gzsau.nwb
   - sub-an041/sub-an041_ses-20140903_obj-159kgs2.nwb
   - sub-an041/sub-an041_ses-20140903_obj-1lyfq5m.nwb
   - sub-an041/sub-an041_ses-20140903_obj-1ovbun9.nwb
   - sub-an041/sub-an041_ses-20140903_obj-1teaczs.nwb
   - sub-an041/sub-an041_ses-20140903_obj-1ufzyhq.nwb
-  - sub-an041/sub-an041_ses-20140903_obj-6pdvnd.nwb
   - sub-an041/sub-an041_ses-20140903_obj-8nvb63.nwb
   - sub-an041/sub-an041_ses-20140903_obj-cpozn5.nwb
   - sub-an041/sub-an041_ses-20140903_obj-hif3fj.nwb
@@ -321,7 +326,6 @@ tests:
   - sub-an044/sub-an044_ses-20141006_obj-3s9x4i.nwb
   - sub-an044/sub-an044_ses-20141006_obj-8y1chr.nwb
   - sub-an044/sub-an044_ses-20141006_obj-axqpak.nwb
-  - sub-an044/sub-an044_ses-20141006_obj-n18815.nwb
   - sub-an044/sub-an044_ses-20141006_obj-o4unoi.nwb
   - sub-an044/sub-an044_ses-20141008_obj-1n07k9l.nwb
   - sub-an044/sub-an044_ses-20141008_obj-1opyyg3.nwb
@@ -345,7 +349,6 @@ tests:
   - sub-an063/sub-an063_ses-20150203_obj-2xsvq9.nwb
   - sub-an063/sub-an063_ses-20150203_obj-nooo5m.nwb
   - sub-an063/sub-an063_ses-20150203_obj-o3a2bp.nwb
-  - sub-an063/sub-an063_ses-20150204_obj-1383d52.nwb
   - sub-an063/sub-an063_ses-20150204_obj-1fndaqz.nwb
   - sub-an063/sub-an063_ses-20150204_obj-vr71qv.nwb
   - sub-an063/sub-an063_ses-20150204_obj-xxcliq.nwb
@@ -359,7 +362,6 @@ tests:
   - sub-an063/sub-an063_ses-20150206_obj-zzwpbf.nwb
   - sub-an063/sub-an063_ses-20150209_obj-11bsnmh.nwb
   - sub-an063/sub-an063_ses-20150209_obj-1aj2i7o.nwb
-  - sub-an063/sub-an063_ses-20150209_obj-1gjcsui.nwb
   - sub-an063/sub-an063_ses-20150209_obj-1grkv6m.nwb
   - sub-an063/sub-an063_ses-20150209_obj-1tsiylt.nwb
   - sub-an063/sub-an063_ses-20150209_obj-1tztuv4.nwb
@@ -369,7 +371,6 @@ tests:
   - sub-an063/sub-an063_ses-20150212_obj-1m4d9zo.nwb
   - sub-an063/sub-an063_ses-20150212_obj-1o5futo.nwb
   - sub-an063/sub-an063_ses-20150212_obj-1oev14d.nwb
-  - sub-an063/sub-an063_ses-20150212_obj-20zoqo.nwb
   - sub-an063/sub-an063_ses-20150212_obj-6qmdsc.nwb
   - sub-an063/sub-an063_ses-20150212_obj-ras7d.nwb
   - sub-an063/sub-an063_ses-20150212_obj-skiwgj.nwb
@@ -381,28 +382,12 @@ tests:
   - sub-an064/sub-an064_ses-20150211_obj-13oug0a.nwb
   - sub-an064/sub-an064_ses-20150211_obj-18i0d18.nwb
   - sub-an064/sub-an064_ses-20150211_obj-1kfygix.nwb
-  - sub-an064/sub-an064_ses-20150211_obj-b3siem.nwb
-  - sub-an064/sub-an064_ses-20150211_obj-e6wfj1.nwb
   - sub-an064/sub-an064_ses-20150214_obj-13brclo.nwb
   - sub-an064/sub-an064_ses-20150214_obj-1uq8gph.nwb
   - sub-an064/sub-an064_ses-20150214_obj-4lo4te.nwb
   - sub-an064/sub-an064_ses-20150214_obj-73aw2e.nwb
-  - sub-an064/sub-an064_ses-20150214_obj-m0p9h2.nwb
-  - sub-an064/sub-an064_ses-20150214_obj-m80g1l.nwb
-  - sub-an064/sub-an064_ses-20150214_obj-sgph6u.nwb
-  - sub-an064/sub-an064_ses-20150214_obj-tkzaq9.nwb
-  - sub-an064/sub-an064_ses-20150215_obj-13n6cgr.nwb
-  - sub-an064/sub-an064_ses-20150215_obj-14nk5c6.nwb
-  - sub-an064/sub-an064_ses-20150215_obj-1hxj4v2.nwb
   - sub-an064/sub-an064_ses-20150215_obj-1qo84eo.nwb
-  - sub-an064/sub-an064_ses-20150215_obj-1tihbq0.nwb
   - sub-an064/sub-an064_ses-20150215_obj-1y6uoix.nwb
-  - sub-an064/sub-an064_ses-20150215_obj-2gb5dd.nwb
-  - sub-an064/sub-an064_ses-20150215_obj-3kkm1e.nwb
-  - sub-an064/sub-an064_ses-20150215_obj-ply14z.nwb
-  - sub-an064/sub-an064_ses-20150215_obj-xwwd89.nwb
-  - sub-an064/sub-an064_ses-20150217_obj-13djtqs.nwb
-  - sub-an064/sub-an064_ses-20150217_obj-1oad954.nwb
   - sub-an064/sub-an064_ses-20150217_obj-3i7d54.nwb
   - sub-an064/sub-an064_ses-20150217_obj-tjo18o.nwb
   - sub-an064/sub-an064_ses-20150217_obj-uznjlg.nwb
@@ -427,6 +412,23 @@ tests:
   - sub-an066/sub-an066_ses-20150211_obj-1uyc237.nwb
   - sub-an066/sub-an066_ses-20150211_obj-f0ajmr.nwb
   - sub-an066/sub-an066_ses-20150211_obj-hssdpk.nwb
+  assets_timeout:
+  - sub-an064/sub-an064_ses-20150211_obj-b3siem.nwb
+  - sub-an064/sub-an064_ses-20150211_obj-e6wfj1.nwb
+  - sub-an064/sub-an064_ses-20150214_obj-m0p9h2.nwb
+  - sub-an064/sub-an064_ses-20150214_obj-m80g1l.nwb
+  - sub-an064/sub-an064_ses-20150214_obj-sgph6u.nwb
+  - sub-an064/sub-an064_ses-20150214_obj-tkzaq9.nwb
+  - sub-an064/sub-an064_ses-20150215_obj-13n6cgr.nwb
+  - sub-an064/sub-an064_ses-20150215_obj-14nk5c6.nwb
+  - sub-an064/sub-an064_ses-20150215_obj-1hxj4v2.nwb
+  - sub-an064/sub-an064_ses-20150215_obj-1tihbq0.nwb
+  - sub-an064/sub-an064_ses-20150215_obj-2gb5dd.nwb
+  - sub-an064/sub-an064_ses-20150215_obj-3kkm1e.nwb
+  - sub-an064/sub-an064_ses-20150215_obj-ply14z.nwb
+  - sub-an064/sub-an064_ses-20150215_obj-xwwd89.nwb
+  - sub-an064/sub-an064_ses-20150217_obj-13djtqs.nwb
+  - sub-an064/sub-an064_ses-20150217_obj-1oad954.nwb
   name: matnwb_nwbRead
 versions:
   hdmf: 3.4.7

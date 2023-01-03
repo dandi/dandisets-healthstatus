@@ -1,15 +1,26 @@
 dandiset_version: 4e63e33fb5b8a71bafebe2b7bac00a89561ab60c
-last_run: 2022-11-16 14:20:34.805786-05:00
+last_run: 2022-12-15 10:59:47.526056-05:00
 nassets: 6
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-P5/sub-P5_ses-20200105T045735.nwb
-  - sub-P2/sub-P2_ses-20200102T002921.nwb
   - sub-P1/sub-P1_ses-20200101T021616.nwb
+  - sub-P2/sub-P2_ses-20200102T002921.nwb
   - sub-P3/sub-P3_ses-20200103T022038.nwb
   - sub-P4/sub-P4_ses-20200104T031322.nwb
+  - sub-P5/sub-P5_ses-20200105T045735.nwb
+  assets_timeout: []
   name: pynwb_open_load_ns
+- assets_nok:
+  - sub-P1/sub-P1_ses-20200101T021616.nwb
+  - sub-P2/sub-P2_ses-20200102T002921.nwb
+  - sub-P3/sub-P3_ses-20200103T022038.nwb
+  - sub-P4/sub-P4_ses-20200104T031322.nwb
+  - sub-P5/sub-P5_ses-20200105T045735.nwb
+  assets_ok: []
+  assets_timeout: []
+  name: matnwb_nwbRead
 versions:
   hdmf: 3.4.7
+  matnwb: v2.5.0.0
   pynwb: 2.2.0

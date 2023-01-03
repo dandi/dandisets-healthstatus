@@ -1,0 +1,22 @@
+dandiset_version: 9c115f82ee29070dcaa65c37cb6b130d8b093099
+last_run: 2022-12-15 10:59:47.526056-05:00
+nassets: 4
+tests:
+- assets_nok: []
+  assets_ok:
+  - sub-Pt01/sub-Pt01_ecephys.nwb
+  - sub-Pt02/sub-Pt02_ecephys.nwb
+  - sub-Pt03/sub-Pt03_ecephys.nwb
+  assets_timeout: []
+  name: pynwb_open_load_ns
+- assets_nok: []
+  assets_ok:
+  - sub-Pt01/sub-Pt01_ecephys.nwb
+  - sub-Pt02/sub-Pt02_ecephys.nwb
+  - sub-Pt03/sub-Pt03_ecephys.nwb
+  assets_timeout: []
+  name: matnwb_nwbRead
+versions:
+  hdmf: 3.4.7
+  matnwb: v2.5.0.0
+  pynwb: 2.2.0
