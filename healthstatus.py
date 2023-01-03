@@ -218,7 +218,9 @@ class HealthStatus:
             await fp.write("| --- | " + " | ".join("---" for _ in TESTS) + " |\n")
             for did, tests in sorted((r.identifier, r.summary()) for r in all_reports):
                 await fp.write(
-                    f"| {did} | " + " | ".join(tests[tn] for tn in TEST_NAMES) + " |\n"
+                    f"| [{did}][{did}/status.yaml] | "
+                    + " | ".join(tests[tn] for tn in TEST_NAMES)
+                    + " |\n"
                 )
 
     async def aiterdandisets(self) -> AsyncIterator[Dandiset]:
