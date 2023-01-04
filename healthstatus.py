@@ -416,6 +416,7 @@ class TestSummary:
             )
         else:
             s += "\u2014"
+        s += " | "
         if self.dandisets_timedout:
             s += f"{len(self.dandisets_timedout)}/{self.assets_timedout}: " + ", ".join(
                 f"[{did}]({did}/status.yaml)/{timedout}"
