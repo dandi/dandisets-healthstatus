@@ -195,7 +195,7 @@ class HealthStatus:
                 asset_qtys[Outcome.PASS] += passed
                 asset_qtys[Outcome.FAIL] += failed
                 asset_qtys[Outcome.TIMEOUT] += timedout
-                dandiset_qtys[Outcome.PASS] += bool(passed)
+                dandiset_qtys[Outcome.PASS] += bool(not failed and not timedout)
                 dandiset_qtys[Outcome.FAIL] += bool(failed)
                 dandiset_qtys[Outcome.TIMEOUT] += bool(timedout)
                 for tn in TEST_NAMES:
