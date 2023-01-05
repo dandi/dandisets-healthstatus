@@ -191,17 +191,14 @@ class HealthStatus:
             }
             test_summaries = {tn: TestSummary(tn) for tn in TEST_NAMES}
             for r in all_reports:
+                passed, failed, timedout = r.combined_counts()
+                asset_qtys[Outcome.PASS] += passed
+                asset_qtys[Outcome.FAIL] += failed
+                asset_qtys[Outcome.TIMEOUT] += timedout
+                dandiset_qtys[Outcome.PASS] += bool(passed)
+                dandiset_qtys[Outcome.FAIL] += bool(failed)
+                dandiset_qtys[Outcome.TIMEOUT] += bool(timedout)
                 for tn in TEST_NAMES:
-                    passed, failed, timedout = r.tests[tn].counts()
-                    asset_qtys[Outcome.PASS] += passed
-                    asset_qtys[Outcome.FAIL] += failed
-                    asset_qtys[Outcome.TIMEOUT] += timedout
-                    if failed:
-                        dandiset_qtys[Outcome.FAIL] += 1
-                    if timedout:
-                        dandiset_qtys[Outcome.TIMEOUT] += 1
-                    if not failed and not timedout:
-                        dandiset_qtys[Outcome.PASS] += 1
                     test_summaries[tn].register(r.identifier, r.tests[tn])
             await fp.write(
                 "| Test / (Dandisets/assets)"
@@ -304,6 +301,23 @@ class DandisetReport:
     def register_test_result(self, r: TestResult) -> None:
         self.tests[r.testname].by_outcome[r.outcome].append(r)
 
+    def combined_counts(self) -> tuple[int, int, int]:
+        asset_outcomes = defaultdict(set)
+        for report in self.tests.values():
+            for result in report.all_results():
+                asset_outcomes[result.asset.asset_path].add(result.outcome)
+        passed = 0
+        failed = 0
+        timedout = 0
+        for outcomes in asset_outcomes.values():
+            if Outcome.FAIL in outcomes:
+                failed += 1
+            if Outcome.TIMEOUT in outcomes:
+                timedout += 1
+            if outcomes == {Outcome.PASS}:
+                passed += 1
+        return (passed, failed, timedout)
+
     def summary(self) -> dict[str, str]:
         return {testname: self.tests[testname].summary() for testname in TEST_NAMES}
 
@@ -368,6 +382,9 @@ class TestReport:
     @property
     def timedout(self) -> list[TestResult]:
         return self.by_outcome[Outcome.TIMEOUT]
+
+    def all_results(self) -> list[TestResult]:
+        return [tr for lst in self.by_outcome.values() for tr in lst]
 
     def counts(self) -> tuple[int, int, int]:
         return (len(self.passed), len(self.failed), len(self.timedout))
