@@ -14,7 +14,7 @@ git pull
 "$PYTHON" -m virtualenv --clear venv
 . venv/bin/activate
 pip install -q -r code/requirements.txt
-python code/healthstatus.py -d "$DANDISETS_PATH" -m "$MOUNT_PATH"
+python code/healthstatus.py -d "$DANDISETS_PATH" -m "$MOUNT_PATH" "$@"
 
 git add .
 if ! git diff --quiet --cached
