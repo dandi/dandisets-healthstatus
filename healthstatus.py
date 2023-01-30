@@ -164,7 +164,8 @@ class HealthStatus:
                     log.info("Processing Dandiset %s", dandiset.identifier)
                     report = await dandiset.test_assets()
                     await report.dump(
-                        self.reports_root / dandiset.identifier, self.run_data
+                        self.reports_root / "results" / dandiset.identifier,
+                        self.run_data,
                     )
                     all_reports.append(report)
 
@@ -215,7 +216,7 @@ class HealthStatus:
             await fp.write("| --- | " + " | ".join("---" for _ in TESTS) + " |\n")
             for did, tests in sorted((r.identifier, r.summary()) for r in all_reports):
                 await fp.write(
-                    f"| [{did}][{did}/status.yaml] | "
+                    f"| [{did}][results/{did}/status.yaml] | "
                     + " | ".join(tests[tn] for tn in TEST_NAMES)
                     + " |\n"
                 )
