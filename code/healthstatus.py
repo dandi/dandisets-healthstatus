@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 from collections import defaultdict, deque
-from collections.abc import AsyncIterator, Awaitable, Callable
+from collections.abc import AsyncIterator, Awaitable, Callable, Sequence
 from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
@@ -155,7 +155,7 @@ class HealthStatus:
     reports_root: anyio.Path
     run_data: RunData = field(default_factory=RunData.get)
 
-    async def run(self, dandiset_jobs: int) -> None:
+    async def run(self, dandisets: Sequence[str], dandiset_jobs: int) -> None:
         all_reports: list[DandisetReport] = []
 
         async def dowork(rec: MemoryObjectReceiveStream[Dandiset]) -> None:
@@ -175,9 +175,17 @@ class HealthStatus:
                 for _ in range(dandiset_jobs):
                     tg.start_soon(dowork, receiver.clone())
             async with sender:
-                async for dandiset in self.aiterdandisets():
-                    log.info("Found Dandiset %s", dandiset.identifier)
-                    await sender.send(dandiset)
+                if dandisets:
+                    for did in dandisets:
+                        log.info("Scanning Dandiset %s", did)
+                        await sender.send(await self.get_dandiset(did))
+                else:
+                    async for ds in self.aiterdandisets():
+                        log.info("Found Dandiset %s", ds.identifier)
+                        await sender.send(ds)
+
+        if dandisets:
+            return
 
         async with await (self.reports_root / "README.md").open("w") as fp:
             dandiset_qtys = {
@@ -224,12 +232,10 @@ class HealthStatus:
     async def aiterdandisets(self) -> AsyncIterator[Dandiset]:
         async for p in self.backup_root.iterdir():
             if re.fullmatch(r"\d{6,}", p.name) and await p.is_dir():
-                r = await anyio.run_process(
-                    ["git", "show", "-s", "--format=%H"], cwd=str(p)
-                )
-                yield Dandiset(
-                    identifier=p.name, path=p, commit=r.stdout.decode("utf-8").strip()
-                )
+                yield await Dandiset.for_path(p)
+
+    async def get_dandiset(self, identifier: str) -> Dandiset:
+        return await Dandiset.for_path(self.backup_root / identifier)
 
 
 @dataclass
@@ -237,6 +243,13 @@ class Dandiset:
     identifier: str
     path: anyio.Path
     commit: str
+
+    @classmethod
+    async def for_path(cls, path: anyio.Path) -> Dandiset:
+        r = await anyio.run_process(["git", "show", "-s", "--format=%H"], cwd=str(path))
+        return cls(
+            identifier=path.name, path=path, commit=r.stdout.decode("utf-8").strip()
+        )
 
     async def test_assets(self) -> DandisetReport:
         report = DandisetReport(identifier=self.identifier, commit=self.commit)
@@ -477,7 +490,13 @@ class Asset:
     help="Number of Dandisets to process at once",
     show_default=True,
 )
-def main(dataset_path: anyio.Path, mount_point: anyio.Path, dandiset_jobs: int) -> None:
+@click.argument("dandisets", nargs=-1)
+def main(
+    dataset_path: anyio.Path,
+    mount_point: anyio.Path,
+    dandiset_jobs: int,
+    dandisets: tuple[str],
+) -> None:
     logging.basicConfig(
         format="%(asctime)s [%(levelname)-8s] %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
@@ -524,7 +543,7 @@ def main(dataset_path: anyio.Path, mount_point: anyio.Path, dandiset_jobs: int) 
         ) as p:
             sleep(3)
             try:
-                anyio.run(hs.run, dandiset_jobs)
+                anyio.run(hs.run, dandisets, dandiset_jobs)
             finally:
                 p.send_signal(SIGINT)
 
