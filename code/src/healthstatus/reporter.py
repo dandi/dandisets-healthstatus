@@ -10,6 +10,31 @@ from ruamel.yaml import YAML
 from .core import Outcome
 
 
+class TestStatus(BaseModel):
+    assets_nok: List[str]
+    assets_ok: List[str]
+    assets_timeout: List[str]
+    name: str
+
+    def counts(self) -> tuple[int, int, int]:
+        return (len(self.assets_ok), len(self.assets_nok), len(self.assets_timeout))
+
+    def asset_outcomes(self) -> Iterator[tuple[str, Outcome]]:
+        for asset in self.assets_ok:
+            yield (asset, Outcome.PASS)
+        for asset in self.assets_nok:
+            yield (asset, Outcome.FAIL)
+        for asset in self.assets_timeout:
+            yield (asset, Outcome.TIMEOUT)
+
+    def summary(self) -> str:
+        passed, failed, timedout = self.counts()
+        if passed == failed == timedout == 0:
+            return "\u2014"
+        else:
+            return f"{passed} passed, {failed} failed, {timedout} timed out"
+
+
 class DandisetStatus(BaseModel):
     identifier: str
     dandiset_version: str
@@ -56,31 +81,6 @@ class DandisetStatus(BaseModel):
         return summ
 
 
-class TestStatus(BaseModel):
-    assets_nok: List[str]
-    assets_ok: List[str]
-    assets_timeout: List[str]
-    name: str
-
-    def counts(self) -> tuple[int, int, int]:
-        return (len(self.assets_ok), len(self.assets_nok), len(self.assets_timeout))
-
-    def asset_outcomes(self) -> Iterator[tuple[str, Outcome]]:
-        for asset in self.assets_ok:
-            yield (asset, Outcome.PASS)
-        for asset in self.assets_nok:
-            yield (asset, Outcome.FAIL)
-        for asset in self.assets_timeout:
-            yield (asset, Outcome.TIMEOUT)
-
-    def summary(self) -> str:
-        passed, failed, timedout = self.counts()
-        if passed == failed == timedout == 0:
-            return "\u2014"
-        else:
-            return f"{passed} passed, {failed} failed, {timedout} timed out"
-
-
 @dataclass
 class TestSummary:
     name: str
@@ -100,7 +100,7 @@ class TestSummary:
         if timedout:
             self.dandisets_timedout[dandiset_id] = timedout
             self.assets_timedout += timedout
-        if not failed and not timedout:
+        if not failed and not timedout and passed:
             self.dandisets_passed += 1
 
     def as_row(self) -> str:
@@ -112,7 +112,7 @@ class TestSummary:
         s += " | "
         if self.dandisets_failed:
             s += f"{len(self.dandisets_failed)}/{self.assets_failed}: " + ", ".join(
-                f"[{did}]({did}/status.yaml)/{failed}"
+                f"[{did}](results/{did}/status.yaml)/{failed}"
                 for did, failed in sorted(self.dandisets_failed.items())
             )
         else:
@@ -120,7 +120,7 @@ class TestSummary:
         s += " | "
         if self.dandisets_timedout:
             s += f"{len(self.dandisets_timedout)}/{self.assets_timedout}: " + ", ".join(
-                f"[{did}]({did}/status.yaml)/{timedout}"
+                f"[{did}](results/{did}/status.yaml)/{timedout}"
                 for did, timedout in sorted(self.dandisets_timedout.items())
             )
         else:

@@ -122,7 +122,7 @@ def report() -> None:
             asset_qtys[Outcome.PASS] += passed
             asset_qtys[Outcome.FAIL] += failed
             asset_qtys[Outcome.TIMEOUT] += timedout
-            dandiset_qtys[Outcome.PASS] += bool(not failed and not timedout)
+            dandiset_qtys[Outcome.PASS] += bool(not failed and not timedout and passed)
             dandiset_qtys[Outcome.FAIL] += bool(failed)
             dandiset_qtys[Outcome.TIMEOUT] += bool(timedout)
             for tn in TEST_NAMES:
@@ -145,7 +145,7 @@ def report() -> None:
         print("| --- | " + " | ".join("---" for _ in TEST_NAMES) + " |", file=fp)
         for did, tests in sorted((s.identifier, s.summary()) for s in all_statuses):
             print(
-                f"| [{did}][results/{did}/status.yaml] | "
+                f"| [{did}](results/{did}/status.yaml) | "
                 + " | ".join(tests[tn] for tn in TEST_NAMES)
                 + " |",
                 file=fp,
