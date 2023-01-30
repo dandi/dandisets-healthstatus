@@ -1,6 +1,8 @@
 from __future__ import annotations
 import logging
 import os
+from pathlib import Path
+import re
 from shutil import rmtree
 from signal import SIGINT
 import subprocess
@@ -9,9 +11,10 @@ from time import sleep
 import anyio
 import click
 import requests
-from .checker import HealthStatus
+from .checker import TEST_NAMES, HealthStatus
 from .config import MATNWB_INSTALL_DIR
-from .core import log
+from .core import Outcome, log
+from .reporter import DandisetStatus, TestSummary
 
 
 @click.group()
@@ -100,21 +103,22 @@ def check(
 
 @main.command()
 def report() -> None:
-    r"""
-    async with await (self.reports_root / "README.md").open("w") as fp:
-        dandiset_qtys = {
-            Outcome.PASS: 0,
-            Outcome.FAIL: 0,
-            Outcome.TIMEOUT: 0,
-        }
-        asset_qtys = {
-            Outcome.PASS: 0,
-            Outcome.FAIL: 0,
-            Outcome.TIMEOUT: 0,
-        }
-        test_summaries = {tn: TestSummary(tn) for tn in TEST_NAMES}
-        for r in all_reports:
-            passed, failed, timedout = r.combined_counts()
+    dandiset_qtys = {
+        Outcome.PASS: 0,
+        Outcome.FAIL: 0,
+        Outcome.TIMEOUT: 0,
+    }
+    asset_qtys = {
+        Outcome.PASS: 0,
+        Outcome.FAIL: 0,
+        Outcome.TIMEOUT: 0,
+    }
+    all_statuses = []
+    test_summaries = {tn: TestSummary(tn) for tn in TEST_NAMES}
+    for p in Path("results").iterdir():
+        if re.fullmatch(r"\d{6,}", p.name) and p.is_dir():
+            status = DandisetStatus.from_file(p.name, p / "status.yaml")
+            passed, failed, timedout = status.combined_counts()
             asset_qtys[Outcome.PASS] += passed
             asset_qtys[Outcome.FAIL] += failed
             asset_qtys[Outcome.TIMEOUT] += timedout
@@ -122,28 +126,30 @@ def report() -> None:
             dandiset_qtys[Outcome.FAIL] += bool(failed)
             dandiset_qtys[Outcome.TIMEOUT] += bool(timedout)
             for tn in TEST_NAMES:
-                test_summaries[tn].register(r.identifier, r.tests[tn])
-        await fp.write(
+                test_summaries[tn].register(p.name, status.test_counts(tn))
+            all_statuses.append(status)
+    with open("README.md", "w") as fp:
+        print(
             "| Test / (Dandisets/assets)"
             f" | Passed ({dandiset_qtys[Outcome.PASS]}/{asset_qtys[Outcome.PASS]})"
             f" | Failed ({dandiset_qtys[Outcome.FAIL]}/{asset_qtys[Outcome.FAIL]})"
             f" | Timed Out ({dandiset_qtys[Outcome.TIMEOUT]}"
-            f"/{asset_qtys[Outcome.TIMEOUT]}) |\n"
+            f"/{asset_qtys[Outcome.TIMEOUT]}) |",
+            file=fp,
         )
-        await fp.write("| --- | --- | --- | --- |\n")
+        print("| --- | --- | --- | --- |", file=fp)
         for tn in TEST_NAMES:
-            await fp.write(test_summaries[tn].as_row() + "\n")
-        await fp.write("\n")
-        await fp.write("| Dandiset | " + " | ".join(TEST_NAMES) + " |\n")
-        await fp.write("| --- | " + " | ".join("---" for _ in TESTS) + " |\n")
-        for did, tests in sorted((r.identifier, r.summary()) for r in all_reports):
-            await fp.write(
+            print(test_summaries[tn].as_row(), file=fp)
+        print(file=fp)
+        print("| Dandiset | " + " | ".join(TEST_NAMES) + " |", file=fp)
+        print("| --- | " + " | ".join("---" for _ in TEST_NAMES) + " |", file=fp)
+        for did, tests in sorted((s.identifier, s.summary()) for s in all_statuses):
+            print(
                 f"| [{did}][results/{did}/status.yaml] | "
                 + " | ".join(tests[tn] for tn in TEST_NAMES)
-                + " |\n"
+                + " |",
+                file=fp,
             )
-    """
-    raise NotImplementedError
 
 
 def install_matnwb() -> str:

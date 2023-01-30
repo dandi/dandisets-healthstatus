@@ -242,26 +242,6 @@ class DandisetReport:
     def register_test_result(self, r: TestResult) -> None:
         self.tests[r.testname].by_outcome[r.outcome].append(r)
 
-    def combined_counts(self) -> tuple[int, int, int]:
-        asset_outcomes = defaultdict(set)
-        for report in self.tests.values():
-            for result in report.all_results():
-                asset_outcomes[result.asset.asset_path].add(result.outcome)
-        passed = 0
-        failed = 0
-        timedout = 0
-        for outcomes in asset_outcomes.values():
-            if Outcome.FAIL in outcomes:
-                failed += 1
-            if Outcome.TIMEOUT in outcomes:
-                timedout += 1
-            if outcomes == {Outcome.PASS}:
-                passed += 1
-        return (passed, failed, timedout)
-
-    def summary(self) -> dict[str, str]:
-        return {testname: self.tests[testname].summary() for testname in TEST_NAMES}
-
     async def dump(self, reportdir: anyio.Path, run_data: RunData) -> None:
         status = {
             "last_run": run_data.timestamp,
@@ -323,67 +303,6 @@ class TestReport:
     @property
     def timedout(self) -> list[TestResult]:
         return self.by_outcome[Outcome.TIMEOUT]
-
-    def all_results(self) -> list[TestResult]:
-        return [tr for lst in self.by_outcome.values() for tr in lst]
-
-    def counts(self) -> tuple[int, int, int]:
-        return (len(self.passed), len(self.failed), len(self.timedout))
-
-    def summary(self) -> str:
-        passed, failed, timedout = self.counts()
-        if passed == failed == timedout == 0:
-            return "\u2014"
-        else:
-            return f"{passed} passed, {failed} failed, {timedout} timed out"
-
-
-@dataclass
-class TestSummary:
-    name: str
-    dandisets_passed: int = 0
-    assets_passed: int = 0
-    dandisets_failed: dict[str, int] = field(default_factory=dict)
-    assets_failed: int = 0
-    dandisets_timedout: dict[str, int] = field(default_factory=dict)
-    assets_timedout: int = 0
-
-    def register(self, dandiset_id: str, report: TestReport) -> None:
-        passed, failed, timedout = report.counts()
-        self.assets_passed += passed
-        if failed:
-            self.dandisets_failed[dandiset_id] = failed
-            self.assets_failed += failed
-        if timedout:
-            self.dandisets_timedout[dandiset_id] = timedout
-            self.assets_timedout += timedout
-        if not failed and not timedout:
-            self.dandisets_passed += 1
-
-    def as_row(self) -> str:
-        s = f"| {self.name} | "
-        if self.dandisets_passed:
-            s += f"{self.dandisets_passed}/{self.assets_passed}"
-        else:
-            s += "\u2014"
-        s += " | "
-        if self.dandisets_failed:
-            s += f"{len(self.dandisets_failed)}/{self.assets_failed}: " + ", ".join(
-                f"[{did}]({did}/status.yaml)/{failed}"
-                for did, failed in sorted(self.dandisets_failed.items())
-            )
-        else:
-            s += "\u2014"
-        s += " | "
-        if self.dandisets_timedout:
-            s += f"{len(self.dandisets_timedout)}/{self.assets_timedout}: " + ", ".join(
-                f"[{did}]({did}/status.yaml)/{timedout}"
-                for did, timedout in sorted(self.dandisets_timedout.items())
-            )
-        else:
-            s += "\u2014"
-        s += " |"
-        return s
 
 
 @dataclass
