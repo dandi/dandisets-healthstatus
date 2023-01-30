@@ -172,6 +172,7 @@ def install_matnwb() -> str:
                 r.raise_for_status()
                 for chunk in r.iter_content(65535):
                     fp.write(chunk)
+            fp.flush()
             subprocess.run(
                 [
                     "tar",
