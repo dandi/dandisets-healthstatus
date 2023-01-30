@@ -40,7 +40,7 @@ PYNWB_OPEN_LOAD_NS_SCRIPT = anyio.Path(__file__).with_name("pynwb_open_load_ns.p
 
 TIMEOUT = 3600
 
-WORKERS_PER_DANDISET = 5
+WORKERS_PER_DANDISET = 1
 
 log = logging.getLogger()
 
