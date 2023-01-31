@@ -5,8 +5,9 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from ruamel.yaml import YAML
+from .checker import TEST_NAMES
 from .core import Outcome
 
 
@@ -35,12 +36,20 @@ class TestStatus(BaseModel):
             return f"{passed} passed, {failed} failed, {timedout} timed out"
 
 
+class UntestedAsset(BaseModel):
+    asset: str
+    size: int
+    file_type: str
+    mime_type: str
+
+
 class DandisetStatus(BaseModel):
     identifier: str
     dandiset_version: str
     last_run: datetime
     nassets: int
     tests: List[TestStatus]
+    untested: List[UntestedAsset] = Field(default_factory=list)
     versions: Dict[str, str]
 
     @classmethod
@@ -74,11 +83,13 @@ class DandisetStatus(BaseModel):
                 passed += 1
         return (passed, failed, timedout)
 
-    def summary(self) -> dict[str, str]:
-        summ = defaultdict(lambda: "\u2014")
-        for ts in self.tests:
-            summ[ts.name] = ts.summary()
-        return summ
+    def as_row(self) -> str:
+        test_summaries = {ts.name: ts.summary() for ts in self.tests}
+        return (
+            f"| [{self.identifier}](results/{self.identifier}/status.yaml) | "
+            + " | ".join(test_summaries.get(tn, "\u2014") for tn in TEST_NAMES)
+            + f" | {len(self.untested)} |"
+        )
 
 
 @dataclass
