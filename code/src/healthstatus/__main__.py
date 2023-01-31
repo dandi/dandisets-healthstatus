@@ -1,5 +1,6 @@
 from __future__ import annotations
 import logging
+from operator import attrgetter
 import os
 from pathlib import Path
 import re
@@ -141,15 +142,10 @@ def report() -> None:
         for tn in TEST_NAMES:
             print(test_summaries[tn].as_row(), file=fp)
         print(file=fp)
-        print("| Dandiset | " + " | ".join(TEST_NAMES) + " |", file=fp)
-        print("| --- | " + " | ".join("---" for _ in TEST_NAMES) + " |", file=fp)
-        for did, tests in sorted((s.identifier, s.summary()) for s in all_statuses):
-            print(
-                f"| [{did}](results/{did}/status.yaml) | "
-                + " | ".join(tests[tn] for tn in TEST_NAMES)
-                + " |",
-                file=fp,
-            )
+        print("| Dandiset | " + " | ".join(TEST_NAMES) + " | Untested |", file=fp)
+        print("| --- | " + " | ".join("---" for _ in TEST_NAMES) + " | --- |", file=fp)
+        for s in sorted(all_statuses, key=attrgetter("identifier")):
+            print(s.as_row(), file=fp)
 
 
 def install_matnwb() -> str:

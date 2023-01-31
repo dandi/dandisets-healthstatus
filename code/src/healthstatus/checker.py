@@ -7,6 +7,7 @@ from importlib.metadata import version
 import io
 import math
 import os
+from os.path import getsize
 import re
 import subprocess
 import sys
@@ -112,6 +113,38 @@ class TestResult:
 
 
 @dataclass
+class Untested:
+    asset: Asset
+
+    async def run(self) -> UntestedDetails:
+        size = getsize(self.asset.filepath)
+        r = await anyio.run_process(["file", "--brief", str(self.asset.filepath)])
+        file_type = r.stdout.decode("utf-8").strip()
+        r = await anyio.run_process(
+            ["file", "--brief", "--mime-type", str(self.asset.filepath)]
+        )
+        mime_type = r.stdout.decode("utf-8").strip()
+        log.info(
+            "Dandiset %s, asset %s: untested, %d bytes, %s",
+            self.asset.dandiset_id,
+            self.asset.asset_path,
+            size,
+            mime_type,
+        )
+        return UntestedDetails(
+            asset=self.asset, size=size, file_type=file_type, mime_type=mime_type
+        )
+
+
+@dataclass
+class UntestedDetails:
+    asset: Asset
+    size: int
+    file_type: str
+    mime_type: str
+
+
+@dataclass
 class RunData:
     timestamp: datetime
     versions: dict[str, str]
@@ -181,10 +214,15 @@ class Dandiset:
     async def test_assets(self) -> DandisetReport:
         report = DandisetReport(identifier=self.identifier, commit=self.commit)
 
-        async def dowork(rec: MemoryObjectReceiveStream[TestCase]) -> None:
+        async def dowork(rec: MemoryObjectReceiveStream[TestCase | Untested]) -> None:
             async with rec:
-                async for testcase in rec:
-                    report.register_test_result(await testcase.run())
+                async for job in rec:
+                    res = await job.run()
+                    if isinstance(res, TestResult):
+                        report.register_test_result(res)
+                    else:
+                        assert isinstance(res, UntestedDetails)
+                        report.register_untested(res)
 
         async with anyio.create_task_group() as tg:
             sender, receiver = anyio.create_memory_object_stream(math.inf)
@@ -200,6 +238,8 @@ class Dandiset:
                     if asset.is_nwb():
                         for t in TESTS:
                             await sender.send(TestCase(asset=asset, testfunc=t))
+                    else:
+                        await sender.send(Untested(asset))
         return report
 
     async def aiterassets(self) -> AsyncIterator[Asset]:
@@ -238,9 +278,13 @@ class DandisetReport:
     tests: dict[str, TestReport] = field(
         default_factory=lambda: defaultdict(TestReport)
     )
+    untested: list[UntestedDetails] = field(default_factory=list)
 
     def register_test_result(self, r: TestResult) -> None:
         self.tests[r.testname].by_outcome[r.outcome].append(r)
+
+    def register_untested(self, d: UntestedDetails) -> None:
+        self.untested.append(d)
 
     async def dump(self, reportdir: anyio.Path, run_data: RunData) -> None:
         status = {
@@ -263,6 +307,15 @@ class DandisetReport:
                 }
                 for name in TEST_NAMES
                 if name in self.tests
+            ],
+            "untested": [
+                {
+                    "asset": d.asset.asset_path,
+                    "size": d.size,
+                    "file_type": d.file_type,
+                    "mime_type": d.mime_type,
+                }
+                for d in self.untested
             ],
         }
         yaml = YAML(typ="safe")
