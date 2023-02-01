@@ -6,15 +6,18 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, List
 from pydantic import BaseModel, Field
-from ruamel.yaml import YAML
 from .checker import TEST_NAMES
 from .core import Outcome
+from .yamllineno import load_yaml_lineno
 
 
 class TestStatus(BaseModel):
     assets_nok: List[str]
+    assets_nok_lineno: int
     assets_ok: List[str]
+    assets_ok_lineno: int
     assets_timeout: List[str]
+    assets_timeout_lineno: int
     name: str
 
     def counts(self) -> tuple[int, int, int]:
@@ -28,12 +31,27 @@ class TestStatus(BaseModel):
         for asset in self.assets_timeout:
             yield (asset, Outcome.TIMEOUT)
 
-    def summary(self) -> str:
+    def summary(self, pagelink: str) -> str:
         passed, failed, timedout = self.counts()
         if passed == failed == timedout == 0:
             return "\u2014"
         else:
-            return f"{passed} passed, {failed} failed, {timedout} timed out"
+            parts = []
+            if passed:
+                parts.append(f"[{passed} passed]({pagelink}#L{self.assets_ok_lineno})")
+            else:
+                parts.append("0 passed")
+            if failed:
+                parts.append(f"[{failed} failed]({pagelink}#L{self.assets_nok_lineno})")
+            else:
+                parts.append("0 failed")
+            if timedout:
+                parts.append(
+                    f"[{timedout} timed out]({pagelink}#L{self.assets_timeout_lineno})"
+                )
+            else:
+                parts.append("0 timed out")
+            return ", ".join(parts)
 
 
 class UntestedAsset(BaseModel):
@@ -50,14 +68,13 @@ class DandisetStatus(BaseModel):
     nassets: int
     tests: List[TestStatus]
     untested: List[UntestedAsset] = Field(default_factory=list)
+    untested_lineno: int = Field(default=0)
     versions: Dict[str, str]
 
     @classmethod
     def from_file(cls, identifier: str, yamlfile: Path) -> DandisetStatus:
         with yamlfile.open() as fp:
-            return cls.parse_obj(
-                {"identifier": identifier, **YAML(typ="safe").load(fp)}
-            )
+            return cls.parse_obj({"identifier": identifier, **load_yaml_lineno(fp)})
 
     def test_counts(self, test_name: str) -> tuple[int, int, int]:
         try:
@@ -84,12 +101,17 @@ class DandisetStatus(BaseModel):
         return (passed, failed, timedout)
 
     def as_row(self) -> str:
-        test_summaries = {ts.name: ts.summary() for ts in self.tests}
-        return (
-            f"| [{self.identifier}](results/{self.identifier}/status.yaml) | "
-            + " | ".join(test_summaries.get(tn, "\u2014") for tn in TEST_NAMES)
-            + f" | {len(self.untested)} |"
+        pagelink = f"results/{self.identifier}/status.yaml"
+        tss = {ts.name: ts.summary(pagelink) for ts in self.tests}
+        s = f"| [{self.identifier}]({pagelink}) | " + " | ".join(
+            tss.get(tn, "\u2014") for tn in TEST_NAMES
         )
+        if self.untested:
+            s += f" | [{len(self.untested)}]({pagelink}#L{self.untested_lineno})"
+        else:
+            s += " | \u2014"
+        s += " |"
+        return s
 
 
 @dataclass
