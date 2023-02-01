@@ -80,7 +80,7 @@ def check(
         backup_root=mount_point,
         reports_root=anyio.Path(os.getcwd()),
     )
-    hs.run_data.versions["matnwb"] = matnwb_version
+    hs.versions["matnwb"] = matnwb_version
     with open("fuse.log", "wb") as fp:
         with subprocess.Popen(
             [

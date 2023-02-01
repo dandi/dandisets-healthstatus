@@ -26,6 +26,10 @@ from .config import (
 from .core import Outcome, log
 
 
+def get_package_versions() -> dict[str, str]:
+    return {pkg: version(pkg) for pkg in PACKAGES_TO_VERSION}
+
+
 async def run_test_command(
     testname: str,
     asset: Asset,
@@ -144,23 +148,10 @@ class UntestedDetails:
 
 
 @dataclass
-class RunData:
-    timestamp: datetime
-    versions: dict[str, str]
-
-    @classmethod
-    def get(cls) -> RunData:
-        return cls(
-            timestamp=datetime.now().astimezone(),
-            versions=get_package_versions(),
-        )
-
-
-@dataclass
 class HealthStatus:
     backup_root: anyio.Path
     reports_root: anyio.Path
-    run_data: RunData = field(default_factory=RunData.get)
+    versions: dict[str, str] = field(default_factory=get_package_versions)
 
     async def run(self, dandisets: Sequence[str], dandiset_jobs: int) -> None:
         async def dowork(rec: MemoryObjectReceiveStream[Dandiset]) -> None:
@@ -170,7 +161,7 @@ class HealthStatus:
                     report = await dandiset.test_assets()
                     await report.dump(
                         self.reports_root / "results" / dandiset.identifier,
-                        self.run_data,
+                        self.versions,
                     )
 
         async with anyio.create_task_group() as tg:
@@ -239,6 +230,7 @@ class Dandiset:
                             await sender.send(TestCase(asset=asset, testfunc=t))
                     else:
                         await sender.send(Untested(asset))
+        report.finished()
         return report
 
     async def aiterassets(self) -> AsyncIterator[Asset]:
@@ -278,6 +270,8 @@ class DandisetReport:
         default_factory=lambda: defaultdict(TestReport)
     )
     untested: list[UntestedDetails] = field(default_factory=list)
+    started: datetime = field(default_factory=lambda: datetime.now().astimezone())
+    ended: Optional[datetime] = None
 
     def register_test_result(self, r: TestResult) -> None:
         self.tests[r.testname].by_outcome[r.outcome].append(r)
@@ -285,12 +279,18 @@ class DandisetReport:
     def register_untested(self, d: UntestedDetails) -> None:
         self.untested.append(d)
 
-    async def dump(self, reportdir: anyio.Path, run_data: RunData) -> None:
+    def finished(self) -> None:
+        self.ended = datetime.now().astimezone()
+
+    async def dump(self, reportdir: anyio.Path, versions: dict[str, str]) -> None:
+        assert self.ended is not None
         status = {
-            "last_run": run_data.timestamp,
+            "last_run": self.started,
+            "last_run_ended": self.ended,
+            "last_run_duration": (self.ended - self.started).total_seconds(),
             "dandiset_version": self.commit,
             "nassets": self.nassets,
-            "versions": run_data.versions,
+            "versions": versions,
             "tests": [
                 {
                     "name": name,
@@ -323,7 +323,7 @@ class DandisetReport:
             if report.failed:
                 async with await (
                     reportdir
-                    / f"{run_data.timestamp:%Y.%m.%d.%H.%M.%S}_{testname}_errors.log"
+                    / f"{self.started:%Y.%m.%d.%H.%M.%S}_{testname}_errors.log"
                 ).open("w", encoding="utf-8", errors="surrogateescape") as fp:
                     for r in report.failed:
                         assert r.output is not None
@@ -361,7 +361,3 @@ class Asset:
 
     def is_nwb(self) -> bool:
         return self.filepath.suffix.lower() == ".nwb"
-
-
-def get_package_versions() -> dict[str, str]:
-    return {pkg: version(pkg) for pkg in PACKAGES_TO_VERSION}
