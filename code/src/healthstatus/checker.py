@@ -4,7 +4,6 @@ from collections.abc import AsyncIterator, Awaitable, Callable, Sequence
 from dataclasses import dataclass, field
 from datetime import datetime
 from importlib.metadata import version
-import io
 import math
 import os
 from os.path import getsize
@@ -15,7 +14,7 @@ import textwrap
 from typing import Optional
 import anyio
 from anyio.streams.memory import MemoryObjectReceiveStream
-from ruamel.yaml import YAML
+import yaml
 from .config import (
     MATNWB_INSTALL_DIR,
     MATNWB_SAVEDIR,
@@ -318,12 +317,8 @@ class DandisetReport:
                 for d in self.untested
             ],
         }
-        yaml = YAML(typ="safe")
-        yaml.default_flow_style = False
-        out = io.StringIO()
-        yaml.dump(status, out)
         await reportdir.mkdir(parents=True, exist_ok=True)
-        await (reportdir / "status.yaml").write_text(out.getvalue())
+        await (reportdir / "status.yaml").write_text(yaml.dump(status))
         for testname, report in self.tests.items():
             if report.failed:
                 async with await (
