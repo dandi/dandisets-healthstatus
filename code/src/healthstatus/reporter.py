@@ -4,7 +4,7 @@ from collections.abc import Iterator
 from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Optional
 from pydantic import BaseModel, Field
 from .checker import TEST_NAMES
 from .core import Outcome
@@ -65,6 +65,8 @@ class DandisetStatus(BaseModel):
     identifier: str
     dandiset_version: str
     last_run: datetime
+    last_run_ended: Optional[datetime] = None
+    last_run_duration: Optional[float] = None
     nassets: int
     tests: List[TestStatus]
     untested: List[UntestedAsset] = Field(default_factory=list)
