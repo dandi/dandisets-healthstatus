@@ -6,8 +6,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional
 from pydantic import BaseModel, Field
-from .checker import TEST_NAMES
 from .core import Outcome
+from .tests import TESTS
 from .yamllineno import load_yaml_lineno
 
 
@@ -106,7 +106,7 @@ class DandisetStatus(BaseModel):
         pagelink = f"results/{self.identifier}/status.yaml"
         tss = {ts.name: ts.summary(pagelink) for ts in self.tests}
         s = f"| [{self.identifier}]({pagelink}) | " + " | ".join(
-            tss.get(tn, "\u2014") for tn in TEST_NAMES
+            tss.get(tn, "\u2014") for tn in TESTS.keys()
         )
         if self.untested:
             s += f" | [{len(self.untested)}]({pagelink}#L{self.untested_lineno})"

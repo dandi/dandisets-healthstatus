@@ -7,15 +7,17 @@ import re
 from shutil import rmtree
 from signal import SIGINT
 import subprocess
+import sys
 import tempfile
 from time import sleep
 import anyio
 import click
 import requests
-from .checker import TEST_NAMES, HealthStatus
+from .checker import HealthStatus
 from .config import MATNWB_INSTALL_DIR
-from .core import Outcome, log
+from .core import Asset, Outcome, log
 from .reporter import DandisetStatus, TestSummary
+from .tests import TESTS
 
 
 @click.group()
@@ -115,7 +117,7 @@ def report() -> None:
         Outcome.TIMEOUT: 0,
     }
     all_statuses = []
-    test_summaries = {tn: TestSummary(tn) for tn in TEST_NAMES}
+    test_summaries = {tn: TestSummary(tn) for tn in TESTS.keys()}
     for p in Path("results").iterdir():
         if re.fullmatch(r"\d{6,}", p.name) and p.is_dir():
             status = DandisetStatus.from_file(p.name, p / "status.yaml")
@@ -126,7 +128,7 @@ def report() -> None:
             dandiset_qtys[Outcome.PASS] += bool(not failed and not timedout and passed)
             dandiset_qtys[Outcome.FAIL] += bool(failed)
             dandiset_qtys[Outcome.TIMEOUT] += bool(timedout)
-            for tn in TEST_NAMES:
+            for tn in TESTS.keys():
                 test_summaries[tn].register(p.name, status.test_counts(tn))
             all_statuses.append(status)
     with open("README.md", "w") as fp:
@@ -139,13 +141,42 @@ def report() -> None:
             file=fp,
         )
         print("| --- | --- | --- | --- |", file=fp)
-        for tn in TEST_NAMES:
+        for tn in TESTS.keys():
             print(test_summaries[tn].as_row(), file=fp)
         print(file=fp)
-        print("| Dandiset | " + " | ".join(TEST_NAMES) + " | Untested |", file=fp)
-        print("| --- | " + " | ".join("---" for _ in TEST_NAMES) + " | --- |", file=fp)
+        print("| Dandiset | " + " | ".join(TESTS.keys()) + " | Untested |", file=fp)
+        print("| --- | " + " | ".join("---" for _ in TESTS) + " | --- |", file=fp)
         for s in sorted(all_statuses, key=attrgetter("identifier")):
             print(s.as_row(), file=fp)
+
+
+@main.command()
+@click.argument("testname", type=click.Choice(list(TESTS.keys())))
+@click.argument(
+    "files",
+    nargs=-1,
+    type=click.Path(exists=True, dir_okay=False, path_type=anyio.Path),
+)
+def test_files(testname: str, files: tuple[anyio.Path]) -> None:
+    logging.basicConfig(
+        format="%(asctime)s [%(levelname)-8s] %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+        level=logging.DEBUG,
+    )
+    if "matnwb" in testname.lower():
+        install_matnwb()
+    testfunc = TESTS[testname]
+    ok = True
+    for f in files:
+        asset = Asset(filepath=f, asset_path=str(f))
+        log.info("Testing %s ...", f)
+        r = anyio.run(testfunc, asset)
+        if r.output is not None:
+            print(r.output, end="")
+        log.info("%s: %s", f, r.outcome.name)
+        if r.outcome is not Outcome.PASS:
+            ok = False
+    sys.exit(0 if ok else 1)
 
 
 def install_matnwb() -> str:
