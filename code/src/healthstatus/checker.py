@@ -82,7 +82,7 @@ async def matnwb_nwbRead(asset: Asset) -> TestResult:
                 f" {MATNWB_SAVEDIR!r})"
             ),
         ],
-        env={"MATLABPATH": str(MATNWB_INSTALL_DIR)},
+        env={"MATLABPATH": f"{MATNWB_INSTALL_DIR}:{MATNWB_SAVEDIR}"},
     )
 
 
