@@ -257,7 +257,7 @@ class Dandiset:
                         yield mkasset(p)
                     else:
                         dirs.append(p)
-                else:
+                elif p.name != "dandiset.yaml":
                     yield mkasset(p)
 
 
