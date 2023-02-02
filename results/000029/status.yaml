@@ -1,6 +1,6 @@
-dandiset_version: 782562257adb3cfe62726c39d04d47673c2fb0fd
-last_run: 2022-12-15 10:59:47.526056-05:00
-nassets: 5
+dandiset_version: f03f8891e8fdd754e2e2bfb25d6154694574090c
+last_run: 2023-01-31 13:00:39.345306-05:00
+nassets: 6
 tests:
 - assets_nok: []
   assets_ok:
@@ -8,6 +8,7 @@ tests:
   - sub-anm369962/sub-anm369962_behavior+ecephys.nwb
   - sub-anm369963/sub-anm369963_behavior+ecephys.nwb
   - sub-anm369964/sub-anm369964_behavior+ecephys.nwb
+  - sub-monk-g/sub-monk-g.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -15,10 +16,16 @@ tests:
   - sub-anm369962/sub-anm369962_behavior+ecephys.nwb
   - sub-anm369963/sub-anm369963_behavior+ecephys.nwb
   - sub-anm369964/sub-anm369964_behavior+ecephys.nwb
-  assets_ok: []
+  assets_ok:
+  - sub-monk-g/sub-monk-g.nwb
   assets_timeout: []
   name: matnwb_nwbRead
+untested:
+- asset: dandiset.yaml
+  file_type: UTF-8 Unicode text
+  mime_type: text/plain
+  size: 2735
 versions:
-  hdmf: 3.4.7
-  matnwb: v2.5.0.0
+  hdmf: 3.5.1
+  matnwb: v2.6.0.0
   pynwb: 2.2.0
