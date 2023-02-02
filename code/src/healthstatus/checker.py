@@ -5,93 +5,25 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from importlib.metadata import version
 import math
-import os
 from os.path import getsize
 import re
-import subprocess
-import sys
 import textwrap
 from typing import Optional
 import anyio
 from anyio.streams.memory import MemoryObjectReceiveStream
 import yaml
-from .config import (
-    MATNWB_INSTALL_DIR,
-    MATNWB_SAVEDIR,
-    PACKAGES_TO_VERSION,
-    PYNWB_OPEN_LOAD_NS_SCRIPT,
-    TIMEOUT,
-    WORKERS_PER_DANDISET,
-)
-from .core import Outcome, log
+from .config import PACKAGES_TO_VERSION, WORKERS_PER_DANDISET
+from .core import Asset, Outcome, TestResult, log
+from .tests import TESTFUNCS, TESTS
 
 
 def get_package_versions() -> dict[str, str]:
     return {pkg: version(pkg) for pkg in PACKAGES_TO_VERSION}
 
 
-async def run_test_command(
-    testname: str,
-    asset: Asset,
-    command: list[str],
-    env: Optional[dict[str, str]] = None,
-) -> TestResult:
-    if env is not None:
-        env = {**os.environ, **env}
-    try:
-        async with anyio.fail_after(TIMEOUT):
-            r = await anyio.run_process(
-                command,
-                stdout=subprocess.PIPE,
-                stderr=subprocess.STDOUT,
-                check=False,
-                env=env,
-            )
-    except TimeoutError:
-        return TestResult(testname=testname, asset=asset, outcome=Outcome.TIMEOUT)
-    else:
-        if r.returncode == 0:
-            return TestResult(testname=testname, asset=asset, outcome=Outcome.PASS)
-        else:
-            return TestResult(
-                testname=testname,
-                asset=asset,
-                outcome=Outcome.FAIL,
-                output=r.stdout.decode("utf-8", "surrogateescape"),
-            )
-
-
-async def pynwb_open_load_ns(asset: Asset) -> TestResult:
-    return await run_test_command(
-        "pynwb_open_load_ns",
-        asset,
-        [sys.executable, str(PYNWB_OPEN_LOAD_NS_SCRIPT), str(asset.filepath)],
-    )
-
-
-async def matnwb_nwbRead(asset: Asset) -> TestResult:
-    return await run_test_command(
-        "matnwb_nwbRead",
-        asset,
-        [
-            "matlab",
-            "-nodesktop",
-            "-batch",
-            (
-                f"nwb = nwbRead({str(asset.filepath)!r}, 'savedir',"
-                f" {MATNWB_SAVEDIR!r})"
-            ),
-        ],
-        env={"MATLABPATH": f"{MATNWB_INSTALL_DIR}:{MATNWB_SAVEDIR}"},
-    )
-
-
-TESTS = [pynwb_open_load_ns, matnwb_nwbRead]
-TEST_NAMES = [t.__name__ for t in TESTS]
-
-
 @dataclass
 class TestCase:
+    dandiset_id: str
     asset: Asset
     testfunc: Callable[[Asset], Awaitable[TestResult]]
 
@@ -99,7 +31,7 @@ class TestCase:
         r = await self.testfunc(self.asset)
         log.info(
             "Dandiset %s, asset %s, test %s: %s",
-            self.asset.dandiset_id,
+            self.dandiset_id,
             self.asset.asset_path,
             r.testname,
             r.outcome.name,
@@ -108,15 +40,8 @@ class TestCase:
 
 
 @dataclass
-class TestResult:
-    testname: str
-    asset: Asset
-    outcome: Outcome
-    output: Optional[str] = None
-
-
-@dataclass
 class Untested:
+    dandiset_id: str
     asset: Asset
 
     async def run(self) -> UntestedDetails:
@@ -129,7 +54,7 @@ class Untested:
         mime_type = r.stdout.decode("utf-8").strip()
         log.info(
             "Dandiset %s, asset %s: untested, %d bytes, %s",
-            self.asset.dandiset_id,
+            self.dandiset_id,
             self.asset.asset_path,
             size,
             mime_type,
@@ -226,17 +151,22 @@ class Dandiset:
                     )
                     report.nassets += 1
                     if asset.is_nwb():
-                        for t in TESTS:
-                            await sender.send(TestCase(asset=asset, testfunc=t))
+                        for t in TESTFUNCS:
+                            await sender.send(
+                                TestCase(
+                                    asset=asset, testfunc=t, dandiset_id=self.identifier
+                                )
+                            )
                     else:
-                        await sender.send(Untested(asset))
+                        await sender.send(
+                            Untested(asset=asset, dandiset_id=self.identifier)
+                        )
         report.finished()
         return report
 
     async def aiterassets(self) -> AsyncIterator[Asset]:
         def mkasset(filepath: anyio.Path) -> Asset:
             return Asset(
-                dandiset_id=self.identifier,
                 filepath=filepath,
                 asset_path=filepath.relative_to(self.path).as_posix(),
             )
@@ -304,7 +234,7 @@ class DandisetReport:
                         r.asset.asset_path for r in self.tests[name].timedout
                     ),
                 }
-                for name in TEST_NAMES
+                for name in TESTS.keys()
                 if name in self.tests
             ],
             "untested": [
@@ -351,13 +281,3 @@ class TestReport:
     @property
     def timedout(self) -> list[TestResult]:
         return self.by_outcome[Outcome.TIMEOUT]
-
-
-@dataclass
-class Asset:
-    dandiset_id: str
-    filepath: anyio.Path
-    asset_path: str
-
-    def is_nwb(self) -> bool:
-        return self.filepath.suffix.lower() == ".nwb"
