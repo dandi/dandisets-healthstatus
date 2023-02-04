@@ -28,7 +28,7 @@ for v in "$@"; do
 	git checkout $v; 
 	echo "Running using: "; git describe --tags; 
 	matlab -nodesktop -sd $PWD -batch 'generateCore()'; 
-	MATLABPATH=$PWD:$PWD/../out time matlab -nodesktop -batch "nwb = nwbRead('../$ds/$f', 'savedir', '../out')" || echo "Exited with $?"
+	MATLABPATH=$PWD:$PWD/../out time matlab -nodesktop -batch "f='../$ds/$f'; disp(util.getSchemaVersion(f)); nwb = nwbRead(f, 'savedir', '../out')" || echo "Exited with $?"
 done
 
 pwd
