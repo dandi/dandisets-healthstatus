@@ -121,10 +121,10 @@ class Untested:
 
     async def run(self) -> UntestedDetails:
         size = getsize(self.asset.filepath)
-        r = await anyio.run_process(["file", "--brief", str(self.asset.filepath)])
+        r = await anyio.run_process(["file", "--brief", "-L", str(self.asset.filepath)])
         file_type = r.stdout.decode("utf-8").strip()
         r = await anyio.run_process(
-            ["file", "--brief", "--mime-type", str(self.asset.filepath)]
+            ["file", "--brief", "--mime-type", "-L", str(self.asset.filepath)]
         )
         mime_type = r.stdout.decode("utf-8").strip()
         log.info(
