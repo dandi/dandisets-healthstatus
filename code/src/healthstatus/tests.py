@@ -31,14 +31,18 @@ async def run_test_command(
                 env=env,
             )
     except TimeoutError:
-        return TestResult(testname=testname, asset=asset, outcome=Outcome.TIMEOUT)
+        return TestResult(
+            testname=testname, asset_path=asset.asset_path, outcome=Outcome.TIMEOUT
+        )
     else:
         if r.returncode == 0:
-            return TestResult(testname=testname, asset=asset, outcome=Outcome.PASS)
+            return TestResult(
+                testname=testname, asset_path=asset.asset_path, outcome=Outcome.PASS
+            )
         else:
             return TestResult(
                 testname=testname,
-                asset=asset,
+                asset_path=asset.asset_path,
                 outcome=Outcome.FAIL,
                 output=r.stdout.decode("utf-8", "surrogateescape"),
             )

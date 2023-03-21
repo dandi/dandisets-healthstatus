@@ -1,19 +1,27 @@
 from __future__ import annotations
 from collections import defaultdict, deque
-from collections.abc import AsyncIterator, Awaitable, Callable, Sequence
+from collections.abc import AsyncGenerator, AsyncIterator, Awaitable, Callable
 from dataclasses import dataclass, field
 from datetime import datetime
 from importlib.metadata import version
-import math
 from os.path import getsize
+from pathlib import Path
+from random import choice
 import re
 import textwrap
 from typing import Optional
 import anyio
-from anyio.streams.memory import MemoryObjectReceiveStream
-import yaml
+from .aioutil import pool_tasks
 from .config import PACKAGES_TO_VERSION, WORKERS_PER_DANDISET
-from .core import Asset, Outcome, TestResult, log
+from .core import (
+    Asset,
+    DandisetStatus,
+    Outcome,
+    TestResult,
+    TestStatus,
+    UntestedAsset,
+    log,
+)
 from .tests import TESTFUNCS, TESTS
 
 
@@ -44,7 +52,7 @@ class Untested:
     dandiset_id: str
     asset: Asset
 
-    async def run(self) -> UntestedDetails:
+    async def run(self) -> UntestedAsset:
         size = getsize(self.asset.filepath)
         r = await anyio.run_process(["file", "--brief", "-L", str(self.asset.filepath)])
         file_type = r.stdout.decode("utf-8").strip()
@@ -59,58 +67,52 @@ class Untested:
             size,
             mime_type,
         )
-        return UntestedDetails(
-            asset=self.asset, size=size, file_type=file_type, mime_type=mime_type
+        return UntestedAsset(
+            asset=self.asset.asset_path,
+            size=size,
+            file_type=file_type,
+            mime_type=mime_type,
         )
-
-
-@dataclass
-class UntestedDetails:
-    asset: Asset
-    size: int
-    file_type: str
-    mime_type: str
 
 
 @dataclass
 class HealthStatus:
     backup_root: anyio.Path
     reports_root: anyio.Path
+    dandisets: tuple[str, ...]
+    dandiset_jobs: int
     versions: dict[str, str] = field(default_factory=get_package_versions)
 
-    async def run(self, dandisets: Sequence[str], dandiset_jobs: int) -> None:
-        async def dowork(rec: MemoryObjectReceiveStream[Dandiset]) -> None:
-            async with rec:
-                async for dandiset in rec:
-                    log.info("Processing Dandiset %s", dandiset.identifier)
-                    report = await dandiset.test_assets()
-                    await report.dump(
-                        self.reports_root / "results" / dandiset.identifier,
-                        self.versions,
-                    )
+    async def run_all(self) -> None:
+        async def dowork(dandiset: Dandiset) -> None:
+            report = await dandiset.test_all_assets()
+            await report.dump(
+                self.reports_root / "results" / dandiset.identifier,
+                self.versions,
+            )
 
-        async with anyio.create_task_group() as tg:
-            sender, receiver = anyio.create_memory_object_stream(math.inf)
-            async with receiver:
-                for _ in range(dandiset_jobs):
-                    tg.start_soon(dowork, receiver.clone())
-            async with sender:
-                if dandisets:
-                    for did in dandisets:
-                        log.info("Scanning Dandiset %s", did)
-                        await sender.send(await self.get_dandiset(did))
-                else:
-                    async for ds in self.aiterdandisets():
-                        log.info("Found Dandiset %s", ds.identifier)
-                        await sender.send(ds)
+        await pool_tasks(dowork, self.aiterdandisets(), self.dandiset_jobs)
 
-    async def aiterdandisets(self) -> AsyncIterator[Dandiset]:
-        async for p in self.backup_root.iterdir():
-            if re.fullmatch(r"\d{6,}", p.name) and await p.is_dir():
-                yield await Dandiset.for_path(p)
+    async def run_random_assets(self) -> None:
+        async def dowork(dandiset: Dandiset) -> None:
+            report = await dandiset.test_random_asset()
+            if report is not None:
+                await report.dump(
+                    self.reports_root / "results" / dandiset.identifier,
+                    self.versions,
+                )
 
-    async def get_dandiset(self, identifier: str) -> Dandiset:
-        return await Dandiset.for_path(self.backup_root / identifier)
+        await pool_tasks(dowork, self.aiterdandisets(), self.dandiset_jobs)
+
+    async def aiterdandisets(self) -> AsyncGenerator[Dandiset, None]:
+        if self.dandisets:
+            for did in self.dandisets:
+                yield await Dandiset.for_path(self.backup_root / did)
+        else:
+            async for p in self.backup_root.iterdir():
+                if re.fullmatch(r"\d{6,}", p.name) and await p.is_dir():
+                    log.info("Found Dandiset %s", p.name)
+                    yield await Dandiset.for_path(p)
 
 
 @dataclass
@@ -126,42 +128,53 @@ class Dandiset:
             identifier=path.name, path=path, commit=r.stdout.decode("utf-8").strip()
         )
 
-    async def test_assets(self) -> DandisetReport:
+    async def test_all_assets(self) -> DandisetReport:
+        log.info("Processing Dandiset %s", self.identifier)
         report = DandisetReport(identifier=self.identifier, commit=self.commit)
 
-        async def dowork(rec: MemoryObjectReceiveStream[TestCase | Untested]) -> None:
-            async with rec:
-                async for job in rec:
-                    res = await job.run()
-                    if isinstance(res, TestResult):
-                        report.register_test_result(res)
-                    else:
-                        assert isinstance(res, UntestedDetails)
-                        report.register_untested(res)
+        async def dowork(job: TestCase | Untested) -> None:
+            res = await job.run()
+            if isinstance(res, TestResult):
+                report.register_test_result(res)
+            else:
+                assert isinstance(res, UntestedAsset)
+                report.register_untested(res)
 
-        async with anyio.create_task_group() as tg:
-            sender, receiver = anyio.create_memory_object_stream(math.inf)
-            async with receiver:
-                for _ in range(WORKERS_PER_DANDISET):
-                    tg.start_soon(dowork, receiver.clone())
-            async with sender:
-                async for asset in self.aiterassets():
-                    log.info(
-                        "Dandiset %s: found asset %s", self.identifier, asset.asset_path
-                    )
-                    report.nassets += 1
-                    if asset.is_nwb():
-                        for t in TESTFUNCS:
-                            await sender.send(
-                                TestCase(
-                                    asset=asset, testfunc=t, dandiset_id=self.identifier
-                                )
-                            )
-                    else:
-                        await sender.send(
-                            Untested(asset=asset, dandiset_id=self.identifier)
+        async def aiterassets() -> AsyncGenerator[TestCase | Untested, None]:
+            async for asset in self.aiterassets():
+                log.info(
+                    "Dandiset %s: found asset %s", self.identifier, asset.asset_path
+                )
+                report.nassets += 1
+                if asset.is_nwb():
+                    for t in TESTFUNCS:
+                        yield TestCase(
+                            asset=asset, testfunc=t, dandiset_id=self.identifier
                         )
+                else:
+                    yield Untested(asset=asset, dandiset_id=self.identifier)
+
+        await pool_tasks(dowork, aiterassets(), WORKERS_PER_DANDISET)
         report.finished()
+        return report
+
+    async def test_random_asset(self) -> Optional[AssetReport]:
+        log.info("Processing Dandiset %s", self.identifier)
+        all_nwbs = [asset async for asset in self.aiterassets() if asset.is_nwb()]
+        if not all_nwbs:
+            log.info("Dandiset %s: no NWB assets", self.identifier)
+            return None
+        asset = choice(all_nwbs)
+        report = AssetReport(dandiset=self.identifier, dandiset_version=self.commit)
+
+        async def dowork(job: TestCase) -> None:
+            report.register_test_result(await job.run())
+
+        async def aiterjobs() -> AsyncGenerator[TestCase, None]:
+            for t in TESTFUNCS:
+                yield TestCase(asset=asset, testfunc=t, dandiset_id=self.identifier)
+
+        await pool_tasks(dowork, aiterjobs(), WORKERS_PER_DANDISET)
         return report
 
     async def aiterassets(self) -> AsyncIterator[Asset]:
@@ -199,56 +212,47 @@ class DandisetReport:
     tests: dict[str, TestReport] = field(
         default_factory=lambda: defaultdict(TestReport)
     )
-    untested: list[UntestedDetails] = field(default_factory=list)
+    untested: list[UntestedAsset] = field(default_factory=list)
     started: datetime = field(default_factory=lambda: datetime.now().astimezone())
     ended: Optional[datetime] = None
 
     def register_test_result(self, r: TestResult) -> None:
         self.tests[r.testname].by_outcome[r.outcome].append(r)
 
-    def register_untested(self, d: UntestedDetails) -> None:
+    def register_untested(self, d: UntestedAsset) -> None:
         self.untested.append(d)
 
     def finished(self) -> None:
         self.ended = datetime.now().astimezone()
 
-    async def dump(self, reportdir: anyio.Path, versions: dict[str, str]) -> None:
+    def as_status(self, versions: dict[str, str]) -> DandisetStatus:
         assert self.ended is not None
-        status = {
-            "last_run": self.started,
-            "last_run_ended": self.ended,
-            "last_run_duration": (self.ended - self.started).total_seconds(),
-            "dandiset_version": self.commit,
-            "nassets": self.nassets,
-            "versions": versions,
-            "tests": [
-                {
-                    "name": name,
-                    "assets_ok": sorted(
-                        r.asset.asset_path for r in self.tests[name].passed
+        return DandisetStatus(
+            dandiset=self.identifier,
+            dandiset_version=self.commit,
+            last_run=self.started,
+            last_run_ended=self.ended,
+            last_run_duration=(self.ended - self.started).total_seconds(),
+            nassets=self.nassets,
+            versions=versions,
+            tests=[
+                TestStatus(
+                    name=name,
+                    assets_ok=sorted(r.asset_path for r in self.tests[name].passed),
+                    assets_nok=sorted(r.asset_path for r in self.tests[name].failed),
+                    assets_timeout=sorted(
+                        r.asset_path for r in self.tests[name].timedout
                     ),
-                    "assets_nok": sorted(
-                        r.asset.asset_path for r in self.tests[name].failed
-                    ),
-                    "assets_timeout": sorted(
-                        r.asset.asset_path for r in self.tests[name].timedout
-                    ),
-                }
+                )
                 for name in TESTS.keys()
                 if name in self.tests
             ],
-            "untested": [
-                {
-                    "asset": d.asset.asset_path,
-                    "size": d.size,
-                    "file_type": d.file_type,
-                    "mime_type": d.mime_type,
-                }
-                for d in self.untested
-            ],
-        }
+            untested=self.untested,
+        )
+
+    async def dump(self, reportdir: anyio.Path, versions: dict[str, str]) -> None:
         await reportdir.mkdir(parents=True, exist_ok=True)
-        await (reportdir / "status.yaml").write_text(yaml.dump(status))
+        self.as_status(versions).to_file(Path(reportdir) / "status.yaml")
         for testname, report in self.tests.items():
             if report.failed:
                 async with await (
@@ -258,7 +262,7 @@ class DandisetReport:
                     for r in report.failed:
                         assert r.output is not None
                         await fp.write(
-                            f"Asset: {r.asset.asset_path}\nOutput:\n"
+                            f"Asset: {r.asset_path}\nOutput:\n"
                             + textwrap.indent(r.output, " " * 4)
                             + "\n"
                         )
@@ -281,3 +285,47 @@ class TestReport:
     @property
     def timedout(self) -> list[TestResult]:
         return self.by_outcome[Outcome.TIMEOUT]
+
+
+@dataclass
+class AssetReport:
+    dandiset: str
+    dandiset_version: str
+    results: list[TestResult] = field(default_factory=list)
+    started: datetime = field(default_factory=lambda: datetime.now().astimezone())
+
+    def register_test_result(self, r: TestResult) -> None:
+        self.results.append(r)
+
+    async def dump(self, reportdir: anyio.Path, versions: dict[str, str]) -> None:
+        await reportdir.mkdir(parents=True, exist_ok=True)
+        statusfile = Path(reportdir) / "status.yaml"
+        try:
+            status = DandisetStatus.from_file(self.dandiset, statusfile)
+        except FileNotFoundError:
+            status = DandisetStatus(
+                dandiset=self.dandiset,
+                dandiset_version=self.dandiset_version,
+                tests=[
+                    TestStatus(
+                        name=testname, assets_ok=[], assets_nok=[], assets_timeout=[]
+                    )
+                    for testname in TESTS
+                ],
+                versions=versions,
+            )
+        for r in self.results:
+            status.update_asset(r, versions)
+        status.to_file(statusfile)
+        for r in self.results:
+            if r.outcome is Outcome.FAIL:
+                async with await (
+                    reportdir
+                    / f"{self.started:%Y.%m.%d.%H.%M.%S}_{r.testname}_errors.log"
+                ).open("a", encoding="utf-8", errors="surrogateescape") as fp:
+                    assert r.output is not None
+                    await fp.write(
+                        f"Asset: {r.asset_path}\nOutput:\n"
+                        + textwrap.indent(r.output, " " * 4)
+                        + "\n"
+                    )

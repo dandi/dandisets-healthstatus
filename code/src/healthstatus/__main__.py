@@ -15,8 +15,7 @@ import click
 import requests
 from .checker import HealthStatus
 from .config import MATNWB_INSTALL_DIR
-from .core import Asset, Outcome, log
-from .reporter import DandisetStatus, TestSummary
+from .core import Asset, DandisetStatus, Outcome, TestSummary, log
 from .tests import TESTS
 
 
@@ -33,12 +32,6 @@ def main() -> None:
     required=True,
 )
 @click.option(
-    "-m",
-    "--mount-point",
-    type=click.Path(file_okay=False, exists=True, path_type=anyio.Path),
-    required=True,
-)
-@click.option(
     "-J",
     "--dandiset-jobs",
     type=int,
@@ -46,12 +39,25 @@ def main() -> None:
     help="Number of Dandisets to process at once",
     show_default=True,
 )
+@click.option(
+    "-m",
+    "--mount-point",
+    type=click.Path(file_okay=False, exists=True, path_type=anyio.Path),
+    required=True,
+)
+@click.option(
+    "--mode",
+    type=click.Choice(["all", "random-asset"]),
+    default="all",
+    show_default=True,
+)
 @click.argument("dandisets", nargs=-1)
 def check(
     dataset_path: anyio.Path,
     mount_point: anyio.Path,
     dandiset_jobs: int,
-    dandisets: tuple[str],
+    dandisets: tuple[str, ...],
+    mode: str,
 ) -> None:
     logging.basicConfig(
         format="%(asctime)s [%(levelname)-8s] %(message)s",
@@ -81,6 +87,8 @@ def check(
     hs = HealthStatus(
         backup_root=mount_point,
         reports_root=anyio.Path(os.getcwd()),
+        dandisets=dandisets,
+        dandiset_jobs=dandiset_jobs,
     )
     hs.versions["matnwb"] = matnwb_version
     with open("fuse.log", "wb") as fp:
@@ -99,7 +107,12 @@ def check(
         ) as p:
             sleep(3)
             try:
-                anyio.run(hs.run, dandisets, dandiset_jobs)
+                if mode == "all":
+                    anyio.run(hs.run_all)
+                elif mode == "random-asset":
+                    anyio.run(hs.run_random_assets)
+                else:
+                    raise AssertionError(f"Unexpected mode: {mode!r}")
             finally:
                 p.send_signal(SIGINT)
 
@@ -146,7 +159,7 @@ def report() -> None:
         print(file=fp)
         print("| Dandiset | " + " | ".join(TESTS.keys()) + " | Untested |", file=fp)
         print("| --- | " + " | ".join("---" for _ in TESTS) + " | --- |", file=fp)
-        for s in sorted(all_statuses, key=attrgetter("identifier")):
+        for s in sorted(all_statuses, key=attrgetter("dandiset")):
             print(s.as_row(), file=fp)
 
 
