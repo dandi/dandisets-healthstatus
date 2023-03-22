@@ -45,11 +45,11 @@ class VersionedPath(BaseModel):
 
 
 class TestStatus(BaseModel):
-    assets_nok: Sequence[Union[str, VersionedPath]]
+    assets_nok: Sequence[Union[str, VersionedPath]] = Field(default_factory=list)
     assets_nok_lineno: Optional[int] = Field(default=None, exclude=True)
-    assets_ok: Sequence[Union[str, VersionedPath]]
+    assets_ok: Sequence[Union[str, VersionedPath]] = Field(default_factory=list)
     assets_ok_lineno: Optional[int] = Field(default=None, exclude=True)
-    assets_timeout: Sequence[Union[str, VersionedPath]]
+    assets_timeout: Sequence[Union[str, VersionedPath]] = Field(default_factory=list)
     assets_timeout_lineno: Optional[int] = Field(default=None, exclude=True)
     name: str
 
@@ -146,12 +146,7 @@ class DandisetStatus(BaseModel):
         try:
             t = next(t for t in self.tests if t.name == res.testname)
         except StopIteration:
-            t = TestStatus(
-                assets_nok=[],
-                assets_ok=[],
-                assets_timeout=[],
-                name=res.testname,
-            )
+            t = TestStatus(name=res.testname)
             self.tests.append(t)
         if versions == self.versions:
             vdict = None
