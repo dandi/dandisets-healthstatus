@@ -153,8 +153,21 @@ class DandisetStatus(BaseModel):
         else:
             vdict = versions
         t.update_asset(res.asset_path, res.outcome, vdict)
-        if vdict is not None and all(
-            getversions(a) == versions
+        if vdict is not None:
+            self.prune_versions(versions)
+
+    def retain(self, asset_paths: set[str], current_versions: dict[str, str]) -> None:
+        for t in self.tests:
+            t.assets_ok = [a for a in t.assets_ok if getpath(a) in asset_paths]
+            t.assets_nok = [a for a in t.assets_nok if getpath(a) in asset_paths]
+            t.assets_timeout = [
+                a for a in t.assets_timeout if getpath(a) in asset_paths
+            ]
+        self.prune_versions(current_versions)
+
+    def prune_versions(self, current_versions: dict[str, str]) -> None:
+        if all(
+            getversions(a) == current_versions
             for t in self.tests
             for a in [*t.assets_ok, *t.assets_nok, *t.assets_timeout]
         ):
@@ -162,7 +175,7 @@ class DandisetStatus(BaseModel):
                 t.assets_ok = [getpath(a) for a in t.assets_ok]
                 t.assets_nok = [getpath(a) for a in t.assets_nok]
                 t.assets_timeout = [getpath(a) for a in t.assets_timeout]
-            self.versions = versions
+            self.versions = current_versions
 
     def test_counts(self, test_name: str) -> tuple[int, int, int]:
         try:

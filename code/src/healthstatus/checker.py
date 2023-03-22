@@ -100,7 +100,7 @@ class HealthStatus:
         async def dowork(dandiset: Dandiset) -> None:
             report = await tester(dandiset)
             if report is not None:
-                report.dump()
+                await report.dump()
 
         await pool_tasks(dowork, self.aiterdandisets(), self.dandiset_jobs)
 
@@ -337,7 +337,7 @@ class AssetReport:
     def register_test_result(self, r: TestResult) -> None:
         self.results.append(r)
 
-    def dump(self) -> None:
+    async def dump(self) -> None:
         try:
             status = self.dandiset.load_status()
         except FileNotFoundError:
@@ -349,6 +349,8 @@ class AssetReport:
             )
         for r in self.results:
             status.update_asset(r, self.dandiset.versions)
+        asset_paths = {asset.asset_path async for asset in self.dandiset.aiterassets()}
+        status.retain(asset_paths, self.dandiset.versions)
         self.dandiset.dump_status(status)
         for r in self.results:
             if r.outcome is Outcome.FAIL:
