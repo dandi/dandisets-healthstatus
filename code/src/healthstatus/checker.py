@@ -78,7 +78,7 @@ class Untested:
 @dataclass
 class HealthStatus:
     backup_root: anyio.Path
-    reports_root: anyio.Path
+    reports_root: Path
     dandisets: tuple[str, ...]
     dandiset_jobs: int
     versions: dict[str, str] = field(default_factory=get_package_versions)
@@ -86,33 +86,40 @@ class HealthStatus:
     async def run_all(self) -> None:
         async def dowork(dandiset: Dandiset) -> None:
             report = await dandiset.test_all_assets()
-            await report.dump(
-                self.reports_root / "results" / dandiset.identifier,
-                self.versions,
-            )
+            report.dump(self.versions)
 
         await pool_tasks(dowork, self.aiterdandisets(), self.dandiset_jobs)
 
-    async def run_random_assets(self) -> None:
+    async def run_random_assets(self, mode: str) -> None:
+        if mode == "random-asset":
+
+            async def tester(dandiset: Dandiset) -> Optional[AssetReport]:
+                return await dandiset.test_random_asset()
+
+        elif mode == "random-outdated-asset-first":
+
+            async def tester(dandiset: Dandiset) -> Optional[AssetReport]:
+                return await dandiset.test_random_outdated_asset_first(self.versions)
+
+        else:
+            raise ValueError(f"Invalid random asset mode: {mode!r}")
+
         async def dowork(dandiset: Dandiset) -> None:
-            report = await dandiset.test_random_asset()
+            report = await tester(dandiset)
             if report is not None:
-                await report.dump(
-                    self.reports_root / "results" / dandiset.identifier,
-                    self.versions,
-                )
+                report.dump(self.versions)
 
         await pool_tasks(dowork, self.aiterdandisets(), self.dandiset_jobs)
 
     async def aiterdandisets(self) -> AsyncGenerator[Dandiset, None]:
         if self.dandisets:
             for did in self.dandisets:
-                yield await Dandiset.for_path(self.backup_root / did)
+                yield await Dandiset.for_path(self.backup_root / did, self.reports_root)
         else:
             async for p in self.backup_root.iterdir():
                 if re.fullmatch(r"\d{6,}", p.name) and await p.is_dir():
                     log.info("Found Dandiset %s", p.name)
-                    yield await Dandiset.for_path(p)
+                    yield await Dandiset.for_path(p, self.reports_root)
 
 
 @dataclass
@@ -120,17 +127,36 @@ class Dandiset:
     identifier: str
     path: anyio.Path
     commit: str
+    reports_root: Path
 
     @classmethod
-    async def for_path(cls, path: anyio.Path) -> Dandiset:
+    async def for_path(cls, path: anyio.Path, reports_root: Path) -> Dandiset:
         r = await anyio.run_process(["git", "show", "-s", "--format=%H"], cwd=str(path))
         return cls(
-            identifier=path.name, path=path, commit=r.stdout.decode("utf-8").strip()
+            identifier=path.name,
+            path=path,
+            commit=r.stdout.decode("utf-8").strip(),
+            reports_root=reports_root,
         )
+
+    @property
+    def reportdir(self) -> Path:
+        return self.reports_root / "results" / self.identifier
+
+    @property
+    def statusfile(self) -> Path:
+        return self.reportdir / "status.yaml"
+
+    def load_status(self) -> DandisetStatus:
+        return DandisetStatus.from_file(self.identifier, self.statusfile)
+
+    def dump_status(self, status: DandisetStatus) -> None:
+        self.statusfile.parent.mkdir(parents=True, exist_ok=True)
+        status.to_file(self.statusfile)
 
     async def test_all_assets(self) -> DandisetReport:
         log.info("Processing Dandiset %s", self.identifier)
-        report = DandisetReport(identifier=self.identifier, commit=self.commit)
+        report = DandisetReport(dandiset=self)
 
         async def dowork(job: TestCase | Untested) -> None:
             res = await job.run()
@@ -159,13 +185,38 @@ class Dandiset:
         return report
 
     async def test_random_asset(self) -> Optional[AssetReport]:
-        log.info("Processing Dandiset %s", self.identifier)
+        log.info("Scanning Dandiset %s", self.identifier)
         all_nwbs = [asset async for asset in self.aiterassets() if asset.is_nwb()]
         if not all_nwbs:
             log.info("Dandiset %s: no NWB assets", self.identifier)
             return None
-        asset = choice(all_nwbs)
-        report = AssetReport(dandiset=self.identifier, dandiset_version=self.commit)
+        return await self.test_one_asset(choice(all_nwbs))
+
+    async def test_random_outdated_asset_first(
+        self, versions: dict[str, str]
+    ) -> Optional[AssetReport]:
+        try:
+            status = self.load_status()
+        except FileNotFoundError:
+            asset_paths = set()
+        else:
+            asset_paths = {
+                path for t in status.tests for path in t.outdated_assets(versions)
+            }
+        if asset_paths:
+            p = choice(list(asset_paths))
+            asset = Asset(filepath=self.path / p, asset_path=p)
+            return await self.test_one_asset(asset)
+        else:
+            log.info(
+                "Dandiset %s: no outdated assets in status.yaml; selecting from"
+                " all assets on disk",
+                self.identifier,
+            )
+            return await self.test_random_asset()
+
+    async def test_one_asset(self, asset: Asset) -> AssetReport:
+        report = AssetReport(dandiset=self)
 
         async def dowork(job: TestCase) -> None:
             report.register_test_result(await job.run())
@@ -206,8 +257,7 @@ class Dandiset:
 
 @dataclass
 class DandisetReport:
-    identifier: str
-    commit: str
+    dandiset: Dandiset
     nassets: int = 0
     tests: dict[str, TestReport] = field(
         default_factory=lambda: defaultdict(TestReport)
@@ -228,8 +278,8 @@ class DandisetReport:
     def as_status(self, versions: dict[str, str]) -> DandisetStatus:
         assert self.ended is not None
         return DandisetStatus(
-            dandiset=self.identifier,
-            dandiset_version=self.commit,
+            dandiset=self.dandiset.identifier,
+            dandiset_version=self.dandiset.commit,
             last_run=self.started,
             last_run_ended=self.ended,
             last_run_duration=(self.ended - self.started).total_seconds(),
@@ -250,21 +300,20 @@ class DandisetReport:
             untested=self.untested,
         )
 
-    async def dump(self, reportdir: anyio.Path, versions: dict[str, str]) -> None:
-        await reportdir.mkdir(parents=True, exist_ok=True)
-        self.as_status(versions).to_file(Path(reportdir) / "status.yaml")
+    def dump(self, versions: dict[str, str]) -> None:
+        self.dandiset.dump_status(self.as_status(versions))
         for testname, report in self.tests.items():
             if report.failed:
-                async with await (
-                    reportdir
+                with (
+                    self.dandiset.reportdir
                     / f"{self.started:%Y.%m.%d.%H.%M.%S}_{testname}_errors.log"
                 ).open("w", encoding="utf-8", errors="surrogateescape") as fp:
                     for r in report.failed:
                         assert r.output is not None
-                        await fp.write(
+                        print(
                             f"Asset: {r.asset_path}\nOutput:\n"
-                            + textwrap.indent(r.output, " " * 4)
-                            + "\n"
+                            + textwrap.indent(r.output, " " * 4),
+                            file=fp,
                         )
 
 
@@ -289,23 +338,20 @@ class TestReport:
 
 @dataclass
 class AssetReport:
-    dandiset: str
-    dandiset_version: str
+    dandiset: Dandiset
     results: list[TestResult] = field(default_factory=list)
     started: datetime = field(default_factory=lambda: datetime.now().astimezone())
 
     def register_test_result(self, r: TestResult) -> None:
         self.results.append(r)
 
-    async def dump(self, reportdir: anyio.Path, versions: dict[str, str]) -> None:
-        await reportdir.mkdir(parents=True, exist_ok=True)
-        statusfile = Path(reportdir) / "status.yaml"
+    def dump(self, versions: dict[str, str]) -> None:
         try:
-            status = DandisetStatus.from_file(self.dandiset, statusfile)
+            status = self.dandiset.load_status()
         except FileNotFoundError:
             status = DandisetStatus(
-                dandiset=self.dandiset,
-                dandiset_version=self.dandiset_version,
+                dandiset=self.dandiset.identifier,
+                dandiset_version=self.dandiset.commit,
                 tests=[
                     TestStatus(
                         name=testname, assets_ok=[], assets_nok=[], assets_timeout=[]
@@ -316,16 +362,16 @@ class AssetReport:
             )
         for r in self.results:
             status.update_asset(r, versions)
-        status.to_file(statusfile)
+        self.dandiset.dump_status(status)
         for r in self.results:
             if r.outcome is Outcome.FAIL:
-                async with await (
-                    reportdir
+                with (
+                    self.dandiset.reportdir
                     / f"{self.started:%Y.%m.%d.%H.%M.%S}_{r.testname}_errors.log"
                 ).open("a", encoding="utf-8", errors="surrogateescape") as fp:
                     assert r.output is not None
-                    await fp.write(
+                    print(
                         f"Asset: {r.asset_path}\nOutput:\n"
-                        + textwrap.indent(r.output, " " * 4)
-                        + "\n"
+                        + textwrap.indent(r.output, " " * 4),
+                        file=fp,
                     )

@@ -1,7 +1,6 @@
 from __future__ import annotations
 import logging
 from operator import attrgetter
-import os
 from pathlib import Path
 import re
 from shutil import rmtree
@@ -21,7 +20,11 @@ from .tests import TESTS
 
 @click.group()
 def main() -> None:
-    pass
+    logging.basicConfig(
+        format="%(asctime)s [%(levelname)-8s] %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+        level=logging.DEBUG,
+    )
 
 
 @main.command()
@@ -47,7 +50,7 @@ def main() -> None:
 )
 @click.option(
     "--mode",
-    type=click.Choice(["all", "random-asset"]),
+    type=click.Choice(["all", "random-asset", "random-outdated-asset-first"]),
     default="all",
     show_default=True,
 )
@@ -59,11 +62,6 @@ def check(
     dandisets: tuple[str, ...],
     mode: str,
 ) -> None:
-    logging.basicConfig(
-        format="%(asctime)s [%(levelname)-8s] %(message)s",
-        datefmt="%Y-%m-%d %H:%M:%S",
-        level=logging.DEBUG,
-    )
     log.info("Updating Dandisets dataset ...")
     subprocess.run(
         [
@@ -86,7 +84,7 @@ def check(
     matnwb_version = install_matnwb()
     hs = HealthStatus(
         backup_root=mount_point,
-        reports_root=anyio.Path(os.getcwd()),
+        reports_root=Path.cwd(),
         dandisets=dandisets,
         dandiset_jobs=dandiset_jobs,
     )
@@ -109,8 +107,8 @@ def check(
             try:
                 if mode == "all":
                     anyio.run(hs.run_all)
-                elif mode == "random-asset":
-                    anyio.run(hs.run_random_assets)
+                elif mode in ("random-asset", "random-outdated-asset-first"):
+                    anyio.run(hs.run_random_assets, mode)
                 else:
                     raise AssertionError(f"Unexpected mode: {mode!r}")
             finally:
@@ -170,12 +168,7 @@ def report() -> None:
     nargs=-1,
     type=click.Path(exists=True, dir_okay=False, path_type=anyio.Path),
 )
-def test_files(testname: str, files: tuple[anyio.Path]) -> None:
-    logging.basicConfig(
-        format="%(asctime)s [%(levelname)-8s] %(message)s",
-        datefmt="%Y-%m-%d %H:%M:%S",
-        level=logging.DEBUG,
-    )
+def test_files(testname: str, files: tuple[anyio.Path, ...]) -> None:
     if "matnwb" in testname.lower():
         install_matnwb()
     testfunc = TESTS[testname]

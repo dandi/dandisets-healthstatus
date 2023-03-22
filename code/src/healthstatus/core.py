@@ -64,6 +64,11 @@ class TestStatus(BaseModel):
         for asset in self.assets_timeout:
             yield (getpath(asset), Outcome.TIMEOUT)
 
+    def outdated_assets(self, current_versions: dict[str, str]) -> Iterator[str]:
+        for asset in [*self.assets_ok, *self.assets_nok, *self.assets_timeout]:
+            if getversions(asset) != current_versions:
+                yield getpath(asset)
+
     def update_asset(
         self, asset_path: str, outcome: Outcome, versions: Optional[dict[str, str]]
     ) -> None:
