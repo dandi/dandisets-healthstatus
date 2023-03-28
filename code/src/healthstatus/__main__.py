@@ -3,19 +3,18 @@ import logging
 from operator import attrgetter
 from pathlib import Path
 import re
-from shutil import rmtree
 from signal import SIGINT
 import subprocess
 import sys
-import tempfile
 from time import sleep
+from typing import Optional
 import anyio
 import click
-import requests
-from .checker import HealthStatus
+from .checker import AssetReport, Dandiset, HealthStatus
 from .config import MATNWB_INSTALL_DIR
 from .core import Asset, DandisetStatus, Outcome, TestSummary, log
 from .tests import TESTS
+from .util import MatNWBInstaller, get_package_versions
 
 
 @click.group()
@@ -81,14 +80,15 @@ def check(
         ["datalad", "get", "-d", str(dataset_path), "-r", "-R1", "-J5", "-n"],
         check=True,
     )
-    matnwb_version = install_matnwb()
+    installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
+    installer.install(update=True)
     hs = HealthStatus(
         backup_root=mount_point,
         reports_root=Path.cwd(),
         dandisets=dandisets,
         dandiset_jobs=dandiset_jobs,
     )
-    hs.versions["matnwb"] = matnwb_version
+    hs.versions["matnwb"] = installer.get_version()
     with open("fuse.log", "wb") as fp:
         with subprocess.Popen(
             [
@@ -162,19 +162,41 @@ def report() -> None:
 
 
 @main.command()
+@click.option("--save-results", is_flag=True)
 @click.argument("testname", type=click.Choice(list(TESTS.keys())))
 @click.argument(
     "files",
     nargs=-1,
     type=click.Path(exists=True, dir_okay=False, path_type=anyio.Path),
 )
-def test_files(testname: str, files: tuple[anyio.Path, ...]) -> None:
+def test_files(
+    testname: str, files: tuple[anyio.Path, ...], save_results: bool
+) -> None:
+    versions = get_package_versions()
+    installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
     if "matnwb" in testname.lower():
-        install_matnwb()
+        installer.install(update=True)
+    else:
+        installer.download(update=False)
+    versions["matnwb"] = installer.get_version()
     testfunc = TESTS[testname]
     ok = True
+    dandiset_cache: dict[Path, tuple[Dandiset, set[str]]] = {}
     for f in files:
         asset = Asset(filepath=f, asset_path=str(f))
+        if save_results and (path := find_dandiset(Path(f))) is not None:
+            try:
+                dandiset, asset_paths = dandiset_cache[path]
+            except KeyError:
+                dandiset = Dandiset(
+                    path=anyio.Path(path), reports_root=Path.cwd(), versions=versions
+                )
+                asset_paths = anyio.run(dandiset.get_asset_paths)
+                dandiset_cache[path] = (dandiset, asset_paths)
+            report = AssetReport(dandiset=dandiset)
+        else:
+            report = None
+            asset_paths = None
         log.info("Testing %s ...", f)
         r = anyio.run(testfunc, asset)
         if r.output is not None:
@@ -182,53 +204,21 @@ def test_files(testname: str, files: tuple[anyio.Path, ...]) -> None:
         log.info("%s: %s", f, r.outcome.name)
         if r.outcome is not Outcome.PASS:
             ok = False
+        if save_results:
+            assert report is not None
+            assert asset_paths is not None
+            report.register_test_result(r)
+            report.dump(asset_paths)
     sys.exit(0 if ok else 1)
 
 
-def install_matnwb() -> str:
-    # Returns the matnwb version
-    if MATNWB_INSTALL_DIR.exists():
-        rmtree(MATNWB_INSTALL_DIR)
-    MATNWB_INSTALL_DIR.mkdir(parents=True)
-    with requests.Session() as s:
-        log.info("Fetching latest matnwb version ...")
-        r = s.get(
-            "https://api.github.com/repos/NeurodataWithoutBorders/matnwb/releases/latest"
-        )
-        r.raise_for_status()
-        data = r.json()
-        version = data["tag_name"]
-        assert isinstance(version, str)
-        log.info("Found version %s", version)
-        with tempfile.NamedTemporaryFile() as fp:
-            with s.get(data["tarball_url"], stream=True) as r:
-                r.raise_for_status()
-                for chunk in r.iter_content(65535):
-                    fp.write(chunk)
-            fp.flush()
-            subprocess.run(
-                [
-                    "tar",
-                    "zxf",
-                    fp.name,
-                    "-C",
-                    str(MATNWB_INSTALL_DIR),
-                    "--strip-components=1",
-                ],
-                check=True,
-            )
-    subprocess.run(
-        [
-            "matlab",
-            "-nodesktop",
-            "-sd",
-            str(MATNWB_INSTALL_DIR),
-            "-batch",
-            "generateCore()",
-        ],
-        check=True,
-    )
-    return version
+def find_dandiset(asset: Path) -> Optional[Path]:
+    if not asset.is_absolute():
+        asset = asset.absolute()
+    for p in asset.parents:
+        if (p / "dandiset.yaml").exists():
+            return p
+    return None
 
 
 if __name__ == "__main__":

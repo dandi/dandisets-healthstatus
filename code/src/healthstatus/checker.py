@@ -3,16 +3,16 @@ from collections import defaultdict, deque
 from collections.abc import AsyncGenerator, AsyncIterator, Awaitable, Callable
 from dataclasses import dataclass, field
 from datetime import datetime
-from importlib.metadata import version
 from os.path import getsize
 from pathlib import Path
 from random import choice
 import re
+import subprocess
 import textwrap
 from typing import Optional
 import anyio
 from .aioutil import pool_tasks
-from .config import PACKAGES_TO_VERSION, WORKERS_PER_DANDISET
+from .config import WORKERS_PER_DANDISET
 from .core import (
     Asset,
     DandisetStatus,
@@ -23,10 +23,7 @@ from .core import (
     log,
 )
 from .tests import TESTFUNCS, TESTS
-
-
-def get_package_versions() -> dict[str, str]:
-    return {pkg: version(pkg) for pkg in PACKAGES_TO_VERSION}
+from .util import get_package_versions
 
 
 @dataclass
@@ -100,7 +97,7 @@ class HealthStatus:
         async def dowork(dandiset: Dandiset) -> None:
             report = await tester(dandiset)
             if report is not None:
-                await report.dump()
+                report.dump(await dandiset.get_asset_paths())
 
         await pool_tasks(dowork, self.aiterdandisets(), self.dandiset_jobs)
 
@@ -115,23 +112,31 @@ class HealthStatus:
                     yield await self.get_dandiset(p)
 
     async def get_dandiset(self, path: anyio.Path) -> Dandiset:
-        r = await anyio.run_process(["git", "show", "-s", "--format=%H"], cwd=str(path))
         return Dandiset(
-            identifier=path.name,
-            path=path,
-            commit=r.stdout.decode("utf-8").strip(),
-            reports_root=self.reports_root,
-            versions=self.versions,
+            path=path, reports_root=self.reports_root, versions=self.versions
         )
 
 
 @dataclass
 class Dandiset:
-    identifier: str
     path: anyio.Path
-    commit: str
+    commit: str = field(init=False)
     reports_root: Path
     versions: dict[str, str]
+
+    def __post_init__(self) -> None:
+        r = subprocess.run(
+            ["git", "show", "-s", "--format=%H"],
+            cwd=str(self.path),
+            check=True,
+            stdout=subprocess.PIPE,
+            text=True,
+        )
+        self.commit = r.stdout.strip()
+
+    @property
+    def identifier(self) -> str:
+        return self.path.name
 
     @property
     def reportdir(self) -> Path:
@@ -181,10 +186,11 @@ class Dandiset:
     async def test_random_asset(self) -> Optional[AssetReport]:
         log.info("Scanning Dandiset %s", self.identifier)
         all_nwbs = [asset async for asset in self.aiterassets() if asset.is_nwb()]
-        if not all_nwbs:
+        if all_nwbs:
+            return await self.test_one_asset(choice(all_nwbs))
+        else:
             log.info("Dandiset %s: no NWB assets", self.identifier)
             return None
-        return await self.test_one_asset(choice(all_nwbs))
 
     async def test_random_outdated_asset_first(self) -> Optional[AssetReport]:
         try:
@@ -245,6 +251,10 @@ class Dandiset:
                         dirs.append(p)
                 elif p.name != "dandiset.yaml":
                     yield mkasset(p)
+
+    async def get_asset_paths(self) -> set[str]:
+        log.info("Scanning Dandiset %s", self.identifier)
+        return {asset.asset_path async for asset in self.aiterassets()}
 
 
 @dataclass
@@ -337,7 +347,7 @@ class AssetReport:
     def register_test_result(self, r: TestResult) -> None:
         self.results.append(r)
 
-    async def dump(self) -> None:
+    def dump(self, asset_paths: set[str]) -> None:
         try:
             status = self.dandiset.load_status()
         except FileNotFoundError:
@@ -349,7 +359,6 @@ class AssetReport:
             )
         for r in self.results:
             status.update_asset(r, self.dandiset.versions)
-        asset_paths = {asset.asset_path async for asset in self.dandiset.aiterassets()}
         status.retain(asset_paths, self.dandiset.versions)
         self.dandiset.dump_status(status)
         for r in self.results:
