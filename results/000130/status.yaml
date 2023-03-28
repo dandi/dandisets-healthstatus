@@ -1,6 +1,8 @@
 dandiset_version: 2859e8c3ae9861060ff7e03e32697b677bda5a7f
-last_run: 2022-12-15 10:59:47.526056-05:00
-nassets: 3
+last_run: 2023-02-12 18:00:01.737875-05:00
+last_run_duration: 1541.681622
+last_run_ended: 2023-02-12 18:25:43.419497-05:00
+nassets: 2
 tests:
 - assets_nok: []
   assets_ok:
@@ -11,10 +13,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-Haydn/sub-Haydn_desc-test_ecephys.nwb
-  assets_timeout:
   - sub-Haydn/sub-Haydn_desc-train_ecephys.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
+untested: []
 versions:
-  hdmf: 3.4.7
-  matnwb: v2.5.0.0
+  hdmf: 3.5.1
+  matnwb: v2.6.0.0
   pynwb: 2.2.0

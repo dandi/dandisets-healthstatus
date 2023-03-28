@@ -1,9 +1,10 @@
 dandiset_version: 3a7bdad555af85b029a131bcdeda165dd55a918e
-last_run: 2022-12-15 10:59:47.526056-05:00
-nassets: 174
+last_run: 2023-02-02 16:56:50.303919-05:00
+last_run_duration: 239712.455996
+last_run_ended: 2023-02-05 11:32:02.759915-05:00
+nassets: 173
 tests:
-- assets_nok:
-  - sub-anm00322807/sub-anm00322807_ses-20170627T094257_ecephys+ogen.nwb
+- assets_nok: []
   assets_ok:
   - sub-anm00229327/sub-anm00229327_ses-20170627T093438_ecephys.nwb
   - sub-anm00229327/sub-anm00229327_ses-20170627T093442_ecephys.nwb
@@ -133,6 +134,7 @@ tests:
   - sub-anm00322807/sub-anm00322807_ses-20170627T094249_ecephys+ogen.nwb
   - sub-anm00322807/sub-anm00322807_ses-20170627T094251_ecephys+ogen.nwb
   - sub-anm00322807/sub-anm00322807_ses-20170627T094255_ecephys+ogen.nwb
+  - sub-anm00322807/sub-anm00322807_ses-20170627T094257_ecephys+ogen.nwb
   - sub-anm00322807/sub-anm00322807_ses-20170627T094303_ecephys+ogen.nwb
   - sub-anm00322807/sub-anm00322807_ses-20170627T094307_ecephys+ogen.nwb
   - sub-anm00322807/sub-anm00322807_ses-20170627T094308_ecephys+ogen.nwb
@@ -179,7 +181,8 @@ tests:
   - sub-anm324792/sub-anm324792_ses-20170520T193909_behavior+icephys+ogen.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
+- assets_nok: []
+  assets_ok:
   - sub-anm00229327/sub-anm00229327_ses-20170627T093438_ecephys.nwb
   - sub-anm00229327/sub-anm00229327_ses-20170627T093442_ecephys.nwb
   - sub-anm00229327/sub-anm00229327_ses-20170627T093445_ecephys.nwb
@@ -317,16 +320,13 @@ tests:
   - sub-anm00323634/sub-anm00323634_ses-20170627T094316_ecephys+ogen.nwb
   - sub-anm00323634/sub-anm00323634_ses-20170627T094318_ecephys+ogen.nwb
   - sub-anm00323634/sub-anm00323634_ses-20170627T094322_ecephys+ogen.nwb
-  - sub-anm322808/sub-anm322808_ses-20170520T192529_behavior+icephys+ogen.nwb
-  - sub-anm323951/sub-anm323951_ses-20170520T191036_behavior+icephys+ogen.nwb
-  - sub-anm324791/sub-anm324791_ses-20170520T192113_behavior+icephys+ogen.nwb
-  assets_ok:
   - sub-anm300476/sub-anm300476_ses-20170520T182859_behavior+icephys+ogen.nwb
   - sub-anm300476/sub-anm300476_ses-20170520T183518_behavior+icephys+ogen.nwb
   - sub-anm300476/sub-anm300476_ses-20170520T184255_behavior+icephys+ogen.nwb
   - sub-anm300476/sub-anm300476_ses-20170520T184357_behavior+icephys+ogen.nwb
   - sub-anm300476/sub-anm300476_ses-20170520T184445_behavior+icephys+ogen.nwb
   - sub-anm300476/sub-anm300476_ses-20170520T184727_behavior+icephys+ogen.nwb
+  - sub-anm322808/sub-anm322808_ses-20170520T192529_behavior+icephys+ogen.nwb
   - sub-anm322808/sub-anm322808_ses-20170520T192714_behavior+icephys+ogen.nwb
   - sub-anm322808/sub-anm322808_ses-20170520T192910_behavior+icephys+ogen.nwb
   - sub-anm322808/sub-anm322808_ses-20170520T193012_behavior+icephys+ogen.nwb
@@ -336,6 +336,7 @@ tests:
   - sub-anm323951/sub-anm323951_ses-20170520T185302_behavior+icephys+ogen.nwb
   - sub-anm323951/sub-anm323951_ses-20170520T185417_behavior+icephys+ogen.nwb
   - sub-anm323951/sub-anm323951_ses-20170520T190909_behavior+icephys+ogen.nwb
+  - sub-anm323951/sub-anm323951_ses-20170520T191036_behavior+icephys+ogen.nwb
   - sub-anm323952/sub-anm323952_ses-20170520T184934_behavior+icephys+ogen.nwb
   - sub-anm323952/sub-anm323952_ses-20170520T190713_behavior+icephys+ogen.nwb
   - sub-anm323952/sub-anm323952_ses-20170520T190810_behavior+icephys+ogen.nwb
@@ -349,6 +350,7 @@ tests:
   - sub-anm324791/sub-anm324791_ses-20170520T191415_behavior+icephys+ogen.nwb
   - sub-anm324791/sub-anm324791_ses-20170520T191500_behavior+icephys+ogen.nwb
   - sub-anm324791/sub-anm324791_ses-20170520T191805_behavior+icephys+ogen.nwb
+  - sub-anm324791/sub-anm324791_ses-20170520T192113_behavior+icephys+ogen.nwb
   - sub-anm324791/sub-anm324791_ses-20170520T192447_behavior+icephys+ogen.nwb
   - sub-anm324792/sub-anm324792_ses-20170520T193436_behavior+icephys+ogen.nwb
   - sub-anm324792/sub-anm324792_ses-20170520T193555_behavior+icephys+ogen.nwb
@@ -356,7 +358,8 @@ tests:
   - sub-anm324792/sub-anm324792_ses-20170520T193909_behavior+icephys+ogen.nwb
   assets_timeout: []
   name: matnwb_nwbRead
+untested: []
 versions:
-  hdmf: 3.4.7
-  matnwb: v2.5.0.0
+  hdmf: 3.5.1
+  matnwb: v2.6.0.0
   pynwb: 2.2.0

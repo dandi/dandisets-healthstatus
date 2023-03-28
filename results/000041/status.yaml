@@ -1,6 +1,8 @@
 dandiset_version: dded2347bcb4906c5abcad4f48eb08eab0821bd1
-last_run: 2022-12-15 10:59:47.526056-05:00
-nassets: 23
+last_run: 2023-02-07 16:24:38.421974-05:00
+last_run_duration: 56983.240457
+last_run_ended: 2023-02-08 08:14:21.662431-05:00
+nassets: 22
 tests:
 - assets_nok: []
   assets_ok:
@@ -28,11 +30,10 @@ tests:
   - sub-Templeton/sub-Templeton_ses-Templeton-032415_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-BWRat17/sub-BWRat17_ses-BWRat17-121912_ecephys.nwb
-  assets_ok: []
-  assets_timeout:
+- assets_nok: []
+  assets_ok:
   - sub-BWRat17/sub-BWRat17_ses-BWRat17-121712_ecephys.nwb
+  - sub-BWRat17/sub-BWRat17_ses-BWRat17-121912_ecephys.nwb
   - sub-BWRat18/sub-BWRat18_ses-BWRat18-020513_ecephys.nwb
   - sub-BWRat19/sub-BWRat19_ses-BWRat19-032413_ecephys.nwb
   - sub-BWRat19/sub-BWRat19_ses-BWRat19-032513_ecephys.nwb
@@ -43,8 +44,6 @@ tests:
   - sub-BWRat21/sub-BWRat21_ses-BWRat21-121813_ecephys.nwb
   - sub-Bogey/sub-Bogey_ses-Bogey-012615_ecephys.nwb
   - sub-Dino/sub-Dino_ses-Dino-061814_ecephys.nwb
-  - sub-Dino/sub-Dino_ses-Dino-061914_ecephys.nwb
-  - sub-Dino/sub-Dino_ses-Dino-062014_ecephys.nwb
   - sub-Dino/sub-Dino_ses-Dino-072114_ecephys.nwb
   - sub-Dino/sub-Dino_ses-Dino-072314_ecephys.nwb
   - sub-Dino/sub-Dino_ses-Dino-072414_ecephys.nwb
@@ -53,8 +52,12 @@ tests:
   - sub-Splinter/sub-Splinter_ses-Splinter-020515_ecephys.nwb
   - sub-Splinter/sub-Splinter_ses-Splinter-020915_ecephys.nwb
   - sub-Templeton/sub-Templeton_ses-Templeton-032415_ecephys.nwb
+  assets_timeout:
+  - sub-Dino/sub-Dino_ses-Dino-061914_ecephys.nwb
+  - sub-Dino/sub-Dino_ses-Dino-062014_ecephys.nwb
   name: matnwb_nwbRead
+untested: []
 versions:
-  hdmf: 3.4.7
-  matnwb: v2.5.0.0
+  hdmf: 3.5.1
+  matnwb: v2.6.0.0
   pynwb: 2.2.0

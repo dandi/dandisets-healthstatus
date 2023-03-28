@@ -1,6 +1,8 @@
 dandiset_version: b9f09e0944e11045ffbcf361ca793ccb6659492a
-last_run: 2022-12-15 10:59:47.526056-05:00
-nassets: 360
+last_run: 2023-02-09 03:07:34.939424-05:00
+last_run_duration: 178408.594275
+last_run_ended: 2023-02-11 04:41:03.533699-05:00
+nassets: 359
 tests:
 - assets_nok: []
   assets_ok:
@@ -365,13 +367,7 @@ tests:
   - sub-npJ5/sub-npJ5_ses-20190505_obj-1ti12l8_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-Carnation/sub-Carnation_ses-20190523_behavior.nwb
-  - sub-Daisy/sub-Daisy_ses-20190508_behavior.nwb
-  - sub-Daisy/sub-Daisy_ses-20190523_behavior.nwb
-  - sub-Dorian/sub-Dorian_ses-20191110_obj-6dlz2s_behavior.nwb
-  - sub-Dorian/sub-Dorian_ses-20191111_obj-1ezfuhs_behavior.nwb
-  - sub-Pinky/sub-Pinky_ses-20191105_obj-1jopius_behavior.nwb
+- assets_nok: []
   assets_ok:
   - sub-Azalea/sub-Azalea_ses-20190129_behavior.nwb
   - sub-Azalea/sub-Azalea_ses-20190309_behavior.nwb
@@ -400,6 +396,7 @@ tests:
   - sub-Camelia/sub-Camelia_ses-20190212_behavior.nwb
   - sub-Carnation/sub-Carnation_ses-20190513_behavior.nwb
   - sub-Carnation/sub-Carnation_ses-20190522_behavior.nwb
+  - sub-Carnation/sub-Carnation_ses-20190523_behavior.nwb
   - sub-Case/sub-Case_ses-20191109_obj-1aomdb1_behavior.nwb
   - sub-Case/sub-Case_ses-20191109_obj-1dpu7bd_behavior.nwb
   - sub-Case/sub-Case_ses-20191109_obj-1dv1ats_behavior.nwb
@@ -419,11 +416,13 @@ tests:
   - sub-Daisy/sub-Daisy_ses-20190501_behavior.nwb
   - sub-Daisy/sub-Daisy_ses-20190502_behavior.nwb
   - sub-Daisy/sub-Daisy_ses-20190506_behavior.nwb
+  - sub-Daisy/sub-Daisy_ses-20190508_behavior.nwb
   - sub-Daisy/sub-Daisy_ses-20190509_behavior.nwb
   - sub-Daisy/sub-Daisy_ses-20190510_behavior.nwb
   - sub-Daisy/sub-Daisy_ses-20190513_behavior.nwb
   - sub-Daisy/sub-Daisy_ses-20190520_behavior.nwb
   - sub-Daisy/sub-Daisy_ses-20190521_behavior.nwb
+  - sub-Daisy/sub-Daisy_ses-20190523_behavior.nwb
   - sub-Daisy/sub-Daisy_ses-20190607_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191109_obj-12dm2u_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191109_obj-16rr0l0_behavior.nwb
@@ -443,6 +442,7 @@ tests:
   - sub-Dorian/sub-Dorian_ses-20191110_obj-1tlodz7_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191110_obj-1uu082k_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191110_obj-1x4pq7u_behavior.nwb
+  - sub-Dorian/sub-Dorian_ses-20191110_obj-6dlz2s_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191110_obj-b2zojj_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191110_obj-dultb0_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191110_obj-eu13rc_behavior.nwb
@@ -452,6 +452,7 @@ tests:
   - sub-Dorian/sub-Dorian_ses-20191110_obj-uldp4f_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191110_obj-vacba1_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191111_obj-1e7otef_behavior.nwb
+  - sub-Dorian/sub-Dorian_ses-20191111_obj-1ezfuhs_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191111_obj-1uxws40_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191111_obj-jvrr1t_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191111_obj-tpxaw8_behavior.nwb
@@ -591,6 +592,7 @@ tests:
   - sub-Orchid/sub-Orchid_ses-20190521_behavior.nwb
   - sub-Pinky/sub-Pinky_ses-20191105_obj-179zicd_behavior.nwb
   - sub-Pinky/sub-Pinky_ses-20191105_obj-188dil4_behavior.nwb
+  - sub-Pinky/sub-Pinky_ses-20191105_obj-1jopius_behavior.nwb
   - sub-Pinky/sub-Pinky_ses-20191105_obj-1t01o0s_behavior.nwb
   - sub-Pinky/sub-Pinky_ses-20191105_obj-8wln54_behavior.nwb
   - sub-Pinky/sub-Pinky_ses-20191105_obj-zy8lxj_behavior.nwb
@@ -728,7 +730,8 @@ tests:
   - sub-npJ5/sub-npJ5_ses-20190505_obj-10plzqh_behavior+ecephys.nwb
   - sub-npJ5/sub-npJ5_ses-20190505_obj-1ti12l8_behavior+ecephys.nwb
   name: matnwb_nwbRead
+untested: []
 versions:
-  hdmf: 3.4.7
-  matnwb: v2.5.0.0
+  hdmf: 3.5.1
+  matnwb: v2.6.0.0
   pynwb: 2.2.0

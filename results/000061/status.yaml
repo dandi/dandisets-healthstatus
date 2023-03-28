@@ -1,6 +1,8 @@
 dandiset_version: 467af35acf818aa93ef1458275a74eb8a1b99a60
-last_run: 2022-12-15 10:59:47.526056-05:00
-nassets: 41
+last_run: 2023-02-11 04:06:57.636091-05:00
+last_run_duration: 131813.440802
+last_run_ended: 2023-02-12 16:43:51.076893-05:00
+nassets: 40
 tests:
 - assets_nok: []
   assets_ok:
@@ -46,36 +48,14 @@ tests:
   - sub-Rat11/sub-Rat11_ses-Rat11-20150403_ecephys+image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-Rat11/sub-Rat11_ses-Rat11-20150403_ecephys+image.nwb
-  assets_ok: []
-  assets_timeout:
-  - sub-Rat08/sub-Rat08_ses-Rat08-20130708_ecephys+image.nwb
-  - sub-Rat08/sub-Rat08_ses-Rat08-20130709_ecephys+image.nwb
-  - sub-Rat08/sub-Rat08_ses-Rat08-20130710_ecephys+image.nwb
-  - sub-Rat08/sub-Rat08_ses-Rat08-20130711_ecephys+image.nwb
-  - sub-Rat08/sub-Rat08_ses-Rat08-20130712_ecephys+image.nwb
-  - sub-Rat08/sub-Rat08_ses-Rat08-20130713_ecephys+image.nwb
+- assets_nok: []
+  assets_ok:
   - sub-Rat08/sub-Rat08_ses-Rat08-20130715_ecephys+image.nwb
-  - sub-Rat08/sub-Rat08_ses-Rat08-20130716_ecephys+image.nwb
-  - sub-Rat08/sub-Rat08_ses-Rat08-20130717_ecephys+image.nwb
-  - sub-Rat08/sub-Rat08_ses-Rat08-20130718_ecephys+image.nwb
-  - sub-Rat08/sub-Rat08_ses-Rat08-20130719_ecephys+image.nwb
   - sub-Rat08/sub-Rat08_ses-Rat08-20130720_ecephys+image.nwb
   - sub-Rat08/sub-Rat08_ses-Rat08-20130722_ecephys+image.nwb
-  - sub-Rat09/sub-Rat09_ses-Rat09-20140324_ecephys+image.nwb
-  - sub-Rat09/sub-Rat09_ses-Rat09-20140325_ecephys+image.nwb
-  - sub-Rat09/sub-Rat09_ses-Rat09-20140326_ecephys+image.nwb
   - sub-Rat09/sub-Rat09_ses-Rat09-20140328_ecephys+image.nwb
-  - sub-Rat09/sub-Rat09_ses-Rat09-20140329_ecephys+image.nwb
-  - sub-Rat09/sub-Rat09_ses-Rat09-20140402_ecephys+image.nwb
-  - sub-Rat09/sub-Rat09_ses-Rat09-20140403_ecephys+image.nwb
-  - sub-Rat09/sub-Rat09_ses-Rat09-20140404_ecephys+image.nwb
-  - sub-Rat09/sub-Rat09_ses-Rat09-20140405_ecephys+image.nwb
   - sub-Rat09/sub-Rat09_ses-Rat09-20140407_ecephys+image.nwb
-  - sub-Rat10/sub-Rat10_ses-Rat10-20140624_ecephys+image.nwb
   - sub-Rat10/sub-Rat10_ses-Rat10-20140626_ecephys+image.nwb
-  - sub-Rat10/sub-Rat10_ses-Rat10-20140701_ecephys+image.nwb
   - sub-Rat10/sub-Rat10_ses-Rat10-20140702_ecephys+image.nwb
   - sub-Rat10/sub-Rat10_ses-Rat10-20140704_ecephys+image.nwb
   - sub-Rat10/sub-Rat10_ses-Rat10-20140705_ecephys+image.nwb
@@ -89,8 +69,31 @@ tests:
   - sub-Rat11/sub-Rat11_ses-Rat11-20150328_ecephys+image.nwb
   - sub-Rat11/sub-Rat11_ses-Rat11-20150331_ecephys+image.nwb
   - sub-Rat11/sub-Rat11_ses-Rat11-20150401_ecephys+image.nwb
+  - sub-Rat11/sub-Rat11_ses-Rat11-20150403_ecephys+image.nwb
+  assets_timeout:
+  - sub-Rat08/sub-Rat08_ses-Rat08-20130708_ecephys+image.nwb
+  - sub-Rat08/sub-Rat08_ses-Rat08-20130709_ecephys+image.nwb
+  - sub-Rat08/sub-Rat08_ses-Rat08-20130710_ecephys+image.nwb
+  - sub-Rat08/sub-Rat08_ses-Rat08-20130711_ecephys+image.nwb
+  - sub-Rat08/sub-Rat08_ses-Rat08-20130712_ecephys+image.nwb
+  - sub-Rat08/sub-Rat08_ses-Rat08-20130713_ecephys+image.nwb
+  - sub-Rat08/sub-Rat08_ses-Rat08-20130716_ecephys+image.nwb
+  - sub-Rat08/sub-Rat08_ses-Rat08-20130717_ecephys+image.nwb
+  - sub-Rat08/sub-Rat08_ses-Rat08-20130718_ecephys+image.nwb
+  - sub-Rat08/sub-Rat08_ses-Rat08-20130719_ecephys+image.nwb
+  - sub-Rat09/sub-Rat09_ses-Rat09-20140324_ecephys+image.nwb
+  - sub-Rat09/sub-Rat09_ses-Rat09-20140325_ecephys+image.nwb
+  - sub-Rat09/sub-Rat09_ses-Rat09-20140326_ecephys+image.nwb
+  - sub-Rat09/sub-Rat09_ses-Rat09-20140329_ecephys+image.nwb
+  - sub-Rat09/sub-Rat09_ses-Rat09-20140402_ecephys+image.nwb
+  - sub-Rat09/sub-Rat09_ses-Rat09-20140403_ecephys+image.nwb
+  - sub-Rat09/sub-Rat09_ses-Rat09-20140404_ecephys+image.nwb
+  - sub-Rat09/sub-Rat09_ses-Rat09-20140405_ecephys+image.nwb
+  - sub-Rat10/sub-Rat10_ses-Rat10-20140624_ecephys+image.nwb
+  - sub-Rat10/sub-Rat10_ses-Rat10-20140701_ecephys+image.nwb
   name: matnwb_nwbRead
+untested: []
 versions:
-  hdmf: 3.4.7
-  matnwb: v2.5.0.0
+  hdmf: 3.5.1
+  matnwb: v2.6.0.0
   pynwb: 2.2.0

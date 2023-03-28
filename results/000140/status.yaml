@@ -1,6 +1,8 @@
 dandiset_version: 22116421ed878a8463a8bd26c5244852b5ee3387
-last_run: 2022-12-15 10:59:47.526056-05:00
-nassets: 3
+last_run: 2023-02-12 19:12:07.204671-05:00
+last_run_duration: 2114.424599
+last_run_ended: 2023-02-12 19:47:21.629270-05:00
+nassets: 2
 tests:
 - assets_nok: []
   assets_ok:
@@ -11,10 +13,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-Jenkins/sub-Jenkins_ses-small_desc-test_ecephys.nwb
-  assets_timeout:
   - sub-Jenkins/sub-Jenkins_ses-small_desc-train_behavior+ecephys.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
+untested: []
 versions:
-  hdmf: 3.4.7
-  matnwb: v2.5.0.0
+  hdmf: 3.5.1
+  matnwb: v2.6.0.0
   pynwb: 2.2.0

@@ -1,6 +1,8 @@
 dandiset_version: bc20b8496d057b78d93221e822d1ee81a82de155
-last_run: 2022-12-15 10:59:47.526056-05:00
-nassets: 29
+last_run: 2023-02-11 05:50:41.723686-05:00
+last_run_duration: 33596.262164
+last_run_ended: 2023-02-11 15:10:37.985850-05:00
+nassets: 28
 tests:
 - assets_nok: []
   assets_ok:
@@ -34,9 +36,10 @@ tests:
   - sub-GG/sub-GG_ses-GG-149_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok:
+- assets_nok:
   - sub-EE/sub-EE_ses-EE-042_ecephys.nwb
+  - sub-EE/sub-EE_ses-EE-087_ecephys.nwb
+  assets_ok:
   - sub-EE/sub-EE_ses-EE-043_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-044_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-045_ecephys.nwb
@@ -52,7 +55,6 @@ tests:
   - sub-EE/sub-EE_ses-EE-084_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-085_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-086_ecephys.nwb
-  - sub-EE/sub-EE_ses-EE-087_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-088_behavior+ecephys.nwb
   - sub-EE/sub-EE_ses-EE-089_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-196_behavior+ecephys.nwb
@@ -63,10 +65,11 @@ tests:
   - sub-GG/sub-GG_ses-GG-063_behavior+ecephys.nwb
   - sub-GG/sub-GG_ses-GG-069_behavior+ecephys.nwb
   - sub-GG/sub-GG_ses-GG-097_behavior+ecephys.nwb
-  assets_timeout:
   - sub-GG/sub-GG_ses-GG-149_behavior+ecephys.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
+untested: []
 versions:
-  hdmf: 3.4.7
-  matnwb: v2.5.0.0
+  hdmf: 3.5.1
+  matnwb: v2.6.0.0
   pynwb: 2.2.0

@@ -1,6 +1,8 @@
 dandiset_version: 58188a479c030b32c104d7bdf65fd0e7ea2afd95
-last_run: 2022-12-15 10:59:47.526056-05:00
-nassets: 21
+last_run: 2023-02-20 01:38:44.085862-05:00
+last_run_duration: 40479.540888
+last_run_ended: 2023-02-20 12:53:23.626750-05:00
+nassets: 20
 tests:
 - assets_nok: []
   assets_ok:
@@ -26,16 +28,15 @@ tests:
   - sub-3445/sub-3445_ses-20210814T223641_ecephys+ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-2615/sub-2615_ses-20201007T162625_ecephys+ophys.nwb
   assets_ok:
-  - sub-2282/sub-2282_ses-20190914T151231_ecephys+ophys.nwb
-  assets_timeout:
   - sub-2282/sub-2282_ses-20190914T145458_ecephys+ophys.nwb
+  - sub-2282/sub-2282_ses-20190914T151231_ecephys+ophys.nwb
   - sub-2282/sub-2282_ses-20190914T162358_ecephys+ophys.nwb
   - sub-2282/sub-2282_ses-20190914T164312_ecephys+ophys.nwb
   - sub-2282/sub-2282_ses-20190914T170145_ecephys+ophys.nwb
   - sub-2610/sub-2610_ses-20201005T153308_ecephys+ophys.nwb
-  - sub-2615/sub-2615_ses-20201007T162625_ecephys+ophys.nwb
   - sub-2748/sub-2748_ses-20200928T173432_ecephys+ophys.nwb
   - sub-2763/sub-2763_ses-20200828T154656_ecephys+ophys.nwb
   - sub-2763/sub-2763_ses-20200828T161323_ecephys+ophys.nwb
@@ -46,11 +47,13 @@ tests:
   - sub-3112/sub-3112_ses-20210227T190233_ecephys+ophys.nwb
   - sub-3278/sub-3278_ses-20210614T151114_ecephys+ophys.nwb
   - sub-3443/sub-3443_ses-20210814T190234_ecephys+ophys.nwb
-  - sub-3443/sub-3443_ses-20210814T193211_ecephys+ophys.nwb
   - sub-3445/sub-3445_ses-20210814T223214_ecephys+ophys.nwb
   - sub-3445/sub-3445_ses-20210814T223641_ecephys+ophys.nwb
+  assets_timeout:
+  - sub-3443/sub-3443_ses-20210814T193211_ecephys+ophys.nwb
   name: matnwb_nwbRead
+untested: []
 versions:
-  hdmf: 3.4.7
-  matnwb: v2.5.0.0
+  hdmf: 3.5.1
+  matnwb: v2.6.0.0
   pynwb: 2.2.0

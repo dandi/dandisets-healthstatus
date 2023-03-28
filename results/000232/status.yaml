@@ -1,14 +1,16 @@
 dandiset_version: c72947ad89e174544cabffee6d7a1b9697ed3b27
-last_run: 2022-12-15 10:59:47.526056-05:00
-nassets: 87
+last_run: 2023-02-21 06:20:27.196154-05:00
+last_run_duration: 452804.191094
+last_run_ended: 2023-02-26 12:07:11.387248-05:00
+nassets: 86
 tests:
-- assets_nok:
-  - sub-YT081/sub-YT081_ses-20190826T174305_behavior+ecephys.nwb
-  - sub-YT081/sub-YT081_ses-20190909T154619_behavior+ecephys.nwb
+- assets_nok: []
   assets_ok:
   - sub-EF0147/sub-EF0147_ses-20190126T171614_behavior+ecephys.nwb
   - sub-EF0147/sub-EF0147_ses-20190204T144339_behavior+ecephys.nwb
   - sub-EF0147/sub-EF0147_ses-20190206T150628_behavior+ecephys.nwb
+  - sub-EF0148/sub-EF0148_ses-20190228T152623_behavior+ecephys.nwb
+  - sub-EF0148/sub-EF0148_ses-20190301T143102_behavior+ecephys.nwb
   - sub-EF0148/sub-EF0148_ses-20190304T141057_behavior+ecephys.nwb
   - sub-EF0148/sub-EF0148_ses-20190305T143046_behavior+ecephys.nwb
   - sub-EF0148/sub-EF0148_ses-20190306T134049_behavior+ecephys.nwb
@@ -26,7 +28,6 @@ tests:
   - sub-EF0150/sub-EF0150_ses-20190316T153809_behavior+ecephys.nwb
   - sub-EF0150/sub-EF0150_ses-20190317T172552_behavior+ecephys.nwb
   - sub-EF0150/sub-EF0150_ses-20190318T164404_behavior+ecephys.nwb
-  - sub-EF0151/sub-EF0151_ses-20190430T143817_behavior+ecephys.nwb
   - sub-EF0151/sub-EF0151_ses-20190506T142516_behavior+ecephys.nwb
   - sub-EF0151/sub-EF0151_ses-20190510T142024_behavior+ecephys.nwb
   - sub-EF0151/sub-EF0151_ses-20190512T144146_behavior+ecephys.nwb
@@ -63,16 +64,17 @@ tests:
   - sub-YT080/sub-YT080_ses-20190905T135523_behavior+ecephys.nwb
   - sub-YT080/sub-YT080_ses-20190911T145324_behavior+ecephys.nwb
   - sub-YT080/sub-YT080_ses-20190912T145222_behavior+ecephys.nwb
+  - sub-YT081/sub-YT081_ses-20190826T174305_behavior+ecephys.nwb
   - sub-YT081/sub-YT081_ses-20190827T155544_behavior+ecephys.nwb
   - sub-YT081/sub-YT081_ses-20190907T155754_behavior+ecephys.nwb
   - sub-YT081/sub-YT081_ses-20190908T172736_behavior+ecephys.nwb
+  - sub-YT081/sub-YT081_ses-20190909T154619_behavior+ecephys.nwb
   - sub-YT081/sub-YT081_ses-20190911T165320_behavior+ecephys.nwb
   - sub-YT083/sub-YT083_ses-20200123T164814_behavior+ecephys.nwb
   - sub-YT083/sub-YT083_ses-20200210T142453_behavior+ecephys.nwb
   - sub-YT084/sub-YT084_ses-20200124T170120_behavior+ecephys.nwb
   - sub-YT084/sub-YT084_ses-20200129T164212_behavior+ecephys.nwb
   - sub-YT084/sub-YT084_ses-20200201T173759_behavior+ecephys.nwb
-  - sub-YT084/sub-YT084_ses-20200202T162019_behavior+ecephys.nwb
   - sub-YT084/sub-YT084_ses-20200203T174908_behavior+ecephys.nwb
   - sub-YT084/sub-YT084_ses-20200206T153648_behavior+ecephys.nwb
   - sub-YT084/sub-YT084_ses-20200207T153525_behavior+ecephys.nwb
@@ -89,26 +91,25 @@ tests:
   - sub-YT086/sub-YT086_ses-20200314T181755_behavior+ecephys.nwb
   - sub-YT086/sub-YT086_ses-20200320T171513_behavior+ecephys.nwb
   assets_timeout:
-  - sub-EF0148/sub-EF0148_ses-20190228T152623_behavior+ecephys.nwb
-  - sub-EF0148/sub-EF0148_ses-20190301T143102_behavior+ecephys.nwb
+  - sub-EF0151/sub-EF0151_ses-20190430T143817_behavior+ecephys.nwb
+  - sub-YT084/sub-YT084_ses-20200202T162019_behavior+ecephys.nwb
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-EF0147/sub-EF0147_ses-20190126T171614_behavior+ecephys.nwb
-  - sub-EF0148/sub-EF0148_ses-20190306T134049_behavior+ecephys.nwb
-  - sub-EF0148/sub-EF0148_ses-20190314T140910_behavior+ecephys.nwb
   - sub-YT071/sub-YT071_ses-20190716T142642_behavior+ecephys.nwb
-  - sub-YT081/sub-YT081_ses-20190826T174305_behavior+ecephys.nwb
   assets_ok: []
   assets_timeout:
+  - sub-EF0147/sub-EF0147_ses-20190126T171614_behavior+ecephys.nwb
   - sub-EF0147/sub-EF0147_ses-20190204T144339_behavior+ecephys.nwb
   - sub-EF0147/sub-EF0147_ses-20190206T150628_behavior+ecephys.nwb
   - sub-EF0148/sub-EF0148_ses-20190228T152623_behavior+ecephys.nwb
   - sub-EF0148/sub-EF0148_ses-20190301T143102_behavior+ecephys.nwb
   - sub-EF0148/sub-EF0148_ses-20190304T141057_behavior+ecephys.nwb
   - sub-EF0148/sub-EF0148_ses-20190305T143046_behavior+ecephys.nwb
+  - sub-EF0148/sub-EF0148_ses-20190306T134049_behavior+ecephys.nwb
   - sub-EF0148/sub-EF0148_ses-20190310T192306_behavior+ecephys.nwb
   - sub-EF0148/sub-EF0148_ses-20190311T144915_behavior+ecephys.nwb
   - sub-EF0148/sub-EF0148_ses-20190313T142902_behavior+ecephys.nwb
+  - sub-EF0148/sub-EF0148_ses-20190314T140910_behavior+ecephys.nwb
   - sub-EF0149/sub-EF0149_ses-20190210T171106_behavior+ecephys.nwb
   - sub-EF0150/sub-EF0150_ses-20190223T143451_behavior+ecephys.nwb
   - sub-EF0150/sub-EF0150_ses-20190224T173055_behavior+ecephys.nwb
@@ -155,6 +156,7 @@ tests:
   - sub-YT080/sub-YT080_ses-20190905T135523_behavior+ecephys.nwb
   - sub-YT080/sub-YT080_ses-20190911T145324_behavior+ecephys.nwb
   - sub-YT080/sub-YT080_ses-20190912T145222_behavior+ecephys.nwb
+  - sub-YT081/sub-YT081_ses-20190826T174305_behavior+ecephys.nwb
   - sub-YT081/sub-YT081_ses-20190827T155544_behavior+ecephys.nwb
   - sub-YT081/sub-YT081_ses-20190907T155754_behavior+ecephys.nwb
   - sub-YT081/sub-YT081_ses-20190908T172736_behavior+ecephys.nwb
@@ -182,7 +184,8 @@ tests:
   - sub-YT086/sub-YT086_ses-20200314T181755_behavior+ecephys.nwb
   - sub-YT086/sub-YT086_ses-20200320T171513_behavior+ecephys.nwb
   name: matnwb_nwbRead
+untested: []
 versions:
-  hdmf: 3.4.7
-  matnwb: v2.5.0.0
+  hdmf: 3.5.1
+  matnwb: v2.6.0.0
   pynwb: 2.2.0

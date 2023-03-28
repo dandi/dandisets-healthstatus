@@ -1,6 +1,8 @@
 dandiset_version: 46dcb235e63c0cf86bb428bbc8ec8d4f59f8ccb9
-last_run: 2022-12-15 10:59:47.526056-05:00
-nassets: 119
+last_run: 2023-02-14 19:15:12.080409-05:00
+last_run_duration: 24996.787731
+last_run_ended: 2023-02-15 02:11:48.868140-05:00
+nassets: 118
 tests:
 - assets_nok: []
   assets_ok:
@@ -124,8 +126,7 @@ tests:
   - sub-BH301/sub-BH301_ses-20211202_obj-1uo44fx.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-BH246/sub-BH246_ses-20211105_obj-1125ny5.nwb
+- assets_nok: []
   assets_ok:
   - sub-BH243/sub-BH243.nwb
   - sub-BH243/sub-BH243_ses-20211103_obj-1dppqzr.nwb
@@ -138,6 +139,7 @@ tests:
   - sub-BH245/sub-BH245_ses-20211104_obj-aa165m.nwb
   - sub-BH246/sub-BH246_ses-20211103_obj-3g55tj.nwb
   - sub-BH246/sub-BH246_ses-20211103_obj-4u4gpn.nwb
+  - sub-BH246/sub-BH246_ses-20211105_obj-1125ny5.nwb
   - sub-BH246/sub-BH246_ses-20211105_obj-118vu8x.nwb
   - sub-BH247/sub-BH247_ses-20211103_obj-17c0hsb.nwb
   - sub-BH247/sub-BH247_ses-20211103_obj-1cwhslw.nwb
@@ -246,7 +248,8 @@ tests:
   - sub-BH301/sub-BH301_ses-20211202_obj-1uo44fx.nwb
   assets_timeout: []
   name: matnwb_nwbRead
+untested: []
 versions:
-  hdmf: 3.4.7
-  matnwb: v2.5.0.0
+  hdmf: 3.5.1
+  matnwb: v2.6.0.0
   pynwb: 2.2.0

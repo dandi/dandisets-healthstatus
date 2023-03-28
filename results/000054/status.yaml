@@ -1,6 +1,8 @@
 dandiset_version: 126bf6f8bde68870fbd6a26ab2b2620337fcc2d5
-last_run: 2022-12-15 10:59:47.526056-05:00
-nassets: 86
+last_run: 2023-02-09 03:10:16.855108-05:00
+last_run_duration: 308485.434139
+last_run_ended: 2023-02-12 16:51:42.289247-05:00
+nassets: 85
 tests:
 - assets_nok: []
   assets_ok:
@@ -91,11 +93,9 @@ tests:
   - sub-R6/sub-R6_ses-20200210T210000_obj-r0awni_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-F5/sub-F5_ses-20190409T210000_behavior+ophys.nwb
+- assets_nok: []
   assets_ok:
   - sub-R2/sub-R2_ses-20190206T210000_ophys.nwb
-  - sub-R4/sub-R4_ses-20190901T210000_ophys.nwb
   assets_timeout:
   - sub-F1/sub-F1_ses-20190407T210000_behavior+ophys.nwb
   - sub-F1/sub-F1_ses-20190409T210000_behavior+ophys.nwb
@@ -119,6 +119,7 @@ tests:
   - sub-F3/sub-F3_ses-20190414T210000_obj-7vehp4_behavior+ophys.nwb
   - sub-F3/sub-F3_ses-20190414T210000_obj-n4e7d4_behavior+ophys.nwb
   - sub-F5/sub-F5_ses-20190407T210000_behavior+ophys.nwb
+  - sub-F5/sub-F5_ses-20190409T210000_behavior+ophys.nwb
   - sub-F5/sub-F5_ses-20190411T210000_behavior+ophys.nwb
   - sub-F5/sub-F5_ses-20190413T210000_behavior+ophys.nwb
   - sub-F5/sub-F5_ses-20190414T210000_behavior+ophys.nwb
@@ -161,6 +162,7 @@ tests:
   - sub-R4/sub-R4_ses-20190827T210000_behavior+ophys.nwb
   - sub-R4/sub-R4_ses-20190829T210000_behavior+ophys.nwb
   - sub-R4/sub-R4_ses-20190901T210000_behavior+ophys.nwb
+  - sub-R4/sub-R4_ses-20190901T210000_ophys.nwb
   - sub-R4/sub-R4_ses-20190902T210000_behavior+ophys.nwb
   - sub-R4/sub-R4_ses-20190903T210000_behavior+ophys.nwb
   - sub-R4/sub-R4_ses-20190904T210000_behavior+ophys.nwb
@@ -180,7 +182,8 @@ tests:
   - sub-R6/sub-R6_ses-20200210T210000_obj-qb15q4_ophys.nwb
   - sub-R6/sub-R6_ses-20200210T210000_obj-r0awni_ophys.nwb
   name: matnwb_nwbRead
+untested: []
 versions:
-  hdmf: 3.4.7
-  matnwb: v2.5.0.0
+  hdmf: 3.5.1
+  matnwb: v2.6.0.0
   pynwb: 2.2.0

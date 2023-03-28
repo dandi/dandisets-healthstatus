@@ -1,6 +1,8 @@
-dandiset_version: 4d8e49fbc68e41534769716a3ab82db676d2cdab
-last_run: 2022-12-15 10:59:47.526056-05:00
-nassets: 13
+dandiset_version: 115376aab9f02a6c963282578a3b9c006b0bfcb6
+last_run: 2023-03-02 10:24:10.883797-05:00
+last_run_duration: 43946.567695
+last_run_ended: 2023-03-02 22:36:37.451492-05:00
+nassets: 12
 tests:
 - assets_nok: []
   assets_ok:
@@ -18,10 +20,10 @@ tests:
   - sub-20170228-4/sub-20170228-4_ses-20170228T185002_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-20161022-1/sub-20161022-1_ses-20161022T151003_ophys.nwb
+- assets_nok: []
   assets_ok: []
   assets_timeout:
+  - sub-20161022-1/sub-20161022-1_ses-20161022T151003_ophys.nwb
   - sub-20161109-2/sub-20161109-2_ses-20161109T211950_ophys.nwb
   - sub-20161206-1/sub-20161206-1_ses-20161206T123501_ophys.nwb
   - sub-20161206-2/sub-20161206-2_ses-20161206T161111_ophys.nwb
@@ -34,7 +36,8 @@ tests:
   - sub-20170228-3/sub-20170228-3_ses-20170228T165730_ophys.nwb
   - sub-20170228-4/sub-20170228-4_ses-20170228T185002_ophys.nwb
   name: matnwb_nwbRead
+untested: []
 versions:
-  hdmf: 3.4.7
-  matnwb: v2.5.0.0
+  hdmf: 3.5.1
+  matnwb: v2.6.0.0
   pynwb: 2.2.0

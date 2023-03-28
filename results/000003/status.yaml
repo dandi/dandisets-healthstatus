@@ -1,6 +1,8 @@
 dandiset_version: 9c6ab8750946cdac16c62057ec1f76f9ce954fe1
-last_run: 2022-12-15 10:59:47.526056-05:00
-nassets: 102
+last_run: 2023-02-02 16:56:48.227118-05:00
+last_run_duration: 370696.096205
+last_run_ended: 2023-02-06 23:55:04.323323-05:00
+nassets: 101
 tests:
 - assets_nok: []
   assets_ok:
@@ -108,23 +110,29 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140325_behavior+ecephys.nwb
-  - sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140327_behavior+ecephys.nwb
+  - sub-YutaMouse33/sub-YutaMouse33_ses-YutaMouse33-150218_behavior+ecephys.nwb
+  assets_ok:
+  - sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140321_behavior+ecephys.nwb
   - sub-YutaMouse23/sub-YutaMouse23_ses-YutaMouse23-140804_behavior+ecephys.nwb
   - sub-YutaMouse23/sub-YutaMouse23_ses-YutaMouse23-140805_behavior+ecephys.nwb
   - sub-YutaMouse23/sub-YutaMouse23_ses-YutaMouse23-140806_behavior+ecephys.nwb
-  - sub-YutaMouse55/sub-YutaMouse55_ses-YutaMouse55-160910_behavior+ecephys.nwb
-  assets_ok:
-  - sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140321_behavior+ecephys.nwb
-  - sub-YutaMouse51/sub-YutaMouse51_ses-YutaMouse51-160515_behavior+ecephys.nwb
-  - sub-YutaMouse51/sub-YutaMouse51_ses-YutaMouse51-160516_behavior+ecephys.nwb
   - sub-YutaMouse51/sub-YutaMouse51_ses-YutaMouse51b160514_behavior+ecephys.nwb
   - sub-YutaMouse51/sub-YutaMouse51_ses-YutaMouse51b160516_behavior+ecephys.nwb
   - sub-YutaMouse54/sub-YutaMouse54_ses-YutaMouse54-160630_behavior+ecephys.nwb
+  - sub-YutaMouse55/sub-YutaMouse55_ses-YutaMouse55-160906_ecephys.nwb
+  - sub-YutaMouse56/sub-YutaMouse56_ses-YutaMouse56-160912_behavior+ecephys.nwb
+  - sub-YutaMouse56/sub-YutaMouse56_ses-YutaMouse56-160913_behavior+ecephys.nwb
+  - sub-YutaMouse56/sub-YutaMouse56_ses-YutaMouse56-160914_behavior+ecephys.nwb
+  - sub-YutaMouse56/sub-YutaMouse56_ses-YutaMouse56-160915_behavior+ecephys.nwb
+  - sub-YutaMouse56/sub-YutaMouse56_ses-YutaMouse56-160916_behavior+ecephys.nwb
+  - sub-YutaMouse56/sub-YutaMouse56_ses-YutaMouse56b160913_behavior+ecephys.nwb
+  - sub-YutaMouse56/sub-YutaMouse56_ses-YutaMouse56b160914_behavior+ecephys.nwb
+  - sub-YutaMouse56/sub-YutaMouse56_ses-YutaMouse56b160915_behavior+ecephys.nwb
   assets_timeout:
   - sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140324_behavior+ecephys.nwb
+  - sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140325_behavior+ecephys.nwb
+  - sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140327_behavior+ecephys.nwb
   - sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140328_behavior+ecephys.nwb
-  - sub-YutaMouse33/sub-YutaMouse33_ses-YutaMouse33-150218_behavior+ecephys.nwb
   - sub-YutaMouse33/sub-YutaMouse33_ses-YutaMouse33-150219_behavior+ecephys.nwb
   - sub-YutaMouse33/sub-YutaMouse33_ses-YutaMouse33-150220_behavior+ecephys.nwb
   - sub-YutaMouse33/sub-YutaMouse33_ses-YutaMouse33-150221_behavior+ecephys.nwb
@@ -182,27 +190,21 @@ tests:
   - sub-YutaMouse45/sub-YutaMouse45_ses-YutaMouse45-160303_behavior+ecephys.nwb
   - sub-YutaMouse45/sub-YutaMouse45_ses-YutaMouse45-160304_behavior+ecephys.nwb
   - sub-YutaMouse45/sub-YutaMouse45_ses-YutaMouse45-160305_behavior+ecephys.nwb
+  - sub-YutaMouse51/sub-YutaMouse51_ses-YutaMouse51-160515_behavior+ecephys.nwb
+  - sub-YutaMouse51/sub-YutaMouse51_ses-YutaMouse51-160516_behavior+ecephys.nwb
   - sub-YutaMouse54/sub-YutaMouse54_ses-YutaMouse54-160701_behavior+ecephys.nwb
   - sub-YutaMouse54/sub-YutaMouse54_ses-YutaMouse54-160702_behavior+ecephys.nwb
   - sub-YutaMouse54/sub-YutaMouse54_ses-YutaMouse54b160701_behavior+ecephys.nwb
   - sub-YutaMouse54/sub-YutaMouse54_ses-YutaMouse54b160702_behavior+ecephys.nwb
   - sub-YutaMouse55/sub-YutaMouse55_ses-YutaMouse55-160901_behavior+ecephys.nwb
   - sub-YutaMouse55/sub-YutaMouse55_ses-YutaMouse55-160902_behavior+ecephys.nwb
-  - sub-YutaMouse55/sub-YutaMouse55_ses-YutaMouse55-160906_ecephys.nwb
   - sub-YutaMouse55/sub-YutaMouse55_ses-YutaMouse55-160907_behavior+ecephys.nwb
   - sub-YutaMouse55/sub-YutaMouse55_ses-YutaMouse55-160908_behavior+ecephys.nwb
   - sub-YutaMouse55/sub-YutaMouse55_ses-YutaMouse55-160909_behavior+ecephys.nwb
+  - sub-YutaMouse55/sub-YutaMouse55_ses-YutaMouse55-160910_behavior+ecephys.nwb
   - sub-YutaMouse55/sub-YutaMouse55_ses-YutaMouse55-160911_behavior+ecephys.nwb
   - sub-YutaMouse55/sub-YutaMouse55_ses-YutaMouse55b160907_behavior+ecephys.nwb
   - sub-YutaMouse56/sub-YutaMouse56_ses-YutaMouse56-160911_behavior+ecephys.nwb
-  - sub-YutaMouse56/sub-YutaMouse56_ses-YutaMouse56-160912_behavior+ecephys.nwb
-  - sub-YutaMouse56/sub-YutaMouse56_ses-YutaMouse56-160913_behavior+ecephys.nwb
-  - sub-YutaMouse56/sub-YutaMouse56_ses-YutaMouse56-160914_behavior+ecephys.nwb
-  - sub-YutaMouse56/sub-YutaMouse56_ses-YutaMouse56-160915_behavior+ecephys.nwb
-  - sub-YutaMouse56/sub-YutaMouse56_ses-YutaMouse56-160916_behavior+ecephys.nwb
-  - sub-YutaMouse56/sub-YutaMouse56_ses-YutaMouse56b160913_behavior+ecephys.nwb
-  - sub-YutaMouse56/sub-YutaMouse56_ses-YutaMouse56b160914_behavior+ecephys.nwb
-  - sub-YutaMouse56/sub-YutaMouse56_ses-YutaMouse56b160915_behavior+ecephys.nwb
   - sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161004_behavior+ecephys.nwb
   - sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161006_behavior+ecephys.nwb
   - sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161007_behavior+ecephys.nwb
@@ -212,7 +214,8 @@ tests:
   - sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161014_behavior+ecephys.nwb
   - sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161016_behavior+ecephys.nwb
   name: matnwb_nwbRead
+untested: []
 versions:
-  hdmf: 3.4.7
-  matnwb: v2.5.0.0
+  hdmf: 3.5.1
+  matnwb: v2.6.0.0
   pynwb: 2.2.0

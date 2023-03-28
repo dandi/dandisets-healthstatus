@@ -1,6 +1,8 @@
 dandiset_version: e09a194cb35bdd7b91a62c823fb1cf13606b13ce
-last_run: 2022-12-15 10:59:47.526056-05:00
-nassets: 159
+last_run: 2023-02-02 16:56:50.977636-05:00
+last_run_duration: 267766.078396
+last_run_ended: 2023-02-05 19:19:37.056032-05:00
+nassets: 158
 tests:
 - assets_nok: []
   assets_ok:
@@ -186,7 +188,6 @@ tests:
   - sub-214430/sub-214430_ses-20130821_behavior+ecephys+ogen.nwb
   - sub-214430/sub-214430_ses-20130822_behavior+ecephys+ogen.nwb
   - sub-214430/sub-214430_ses-20130823_behavior+ecephys+ogen.nwb
-  - sub-216219/sub-216219_ses-20130821_obj-sgs1hx_behavior+ophys.nwb
   - sub-218453/sub-218453_ses-20131014_behavior+ecephys.nwb
   - sub-218453/sub-218453_ses-20131015_behavior+ecephys.nwb
   - sub-218453/sub-218453_ses-20131016_behavior+ecephys.nwb
@@ -286,6 +287,7 @@ tests:
   - sub-216219/sub-216219_ses-20130821_obj-1hqwhdv_behavior+ophys.nwb
   - sub-216219/sub-216219_ses-20130821_obj-1w9j9h0_behavior+ophys.nwb
   - sub-216219/sub-216219_ses-20130821_obj-s1me5n_behavior+ophys.nwb
+  - sub-216219/sub-216219_ses-20130821_obj-sgs1hx_behavior+ophys.nwb
   - sub-217951/sub-217951_ses-20131009_behavior+ophys.nwb
   - sub-217951/sub-217951_ses-20131010_obj-1f8meby_behavior+ophys.nwb
   - sub-217951/sub-217951_ses-20131010_obj-1wjcj56_behavior+ophys.nwb
@@ -326,7 +328,8 @@ tests:
   - sub-226244/sub-226244_ses-20131114_obj-qclugt_behavior+ophys.nwb
   assets_timeout: []
   name: matnwb_nwbRead
+untested: []
 versions:
-  hdmf: 3.4.7
-  matnwb: v2.5.0.0
+  hdmf: 3.5.1
+  matnwb: v2.6.0.0
   pynwb: 2.2.0
