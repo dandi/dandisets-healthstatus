@@ -183,7 +183,6 @@ def test_files(
     ok = True
     dandiset_cache: dict[Path, tuple[Dandiset, set[str]]] = {}
     for f in files:
-        asset = Asset(filepath=f, asset_path=str(f))
         if save_results and (path := find_dandiset(Path(f))) is not None:
             try:
                 dandiset, asset_paths = dandiset_cache[path]
@@ -194,9 +193,12 @@ def test_files(
                 asset_paths = anyio.run(dandiset.get_asset_paths)
                 dandiset_cache[path] = (dandiset, asset_paths)
             report = AssetReport(dandiset=dandiset)
+            ap = Path(f).relative_to(path).as_posix()
         else:
             report = None
             asset_paths = None
+            ap = str(f)
+        asset = Asset(filepath=f, asset_path=ap)
         log.info("Testing %s ...", f)
         r = anyio.run(testfunc, asset)
         if r.output is not None:
