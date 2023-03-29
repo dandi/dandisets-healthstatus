@@ -18,8 +18,8 @@ cd "$(dirname "$0")"
 pip install ./code
 #pip install 'git+https://github.com/fsspec/filesystem_spec'
 pip install 'git+https://github.com/jwodder/filesystem_spec@rlock-cache'
-healthstatus check -d "$DANDISETS_PATH" -m "$MOUNT_PATH" -J 10 "$@"
-healthstatus report
+dandisets-healthstatus check -d "$DANDISETS_PATH" -m "$MOUNT_PATH" -J 10 "$@"
+dandisets-healthstatus report
 
 # TODO: Uncomment this block when setting up the cronjob:
 #git add .
