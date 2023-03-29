@@ -9,7 +9,7 @@ import logging
 from pathlib import Path
 from typing import Dict, List, Optional, Sequence, Union
 import anyio
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, validator
 import yaml
 from .yamllineno import load_yaml_lineno
 
@@ -42,6 +42,10 @@ class Asset:
 class VersionedPath(BaseModel):
     path: str
     versions: Dict[str, str]
+
+    @validator("versions")
+    def _rmlinenos(cls, value: dict[str, str]) -> dict[str, str]:  # noqa: B902, U100
+        return {k: v for k, v in value.items() if not k.endswith("_lineno")}
 
 
 class TestStatus(BaseModel):
@@ -132,6 +136,10 @@ class DandisetStatus(BaseModel):
     untested: List[UntestedAsset] = Field(default_factory=list)
     untested_lineno: int = Field(default=0, exclude=True)
     versions: Dict[str, str]
+
+    @validator("versions")
+    def _rmlinenos(cls, value: dict[str, str]) -> dict[str, str]:  # noqa: B902, U100
+        return {k: v for k, v in value.items() if not k.endswith("_lineno")}
 
     @classmethod
     def from_file(cls, dandiset: str, yamlfile: Path) -> DandisetStatus:
