@@ -68,17 +68,6 @@ class MatNWBInstaller:
             subprocess.run(
                 ["git", "clean", "-dxf"], cwd=str(self.install_dir), check=True
             )
-            subprocess.run(
-                [
-                    "matlab",
-                    "-nodesktop",
-                    "-sd",
-                    str(self.install_dir),
-                    "-batch",
-                    "generateCore()",
-                ],
-                check=True,
-            )
 
     def get_version(self) -> str:
         return subprocess.run(
