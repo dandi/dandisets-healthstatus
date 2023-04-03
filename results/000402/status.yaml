@@ -1,23 +1,20 @@
+dandiset: '000402'
 dandiset_version: dcbecaeb2365d8fe9de60996f774080c09c9dbb3
-last_run: 2023-03-04 01:38:19.235111-05:00
+last_run: '2023-03-04T01:38:19.235111-05:00'
 last_run_duration: 8190.021303
-last_run_ended: 2023-03-04 03:54:49.256414-05:00
+last_run_ended: '2023-03-04T03:54:49.256414-05:00'
 nassets: 2
 tests:
 - assets_nok: []
-  assets_ok:
-  - sub-17797/sub-17797_ses-4-10_behavior+image+ophys.nwb
-  - sub-17797/sub-17797_ses-5-3_behavior+image+ophys.nwb
+  assets_ok: []
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
-  assets_timeout:
-  - sub-17797/sub-17797_ses-4-10_behavior+image+ophys.nwb
-  - sub-17797/sub-17797_ses-5-3_behavior+image+ophys.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.5.1
-  matnwb: v2.6.0.0
-  pynwb: 2.2.0
+  hdmf: 3.5.2
+  matnwb: v2.6.0.1
+  pynwb: 2.3.1

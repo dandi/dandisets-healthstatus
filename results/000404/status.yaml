@@ -1,7 +1,8 @@
+dandiset: '000404'
 dandiset_version: 8611f3a73cc24048720eab6476d861d526fa5e68
-last_run: 2023-03-04 03:54:49.261977-05:00
+last_run: '2023-03-04T03:54:49.261977-05:00'
 last_run_duration: 10146.355694
-last_run_ended: 2023-03-04 06:43:55.617671-05:00
+last_run_ended: '2023-03-04T06:43:55.617671-05:00'
 nassets: 13
 tests:
 - assets_nok: []
@@ -16,12 +17,21 @@ tests:
   - sub-monk-g/sub-monk-g_ses-session7.nwb
   - sub-monk-g/sub-monk-g_ses-session8.nwb
   - sub-monk-j/sub-monk-j_ses-session0.nwb
-  - sub-monk-j/sub-monk-j_ses-session1.nwb
+  - path: sub-monk-j/sub-monk-j_ses-session1.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-monk-j/sub-monk-j_ses-session2.nwb
   - sub-monk-j/sub-monk-j_ses-session3.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-monk-j/sub-monk-j_ses-session1.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   assets_ok:
   - sub-monk-g/sub-monk-g_ses-session0.nwb
   - sub-monk-g/sub-monk-g_ses-session1.nwb
@@ -33,7 +43,6 @@ tests:
   - sub-monk-g/sub-monk-g_ses-session7.nwb
   - sub-monk-g/sub-monk-g_ses-session8.nwb
   - sub-monk-j/sub-monk-j_ses-session0.nwb
-  - sub-monk-j/sub-monk-j_ses-session1.nwb
   - sub-monk-j/sub-monk-j_ses-session2.nwb
   - sub-monk-j/sub-monk-j_ses-session3.nwb
   assets_timeout: []

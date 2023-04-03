@@ -1,7 +1,8 @@
+dandiset: '000053'
 dandiset_version: b9f09e0944e11045ffbcf361ca793ccb6659492a
-last_run: 2023-02-09 03:07:34.939424-05:00
+last_run: '2023-02-09T03:07:34.939424-05:00'
 last_run_duration: 178408.594275
-last_run_ended: 2023-02-11 04:41:03.533699-05:00
+last_run_ended: '2023-02-11T04:41:03.533699-05:00'
 nassets: 359
 tests:
 - assets_nok: []
@@ -179,7 +180,11 @@ tests:
   - sub-Japie/sub-Japie_ses-20191105_obj-14w5des_behavior.nwb
   - sub-Japie/sub-Japie_ses-20191105_obj-1hn5a0m_behavior.nwb
   - sub-Japie/sub-Japie_ses-20191105_obj-1u8zdtu_behavior.nwb
-  - sub-Japie/sub-Japie_ses-20191105_obj-hti04r_behavior.nwb
+  - path: sub-Japie/sub-Japie_ses-20191105_obj-hti04r_behavior.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-Japie/sub-Japie_ses-20191105_obj-mfmqki_behavior.nwb
   - sub-Japie/sub-Japie_ses-20191105_obj-po5cf2_behavior.nwb
   - sub-Japie/sub-Japie_ses-20191105_obj-xsysy4_behavior.nwb
@@ -367,7 +372,12 @@ tests:
   - sub-npJ5/sub-npJ5_ses-20190505_obj-1ti12l8_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-Japie/sub-Japie_ses-20191105_obj-hti04r_behavior.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   assets_ok:
   - sub-Azalea/sub-Azalea_ses-20190129_behavior.nwb
   - sub-Azalea/sub-Azalea_ses-20190309_behavior.nwb
@@ -542,7 +552,6 @@ tests:
   - sub-Japie/sub-Japie_ses-20191105_obj-14w5des_behavior.nwb
   - sub-Japie/sub-Japie_ses-20191105_obj-1hn5a0m_behavior.nwb
   - sub-Japie/sub-Japie_ses-20191105_obj-1u8zdtu_behavior.nwb
-  - sub-Japie/sub-Japie_ses-20191105_obj-hti04r_behavior.nwb
   - sub-Japie/sub-Japie_ses-20191105_obj-mfmqki_behavior.nwb
   - sub-Japie/sub-Japie_ses-20191105_obj-po5cf2_behavior.nwb
   - sub-Japie/sub-Japie_ses-20191105_obj-xsysy4_behavior.nwb

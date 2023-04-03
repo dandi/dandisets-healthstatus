@@ -1,7 +1,8 @@
+dandiset: 000218
 dandiset_version: f73387daec2105750fa4207341f465ddef9f1742
-last_run: 2023-02-17 18:30:12.591458-05:00
+last_run: '2023-02-17T18:30:12.591458-05:00'
 last_run_duration: 170637.425808
-last_run_ended: 2023-02-19 17:54:10.017266-05:00
+last_run_ended: '2023-02-19T17:54:10.017266-05:00'
 nassets: 98
 tests:
 - assets_nok: []
@@ -27,7 +28,11 @@ tests:
   - sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3468um-1216um-20160222-160222-120902_behavior+ecephys.nwb
   - sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3468um-1216um-20160223-160223-121321_behavior+ecephys.nwb
   - sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3468um-1216um-20160225-160225-130701_behavior+ecephys.nwb
-  - sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3468um-1252um-20160226-160226-124132_behavior+ecephys.nwb
+  - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3468um-1252um-20160226-160226-124132_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3540um-1288um-20160227-160227-121226_behavior+ecephys.nwb
   - sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3540um-1288um-20160228-160228-135001_behavior+ecephys.nwb
   - sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3612um-1360um-20160304-160304-150220_behavior+ecephys.nwb
@@ -107,6 +112,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3468um-1252um-20160226-160226-124132_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-DT5/sub-DT5_ses-20161011-972um-1224um-merge_behavior+ecephys.nwb
   - sub-DT5/sub-DT5_ses-20161014-1296um-1476um-merge_behavior+ecephys.nwb
   - sub-DT5/sub-DT5_ses-20161015-1368um-1476um-merge_behavior+ecephys.nwb
@@ -202,7 +212,6 @@ tests:
   - sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3468um-1216um-20160222-160222-120902_behavior+ecephys.nwb
   - sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3468um-1216um-20160223-160223-121321_behavior+ecephys.nwb
   - sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3468um-1216um-20160225-160225-130701_behavior+ecephys.nwb
-  - sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3468um-1252um-20160226-160226-124132_behavior+ecephys.nwb
   - sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3540um-1288um-20160227-160227-121226_behavior+ecephys.nwb
   - sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3540um-1288um-20160228-160228-135001_behavior+ecephys.nwb
   - sub-DT9/sub-DT9_ses-20170501-216um-0um-170501-112210_behavior+ecephys.nwb

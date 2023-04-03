@@ -1,7 +1,8 @@
+dandiset: '000041'
 dandiset_version: dded2347bcb4906c5abcad4f48eb08eab0821bd1
-last_run: 2023-02-07 16:24:38.421974-05:00
+last_run: '2023-02-07T16:24:38.421974-05:00'
 last_run_duration: 56983.240457
-last_run_ended: 2023-02-08 08:14:21.662431-05:00
+last_run_ended: '2023-02-08T08:14:21.662431-05:00'
 nassets: 22
 tests:
 - assets_nok: []
@@ -15,7 +16,11 @@ tests:
   - sub-BWRat20/sub-BWRat20_ses-BWRat20-101513_ecephys.nwb
   - sub-BWRat21/sub-BWRat21_ses-BWRat21-121113_ecephys.nwb
   - sub-BWRat21/sub-BWRat21_ses-BWRat21-121613_ecephys.nwb
-  - sub-BWRat21/sub-BWRat21_ses-BWRat21-121813_ecephys.nwb
+  - path: sub-BWRat21/sub-BWRat21_ses-BWRat21-121813_ecephys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-Bogey/sub-Bogey_ses-Bogey-012615_ecephys.nwb
   - sub-Dino/sub-Dino_ses-Dino-061814_ecephys.nwb
   - sub-Dino/sub-Dino_ses-Dino-061914_ecephys.nwb
@@ -30,7 +35,12 @@ tests:
   - sub-Templeton/sub-Templeton_ses-Templeton-032415_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-BWRat21/sub-BWRat21_ses-BWRat21-121813_ecephys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   assets_ok:
   - sub-BWRat17/sub-BWRat17_ses-BWRat17-121712_ecephys.nwb
   - sub-BWRat17/sub-BWRat17_ses-BWRat17-121912_ecephys.nwb
@@ -41,7 +51,6 @@ tests:
   - sub-BWRat20/sub-BWRat20_ses-BWRat20-101513_ecephys.nwb
   - sub-BWRat21/sub-BWRat21_ses-BWRat21-121113_ecephys.nwb
   - sub-BWRat21/sub-BWRat21_ses-BWRat21-121613_ecephys.nwb
-  - sub-BWRat21/sub-BWRat21_ses-BWRat21-121813_ecephys.nwb
   - sub-Bogey/sub-Bogey_ses-Bogey-012615_ecephys.nwb
   - sub-Dino/sub-Dino_ses-Dino-061814_ecephys.nwb
   - sub-Dino/sub-Dino_ses-Dino-072114_ecephys.nwb

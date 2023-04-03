@@ -1,7 +1,8 @@
+dandiset: '000212'
 dandiset_version: 3086d5c6ff7dae715911dcdb3af55b552671a36e
-last_run: 2023-02-15 06:54:46.069508-05:00
+last_run: '2023-02-15T06:54:46.069508-05:00'
 last_run_duration: 604144.815369
-last_run_ended: 2023-02-22 06:43:50.884877-05:00
+last_run_ended: '2023-02-22T06:43:50.884877-05:00'
 nassets: 1013
 tests:
 - assets_nok: []
@@ -229,7 +230,11 @@ tests:
   - sub-0-200-DDC-18C-fly#-45/sub-0-200-DDC-18C-fly#-45_behavior.nwb
   - sub-0-200-DDC-18C-fly#-46/sub-0-200-DDC-18C-fly#-46_behavior.nwb
   - sub-0-200-DDC-18C-fly#-47/sub-0-200-DDC-18C-fly#-47_behavior.nwb
-  - sub-0-200-DDC-18C-fly#-48/sub-0-200-DDC-18C-fly#-48_behavior.nwb
+  - path: sub-0-200-DDC-18C-fly#-48/sub-0-200-DDC-18C-fly#-48_behavior.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-0-200-DDC-18C-fly#-5/sub-0-200-DDC-18C-fly#-5_behavior.nwb
   - sub-0-200-DDC-18C-fly#-6/sub-0-200-DDC-18C-fly#-6_behavior.nwb
   - sub-0-200-DDC-18C-fly#-7/sub-0-200-DDC-18C-fly#-7_behavior.nwb
@@ -1023,6 +1028,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-0-200-DDC-18C-fly#-28/sub-0-200-DDC-18C-fly#-28_behavior.nwb
+  - path: sub-0-200-DDC-18C-fly#-48/sub-0-200-DDC-18C-fly#-48_behavior.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-500-0-500-CS-fly#-20/sub-500-0-500-CS-fly#-20_behavior.nwb
   assets_ok:
   - sub-0-0-CS-fly#-1/sub-0-0-CS-fly#-1_behavior.nwb
@@ -1247,7 +1257,6 @@ tests:
   - sub-0-200-DDC-18C-fly#-45/sub-0-200-DDC-18C-fly#-45_behavior.nwb
   - sub-0-200-DDC-18C-fly#-46/sub-0-200-DDC-18C-fly#-46_behavior.nwb
   - sub-0-200-DDC-18C-fly#-47/sub-0-200-DDC-18C-fly#-47_behavior.nwb
-  - sub-0-200-DDC-18C-fly#-48/sub-0-200-DDC-18C-fly#-48_behavior.nwb
   - sub-0-200-DDC-18C-fly#-5/sub-0-200-DDC-18C-fly#-5_behavior.nwb
   - sub-0-200-DDC-18C-fly#-6/sub-0-200-DDC-18C-fly#-6_behavior.nwb
   - sub-0-200-DDC-18C-fly#-7/sub-0-200-DDC-18C-fly#-7_behavior.nwb

@@ -1,7 +1,8 @@
+dandiset: '000165'
 dandiset_version: 4b25404b500e929422499b165d52d4dcd09d5e4c
-last_run: 2023-02-13 21:04:01.745562-05:00
+last_run: '2023-02-13T21:04:01.745562-05:00'
 last_run_duration: 495594.831418
-last_run_ended: 2023-02-19 14:43:56.576980-05:00
+last_run_ended: '2023-02-19T14:43:56.576980-05:00'
 nassets: 572
 tests:
 - assets_nok: []
@@ -136,7 +137,11 @@ tests:
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon02-HomeCage_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon02-LinearTrack_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon03-HomeCage_behavior+ecephys.nwb
-  - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon03-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Cinnamon/sub-Cinnamon_ses-Cinnamon03-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon04-HomeCage_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon04-LinearTrack_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon05_HomeCage_behavior+ecephys.nwb
@@ -581,6 +586,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-Cinnamon/sub-Cinnamon_ses-Cinnamon03-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-Thyme/sub-Thyme_ses-Thyme02-HomeCage_behavior+ecephys.nwb
   assets_ok:
   - sub-Adobo/sub-Adobo_ses-Adobo01_HomeCage_behavior+ecephys.nwb
@@ -713,7 +723,6 @@ tests:
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon02-HomeCage_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon02-LinearTrack_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon03-HomeCage_behavior+ecephys.nwb
-  - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon03-LinearTrack_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon04-HomeCage_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon04-LinearTrack_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon05_HomeCage_behavior+ecephys.nwb

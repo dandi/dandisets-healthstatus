@@ -1,7 +1,8 @@
+dandiset: '000016'
 dandiset_version: 26a0de332df3563eda577eae18de9499a9ba1b67
-last_run: 2023-02-03 09:34:40.898040-05:00
+last_run: '2023-02-03T09:34:40.898040-05:00'
 last_run_duration: 890437.490776
-last_run_ended: 2023-02-13 16:55:18.388816-05:00
+last_run_ended: '2023-02-13T16:55:18.388816-05:00'
 nassets: 135
 tests:
 - assets_nok: []
@@ -49,7 +50,11 @@ tests:
   - sub-mouse2-fni17/sub-mouse2-fni17_ses-170724051215.nwb
   - sub-mouse2-fni17/sub-mouse2-fni17_ses-170822014200.nwb
   - sub-mouse3-fni18/sub-mouse3-fni18_ses-170502144848.nwb
-  - sub-mouse4-fni19/sub-mouse4-fni19_ses-170622232029.nwb
+  - path: sub-mouse4-fni19/sub-mouse4-fni19_ses-170622232029.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170625140616.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170625140624.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170625231642.nwb
@@ -145,6 +150,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-mouse2-fni17/sub-mouse2-fni17_ses-161025114743.nwb
+  - path: sub-mouse4-fni19/sub-mouse4-fni19_ses-170622232029.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   assets_ok: []
   assets_timeout:
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161220141515.nwb
@@ -256,7 +266,6 @@ tests:
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170621113304.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170622104804.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170622202446.nwb
-  - sub-mouse4-fni19/sub-mouse4-fni19_ses-170622232029.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170623103709.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170625071730.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170625140616.nwb

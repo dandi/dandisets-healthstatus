@@ -1,7 +1,8 @@
+dandiset: '000221'
 dandiset_version: 28c20d5efebc722c72c3e5f9e65be73539618ba3
-last_run: 2023-02-20 01:38:26.121709-05:00
+last_run: '2023-02-20T01:38:26.121709-05:00'
 last_run_duration: 909704.728126
-last_run_ended: 2023-03-02 14:20:10.849835-05:00
+last_run_ended: '2023-03-02T14:20:10.849835-05:00'
 nassets: 263
 tests:
 - assets_nok: []
@@ -98,7 +99,11 @@ tests:
   - sub-HI210/sub-HI210_ses-HI210-080719_ecephys+ogen.nwb
   - sub-HI210/sub-HI210_ses-HI210-080819_ecephys+ogen.nwb
   - sub-HI210/sub-HI210_ses-HI210-080919_ecephys+ogen.nwb
-  - sub-HI210/sub-HI210_ses-HI210-081019_ecephys+ogen.nwb
+  - path: sub-HI210/sub-HI210_ses-HI210-081019_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-HI210/sub-HI210_ses-HI210-081119_ecephys+ogen.nwb
   - sub-HI210/sub-HI210_ses-HI210-081219_ecephys+ogen.nwb
   - sub-HI211/sub-HI211_ses-HI211-072219_ecephys+ogen.nwb
@@ -273,6 +278,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-HI207/sub-HI207_ses-HI207-063019_ecephys+ogen.nwb
+  - path: sub-HI210/sub-HI210_ses-HI210-081019_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-SC028/sub-SC028_ses-SC028-092519_ecephys+ogen.nwb
   assets_ok:
   - sub-HI173/sub-HI173_ses-HI173-123118_ecephys+ogen.nwb
@@ -382,7 +392,6 @@ tests:
   - sub-HI210/sub-HI210_ses-HI210-080719_ecephys+ogen.nwb
   - sub-HI210/sub-HI210_ses-HI210-080819_ecephys+ogen.nwb
   - sub-HI210/sub-HI210_ses-HI210-080919_ecephys+ogen.nwb
-  - sub-HI210/sub-HI210_ses-HI210-081019_ecephys+ogen.nwb
   - sub-HI210/sub-HI210_ses-HI210-081119_ecephys+ogen.nwb
   - sub-HI210/sub-HI210_ses-HI210-081219_ecephys+ogen.nwb
   - sub-HI211/sub-HI211_ses-HI211-072219_ecephys+ogen.nwb

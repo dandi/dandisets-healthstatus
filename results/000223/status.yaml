@@ -1,7 +1,8 @@
+dandiset: '000223'
 dandiset_version: 58188a479c030b32c104d7bdf65fd0e7ea2afd95
-last_run: 2023-02-20 01:38:44.085862-05:00
+last_run: '2023-02-20T01:38:44.085862-05:00'
 last_run_duration: 40479.540888
-last_run_ended: 2023-02-20 12:53:23.626750-05:00
+last_run_ended: '2023-02-20T12:53:23.626750-05:00'
 nassets: 20
 tests:
 - assets_nok: []
@@ -9,7 +10,11 @@ tests:
   - sub-2282/sub-2282_ses-20190914T145458_ecephys+ophys.nwb
   - sub-2282/sub-2282_ses-20190914T151231_ecephys+ophys.nwb
   - sub-2282/sub-2282_ses-20190914T162358_ecephys+ophys.nwb
-  - sub-2282/sub-2282_ses-20190914T164312_ecephys+ophys.nwb
+  - path: sub-2282/sub-2282_ses-20190914T164312_ecephys+ophys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-2282/sub-2282_ses-20190914T170145_ecephys+ophys.nwb
   - sub-2610/sub-2610_ses-20201005T153308_ecephys+ophys.nwb
   - sub-2615/sub-2615_ses-20201007T162625_ecephys+ophys.nwb
@@ -29,12 +34,16 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-2282/sub-2282_ses-20190914T164312_ecephys+ophys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-2615/sub-2615_ses-20201007T162625_ecephys+ophys.nwb
   assets_ok:
   - sub-2282/sub-2282_ses-20190914T145458_ecephys+ophys.nwb
   - sub-2282/sub-2282_ses-20190914T151231_ecephys+ophys.nwb
   - sub-2282/sub-2282_ses-20190914T162358_ecephys+ophys.nwb
-  - sub-2282/sub-2282_ses-20190914T164312_ecephys+ophys.nwb
   - sub-2282/sub-2282_ses-20190914T170145_ecephys+ophys.nwb
   - sub-2610/sub-2610_ses-20201005T153308_ecephys+ophys.nwb
   - sub-2748/sub-2748_ses-20200928T173432_ecephys+ophys.nwb

@@ -1,0 +1,22 @@
+dandiset: '000446'
+dandiset_version: 21b8b8c2c37cda55b8b5bfe235b7295fe1a5c59d
+last_run: null
+last_run_duration: null
+last_run_ended: null
+nassets: null
+tests:
+- assets_nok: []
+  assets_ok:
+  - sub-163036voltron1608-cell3-500Hzcontour-kinetics/sub-163036voltron1608-cell3-500Hzcontour-kinetics_ses-20230208T163036_image.nwb
+  assets_timeout: []
+  name: pynwb_open_load_ns
+- assets_nok:
+  - sub-163036voltron1608-cell3-500Hzcontour-kinetics/sub-163036voltron1608-cell3-500Hzcontour-kinetics_ses-20230208T163036_image.nwb
+  assets_ok: []
+  assets_timeout: []
+  name: matnwb_nwbRead
+untested: []
+versions:
+  hdmf: 3.5.2
+  matnwb: v2.6.0.1
+  pynwb: 2.3.1

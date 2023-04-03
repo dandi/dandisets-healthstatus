@@ -1,7 +1,8 @@
+dandiset: '000217'
 dandiset_version: 8655922b86982698ce5b2cd7194821e1797e09b7
-last_run: 2023-02-16 20:55:21.368939-05:00
+last_run: '2023-02-16T20:55:21.368939-05:00'
 last_run_duration: 276201.988749
-last_run_ended: 2023-02-20 01:38:43.357688-05:00
+last_run_ended: '2023-02-20T01:38:43.357688-05:00'
 nassets: 1121
 tests:
 - assets_nok: []
@@ -547,7 +548,11 @@ tests:
   - sub-Mouse 2071/sub-Mouse 2071_ses-Session 35.nwb
   - sub-Mouse 2071/sub-Mouse 2071_ses-Session 36.nwb
   - sub-Mouse 2071/sub-Mouse 2071_ses-Session 37.nwb
-  - sub-Mouse 2071/sub-Mouse 2071_ses-Session 38.nwb
+  - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 38.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-Mouse 2072/sub-Mouse 2072_ses-Session 01_obj-30jj0.nwb
   - sub-Mouse 2072/sub-Mouse 2072_ses-Session 01_obj-jeu8jn.nwb
   - sub-Mouse 2072/sub-Mouse 2072_ses-Session 01_obj-wkbg6c.nwb
@@ -1131,6 +1136,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-Mouse 2056/sub-Mouse 2056_ses-Session 06_obj-4lte7q.nwb
+  - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 38.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   assets_ok:
   - sub-Mouse 2054/sub-Mouse 2054_ses-Session 01_obj-19zvma1.nwb
   - sub-Mouse 2054/sub-Mouse 2054_ses-Session 01_obj-1ec7fv2.nwb
@@ -1672,7 +1682,6 @@ tests:
   - sub-Mouse 2071/sub-Mouse 2071_ses-Session 35.nwb
   - sub-Mouse 2071/sub-Mouse 2071_ses-Session 36.nwb
   - sub-Mouse 2071/sub-Mouse 2071_ses-Session 37.nwb
-  - sub-Mouse 2071/sub-Mouse 2071_ses-Session 38.nwb
   - sub-Mouse 2072/sub-Mouse 2072_ses-Session 01_obj-30jj0.nwb
   - sub-Mouse 2072/sub-Mouse 2072_ses-Session 01_obj-jeu8jn.nwb
   - sub-Mouse 2072/sub-Mouse 2072_ses-Session 01_obj-wkbg6c.nwb

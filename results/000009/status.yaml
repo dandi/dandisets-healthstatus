@@ -1,7 +1,8 @@
+dandiset: 000009
 dandiset_version: 3a7bdad555af85b029a131bcdeda165dd55a918e
-last_run: 2023-02-02 16:56:50.303919-05:00
+last_run: '2023-02-02T16:56:50.303919-05:00'
 last_run_duration: 239712.455996
-last_run_ended: 2023-02-05 11:32:02.759915-05:00
+last_run_ended: '2023-02-05T11:32:02.759915-05:00'
 nassets: 173
 tests:
 - assets_nok: []
@@ -103,7 +104,11 @@ tests:
   - sub-anm00264944/sub-anm00264944_ses-20170627T094106_ecephys+ogen.nwb
   - sub-anm00264944/sub-anm00264944_ses-20170627T094108_ecephys+ogen.nwb
   - sub-anm00264944/sub-anm00264944_ses-20170627T094111_ecephys+ogen.nwb
-  - sub-anm00264944/sub-anm00264944_ses-20170627T094119_ecephys+ogen.nwb
+  - path: sub-anm00264944/sub-anm00264944_ses-20170627T094119_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-anm00267975/sub-anm00267975_ses-20170627T094121_ecephys+ogen.nwb
   - sub-anm00267975/sub-anm00267975_ses-20170627T094123_ecephys+ogen.nwb
   - sub-anm00267975/sub-anm00267975_ses-20170627T094125_ecephys+ogen.nwb
@@ -181,7 +186,12 @@ tests:
   - sub-anm324792/sub-anm324792_ses-20170520T193909_behavior+icephys+ogen.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-anm00264944/sub-anm00264944_ses-20170627T094119_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   assets_ok:
   - sub-anm00229327/sub-anm00229327_ses-20170627T093438_ecephys.nwb
   - sub-anm00229327/sub-anm00229327_ses-20170627T093442_ecephys.nwb
@@ -280,7 +290,6 @@ tests:
   - sub-anm00264944/sub-anm00264944_ses-20170627T094106_ecephys+ogen.nwb
   - sub-anm00264944/sub-anm00264944_ses-20170627T094108_ecephys+ogen.nwb
   - sub-anm00264944/sub-anm00264944_ses-20170627T094111_ecephys+ogen.nwb
-  - sub-anm00264944/sub-anm00264944_ses-20170627T094119_ecephys+ogen.nwb
   - sub-anm00267975/sub-anm00267975_ses-20170627T094121_ecephys+ogen.nwb
   - sub-anm00267975/sub-anm00267975_ses-20170627T094123_ecephys+ogen.nwb
   - sub-anm00267975/sub-anm00267975_ses-20170627T094125_ecephys+ogen.nwb

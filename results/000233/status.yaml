@@ -1,7 +1,8 @@
+dandiset: '000233'
 dandiset_version: be0665612d11e4ec0f929202240b49a33da8e382
-last_run: 2023-02-22 06:43:51.196515-05:00
+last_run: '2023-02-22T06:43:51.196515-05:00'
 last_run_duration: 1032946.70018
-last_run_ended: 2023-03-06 05:39:37.896695-05:00
+last_run_ended: '2023-03-06T05:39:37.896695-05:00'
 nassets: 345
 tests:
 - assets_nok: []
@@ -211,7 +212,11 @@ tests:
   - sub-CGM37/sub-CGM37_ses-CGM37_1210um_634um_210126_144503_ecephys.nwb
   - sub-CGM37/sub-CGM37_ses-CGM37_1210um_634um_210128_075449_ecephys.nwb
   - sub-CGM39/sub-CGM39_ses-0um_210201_111930_ecephys.nwb
-  - sub-CGM39/sub-CGM39_ses-1080um_210201_131713_ecephys.nwb
+  - path: sub-CGM39/sub-CGM39_ses-1080um_210201_131713_ecephys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-CGM39/sub-CGM39_ses-1080um_210201_155714_ecephys.nwb
   - sub-CGM39/sub-CGM39_ses-1080um_210202_091259_ecephys.nwb
   - sub-CGM39/sub-CGM39_ses-1080um_210202_174332_ecephys.nwb
@@ -355,6 +360,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-CGM1/sub-CGM1_ses-CGM1-144um-181130-121628_ecephys.nwb
+  - path: sub-CGM39/sub-CGM39_ses-1080um_210201_131713_ecephys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   assets_ok:
   - sub-CGM1/sub-CGM1_ses-CGM1-0um-181130-112307_ecephys.nwb
   - sub-CGM1/sub-CGM1_ses-CGM1-288um-181130-123859_ecephys.nwb
@@ -437,7 +447,6 @@ tests:
   - sub-CGM37/sub-CGM37_ses-CGM37_1210um_634um_210122_145239_ecephys.nwb
   - sub-CGM37/sub-CGM37_ses-CGM37_1210um_634um_210128_075449_ecephys.nwb
   - sub-CGM39/sub-CGM39_ses-0um_210201_111930_ecephys.nwb
-  - sub-CGM39/sub-CGM39_ses-1080um_210201_131713_ecephys.nwb
   - sub-CGM39/sub-CGM39_ses-1080um_210202_174332_ecephys.nwb
   - sub-CGM39/sub-CGM39_ses-1080um_210204_084312_ecephys.nwb
   - sub-CGM39/sub-CGM39_ses-1080um_210204_182207_ecephys.nwb

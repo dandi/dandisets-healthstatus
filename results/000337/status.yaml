@@ -1,7 +1,8 @@
+dandiset: '000337'
 dandiset_version: 792f6838faae10ea920e2a24546d200fd7fa400c
-last_run: 2023-03-01 19:16:14.464432-05:00
+last_run: '2023-03-01T19:16:14.464432-05:00'
 last_run_duration: 50341.288266
-last_run_ended: 2023-03-02 09:15:15.752698-05:00
+last_run_ended: '2023-03-02T09:15:15.752698-05:00'
 nassets: 21
 tests:
 - assets_nok: []
@@ -14,7 +15,11 @@ tests:
   - sub-1089233462/sub-1089233462_ses-1089235664_icephys.nwb
   - sub-681539651/sub-681539651_ses-PLACEHOLDER_obj-taag8t_icephys.nwb
   - sub-681539651/sub-681539651_ses-PLACEHOLDER_obj-v5bwie_icephys.nwb
-  - sub-681561759/sub-681561759_ses-PLACEHOLDER_icephys.nwb
+  - path: sub-681561759/sub-681561759_ses-PLACEHOLDER_icephys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-701201569/sub-701201569_ses-PLACEHOLDER_icephys.nwb
   - sub-791205802/sub-791205802_ses-PLACEHOLDER_obj-10r9ed6_icephys.nwb
   - sub-791205802/sub-791205802_ses-PLACEHOLDER_obj-g7j7bb_icephys.nwb
@@ -36,6 +41,11 @@ tests:
   - sub-1089230952/sub-1089230952_ses-1089232011_icephys.nwb
   - sub-1089233462/sub-1089233462_ses-1089235110_icephys.nwb
   - sub-1089233462/sub-1089233462_ses-1089235664_icephys.nwb
+  - path: sub-681561759/sub-681561759_ses-PLACEHOLDER_icephys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-847868497/sub-847868497_ses-847870147_icephys.nwb
   - sub-847868497/sub-847868497_ses-847870440_icephys.nwb
   - sub-847868497/sub-847868497_ses-847870571_icephys.nwb
@@ -47,7 +57,6 @@ tests:
   assets_timeout:
   - sub-681539651/sub-681539651_ses-PLACEHOLDER_obj-taag8t_icephys.nwb
   - sub-681539651/sub-681539651_ses-PLACEHOLDER_obj-v5bwie_icephys.nwb
-  - sub-681561759/sub-681561759_ses-PLACEHOLDER_icephys.nwb
   - sub-701201569/sub-701201569_ses-PLACEHOLDER_icephys.nwb
   - sub-791205802/sub-791205802_ses-PLACEHOLDER_obj-10r9ed6_icephys.nwb
   - sub-791205802/sub-791205802_ses-PLACEHOLDER_obj-g7j7bb_icephys.nwb

@@ -1,7 +1,8 @@
+dandiset: '000226'
 dandiset_version: 128a0754c6787d526889decad22751c64f2c7d24
-last_run: 2023-02-20 12:53:23.765387-05:00
+last_run: '2023-02-20T12:53:23.765387-05:00'
 last_run_duration: 407825.401445
-last_run_ended: 2023-02-25 06:10:29.166832-05:00
+last_run_ended: '2023-02-25T06:10:29.166832-05:00'
 nassets: 60
 tests:
 - assets_nok: []
@@ -12,6 +13,11 @@ tests:
   - sub-KSm8/sub-KSm8_ses-20160604T120000_behavior.nwb
   - sub-KSm9/sub-KSm9_ses-20160610T120000_behavior.nwb
   - sub-KSt112/sub-KSt112_ses-20150606T120000_behavior.nwb
+  - path: sub-KSt112/sub-KSt112_ses-20150610T120000_behavior.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-KSt119/sub-KSt119_ses-20150702T120000_behavior.nwb
   - sub-KSt126/sub-KSt126_ses-20160831T120000_behavior.nwb
   - sub-KSt137/sub-KSt137_ses-20161018T120000_obj-1cimbwp_behavior.nwb
@@ -28,7 +34,6 @@ tests:
   - sub-KSt107/sub-KSt107_ses-20150515T120000_obj-1yadv1x_behavior.nwb
   - sub-KSt109/sub-KSt109_ses-20150521T120000_behavior.nwb
   - sub-KSt111/sub-KSt111_ses-20150529T120000_behavior.nwb
-  - sub-KSt112/sub-KSt112_ses-20150610T120000_behavior.nwb
   - sub-KSt115/sub-KSt115_ses-20150622T120000_behavior.nwb
   - sub-KSt117/sub-KSt117_ses-20150629T120000_behavior.nwb
   - sub-KSt119/sub-KSt119_ses-20150703T120000_behavior.nwb
@@ -68,7 +73,12 @@ tests:
   - sub-KSt99/sub-KSt99_ses-20150506T120000_obj-1wybaw_behavior.nwb
   - sub-KSt99/sub-KSt99_ses-20150506T120000_obj-r9qsp2_behavior.nwb
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-KSt112/sub-KSt112_ses-20150610T120000_behavior.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   assets_ok: []
   assets_timeout:
   - sub-KSm11/sub-KSm11_ses-20160616T120000_behavior.nwb
@@ -86,7 +96,6 @@ tests:
   - sub-KSt109/sub-KSt109_ses-20150521T120000_behavior.nwb
   - sub-KSt111/sub-KSt111_ses-20150529T120000_behavior.nwb
   - sub-KSt112/sub-KSt112_ses-20150606T120000_behavior.nwb
-  - sub-KSt112/sub-KSt112_ses-20150610T120000_behavior.nwb
   - sub-KSt115/sub-KSt115_ses-20150622T120000_behavior.nwb
   - sub-KSt117/sub-KSt117_ses-20150629T120000_behavior.nwb
   - sub-KSt119/sub-KSt119_ses-20150702T120000_behavior.nwb

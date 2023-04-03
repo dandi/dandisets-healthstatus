@@ -1,7 +1,8 @@
+dandiset: '000362'
 dandiset_version: d1d9f9346079552717c0c7206305f67b1fda2cb1
-last_run: 2023-03-02 22:18:51.569409-05:00
+last_run: '2023-03-02T22:18:51.569409-05:00'
 last_run_duration: 189106.518071
-last_run_ended: 2023-03-05 02:50:38.087480-05:00
+last_run_ended: '2023-03-05T02:50:38.087480-05:00'
 nassets: 52
 tests:
 - assets_nok: []
@@ -46,7 +47,11 @@ tests:
   - jGCaMP8f/jGCaMP8f_ANM478411_cell04.nwb
   - jGCaMP8f/jGCaMP8f_ANM478411_cell05.nwb
   - jGCaMP8f/jGCaMP8f_ANM478411_cell06.nwb
-  - jGCaMP8m/jGCaMP8m_ANM472179_cell01.nwb
+  - path: jGCaMP8m/jGCaMP8m_ANM472179_cell01.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - jGCaMP8m/jGCaMP8m_ANM472179_cell02.nwb
   - jGCaMP8m/jGCaMP8m_ANM472179_cell03.nwb
   - jGCaMP8m/jGCaMP8m_ANM472179_cell04.nwb
@@ -65,6 +70,11 @@ tests:
   - jGCaMP8f/jGCaMP8f_ANM471994_cell06.nwb
   - jGCaMP8f/jGCaMP8f_ANM478407_cell05.nwb
   - jGCaMP8f/jGCaMP8f_ANM478411_cell05.nwb
+  - path: jGCaMP8m/jGCaMP8m_ANM472179_cell01.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - jGCaMP8m/jGCaMP8m_ANM472180_cell05.nwb
   assets_ok: []
   assets_timeout:
@@ -104,7 +114,6 @@ tests:
   - jGCaMP8f/jGCaMP8f_ANM478411_cell03.nwb
   - jGCaMP8f/jGCaMP8f_ANM478411_cell04.nwb
   - jGCaMP8f/jGCaMP8f_ANM478411_cell06.nwb
-  - jGCaMP8m/jGCaMP8m_ANM472179_cell01.nwb
   - jGCaMP8m/jGCaMP8m_ANM472179_cell02.nwb
   - jGCaMP8m/jGCaMP8m_ANM472179_cell03.nwb
   - jGCaMP8m/jGCaMP8m_ANM472179_cell04.nwb

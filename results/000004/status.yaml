@@ -1,7 +1,8 @@
+dandiset: '000004'
 dandiset_version: d96cb6ed78dc33135586e26dd34b8199c6c25173
-last_run: 2023-02-02 16:56:48.425089-05:00
+last_run: '2023-02-02T16:56:48.425089-05:00'
 last_run_duration: 59872.410832
-last_run_ended: 2023-02-03 09:34:40.835921-05:00
+last_run_ended: '2023-02-03T09:34:40.835921-05:00'
 nassets: 87
 tests:
 - assets_nok: []
@@ -38,7 +39,11 @@ tests:
   - sub-P29HMH/sub-P29HMH_ses-20101201_ecephys+image.nwb
   - sub-P31CS/sub-P31CS_ses-20140201_ecephys+image.nwb
   - sub-P31HMH/sub-P31HMH_ses-20110401_ecephys+image.nwb
-  - sub-P32CS/sub-P32CS_ses-20140201_ecephys+image.nwb
+  - path: sub-P32CS/sub-P32CS_ses-20140201_ecephys+image.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-P33CS/sub-P33CS_ses-20140301_obj-1ps6q26_ecephys+image.nwb
   - sub-P33CS/sub-P33CS_ses-20140301_obj-1xtqryy_ecephys+image.nwb
   - sub-P33CS/sub-P33CS_ses-20140301_obj-olcyje_ecephys+image.nwb
@@ -128,7 +133,11 @@ tests:
   - sub-P29HMH/sub-P29HMH_ses-20101201_ecephys+image.nwb
   - sub-P31CS/sub-P31CS_ses-20140201_ecephys+image.nwb
   - sub-P31HMH/sub-P31HMH_ses-20110401_ecephys+image.nwb
-  - sub-P32CS/sub-P32CS_ses-20140201_ecephys+image.nwb
+  - path: sub-P32CS/sub-P32CS_ses-20140201_ecephys+image.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-P33CS/sub-P33CS_ses-20140301_obj-1ps6q26_ecephys+image.nwb
   - sub-P33CS/sub-P33CS_ses-20140301_obj-1xtqryy_ecephys+image.nwb
   - sub-P33CS/sub-P33CS_ses-20140301_obj-olcyje_ecephys+image.nwb

@@ -1,7 +1,8 @@
+dandiset: 000239
 dandiset_version: dbc8e509daba29b03091ba8142253f8169a510cb
-last_run: 2023-02-25 04:30:49.827619-05:00
+last_run: '2023-02-25T04:30:49.827619-05:00'
 last_run_duration: 1280317.243206
-last_run_ended: 2023-03-12 00:09:27.070825-05:00
+last_run_ended: '2023-03-12T00:09:27.070825-05:00'
 nassets: 754
 tests:
 - assets_nok: []
@@ -295,7 +296,11 @@ tests:
   - sub-MX181002/sub-MX181002_ses-20181013T122426.nwb
   - sub-MX181002/sub-MX181002_ses-20181014T130457.nwb
   - sub-MX181002/sub-MX181002_ses-20181017T162149.nwb
-  - sub-MX181002/sub-MX181002_ses-20181018T160602.nwb
+  - path: sub-MX181002/sub-MX181002_ses-20181018T160602.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-MX181002/sub-MX181002_ses-20181019T170253.nwb
   - sub-MX181002/sub-MX181002_ses-20181020T145318.nwb
   - sub-MX181002/sub-MX181002_ses-20181021T121214.nwb
@@ -765,6 +770,11 @@ tests:
 - assets_nok:
   - sub-MX180601/sub-MX180601_ses-20180626T091446.nwb
   - sub-MX181002/sub-MX181002_ses-20181004T162425.nwb
+  - path: sub-MX181002/sub-MX181002_ses-20181018T160602.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-MX181002/sub-MX181002_ses-20181024T152349_behavior.nwb
   - sub-MX181301/sub-MX181301_ses-20190112T123507.nwb
   - sub-MX181302/sub-MX181302_ses-20190116T123238.nwb
@@ -1015,7 +1025,6 @@ tests:
   - sub-MX181002/sub-MX181002_ses-20181013T122426.nwb
   - sub-MX181002/sub-MX181002_ses-20181014T130457.nwb
   - sub-MX181002/sub-MX181002_ses-20181017T162149.nwb
-  - sub-MX181002/sub-MX181002_ses-20181018T160602.nwb
   - sub-MX181002/sub-MX181002_ses-20181019T170253.nwb
   - sub-MX181002/sub-MX181002_ses-20181021T121214.nwb
   - sub-MX181002/sub-MX181002_ses-20181022T161718.nwb

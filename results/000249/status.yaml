@@ -1,7 +1,8 @@
+dandiset: 000249
 dandiset_version: cdf422d48bdc6f5f11ade7d4901059f5e40ff18c
-last_run: 2023-02-26 11:06:26.004898-05:00
+last_run: '2023-02-26T11:06:26.004898-05:00'
 last_run_duration: 288588.255262
-last_run_ended: 2023-03-01 19:16:14.260160-05:00
+last_run_ended: '2023-03-01T19:16:14.260160-05:00'
 nassets: 777
 tests:
 - assets_nok: []
@@ -674,7 +675,11 @@ tests:
   - sub-NV58/sub-NV58_ses-20180306T121232_ophys.nwb
   - sub-NV58/sub-NV58_ses-20180306T122004_ophys.nwb
   - sub-NV58/sub-NV58_ses-20180306T124614_ophys.nwb
-  - sub-NV58/sub-NV58_ses-20180306T125724_ophys.nwb
+  - path: sub-NV58/sub-NV58_ses-20180306T125724_ophys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-NV58/sub-NV58_ses-20180306T130646_ophys.nwb
   - sub-NV58/sub-NV58_ses-20180308T030000_ophys.nwb
   - sub-NV58/sub-NV58_ses-20180308T120953_ophys.nwb
@@ -790,6 +795,11 @@ tests:
   - sub-NV28/sub-NV28_ses-20170523T221527_ophys.nwb
   - sub-NV41/sub-NV41_ses-20170918T220137_ophys.nwb
   - sub-NV41/sub-NV41_ses-20170920T180235_ophys.nwb
+  - path: sub-NV58/sub-NV58_ses-20180306T125724_ophys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   assets_ok:
   - sub-EV06/sub-EV06_ses-20190121T202304_ophys.nwb
   - sub-EV06/sub-EV06_ses-20190121T203600_ophys.nwb
@@ -1455,7 +1465,6 @@ tests:
   - sub-NV58/sub-NV58_ses-20180306T121232_ophys.nwb
   - sub-NV58/sub-NV58_ses-20180306T122004_ophys.nwb
   - sub-NV58/sub-NV58_ses-20180306T124614_ophys.nwb
-  - sub-NV58/sub-NV58_ses-20180306T125724_ophys.nwb
   - sub-NV58/sub-NV58_ses-20180306T130646_ophys.nwb
   - sub-NV58/sub-NV58_ses-20180308T030000_ophys.nwb
   - sub-NV58/sub-NV58_ses-20180308T120953_ophys.nwb

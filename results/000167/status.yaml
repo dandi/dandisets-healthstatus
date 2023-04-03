@@ -1,7 +1,8 @@
+dandiset: '000167'
 dandiset_version: a445f0b12634283f0b4b6f0c81e56a4c47f7e74c
-last_run: 2023-02-14 14:34:27.559009-05:00
+last_run: '2023-02-14T14:34:27.559009-05:00'
 last_run_duration: 16844.44196
-last_run_ended: 2023-02-14 19:15:12.000969-05:00
+last_run_ended: '2023-02-14T19:15:12.000969-05:00'
 nassets: 5
 tests:
 - assets_nok: []
@@ -9,16 +10,24 @@ tests:
   - sub-163/sub-163_ses-20200212T160655_ophys.nwb
   - sub-164/sub-164_ses-20200124T161514_ophys.nwb
   - sub-7/sub-7_ses-20200213T113524_ophys.nwb
-  - sub-8/sub-8_ses-20200204T180138_ophys.nwb
+  - path: sub-8/sub-8_ses-20200204T180138_ophys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-9/sub-9_ses-20200204T154200_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-8/sub-8_ses-20200204T180138_ophys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   assets_ok:
   - sub-163/sub-163_ses-20200212T160655_ophys.nwb
   - sub-164/sub-164_ses-20200124T161514_ophys.nwb
   - sub-7/sub-7_ses-20200213T113524_ophys.nwb
-  - sub-8/sub-8_ses-20200204T180138_ophys.nwb
   - sub-9/sub-9_ses-20200204T154200_ophys.nwb
   assets_timeout: []
   name: matnwb_nwbRead

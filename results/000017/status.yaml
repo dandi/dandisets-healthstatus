@@ -1,7 +1,8 @@
+dandiset: '000017'
 dandiset_version: d89fc44ba3f2f30b5abd6868c2a6616b033000e8
-last_run: 2023-02-04 05:34:34.687275-05:00
+last_run: '2023-02-04T05:34:34.687275-05:00'
 last_run_duration: 138358.939158
-last_run_ended: 2023-02-05 20:00:33.626433-05:00
+last_run_ended: '2023-02-05T20:00:33.626433-05:00'
 nassets: 39
 tests:
 - assets_nok: []
@@ -41,13 +42,22 @@ tests:
   - sub-Richards/sub-Richards_ses-20171101T120000.nwb
   - sub-Richards/sub-Richards_ses-20171102T120000.nwb
   - sub-Tatum/sub-Tatum_ses-20171206T120000.nwb
-  - sub-Tatum/sub-Tatum_ses-20171207T120000.nwb
+  - path: sub-Tatum/sub-Tatum_ses-20171207T120000.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-Tatum/sub-Tatum_ses-20171208T120000.nwb
   - sub-Tatum/sub-Tatum_ses-20171209T120000.nwb
   - sub-Theiler/sub-Theiler_ses-20171011T120000.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-Tatum/sub-Tatum_ses-20171207T120000.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   assets_ok:
   - sub-Cori/sub-Cori_ses-20161217T120000.nwb
   - sub-Forssmann/sub-Forssmann_ses-20171101T120000.nwb
@@ -85,7 +95,6 @@ tests:
   - sub-Richards/sub-Richards_ses-20171101T120000.nwb
   - sub-Richards/sub-Richards_ses-20171102T120000.nwb
   - sub-Tatum/sub-Tatum_ses-20171206T120000.nwb
-  - sub-Tatum/sub-Tatum_ses-20171207T120000.nwb
   - sub-Tatum/sub-Tatum_ses-20171208T120000.nwb
   - sub-Tatum/sub-Tatum_ses-20171209T120000.nwb
   - sub-Theiler/sub-Theiler_ses-20171011T120000.nwb

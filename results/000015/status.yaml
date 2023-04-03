@@ -1,7 +1,8 @@
+dandiset: '000015'
 dandiset_version: 8c742275482631e86bb8eca7cdc67c1ffd83574d
-last_run: 2023-02-03 06:08:17.348365-05:00
+last_run: '2023-02-03T06:08:17.348365-05:00'
 last_run_duration: 368369.760466
-last_run_ended: 2023-02-07 12:27:47.108831-05:00
+last_run_ended: '2023-02-07T12:27:47.108831-05:00'
 nassets: 210
 tests:
 - assets_nok: []
@@ -202,7 +203,11 @@ tests:
   - sub-an064/sub-an064_ses-20150219_obj-hid9x0.nwb
   - sub-an064/sub-an064_ses-20150219_obj-o0oo82.nwb
   - sub-an064/sub-an064_ses-20150219_obj-zy8v7t.nwb
-  - sub-an066/sub-an066_ses-20150205_obj-1dwc8hk.nwb
+  - path: sub-an066/sub-an066_ses-20150205_obj-1dwc8hk.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-an066/sub-an066_ses-20150205_obj-1oq8r0h.nwb
   - sub-an066/sub-an066_ses-20150206_obj-10arvlt.nwb
   - sub-an066/sub-an066_ses-20150206_obj-16dlnt9.nwb
@@ -220,6 +225,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-an044/sub-an044_ses-20140929_obj-3fi722.nwb
+  - path: sub-an066/sub-an066_ses-20150205_obj-1dwc8hk.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   assets_ok:
   - sub-an041/sub-an041_ses-20140821_obj-17pzgym.nwb
   - sub-an041/sub-an041_ses-20140821_obj-jpt9d0.nwb
@@ -415,7 +425,6 @@ tests:
   - sub-an064/sub-an064_ses-20150219_obj-hid9x0.nwb
   - sub-an064/sub-an064_ses-20150219_obj-o0oo82.nwb
   - sub-an064/sub-an064_ses-20150219_obj-zy8v7t.nwb
-  - sub-an066/sub-an066_ses-20150205_obj-1dwc8hk.nwb
   - sub-an066/sub-an066_ses-20150205_obj-1oq8r0h.nwb
   - sub-an066/sub-an066_ses-20150206_obj-10arvlt.nwb
   - sub-an066/sub-an066_ses-20150206_obj-16dlnt9.nwb
