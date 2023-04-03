@@ -38,7 +38,11 @@ tests:
   - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
     C2hSynL 17-5degrees_obj-ph0qxm_ophys.nwb
   - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1748njo_ophys.nwb
-  - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-180hxgx_ophys.nwb
+  - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-180hxgx_ophys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1pgfsq2_ophys.nwb
   - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1y5iyhl_ophys.nwb
   - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-du848d_ophys.nwb
@@ -97,6 +101,11 @@ tests:
       hdmf: 3.5.2
       matnwb: v2.6.0.1
       pynwb: 2.3.1
+  - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-180hxgx_ophys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   assets_ok:
   - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-10xaxmr_ophys.nwb
   - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-18ryofc_ophys.nwb
@@ -123,7 +132,6 @@ tests:
   - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
     C2hSynL 17-5degrees_obj-ph0qxm_ophys.nwb
   - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1748njo_ophys.nwb
-  - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-180hxgx_ophys.nwb
   - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1pgfsq2_ophys.nwb
   - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1y5iyhl_ophys.nwb
   - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-du848d_ophys.nwb

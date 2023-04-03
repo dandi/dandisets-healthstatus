@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-EE/sub-EE_ses-EE-042_ecephys.nwb
-  - sub-EE/sub-EE_ses-EE-043_ecephys.nwb
+  - path: sub-EE/sub-EE_ses-EE-043_ecephys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-EE/sub-EE_ses-EE-044_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-045_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-046_ecephys.nwb
@@ -43,6 +47,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-EE/sub-EE_ses-EE-042_ecephys.nwb
+  - path: sub-EE/sub-EE_ses-EE-043_ecephys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - path: sub-EE/sub-EE_ses-EE-080_ecephys.nwb
     versions:
       hdmf: 3.5.2
@@ -50,7 +59,6 @@ tests:
       pynwb: 2.3.1
   - sub-EE/sub-EE_ses-EE-087_ecephys.nwb
   assets_ok:
-  - sub-EE/sub-EE_ses-EE-043_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-044_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-045_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-046_ecephys.nwb

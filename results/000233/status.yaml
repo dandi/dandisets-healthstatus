@@ -78,7 +78,11 @@ tests:
   - sub-CGM3/sub-CGM3_ses-CGM3_0um_190301_122633_ecephys.nwb
   - sub-CGM3/sub-CGM3_ses-CGM3_288um_190301_142051_ecephys.nwb
   - sub-CGM3/sub-CGM3_ses-CGM3_537um_190301_150904_ecephys.nwb
-  - sub-CGM3/sub-CGM3_ses-CGM3_609um_190301_183547_ecephys.nwb
+  - path: sub-CGM3/sub-CGM3_ses-CGM3_609um_190301_183547_ecephys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-CGM3/sub-CGM3_ses-CGM3_609um_190301_183850_ecephys.nwb
   - sub-CGM3/sub-CGM3_ses-CGM3_681um_190302_212204_ecephys.nwb
   - sub-CGM3/sub-CGM3_ses-CGM3_72um_190301_134959_ecephys.nwb
@@ -360,6 +364,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-CGM1/sub-CGM1_ses-CGM1-144um-181130-121628_ecephys.nwb
+  - path: sub-CGM3/sub-CGM3_ses-CGM3_609um_190301_183547_ecephys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - path: sub-CGM39/sub-CGM39_ses-1080um_210201_131713_ecephys.nwb
     versions:
       hdmf: 3.5.2
@@ -392,7 +401,6 @@ tests:
   - sub-CGM3/sub-CGM3_ses-CGM3_0um_190301_122633_ecephys.nwb
   - sub-CGM3/sub-CGM3_ses-CGM3_288um_190301_142051_ecephys.nwb
   - sub-CGM3/sub-CGM3_ses-CGM3_537um_190301_150904_ecephys.nwb
-  - sub-CGM3/sub-CGM3_ses-CGM3_609um_190301_183547_ecephys.nwb
   - sub-CGM3/sub-CGM3_ses-CGM3_72um_190301_134959_ecephys.nwb
   - sub-CGM30/sub-CGM30_ses-CGM30-0um-210123-103256_ecephys.nwb
   - sub-CGM30/sub-CGM30_ses-CGM30-0um-210202-081800_ecephys.nwb

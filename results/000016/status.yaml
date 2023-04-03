@@ -9,6 +9,11 @@ tests:
   assets_ok:
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161220141515.nwb
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221151903.nwb
+  - path: sub-mouse1-fni16/sub-mouse1-fni16_ses-161221192707.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161228191005.nwb
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-170715114212.nwb
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-170806110934.nwb
@@ -76,7 +81,6 @@ tests:
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221150439.nwb
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221152112.nwb
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221191914.nwb
-  - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221192707.nwb
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221201806.nwb
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221225510.nwb
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221234022.nwb
@@ -149,6 +153,11 @@ tests:
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170708041635.nwb
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-mouse1-fni16/sub-mouse1-fni16_ses-161221192707.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-mouse2-fni17/sub-mouse2-fni17_ses-161025114743.nwb
   - path: sub-mouse4-fni19/sub-mouse4-fni19_ses-170622232029.nwb
     versions:
@@ -164,7 +173,6 @@ tests:
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221151903.nwb
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221152112.nwb
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221191914.nwb
-  - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221192707.nwb
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221201806.nwb
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221225510.nwb
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221234022.nwb

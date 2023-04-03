@@ -110,7 +110,11 @@ tests:
   - sub-Mouse 2056/sub-Mouse 2056_ses-Session 04_obj-16cjvad.nwb
   - sub-Mouse 2056/sub-Mouse 2056_ses-Session 04_obj-nmxir4.nwb
   - sub-Mouse 2056/sub-Mouse 2056_ses-Session 04_obj-xykt9y.nwb
-  - sub-Mouse 2056/sub-Mouse 2056_ses-Session 05_obj-17598e9.nwb
+  - path: sub-Mouse 2056/sub-Mouse 2056_ses-Session 05_obj-17598e9.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-Mouse 2056/sub-Mouse 2056_ses-Session 05_obj-1hx2g3o.nwb
   - sub-Mouse 2056/sub-Mouse 2056_ses-Session 05_obj-1ju2uww.nwb
   - sub-Mouse 2056/sub-Mouse 2056_ses-Session 05_obj-xq21hx.nwb
@@ -1135,6 +1139,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-Mouse 2056/sub-Mouse 2056_ses-Session 05_obj-17598e9.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-Mouse 2056/sub-Mouse 2056_ses-Session 06_obj-4lte7q.nwb
   - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 38.nwb
     versions:
@@ -1245,7 +1254,6 @@ tests:
   - sub-Mouse 2056/sub-Mouse 2056_ses-Session 04_obj-16cjvad.nwb
   - sub-Mouse 2056/sub-Mouse 2056_ses-Session 04_obj-nmxir4.nwb
   - sub-Mouse 2056/sub-Mouse 2056_ses-Session 04_obj-xykt9y.nwb
-  - sub-Mouse 2056/sub-Mouse 2056_ses-Session 05_obj-17598e9.nwb
   - sub-Mouse 2056/sub-Mouse 2056_ses-Session 05_obj-1hx2g3o.nwb
   - sub-Mouse 2056/sub-Mouse 2056_ses-Session 05_obj-1ju2uww.nwb
   - sub-Mouse 2056/sub-Mouse 2056_ses-Session 05_obj-xq21hx.nwb

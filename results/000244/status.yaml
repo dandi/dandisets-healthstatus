@@ -9,7 +9,11 @@ tests:
   assets_ok:
   - sub-PV02/sub-PV02_ses-awake_ophys.nwb
   - sub-PV03/sub-PV03_ses-awake_ophys.nwb
-  - sub-PV04/sub-PV04_ses-awake_ophys.nwb
+  - path: sub-PV04/sub-PV04_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-PV05/sub-PV05_ses-awake_ophys.nwb
   - sub-SLC02/sub-SLC02_ses-anest_ophys.nwb
   - sub-SLC02/sub-SLC02_ses-awake_ophys.nwb
@@ -47,6 +51,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-PV04/sub-PV04_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - path: sub-SLC10/sub-SLC10_ses-anest_ophys.nwb
     versions:
       hdmf: 3.5.2
@@ -56,7 +65,6 @@ tests:
   assets_timeout:
   - sub-PV02/sub-PV02_ses-awake_ophys.nwb
   - sub-PV03/sub-PV03_ses-awake_ophys.nwb
-  - sub-PV04/sub-PV04_ses-awake_ophys.nwb
   - sub-PV05/sub-PV05_ses-awake_ophys.nwb
   - sub-SLC02/sub-SLC02_ses-anest_ophys.nwb
   - sub-SLC02/sub-SLC02_ses-awake_ophys.nwb
