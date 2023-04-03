@@ -64,7 +64,7 @@ async def matnwb_nwbRead(asset: Asset) -> TestResult:
             "-nodesktop",
             "-batch",
             (
-                f"nwb = nwbRead({str(asset.filepath)!r}"
+                f"nwb = nwbRead({str(asset.filepath)!r})"
             ),
         ],
         env={"MATLABPATH": f"{MATNWB_INSTALL_DIR}"},
