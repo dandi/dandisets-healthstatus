@@ -77,7 +77,11 @@ tests:
   - sub-an044/sub-an044_ses-20140921_obj-14vdgsa.nwb
   - sub-an044/sub-an044_ses-20140921_obj-1k0cq9z.nwb
   - sub-an044/sub-an044_ses-20140921_obj-izm82o.nwb
-  - sub-an044/sub-an044_ses-20140922_obj-1d5hp9g.nwb
+  - path: sub-an044/sub-an044_ses-20140922_obj-1d5hp9g.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-an044/sub-an044_ses-20140922_obj-1ofupaz.nwb
   - sub-an044/sub-an044_ses-20140922_obj-1s9ir2j.nwb
   - sub-an044/sub-an044_ses-20140922_obj-1sihl7p.nwb
@@ -228,6 +232,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-an044/sub-an044_ses-20140922_obj-1d5hp9g.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-an044/sub-an044_ses-20140929_obj-3fi722.nwb
   - path: sub-an044/sub-an044_ses-20141006_obj-n18815.nwb
     versions:
@@ -310,7 +319,6 @@ tests:
   - sub-an044/sub-an044_ses-20140921_obj-14vdgsa.nwb
   - sub-an044/sub-an044_ses-20140921_obj-1k0cq9z.nwb
   - sub-an044/sub-an044_ses-20140921_obj-izm82o.nwb
-  - sub-an044/sub-an044_ses-20140922_obj-1d5hp9g.nwb
   - sub-an044/sub-an044_ses-20140922_obj-1ofupaz.nwb
   - sub-an044/sub-an044_ses-20140922_obj-1s9ir2j.nwb
   - sub-an044/sub-an044_ses-20140922_obj-1sihl7p.nwb

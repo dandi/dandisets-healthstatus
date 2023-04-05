@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-353936/sub-353936_ses-20170519_behavior+ecephys+ogen.nwb
-  - sub-353936/sub-353936_ses-20170608_behavior+ecephys+ogen.nwb
+  - path: sub-353936/sub-353936_ses-20170608_behavior+ecephys+ogen.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-353936/sub-353936_ses-20170609_behavior+ecephys+ogen.nwb
   - sub-353936/sub-353936_ses-20170610_behavior+ecephys+ogen.nwb
   - sub-353936/sub-353936_ses-20170611_behavior+ecephys+ogen.nwb
@@ -117,7 +121,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-353936/sub-353936_ses-20170519_behavior+ecephys+ogen.nwb
-  - sub-353936/sub-353936_ses-20170608_behavior+ecephys+ogen.nwb
+  - path: sub-353936/sub-353936_ses-20170608_behavior+ecephys+ogen.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-353936/sub-353936_ses-20170609_behavior+ecephys+ogen.nwb
   - sub-353936/sub-353936_ses-20170610_behavior+ecephys+ogen.nwb
   - sub-353936/sub-353936_ses-20170611_behavior+ecephys+ogen.nwb

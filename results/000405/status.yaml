@@ -204,7 +204,11 @@ tests:
   - sub-s2/sub-s2_ses-Cl-T3g-120518.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-120618.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-120718.nwb
-  - sub-s2/sub-s2_ses-Cl-T3g-120918.nwb
+  - path: sub-s2/sub-s2_ses-Cl-T3g-120918.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-s2/sub-s2_ses-Cl-T3g-121118.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-121218.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-121318.nwb
@@ -491,7 +495,6 @@ tests:
   - sub-s2/sub-s2_ses-Cl-T3g-120518.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-120618.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-120718.nwb
-  - sub-s2/sub-s2_ses-Cl-T3g-120918.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-121118.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-121218.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-121318.nwb
@@ -578,7 +581,12 @@ tests:
   - sub-s4/sub-s4_ses-Ca-T3g-041619.nwb
   - sub-s4/sub-s4_ses-Ca-T3g-041919.nwb
   - sub-s4/sub-s4_ses-Ca-T3g-042319.nwb
-  assets_ok: []
+  assets_ok:
+  - path: sub-s2/sub-s2_ses-Cl-T3g-120918.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

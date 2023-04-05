@@ -20,7 +20,11 @@ tests:
       hdmf: 3.5.2
       matnwb: v2.6.0.1
       pynwb: 2.3.1
-  - sub-Nitschke/sub-Nitschke_ses-20090819_behavior+ecephys.nwb
+  - path: sub-Nitschke/sub-Nitschke_ses-20090819_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-Nitschke/sub-Nitschke_ses-20090910_behavior+ecephys.nwb
   - sub-Nitschke/sub-Nitschke_ses-20090920_behavior+ecephys.nwb
   - sub-Nitschke/sub-Nitschke_ses-20090922_behavior+ecephys.nwb
@@ -40,12 +44,16 @@ tests:
       hdmf: 3.5.2
       matnwb: v2.6.0.1
       pynwb: 2.3.1
-  - sub-Nitschke/sub-Nitschke_ses-20090819_behavior+ecephys.nwb
   - sub-Nitschke/sub-Nitschke_ses-20090910_behavior+ecephys.nwb
   - sub-Nitschke/sub-Nitschke_ses-20090920_behavior+ecephys.nwb
   - sub-Nitschke/sub-Nitschke_ses-20090922_behavior+ecephys.nwb
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-Nitschke/sub-Nitschke_ses-20090819_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   name: matnwb_nwbRead
 untested: []
 versions:

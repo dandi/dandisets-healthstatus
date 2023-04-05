@@ -7,36 +7,20 @@ nassets: 3
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-Pt01/sub-Pt01_ecephys.nwb
-    versions:
-      hdmf: 3.5.2
-      matnwb: v2.6.0.1
-      pynwb: 2.3.1
-  - path: sub-Pt02/sub-Pt02_ecephys.nwb
-    versions:
-      hdmf: 3.5.2
-      matnwb: v2.6.0.1
-      pynwb: 2.3.1
+  - sub-Pt01/sub-Pt01_ecephys.nwb
+  - sub-Pt02/sub-Pt02_ecephys.nwb
   - sub-Pt03/sub-Pt03_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - path: sub-Pt01/sub-Pt01_ecephys.nwb
-    versions:
-      hdmf: 3.5.2
-      matnwb: v2.6.0.1
-      pynwb: 2.3.1
-  - path: sub-Pt02/sub-Pt02_ecephys.nwb
-    versions:
-      hdmf: 3.5.2
-      matnwb: v2.6.0.1
-      pynwb: 2.3.1
+  - sub-Pt01/sub-Pt01_ecephys.nwb
+  - sub-Pt02/sub-Pt02_ecephys.nwb
   assets_ok:
   - sub-Pt03/sub-Pt03_ecephys.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.5.1
-  matnwb: v2.6.0.0
-  pynwb: 2.2.0
+  hdmf: 3.5.2
+  matnwb: v2.6.0.1
+  pynwb: 2.3.1

@@ -7,36 +7,20 @@ nassets: 3
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ses-20200727T094534.nwb
-    versions:
-      hdmf: 3.5.2
-      matnwb: v2.6.0.1
-      pynwb: 2.3.1
-  - path: sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ses-20200727T094620_ecephys.nwb
-    versions:
-      hdmf: 3.5.2
-      matnwb: v2.6.0.1
-      pynwb: 2.3.1
+  - sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ses-20200727T094534.nwb
+  - sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ses-20200727T094620_ecephys.nwb
   - sub-mouse412804/sub-mouse412804_ses-20200803T115732_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - path: sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ses-20200727T094534.nwb
-    versions:
-      hdmf: 3.5.2
-      matnwb: v2.6.0.1
-      pynwb: 2.3.1
-  - path: sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ses-20200727T094620_ecephys.nwb
-    versions:
-      hdmf: 3.5.2
-      matnwb: v2.6.0.1
-      pynwb: 2.3.1
+  - sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ses-20200727T094534.nwb
+  - sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ses-20200727T094620_ecephys.nwb
   assets_ok: []
   assets_timeout:
   - sub-mouse412804/sub-mouse412804_ses-20200803T115732_ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.5.1
-  matnwb: v2.6.0.0
-  pynwb: 2.2.0
+  hdmf: 3.5.2
+  matnwb: v2.6.0.1
+  pynwb: 2.3.1

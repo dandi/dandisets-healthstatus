@@ -11,7 +11,11 @@ tests:
   - sub-BWRat17/sub-BWRat17_ses-BWRat17-121912_ecephys.nwb
   - sub-BWRat18/sub-BWRat18_ses-BWRat18-020513_ecephys.nwb
   - sub-BWRat19/sub-BWRat19_ses-BWRat19-032413_ecephys.nwb
-  - sub-BWRat19/sub-BWRat19_ses-BWRat19-032513_ecephys.nwb
+  - path: sub-BWRat19/sub-BWRat19_ses-BWRat19-032513_ecephys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-BWRat20/sub-BWRat20_ses-BWRat20-101013_ecephys.nwb
   - sub-BWRat20/sub-BWRat20_ses-BWRat20-101513_ecephys.nwb
   - sub-BWRat21/sub-BWRat21_ses-BWRat21-121113_ecephys.nwb
@@ -55,7 +59,6 @@ tests:
   - sub-BWRat17/sub-BWRat17_ses-BWRat17-121912_ecephys.nwb
   - sub-BWRat18/sub-BWRat18_ses-BWRat18-020513_ecephys.nwb
   - sub-BWRat19/sub-BWRat19_ses-BWRat19-032413_ecephys.nwb
-  - sub-BWRat19/sub-BWRat19_ses-BWRat19-032513_ecephys.nwb
   - sub-BWRat20/sub-BWRat20_ses-BWRat20-101013_ecephys.nwb
   - sub-BWRat20/sub-BWRat20_ses-BWRat20-101513_ecephys.nwb
   - sub-BWRat21/sub-BWRat21_ses-BWRat21-121113_ecephys.nwb
@@ -71,6 +74,11 @@ tests:
   - sub-Splinter/sub-Splinter_ses-Splinter-020915_ecephys.nwb
   - sub-Templeton/sub-Templeton_ses-Templeton-032415_ecephys.nwb
   assets_timeout:
+  - path: sub-BWRat19/sub-BWRat19_ses-BWRat19-032513_ecephys.nwb
+    versions:
+      hdmf: 3.5.2
+      matnwb: v2.6.0.1
+      pynwb: 2.3.1
   - sub-Dino/sub-Dino_ses-Dino-061914_ecephys.nwb
   name: matnwb_nwbRead
 untested: []

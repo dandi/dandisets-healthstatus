@@ -10,10 +10,10 @@ tests:
   - 001_140709EXP_A1.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - 001_140709EXP_A1.nwb
+- assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - 001_140709EXP_A1.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
