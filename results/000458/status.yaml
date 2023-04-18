@@ -10,13 +10,13 @@ tests:
   - sub-569073/sub-569073_ses-20210415_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-569073/sub-569073_ses-20210415_behavior+ecephys.nwb
+- assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-569073/sub-569073_ses-20210415_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.5.2
+  hdmf: 3.5.5
   matnwb: v2.6.0.1
-  pynwb: 2.3.1
+  pynwb: 2.3.2
