@@ -29,7 +29,11 @@ tests:
   - sub-123/sub-123_ses-Ca-VS-VR-TP-PAUSE-1.nwb
   - sub-124/sub-124_ses-Ca-VS-MB-4.nwb
   - sub-124/sub-124_ses-Ca-VS-MB-SPD-4.nwb
-  - sub-124/sub-124_ses-Ca-VS-MB-THREE-TP-3.nwb
+  - path: sub-124/sub-124_ses-Ca-VS-MB-THREE-TP-3.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-124/sub-124_ses-Ca-VS-MB-TP-PAUSE-2.nwb
     versions:
       hdmf: 3.5.4
@@ -81,7 +85,11 @@ tests:
   - sub-139/sub-139_ses-Ca-VS-MB-THREE-TP-7.nwb
   - sub-139/sub-139_ses-Ca-VS-MB-TP-PAUSE-6.nwb
   - sub-139/sub-139_ses-Ca-VS-VR-13.nwb
-  - sub-139/sub-139_ses-Ca-VS-VR-SPD-13.nwb
+  - path: sub-139/sub-139_ses-Ca-VS-VR-SPD-13.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-139/sub-139_ses-Ca-VS-VR-THREE-TP-13.nwb
   - sub-139/sub-139_ses-Ca-VS-VR-TP-PAUSE-9.nwb
   - path: sub-140/sub-140_ses-Ca-VS-MB-10.nwb
@@ -117,7 +125,11 @@ tests:
   - sub-159/sub-159_ses-DAsensor-VS-VR-SPD-1.nwb
   - sub-159/sub-159_ses-DAsensor-VS-VR-TP-PAUSE-1.nwb
   - sub-209/sub-209_ses-DAsensor-VS-VR-2.nwb
-  - sub-209/sub-209_ses-DAsensor-VS-VR-SPD-2.nwb
+  - path: sub-209/sub-209_ses-DAsensor-VS-VR-SPD-2.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-209/sub-209_ses-DAsensor-VS-VR-THREE-TP-1.nwb
   - sub-209/sub-209_ses-DAsensor-VS-VR-TP-PAUSE-2.nwb
   - sub-210/sub-210_ses-DAsensor-VS-VR-3.nwb
@@ -207,7 +219,11 @@ tests:
   - sub-3014/sub-3014_ses-SU-VR-ALL-SPD-1.nwb
   - sub-3014/sub-3014_ses-SU-VR-ALL-TP-1.nwb
   - sub-3014/sub-3014_ses-SU-VR-OL-1.nwb
-  - sub-3014/sub-3014_ses-SU-VR-OL-2.nwb
+  - path: sub-3014/sub-3014_ses-SU-VR-OL-2.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-3015/sub-3015_ses-SU-VR-ALL-OL-10.nwb
   - sub-3015/sub-3015_ses-SU-VR-ALL-OL-11.nwb
   - path: sub-3015/sub-3015_ses-SU-VR-ALL-OL-12.nwb
@@ -220,7 +236,11 @@ tests:
   - sub-3015/sub-3015_ses-SU-VR-ALL-OL-3.nwb
   - sub-3015/sub-3015_ses-SU-VR-ALL-OL-4.nwb
   - sub-3015/sub-3015_ses-SU-VR-ALL-OL-5.nwb
-  - sub-3015/sub-3015_ses-SU-VR-ALL-OL-6.nwb
+  - path: sub-3015/sub-3015_ses-SU-VR-ALL-OL-6.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-3015/sub-3015_ses-SU-VR-ALL-OL-7.nwb
   - sub-3015/sub-3015_ses-SU-VR-ALL-OL-8.nwb
   - sub-3015/sub-3015_ses-SU-VR-ALL-OL-9.nwb
@@ -308,8 +328,16 @@ tests:
       pynwb: 2.3.1
   - sub-3044/sub-3044_ses-SU-VR-ALL-OL-38.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-OL-39.nwb
-  - sub-3044/sub-3044_ses-SU-VR-ALL-OL-40.nwb
-  - sub-3044/sub-3044_ses-SU-VR-ALL-OL-41.nwb
+  - path: sub-3044/sub-3044_ses-SU-VR-ALL-OL-40.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-3044/sub-3044_ses-SU-VR-ALL-OL-41.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-3044/sub-3044_ses-SU-VR-ALL-OL-42.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-OL-43.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-SPD-17.nwb
@@ -325,7 +353,11 @@ tests:
   - sub-3044/sub-3044_ses-SU-VR-ALL-SPD-27.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-SPD-28.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-SPD-29.nwb
-  - sub-3044/sub-3044_ses-SU-VR-ALL-SPD-30.nwb
+  - path: sub-3044/sub-3044_ses-SU-VR-ALL-SPD-30.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-3044/sub-3044_ses-SU-VR-ALL-SPD-31.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-SPD-32.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-SPD-33.nwb
@@ -357,7 +389,11 @@ tests:
       pynwb: 2.3.1
   - sub-3044/sub-3044_ses-SU-VR-ALL-TP-25.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-TP-26.nwb
-  - sub-3044/sub-3044_ses-SU-VR-ALL-TP-27.nwb
+  - path: sub-3044/sub-3044_ses-SU-VR-ALL-TP-27.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-3044/sub-3044_ses-SU-VR-ALL-TP-28.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-TP-29.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-TP-30.nwb
@@ -535,7 +571,11 @@ tests:
   - sub-3054/sub-3054_ses-SU-VR-ALL-SPD-66.nwb
   - sub-3054/sub-3054_ses-SU-VR-ALL-SPD-67.nwb
   - sub-3054/sub-3054_ses-SU-VR-ALL-SPD-68.nwb
-  - sub-3054/sub-3054_ses-SU-VR-ALL-SPD-69.nwb
+  - path: sub-3054/sub-3054_ses-SU-VR-ALL-SPD-69.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-3054/sub-3054_ses-SU-VR-ALL-SPD-70.nwb
   - sub-3054/sub-3054_ses-SU-VR-ALL-SPD-71.nwb
   - sub-3054/sub-3054_ses-SU-VR-ALL-SPD-72.nwb
@@ -637,7 +677,11 @@ tests:
   - sub-123/sub-123_ses-Ca-VS-VR-TP-PAUSE-1.nwb
   - sub-124/sub-124_ses-Ca-VS-MB-4.nwb
   - sub-124/sub-124_ses-Ca-VS-MB-SPD-4.nwb
-  - sub-124/sub-124_ses-Ca-VS-MB-THREE-TP-3.nwb
+  - path: sub-124/sub-124_ses-Ca-VS-MB-THREE-TP-3.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-124/sub-124_ses-Ca-VS-MB-TP-PAUSE-2.nwb
     versions:
       hdmf: 3.5.4
@@ -689,7 +733,11 @@ tests:
   - sub-139/sub-139_ses-Ca-VS-MB-THREE-TP-7.nwb
   - sub-139/sub-139_ses-Ca-VS-MB-TP-PAUSE-6.nwb
   - sub-139/sub-139_ses-Ca-VS-VR-13.nwb
-  - sub-139/sub-139_ses-Ca-VS-VR-SPD-13.nwb
+  - path: sub-139/sub-139_ses-Ca-VS-VR-SPD-13.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-139/sub-139_ses-Ca-VS-VR-THREE-TP-13.nwb
   - sub-139/sub-139_ses-Ca-VS-VR-TP-PAUSE-9.nwb
   - path: sub-140/sub-140_ses-Ca-VS-MB-10.nwb
@@ -725,7 +773,11 @@ tests:
   - sub-159/sub-159_ses-DAsensor-VS-VR-SPD-1.nwb
   - sub-159/sub-159_ses-DAsensor-VS-VR-TP-PAUSE-1.nwb
   - sub-209/sub-209_ses-DAsensor-VS-VR-2.nwb
-  - sub-209/sub-209_ses-DAsensor-VS-VR-SPD-2.nwb
+  - path: sub-209/sub-209_ses-DAsensor-VS-VR-SPD-2.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-209/sub-209_ses-DAsensor-VS-VR-THREE-TP-1.nwb
   - sub-209/sub-209_ses-DAsensor-VS-VR-TP-PAUSE-2.nwb
   - sub-210/sub-210_ses-DAsensor-VS-VR-3.nwb
@@ -815,7 +867,11 @@ tests:
   - sub-3014/sub-3014_ses-SU-VR-ALL-SPD-1.nwb
   - sub-3014/sub-3014_ses-SU-VR-ALL-TP-1.nwb
   - sub-3014/sub-3014_ses-SU-VR-OL-1.nwb
-  - sub-3014/sub-3014_ses-SU-VR-OL-2.nwb
+  - path: sub-3014/sub-3014_ses-SU-VR-OL-2.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-3015/sub-3015_ses-SU-VR-ALL-OL-10.nwb
   - sub-3015/sub-3015_ses-SU-VR-ALL-OL-11.nwb
   - path: sub-3015/sub-3015_ses-SU-VR-ALL-OL-12.nwb
@@ -828,7 +884,11 @@ tests:
   - sub-3015/sub-3015_ses-SU-VR-ALL-OL-3.nwb
   - sub-3015/sub-3015_ses-SU-VR-ALL-OL-4.nwb
   - sub-3015/sub-3015_ses-SU-VR-ALL-OL-5.nwb
-  - sub-3015/sub-3015_ses-SU-VR-ALL-OL-6.nwb
+  - path: sub-3015/sub-3015_ses-SU-VR-ALL-OL-6.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-3015/sub-3015_ses-SU-VR-ALL-OL-7.nwb
   - sub-3015/sub-3015_ses-SU-VR-ALL-OL-8.nwb
   - sub-3015/sub-3015_ses-SU-VR-ALL-OL-9.nwb
@@ -916,8 +976,16 @@ tests:
       pynwb: 2.3.1
   - sub-3044/sub-3044_ses-SU-VR-ALL-OL-38.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-OL-39.nwb
-  - sub-3044/sub-3044_ses-SU-VR-ALL-OL-40.nwb
-  - sub-3044/sub-3044_ses-SU-VR-ALL-OL-41.nwb
+  - path: sub-3044/sub-3044_ses-SU-VR-ALL-OL-40.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-3044/sub-3044_ses-SU-VR-ALL-OL-41.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-3044/sub-3044_ses-SU-VR-ALL-OL-42.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-OL-43.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-SPD-17.nwb
@@ -933,7 +1001,11 @@ tests:
   - sub-3044/sub-3044_ses-SU-VR-ALL-SPD-27.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-SPD-28.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-SPD-29.nwb
-  - sub-3044/sub-3044_ses-SU-VR-ALL-SPD-30.nwb
+  - path: sub-3044/sub-3044_ses-SU-VR-ALL-SPD-30.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-3044/sub-3044_ses-SU-VR-ALL-SPD-31.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-SPD-32.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-SPD-33.nwb
@@ -965,7 +1037,11 @@ tests:
       pynwb: 2.3.1
   - sub-3044/sub-3044_ses-SU-VR-ALL-TP-25.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-TP-26.nwb
-  - sub-3044/sub-3044_ses-SU-VR-ALL-TP-27.nwb
+  - path: sub-3044/sub-3044_ses-SU-VR-ALL-TP-27.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-3044/sub-3044_ses-SU-VR-ALL-TP-28.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-TP-29.nwb
   - sub-3044/sub-3044_ses-SU-VR-ALL-TP-30.nwb
@@ -1143,7 +1219,11 @@ tests:
   - sub-3054/sub-3054_ses-SU-VR-ALL-SPD-66.nwb
   - sub-3054/sub-3054_ses-SU-VR-ALL-SPD-67.nwb
   - sub-3054/sub-3054_ses-SU-VR-ALL-SPD-68.nwb
-  - sub-3054/sub-3054_ses-SU-VR-ALL-SPD-69.nwb
+  - path: sub-3054/sub-3054_ses-SU-VR-ALL-SPD-69.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-3054/sub-3054_ses-SU-VR-ALL-SPD-70.nwb
   - sub-3054/sub-3054_ses-SU-VR-ALL-SPD-71.nwb
   - sub-3054/sub-3054_ses-SU-VR-ALL-SPD-72.nwb

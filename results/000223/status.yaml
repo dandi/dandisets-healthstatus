@@ -9,9 +9,9 @@ tests:
   assets_ok:
   - path: sub-2282/sub-2282_ses-20190914T145458_ecephys+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - sub-2282/sub-2282_ses-20190914T151231_ecephys+ophys.nwb
   - path: sub-2282/sub-2282_ses-20190914T162358_ecephys+ophys.nwb
     versions:
@@ -20,24 +20,24 @@ tests:
       pynwb: 2.3.1
   - path: sub-2282/sub-2282_ses-20190914T164312_ecephys+ophys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-2282/sub-2282_ses-20190914T170145_ecephys+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-2610/sub-2610_ses-20201005T153308_ecephys+ophys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-2615/sub-2615_ses-20201007T162625_ecephys+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-2748/sub-2748_ses-20200928T173432_ecephys+ophys.nwb
     versions:
       hdmf: 3.5.4
@@ -50,20 +50,24 @@ tests:
       pynwb: 2.3.1
   - path: sub-2763/sub-2763_ses-20200828T161323_ecephys+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-2763/sub-2763_ses-20200828T163435_ecephys+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
-  - sub-2765/sub-2765_ses-20200814T153629_ecephys+ophys.nwb
+      pynwb: 2.3.2
+  - path: sub-2765/sub-2765_ses-20200814T153629_ecephys+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-3112/sub-3112_ecephys+ophys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-3112/sub-3112_ses-20210227T185041_ecephys+ophys.nwb
     versions:
       hdmf: 3.5.4
@@ -81,9 +85,9 @@ tests:
       pynwb: 2.3.1
   - path: sub-3443/sub-3443_ses-20210814T190234_ecephys+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-3443/sub-3443_ses-20210814T193211_ecephys+ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -104,14 +108,14 @@ tests:
 - assets_nok:
   - path: sub-2282/sub-2282_ses-20190914T145458_ecephys+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
-  - path: sub-2282/sub-2282_ses-20190914T164312_ecephys+ophys.nwb
+      pynwb: 2.3.2
+  - path: sub-2610/sub-2610_ses-20201005T153308_ecephys+ophys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   assets_ok:
   - sub-2282/sub-2282_ses-20190914T151231_ecephys+ophys.nwb
   - path: sub-2282/sub-2282_ses-20190914T162358_ecephys+ophys.nwb
@@ -121,19 +125,14 @@ tests:
       pynwb: 2.3.1
   - path: sub-2282/sub-2282_ses-20190914T170145_ecephys+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
-  - path: sub-2610/sub-2610_ses-20201005T153308_ecephys+ophys.nwb
-    versions:
-      hdmf: 3.5.2
-      matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-2615/sub-2615_ses-20201007T162625_ecephys+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-2748/sub-2748_ses-20200928T173432_ecephys+ophys.nwb
     versions:
       hdmf: 3.5.4
@@ -144,17 +143,21 @@ tests:
       hdmf: 3.5.2
       matnwb: v2.6.0.1
       pynwb: 2.3.1
+  - path: sub-2763/sub-2763_ses-20200828T161323_ecephys+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-2763/sub-2763_ses-20200828T163435_ecephys+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
-  - sub-2765/sub-2765_ses-20200814T153629_ecephys+ophys.nwb
-  - path: sub-3112/sub-3112_ecephys+ophys.nwb
+      pynwb: 2.3.2
+  - path: sub-2765/sub-2765_ses-20200814T153629_ecephys+ophys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-3112/sub-3112_ses-20210227T185041_ecephys+ophys.nwb
     versions:
       hdmf: 3.5.4
@@ -172,9 +175,9 @@ tests:
       pynwb: 2.3.1
   - path: sub-3443/sub-3443_ses-20210814T190234_ecephys+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-3443/sub-3443_ses-20210814T193211_ecephys+ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -191,11 +194,16 @@ tests:
       matnwb: v2.6.0.1
       pynwb: 2.3.1
   assets_timeout:
-  - path: sub-2763/sub-2763_ses-20200828T161323_ecephys+ophys.nwb
+  - path: sub-2282/sub-2282_ses-20190914T164312_ecephys+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
+  - path: sub-3112/sub-3112_ecephys+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   name: matnwb_nwbRead
 untested: []
 versions:

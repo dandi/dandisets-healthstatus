@@ -9,13 +9,17 @@ tests:
   assets_ok:
   - sub-661968859/sub-661968859_ses-684856233_behavior+ophys.nwb
   - sub-673580710/sub-673580710_ses-693508136_behavior+ophys.nwb
-  - sub-673580710/sub-673580710_ses-694681096_behavior+ophys.nwb
+  - path: sub-673580710/sub-673580710_ses-694681096_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-673580710/sub-673580710_ses-697449744_behavior+ophys.nwb
   - path: sub-675861517/sub-675861517_ses-698363196_behavior+ophys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-699502603/sub-699502603_ses-723736689_behavior+ophys.nwb
     versions:
       hdmf: 3.5.4
@@ -50,7 +54,11 @@ tests:
       pynwb: 2.3.1
   - sub-753847689/sub-753847689_ses-783216732_behavior+ophys.nwb
   - sub-753847689/sub-753847689_ses-784120603_behavior+ophys.nwb
-  - sub-753852001/sub-753852001_ses-775627034_behavior+ophys.nwb
+  - path: sub-753852001/sub-753852001_ses-775627034_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-753852001/sub-753852001_ses-776914650_behavior+ophys.nwb
     versions:
       hdmf: 3.5.2
@@ -59,9 +67,9 @@ tests:
   - sub-754469470/sub-754469470_ses-774337597_behavior+ophys.nwb
   - path: sub-754469470/sub-754469470_ses-785467612_behavior+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-754469470/sub-754469470_ses-786137541_behavior+ophys.nwb
     versions:
       hdmf: 3.5.2
@@ -118,39 +126,53 @@ tests:
   - sub-769367548/sub-769367548_ses-794035587_behavior+ophys.nwb
   - path: sub-769367548/sub-769367548_ses-794688639_behavior+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-769367548/sub-769367548_ses-795399267_behavior+ophys.nwb
     versions:
       hdmf: 3.5.4
       matnwb: v2.6.0.1
       pynwb: 2.3.1
-  - sub-769367548/sub-769367548_ses-796420836_behavior+ophys.nwb
+  - path: sub-769367548/sub-769367548_ses-796420836_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-769367548/sub-769367548_ses-798747988_behavior+ophys.nwb
-  - sub-769367548/sub-769367548_ses-799627315_behavior+ophys.nwb
+  - path: sub-769367548/sub-769367548_ses-799627315_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-769367548/sub-769367548_ses-800143207_behavior+ophys.nwb
     versions:
       hdmf: 3.5.2
       matnwb: v2.6.0.1
       pynwb: 2.3.1
   - sub-769367548/sub-769367548_ses-802401658_behavior+ophys.nwb
-  - sub-772622312/sub-772622312_ses-800164268_behavior+ophys.nwb
-  - sub-772622312/sub-772622312_ses-803007090_behavior+ophys.nwb
+  - path: sub-772622312/sub-772622312_ses-800164268_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-772622312/sub-772622312_ses-803007090_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-772622312/sub-772622312_ses-804893755_behavior+ophys.nwb
-  - sub-772622312/sub-772622312_ses-806758614_behavior+ophys.nwb
+  - path: sub-772622312/sub-772622312_ses-806758614_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-661968859/sub-661968859_ses-684856233_behavior+ophys.nwb
   - sub-673580710/sub-673580710_ses-693508136_behavior+ophys.nwb
-  - sub-673580710/sub-673580710_ses-694681096_behavior+ophys.nwb
   - sub-673580710/sub-673580710_ses-697449744_behavior+ophys.nwb
-  - path: sub-675861517/sub-675861517_ses-698363196_behavior+ophys.nwb
-    versions:
-      hdmf: 3.5.2
-      matnwb: v2.6.0.1
-      pynwb: 2.3.1
   - sub-710318403/sub-710318403_ses-728913582_behavior+ophys.nwb
   - sub-710318403/sub-710318403_ses-729486130_behavior+ophys.nwb
   - sub-710318403/sub-710318403_ses-730569133_behavior+ophys.nwb
@@ -170,13 +192,7 @@ tests:
   - sub-753847689/sub-753847689_ses-780001940_behavior+ophys.nwb
   - sub-753847689/sub-753847689_ses-783216732_behavior+ophys.nwb
   - sub-753847689/sub-753847689_ses-784120603_behavior+ophys.nwb
-  - sub-753852001/sub-753852001_ses-775627034_behavior+ophys.nwb
   - sub-754469470/sub-754469470_ses-774337597_behavior+ophys.nwb
-  - path: sub-754469470/sub-754469470_ses-785467612_behavior+ophys.nwb
-    versions:
-      hdmf: 3.5.4
-      matnwb: v2.6.0.1
-      pynwb: 2.3.1
   - sub-759496697/sub-759496697_ses-789095523_behavior+ophys.nwb
   - sub-759496697/sub-759496697_ses-790005301_behavior+ophys.nwb
   - sub-759496697/sub-759496697_ses-790391521_behavior+ophys.nwb
@@ -201,16 +217,31 @@ tests:
       pynwb: 2.3.1
   - sub-769367548/sub-769367548_ses-792879437_behavior+ophys.nwb
   - sub-769367548/sub-769367548_ses-794035587_behavior+ophys.nwb
-  - sub-769367548/sub-769367548_ses-796420836_behavior+ophys.nwb
+  - path: sub-769367548/sub-769367548_ses-796420836_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-769367548/sub-769367548_ses-798747988_behavior+ophys.nwb
-  - sub-769367548/sub-769367548_ses-799627315_behavior+ophys.nwb
   - sub-769367548/sub-769367548_ses-802401658_behavior+ophys.nwb
-  - sub-772622312/sub-772622312_ses-800164268_behavior+ophys.nwb
-  - sub-772622312/sub-772622312_ses-803007090_behavior+ophys.nwb
   - sub-772622312/sub-772622312_ses-804893755_behavior+ophys.nwb
-  - sub-772622312/sub-772622312_ses-806758614_behavior+ophys.nwb
-  assets_ok: []
+  assets_ok:
+  - path: sub-675861517/sub-675861517_ses-698363196_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-772622312/sub-772622312_ses-800164268_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   assets_timeout:
+  - path: sub-673580710/sub-673580710_ses-694681096_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-699502603/sub-699502603_ses-723736689_behavior+ophys.nwb
     versions:
       hdmf: 3.5.4
@@ -226,11 +257,21 @@ tests:
       hdmf: 3.5.4
       matnwb: v2.6.0.1
       pynwb: 2.3.1
+  - path: sub-753852001/sub-753852001_ses-775627034_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-753852001/sub-753852001_ses-776914650_behavior+ophys.nwb
     versions:
       hdmf: 3.5.2
       matnwb: v2.6.0.1
       pynwb: 2.3.1
+  - path: sub-754469470/sub-754469470_ses-785467612_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-754469470/sub-754469470_ses-786137541_behavior+ophys.nwb
     versions:
       hdmf: 3.5.2
@@ -263,19 +304,34 @@ tests:
       pynwb: 2.3.1
   - path: sub-769367548/sub-769367548_ses-794688639_behavior+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-769367548/sub-769367548_ses-795399267_behavior+ophys.nwb
     versions:
       hdmf: 3.5.4
       matnwb: v2.6.0.1
       pynwb: 2.3.1
+  - path: sub-769367548/sub-769367548_ses-799627315_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-769367548/sub-769367548_ses-800143207_behavior+ophys.nwb
     versions:
       hdmf: 3.5.2
       matnwb: v2.6.0.1
       pynwb: 2.3.1
+  - path: sub-772622312/sub-772622312_ses-803007090_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-772622312/sub-772622312_ses-806758614_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   name: matnwb_nwbRead
 untested: []
 versions:

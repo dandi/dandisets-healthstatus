@@ -7,13 +7,29 @@ nassets: 57
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-despereaux/sub-despereaux_ses-despereaux-03_behavior+ecephys.nwb
-  - sub-despereaux/sub-despereaux_ses-despereaux-04_behavior+ecephys.nwb
+  - path: sub-despereaux/sub-despereaux_ses-despereaux-03_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-despereaux/sub-despereaux_ses-despereaux-04_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-despereaux/sub-despereaux_ses-despereaux-05_behavior+ecephys.nwb
   - sub-despereaux/sub-despereaux_ses-despereaux-06_behavior+ecephys.nwb
   - sub-despereaux/sub-despereaux_ses-despereaux-07_behavior+ecephys.nwb
-  - sub-despereaux/sub-despereaux_ses-despereaux-08_behavior+ecephys.nwb
-  - sub-despereaux/sub-despereaux_ses-despereaux-09_behavior+ecephys.nwb
+  - path: sub-despereaux/sub-despereaux_ses-despereaux-08_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-despereaux/sub-despereaux_ses-despereaux-09_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-despereaux/sub-despereaux_ses-despereaux-10_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.5
@@ -46,14 +62,22 @@ tests:
       matnwb: v2.6.0.1
       pynwb: 2.3.1
   - sub-jaq/sub-jaq_ses-jaq-08_behavior+ecephys.nwb
-  - sub-jaq/sub-jaq_ses-jaq-09_behavior+ecephys.nwb
+  - path: sub-jaq/sub-jaq_ses-jaq-09_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-jaq/sub-jaq_ses-jaq-10_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-11_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-12_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-13_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-14_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-15_behavior+ecephys.nwb
-  - sub-jaq/sub-jaq_ses-jaq-16_behavior+ecephys.nwb
+  - path: sub-jaq/sub-jaq_ses-jaq-16_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-jaq/sub-jaq_ses-jaq-17_behavior+ecephys.nwb
   - path: sub-jaq/sub-jaq_ses-jaq-18_behavior+ecephys.nwb
     versions:
@@ -89,16 +113,16 @@ tests:
   - sub-montague/sub-montague_ses-montague-13_behavior+ecephys.nwb
   - path: sub-montague/sub-montague_ses-montague-14_behavior+ecephys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - sub-montague/sub-montague_ses-montague-15_behavior+ecephys.nwb
   - sub-montague/sub-montague_ses-montague-16_behavior+ecephys.nwb
   - path: sub-montague/sub-montague_ses-montague-17_behavior+ecephys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - sub-montague/sub-montague_ses-montague-18_behavior+ecephys.nwb
   - path: sub-roquefort/sub-roquefort_ses-roquefort-07_behavior+ecephys.nwb
     versions:
@@ -125,7 +149,11 @@ tests:
       hdmf: 3.5.2
       matnwb: v2.6.0.1
       pynwb: 2.3.1
-  - sub-roquefort/sub-roquefort_ses-roquefort-12_behavior+ecephys.nwb
+  - path: sub-roquefort/sub-roquefort_ses-roquefort-12_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-roquefort/sub-roquefort_ses-roquefort-13_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.4
@@ -133,7 +161,11 @@ tests:
       pynwb: 2.3.1
   - sub-roquefort/sub-roquefort_ses-roquefort-14_behavior+ecephys.nwb
   - sub-roquefort/sub-roquefort_ses-roquefort-15_behavior+ecephys.nwb
-  - sub-roquefort/sub-roquefort_ses-roquefort-16_behavior+ecephys.nwb
+  - path: sub-roquefort/sub-roquefort_ses-roquefort-16_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-roquefort/sub-roquefort_ses-roquefort-17_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.4
@@ -167,13 +199,29 @@ tests:
       pynwb: 2.3.1
   assets_ok: []
   assets_timeout:
-  - sub-despereaux/sub-despereaux_ses-despereaux-03_behavior+ecephys.nwb
-  - sub-despereaux/sub-despereaux_ses-despereaux-04_behavior+ecephys.nwb
+  - path: sub-despereaux/sub-despereaux_ses-despereaux-03_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-despereaux/sub-despereaux_ses-despereaux-04_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-despereaux/sub-despereaux_ses-despereaux-05_behavior+ecephys.nwb
   - sub-despereaux/sub-despereaux_ses-despereaux-06_behavior+ecephys.nwb
   - sub-despereaux/sub-despereaux_ses-despereaux-07_behavior+ecephys.nwb
-  - sub-despereaux/sub-despereaux_ses-despereaux-08_behavior+ecephys.nwb
-  - sub-despereaux/sub-despereaux_ses-despereaux-09_behavior+ecephys.nwb
+  - path: sub-despereaux/sub-despereaux_ses-despereaux-08_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-despereaux/sub-despereaux_ses-despereaux-09_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-despereaux/sub-despereaux_ses-despereaux-10_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.5
@@ -206,14 +254,22 @@ tests:
       matnwb: v2.6.0.1
       pynwb: 2.3.1
   - sub-jaq/sub-jaq_ses-jaq-08_behavior+ecephys.nwb
-  - sub-jaq/sub-jaq_ses-jaq-09_behavior+ecephys.nwb
+  - path: sub-jaq/sub-jaq_ses-jaq-09_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-jaq/sub-jaq_ses-jaq-10_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-11_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-12_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-13_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-14_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-15_behavior+ecephys.nwb
-  - sub-jaq/sub-jaq_ses-jaq-16_behavior+ecephys.nwb
+  - path: sub-jaq/sub-jaq_ses-jaq-16_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-jaq/sub-jaq_ses-jaq-17_behavior+ecephys.nwb
   - path: sub-jaq/sub-jaq_ses-jaq-18_behavior+ecephys.nwb
     versions:
@@ -244,16 +300,16 @@ tests:
   - sub-montague/sub-montague_ses-montague-13_behavior+ecephys.nwb
   - path: sub-montague/sub-montague_ses-montague-14_behavior+ecephys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - sub-montague/sub-montague_ses-montague-15_behavior+ecephys.nwb
   - sub-montague/sub-montague_ses-montague-16_behavior+ecephys.nwb
   - path: sub-montague/sub-montague_ses-montague-17_behavior+ecephys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - sub-montague/sub-montague_ses-montague-18_behavior+ecephys.nwb
   - path: sub-roquefort/sub-roquefort_ses-roquefort-08_behavior+ecephys.nwb
     versions:
@@ -275,7 +331,11 @@ tests:
       hdmf: 3.5.2
       matnwb: v2.6.0.1
       pynwb: 2.3.1
-  - sub-roquefort/sub-roquefort_ses-roquefort-12_behavior+ecephys.nwb
+  - path: sub-roquefort/sub-roquefort_ses-roquefort-12_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-roquefort/sub-roquefort_ses-roquefort-13_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.4
@@ -283,7 +343,11 @@ tests:
       pynwb: 2.3.1
   - sub-roquefort/sub-roquefort_ses-roquefort-14_behavior+ecephys.nwb
   - sub-roquefort/sub-roquefort_ses-roquefort-15_behavior+ecephys.nwb
-  - sub-roquefort/sub-roquefort_ses-roquefort-16_behavior+ecephys.nwb
+  - path: sub-roquefort/sub-roquefort_ses-roquefort-16_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-roquefort/sub-roquefort_ses-roquefort-17_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.4
