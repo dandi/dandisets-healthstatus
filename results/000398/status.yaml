@@ -46,15 +46,19 @@ tests:
       pynwb: 2.3.2
   - path: sub-Rat2/sub-Rat2_ses-20200924T155423_ecephys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-Rat2/sub-Rat2_ses-20200924T155523_ecephys.nwb
     versions:
       hdmf: 3.5.4
       matnwb: v2.6.0.1
       pynwb: 2.3.1
-  - sub-Rat2/sub-Rat2_ses-20200924T155623_ecephys.nwb
+  - path: sub-Rat2/sub-Rat2_ses-20200924T155623_ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-San2/sub-San2_ses-20190904T115428_ecephys.nwb
     versions:
       hdmf: 3.5.4
@@ -85,7 +89,11 @@ tests:
       hdmf: 3.5.4
       matnwb: v2.6.0.1
       pynwb: 2.3.1
-  - sub-San4/sub-San4_ses-20200106T153513_ecephys.nwb
+  - path: sub-San4/sub-San4_ses-20200106T153513_ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-San4/sub-San4_ses-20200204T141344_ecephys.nwb
   - path: sub-San4/sub-San4_ses-20200204T141717_ecephys.nwb
     versions:
@@ -155,12 +163,7 @@ tests:
       pynwb: 2.3.2
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - path: sub-Rat2/sub-Rat2_ses-20200924T155423_ecephys.nwb
-    versions:
-      hdmf: 3.5.2
-      matnwb: v2.6.0.1
-      pynwb: 2.3.1
+- assets_nok: []
   assets_ok:
   - path: sub-Rat1/sub-Rat1_ses-20200921T124059_ecephys.nwb
     versions:
@@ -199,12 +202,21 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
+  - path: sub-Rat2/sub-Rat2_ses-20200924T155423_ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-Rat2/sub-Rat2_ses-20200924T155523_ecephys.nwb
     versions:
       hdmf: 3.5.4
       matnwb: v2.6.0.1
       pynwb: 2.3.1
-  - sub-Rat2/sub-Rat2_ses-20200924T155623_ecephys.nwb
+  - path: sub-Rat2/sub-Rat2_ses-20200924T155623_ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-San2/sub-San2_ses-20190904T115428_ecephys.nwb
     versions:
       hdmf: 3.5.4
@@ -235,7 +247,11 @@ tests:
       hdmf: 3.5.4
       matnwb: v2.6.0.1
       pynwb: 2.3.1
-  - sub-San4/sub-San4_ses-20200106T153513_ecephys.nwb
+  - path: sub-San4/sub-San4_ses-20200106T153513_ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-San4/sub-San4_ses-20200204T141344_ecephys.nwb
   - path: sub-San4/sub-San4_ses-20200204T141717_ecephys.nwb
     versions:

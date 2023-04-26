@@ -9,9 +9,9 @@ tests:
   assets_ok:
   - path: sub-PV02/sub-PV02_ses-awake_ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - sub-PV03/sub-PV03_ses-awake_ophys.nwb
   - path: sub-PV04/sub-PV04_ses-awake_ophys.nwb
     versions:
@@ -58,9 +58,9 @@ tests:
       pynwb: 2.3.2
   - path: sub-SLC09/sub-SLC09_ses-awake_ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-SLC10/sub-SLC10_ses-anest_ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -96,7 +96,11 @@ tests:
       matnwb: v2.6.0.1
       pynwb: 2.3.1
   - sub-SOM11/sub-SOM11_ses-awake_ophys.nwb
-  - sub-SOM14/sub-SOM14_ses-awake_ophys.nwb
+  - path: sub-SOM14/sub-SOM14_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-SOM15/sub-SOM15_ses-awake_ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -131,9 +135,9 @@ tests:
   assets_timeout:
   - path: sub-PV02/sub-PV02_ses-awake_ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - sub-PV03/sub-PV03_ses-awake_ophys.nwb
   - path: sub-PV04/sub-PV04_ses-awake_ophys.nwb
     versions:
@@ -180,9 +184,9 @@ tests:
       pynwb: 2.3.2
   - path: sub-SLC09/sub-SLC09_ses-awake_ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-SLC10/sub-SLC10_ses-anest_ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -218,7 +222,11 @@ tests:
       matnwb: v2.6.0.1
       pynwb: 2.3.1
   - sub-SOM11/sub-SOM11_ses-awake_ophys.nwb
-  - sub-SOM14/sub-SOM14_ses-awake_ophys.nwb
+  - path: sub-SOM14/sub-SOM14_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-SOM15/sub-SOM15_ses-awake_ophys.nwb
     versions:
       hdmf: 3.5.5

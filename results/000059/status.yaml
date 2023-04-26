@@ -20,7 +20,11 @@ tests:
   - sub-MS10/sub-MS10_ses-Peter-MS10-170313-122631-concat_behavior+ecephys.nwb
   - sub-MS10/sub-MS10_ses-Peter-MS10-170314-163038_behavior+ecephys.nwb
   - sub-MS10/sub-MS10_ses-Peter-MS10-170317-153237-concat_behavior+ecephys.nwb
-  - sub-MS10/sub-MS10_ses-Peter-MS10-170319-180352-concat_behavior+ecephys.nwb
+  - path: sub-MS10/sub-MS10_ses-Peter-MS10-170319-180352-concat_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-MS10/sub-MS10_ses-Peter-MS10-170320-212321-concat_behavior+ecephys.nwb
   - path: sub-MS10/sub-MS10_ses-Peter-MS10-170321-164406-concat_behavior+ecephys.nwb
     versions:
@@ -45,9 +49,9 @@ tests:
       pynwb: 2.3.2
   - path: sub-MS12/sub-MS12_ses-Peter-MS12-170716-172307-concat_behavior+ecephys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - sub-MS12/sub-MS12_ses-Peter-MS12-170717-111614-concat_behavior+ecephys.nwb
   - sub-MS12/sub-MS12_ses-Peter-MS12-170718-101720-concat_behavior+ecephys.nwb
   - sub-MS12/sub-MS12_ses-Peter-MS12-170719-095305-concat_behavior+ecephys.nwb
@@ -57,7 +61,11 @@ tests:
       matnwb: v2.6.0.1
       pynwb: 2.3.1
   - sub-MS12/sub-MS12_ses-Peter-MS12-170723-141121-concat_behavior+ecephys.nwb
-  - sub-MS13/sub-MS13_ses-Peter-MS13-171127-133330-concat_behavior+ecephys.nwb
+  - path: sub-MS13/sub-MS13_ses-Peter-MS13-171127-133330-concat_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-MS13/sub-MS13_ses-Peter-MS13-171128-113924-concat_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.5
@@ -153,9 +161,9 @@ tests:
   - sub-MS22/sub-MS22_ses-Peter-MS22-180719-122813-concat_behavior+ecephys.nwb
   - path: sub-MS22/sub-MS22_ses-Peter-MS22-180720-110055-concat_behavior+ecephys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-MS22/sub-MS22_ses-Peter-MS22-180724-144421-concat_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.4
@@ -169,6 +177,16 @@ tests:
       hdmf: 3.5.2
       matnwb: v2.6.0.1
       pynwb: 2.3.1
+  - path: sub-MS12/sub-MS12_ses-Peter-MS12-170716-172307-concat_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-MS13/sub-MS13_ses-Peter-MS13-171127-133330-concat_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-MS21/sub-MS21_ses-Peter-MS21-180625-153927-concat_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.5
@@ -203,7 +221,11 @@ tests:
   - sub-MS10/sub-MS10_ses-Peter-MS10-170313-122631-concat_behavior+ecephys.nwb
   - sub-MS10/sub-MS10_ses-Peter-MS10-170314-163038_behavior+ecephys.nwb
   - sub-MS10/sub-MS10_ses-Peter-MS10-170317-153237-concat_behavior+ecephys.nwb
-  - sub-MS10/sub-MS10_ses-Peter-MS10-170319-180352-concat_behavior+ecephys.nwb
+  - path: sub-MS10/sub-MS10_ses-Peter-MS10-170319-180352-concat_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-MS10/sub-MS10_ses-Peter-MS10-170320-212321-concat_behavior+ecephys.nwb
   - sub-MS10/sub-MS10_ses-Peter-MS10-170323-173246_behavior+ecephys.nwb
   - path: sub-MS12/sub-MS12_ses-Peter-MS12-170714-122034-concat_behavior+ecephys.nwb
@@ -253,11 +275,6 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - path: sub-MS12/sub-MS12_ses-Peter-MS12-170716-172307-concat_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.5.2
-      matnwb: v2.6.0.1
-      pynwb: 2.3.1
   - sub-MS12/sub-MS12_ses-Peter-MS12-170717-111614-concat_behavior+ecephys.nwb
   - sub-MS12/sub-MS12_ses-Peter-MS12-170718-101720-concat_behavior+ecephys.nwb
   - sub-MS12/sub-MS12_ses-Peter-MS12-170719-095305-concat_behavior+ecephys.nwb
@@ -267,7 +284,6 @@ tests:
       matnwb: v2.6.0.1
       pynwb: 2.3.1
   - sub-MS12/sub-MS12_ses-Peter-MS12-170723-141121-concat_behavior+ecephys.nwb
-  - sub-MS13/sub-MS13_ses-Peter-MS13-171127-133330-concat_behavior+ecephys.nwb
   - path: sub-MS13/sub-MS13_ses-Peter-MS13-171128-113924-concat_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.5
@@ -312,9 +328,9 @@ tests:
       pynwb: 2.3.1
   - path: sub-MS22/sub-MS22_ses-Peter-MS22-180720-110055-concat_behavior+ecephys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-MS22/sub-MS22_ses-Peter-MS22-180724-144421-concat_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.4

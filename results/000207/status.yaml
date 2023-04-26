@@ -14,9 +14,9 @@ tests:
       pynwb: 2.3.2
   - path: sub-10/sub-10_ses-10_ecephys+image.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-11/sub-11_ses-11_ecephys+image.nwb
     versions:
       hdmf: 3.5.5
@@ -39,9 +39,9 @@ tests:
       pynwb: 2.3.2
   - path: sub-15/sub-15_ses-15_ecephys+image.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-16/sub-16_ses-16_ecephys+image.nwb
     versions:
       hdmf: 3.5.4
@@ -59,9 +59,9 @@ tests:
       pynwb: 2.3.2
   - path: sub-19/sub-19_ses-19_ecephys+image.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-2/sub-2_ses-2_ecephys+image.nwb
     versions:
       hdmf: 3.5.5
@@ -92,7 +92,11 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-8/sub-8_ses-8_ecephys+image.nwb
+  - path: sub-8/sub-8_ses-8_ecephys+image.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-9/sub-9_ses-9_ecephys+image.nwb
     versions:
       hdmf: 3.5.5
@@ -107,11 +111,6 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - path: sub-10/sub-10_ses-10_ecephys+image.nwb
-    versions:
-      hdmf: 3.5.2
-      matnwb: v2.6.0.1
-      pynwb: 2.3.1
   - path: sub-11/sub-11_ses-11_ecephys+image.nwb
     versions:
       hdmf: 3.5.5
@@ -134,9 +133,9 @@ tests:
       pynwb: 2.3.2
   - path: sub-15/sub-15_ses-15_ecephys+image.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-16/sub-16_ses-16_ecephys+image.nwb
     versions:
       hdmf: 3.5.4
@@ -154,9 +153,9 @@ tests:
       pynwb: 2.3.2
   - path: sub-19/sub-19_ses-19_ecephys+image.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-2/sub-2_ses-2_ecephys+image.nwb
     versions:
       hdmf: 3.5.5
@@ -187,8 +186,17 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-8/sub-8_ses-8_ecephys+image.nwb
   assets_timeout:
+  - path: sub-10/sub-10_ses-10_ecephys+image.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-8/sub-8_ses-8_ecephys+image.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-9/sub-9_ses-9_ecephys+image.nwb
     versions:
       hdmf: 3.5.5
