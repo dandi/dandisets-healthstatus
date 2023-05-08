@@ -9,7 +9,11 @@ tests:
   assets_ok:
   - sub-Adobo/sub-Adobo_ses-Adobo01_HomeCage_behavior+ecephys.nwb
   - sub-Adobo/sub-Adobo_ses-Adobo02-HomeCage_behavior+ecephys.nwb
-  - sub-Adobo/sub-Adobo_ses-Adobo02_LinearTrack_behavior+ecephys.nwb
+  - path: sub-Adobo/sub-Adobo_ses-Adobo02_LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Adobo/sub-Adobo_ses-Adobo03-HomeCage_behavior+ecephys.nwb
   - sub-Adobo/sub-Adobo_ses-Adobo03_LinearTrack_behavior+ecephys.nwb
   - sub-Adobo/sub-Adobo_ses-Adobo04-HomeCage_behavior+ecephys.nwb
@@ -25,7 +29,11 @@ tests:
       pynwb: 2.3.2
   - sub-Anise/sub-Anise_ses-Anise01-LinearTrack_behavior+ecephys.nwb
   - sub-Anise/sub-Anise_ses-Anise02-HomeCage_behavior+ecephys.nwb
-  - sub-Anise/sub-Anise_ses-Anise02-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Anise/sub-Anise_ses-Anise02-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Anise/sub-Anise_ses-Anise03-HomeCage_behavior+ecephys.nwb
   - sub-Anise/sub-Anise_ses-Anise03-LinearTrack_behavior+ecephys.nwb
   - sub-Anise/sub-Anise_ses-Anise04-HomeCage_behavior+ecephys.nwb
@@ -37,9 +45,9 @@ tests:
   - sub-Aphid/sub-Aphid_ses-Aphid01-HomeCage_behavior+ecephys.nwb
   - path: sub-Aphid/sub-Aphid_ses-Aphid02-HomeCage_behavior+ecephys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-Aphid/sub-Aphid_ses-Aphid03-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.4
@@ -59,7 +67,11 @@ tests:
       pynwb: 2.3.2
   - sub-Baharat/sub-Baharat_ses-Baharat03-HomeCage_behavior+ecephys.nwb
   - sub-Baharat/sub-Baharat_ses-Baharat03-LinearTrack_behavior+ecephys.nwb
-  - sub-Baharat/sub-Baharat_ses-Baharat04-HomeCage_behavior+ecephys.nwb
+  - path: sub-Baharat/sub-Baharat_ses-Baharat04-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Baharat/sub-Baharat_ses-Baharat04-LinearTrack_behavior+ecephys.nwb
   - sub-Baharat/sub-Baharat_ses-Baharat05-HomeCage_behavior+ecephys.nwb
   - sub-Baharat/sub-Baharat_ses-Baharat05-LinearTrack_behavior+ecephys.nwb
@@ -94,7 +106,11 @@ tests:
   - sub-Beverly/sub-Beverly_ses-Beverly12-HomeCage_behavior+ecephys.nwb
   - sub-Beverly/sub-Beverly_ses-Beverly15-HomeCage_behavior+ecephys.nwb
   - sub-Beverly/sub-Beverly_ses-Beverly16-HomeCage_behavior+ecephys.nwb
-  - sub-Beverly/sub-Beverly_ses-Beverly17-HomeCage_behavior+ecephys.nwb
+  - path: sub-Beverly/sub-Beverly_ses-Beverly17-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Bones/sub-Bones_ses-Bones01_HomeCage_behavior+ecephys.nwb
   - path: sub-Bones/sub-Bones_ses-Bones02-HomeCage_behavior+ecephys.nwb
     versions:
@@ -106,7 +122,11 @@ tests:
   - sub-Bones/sub-Bones_ses-Bones05_HomeCage_behavior+ecephys.nwb
   - sub-Bones/sub-Bones_ses-Bones06-HomeCage_behavior+ecephys.nwb
   - sub-Bones/sub-Bones_ses-Bones07_HomeCage_behavior+ecephys.nwb
-  - sub-Caraway/sub-Caraway_ses-Caraway01-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Caraway/sub-Caraway_ses-Caraway01-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Caraway/sub-Caraway_ses-Caraway02-HomeCage_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway02_LinearTrack_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway03-HomeCage_behavior+ecephys.nwb
@@ -166,13 +186,21 @@ tests:
   - sub-Cicada/sub-Cicada_ses-Cicada03-HomeCage_behavior+ecephys.nwb
   - sub-Cicada/sub-Cicada_ses-Cicada04-HomeCage_behavior+ecephys.nwb
   - sub-Cicada/sub-Cicada_ses-Cicada05-HomeCage_behavior+ecephys.nwb
-  - sub-Cicada/sub-Cicada_ses-Cicada06-HomeCage_behavior+ecephys.nwb
+  - path: sub-Cicada/sub-Cicada_ses-Cicada06-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Cicada/sub-Cicada_ses-Cicada07-HomeCage_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon01-HomeCage_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon01-LinearTrack_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon02-HomeCage_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon02-LinearTrack_behavior+ecephys.nwb
-  - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon03-HomeCage_behavior+ecephys.nwb
+  - path: sub-Cinnamon/sub-Cinnamon_ses-Cinnamon03-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-Cinnamon/sub-Cinnamon_ses-Cinnamon03-LinearTrack_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.2
@@ -209,10 +237,18 @@ tests:
   - sub-Cumin/sub-Cumin_ses-Cumin02-HomeCage_behavior+ecephys.nwb
   - sub-Cumin/sub-Cumin_ses-Cumin02-LinearTrack_behavior+ecephys.nwb
   - sub-Cumin/sub-Cumin_ses-Cumin03-HomeCage_behavior+ecephys.nwb
-  - sub-Cumin/sub-Cumin_ses-Cumin03-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Cumin/sub-Cumin_ses-Cumin03-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Cumin/sub-Cumin_ses-Cumin04-HomeCage_behavior+ecephys.nwb
   - sub-Cumin/sub-Cumin_ses-Cumin04-LinearTrack_behavior+ecephys.nwb
-  - sub-Cumin/sub-Cumin_ses-Cumin05-HomeCage_behavior+ecephys.nwb
+  - path: sub-Cumin/sub-Cumin_ses-Cumin05-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Cumin/sub-Cumin_ses-Cumin05-LinearTrack_behavior+ecephys.nwb
   - sub-Cumin/sub-Cumin_ses-Cumin06-HomeCage_behavior+ecephys.nwb
   - sub-Cumin/sub-Cumin_ses-Cumin06-LinearTrack_behavior+ecephys.nwb
@@ -335,7 +371,11 @@ tests:
       hdmf: 3.5.4
       matnwb: v2.6.0.1
       pynwb: 2.3.1
-  - sub-Jerk/sub-Jerk_ses-Jerk04-HomeCage_behavior+ecephys.nwb
+  - path: sub-Jerk/sub-Jerk_ses-Jerk04-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Jerk/sub-Jerk_ses-Jerk04_LinearTrack_behavior+ecephys.nwb
   - sub-Jerk/sub-Jerk_ses-Jerk05-LinearTrack_behavior+ecephys.nwb
   - sub-Jerk/sub-Jerk_ses-Jerk05_HomeCage_behavior+ecephys.nwb
@@ -351,7 +391,11 @@ tests:
   - sub-Kes/sub-Kes_ses-Kes01-HomeCage_behavior+ecephys.nwb
   - sub-Kes/sub-Kes_ses-Kes02_HomeCage_behavior+ecephys.nwb
   - sub-Kes/sub-Kes_ses-Kes03_HomeCage_behavior+ecephys.nwb
-  - sub-Kes/sub-Kes_ses-Kes04-HomeCage_behavior+ecephys.nwb
+  - path: sub-Kes/sub-Kes_ses-Kes04-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Kes/sub-Kes_ses-Kes05-HomeCage_behavior+ecephys.nwb
   - sub-Kes/sub-Kes_ses-Kes06-HomeCage_behavior+ecephys.nwb
   - sub-Kes/sub-Kes_ses-Kes07-HomeCage_behavior+ecephys.nwb
@@ -383,7 +427,11 @@ tests:
   - sub-Mace/sub-Mace_ses-Mace06-LinearTrack_behavior+ecephys.nwb
   - sub-Mantis/sub-Mantis_ses-Mantis01_HomeCage_behavior+ecephys.nwb
   - sub-Mantis/sub-Mantis_ses-Mantis02-HomeCage_behavior+ecephys.nwb
-  - sub-Mantis/sub-Mantis_ses-Mantis03_HomeCage_behavior+ecephys.nwb
+  - path: sub-Mantis/sub-Mantis_ses-Mantis03_HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Mantis/sub-Mantis_ses-Mantis04_HomeCage_behavior+ecephys.nwb
   - sub-Mantis/sub-Mantis_ses-Mantis05-HomeCage_behavior+ecephys.nwb
   - sub-Mantis/sub-Mantis_ses-Mantis06-HomeCage_behavior+ecephys.nwb
@@ -393,12 +441,20 @@ tests:
       matnwb: v2.6.0.1
       pynwb: 2.3.1
   - sub-Mustard/sub-Mustard_ses-Mustard02-LinearTrack_behavior+ecephys.nwb
-  - sub-Mustard/sub-Mustard_ses-Mustard03-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Mustard/sub-Mustard_ses-Mustard03-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Mustard/sub-Mustard_ses-Mustard04-LinearTrack_behavior+ecephys.nwb
   - sub-Mustard/sub-Mustard_ses-Mustard05-LinearTrack_behavior+ecephys.nwb
   - sub-Mustard/sub-Mustard_ses-Mustard06-LinearTrack_behavior+ecephys.nwb
   - sub-Neelix/sub-Neelix_ses-Neelix01-HomeCage_behavior+ecephys.nwb
-  - sub-Neelix/sub-Neelix_ses-Neelix02-HomeCage_behavior+ecephys.nwb
+  - path: sub-Neelix/sub-Neelix_ses-Neelix02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-Neelix/sub-Neelix_ses-Neelix03-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.4
@@ -414,7 +470,11 @@ tests:
   - sub-Nerys/sub-Nerys_ses-Nerys04-HomeCage_behavior+ecephys.nwb
   - sub-Nerys/sub-Nerys_ses-Nerys05-HomeCage_behavior+ecephys.nwb
   - sub-Nerys/sub-Nerys_ses-Nerys06-HomeCage_behavior+ecephys.nwb
-  - sub-Nerys/sub-Nerys_ses-Nerys07-HomeCage_behavior+ecephys.nwb
+  - path: sub-Nerys/sub-Nerys_ses-Nerys07-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Nutmeg/sub-Nutmeg_ses-Nutmeg01-HomeCage_behavior+ecephys.nwb
   - sub-Nutmeg/sub-Nutmeg_ses-Nutmeg01-LinearTrack_behavior+ecephys.nwb
   - sub-Nutmeg/sub-Nutmeg_ses-Nutmeg02-HomeCage_behavior+ecephys.nwb
@@ -462,13 +522,21 @@ tests:
       matnwb: v2.6.0.1
       pynwb: 2.3.1
   - sub-Paprika/sub-Paprika_ses-Paprika01_HomeCage_behavior+ecephys.nwb
-  - sub-Paprika/sub-Paprika_ses-Paprika02-HomeCage_behavior+ecephys.nwb
+  - path: sub-Paprika/sub-Paprika_ses-Paprika02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Paprika/sub-Paprika_ses-Paprika02-LinearTrack_behavior+ecephys.nwb
   - sub-Paprika/sub-Paprika_ses-Paprika03-HomeCage_behavior+ecephys.nwb
   - sub-Paprika/sub-Paprika_ses-Paprika03-LinearTrack_behavior+ecephys.nwb
   - sub-Paprika/sub-Paprika_ses-Paprika04-HomeCage_behavior+ecephys.nwb
   - sub-Paprika/sub-Paprika_ses-Paprika04-LinearTrack_behavior+ecephys.nwb
-  - sub-Paprika/sub-Paprika_ses-Paprika05-HomeCage_behavior+ecephys.nwb
+  - path: sub-Paprika/sub-Paprika_ses-Paprika05-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Paprika/sub-Paprika_ses-Paprika05-LinearTrack_behavior+ecephys.nwb
   - sub-Paprika/sub-Paprika_ses-Paprika06-HomeCage_behavior+ecephys.nwb
   - sub-Paprika/sub-Paprika_ses-Paprika06-LinearTrack_behavior+ecephys.nwb
@@ -488,14 +556,22 @@ tests:
   - sub-Pepper/sub-Pepper_ses-Pepper02-LinearTrack_behavior+ecephys.nwb
   - sub-Pepper/sub-Pepper_ses-Pepper03-HomeCage_behavior+ecephys.nwb
   - sub-Pepper/sub-Pepper_ses-Pepper03-LinearTrack_behavior+ecephys.nwb
-  - sub-Pepper/sub-Pepper_ses-Pepper04-HomeCage_behavior+ecephys.nwb
+  - path: sub-Pepper/sub-Pepper_ses-Pepper04-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Pepper/sub-Pepper_ses-Pepper04-LinearTrack_behavior+ecephys.nwb
   - path: sub-Pepper/sub-Pepper_ses-Pepper05-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.4
       matnwb: v2.6.0.1
       pynwb: 2.3.1
-  - sub-Pepper/sub-Pepper_ses-Pepper05-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Pepper/sub-Pepper_ses-Pepper05-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Pepper/sub-Pepper_ses-Pepper06-HomeCage_behavior+ecephys.nwb
   - sub-Pepper/sub-Pepper_ses-Pepper06-LinearTrack_behavior+ecephys.nwb
   - sub-Picard/sub-Picard_ses-Picard08-HomeCage_behavior+ecephys.nwb
@@ -522,7 +598,11 @@ tests:
   - sub-Provence/sub-Provence_ses-Provence06-HomeCage_behavior+ecephys.nwb
   - sub-Provence/sub-Provence_ses-Provence06-LinearTrack_behavior+ecephys.nwb
   - sub-Quark/sub-Quark_ses-Quark01-HomeCage_behavior+ecephys.nwb
-  - sub-Quark/sub-Quark_ses-Quark02-HomeCage_behavior+ecephys.nwb
+  - path: sub-Quark/sub-Quark_ses-Quark02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Quark/sub-Quark_ses-Quark03-HomeCage_behavior+ecephys.nwb
   - sub-Quark/sub-Quark_ses-Quark04-HomeCage_behavior+ecephys.nwb
   - sub-Quark/sub-Quark_ses-Quark05-HomeCage_behavior+ecephys.nwb
@@ -548,18 +628,30 @@ tests:
   - sub-Rolypoly/sub-Rolypoly_ses-Rolypoly01-HomeCage_behavior+ecephys.nwb
   - sub-Rolypoly/sub-Rolypoly_ses-Rolypoly02-HomeCage_behavior+ecephys.nwb
   - sub-Rolypoly/sub-Rolypoly_ses-Rolypoly03-HomeCage_behavior+ecephys.nwb
-  - sub-Rolypoly/sub-Rolypoly_ses-Rolypoly04-HomeCage_behavior+ecephys.nwb
+  - path: sub-Rolypoly/sub-Rolypoly_ses-Rolypoly04-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Rolypoly/sub-Rolypoly_ses-Rolypoly05-HomeCage_behavior+ecephys.nwb
   - sub-Rolypoly/sub-Rolypoly_ses-Rolypoly06-HomeCage_behavior+ecephys.nwb
   - sub-Rolypoly/sub-Rolypoly_ses-Rolypoly07-HomeCage_behavior+ecephys.nwb
-  - sub-Rosemary/sub-Rosemary_ses-Rosemary01-HomeCage_behavior+ecephys.nwb
+  - path: sub-Rosemary/sub-Rosemary_ses-Rosemary01-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Rosemary/sub-Rosemary_ses-Rosemary01-LinearTrack_behavior+ecephys.nwb
   - sub-Rosemary/sub-Rosemary_ses-Rosemary02-HomeCage_behavior+ecephys.nwb
   - sub-Rosemary/sub-Rosemary_ses-Rosemary02-LinearTrack_behavior+ecephys.nwb
   - sub-Rosemary/sub-Rosemary_ses-Rosemary03-HomeCage_behavior+ecephys.nwb
   - sub-Rosemary/sub-Rosemary_ses-Rosemary03-LinearTrack_behavior+ecephys.nwb
   - sub-Rosemary/sub-Rosemary_ses-Rosemary04-HomeCage_behavior+ecephys.nwb
-  - sub-Rosemary/sub-Rosemary_ses-Rosemary05-HomeCage_behavior+ecephys.nwb
+  - path: sub-Rosemary/sub-Rosemary_ses-Rosemary05-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Rosemary/sub-Rosemary_ses-Rosemary05-LinearTrack_behavior+ecephys.nwb
   - sub-Rosemary/sub-Rosemary_ses-Rosemary06-LinearTrack_behavior+ecephys.nwb
   - sub-Rosemary/sub-Rosemary_ses-Rosemary06_HomeCage_behavior+ecephys.nwb
@@ -616,7 +708,11 @@ tests:
       hdmf: 3.5.4
       matnwb: v2.6.0.1
       pynwb: 2.3.1
-  - sub-Sato/sub-Sato_ses-Sato02-HomeCage_behavior+ecephys.nwb
+  - path: sub-Sato/sub-Sato_ses-Sato02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-Sato/sub-Sato_ses-Sato03-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.4
@@ -640,8 +736,16 @@ tests:
   - sub-SevenOfNine/sub-SevenOfNine_ses-SevenOfNine05-HomeCage_behavior+ecephys.nwb
   - sub-SevenOfNine/sub-SevenOfNine_ses-SevenOfNine06-HomeCage_behavior+ecephys.nwb
   - sub-SevenOfNine/sub-SevenOfNine_ses-SevenOfNine07-HomeCage_behavior+ecephys.nwb
-  - sub-Sulu/sub-Sulu_ses-Sulu01_HomeCage_behavior+ecephys.nwb
-  - sub-Sulu/sub-Sulu_ses-Sulu02-HomeCage_behavior+ecephys.nwb
+  - path: sub-Sulu/sub-Sulu_ses-Sulu01_HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-Sulu/sub-Sulu_ses-Sulu02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Sulu/sub-Sulu_ses-Sulu03_HomeCage_behavior+ecephys.nwb
   - sub-Sulu/sub-Sulu_ses-Sulu04-HomeCage_behavior+ecephys.nwb
   - sub-Sulu/sub-Sulu_ses-Sulu05-HomeCage_behavior+ecephys.nwb
@@ -664,10 +768,22 @@ tests:
   - sub-TPol/sub-TPol_ses-TPol04-HomeCage_behavior+ecephys.nwb
   - sub-TPol/sub-TPol_ses-TPol05-HomeCage_behavior+ecephys.nwb
   - sub-TPol/sub-TPol_ses-TPol06-HomeCage_behavior+ecephys.nwb
-  - sub-TPol/sub-TPol_ses-TPol07-HomeCage_behavior+ecephys.nwb
+  - path: sub-TPol/sub-TPol_ses-TPol07-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Tarragon/sub-Tarragon_ses-Tarragon01-HomeCage_behavior+ecephys.nwb
-  - sub-Tarragon/sub-Tarragon_ses-Tarragon01-LinearTrack_behavior+ecephys.nwb
-  - sub-Tarragon/sub-Tarragon_ses-Tarragon02-HomeCage_behavior+ecephys.nwb
+  - path: sub-Tarragon/sub-Tarragon_ses-Tarragon01-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-Tarragon/sub-Tarragon_ses-Tarragon02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Tarragon/sub-Tarragon_ses-Tarragon02-LinearTrack_behavior+ecephys.nwb
   - sub-Tarragon/sub-Tarragon_ses-Tarragon03-HomeCage_behavior+ecephys.nwb
   - sub-Tarragon/sub-Tarragon_ses-Tarragon03-LinearTrack_behavior+ecephys.nwb
@@ -688,7 +804,11 @@ tests:
   - sub-Thyme/sub-Thyme_ses-Thyme03-HomeCage_behavior+ecephys.nwb
   - sub-Thyme/sub-Thyme_ses-Thyme03-LinearTrack_behavior+ecephys.nwb
   - sub-Thyme/sub-Thyme_ses-Thyme04-HomeCage_behavior+ecephys.nwb
-  - sub-Thyme/sub-Thyme_ses-Thyme04-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Thyme/sub-Thyme_ses-Thyme04-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Thyme/sub-Thyme_ses-Thyme05-HomeCage_behavior+ecephys.nwb
   - sub-Thyme/sub-Thyme_ses-Thyme05-LinearTrack_behavior+ecephys.nwb
   - sub-Thyme/sub-Thyme_ses-Thyme06-HomeCage_behavior+ecephys.nwb
@@ -720,7 +840,11 @@ tests:
   - sub-Worf/sub-Worf_ses-Worf09-HomeCage_behavior+ecephys.nwb
   - sub-Worf/sub-Worf_ses-Worf10-HomeCage_behavior+ecephys.nwb
   - sub-Worf/sub-Worf_ses-Worf12-HomeCage_behavior+ecephys.nwb
-  - sub-Worf/sub-Worf_ses-Worf15-HomeCage_behavior+ecephys.nwb
+  - path: sub-Worf/sub-Worf_ses-Worf15-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Worf/sub-Worf_ses-Worf16-HomeCage_behavior+ecephys.nwb
   - sub-Worf/sub-Worf_ses-Worf17-HomeCage_behavior+ecephys.nwb
   assets_timeout: []
@@ -731,11 +855,11 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - path: sub-Aphid/sub-Aphid_ses-Aphid02-HomeCage_behavior+ecephys.nwb
+  - path: sub-Anise/sub-Anise_ses-Anise02-LinearTrack_behavior+ecephys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-Aphid/sub-Aphid_ses-Aphid03-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.4
@@ -756,6 +880,11 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
+  - path: sub-Caraway/sub-Caraway_ses-Caraway01-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-Cardamom/sub-Cardamom_ses-Cardamom03-LinearTrack_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.5
@@ -766,12 +895,27 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
+  - path: sub-Cinnamon/sub-Cinnamon_ses-Cinnamon03-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-Cinnamon/sub-Cinnamon_ses-Cinnamon03-LinearTrack_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.2
       matnwb: v2.6.0.1
       pynwb: 2.3.1
   - path: sub-Cinnamon/sub-Cinnamon_ses-Cinnamon06-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-Cumin/sub-Cumin_ses-Cumin03-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-Cumin/sub-Cumin_ses-Cumin05-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
@@ -801,6 +945,11 @@ tests:
       hdmf: 3.5.4
       matnwb: v2.6.0.1
       pynwb: 2.3.1
+  - path: sub-Jerk/sub-Jerk_ses-Jerk04-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-Ladybug/sub-Ladybug_ses-Ladybug05-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.5
@@ -816,6 +965,21 @@ tests:
       hdmf: 3.5.4
       matnwb: v2.6.0.1
       pynwb: 2.3.1
+  - path: sub-Mustard/sub-Mustard_ses-Mustard03-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-Neelix/sub-Neelix_ses-Neelix02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-Nerys/sub-Nerys_ses-Nerys07-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-OBrien/sub-OBrien_ses-OBrien01-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.4
@@ -826,7 +990,32 @@ tests:
       hdmf: 3.5.2
       matnwb: v2.6.0.1
       pynwb: 2.3.1
+  - path: sub-Pepper/sub-Pepper_ses-Pepper04-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-Pepper/sub-Pepper_ses-Pepper05-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-Provence/sub-Provence_ses-Provence03-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-Quark/sub-Quark_ses-Quark02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-Rolypoly/sub-Rolypoly_ses-Rolypoly04-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-Rosemary/sub-Rosemary_ses-Rosemary01-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
@@ -846,11 +1035,21 @@ tests:
       hdmf: 3.5.4
       matnwb: v2.6.0.1
       pynwb: 2.3.1
+  - path: sub-TPol/sub-TPol_ses-TPol07-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-Thyme/sub-Thyme_ses-Thyme02-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.4
       matnwb: v2.6.0.1
       pynwb: 2.3.1
+  - path: sub-Thyme/sub-Thyme_ses-Thyme04-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-Tuvok/sub-Tuvok_ses-Tuvok03-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.5
@@ -859,7 +1058,11 @@ tests:
   assets_ok:
   - sub-Adobo/sub-Adobo_ses-Adobo01_HomeCage_behavior+ecephys.nwb
   - sub-Adobo/sub-Adobo_ses-Adobo02-HomeCage_behavior+ecephys.nwb
-  - sub-Adobo/sub-Adobo_ses-Adobo02_LinearTrack_behavior+ecephys.nwb
+  - path: sub-Adobo/sub-Adobo_ses-Adobo02_LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Adobo/sub-Adobo_ses-Adobo03-HomeCage_behavior+ecephys.nwb
   - sub-Adobo/sub-Adobo_ses-Adobo03_LinearTrack_behavior+ecephys.nwb
   - sub-Adobo/sub-Adobo_ses-Adobo04-HomeCage_behavior+ecephys.nwb
@@ -870,7 +1073,6 @@ tests:
   - sub-Adobo/sub-Adobo_ses-Adobo06-LinearTrack_behavior+ecephys.nwb
   - sub-Anise/sub-Anise_ses-Anise01-LinearTrack_behavior+ecephys.nwb
   - sub-Anise/sub-Anise_ses-Anise02-HomeCage_behavior+ecephys.nwb
-  - sub-Anise/sub-Anise_ses-Anise02-LinearTrack_behavior+ecephys.nwb
   - sub-Anise/sub-Anise_ses-Anise03-HomeCage_behavior+ecephys.nwb
   - sub-Anise/sub-Anise_ses-Anise03-LinearTrack_behavior+ecephys.nwb
   - sub-Anise/sub-Anise_ses-Anise04-HomeCage_behavior+ecephys.nwb
@@ -880,6 +1082,11 @@ tests:
   - sub-Anise/sub-Anise_ses-Anise06-HomeCage_behavior+ecephys.nwb
   - sub-Anise/sub-Anise_ses-Anise06-LinearTrack_behavior+ecephys.nwb
   - sub-Aphid/sub-Aphid_ses-Aphid01-HomeCage_behavior+ecephys.nwb
+  - path: sub-Aphid/sub-Aphid_ses-Aphid02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Aphid/sub-Aphid_ses-Aphid04-HomeCage_behavior+ecephys.nwb
   - sub-Aphid/sub-Aphid_ses-Aphid05_HomeCage_behavior+ecephys.nwb
   - sub-Aphid/sub-Aphid_ses-Aphid06-HomeCage_behavior+ecephys.nwb
@@ -889,7 +1096,11 @@ tests:
   - sub-Baharat/sub-Baharat_ses-Baharat02-HomeCage_behavior+ecephys.nwb
   - sub-Baharat/sub-Baharat_ses-Baharat03-HomeCage_behavior+ecephys.nwb
   - sub-Baharat/sub-Baharat_ses-Baharat03-LinearTrack_behavior+ecephys.nwb
-  - sub-Baharat/sub-Baharat_ses-Baharat04-HomeCage_behavior+ecephys.nwb
+  - path: sub-Baharat/sub-Baharat_ses-Baharat04-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Baharat/sub-Baharat_ses-Baharat04-LinearTrack_behavior+ecephys.nwb
   - sub-Baharat/sub-Baharat_ses-Baharat05-HomeCage_behavior+ecephys.nwb
   - sub-Baharat/sub-Baharat_ses-Baharat05-LinearTrack_behavior+ecephys.nwb
@@ -919,14 +1130,17 @@ tests:
   - sub-Beverly/sub-Beverly_ses-Beverly12-HomeCage_behavior+ecephys.nwb
   - sub-Beverly/sub-Beverly_ses-Beverly15-HomeCage_behavior+ecephys.nwb
   - sub-Beverly/sub-Beverly_ses-Beverly16-HomeCage_behavior+ecephys.nwb
-  - sub-Beverly/sub-Beverly_ses-Beverly17-HomeCage_behavior+ecephys.nwb
+  - path: sub-Beverly/sub-Beverly_ses-Beverly17-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Bones/sub-Bones_ses-Bones01_HomeCage_behavior+ecephys.nwb
   - sub-Bones/sub-Bones_ses-Bones03-HomeCage_behavior+ecephys.nwb
   - sub-Bones/sub-Bones_ses-Bones04-HomeCage_behavior+ecephys.nwb
   - sub-Bones/sub-Bones_ses-Bones05_HomeCage_behavior+ecephys.nwb
   - sub-Bones/sub-Bones_ses-Bones06-HomeCage_behavior+ecephys.nwb
   - sub-Bones/sub-Bones_ses-Bones07_HomeCage_behavior+ecephys.nwb
-  - sub-Caraway/sub-Caraway_ses-Caraway01-LinearTrack_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway02-HomeCage_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway02_LinearTrack_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway03-HomeCage_behavior+ecephys.nwb
@@ -976,13 +1190,16 @@ tests:
   - sub-Cicada/sub-Cicada_ses-Cicada03-HomeCage_behavior+ecephys.nwb
   - sub-Cicada/sub-Cicada_ses-Cicada04-HomeCage_behavior+ecephys.nwb
   - sub-Cicada/sub-Cicada_ses-Cicada05-HomeCage_behavior+ecephys.nwb
-  - sub-Cicada/sub-Cicada_ses-Cicada06-HomeCage_behavior+ecephys.nwb
+  - path: sub-Cicada/sub-Cicada_ses-Cicada06-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Cicada/sub-Cicada_ses-Cicada07-HomeCage_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon01-HomeCage_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon01-LinearTrack_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon02-HomeCage_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon02-LinearTrack_behavior+ecephys.nwb
-  - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon03-HomeCage_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon04-HomeCage_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon04-LinearTrack_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon05_HomeCage_behavior+ecephys.nwb
@@ -1009,10 +1226,8 @@ tests:
   - sub-Cumin/sub-Cumin_ses-Cumin02-HomeCage_behavior+ecephys.nwb
   - sub-Cumin/sub-Cumin_ses-Cumin02-LinearTrack_behavior+ecephys.nwb
   - sub-Cumin/sub-Cumin_ses-Cumin03-HomeCage_behavior+ecephys.nwb
-  - sub-Cumin/sub-Cumin_ses-Cumin03-LinearTrack_behavior+ecephys.nwb
   - sub-Cumin/sub-Cumin_ses-Cumin04-HomeCage_behavior+ecephys.nwb
   - sub-Cumin/sub-Cumin_ses-Cumin04-LinearTrack_behavior+ecephys.nwb
-  - sub-Cumin/sub-Cumin_ses-Cumin05-HomeCage_behavior+ecephys.nwb
   - sub-Cumin/sub-Cumin_ses-Cumin05-LinearTrack_behavior+ecephys.nwb
   - sub-Cumin/sub-Cumin_ses-Cumin06-HomeCage_behavior+ecephys.nwb
   - sub-Cumin/sub-Cumin_ses-Cumin06-LinearTrack_behavior+ecephys.nwb
@@ -1110,7 +1325,6 @@ tests:
   - sub-Jerk/sub-Jerk_ses-Jerk02-HomeCage_behavior+ecephys.nwb
   - sub-Jerk/sub-Jerk_ses-Jerk02-LinearTrack_behavior+ecephys.nwb
   - sub-Jerk/sub-Jerk_ses-Jerk03-HomeCage_behavior+ecephys.nwb
-  - sub-Jerk/sub-Jerk_ses-Jerk04-HomeCage_behavior+ecephys.nwb
   - sub-Jerk/sub-Jerk_ses-Jerk04_LinearTrack_behavior+ecephys.nwb
   - sub-Jerk/sub-Jerk_ses-Jerk05-LinearTrack_behavior+ecephys.nwb
   - sub-Jerk/sub-Jerk_ses-Jerk05_HomeCage_behavior+ecephys.nwb
@@ -1126,7 +1340,11 @@ tests:
   - sub-Kes/sub-Kes_ses-Kes01-HomeCage_behavior+ecephys.nwb
   - sub-Kes/sub-Kes_ses-Kes02_HomeCage_behavior+ecephys.nwb
   - sub-Kes/sub-Kes_ses-Kes03_HomeCage_behavior+ecephys.nwb
-  - sub-Kes/sub-Kes_ses-Kes04-HomeCage_behavior+ecephys.nwb
+  - path: sub-Kes/sub-Kes_ses-Kes04-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Kes/sub-Kes_ses-Kes05-HomeCage_behavior+ecephys.nwb
   - sub-Kes/sub-Kes_ses-Kes06-HomeCage_behavior+ecephys.nwb
   - sub-Kes/sub-Kes_ses-Kes07-HomeCage_behavior+ecephys.nwb
@@ -1148,17 +1366,19 @@ tests:
   - sub-Mace/sub-Mace_ses-Mace06-LinearTrack_behavior+ecephys.nwb
   - sub-Mantis/sub-Mantis_ses-Mantis01_HomeCage_behavior+ecephys.nwb
   - sub-Mantis/sub-Mantis_ses-Mantis02-HomeCage_behavior+ecephys.nwb
-  - sub-Mantis/sub-Mantis_ses-Mantis03_HomeCage_behavior+ecephys.nwb
+  - path: sub-Mantis/sub-Mantis_ses-Mantis03_HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Mantis/sub-Mantis_ses-Mantis04_HomeCage_behavior+ecephys.nwb
   - sub-Mantis/sub-Mantis_ses-Mantis05-HomeCage_behavior+ecephys.nwb
   - sub-Mantis/sub-Mantis_ses-Mantis06-HomeCage_behavior+ecephys.nwb
   - sub-Mustard/sub-Mustard_ses-Mustard02-LinearTrack_behavior+ecephys.nwb
-  - sub-Mustard/sub-Mustard_ses-Mustard03-LinearTrack_behavior+ecephys.nwb
   - sub-Mustard/sub-Mustard_ses-Mustard04-LinearTrack_behavior+ecephys.nwb
   - sub-Mustard/sub-Mustard_ses-Mustard05-LinearTrack_behavior+ecephys.nwb
   - sub-Mustard/sub-Mustard_ses-Mustard06-LinearTrack_behavior+ecephys.nwb
   - sub-Neelix/sub-Neelix_ses-Neelix01-HomeCage_behavior+ecephys.nwb
-  - sub-Neelix/sub-Neelix_ses-Neelix02-HomeCage_behavior+ecephys.nwb
   - path: sub-Neelix/sub-Neelix_ses-Neelix03-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.4
@@ -1174,7 +1394,6 @@ tests:
   - sub-Nerys/sub-Nerys_ses-Nerys04-HomeCage_behavior+ecephys.nwb
   - sub-Nerys/sub-Nerys_ses-Nerys05-HomeCage_behavior+ecephys.nwb
   - sub-Nerys/sub-Nerys_ses-Nerys06-HomeCage_behavior+ecephys.nwb
-  - sub-Nerys/sub-Nerys_ses-Nerys07-HomeCage_behavior+ecephys.nwb
   - sub-Nutmeg/sub-Nutmeg_ses-Nutmeg01-HomeCage_behavior+ecephys.nwb
   - sub-Nutmeg/sub-Nutmeg_ses-Nutmeg01-LinearTrack_behavior+ecephys.nwb
   - sub-Nutmeg/sub-Nutmeg_ses-Nutmeg02-HomeCage_behavior+ecephys.nwb
@@ -1212,13 +1431,21 @@ tests:
   - sub-OldBay/sub-OldBay_ses-OldBay06-HomeCage_behavior+ecephys.nwb
   - sub-OldBay/sub-OldBay_ses-OldBay06-LinearTrack_behavior+ecephys.nwb
   - sub-Paprika/sub-Paprika_ses-Paprika01_HomeCage_behavior+ecephys.nwb
-  - sub-Paprika/sub-Paprika_ses-Paprika02-HomeCage_behavior+ecephys.nwb
+  - path: sub-Paprika/sub-Paprika_ses-Paprika02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Paprika/sub-Paprika_ses-Paprika02-LinearTrack_behavior+ecephys.nwb
   - sub-Paprika/sub-Paprika_ses-Paprika03-HomeCage_behavior+ecephys.nwb
   - sub-Paprika/sub-Paprika_ses-Paprika03-LinearTrack_behavior+ecephys.nwb
   - sub-Paprika/sub-Paprika_ses-Paprika04-HomeCage_behavior+ecephys.nwb
   - sub-Paprika/sub-Paprika_ses-Paprika04-LinearTrack_behavior+ecephys.nwb
-  - sub-Paprika/sub-Paprika_ses-Paprika05-HomeCage_behavior+ecephys.nwb
+  - path: sub-Paprika/sub-Paprika_ses-Paprika05-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Paprika/sub-Paprika_ses-Paprika05-LinearTrack_behavior+ecephys.nwb
   - sub-Paprika/sub-Paprika_ses-Paprika06-HomeCage_behavior+ecephys.nwb
   - sub-Paprika/sub-Paprika_ses-Paprika06-LinearTrack_behavior+ecephys.nwb
@@ -1238,14 +1465,12 @@ tests:
   - sub-Pepper/sub-Pepper_ses-Pepper02-LinearTrack_behavior+ecephys.nwb
   - sub-Pepper/sub-Pepper_ses-Pepper03-HomeCage_behavior+ecephys.nwb
   - sub-Pepper/sub-Pepper_ses-Pepper03-LinearTrack_behavior+ecephys.nwb
-  - sub-Pepper/sub-Pepper_ses-Pepper04-HomeCage_behavior+ecephys.nwb
   - sub-Pepper/sub-Pepper_ses-Pepper04-LinearTrack_behavior+ecephys.nwb
   - path: sub-Pepper/sub-Pepper_ses-Pepper05-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.4
       matnwb: v2.6.0.1
       pynwb: 2.3.1
-  - sub-Pepper/sub-Pepper_ses-Pepper05-LinearTrack_behavior+ecephys.nwb
   - sub-Pepper/sub-Pepper_ses-Pepper06-HomeCage_behavior+ecephys.nwb
   - sub-Pepper/sub-Pepper_ses-Pepper06-LinearTrack_behavior+ecephys.nwb
   - sub-Picard/sub-Picard_ses-Picard08-HomeCage_behavior+ecephys.nwb
@@ -1267,7 +1492,6 @@ tests:
   - sub-Provence/sub-Provence_ses-Provence06-HomeCage_behavior+ecephys.nwb
   - sub-Provence/sub-Provence_ses-Provence06-LinearTrack_behavior+ecephys.nwb
   - sub-Quark/sub-Quark_ses-Quark01-HomeCage_behavior+ecephys.nwb
-  - sub-Quark/sub-Quark_ses-Quark02-HomeCage_behavior+ecephys.nwb
   - sub-Quark/sub-Quark_ses-Quark03-HomeCage_behavior+ecephys.nwb
   - sub-Quark/sub-Quark_ses-Quark04-HomeCage_behavior+ecephys.nwb
   - sub-Quark/sub-Quark_ses-Quark05-HomeCage_behavior+ecephys.nwb
@@ -1293,18 +1517,20 @@ tests:
   - sub-Rolypoly/sub-Rolypoly_ses-Rolypoly01-HomeCage_behavior+ecephys.nwb
   - sub-Rolypoly/sub-Rolypoly_ses-Rolypoly02-HomeCage_behavior+ecephys.nwb
   - sub-Rolypoly/sub-Rolypoly_ses-Rolypoly03-HomeCage_behavior+ecephys.nwb
-  - sub-Rolypoly/sub-Rolypoly_ses-Rolypoly04-HomeCage_behavior+ecephys.nwb
   - sub-Rolypoly/sub-Rolypoly_ses-Rolypoly05-HomeCage_behavior+ecephys.nwb
   - sub-Rolypoly/sub-Rolypoly_ses-Rolypoly06-HomeCage_behavior+ecephys.nwb
   - sub-Rolypoly/sub-Rolypoly_ses-Rolypoly07-HomeCage_behavior+ecephys.nwb
-  - sub-Rosemary/sub-Rosemary_ses-Rosemary01-HomeCage_behavior+ecephys.nwb
   - sub-Rosemary/sub-Rosemary_ses-Rosemary01-LinearTrack_behavior+ecephys.nwb
   - sub-Rosemary/sub-Rosemary_ses-Rosemary02-HomeCage_behavior+ecephys.nwb
   - sub-Rosemary/sub-Rosemary_ses-Rosemary02-LinearTrack_behavior+ecephys.nwb
   - sub-Rosemary/sub-Rosemary_ses-Rosemary03-HomeCage_behavior+ecephys.nwb
   - sub-Rosemary/sub-Rosemary_ses-Rosemary03-LinearTrack_behavior+ecephys.nwb
   - sub-Rosemary/sub-Rosemary_ses-Rosemary04-HomeCage_behavior+ecephys.nwb
-  - sub-Rosemary/sub-Rosemary_ses-Rosemary05-HomeCage_behavior+ecephys.nwb
+  - path: sub-Rosemary/sub-Rosemary_ses-Rosemary05-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Rosemary/sub-Rosemary_ses-Rosemary05-LinearTrack_behavior+ecephys.nwb
   - sub-Rosemary/sub-Rosemary_ses-Rosemary06-LinearTrack_behavior+ecephys.nwb
   - sub-Rosemary/sub-Rosemary_ses-Rosemary06_HomeCage_behavior+ecephys.nwb
@@ -1346,7 +1572,11 @@ tests:
   - sub-Salt/sub-Salt_ses-Salt05-LinearTrack_behavior+ecephys.nwb
   - sub-Salt/sub-Salt_ses-Salt06-HomeCage_behavior+ecephys.nwb
   - sub-Salt/sub-Salt_ses-Salt06-LinearTrack_behavior+ecephys.nwb
-  - sub-Sato/sub-Sato_ses-Sato02-HomeCage_behavior+ecephys.nwb
+  - path: sub-Sato/sub-Sato_ses-Sato02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-Sato/sub-Sato_ses-Sato03-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.5.4
@@ -1370,8 +1600,16 @@ tests:
   - sub-SevenOfNine/sub-SevenOfNine_ses-SevenOfNine05-HomeCage_behavior+ecephys.nwb
   - sub-SevenOfNine/sub-SevenOfNine_ses-SevenOfNine06-HomeCage_behavior+ecephys.nwb
   - sub-SevenOfNine/sub-SevenOfNine_ses-SevenOfNine07-HomeCage_behavior+ecephys.nwb
-  - sub-Sulu/sub-Sulu_ses-Sulu01_HomeCage_behavior+ecephys.nwb
-  - sub-Sulu/sub-Sulu_ses-Sulu02-HomeCage_behavior+ecephys.nwb
+  - path: sub-Sulu/sub-Sulu_ses-Sulu01_HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-Sulu/sub-Sulu_ses-Sulu02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Sulu/sub-Sulu_ses-Sulu03_HomeCage_behavior+ecephys.nwb
   - sub-Sulu/sub-Sulu_ses-Sulu04-HomeCage_behavior+ecephys.nwb
   - sub-Sulu/sub-Sulu_ses-Sulu05-HomeCage_behavior+ecephys.nwb
@@ -1394,10 +1632,17 @@ tests:
   - sub-TPol/sub-TPol_ses-TPol04-HomeCage_behavior+ecephys.nwb
   - sub-TPol/sub-TPol_ses-TPol05-HomeCage_behavior+ecephys.nwb
   - sub-TPol/sub-TPol_ses-TPol06-HomeCage_behavior+ecephys.nwb
-  - sub-TPol/sub-TPol_ses-TPol07-HomeCage_behavior+ecephys.nwb
   - sub-Tarragon/sub-Tarragon_ses-Tarragon01-HomeCage_behavior+ecephys.nwb
-  - sub-Tarragon/sub-Tarragon_ses-Tarragon01-LinearTrack_behavior+ecephys.nwb
-  - sub-Tarragon/sub-Tarragon_ses-Tarragon02-HomeCage_behavior+ecephys.nwb
+  - path: sub-Tarragon/sub-Tarragon_ses-Tarragon01-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-Tarragon/sub-Tarragon_ses-Tarragon02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Tarragon/sub-Tarragon_ses-Tarragon02-LinearTrack_behavior+ecephys.nwb
   - sub-Tarragon/sub-Tarragon_ses-Tarragon03-HomeCage_behavior+ecephys.nwb
   - sub-Tarragon/sub-Tarragon_ses-Tarragon03-LinearTrack_behavior+ecephys.nwb
@@ -1413,7 +1658,6 @@ tests:
   - sub-Thyme/sub-Thyme_ses-Thyme03-HomeCage_behavior+ecephys.nwb
   - sub-Thyme/sub-Thyme_ses-Thyme03-LinearTrack_behavior+ecephys.nwb
   - sub-Thyme/sub-Thyme_ses-Thyme04-HomeCage_behavior+ecephys.nwb
-  - sub-Thyme/sub-Thyme_ses-Thyme04-LinearTrack_behavior+ecephys.nwb
   - sub-Thyme/sub-Thyme_ses-Thyme05-HomeCage_behavior+ecephys.nwb
   - sub-Thyme/sub-Thyme_ses-Thyme05-LinearTrack_behavior+ecephys.nwb
   - sub-Thyme/sub-Thyme_ses-Thyme06-HomeCage_behavior+ecephys.nwb
@@ -1440,7 +1684,11 @@ tests:
   - sub-Worf/sub-Worf_ses-Worf09-HomeCage_behavior+ecephys.nwb
   - sub-Worf/sub-Worf_ses-Worf10-HomeCage_behavior+ecephys.nwb
   - sub-Worf/sub-Worf_ses-Worf12-HomeCage_behavior+ecephys.nwb
-  - sub-Worf/sub-Worf_ses-Worf15-HomeCage_behavior+ecephys.nwb
+  - path: sub-Worf/sub-Worf_ses-Worf15-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-Worf/sub-Worf_ses-Worf16-HomeCage_behavior+ecephys.nwb
   - sub-Worf/sub-Worf_ses-Worf17-HomeCage_behavior+ecephys.nwb
   assets_timeout: []

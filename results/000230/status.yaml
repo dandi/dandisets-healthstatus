@@ -19,6 +19,7 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - sub-58313/sub-58313_ses-20170320T113440_behavior+ecephys.nwb
   - sub-58313/sub-58313_ses-20170321T173346_behavior+ecephys.nwb
   - sub-58313/sub-58313_ses-20170322T111919_behavior+ecephys.nwb
   - sub-70375/sub-70375_ses-20170316T095515_behavior+ecephys.nwb
@@ -26,10 +27,9 @@ tests:
   - sub-70375/sub-70375_ses-20170317T094453_behavior+ecephys.nwb
   - sub-70375/sub-70375_ses-20170317T144531_behavior+ecephys.nwb
   - sub-70375/sub-70375_ses-20170318T135856_behavior+ecephys.nwb
-  - sub-70375/sub-70375_ses-20170318T185915_behavior+ecephys.nwb
   assets_ok: []
   assets_timeout:
-  - sub-58313/sub-58313_ses-20170320T113440_behavior+ecephys.nwb
+  - sub-70375/sub-70375_ses-20170318T185915_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
