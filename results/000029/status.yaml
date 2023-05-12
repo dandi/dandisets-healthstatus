@@ -7,7 +7,11 @@ nassets: 5
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-RAT123/sub-RAT123.nwb
+  - path: sub-RAT123/sub-RAT123.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-anm369962/sub-anm369962_behavior+ecephys.nwb
   - sub-anm369963/sub-anm369963_behavior+ecephys.nwb
   - sub-anm369964/sub-anm369964_behavior+ecephys.nwb
@@ -15,13 +19,17 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-RAT123/sub-RAT123.nwb
+  - path: sub-RAT123/sub-RAT123.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-anm369962/sub-anm369962_behavior+ecephys.nwb
   - sub-anm369963/sub-anm369963_behavior+ecephys.nwb
   - sub-anm369964/sub-anm369964_behavior+ecephys.nwb
-  assets_ok: []
-  assets_timeout:
+  assets_ok:
   - sub-monk-g/sub-monk-g.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

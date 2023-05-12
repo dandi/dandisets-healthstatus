@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-monk-g/sub-monk-g_ses-session0.nwb
-  - sub-monk-g/sub-monk-g_ses-session1.nwb
+  - path: sub-monk-g/sub-monk-g_ses-session1.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-monk-g/sub-monk-g_ses-session2.nwb
   - sub-monk-g/sub-monk-g_ses-session3.nwb
   - sub-monk-g/sub-monk-g_ses-session4.nwb
@@ -22,10 +26,14 @@ tests:
   - sub-monk-j/sub-monk-j_ses-session3.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-monk-g/sub-monk-g_ses-session1.nwb
+- assets_nok: []
   assets_ok:
   - sub-monk-g/sub-monk-g_ses-session0.nwb
+  - path: sub-monk-g/sub-monk-g_ses-session1.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-monk-g/sub-monk-g_ses-session2.nwb
   - sub-monk-g/sub-monk-g_ses-session3.nwb
   - sub-monk-g/sub-monk-g_ses-session4.nwb

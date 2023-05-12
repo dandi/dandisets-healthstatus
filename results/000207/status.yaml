@@ -14,7 +14,11 @@ tests:
   - sub-13/sub-13_ses-13_ecephys+image.nwb
   - sub-14/sub-14_ses-14_ecephys+image.nwb
   - sub-15/sub-15_ses-15_ecephys+image.nwb
-  - sub-16/sub-16_ses-16_ecephys+image.nwb
+  - path: sub-16/sub-16_ses-16_ecephys+image.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-17/sub-17_ses-17_ecephys+image.nwb
   - sub-18/sub-18_ses-18_ecephys+image.nwb
   - sub-19/sub-19_ses-19_ecephys+image.nwb
@@ -29,6 +33,12 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - sub-10/sub-10_ses-10_ecephys+image.nwb
+  - path: sub-16/sub-16_ses-16_ecephys+image.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-5/sub-5_ses-5_ecephys+image.nwb
   assets_ok:
   - sub-1/sub-1_ses-1_ecephys+image.nwb
@@ -37,7 +47,6 @@ tests:
   - sub-13/sub-13_ses-13_ecephys+image.nwb
   - sub-14/sub-14_ses-14_ecephys+image.nwb
   - sub-15/sub-15_ses-15_ecephys+image.nwb
-  - sub-16/sub-16_ses-16_ecephys+image.nwb
   - sub-17/sub-17_ses-17_ecephys+image.nwb
   - sub-18/sub-18_ses-18_ecephys+image.nwb
   - sub-19/sub-19_ses-19_ecephys+image.nwb
@@ -48,7 +57,6 @@ tests:
   - sub-8/sub-8_ses-8_ecephys+image.nwb
   - sub-9/sub-9_ses-9_ecephys+image.nwb
   assets_timeout:
-  - sub-10/sub-10_ses-10_ecephys+image.nwb
   - sub-6/sub-6_ses-6_ecephys+image.nwb
   name: matnwb_nwbRead
 untested: []

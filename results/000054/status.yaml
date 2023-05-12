@@ -36,9 +36,9 @@ tests:
       pynwb: 2.3.1
   - path: sub-F2/sub-F2_ses-20190407T210000_behavior+ophys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-F2/sub-F2_ses-20190409T210000_behavior+ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -56,14 +56,14 @@ tests:
       pynwb: 2.3.1
   - path: sub-F2/sub-F2_ses-20190414T210000_behavior+ophys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-F2/sub-F2_ses-20190415T210000_behavior+ophys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-F2/sub-F2_ses-20190416T210000_behavior+ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -86,14 +86,22 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-F3/sub-F3_ses-20190414T210000_obj-7vehp4_behavior+ophys.nwb
+  - path: sub-F3/sub-F3_ses-20190414T210000_obj-7vehp4_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-F3/sub-F3_ses-20190414T210000_obj-n4e7d4_behavior+ophys.nwb
     versions:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - sub-F5/sub-F5_ses-20190407T210000_behavior+ophys.nwb
-  - sub-F5/sub-F5_ses-20190409T210000_behavior+ophys.nwb
+  - path: sub-F5/sub-F5_ses-20190409T210000_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-F5/sub-F5_ses-20190411T210000_behavior+ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -165,9 +173,9 @@ tests:
       pynwb: 2.3.2
   - path: sub-R2/sub-R2_ses-20190206T210000_obj-16d9pmi_behavior+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.6.0
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-R2/sub-R2_ses-20190206T210000_obj-1m6ibdg_behavior+ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -183,7 +191,11 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-R2/sub-R2_ses-20190211T210000_behavior+ophys.nwb
+  - path: sub-R2/sub-R2_ses-20190211T210000_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-R2/sub-R2_ses-20190214T210000_behavior+ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -209,7 +221,11 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-R2/sub-R2_ses-20190220T210000_behavior+ophys.nwb
+  - path: sub-R2/sub-R2_ses-20190220T210000_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-R2/sub-R2_ses-20190221T210000_behavior+ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -238,9 +254,9 @@ tests:
       pynwb: 2.3.2
   - path: sub-R3/sub-R3_ses-20190218T210000_behavior+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - sub-R3/sub-R3_ses-20190220T210000_behavior+ophys.nwb
   - path: sub-R3/sub-R3_ses-20190221T210000_behavior+ophys.nwb
     versions:
@@ -270,9 +286,9 @@ tests:
       pynwb: 2.3.1
   - path: sub-R4/sub-R4_ses-20190901T210000_behavior+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-R4/sub-R4_ses-20190901T210000_ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -311,9 +327,9 @@ tests:
   - sub-R5/sub-R5_ses-20200319T210000_behavior+ophys.nwb
   - path: sub-R5/sub-R5_ses-20200320T210000_behavior+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-R5/sub-R5_ses-20200321T210000_behavior+ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -342,17 +358,7 @@ tests:
   - sub-R6/sub-R6_ses-20200210T210000_obj-r0awni_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - path: sub-F2/sub-F2_ses-20190414T210000_behavior+ophys.nwb
-    versions:
-      hdmf: 3.5.2
-      matnwb: v2.6.0.1
-      pynwb: 2.3.1
-  - path: sub-F2/sub-F2_ses-20190415T210000_behavior+ophys.nwb
-    versions:
-      hdmf: 3.5.2
-      matnwb: v2.6.0.1
-      pynwb: 2.3.1
+- assets_nok: []
   assets_ok:
   - path: sub-R2/sub-R2_ses-20190206T210000_ophys.nwb
     versions:
@@ -389,9 +395,9 @@ tests:
       pynwb: 2.3.1
   - path: sub-F2/sub-F2_ses-20190407T210000_behavior+ophys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-F2/sub-F2_ses-20190409T210000_behavior+ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -407,6 +413,16 @@ tests:
       hdmf: 3.5.2
       matnwb: v2.6.0.1
       pynwb: 2.3.1
+  - path: sub-F2/sub-F2_ses-20190414T210000_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-F2/sub-F2_ses-20190415T210000_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-F2/sub-F2_ses-20190416T210000_behavior+ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -429,14 +445,22 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-F3/sub-F3_ses-20190414T210000_obj-7vehp4_behavior+ophys.nwb
+  - path: sub-F3/sub-F3_ses-20190414T210000_obj-7vehp4_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-F3/sub-F3_ses-20190414T210000_obj-n4e7d4_behavior+ophys.nwb
     versions:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - sub-F5/sub-F5_ses-20190407T210000_behavior+ophys.nwb
-  - sub-F5/sub-F5_ses-20190409T210000_behavior+ophys.nwb
+  - path: sub-F5/sub-F5_ses-20190409T210000_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-F5/sub-F5_ses-20190411T210000_behavior+ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -508,9 +532,9 @@ tests:
       pynwb: 2.3.2
   - path: sub-R2/sub-R2_ses-20190206T210000_obj-16d9pmi_behavior+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.6.0
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-R2/sub-R2_ses-20190206T210000_obj-1m6ibdg_behavior+ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -521,7 +545,11 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-R2/sub-R2_ses-20190211T210000_behavior+ophys.nwb
+  - path: sub-R2/sub-R2_ses-20190211T210000_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-R2/sub-R2_ses-20190214T210000_behavior+ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -547,7 +575,11 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-R2/sub-R2_ses-20190220T210000_behavior+ophys.nwb
+  - path: sub-R2/sub-R2_ses-20190220T210000_behavior+ophys.nwb
+    versions:
+      hdmf: 3.5.5
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-R2/sub-R2_ses-20190221T210000_behavior+ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -576,9 +608,9 @@ tests:
       pynwb: 2.3.2
   - path: sub-R3/sub-R3_ses-20190218T210000_behavior+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - sub-R3/sub-R3_ses-20190220T210000_behavior+ophys.nwb
   - path: sub-R3/sub-R3_ses-20190221T210000_behavior+ophys.nwb
     versions:
@@ -608,9 +640,9 @@ tests:
       pynwb: 2.3.1
   - path: sub-R4/sub-R4_ses-20190901T210000_behavior+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-R4/sub-R4_ses-20190901T210000_ophys.nwb
     versions:
       hdmf: 3.5.5
@@ -649,9 +681,9 @@ tests:
   - sub-R5/sub-R5_ses-20200319T210000_behavior+ophys.nwb
   - path: sub-R5/sub-R5_ses-20200320T210000_behavior+ophys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.5.5
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-R5/sub-R5_ses-20200321T210000_behavior+ophys.nwb
     versions:
       hdmf: 3.5.5

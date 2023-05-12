@@ -10,13 +10,13 @@ tests:
   - sub-Fish07-GCaMP-vlgut-HBv-5dpf-RandomWave/sub-Fish07-GCaMP-vlgut-HBv-5dpf-RandomWave_ses-20210825T104044_behavior+ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-Fish07-GCaMP-vlgut-HBv-5dpf-RandomWave/sub-Fish07-GCaMP-vlgut-HBv-5dpf-RandomWave_ses-20210825T104044_behavior+ophys.nwb
+- assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-Fish07-GCaMP-vlgut-HBv-5dpf-RandomWave/sub-Fish07-GCaMP-vlgut-HBv-5dpf-RandomWave_ses-20210825T104044_behavior+ophys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.5.5
+  hdmf: 3.6.0
   matnwb: v2.6.0.1
   pynwb: 2.3.2

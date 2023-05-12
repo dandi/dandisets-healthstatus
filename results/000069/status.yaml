@@ -11,12 +11,12 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
-  assets_ok: []
-  assets_timeout:
+  assets_ok:
   - sub-anm106211/sub-anm106211_behavior+icephys.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.5.5
+  hdmf: 3.6.0
   matnwb: v2.6.0.1
   pynwb: 2.3.2

@@ -8,13 +8,21 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-Haydn/sub-Haydn_desc-test_ecephys.nwb
-  - sub-Haydn/sub-Haydn_desc-train_ecephys.nwb
+  - path: sub-Haydn/sub-Haydn_desc-train_ecephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
   - sub-Haydn/sub-Haydn_desc-test_ecephys.nwb
-  - sub-Haydn/sub-Haydn_desc-train_ecephys.nwb
+  - path: sub-Haydn/sub-Haydn_desc-train_ecephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
