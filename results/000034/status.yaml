@@ -7,34 +7,66 @@ nassets: 6
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
-  - sub-P29-16-05-14-retina02-left/sub-P29-16-05-14-retina02-left_ecephys.nwb
+  - path: sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
+  - path: sub-P29-16-05-14-retina02-left/sub-P29-16-05-14-retina02-left_ecephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - sub-c1/sub-c1_ecephys.nwb
-  - sub-mouse412804/sub-mouse412804_ecephys.nwb
-  - sub-mouse412804/sub-mouse412804_ses-20200824T155542.nwb
+  - path: sub-mouse412804/sub-mouse412804_ecephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
+  - path: sub-mouse412804/sub-mouse412804_ses-20200824T155542.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - path: sub-mouse412804/sub-mouse412804_ses-20200824T155543.nwb
     versions:
-      hdmf: 3.6.0
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-mouse412804/sub-mouse412804_ses-20200824T155542.nwb
+- assets_nok: []
+  assets_ok:
+  - path: sub-mouse412804/sub-mouse412804_ses-20200824T155542.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - path: sub-mouse412804/sub-mouse412804_ses-20200824T155543.nwb
     versions:
-      hdmf: 3.6.0
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
-  assets_ok: []
   assets_timeout:
-  - sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
-  - sub-P29-16-05-14-retina02-left/sub-P29-16-05-14-retina02-left_ecephys.nwb
+  - path: sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
+  - path: sub-P29-16-05-14-retina02-left/sub-P29-16-05-14-retina02-left_ecephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - sub-c1/sub-c1_ecephys.nwb
-  - sub-mouse412804/sub-mouse412804_ecephys.nwb
+  - path: sub-mouse412804/sub-mouse412804_ecephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.5.5
+  hdmf: 3.6.1
   matnwb: v2.6.0.1
   pynwb: 2.3.2

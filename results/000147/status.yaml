@@ -7,42 +7,74 @@ nassets: 10
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-P1/sub-P1_ses-2018-09-10_ecephys.nwb
-  - sub-P1/sub-P1_ses-2018-09-17a_ecephys.nwb
-  - path: sub-P1/sub-P1_ses-2018-09-17b_ecephys.nwb
+  - path: sub-P1/sub-P1_ses-2018-09-10_ecephys.nwb
     versions:
-      hdmf: 3.6.0
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
-  - sub-P1/sub-P1_ses-2018-09-24_ecephys.nwb
+  - path: sub-P1/sub-P1_ses-2018-09-17a_ecephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
+  - sub-P1/sub-P1_ses-2018-09-17b_ecephys.nwb
+  - path: sub-P1/sub-P1_ses-2018-09-24_ecephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - sub-P1/sub-P1_ses-2018-09-26_ecephys.nwb
   - sub-P1/sub-P1_ses-2018-10-01_ecephys.nwb
   - sub-P1/sub-P1_ses-2018-10-12_ecephys.nwb
-  - sub-P1/sub-P1_ses-2018-10-15_ecephys.nwb
+  - path: sub-P1/sub-P1_ses-2018-10-15_ecephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - sub-P1/sub-P1_ses-2018-10-17_ecephys.nwb
-  - sub-P1/sub-P1_ses-2018-10-22_ecephys.nwb
+  - path: sub-P1/sub-P1_ses-2018-10-22_ecephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-P1/sub-P1_ses-2018-09-17a_ecephys.nwb
-  assets_ok:
-  - sub-P1/sub-P1_ses-2018-09-10_ecephys.nwb
-  - path: sub-P1/sub-P1_ses-2018-09-17b_ecephys.nwb
-    versions:
-      hdmf: 3.6.0
-      matnwb: v2.6.0.1
-      pynwb: 2.3.2
-  - sub-P1/sub-P1_ses-2018-09-24_ecephys.nwb
   - sub-P1/sub-P1_ses-2018-09-26_ecephys.nwb
-  - sub-P1/sub-P1_ses-2018-10-01_ecephys.nwb
   - sub-P1/sub-P1_ses-2018-10-12_ecephys.nwb
-  - sub-P1/sub-P1_ses-2018-10-15_ecephys.nwb
+  assets_ok:
+  - path: sub-P1/sub-P1_ses-2018-09-10_ecephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
+  - path: sub-P1/sub-P1_ses-2018-09-17a_ecephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
+  - sub-P1/sub-P1_ses-2018-09-17b_ecephys.nwb
+  - path: sub-P1/sub-P1_ses-2018-09-24_ecephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
+  - sub-P1/sub-P1_ses-2018-10-01_ecephys.nwb
+  - path: sub-P1/sub-P1_ses-2018-10-15_ecephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - sub-P1/sub-P1_ses-2018-10-17_ecephys.nwb
-  - sub-P1/sub-P1_ses-2018-10-22_ecephys.nwb
+  - path: sub-P1/sub-P1_ses-2018-10-22_ecephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.5.5
+  hdmf: 3.6.1
   matnwb: v2.6.0.1
   pynwb: 2.3.2

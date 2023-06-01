@@ -9,7 +9,7 @@ tests:
   assets_ok:
   - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-10_slice-20200407-slice-1_cell-20200407-sample-10_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.0
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-11_slice-20200407-slice-4_cell-20200407-sample-11_icephys.nwb
@@ -28,7 +28,7 @@ tests:
       pynwb: 2.3.2
   - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-18_slice-20200407-slice-5_cell-20200407-sample-18_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.0
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-19_slice-20200407-slice-5_cell-20200407-sample-19_icephys.nwb
@@ -38,14 +38,18 @@ tests:
       pynwb: 2.3.2
   - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-1_slice-20200407-slice-1_cell-20200407-sample-1_icephys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-20_slice-20200407-slice-5_cell-20200407-sample-20_icephys.nwb
-  - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-21_slice-20200407-slice-5_cell-20200407-sample-21_icephys.nwb
+  - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-21_slice-20200407-slice-5_cell-20200407-sample-21_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-22_slice-20200407-slice-5_cell-20200407-sample-22_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-23_slice-20200407-slice-5_cell-20200407-sample-23_icephys.nwb
@@ -61,12 +65,12 @@ tests:
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-4_slice-20200407-slice-1_cell-20200407-sample-4_icephys.nwb
   - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-5_slice-20200407-slice-1_cell-20200407-sample-5_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-6_slice-20200407-slice-1_cell-20200407-sample-6_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.0
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-7_slice-20200407-slice-1_cell-20200407-sample-7_icephys.nwb
@@ -96,21 +100,41 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-3_slice-20200403-slice-1_cell-20200403-sample-3_icephys.nwb
-  - sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-4_slice-20200403-slice-1_cell-20200403-sample-4_icephys.nwb
-  - sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-5_slice-20200403-slice-2_cell-20200403-sample-5_icephys.nwb
-  - path: sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-6_slice-20200403-slice-2_cell-20200403-sample-6_icephys.nwb
+  - path: sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-3_slice-20200403-slice-1_cell-20200403-sample-3_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.0
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-7_slice-20200403-slice-2_cell-20200403-sample-7_icephys.nwb
+  - path: sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-4_slice-20200403-slice-1_cell-20200403-sample-4_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
+  - path: sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-5_slice-20200403-slice-2_cell-20200403-sample-5_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-6_slice-20200403-slice-2_cell-20200403-sample-6_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-7_slice-20200403-slice-2_cell-20200403-sample-7_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-8_slice-20200403-slice-2_cell-20200403-sample-8_icephys.nwb
     versions:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-9_slice-20200403-slice-2_cell-20200403-sample-9_icephys.nwb
+  - path: sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-9_slice-20200403-slice-2_cell-20200403-sample-9_icephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-10_slice-20200410-slice-1_cell-20200410-sample-10_icephys.nwb
     versions:
       hdmf: 3.5.4
@@ -118,21 +142,29 @@ tests:
       pynwb: 2.3.1
   - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-11_slice-20200410-slice-1_cell-20200410-sample-11_icephys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-13_slice-20200410-slice-1_cell-20200410-sample-13_icephys.nwb
-  - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-14_slice-20200410-slice-1_cell-20200410-sample-14_icephys.nwb
+  - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-14_slice-20200410-slice-1_cell-20200410-sample-14_icephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-15_slice-20200410-slice-1_cell-20200410-sample-15_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-17_slice-20200410-slice-2_cell-20200410-sample-17_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-18_slice-20200410-slice-2_cell-20200410-sample-18_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-1_slice-20200410-slice-1_cell-20200410-sample-1_icephys.nwb
-  - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-20_slice-20200410-slice-2_cell-20200410-sample-20_icephys.nwb
+  - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-20_slice-20200410-slice-2_cell-20200410-sample-20_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-21_slice-20200410-slice-2_cell-20200410-sample-21_icephys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-22_slice-20200410-slice-2_cell-20200410-sample-22_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-23_slice-20200410-slice-2_cell-20200410-sample-23_icephys.nwb
   - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-24_slice-20200410-slice-3_cell-20200410-sample-24_icephys.nwb
@@ -147,22 +179,30 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-29_slice-20200410-slice-3_cell-20200410-sample-29_icephys.nwb
+  - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-29_slice-20200410-slice-3_cell-20200410-sample-29_icephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-2_slice-20200410-slice-1_cell-20200410-sample-2_icephys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.6.0
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-30_slice-20200410-slice-3_cell-20200410-sample-30_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-4_slice-20200410-slice-1_cell-20200410-sample-4_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-5_slice-20200410-slice-1_cell-20200410-sample-5_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-6_slice-20200410-slice-1_cell-20200410-sample-6_icephys.nwb
   - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-7_slice-20200410-slice-1_cell-20200410-sample-7_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-8_slice-20200410-slice-1_cell-20200410-sample-8_icephys.nwb
+  - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-8_slice-20200410-slice-1_cell-20200410-sample-8_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-10_slice-20200409-slice-2_cell-20200409-sample-10_icephys.nwb
   - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-11_slice-20200409-slice-2_cell-20200409-sample-11_icephys.nwb
     versions:
@@ -172,12 +212,12 @@ tests:
   - sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-12_slice-20200409-slice-2_cell-20200409-sample-12_icephys.nwb
   - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-13_slice-20200409-slice-2_cell-20200409-sample-13_icephys.nwb
     versions:
-      hdmf: 3.5.4
-      matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-14_slice-20200409-slice-2_cell-20200409-sample-14_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-15_slice-20200409-slice-3_cell-20200409-sample-15_icephys.nwb
@@ -208,7 +248,11 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-4_slice-20200409-slice-1_cell-20200409-sample-4_icephys.nwb
+  - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-4_slice-20200409-slice-1_cell-20200409-sample-4_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-5_slice-20200409-slice-1_cell-20200409-sample-5_icephys.nwb
     versions:
       hdmf: 3.6.0
@@ -221,7 +265,7 @@ tests:
       pynwb: 2.3.2
   - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-7_slice-20200409-slice-1_cell-20200409-sample-7_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-8_slice-20200409-slice-1_cell-20200409-sample-8_icephys.nwb
@@ -236,7 +280,11 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-12_slice-20200414-slice-3_cell-20200414-sample-12_icephys.nwb
+  - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-12_slice-20200414-slice-3_cell-20200414-sample-12_icephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-13_slice-20200414-slice-3_cell-20200414-sample-13_icephys.nwb
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-14_slice-20200414-slice-3_cell-20200414-sample-14_icephys.nwb
   - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-15_slice-20200414-slice-3_cell-20200414-sample-15_icephys.nwb
@@ -245,22 +293,42 @@ tests:
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-16_slice-20200414-slice-3_cell-20200414-sample-16_icephys.nwb
-  - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-17_slice-20200414-slice-3_cell-20200414-sample-17_icephys.nwb
+  - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-17_slice-20200414-slice-3_cell-20200414-sample-17_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-18_slice-20200414-slice-3_cell-20200414-sample-18_icephys.nwb
-  - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-19_slice-20200414-slice-3_cell-20200414-sample-19_icephys.nwb
+  - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-19_slice-20200414-slice-3_cell-20200414-sample-19_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-1_slice-20200414-slice-1_cell-20200414-sample-1_icephys.nwb
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-21_slice-20200414-slice-3_cell-20200414-sample-21_icephys.nwb
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-22_slice-20200414-slice-3_cell-20200414-sample-22_icephys.nwb
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-23_slice-20200414-slice-3_cell-20200414-sample-23_icephys.nwb
-  - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-24_slice-20200414-slice-3_cell-20200414-sample-24_icephys.nwb
+  - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-24_slice-20200414-slice-3_cell-20200414-sample-24_icephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-25_slice-20200414-slice-3_cell-20200414-sample-25_icephys.nwb
-  - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-26_slice-20200414-slice-3_cell-20200414-sample-26_icephys.nwb
+  - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-26_slice-20200414-slice-3_cell-20200414-sample-26_icephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-27_slice-20200414-slice-3_cell-20200414-sample-27_icephys.nwb
     versions:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-2_slice-20200414-slice-1_cell-20200414-sample-2_icephys.nwb
+  - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-2_slice-20200414-slice-1_cell-20200414-sample-2_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-3_slice-20200414-slice-1_cell-20200414-sample-3_icephys.nwb
   - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-4_slice-20200414-slice-1_cell-20200414-sample-4_icephys.nwb
     versions:
@@ -285,7 +353,11 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-11_slice-20200413-slice-2_cell-20200413-sample-11_icephys.nwb
+  - path: sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-11_slice-20200413-slice-2_cell-20200413-sample-11_icephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-12_slice-20200413-slice-2_cell-20200413-sample-12_icephys.nwb
     versions:
       hdmf: 3.5.5
@@ -324,22 +396,30 @@ tests:
   - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-22_slice-20200413-slice-3_cell-20200413-sample-22_icephys.nwb
   - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-23_slice-20200413-slice-3_cell-20200413-sample-23_icephys.nwb
   - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-2_slice-20200413-slice-1_cell-20200413-sample-2_icephys.nwb
-  - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-3_slice-20200413-slice-1_cell-20200413-sample-3_icephys.nwb
+  - path: sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-3_slice-20200413-slice-1_cell-20200413-sample-3_icephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-4_slice-20200413-slice-1_cell-20200413-sample-4_icephys.nwb
   - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-5_slice-20200413-slice-1_cell-20200413-sample-5_icephys.nwb
   - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-6_slice-20200413-slice-1_cell-20200413-sample-6_icephys.nwb
   - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-7_slice-20200413-slice-2_cell-20200413-sample-7_icephys.nwb
-  - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-8_slice-20200413-slice-2_cell-20200413-sample-8_icephys.nwb
+  - path: sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-8_slice-20200413-slice-2_cell-20200413-sample-8_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-9_slice-20200413-slice-2_cell-20200413-sample-9_icephys.nwb
   - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-10_slice-20200406-slice-3_cell-20200406-sample-10_icephys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-11_slice-20200406-slice-3_cell-20200406-sample-11_icephys.nwb
   - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-12_slice-20200406-slice-4_cell-20200406-sample-12_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-13_slice-20200406-slice-4_cell-20200406-sample-13_icephys.nwb
@@ -349,10 +429,14 @@ tests:
       pynwb: 2.3.1
   - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-15_slice-20200406-slice-4_cell-20200406-sample-15_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-16_slice-20200406-slice-4_cell-20200406-sample-16_icephys.nwb
+  - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-16_slice-20200406-slice-4_cell-20200406-sample-16_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-17_slice-20200406-slice-4_cell-20200406-sample-17_icephys.nwb
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-19_slice-20200406-slice-4_cell-20200406-sample-19_icephys.nwb
   - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-1_slice-20200406-slice-1_cell-20200406-sample-1_icephys.nwb
@@ -373,13 +457,17 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-25_slice-20200406-slice-5_cell-20200406-sample-25_icephys.nwb
+  - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-25_slice-20200406-slice-5_cell-20200406-sample-25_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-27_slice-20200406-slice-5_cell-20200406-sample-27_icephys.nwb
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-28_slice-20200406-slice-6_cell-20200406-sample-28_icephys.nwb
   - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-29_slice-20200406-slice-6_cell-20200406-sample-29_icephys.nwb
     versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-2_slice-20200406-slice-1_cell-20200406-sample-2_icephys.nwb
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-30_slice-20200406-slice-6_cell-20200406-sample-30_icephys.nwb
@@ -402,29 +490,37 @@ tests:
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-5_slice-20200406-slice-2_cell-20200406-sample-5_icephys.nwb
   - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-6_slice-20200406-slice-2_cell-20200406-sample-6_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-7_slice-20200406-slice-2_cell-20200406-sample-7_icephys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-11_slice-20200408-slice-3_cell-20200408-sample-11_icephys.nwb
     versions:
       hdmf: 3.5.4
       matnwb: v2.6.0.1
       pynwb: 2.3.1
-  - sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-12_slice-20200408-slice-3_cell-20200408-sample-12_icephys.nwb
+  - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-12_slice-20200408-slice-3_cell-20200408-sample-12_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-13_slice-20200408-slice-3_cell-20200408-sample-13_icephys.nwb
-  - sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-14_slice-20200408-slice-3_cell-20200408-sample-14_icephys.nwb
+  - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-14_slice-20200408-slice-3_cell-20200408-sample-14_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-15_slice-20200408-slice-3_cell-20200408-sample-15_icephys.nwb
   - sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-16_slice-20200408-slice-3_cell-20200408-sample-16_icephys.nwb
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-17_slice-20200408-slice-3_cell-20200408-sample-17_icephys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.6.0
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-18_slice-20200408-slice-4_cell-20200408-sample-18_icephys.nwb
     versions:
       hdmf: 3.5.5
@@ -448,7 +544,7 @@ tests:
   - sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-26_slice-20200408-slice-4_cell-20200408-sample-26_icephys.nwb
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-27_slice-20200408-slice-4_cell-20200408-sample-27_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-28_slice-20200408-slice-4_cell-20200408-sample-28_icephys.nwb
@@ -463,12 +559,12 @@ tests:
       pynwb: 2.3.2
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-3_slice-20200408-slice-1_cell-20200408-sample-3_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.0
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-4_slice-20200408-slice-2_cell-20200408-sample-4_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.0
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-5_slice-20200408-slice-2_cell-20200408-sample-5_icephys.nwb
@@ -478,7 +574,7 @@ tests:
       pynwb: 2.3.1
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-6_slice-20200408-slice-2_cell-20200408-sample-6_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-7_slice-20200408-slice-2_cell-20200408-sample-7_icephys.nwb
@@ -487,37 +583,39 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-10_slice-20200407-slice-1_cell-20200407-sample-10_icephys.nwb
+  - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-12_slice-20200407-slice-4_cell-20200407-sample-12_icephys.nwb
+  - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-18_slice-20200407-slice-5_cell-20200407-sample-18_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.0
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-12_slice-20200407-slice-4_cell-20200407-sample-12_icephys.nwb
   - sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-11_slice-20200403-slice-3_cell-20200403-sample-11_icephys.nwb
   - sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-12_slice-20200403-slice-4_cell-20200403-sample-12_icephys.nwb
   - sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-13_slice-20200403-slice-4_cell-20200403-sample-13_icephys.nwb
   - sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-1_slice-20200403-slice-1_cell-20200403-sample-1_icephys.nwb
-  - sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-4_slice-20200403-slice-1_cell-20200403-sample-4_icephys.nwb
-  - sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-7_slice-20200403-slice-2_cell-20200403-sample-7_icephys.nwb
+  - path: sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-3_slice-20200403-slice-1_cell-20200403-sample-3_icephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-10_slice-20200410-slice-1_cell-20200410-sample-10_icephys.nwb
     versions:
       hdmf: 3.5.4
       matnwb: v2.6.0.1
       pynwb: 2.3.1
+  - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-11_slice-20200410-slice-1_cell-20200410-sample-11_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-18_slice-20200410-slice-2_cell-20200410-sample-18_icephys.nwb
-  - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-20_slice-20200410-slice-2_cell-20200410-sample-20_icephys.nwb
-  - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-21_slice-20200410-slice-2_cell-20200410-sample-21_icephys.nwb
-    versions:
-      hdmf: 3.5.2
-      matnwb: v2.6.0.1
-      pynwb: 2.3.1
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-27_slice-20200410-slice-3_cell-20200410-sample-27_icephys.nwb
-  - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-2_slice-20200410-slice-1_cell-20200410-sample-2_icephys.nwb
-    versions:
-      hdmf: 3.5.2
-      matnwb: v2.6.0.1
-      pynwb: 2.3.1
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-5_slice-20200410-slice-1_cell-20200410-sample-5_icephys.nwb
+  - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-8_slice-20200410-slice-1_cell-20200410-sample-8_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-10_slice-20200409-slice-2_cell-20200409-sample-10_icephys.nwb
   - sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-12_slice-20200409-slice-2_cell-20200409-sample-12_icephys.nwb
   - sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-15_slice-20200409-slice-3_cell-20200409-sample-15_icephys.nwb
@@ -533,8 +631,6 @@ tests:
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-22_slice-20200414-slice-3_cell-20200414-sample-22_icephys.nwb
-  - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-24_slice-20200414-slice-3_cell-20200414-sample-24_icephys.nwb
-  - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-26_slice-20200414-slice-3_cell-20200414-sample-26_icephys.nwb
   - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-4_slice-20200414-slice-1_cell-20200414-sample-4_icephys.nwb
     versions:
       hdmf: 3.5.5
@@ -559,17 +655,16 @@ tests:
   - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-22_slice-20200413-slice-3_cell-20200413-sample-22_icephys.nwb
   - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-23_slice-20200413-slice-3_cell-20200413-sample-23_icephys.nwb
   - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-6_slice-20200413-slice-1_cell-20200413-sample-6_icephys.nwb
+  - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-12_slice-20200406-slice-4_cell-20200406-sample-12_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-13_slice-20200406-slice-4_cell-20200406-sample-13_icephys.nwb
     versions:
       hdmf: 3.5.4
       matnwb: v2.6.0.1
       pynwb: 2.3.1
-  - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-15_slice-20200406-slice-4_cell-20200406-sample-15_icephys.nwb
-    versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
-      pynwb: 2.3.2
-  - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-16_slice-20200406-slice-4_cell-20200406-sample-16_icephys.nwb
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-17_slice-20200406-slice-4_cell-20200406-sample-17_icephys.nwb
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-19_slice-20200406-slice-4_cell-20200406-sample-19_icephys.nwb
   - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-1_slice-20200406-slice-1_cell-20200406-sample-1_icephys.nwb
@@ -579,21 +674,28 @@ tests:
       pynwb: 2.3.2
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-20_slice-20200406-slice-4_cell-20200406-sample-20_icephys.nwb
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-22_slice-20200406-slice-4_cell-20200406-sample-22_icephys.nwb
-  - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-25_slice-20200406-slice-5_cell-20200406-sample-25_icephys.nwb
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-27_slice-20200406-slice-5_cell-20200406-sample-27_icephys.nwb
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-28_slice-20200406-slice-6_cell-20200406-sample-28_icephys.nwb
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-2_slice-20200406-slice-1_cell-20200406-sample-2_icephys.nwb
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-30_slice-20200406-slice-6_cell-20200406-sample-30_icephys.nwb
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-4_slice-20200406-slice-2_cell-20200406-sample-4_icephys.nwb
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-5_slice-20200406-slice-2_cell-20200406-sample-5_icephys.nwb
+  - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-7_slice-20200406-slice-2_cell-20200406-sample-7_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-11_slice-20200408-slice-3_cell-20200408-sample-11_icephys.nwb
     versions:
       hdmf: 3.5.4
       matnwb: v2.6.0.1
       pynwb: 2.3.1
-  - sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-12_slice-20200408-slice-3_cell-20200408-sample-12_icephys.nwb
+  - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-12_slice-20200408-slice-3_cell-20200408-sample-12_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-13_slice-20200408-slice-3_cell-20200408-sample-13_icephys.nwb
-  - sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-14_slice-20200408-slice-3_cell-20200408-sample-14_icephys.nwb
   - sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-15_slice-20200408-slice-3_cell-20200408-sample-15_icephys.nwb
   - sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-16_slice-20200408-slice-3_cell-20200408-sample-16_icephys.nwb
   - sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-20_slice-20200408-slice-4_cell-20200408-sample-20_icephys.nwb
@@ -612,36 +714,25 @@ tests:
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-9_slice-20200407-slice-1_cell-20200407-sample-9_icephys.nwb
   - sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-10_slice-20200403-slice-3_cell-20200403-sample-10_icephys.nwb
   - sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-14_slice-20200403-slice-4_cell-20200403-sample-14_icephys.nwb
-  - sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-3_slice-20200403-slice-1_cell-20200403-sample-3_icephys.nwb
-  - sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-5_slice-20200403-slice-2_cell-20200403-sample-5_icephys.nwb
-  - sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-9_slice-20200403-slice-2_cell-20200403-sample-9_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-13_slice-20200410-slice-1_cell-20200410-sample-13_icephys.nwb
-  - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-14_slice-20200410-slice-1_cell-20200410-sample-14_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-17_slice-20200410-slice-2_cell-20200410-sample-17_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-22_slice-20200410-slice-2_cell-20200410-sample-22_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-23_slice-20200410-slice-2_cell-20200410-sample-23_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-26_slice-20200410-slice-3_cell-20200410-sample-26_icephys.nwb
-  - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-29_slice-20200410-slice-3_cell-20200410-sample-29_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-6_slice-20200410-slice-1_cell-20200410-sample-6_icephys.nwb
-  - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-14_slice-20200409-slice-2_cell-20200409-sample-14_icephys.nwb
-    versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
-      pynwb: 2.3.2
   - sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-17_slice-20200409-slice-3_cell-20200409-sample-17_icephys.nwb
-  - sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-4_slice-20200409-slice-1_cell-20200409-sample-4_icephys.nwb
-  - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-12_slice-20200406-slice-4_cell-20200406-sample-12_icephys.nwb
-    versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
-      pynwb: 2.3.2
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-21_slice-20200406-slice-4_cell-20200406-sample-21_icephys.nwb
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-27_slice-20200408-slice-4_cell-20200408-sample-27_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   assets_timeout:
+  - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-10_slice-20200407-slice-1_cell-20200407-sample-10_icephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-11_slice-20200407-slice-4_cell-20200407-sample-11_icephys.nwb
   - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-14_slice-20200407-slice-5_cell-20200407-sample-14_icephys.nwb
     versions:
@@ -654,11 +745,6 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-18_slice-20200407-slice-5_cell-20200407-sample-18_icephys.nwb
-    versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
-      pynwb: 2.3.2
   - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-19_slice-20200407-slice-5_cell-20200407-sample-19_icephys.nwb
     versions:
       hdmf: 3.5.5
@@ -666,14 +752,18 @@ tests:
       pynwb: 2.3.2
   - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-1_slice-20200407-slice-1_cell-20200407-sample-1_icephys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-20_slice-20200407-slice-5_cell-20200407-sample-20_icephys.nwb
-  - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-21_slice-20200407-slice-5_cell-20200407-sample-21_icephys.nwb
+  - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-21_slice-20200407-slice-5_cell-20200407-sample-21_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-22_slice-20200407-slice-5_cell-20200407-sample-22_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-23_slice-20200407-slice-5_cell-20200407-sample-23_icephys.nwb
@@ -687,12 +777,12 @@ tests:
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-4_slice-20200407-slice-1_cell-20200407-sample-4_icephys.nwb
   - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-5_slice-20200407-slice-1_cell-20200407-sample-5_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-6_slice-20200407-slice-1_cell-20200407-sample-6_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.0
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-7_slice-20200407-slice-1_cell-20200407-sample-7_icephys.nwb
@@ -715,9 +805,24 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
+  - path: sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-4_slice-20200403-slice-1_cell-20200403-sample-4_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
+  - path: sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-5_slice-20200403-slice-2_cell-20200403-sample-5_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-6_slice-20200403-slice-2_cell-20200403-sample-6_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-7_slice-20200403-slice-2_cell-20200403-sample-7_icephys.nwb
+    versions:
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - path: sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-8_slice-20200403-slice-2_cell-20200403-sample-8_icephys.nwb
@@ -725,13 +830,28 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-11_slice-20200410-slice-1_cell-20200410-sample-11_icephys.nwb
+  - path: sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-9_slice-20200403-slice-2_cell-20200403-sample-9_icephys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.6.0
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
+  - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-14_slice-20200410-slice-1_cell-20200410-sample-14_icephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-15_slice-20200410-slice-1_cell-20200410-sample-15_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-1_slice-20200410-slice-1_cell-20200410-sample-1_icephys.nwb
+  - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-20_slice-20200410-slice-2_cell-20200410-sample-20_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-21_slice-20200410-slice-2_cell-20200410-sample-21_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-24_slice-20200410-slice-3_cell-20200410-sample-24_icephys.nwb
     versions:
       hdmf: 3.5.5
@@ -742,14 +862,23 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
+  - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-29_slice-20200410-slice-3_cell-20200410-sample-29_icephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-2_slice-20200410-slice-1_cell-20200410-sample-2_icephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-30_slice-20200410-slice-3_cell-20200410-sample-30_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-4_slice-20200410-slice-1_cell-20200410-sample-4_icephys.nwb
   - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-7_slice-20200410-slice-1_cell-20200410-sample-7_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-8_slice-20200410-slice-1_cell-20200410-sample-8_icephys.nwb
   - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-11_slice-20200409-slice-2_cell-20200409-sample-11_icephys.nwb
     versions:
       hdmf: 3.5.5
@@ -757,9 +886,14 @@ tests:
       pynwb: 2.3.2
   - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-13_slice-20200409-slice-2_cell-20200409-sample-13_icephys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
+  - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-14_slice-20200409-slice-2_cell-20200409-sample-14_icephys.nwb
+    versions:
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-18_slice-20200409-slice-4_cell-20200409-sample-18_icephys.nwb
     versions:
       hdmf: 3.5.5
@@ -775,6 +909,11 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
+  - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-4_slice-20200409-slice-1_cell-20200409-sample-4_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-5_slice-20200409-slice-1_cell-20200409-sample-5_icephys.nwb
     versions:
       hdmf: 3.6.0
@@ -787,7 +926,7 @@ tests:
       pynwb: 2.3.2
   - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-7_slice-20200409-slice-1_cell-20200409-sample-7_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-8_slice-20200409-slice-1_cell-20200409-sample-8_icephys.nwb
@@ -802,7 +941,11 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-12_slice-20200414-slice-3_cell-20200414-sample-12_icephys.nwb
+  - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-12_slice-20200414-slice-3_cell-20200414-sample-12_icephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-13_slice-20200414-slice-3_cell-20200414-sample-13_icephys.nwb
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-14_slice-20200414-slice-3_cell-20200414-sample-14_icephys.nwb
   - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-15_slice-20200414-slice-3_cell-20200414-sample-15_icephys.nwb
@@ -811,19 +954,41 @@ tests:
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-16_slice-20200414-slice-3_cell-20200414-sample-16_icephys.nwb
-  - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-17_slice-20200414-slice-3_cell-20200414-sample-17_icephys.nwb
+  - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-17_slice-20200414-slice-3_cell-20200414-sample-17_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-18_slice-20200414-slice-3_cell-20200414-sample-18_icephys.nwb
-  - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-19_slice-20200414-slice-3_cell-20200414-sample-19_icephys.nwb
+  - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-19_slice-20200414-slice-3_cell-20200414-sample-19_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-1_slice-20200414-slice-1_cell-20200414-sample-1_icephys.nwb
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-21_slice-20200414-slice-3_cell-20200414-sample-21_icephys.nwb
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-23_slice-20200414-slice-3_cell-20200414-sample-23_icephys.nwb
+  - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-24_slice-20200414-slice-3_cell-20200414-sample-24_icephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-25_slice-20200414-slice-3_cell-20200414-sample-25_icephys.nwb
+  - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-26_slice-20200414-slice-3_cell-20200414-sample-26_icephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-27_slice-20200414-slice-3_cell-20200414-sample-27_icephys.nwb
     versions:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-2_slice-20200414-slice-1_cell-20200414-sample-2_icephys.nwb
+  - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-2_slice-20200414-slice-1_cell-20200414-sample-2_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-3_slice-20200414-slice-1_cell-20200414-sample-3_icephys.nwb
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-5_slice-20200414-slice-2_cell-20200414-sample-5_icephys.nwb
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-8_slice-20200414-slice-2_cell-20200414-sample-8_icephys.nwb
@@ -837,7 +1002,11 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-11_slice-20200413-slice-2_cell-20200413-sample-11_icephys.nwb
+  - path: sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-11_slice-20200413-slice-2_cell-20200413-sample-11_icephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-12_slice-20200413-slice-2_cell-20200413-sample-12_icephys.nwb
     versions:
       hdmf: 3.5.5
@@ -864,18 +1033,36 @@ tests:
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-2_slice-20200413-slice-1_cell-20200413-sample-2_icephys.nwb
-  - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-3_slice-20200413-slice-1_cell-20200413-sample-3_icephys.nwb
+  - path: sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-3_slice-20200413-slice-1_cell-20200413-sample-3_icephys.nwb
+    versions:
+      hdmf: 3.6.0
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-4_slice-20200413-slice-1_cell-20200413-sample-4_icephys.nwb
   - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-5_slice-20200413-slice-1_cell-20200413-sample-5_icephys.nwb
   - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-7_slice-20200413-slice-2_cell-20200413-sample-7_icephys.nwb
-  - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-8_slice-20200413-slice-2_cell-20200413-sample-8_icephys.nwb
+  - path: sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-8_slice-20200413-slice-2_cell-20200413-sample-8_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-9_slice-20200413-slice-2_cell-20200413-sample-9_icephys.nwb
   - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-10_slice-20200406-slice-3_cell-20200406-sample-10_icephys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-11_slice-20200406-slice-3_cell-20200406-sample-11_icephys.nwb
+  - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-15_slice-20200406-slice-4_cell-20200406-sample-15_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-16_slice-20200406-slice-4_cell-20200406-sample-16_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-23_slice-20200406-slice-4_cell-20200406-sample-23_icephys.nwb
     versions:
       hdmf: 3.5.4
@@ -886,10 +1073,15 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
+  - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-25_slice-20200406-slice-5_cell-20200406-sample-25_icephys.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.1
+      pynwb: 2.3.2
   - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-29_slice-20200406-slice-6_cell-20200406-sample-29_icephys.nwb
     versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-31_slice-20200406-slice-6_cell-20200406-sample-31_icephys.nwb
     versions:
@@ -908,19 +1100,19 @@ tests:
       pynwb: 2.3.2
   - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-6_slice-20200406-slice-2_cell-20200406-sample-6_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-7_slice-20200406-slice-2_cell-20200406-sample-7_icephys.nwb
+  - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-14_slice-20200408-slice-3_cell-20200408-sample-14_icephys.nwb
     versions:
-      hdmf: 3.5.4
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-17_slice-20200408-slice-3_cell-20200408-sample-17_icephys.nwb
     versions:
-      hdmf: 3.5.2
+      hdmf: 3.6.0
       matnwb: v2.6.0.1
-      pynwb: 2.3.1
+      pynwb: 2.3.2
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-18_slice-20200408-slice-4_cell-20200408-sample-18_icephys.nwb
     versions:
       hdmf: 3.5.5
@@ -948,12 +1140,12 @@ tests:
       pynwb: 2.3.2
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-3_slice-20200408-slice-1_cell-20200408-sample-3_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.0
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-4_slice-20200408-slice-2_cell-20200408-sample-4_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.0
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-5_slice-20200408-slice-2_cell-20200408-sample-5_icephys.nwb
@@ -963,7 +1155,7 @@ tests:
       pynwb: 2.3.1
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-6_slice-20200408-slice-2_cell-20200408-sample-6_icephys.nwb
     versions:
-      hdmf: 3.5.5
+      hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   name: matnwb_nwbRead

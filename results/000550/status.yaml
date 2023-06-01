@@ -1,0 +1,22 @@
+dandiset: '000550'
+dandiset_version: 44dbdff3bf2cf26098fb9f04732cdecc08f520b0
+last_run: null
+last_run_duration: null
+last_run_ended: null
+nassets: null
+tests:
+- assets_nok: []
+  assets_ok:
+  - sub-Fig6-5xUni-100kHz-05/sub-Fig6-5xUni-100kHz-05_ses-BPAE-5xUnipolar-100kHz_image.nwb
+  assets_timeout: []
+  name: pynwb_open_load_ns
+- assets_nok: []
+  assets_ok:
+  - sub-Fig6-5xUni-100kHz-05/sub-Fig6-5xUni-100kHz-05_ses-BPAE-5xUnipolar-100kHz_image.nwb
+  assets_timeout: []
+  name: matnwb_nwbRead
+untested: []
+versions:
+  hdmf: 3.6.1
+  matnwb: v2.6.0.2
+  pynwb: 2.3.2
