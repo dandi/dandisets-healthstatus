@@ -22,15 +22,10 @@ tests:
       hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - path: sub-KSm8/sub-KSm8_ses-20160604T120000_behavior.nwb
-    versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
-      pynwb: 2.3.2
   - path: sub-KSm9/sub-KSm9_ses-20160610T120000_behavior.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSt112/sub-KSt112_ses-20150606T120000_behavior.nwb
     versions:
@@ -54,10 +49,9 @@ tests:
       pynwb: 2.3.2
   - path: sub-KSt137/sub-KSt137_ses-20161018T120000_obj-1cimbwp_behavior.nwb
     versions:
-      hdmf: 3.6.0
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
-  - sub-KSt140/sub-KSt140_ses-20161205T120000_obj-13pr4ey_behavior.nwb
   - path: sub-KSt91/sub-KSt91_ses-20150413T120000_obj-2btolv_behavior.nwb
     versions:
       hdmf: 3.6.1
@@ -68,16 +62,16 @@ tests:
       hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - path: sub-KSt94/sub-KSt94_ses-20150424T120000_behavior.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.1
-      pynwb: 2.3.2
   assets_timeout:
   - path: sub-KSm11/sub-KSm11_ses-20160616T120000_behavior.nwb
     versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
+  - path: sub-KSm8/sub-KSm8_ses-20160604T120000_behavior.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSt101/sub-KSt101_ses-20150511T120000_behavior.nwb
     versions:
@@ -96,8 +90,8 @@ tests:
       pynwb: 2.3.2
   - path: sub-KSt107/sub-KSt107_ses-20150514T120000_behavior.nwb
     versions:
-      hdmf: 3.6.0
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSt107/sub-KSt107_ses-20150515T120000_obj-1lzhy6l_behavior.nwb
     versions:
@@ -116,13 +110,13 @@ tests:
       pynwb: 2.3.2
   - path: sub-KSt111/sub-KSt111_ses-20150529T120000_behavior.nwb
     versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSt112/sub-KSt112_ses-20150610T120000_behavior.nwb
     versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSt115/sub-KSt115_ses-20150622T120000_behavior.nwb
     versions:
@@ -152,7 +146,7 @@ tests:
   - path: sub-KSt123/sub-KSt123_ses-20150729T120000_behavior.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSt124/sub-KSt124_ses-20150721T120000_behavior.nwb
     versions:
@@ -208,6 +202,11 @@ tests:
     versions:
       hdmf: 3.6.0
       matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-KSt140/sub-KSt140_ses-20161205T120000_obj-13pr4ey_behavior.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSt140/sub-KSt140_ses-20161205T120000_obj-ofsdfk_behavior.nwb
     versions:
@@ -268,12 +267,17 @@ tests:
   - path: sub-KSt91/sub-KSt91_ses-20150413T120000_obj-u72o7l_behavior.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSt92/sub-KSt92_ses-20150405T120000_behavior.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
+  - path: sub-KSt94/sub-KSt94_ses-20150424T120000_behavior.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSt95/sub-KSt95_ses-20150429T120000_behavior.nwb
     versions:
@@ -298,7 +302,7 @@ tests:
   - path: sub-KSt99/sub-KSt99_ses-20150506T120000_obj-r9qsp2_behavior.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   name: pynwb_open_load_ns
 - assets_nok: []
@@ -306,8 +310,8 @@ tests:
   assets_timeout:
   - path: sub-KSm11/sub-KSm11_ses-20160616T120000_behavior.nwb
     versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSm30/sub-KSm30_ses-20160831T120000_behavior.nwb
     versions:
@@ -326,13 +330,13 @@ tests:
       pynwb: 2.3.2
   - path: sub-KSm8/sub-KSm8_ses-20160604T120000_behavior.nwb
     versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSm9/sub-KSm9_ses-20160610T120000_behavior.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSt101/sub-KSt101_ses-20150511T120000_behavior.nwb
     versions:
@@ -351,8 +355,8 @@ tests:
       pynwb: 2.3.2
   - path: sub-KSt107/sub-KSt107_ses-20150514T120000_behavior.nwb
     versions:
-      hdmf: 3.6.0
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSt107/sub-KSt107_ses-20150515T120000_obj-1lzhy6l_behavior.nwb
     versions:
@@ -371,8 +375,8 @@ tests:
       pynwb: 2.3.2
   - path: sub-KSt111/sub-KSt111_ses-20150529T120000_behavior.nwb
     versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSt112/sub-KSt112_ses-20150606T120000_behavior.nwb
     versions:
@@ -381,8 +385,8 @@ tests:
       pynwb: 2.3.2
   - path: sub-KSt112/sub-KSt112_ses-20150610T120000_behavior.nwb
     versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSt115/sub-KSt115_ses-20150622T120000_behavior.nwb
     versions:
@@ -417,7 +421,7 @@ tests:
   - path: sub-KSt123/sub-KSt123_ses-20150729T120000_behavior.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSt124/sub-KSt124_ses-20150721T120000_behavior.nwb
     versions:
@@ -471,8 +475,8 @@ tests:
       pynwb: 2.3.2
   - path: sub-KSt137/sub-KSt137_ses-20161018T120000_obj-1cimbwp_behavior.nwb
     versions:
-      hdmf: 3.6.0
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSt137/sub-KSt137_ses-20161018T120000_obj-1jbvpxr_behavior.nwb
     versions:
@@ -489,7 +493,11 @@ tests:
       hdmf: 3.6.0
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-KSt140/sub-KSt140_ses-20161205T120000_obj-13pr4ey_behavior.nwb
+  - path: sub-KSt140/sub-KSt140_ses-20161205T120000_obj-13pr4ey_behavior.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - path: sub-KSt140/sub-KSt140_ses-20161205T120000_obj-ofsdfk_behavior.nwb
     versions:
       hdmf: 3.6.1
@@ -554,12 +562,12 @@ tests:
   - path: sub-KSt91/sub-KSt91_ses-20150413T120000_obj-u72o7l_behavior.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSt92/sub-KSt92_ses-20150405T120000_behavior.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSt93/sub-KSt93_ses-20150416T120000_behavior.nwb
     versions:
@@ -569,7 +577,7 @@ tests:
   - path: sub-KSt94/sub-KSt94_ses-20150424T120000_behavior.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-KSt95/sub-KSt95_ses-20150429T120000_behavior.nwb
     versions:
@@ -594,7 +602,7 @@ tests:
   - path: sub-KSt99/sub-KSt99_ses-20150506T120000_obj-r9qsp2_behavior.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   name: matnwb_nwbRead
 untested: []

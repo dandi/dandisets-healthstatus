@@ -7,64 +7,32 @@ nassets: 9
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-131/sub-131_ses-20211116T203100_image+ophys.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.2
-      pynwb: 2.3.2
+  - sub-131/sub-131_ses-20211116T203100_image+ophys.nwb
   - sub-132/sub-132_ses-20211215T003200_ophys.nwb
-  - path: sub-132/sub-132_ses-20211215T013700_ophys.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.2
-      pynwb: 2.3.2
-  - path: sub-132/sub-132_ses-20211215T194900_ophys.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.2
-      pynwb: 2.3.2
+  - sub-132/sub-132_ses-20211215T013700_ophys.nwb
+  - sub-132/sub-132_ses-20211215T194900_ophys.nwb
   - sub-132/sub-132_ses-20211215T222300_ophys.nwb
   - sub-134/sub-134_ses-20220322T002800_ophys.nwb
   - sub-134/sub-134_ses-20220322T033600_ophys.nwb
   - sub-134/sub-134_ses-20220322T104100_ophys.nwb
-  - path: sub-134/sub-134_ses-20220322T110600_ophys.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.2
-      pynwb: 2.3.2
+  - sub-134/sub-134_ses-20220322T110600_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - path: sub-131/sub-131_ses-20211116T203100_image+ophys.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.2
-      pynwb: 2.3.2
-  - path: sub-132/sub-132_ses-20211215T013700_ophys.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.2
-      pynwb: 2.3.2
+  - sub-131/sub-131_ses-20211116T203100_image+ophys.nwb
+  - sub-132/sub-132_ses-20211215T013700_ophys.nwb
   - sub-132/sub-132_ses-20211215T222300_ophys.nwb
+  - sub-134/sub-134_ses-20220322T110600_ophys.nwb
+  assets_ok:
+  - sub-132/sub-132_ses-20211215T003200_ophys.nwb
   - sub-134/sub-134_ses-20220322T002800_ophys.nwb
   - sub-134/sub-134_ses-20220322T033600_ophys.nwb
   - sub-134/sub-134_ses-20220322T104100_ophys.nwb
-  assets_ok:
-  - sub-132/sub-132_ses-20211215T003200_ophys.nwb
-  - path: sub-132/sub-132_ses-20211215T194900_ophys.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.2
-      pynwb: 2.3.2
-  - path: sub-134/sub-134_ses-20220322T110600_ophys.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.2
-      pynwb: 2.3.2
-  assets_timeout: []
+  assets_timeout:
+  - sub-132/sub-132_ses-20211215T194900_ophys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
   hdmf: 3.6.1
-  matnwb: v2.6.0.1
+  matnwb: v2.6.0.2
   pynwb: 2.3.2

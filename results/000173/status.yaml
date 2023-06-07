@@ -7,7 +7,11 @@ nassets: 118
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-BH243/sub-BH243.nwb
+  - path: sub-BH243/sub-BH243.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - path: sub-BH243/sub-BH243_ses-20211103_obj-1dppqzr.nwb
     versions:
       hdmf: 3.5.5
@@ -66,8 +70,8 @@ tests:
       pynwb: 2.3.2
   - path: sub-BH247/sub-BH247_ses-20211103_obj-17c0hsb.nwb
     versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-BH247/sub-BH247_ses-20211103_obj-1cwhslw.nwb
     versions:
@@ -84,8 +88,16 @@ tests:
       hdmf: 3.6.0
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-BH248/sub-BH248_ses-20211103_obj-1koag1a.nwb
-  - sub-BH248/sub-BH248_ses-20211103_obj-xdta1j.nwb
+  - path: sub-BH248/sub-BH248_ses-20211103_obj-1koag1a.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
+  - path: sub-BH248/sub-BH248_ses-20211103_obj-xdta1j.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - path: sub-BH248/sub-BH248_ses-20211107_obj-13j2ha0.nwb
     versions:
       hdmf: 3.6.1
@@ -195,14 +207,22 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-BH253/sub-BH253_ses-20211112_obj-1u6m7hs.nwb
+  - path: sub-BH253/sub-BH253_ses-20211112_obj-1u6m7hs.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - sub-BH254/sub-BH254_ses-20211103_obj-1pclmf0.nwb
   - path: sub-BH254/sub-BH254_ses-20211103_obj-1yf9134.nwb
     versions:
       hdmf: 3.6.0
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-BH254/sub-BH254_ses-20211113_obj-15kmn5k.nwb
+  - path: sub-BH254/sub-BH254_ses-20211113_obj-15kmn5k.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - sub-BH254/sub-BH254_ses-20211113_obj-y1b5hu.nwb
   - path: sub-BH255/sub-BH255_ses-20211103_obj-7rijzx.nwb
     versions:
@@ -294,7 +314,11 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-BH268/sub-BH268_ses-20211103_obj-1h44oed.nwb
+  - path: sub-BH268/sub-BH268_ses-20211103_obj-1h44oed.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - path: sub-BH268/sub-BH268_ses-20211103_obj-1qn1yor.nwb
     versions:
       hdmf: 3.5.5
@@ -389,8 +413,8 @@ tests:
   - sub-BH275/sub-BH275_ses-20211103_obj-w9oxl5.nwb
   - path: sub-BH275/sub-BH275_ses-20211126_obj-110ake8.nwb
     versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-BH275/sub-BH275_ses-20211126_obj-18z3gyz.nwb
     versions:
@@ -398,7 +422,11 @@ tests:
       matnwb: v2.6.0.1
       pynwb: 2.3.1
   - sub-BH277/sub-BH277_ses-20211103_obj-1f8hw19.nwb
-  - sub-BH277/sub-BH277_ses-20211103_obj-1xmumvq.nwb
+  - path: sub-BH277/sub-BH277_ses-20211103_obj-1xmumvq.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - path: sub-BH277/sub-BH277_ses-20211127_obj-14eagwu.nwb
     versions:
       hdmf: 3.5.5
@@ -411,8 +439,8 @@ tests:
       pynwb: 2.3.2
   - path: sub-BH279/sub-BH279_ses-20211103.nwb
     versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-BH279/sub-BH279_ses-20211128.nwb
     versions:
@@ -426,8 +454,8 @@ tests:
       pynwb: 2.3.2
   - path: sub-BH280/sub-BH280_ses-20211129.nwb
     versions:
-      hdmf: 3.6.0
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-BH281/sub-BH281_ses-20211021.nwb
     versions:
@@ -442,7 +470,7 @@ tests:
   - path: sub-BH281/sub-BH281_ses-20211130_obj-1yj2ahm.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - sub-BH281/sub-BH281_ses-20211130_obj-br86zc.nwb
   - path: sub-BH297/sub-BH297_ses-20211103_obj-1iqkns0.nwb
@@ -496,7 +524,11 @@ tests:
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   assets_ok:
-  - sub-BH243/sub-BH243.nwb
+  - path: sub-BH243/sub-BH243.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - path: sub-BH243/sub-BH243_ses-20211103_obj-1dppqzr.nwb
     versions:
       hdmf: 3.5.5
@@ -550,8 +582,8 @@ tests:
       pynwb: 2.3.2
   - path: sub-BH247/sub-BH247_ses-20211103_obj-17c0hsb.nwb
     versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-BH247/sub-BH247_ses-20211103_obj-1cwhslw.nwb
     versions:
@@ -568,8 +600,16 @@ tests:
       hdmf: 3.6.0
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-BH248/sub-BH248_ses-20211103_obj-1koag1a.nwb
-  - sub-BH248/sub-BH248_ses-20211103_obj-xdta1j.nwb
+  - path: sub-BH248/sub-BH248_ses-20211103_obj-1koag1a.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
+  - path: sub-BH248/sub-BH248_ses-20211103_obj-xdta1j.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - path: sub-BH248/sub-BH248_ses-20211107_obj-13j2ha0.nwb
     versions:
       hdmf: 3.6.1
@@ -679,14 +719,22 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-BH253/sub-BH253_ses-20211112_obj-1u6m7hs.nwb
+  - path: sub-BH253/sub-BH253_ses-20211112_obj-1u6m7hs.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - sub-BH254/sub-BH254_ses-20211103_obj-1pclmf0.nwb
   - path: sub-BH254/sub-BH254_ses-20211103_obj-1yf9134.nwb
     versions:
       hdmf: 3.6.0
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-BH254/sub-BH254_ses-20211113_obj-15kmn5k.nwb
+  - path: sub-BH254/sub-BH254_ses-20211113_obj-15kmn5k.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - sub-BH254/sub-BH254_ses-20211113_obj-y1b5hu.nwb
   - path: sub-BH255/sub-BH255_ses-20211103_obj-7rijzx.nwb
     versions:
@@ -768,7 +816,11 @@ tests:
       hdmf: 3.5.5
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-BH268/sub-BH268_ses-20211103_obj-1h44oed.nwb
+  - path: sub-BH268/sub-BH268_ses-20211103_obj-1h44oed.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - path: sub-BH268/sub-BH268_ses-20211103_obj-1qn1yor.nwb
     versions:
       hdmf: 3.5.5
@@ -863,8 +915,8 @@ tests:
   - sub-BH275/sub-BH275_ses-20211103_obj-w9oxl5.nwb
   - path: sub-BH275/sub-BH275_ses-20211126_obj-110ake8.nwb
     versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-BH275/sub-BH275_ses-20211126_obj-18z3gyz.nwb
     versions:
@@ -872,7 +924,11 @@ tests:
       matnwb: v2.6.0.1
       pynwb: 2.3.1
   - sub-BH277/sub-BH277_ses-20211103_obj-1f8hw19.nwb
-  - sub-BH277/sub-BH277_ses-20211103_obj-1xmumvq.nwb
+  - path: sub-BH277/sub-BH277_ses-20211103_obj-1xmumvq.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - path: sub-BH277/sub-BH277_ses-20211127_obj-14eagwu.nwb
     versions:
       hdmf: 3.5.5
@@ -885,8 +941,8 @@ tests:
       pynwb: 2.3.2
   - path: sub-BH279/sub-BH279_ses-20211103.nwb
     versions:
-      hdmf: 3.5.5
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-BH279/sub-BH279_ses-20211128.nwb
     versions:
@@ -900,8 +956,8 @@ tests:
       pynwb: 2.3.2
   - path: sub-BH280/sub-BH280_ses-20211129.nwb
     versions:
-      hdmf: 3.6.0
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-BH281/sub-BH281_ses-20211021.nwb
     versions:
@@ -916,7 +972,7 @@ tests:
   - path: sub-BH281/sub-BH281_ses-20211130_obj-1yj2ahm.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - sub-BH281/sub-BH281_ses-20211130_obj-br86zc.nwb
   - path: sub-BH297/sub-BH297_ses-20211103_obj-1iqkns0.nwb

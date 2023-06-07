@@ -14,28 +14,12 @@ tests:
   - sub-monk-g/sub-monk-g_ses-session4.nwb
   - sub-monk-g/sub-monk-g_ses-session5.nwb
   - sub-monk-g/sub-monk-g_ses-session6.nwb
-  - path: sub-monk-g/sub-monk-g_ses-session7.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.2
-      pynwb: 2.3.2
-  - path: sub-monk-g/sub-monk-g_ses-session8.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.2
-      pynwb: 2.3.2
-  - path: sub-monk-j/sub-monk-j_ses-session0.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.2
-      pynwb: 2.3.2
+  - sub-monk-g/sub-monk-g_ses-session7.nwb
+  - sub-monk-g/sub-monk-g_ses-session8.nwb
+  - sub-monk-j/sub-monk-j_ses-session0.nwb
   - sub-monk-j/sub-monk-j_ses-session1.nwb
   - sub-monk-j/sub-monk-j_ses-session2.nwb
-  - path: sub-monk-j/sub-monk-j_ses-session3.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.2
-      pynwb: 2.3.2
+  - sub-monk-j/sub-monk-j_ses-session3.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
@@ -47,32 +31,16 @@ tests:
   - sub-monk-g/sub-monk-g_ses-session4.nwb
   - sub-monk-g/sub-monk-g_ses-session5.nwb
   - sub-monk-g/sub-monk-g_ses-session6.nwb
-  - path: sub-monk-g/sub-monk-g_ses-session7.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.2
-      pynwb: 2.3.2
-  - path: sub-monk-g/sub-monk-g_ses-session8.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.2
-      pynwb: 2.3.2
-  - path: sub-monk-j/sub-monk-j_ses-session0.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.2
-      pynwb: 2.3.2
+  - sub-monk-g/sub-monk-g_ses-session7.nwb
+  - sub-monk-g/sub-monk-g_ses-session8.nwb
+  - sub-monk-j/sub-monk-j_ses-session0.nwb
   - sub-monk-j/sub-monk-j_ses-session1.nwb
+  - sub-monk-j/sub-monk-j_ses-session3.nwb
+  assets_timeout:
   - sub-monk-j/sub-monk-j_ses-session2.nwb
-  - path: sub-monk-j/sub-monk-j_ses-session3.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.2
-      pynwb: 2.3.2
-  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
   hdmf: 3.6.1
-  matnwb: v2.6.0.1
+  matnwb: v2.6.0.2
   pynwb: 2.3.2

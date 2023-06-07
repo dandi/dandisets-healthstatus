@@ -20,18 +20,22 @@ tests:
   - path: sub-Cori/sub-Cori_ses-20161218T120000.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-Forssmann/sub-Forssmann_ses-20171101T120000.nwb
     versions:
       hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - sub-Forssmann/sub-Forssmann_ses-20171102T120000.nwb
+  - path: sub-Forssmann/sub-Forssmann_ses-20171102T120000.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - path: sub-Forssmann/sub-Forssmann_ses-20171104T120000.nwb
     versions:
-      hdmf: 3.6.0
-      matnwb: v2.6.0.1
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-Forssmann/sub-Forssmann_ses-20171105T120000.nwb
     versions:
@@ -42,18 +46,18 @@ tests:
   - path: sub-Hench/sub-Hench_ses-20170616T120000.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-Hench/sub-Hench_ses-20170617T120000.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - sub-Hench/sub-Hench_ses-20170618T120000.nwb
   - path: sub-Lederberg/sub-Lederberg_ses-20171205T120000.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-Lederberg/sub-Lederberg_ses-20171206T120000.nwb
     versions:
@@ -71,7 +75,11 @@ tests:
       hdmf: 3.6.1
       matnwb: v2.6.0.2
       pynwb: 2.3.2
-  - sub-Lederberg/sub-Lederberg_ses-20171210T120000.nwb
+  - path: sub-Lederberg/sub-Lederberg_ses-20171210T120000.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - path: sub-Lederberg/sub-Lederberg_ses-20171211T120000.nwb
     versions:
       hdmf: 3.6.0
@@ -90,7 +98,7 @@ tests:
   - path: sub-Moniz/sub-Moniz_ses-20170518T120000.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-Muller/sub-Muller_ses-20170107T120000.nwb
     versions:
@@ -140,7 +148,7 @@ tests:
   - path: sub-Richards/sub-Richards_ses-20171030T120000.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-Richards/sub-Richards_ses-20171031T120000.nwb
     versions:
@@ -160,7 +168,7 @@ tests:
   - path: sub-Tatum/sub-Tatum_ses-20171206T120000.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-Tatum/sub-Tatum_ses-20171207T120000.nwb
     versions:
@@ -175,12 +183,12 @@ tests:
   - path: sub-Tatum/sub-Tatum_ses-20171209T120000.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-Theiler/sub-Theiler_ses-20171011T120000.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   assets_timeout: []
   name: pynwb_open_load_ns
@@ -190,20 +198,20 @@ tests:
       hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - path: sub-Forssmann/sub-Forssmann_ses-20171104T120000.nwb
-    versions:
-      hdmf: 3.6.0
-      matnwb: v2.6.0.1
-      pynwb: 2.3.2
   - path: sub-Forssmann/sub-Forssmann_ses-20171105T120000.nwb
     versions:
       hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
+  - path: sub-Hench/sub-Hench_ses-20170616T120000.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - path: sub-Hench/sub-Hench_ses-20170617T120000.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-Lederberg/sub-Lederberg_ses-20171209T120000.nwb
     versions:
@@ -223,7 +231,7 @@ tests:
   - path: sub-Moniz/sub-Moniz_ses-20170518T120000.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-Muller/sub-Muller_ses-20170108T120000.nwb
     versions:
@@ -263,7 +271,7 @@ tests:
   - path: sub-Richards/sub-Richards_ses-20171030T120000.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-Richards/sub-Richards_ses-20171102T120000.nwb
     versions:
@@ -273,22 +281,17 @@ tests:
   - path: sub-Tatum/sub-Tatum_ses-20171206T120000.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-Tatum/sub-Tatum_ses-20171208T120000.nwb
     versions:
       hdmf: 3.6.1
       matnwb: v2.6.0.2
       pynwb: 2.3.2
-  - path: sub-Tatum/sub-Tatum_ses-20171209T120000.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.1
-      pynwb: 2.3.2
   - path: sub-Theiler/sub-Theiler_ses-20171011T120000.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   assets_ok:
   - path: sub-Cori/sub-Cori_ses-20161217T120000.nwb
@@ -296,26 +299,19 @@ tests:
       hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - path: sub-Cori/sub-Cori_ses-20161218T120000.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.1
-      pynwb: 2.3.2
-  - sub-Forssmann/sub-Forssmann_ses-20171102T120000.nwb
   - sub-Hench/sub-Hench_ses-20170615T120000.nwb
   - sub-Hench/sub-Hench_ses-20170618T120000.nwb
-  - path: sub-Lederberg/sub-Lederberg_ses-20171205T120000.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.1
-      pynwb: 2.3.2
   - path: sub-Lederberg/sub-Lederberg_ses-20171206T120000.nwb
     versions:
       hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   - sub-Lederberg/sub-Lederberg_ses-20171207T120000.nwb
-  - sub-Lederberg/sub-Lederberg_ses-20171210T120000.nwb
+  - path: sub-Lederberg/sub-Lederberg_ses-20171210T120000.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - path: sub-Moniz/sub-Moniz_ses-20170516T120000.nwb
     versions:
       hdmf: 3.6.1
@@ -337,15 +333,30 @@ tests:
       matnwb: v2.6.0.1
       pynwb: 2.3.2
   assets_timeout:
+  - path: sub-Cori/sub-Cori_ses-20161218T120000.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
   - path: sub-Forssmann/sub-Forssmann_ses-20171101T120000.nwb
     versions:
       hdmf: 3.6.1
       matnwb: v2.6.0.1
       pynwb: 2.3.2
-  - path: sub-Hench/sub-Hench_ses-20170616T120000.nwb
+  - path: sub-Forssmann/sub-Forssmann_ses-20171102T120000.nwb
     versions:
       hdmf: 3.6.1
-      matnwb: v2.6.0.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
+  - path: sub-Forssmann/sub-Forssmann_ses-20171104T120000.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
+      pynwb: 2.3.2
+  - path: sub-Lederberg/sub-Lederberg_ses-20171205T120000.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   - path: sub-Lederberg/sub-Lederberg_ses-20171208T120000.nwb
     versions:
@@ -361,6 +372,11 @@ tests:
     versions:
       hdmf: 3.6.1
       matnwb: v2.6.0.1
+      pynwb: 2.3.2
+  - path: sub-Tatum/sub-Tatum_ses-20171209T120000.nwb
+    versions:
+      hdmf: 3.6.1
+      matnwb: v2.6.0.2
       pynwb: 2.3.2
   name: matnwb_nwbRead
 untested: []
