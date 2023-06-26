@@ -10,10 +10,10 @@ tests:
   - sub-JDS-NFN-JS21/sub-JDS-NFN-JS21_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-JDS-NFN-JS21/sub-JDS-NFN-JS21_behavior+ecephys.nwb
+- assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-JDS-NFN-JS21/sub-JDS-NFN-JS21_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
