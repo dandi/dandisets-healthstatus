@@ -6,9 +6,9 @@ last_run_ended: '2023-02-07T01:06:17.930665-05:00'
 nassets: 1
 tests:
 - assets_nok: []
-  assets_ok: []
-  assets_timeout:
+  assets_ok:
   - 001_140709EXP_A1.nwb
+  assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - 001_140709EXP_A1.nwb
@@ -17,6 +17,6 @@ tests:
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.6.1
+  hdmf: 3.8.1
   matnwb: v2.6.0.2
-  pynwb: 2.3.2
+  pynwb: 2.4.0

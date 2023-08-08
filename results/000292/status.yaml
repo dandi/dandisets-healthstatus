@@ -23,9 +23,8 @@ tests:
 - assets_nok:
   - sub-18118024/sub-18118024_icephys.nwb
   - sub-18130014/sub-18130014_icephys.nwb
-  - sub-19o22001/sub-19o22001_icephys.nwb
-  assets_ok:
   - sub-18208024/sub-18208024_icephys.nwb
+  - sub-19o22001/sub-19o22001_icephys.nwb
   - sub-19o22018/sub-19o22018_icephys.nwb
   - sub-19o23001/sub-19o23001_icephys.nwb
   - sub-19o23003/sub-19o23003_icephys.nwb
@@ -33,10 +32,11 @@ tests:
   - sub-19o23039/sub-19o23039_icephys.nwb
   - sub-19o23046/sub-19o23046_icephys.nwb
   - sub-2018-02-08-0001/sub-2018-02-08-0001_icephys.nwb
+  assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.6.1
+  hdmf: 3.8.1
   matnwb: v2.6.0.2
-  pynwb: 2.3.2
+  pynwb: 2.4.0

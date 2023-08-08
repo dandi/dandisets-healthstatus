@@ -13,16 +13,16 @@ tests:
   - sub-214/sub-214_ses-DAsensor-VS-VR-TP-PAUSE-6.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok:
+- assets_nok:
   - sub-213/sub-213_ses-DAsensor-VS-VR-SPD-5.nwb
   - sub-213/sub-213_ses-DAsensor-VS-VR-THREE-TP-4.nwb
   - sub-213/sub-213_ses-DAsensor-VS-VR-TP-PAUSE-5.nwb
   - sub-214/sub-214_ses-DAsensor-VS-VR-TP-PAUSE-6.nwb
+  assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.6.1
+  hdmf: 3.8.1
   matnwb: v2.6.0.2
-  pynwb: 2.3.2
+  pynwb: 2.4.0

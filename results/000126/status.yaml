@@ -15,16 +15,16 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - sub-1/sub-1.nwb
   - sub-1001658946/sub-1001658946_obj-17kkp88_icephys.nwb
   - sub-1001658946/sub-1001658946_obj-831bdx_icephys.nwb
   - sub-1001658946/sub-1001658946_obj-n1u30_icephys.nwb
   - sub-1001658946/sub-1001658946_obj-wnwvr6_icephys.nwb
-  assets_ok:
-  - sub-1/sub-1.nwb
+  assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.6.1
+  hdmf: 3.8.1
   matnwb: v2.6.0.2
-  pynwb: 2.3.2
+  pynwb: 2.4.0

@@ -10,13 +10,13 @@ tests:
   - sub-SLR122/sub-SLR122_ses-20220202_obj-1lvst0t_behavior+image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok:
+- assets_nok:
   - sub-SLR122/sub-SLR122_ses-20220202_obj-1lvst0t_behavior+image.nwb
+  assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.6.1
+  hdmf: 3.8.1
   matnwb: v2.6.0.2
-  pynwb: 2.3.2
+  pynwb: 2.4.0
