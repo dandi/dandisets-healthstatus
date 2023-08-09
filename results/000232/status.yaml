@@ -115,7 +115,6 @@ tests:
   - sub-EF0150/sub-EF0150_ses-20190307T150812_behavior+ecephys.nwb
   - sub-EF0150/sub-EF0150_ses-20190311T170745_behavior+ecephys.nwb
   - sub-EF0150/sub-EF0150_ses-20190315T144710_behavior+ecephys.nwb
-  - sub-EF0150/sub-EF0150_ses-20190316T153809_behavior+ecephys.nwb
   - sub-EF0150/sub-EF0150_ses-20190317T172552_behavior+ecephys.nwb
   - sub-EF0150/sub-EF0150_ses-20190318T164404_behavior+ecephys.nwb
   - sub-EF0151/sub-EF0151_ses-20190430T143817_behavior+ecephys.nwb
@@ -183,7 +182,8 @@ tests:
   - sub-YT086/sub-YT086_ses-20200314T181755_behavior+ecephys.nwb
   - sub-YT086/sub-YT086_ses-20200320T171513_behavior+ecephys.nwb
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-EF0150/sub-EF0150_ses-20190316T153809_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

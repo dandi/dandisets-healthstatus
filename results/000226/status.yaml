@@ -111,7 +111,6 @@ tests:
   - sub-KSt140/sub-KSt140_ses-20161205T120000_obj-ofsdfk_behavior.nwb
   - sub-KSt66/sub-KSt66_ses-20140711T120000_behavior.nwb
   - sub-KSt66/sub-KSt66_ses-20140718T120000_behavior.nwb
-  - sub-KSt69/sub-KSt69_ses-20140725T120000_behavior.nwb
   - sub-KSt76/sub-KSt76_ses-20140927T120000_behavior.nwb
   - sub-KSt77/sub-KSt77_ses-20141110T120000_obj-k3liaq_behavior.nwb
   - sub-KSt77/sub-KSt77_ses-20141110T120000_obj-maz7dk_behavior.nwb
@@ -131,7 +130,8 @@ tests:
   - sub-KSt99/sub-KSt99_ses-20150506T120000_obj-1wybaw_behavior.nwb
   - sub-KSt99/sub-KSt99_ses-20150506T120000_obj-r9qsp2_behavior.nwb
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-KSt69/sub-KSt69_ses-20140725T120000_behavior.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

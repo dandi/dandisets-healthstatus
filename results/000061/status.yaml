@@ -55,14 +55,12 @@ tests:
   - sub-Rat08/sub-Rat08_ses-Rat08-20130710_ecephys+image.nwb
   - sub-Rat08/sub-Rat08_ses-Rat08-20130711_ecephys+image.nwb
   - sub-Rat08/sub-Rat08_ses-Rat08-20130712_ecephys+image.nwb
-  - sub-Rat08/sub-Rat08_ses-Rat08-20130713_ecephys+image.nwb
   - sub-Rat08/sub-Rat08_ses-Rat08-20130715_ecephys+image.nwb
   - sub-Rat08/sub-Rat08_ses-Rat08-20130716_ecephys+image.nwb
   - sub-Rat08/sub-Rat08_ses-Rat08-20130717_ecephys+image.nwb
   - sub-Rat08/sub-Rat08_ses-Rat08-20130718_ecephys+image.nwb
   - sub-Rat08/sub-Rat08_ses-Rat08-20130719_ecephys+image.nwb
   - sub-Rat08/sub-Rat08_ses-Rat08-20130720_ecephys+image.nwb
-  - sub-Rat08/sub-Rat08_ses-Rat08-20130722_ecephys+image.nwb
   - sub-Rat09/sub-Rat09_ses-Rat09-20140324_ecephys+image.nwb
   - sub-Rat09/sub-Rat09_ses-Rat09-20140325_ecephys+image.nwb
   - sub-Rat09/sub-Rat09_ses-Rat09-20140326_ecephys+image.nwb
@@ -90,8 +88,10 @@ tests:
   - sub-Rat11/sub-Rat11_ses-Rat11-20150331_ecephys+image.nwb
   - sub-Rat11/sub-Rat11_ses-Rat11-20150401_ecephys+image.nwb
   - sub-Rat11/sub-Rat11_ses-Rat11-20150403_ecephys+image.nwb
-  assets_ok: []
-  assets_timeout: []
+  assets_ok:
+  - sub-Rat08/sub-Rat08_ses-Rat08-20130722_ecephys+image.nwb
+  assets_timeout:
+  - sub-Rat08/sub-Rat08_ses-Rat08-20130713_ecephys+image.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

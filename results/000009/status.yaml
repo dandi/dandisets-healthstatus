@@ -186,7 +186,6 @@ tests:
   - sub-anm00229327/sub-anm00229327_ses-20170627T093438_ecephys.nwb
   - sub-anm00229327/sub-anm00229327_ses-20170627T093442_ecephys.nwb
   - sub-anm00229327/sub-anm00229327_ses-20170627T093445_ecephys.nwb
-  - sub-anm00229327/sub-anm00229327_ses-20170627T093449_ecephys.nwb
   - sub-anm00229327/sub-anm00229327_ses-20170627T093452_ecephys.nwb
   - sub-anm00229329/sub-anm00229329_ses-20170627T093456_ecephys.nwb
   - sub-anm00229329/sub-anm00229329_ses-20170627T093500_ecephys.nwb
@@ -264,7 +263,6 @@ tests:
   - sub-anm00264942/sub-anm00264942_ses-20170627T094005_ecephys+ogen.nwb
   - sub-anm00264942/sub-anm00264942_ses-20170627T094007_ecephys+ogen.nwb
   - sub-anm00264942/sub-anm00264942_ses-20170627T094011_ecephys+ogen.nwb
-  - sub-anm00264942/sub-anm00264942_ses-20170627T094013_ecephys+ogen.nwb
   - sub-anm00264943/sub-anm00264943_ses-20170627T094016_ecephys+ogen.nwb
   - sub-anm00264943/sub-anm00264943_ses-20170627T094019_ecephys+ogen.nwb
   - sub-anm00264943/sub-anm00264943_ses-20170627T094028_ecephys+ogen.nwb
@@ -356,7 +354,9 @@ tests:
   - sub-anm324792/sub-anm324792_ses-20170520T193555_behavior+icephys+ogen.nwb
   - sub-anm324792/sub-anm324792_ses-20170520T193731_behavior+icephys+ogen.nwb
   - sub-anm324792/sub-anm324792_ses-20170520T193909_behavior+icephys+ogen.nwb
-  assets_ok: []
+  assets_ok:
+  - sub-anm00229327/sub-anm00229327_ses-20170627T093449_ecephys.nwb
+  - sub-anm00264942/sub-anm00264942_ses-20170627T094013_ecephys+ogen.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

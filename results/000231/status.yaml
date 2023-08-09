@@ -219,7 +219,6 @@ tests:
   - sub-KF134/sub-KF134_ses-20180211T154918_behavior+ecephys+image.nwb
   - sub-KF134/sub-KF134_ses-20180212T183227_behavior+ecephys+image.nwb
   - sub-KF134/sub-KF134_ses-20180213T190732_behavior+ecephys+image.nwb
-  - sub-KM101/sub-KM101_ses-20170712T104720_behavior+image.nwb
   - sub-KM101/sub-KM101_ses-20170714T132037_behavior+image.nwb
   - sub-KM101/sub-KM101_ses-20170717T115845_behavior+image.nwb
   - sub-KM101/sub-KM101_ses-20170719T163927_behavior+image.nwb
@@ -241,7 +240,8 @@ tests:
   - sub-KM91/sub-KM91_ses-20170119T182155_behavior+image.nwb
   - sub-KM91/sub-KM91_ses-20170313T135620_behavior+image.nwb
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-KM101/sub-KM101_ses-20170712T104720_behavior+image.nwb
   name: matnwb_nwbRead
 untested:
 - asset: sub-219CR/sub-219CR_ses-20190403T123013_behavior+image/a969df11-1d5e-4088-822e-e1a6730d74a2_external_file_0.mkv

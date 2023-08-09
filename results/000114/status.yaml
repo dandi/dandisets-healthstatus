@@ -10,10 +10,10 @@ tests:
   - sub-V85/sub-V85_ses-12102017-2_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-V85/sub-V85_ses-12102017-2_ecephys.nwb
+- assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-V85/sub-V85_ses-12102017-2_ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

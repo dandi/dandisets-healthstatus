@@ -62,7 +62,6 @@ tests:
   - sub-SLC11/sub-SLC11_ses-anest_ophys.nwb
   - sub-SLC11/sub-SLC11_ses-awake_ophys.nwb
   - sub-SLC12/sub-SLC12_ses-anest_ophys.nwb
-  - sub-SLC12/sub-SLC12_ses-awake_ophys.nwb
   - sub-SLC13/sub-SLC13_ses-anest_ophys.nwb
   - sub-SLC13/sub-SLC13_ses-awake_ophys.nwb
   - sub-SOM09/sub-SOM09_ses-awake_ophys.nwb
@@ -77,7 +76,8 @@ tests:
   - sub-VIP14/sub-VIP14_ses-awake_ophys.nwb
   - sub-VIP15/sub-VIP15_ses-awake_ophys.nwb
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-SLC12/sub-SLC12_ses-awake_ophys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

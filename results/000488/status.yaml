@@ -10,10 +10,10 @@ tests:
   - sub-440299/sub-440299_ses-833870314_behavior+image+ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-440299/sub-440299_ses-833870314_behavior+image+ophys.nwb
+- assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-440299/sub-440299_ses-833870314_behavior+image+ophys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

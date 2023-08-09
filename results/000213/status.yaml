@@ -102,7 +102,6 @@ tests:
   - sub-DT5/sub-DT5_ses-20161027-1944um-2232um-161027-194125_behavior+ecephys.nwb
   - sub-DT5/sub-DT5_ses-20161030-2052um-2232um-161030-111142_behavior+ecephys.nwb
   - sub-DT5/sub-DT5_ses-20161031-2088um-2232um-161031-104001_behavior+ecephys.nwb
-  - sub-DT5/sub-DT5_ses-20161101-2088um-2232um-merge_behavior+ecephys.nwb
   - sub-DT5/sub-DT5_ses-20161104-2124um-2232um-merge_behavior+ecephys.nwb
   - sub-DT7/sub-DT7_ses-20170315-288um-0um-170315-191240_behavior+ecephys.nwb
   - sub-DT7/sub-DT7_ses-20170317-288um-0um-merge_behavior+ecephys.nwb
@@ -144,7 +143,8 @@ tests:
   - sub-DT9/sub-DT9_ses-20170521-900um-936um-170521-125602_behavior+ecephys.nwb
   - sub-DT9/sub-DT9_ses-20170522-900um-936um-170522-151132_behavior+ecephys.nwb
   - sub-DT9/sub-DT9_ses-20170525-900um-936um-170525-150124_behavior+ecephys.nwb
-  assets_ok: []
+  assets_ok:
+  - sub-DT5/sub-DT5_ses-20161101-2088um-2232um-merge_behavior+ecephys.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

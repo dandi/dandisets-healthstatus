@@ -275,7 +275,6 @@ tests:
 - assets_nok:
   - sub-HI159/sub-HI159_ecephys+ogen.nwb
   - sub-HI159/sub-HI159_ses-HI159-090418_ecephys+ogen.nwb
-  - sub-HI159/sub-HI159_ses-HI159-090518_ecephys+ogen.nwb
   - sub-HI159/sub-HI159_ses-HI159-090618_ecephys+ogen.nwb
   - sub-HI159/sub-HI159_ses-HI159-090718_ecephys+ogen.nwb
   - sub-HI159/sub-HI159_ses-HI159-090818_ecephys+ogen.nwb
@@ -536,6 +535,7 @@ tests:
   - sub-SC391203/sub-SC391203_ses-SC391203-102117_ecephys+ogen.nwb
   assets_ok: []
   assets_timeout:
+  - sub-HI159/sub-HI159_ses-HI159-090518_ecephys+ogen.nwb
   - sub-HI202/sub-HI202_ses-HI202-062019_ecephys+ogen.nwb
   - sub-SC028/sub-SC028_ses-SC028-092619_ecephys+ogen.nwb
   name: matnwb_nwbRead

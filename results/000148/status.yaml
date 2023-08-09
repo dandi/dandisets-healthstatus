@@ -97,13 +97,13 @@ tests:
   - sub-20210908004/sub-20210908004_icephys.nwb
   - sub-20210908005/sub-20210908005_icephys.nwb
   - sub-20210930001/sub-20210930001_icephys.nwb
-  - sub-20210930002/sub-20210930002_icephys.nwb
   - sub-20210930003/sub-20210930003_icephys.nwb
   - sub-20210930004/sub-20210930004_icephys.nwb
   - sub-20210930005/sub-20210930005_icephys.nwb
   - sub-20210930006/sub-20210930006_icephys.nwb
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-20210930002/sub-20210930002_icephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

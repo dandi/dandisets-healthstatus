@@ -98,7 +98,6 @@ tests:
   - sub-montague/sub-montague_ses-montague-06_behavior+ecephys.nwb
   - sub-montague/sub-montague_ses-montague-07_behavior+ecephys.nwb
   - sub-montague/sub-montague_ses-montague-08_behavior+ecephys.nwb
-  - sub-montague/sub-montague_ses-montague-09_behavior+ecephys.nwb
   - sub-montague/sub-montague_ses-montague-10_behavior+ecephys.nwb
   - sub-montague/sub-montague_ses-montague-11_behavior+ecephys.nwb
   - sub-montague/sub-montague_ses-montague-12_behavior+ecephys.nwb
@@ -122,10 +121,11 @@ tests:
   - sub-roquefort/sub-roquefort_ses-roquefort-18_behavior+ecephys.nwb
   - sub-roquefort/sub-roquefort_ses-roquefort-19_behavior+ecephys.nwb
   - sub-roquefort/sub-roquefort_ses-roquefort-20_behavior+ecephys.nwb
-  - sub-roquefort/sub-roquefort_ses-roquefort-21_behavior+ecephys.nwb
   - sub-roquefort/sub-roquefort_ses-roquefort-22_behavior+ecephys.nwb
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-montague/sub-montague_ses-montague-09_behavior+ecephys.nwb
+  - sub-roquefort/sub-roquefort_ses-roquefort-21_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

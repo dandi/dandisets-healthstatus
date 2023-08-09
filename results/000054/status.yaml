@@ -112,9 +112,7 @@ tests:
   - sub-F2/sub-F2_ses-20190417T210000_behavior+ophys.nwb
   - sub-F3/sub-F3_ses-20190407T210000_behavior+ophys.nwb
   - sub-F3/sub-F3_ses-20190409T210000_behavior+ophys.nwb
-  - sub-F3/sub-F3_ses-20190411T210000_behavior+ophys.nwb
   - sub-F3/sub-F3_ses-20190413T210000_behavior+ophys.nwb
-  - sub-F3/sub-F3_ses-20190414T210000_obj-7vehp4_behavior+ophys.nwb
   - sub-F3/sub-F3_ses-20190414T210000_obj-n4e7d4_behavior+ophys.nwb
   - sub-F5/sub-F5_ses-20190407T210000_behavior+ophys.nwb
   - sub-F5/sub-F5_ses-20190409T210000_behavior+ophys.nwb
@@ -181,7 +179,9 @@ tests:
   - sub-R6/sub-R6_ses-20200210T210000_obj-qb15q4_ophys.nwb
   - sub-R6/sub-R6_ses-20200210T210000_obj-r0awni_ophys.nwb
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-F3/sub-F3_ses-20190411T210000_behavior+ophys.nwb
+  - sub-F3/sub-F3_ses-20190414T210000_obj-7vehp4_behavior+ophys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

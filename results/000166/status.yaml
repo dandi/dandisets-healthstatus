@@ -37,7 +37,6 @@ tests:
   - sub-YMV06/sub-YMV06_ses-YMV06-170913_ecephys.nwb
   - sub-YMV07/sub-YMV07_ses-YMV07-170914_ecephys.nwb
   - sub-YMV08/sub-YMV08_ses-YMV08-170922_ecephys.nwb
-  - sub-YMV09/sub-YMV09_ses-YMV09-171204_ecephys.nwb
   - sub-YMV10/sub-YMV10_ses-YMV10-171213_ecephys.nwb
   - sub-YMV11/sub-YMV11_ses-YMV11-171208_ecephys.nwb
   - sub-YMV12/sub-YMV12_ses-YMV12-171211_ecephys.nwb
@@ -49,7 +48,8 @@ tests:
   - sub-YMV18/sub-YMV18_ses-YMV18-180208_ecephys.nwb
   - sub-YMV19/sub-YMV19_ses-YMV19-180209_ecephys.nwb
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-YMV09/sub-YMV09_ses-YMV09-171204_ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

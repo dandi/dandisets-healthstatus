@@ -10,10 +10,10 @@ tests:
   - sub-Roqui/sub-Roqui_ses-Roqui-03_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-Roqui/sub-Roqui_ses-Roqui-03_behavior+ecephys.nwb
+- assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-Roqui/sub-Roqui_ses-Roqui-03_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

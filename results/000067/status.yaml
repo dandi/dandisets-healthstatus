@@ -38,7 +38,6 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-EE/sub-EE_ses-EE-042_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-043_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-044_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-045_ecephys.nwb
@@ -66,7 +65,8 @@ tests:
   - sub-GG/sub-GG_ses-GG-069_behavior+ecephys.nwb
   - sub-GG/sub-GG_ses-GG-097_behavior+ecephys.nwb
   - sub-GG/sub-GG_ses-GG-149_behavior+ecephys.nwb
-  assets_ok: []
+  assets_ok:
+  - sub-EE/sub-EE_ses-EE-042_ecephys.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

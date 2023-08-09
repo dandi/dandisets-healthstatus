@@ -76,7 +76,6 @@ tests:
   - sub-anm134333/sub-anm134333_ses-20110607_behavior+icephys.nwb
   - sub-anm17702/sub-anm17702_ses-20100430_behavior+icephys.nwb
   - sub-anm17702/sub-anm17702_ses-20100507_behavior+icephys.nwb
-  - sub-anm211295/sub-anm211295_ses-20131015_behavior+icephys+ogen.nwb
   - sub-anm215592/sub-anm215592_ses-20131015_obj-8s1awh_behavior+icephys+ogen.nwb
   - sub-anm215592/sub-anm215592_ses-20131015_obj-odx8px_behavior+icephys+ogen.nwb
   - sub-anm215592/sub-anm215592_ses-20131017_behavior+icephys+ogen.nwb
@@ -105,7 +104,6 @@ tests:
   - sub-anm266945/sub-anm266945_ses-20141222_obj-14qffnp_behavior+icephys+ogen.nwb
   - sub-anm266945/sub-anm266945_ses-20141222_obj-1574tgg_behavior+icephys+ogen.nwb
   - sub-anm266951/sub-anm266951_ses-20141201_obj-10p0o3z_behavior+icephys+ogen.nwb
-  - sub-anm266951/sub-anm266951_ses-20141201_obj-1i6vt6d_behavior+icephys+ogen.nwb
   - sub-jf35892/sub-jf35892_ses-20100219_behavior+icephys.nwb
   - sub-jf35892/sub-jf35892_ses-20100308_behavior+icephys.nwb
   - sub-jf35892/sub-jf35892_ses-20100310_behavior+icephys.nwb
@@ -114,7 +112,9 @@ tests:
   - sub-jf42400/sub-jf42400_ses-20100612_behavior+icephys.nwb
   - sub-jf42400/sub-jf42400_ses-20100613_behavior+icephys.nwb
   - sub-jf42400/sub-jf42400_ses-20100615_behavior+icephys.nwb
-  assets_ok: []
+  assets_ok:
+  - sub-anm211295/sub-anm211295_ses-20131015_behavior+icephys+ogen.nwb
+  - sub-anm266951/sub-anm266951_ses-20141201_obj-1i6vt6d_behavior+icephys+ogen.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

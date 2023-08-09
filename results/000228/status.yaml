@@ -166,7 +166,6 @@ tests:
   - sub-H20-28-008/sub-H20-28-008_obj-i3x4vp_icephys.nwb
   - sub-H20-28-008/sub-H20-28-008_obj-te87he_icephys.nwb
   - sub-H20-28-009/sub-H20-28-009_obj-1ge6w8q_icephys.nwb
-  - sub-H20-28-009/sub-H20-28-009_obj-1htwdn3_icephys.nwb
   - sub-H20-28-009/sub-H20-28-009_obj-1sz7ccv_icephys.nwb
   - sub-H20-28-009/sub-H20-28-009_obj-qy58hs_icephys.nwb
   - sub-H20-28-011/sub-H20-28-011_obj-7hclv4_icephys.nwb
@@ -193,7 +192,8 @@ tests:
   - sub-H20-28-039/sub-H20-28-039_icephys.nwb
   - sub-H20-28-044/sub-H20-28-044_icephys.nwb
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-H20-28-009/sub-H20-28-009_obj-1htwdn3_icephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

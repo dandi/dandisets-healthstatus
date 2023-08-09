@@ -65,7 +65,6 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-MS10/sub-MS10_ses-Peter-MS10-170307-154746-concat_behavior+ecephys.nwb
-  - sub-MS10/sub-MS10_ses-Peter-MS10-170311-180956-concat_behavior+ecephys.nwb
   - sub-MS10/sub-MS10_ses-Peter-MS10-170313-122631-concat_behavior+ecephys.nwb
   - sub-MS10/sub-MS10_ses-Peter-MS10-170314-163038_behavior+ecephys.nwb
   - sub-MS10/sub-MS10_ses-Peter-MS10-170317-153237-concat_behavior+ecephys.nwb
@@ -100,7 +99,6 @@ tests:
   - sub-MS21/sub-MS21_ses-Peter-MS21-180711-112927-concat_behavior+ecephys.nwb
   - sub-MS21/sub-MS21_ses-Peter-MS21-180712-103200-concat_behavior+ecephys.nwb
   - sub-MS21/sub-MS21_ses-Peter-MS21-180719-155941-concat_behavior+ecephys.nwb
-  - sub-MS21/sub-MS21_ses-Peter-MS21-180720-110037-concat_behavior+ecephys.nwb
   - sub-MS21/sub-MS21_ses-Peter-MS21-180724-144402-concat_behavior+ecephys.nwb
   - sub-MS21/sub-MS21_ses-Peter-MS21-180730-120605-concat_behavior+ecephys.nwb
   - sub-MS21/sub-MS21_ses-Peter-MS21-180802-120147-concat_behavior+ecephys.nwb
@@ -118,8 +116,10 @@ tests:
   - sub-MS22/sub-MS22_ses-Peter-MS22-180719-122813-concat_behavior+ecephys.nwb
   - sub-MS22/sub-MS22_ses-Peter-MS22-180720-110055-concat_behavior+ecephys.nwb
   - sub-MS22/sub-MS22_ses-Peter-MS22-180724-144421-concat_behavior+ecephys.nwb
-  assets_ok: []
-  assets_timeout: []
+  assets_ok:
+  - sub-MS10/sub-MS10_ses-Peter-MS10-170311-180956-concat_behavior+ecephys.nwb
+  assets_timeout:
+  - sub-MS21/sub-MS21_ses-Peter-MS21-180720-110037-concat_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

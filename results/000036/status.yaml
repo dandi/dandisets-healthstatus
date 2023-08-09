@@ -82,7 +82,6 @@ tests:
   - sub-389020/sub-389020_ses-20180709T153218_behavior+image+ophys.nwb
   - sub-389020/sub-389020_ses-20180710T152650_behavior+image+ophys.nwb
   - sub-389020/sub-389020_ses-20180711T152912_behavior+image+ophys.nwb
-  - sub-389020/sub-389020_ses-20180713T153905_behavior+image+ophys.nwb
   - sub-389020/sub-389020_ses-20180716T152622_behavior+image+ophys.nwb
   - sub-389020/sub-389020_ses-20180717T152348_behavior+image+ophys.nwb
   - sub-389020/sub-389020_ses-20180718T152401_behavior+image+ophys.nwb
@@ -125,7 +124,8 @@ tests:
   - sub-406876/sub-406876_ses-20180913T230252_behavior+image+ophys.nwb
   - sub-406876/sub-406876_ses-20180914T220948_behavior+image+ophys.nwb
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-389020/sub-389020_ses-20180713T153905_behavior+image+ophys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

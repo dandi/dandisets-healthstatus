@@ -122,7 +122,6 @@ tests:
   - sub-YutaMouse33/sub-YutaMouse33_ses-YutaMouse33-150218_behavior+ecephys.nwb
   - sub-YutaMouse33/sub-YutaMouse33_ses-YutaMouse33-150219_behavior+ecephys.nwb
   - sub-YutaMouse33/sub-YutaMouse33_ses-YutaMouse33-150220_behavior+ecephys.nwb
-  - sub-YutaMouse33/sub-YutaMouse33_ses-YutaMouse33-150221_behavior+ecephys.nwb
   - sub-YutaMouse33/sub-YutaMouse33_ses-YutaMouse33-150222_behavior+ecephys.nwb
   - sub-YutaMouse33/sub-YutaMouse33_ses-YutaMouse33-150223_behavior+ecephys.nwb
   - sub-YutaMouse33/sub-YutaMouse33_ses-YutaMouse33-150224_behavior+ecephys.nwb
@@ -213,7 +212,8 @@ tests:
   - sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161014_behavior+ecephys.nwb
   - sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161016_behavior+ecephys.nwb
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-YutaMouse33/sub-YutaMouse33_ses-YutaMouse33-150221_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
