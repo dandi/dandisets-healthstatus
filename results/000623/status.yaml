@@ -1,5 +1,5 @@
-dandiset: 000568
-dandiset_version: 458d25b5e2091667b92adfc7aaaadceaa6f5de9c
+dandiset: '000623'
+dandiset_version: c555dab6f1646d71861709e9bc5e1f1f40b7c041
 last_run: null
 last_run_duration: null
 last_run_ended: null
@@ -7,12 +7,12 @@ nassets: null
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-fCamk1/sub-fCamk1_ses-fCamk1-200910-sess18_behavior+ecephys+image.nwb
+  - sub-CS42/sub-CS42_ses-20160801_obj-1poljw4_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-fCamk1/sub-fCamk1_ses-fCamk1-200910-sess18_behavior+ecephys+image.nwb
-  assets_ok: []
+- assets_nok: []
+  assets_ok:
+  - sub-CS42/sub-CS42_ses-20160801_obj-1poljw4_behavior+ecephys.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
