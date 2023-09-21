@@ -29,4 +29,7 @@ dandisets-healthstatus report
 #else echo "No changes to commit"
 #fi
 
+datalad save -m "Results from a sweep of an archive: $@"
+datalad push
+
 # vim:set et sts=4:
