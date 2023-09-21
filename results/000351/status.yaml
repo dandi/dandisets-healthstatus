@@ -39,7 +39,11 @@ tests:
   - sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day4-6.nwb
   - sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day5-12.nwb
   - sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day6-12.nwb
-  - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day1-12.nwb
+  - path: sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day1-12.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day2-12.nwb
   - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day3-30.nwb
   - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day4-30.nwb
@@ -68,10 +72,18 @@ tests:
       pynwb: 2.5.0
   - sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day6-12.nwb
   - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day1.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day10.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day10.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day11.nwb
   - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day12-learned.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day13.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day13.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day14.nwb
   - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day15.nwb
   - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day16.nwb
@@ -141,7 +153,11 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day2.nwb
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day2.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day20.nwb
   - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day21.nwb
   - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day22.nwb
@@ -224,7 +240,11 @@ tests:
   - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day5.nwb
   - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day6.nwb
   - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day67-8s.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day68.nwb
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day68.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day69.nwb
   - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day7.nwb
   - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day70-extinction.nwb
@@ -262,7 +282,11 @@ tests:
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day22.nwb
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day23.nwb
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day24-8s.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day25.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day25.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day26.nwb
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day27.nwb
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day28-8s-bgd6s.nwb
@@ -281,12 +305,20 @@ tests:
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day59-8s.nwb
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day6.nwb
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day60.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day61-extinction.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day61-extinction.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day62.nwb
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day63.nwb
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day67-Poisson-cue.nwb
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day68.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day7.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day7.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day1.nwb
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day13.nwb
     versions:
@@ -297,7 +329,11 @@ tests:
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day15.nwb
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day16.nwb
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day17.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day18.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day18.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day19.nwb
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day2.nwb
     versions:
@@ -352,8 +388,16 @@ tests:
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day45.nwb
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day46.nwb
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day47.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day5.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day6.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day5.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day6.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day64-8s.nwb
     versions:
       hdmf: 3.9.0
@@ -381,7 +425,11 @@ tests:
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day12-learned.nwb
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day13.nwb
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day14.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day15.nwb
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day15.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day16.nwb
     versions:
       hdmf: 3.9.0
@@ -399,7 +447,11 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day20.nwb
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day20.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day21.nwb
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day22.nwb
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day23-8s-bgd6s.nwb
@@ -429,7 +481,11 @@ tests:
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day50.nwb
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day53-Poisson-cue.nwb
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day54.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day55.nwb
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day55.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day6.nwb
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day7.nwb
   - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day8.nwb
@@ -466,7 +522,11 @@ tests:
   - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day25.nwb
   - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day26.nwb
   - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day27.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day28.nwb
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day28.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day29.nwb
   - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day3.nwb
   - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day40-8s.nwb
@@ -518,8 +578,16 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day6-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day1-RandomRewards.nwb
-  - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day2-Pavlovian.nwb
+  - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day1-RandomRewards.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day2-Pavlovian.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day3-Pavlovian.nwb
   - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day4-Pavlovian.nwb
   - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day5-Pavlovian.nwb
@@ -578,7 +646,11 @@ tests:
   - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day1-RandomRewards.nwb
   - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day10-Pavlovian.nwb
   - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day3-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day4-Pavlovian.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day4-Pavlovian.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day5-Pavlovian.nwb
   - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day6-Pavlovian.nwb
   - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day7-Pavlovian.nwb
@@ -686,7 +758,11 @@ tests:
   - sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day4-6.nwb
   - sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day5-12.nwb
   - sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day6-12.nwb
-  - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day1-12.nwb
+  - path: sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day1-12.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day2-12.nwb
   - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day3-30.nwb
   - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day4-30.nwb
@@ -715,10 +791,18 @@ tests:
       pynwb: 2.5.0
   - sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day6-12.nwb
   - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day1.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day10.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day10.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day11.nwb
   - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day12-learned.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day13.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day13.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day14.nwb
   - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day15.nwb
   - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day16.nwb
@@ -788,7 +872,11 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day2.nwb
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day2.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day20.nwb
   - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day21.nwb
   - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day22.nwb
@@ -871,7 +959,11 @@ tests:
   - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day5.nwb
   - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day6.nwb
   - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day67-8s.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day68.nwb
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day68.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day69.nwb
   - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day7.nwb
   - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day70-extinction.nwb
@@ -909,7 +1001,11 @@ tests:
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day22.nwb
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day23.nwb
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day24-8s.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day25.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day25.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day26.nwb
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day27.nwb
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day28-8s-bgd6s.nwb
@@ -928,12 +1024,20 @@ tests:
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day59-8s.nwb
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day6.nwb
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day60.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day61-extinction.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day61-extinction.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day62.nwb
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day63.nwb
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day67-Poisson-cue.nwb
   - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day68.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day7.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day7.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day1.nwb
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day13.nwb
     versions:
@@ -944,7 +1048,11 @@ tests:
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day15.nwb
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day16.nwb
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day17.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day18.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day18.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day19.nwb
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day2.nwb
     versions:
@@ -999,8 +1107,16 @@ tests:
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day45.nwb
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day46.nwb
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day47.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day5.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day6.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day5.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day6.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day64-8s.nwb
     versions:
       hdmf: 3.9.0
@@ -1028,7 +1144,11 @@ tests:
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day12-learned.nwb
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day13.nwb
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day14.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day15.nwb
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day15.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day16.nwb
     versions:
       hdmf: 3.9.0
@@ -1046,7 +1166,11 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day20.nwb
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day20.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day21.nwb
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day22.nwb
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day23-8s-bgd6s.nwb
@@ -1076,7 +1200,11 @@ tests:
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day50.nwb
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day53-Poisson-cue.nwb
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day54.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day55.nwb
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day55.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day6.nwb
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day7.nwb
   - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day8.nwb
@@ -1113,7 +1241,11 @@ tests:
   - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day25.nwb
   - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day26.nwb
   - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day27.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day28.nwb
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day28.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day29.nwb
   - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day3.nwb
   - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day40-8s.nwb
@@ -1165,8 +1297,16 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day6-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day1-RandomRewards.nwb
-  - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day2-Pavlovian.nwb
+  - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day1-RandomRewards.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day2-Pavlovian.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day3-Pavlovian.nwb
   - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day4-Pavlovian.nwb
   - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day5-Pavlovian.nwb
@@ -1225,7 +1365,11 @@ tests:
   - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day1-RandomRewards.nwb
   - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day10-Pavlovian.nwb
   - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day3-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day4-Pavlovian.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day4-Pavlovian.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day5-Pavlovian.nwb
   - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day6-Pavlovian.nwb
   - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day7-Pavlovian.nwb

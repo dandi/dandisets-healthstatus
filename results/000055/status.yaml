@@ -66,7 +66,6 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-09/sub-09_ses-7_behavior+ecephys.nwb
-  - sub-12/sub-12_ses-3_behavior+ecephys.nwb
   assets_ok:
   - sub-01/sub-01_ses-3_behavior+ecephys.nwb
   - sub-01/sub-01_ses-4_behavior+ecephys.nwb
@@ -91,6 +90,7 @@ tests:
   - sub-06/sub-06_ses-4_behavior+ecephys.nwb
   - sub-06/sub-06_ses-5_behavior+ecephys.nwb
   - sub-06/sub-06_ses-6_behavior+ecephys.nwb
+  - sub-06/sub-06_ses-7_behavior+ecephys.nwb
   - sub-07/sub-07_ses-3_behavior+ecephys.nwb
   - sub-07/sub-07_ses-4_behavior+ecephys.nwb
   - sub-07/sub-07_ses-5_behavior+ecephys.nwb
@@ -108,20 +108,20 @@ tests:
   - sub-10/sub-10_ses-3_behavior+ecephys.nwb
   - sub-10/sub-10_ses-4_behavior+ecephys.nwb
   - sub-10/sub-10_ses-5_behavior+ecephys.nwb
-  - sub-10/sub-10_ses-6_behavior+ecephys.nwb
   - sub-10/sub-10_ses-7_behavior+ecephys.nwb
   - sub-11/sub-11_ses-3_behavior+ecephys.nwb
   - sub-11/sub-11_ses-4_behavior+ecephys.nwb
   - sub-11/sub-11_ses-5_behavior+ecephys.nwb
   - sub-11/sub-11_ses-6_behavior+ecephys.nwb
   - sub-11/sub-11_ses-7_behavior+ecephys.nwb
+  - sub-12/sub-12_ses-3_behavior+ecephys.nwb
   - sub-12/sub-12_ses-4_behavior+ecephys.nwb
   - sub-12/sub-12_ses-5_behavior+ecephys.nwb
   - sub-12/sub-12_ses-6_behavior+ecephys.nwb
   - sub-12/sub-12_ses-7_behavior+ecephys.nwb
   assets_timeout:
   - sub-05/sub-05_ses-4_behavior+ecephys.nwb
-  - sub-06/sub-06_ses-7_behavior+ecephys.nwb
+  - sub-10/sub-10_ses-6_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
