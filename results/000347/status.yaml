@@ -19,16 +19,16 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-132/sub-132_ses-20211215T003200_ophys.nwb
   - sub-134/sub-134_ses-20220322T002800_ophys.nwb
-  - sub-134/sub-134_ses-20220322T104100_ophys.nwb
-  - sub-134/sub-134_ses-20220322T110600_ophys.nwb
+  - sub-134/sub-134_ses-20220322T033600_ophys.nwb
   assets_ok:
   - sub-131/sub-131_ses-20211116T203100_image+ophys.nwb
+  - sub-132/sub-132_ses-20211215T003200_ophys.nwb
   - sub-132/sub-132_ses-20211215T013700_ophys.nwb
   - sub-132/sub-132_ses-20211215T194900_ophys.nwb
   - sub-132/sub-132_ses-20211215T222300_ophys.nwb
-  - sub-134/sub-134_ses-20220322T033600_ophys.nwb
+  - sub-134/sub-134_ses-20220322T104100_ophys.nwb
+  - sub-134/sub-134_ses-20220322T110600_ophys.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

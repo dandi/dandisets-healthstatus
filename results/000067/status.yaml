@@ -38,12 +38,13 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-EE/sub-EE_ses-EE-089_ecephys.nwb
+  - sub-EE/sub-EE_ses-EE-084_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-196_behavior+ecephys.nwb
   - sub-FF/sub-FF_ses-FF-103_behavior+ecephys.nwb
   - sub-FF/sub-FF_ses-FF-130_behavior+ecephys.nwb
   - sub-GG/sub-GG_ses-GG-063_behavior+ecephys.nwb
   - sub-GG/sub-GG_ses-GG-097_behavior+ecephys.nwb
+  - sub-GG/sub-GG_ses-GG-149_behavior+ecephys.nwb
   assets_ok:
   - sub-EE/sub-EE_ses-EE-042_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-043_ecephys.nwb
@@ -58,15 +59,14 @@ tests:
   - sub-EE/sub-EE_ses-EE-081_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-082_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-083_ecephys.nwb
-  - sub-EE/sub-EE_ses-EE-084_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-085_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-086_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-087_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-088_behavior+ecephys.nwb
+  - sub-EE/sub-EE_ses-EE-089_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-210_ecephys.nwb
   - sub-FF/sub-FF_ses-FF-167_behavior+ecephys.nwb
   - sub-GG/sub-GG_ses-GG-069_behavior+ecephys.nwb
-  - sub-GG/sub-GG_ses-GG-149_behavior+ecephys.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
