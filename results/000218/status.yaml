@@ -12,7 +12,11 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-DT1/sub-DT1_ses-DT1-rLS-20150723-1728um_ecephys.nwb
+  - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150723-1728um_ecephys.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150724-1800um_ecephys.nwb
     versions:
       hdmf: 3.9.0
@@ -440,7 +444,6 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-DT1/sub-DT1_ses-DT1-rLS-20150723-1728um_ecephys.nwb
   - sub-DT1/sub-DT1_ses-DT1-rLS-20150727-2088um_ecephys.nwb
   - sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3036um-362um-20160215-160215-122710_behavior+ecephys.nwb
   - sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3396um-1180um-20160220-160220-141839_behavior+ecephys.nwb
@@ -513,6 +516,11 @@ tests:
       pynwb: 2.5.0
   - sub-DT9/sub-DT9_ses-20170519-864um-900um-merge_behavior+ecephys.nwb
   assets_ok:
+  - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150723-1728um_ecephys.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150724-1800um_ecephys.nwb
     versions:
       hdmf: 3.9.0
