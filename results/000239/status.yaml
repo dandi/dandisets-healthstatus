@@ -1075,7 +1075,11 @@ tests:
   - sub-MX210203/sub-MX210203_ses-20210228T171636_behavior.nwb
   - sub-MX210301/sub-MX210301_ses-20210501T160243_behavior.nwb
   - sub-MX210301/sub-MX210301_ses-20210506T151300_behavior.nwb
-  - sub-MX210502/sub-MX210502_ses-20210503T145208_behavior.nwb
+  - path: sub-MX210502/sub-MX210502_ses-20210503T145208_behavior.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-MX210601/sub-MX210601_ses-20210530T134053_behavior.nwb
   - sub-MX210601/sub-MX210601_ses-20210531T141051_behavior.nwb
   - sub-MX210602/sub-MX210602_ses-20210529T121951_behavior.nwb
@@ -1732,7 +1736,6 @@ tests:
   - sub-MX210203/sub-MX210203_ses-20210228T171636_behavior.nwb
   - sub-MX210301/sub-MX210301_ses-20210501T160243_behavior.nwb
   - sub-MX210301/sub-MX210301_ses-20210506T151300_behavior.nwb
-  - sub-MX210502/sub-MX210502_ses-20210503T145208_behavior.nwb
   - sub-MX210601/sub-MX210601_ses-20210530T134053_behavior.nwb
   - sub-MX210601/sub-MX210601_ses-20210531T141051_behavior.nwb
   - sub-MX210602/sub-MX210602_ses-20210529T121951_behavior.nwb
@@ -2192,6 +2195,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-MX210203/sub-MX210203_ses-20210226T173552_behavior.nwb
+  - path: sub-MX210502/sub-MX210502_ses-20210503T145208_behavior.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   name: matnwb_nwbRead
 untested: []
 versions:
