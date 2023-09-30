@@ -403,7 +403,11 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-YT085/sub-YT085_ses-20200322T133303_behavior+ecephys.nwb
+  - path: sub-YT085/sub-YT085_ses-20200322T133303_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-YT086/sub-YT086_ses-20200314T181755_behavior+ecephys.nwb
     versions:
       hdmf: 3.9.0
@@ -458,7 +462,6 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-YT085/sub-YT085_ses-20200322T133303_behavior+ecephys.nwb
   assets_ok: []
   assets_timeout:
   - path: sub-EF0147/sub-EF0147_ses-20190126T171614_behavior+ecephys.nwb
@@ -842,6 +845,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-YT085/sub-YT085_ses-20200320T152423_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-YT085/sub-YT085_ses-20200322T133303_behavior+ecephys.nwb
     versions:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
