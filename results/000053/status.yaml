@@ -585,7 +585,11 @@ tests:
   - sub-Rose/sub-Rose_ses-20190425_behavior.nwb
   - sub-Rose/sub-Rose_ses-20190426_behavior.nwb
   - sub-Rose/sub-Rose_ses-20190430_behavior.nwb
-  - sub-Rose/sub-Rose_ses-20190501_behavior.nwb
+  - path: sub-Rose/sub-Rose_ses-20190501_behavior.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Rose/sub-Rose_ses-20190502_behavior.nwb
   - sub-Snoopy/sub-Snoopy_ses-20190307_behavior.nwb
   - path: sub-Snoopy/sub-Snoopy_ses-20190308_behavior.nwb
@@ -930,7 +934,6 @@ tests:
   - sub-Rose/sub-Rose_ses-20190425_behavior.nwb
   - sub-Rose/sub-Rose_ses-20190426_behavior.nwb
   - sub-Rose/sub-Rose_ses-20190430_behavior.nwb
-  - sub-Rose/sub-Rose_ses-20190501_behavior.nwb
   - sub-Rose/sub-Rose_ses-20190502_behavior.nwb
   - sub-Snoopy/sub-Snoopy_ses-20190307_behavior.nwb
   - sub-Snoopy/sub-Snoopy_ses-20190313_behavior.nwb
@@ -1348,6 +1351,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-Ringo/sub-Ringo_ses-20190807_behavior.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-Rose/sub-Rose_ses-20190501_behavior.nwb
     versions:
       hdmf: 3.9.0
       matnwb: v2.6.0.2

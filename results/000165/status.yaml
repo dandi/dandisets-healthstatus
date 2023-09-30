@@ -287,7 +287,11 @@ tests:
   - sub-Doctor/sub-Doctor_ses-Doctor07-HomeCage_behavior+ecephys.nwb
   - sub-Fenugreek/sub-Fenugreek_ses-Fenugreek01-HomeCage_behavior+ecephys.nwb
   - sub-Fenugreek/sub-Fenugreek_ses-Fenugreek01-LinearTrack_behavior+ecephys.nwb
-  - sub-Fenugreek/sub-Fenugreek_ses-Fenugreek02-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Fenugreek/sub-Fenugreek_ses-Fenugreek02-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Fenugreek/sub-Fenugreek_ses-Fenugreek02_HomeCage_behavior+ecephys.nwb
   - path: sub-Fenugreek/sub-Fenugreek_ses-Fenugreek03-HomeCage_behavior+ecephys.nwb
     versions:
@@ -1172,7 +1176,11 @@ tests:
   - sub-Doctor/sub-Doctor_ses-Doctor07-HomeCage_behavior+ecephys.nwb
   - sub-Fenugreek/sub-Fenugreek_ses-Fenugreek01-HomeCage_behavior+ecephys.nwb
   - sub-Fenugreek/sub-Fenugreek_ses-Fenugreek01-LinearTrack_behavior+ecephys.nwb
-  - sub-Fenugreek/sub-Fenugreek_ses-Fenugreek02-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Fenugreek/sub-Fenugreek_ses-Fenugreek02-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Fenugreek/sub-Fenugreek_ses-Fenugreek02_HomeCage_behavior+ecephys.nwb
   - path: sub-Fenugreek/sub-Fenugreek_ses-Fenugreek03-HomeCage_behavior+ecephys.nwb
     versions:

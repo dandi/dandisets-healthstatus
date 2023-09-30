@@ -506,7 +506,11 @@ tests:
       pynwb: 2.5.0
   - sub-anm337495/sub-anm337495_ses-20160601_behavior+icephys+ogen.nwb
   - sub-anm337496/sub-anm337496_ses-20160524_behavior+icephys+ogen.nwb
-  - sub-anm342684/sub-anm342684_ses-20160609_behavior+icephys+ogen.nwb
+  - path: sub-anm342684/sub-anm342684_ses-20160609_behavior+icephys+ogen.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -683,7 +687,6 @@ tests:
       pynwb: 2.5.0
   - sub-anm318532/sub-anm318532_ses-20151125_obj-ombqp3_behavior+icephys+ogen.nwb
   - sub-anm337496/sub-anm337496_ses-20160524_behavior+icephys+ogen.nwb
-  - sub-anm342684/sub-anm342684_ses-20160609_behavior+icephys+ogen.nwb
   assets_ok:
   - path: sub-anm184389/sub-anm184389_ses-20130213_behavior+ecephys.nwb
     versions:
@@ -991,6 +994,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-anm337495/sub-anm337495_ses-20160601_behavior+icephys+ogen.nwb
+  - path: sub-anm342684/sub-anm342684_ses-20160609_behavior+icephys+ogen.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout:
   - path: sub-anm206177/sub-anm206177_ses-20131011_behavior+icephys.nwb
     versions:
