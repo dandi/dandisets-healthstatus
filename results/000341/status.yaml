@@ -12,7 +12,6 @@ tests:
   - Human_persistent_RAF/sub-140416/sub-140416_ses-1404163rm-3-1,2-3_icephys.nwb
   - Human_persistent_RAF/sub-141029/sub-141029_ses-1410291rm-1-1,2-4_icephys.nwb
   - Human_persistent_RAF/sub-141029/sub-141029_ses-1410291rm-1-12-3_icephys.nwb
-  - Human_persistent_RAF/sub-141029/sub-141029_ses-1410292rm-1-1-4_icephys.nwb
   - Human_persistent_RAF/sub-141029/sub-141029_ses-1410292rm-1-3-3_icephys.nwb
   - Human_persistent_RAF/sub-141029/sub-141029_ses-1410292rm-2-1-4_icephys.nwb
   - Human_persistent_RAF/sub-141029/sub-141029_ses-1410292rm-2-2-3_icephys.nwb
@@ -972,6 +971,11 @@ tests:
   - Rat_persistent_RAF/sub-20190412/sub-20190412_ses-1904121og-4-2-2_icephys.nwb
   - Rat_persistent_RAF/sub-20190815/sub-20190815_ses-1908151tm-3-1,3-2_icephys.nwb
   assets_timeout:
+  - path: Human_persistent_RAF/sub-141029/sub-141029_ses-1410292rm-1-1-4_icephys.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: Human_persistent_RAF/sub-141125/sub-141125_ses-1411251rm-1-1,4-4_icephys.nwb
     versions:
       hdmf: 3.9.0
@@ -1098,7 +1102,6 @@ tests:
   - Human_persistent_RAF/sub-140416/sub-140416_ses-1404163rm-3-1,2-3_icephys.nwb
   - Human_persistent_RAF/sub-141029/sub-141029_ses-1410291rm-1-1,2-4_icephys.nwb
   - Human_persistent_RAF/sub-141029/sub-141029_ses-1410291rm-1-12-3_icephys.nwb
-  - Human_persistent_RAF/sub-141029/sub-141029_ses-1410292rm-1-1-4_icephys.nwb
   - Human_persistent_RAF/sub-141029/sub-141029_ses-1410292rm-1-3-3_icephys.nwb
   - Human_persistent_RAF/sub-141029/sub-141029_ses-1410292rm-2-1-4_icephys.nwb
   - Human_persistent_RAF/sub-141029/sub-141029_ses-1410292rm-2-2-3_icephys.nwb
@@ -1766,6 +1769,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   assets_timeout:
+  - path: Human_persistent_RAF/sub-141029/sub-141029_ses-1410292rm-1-1-4_icephys.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: Human_persistent_RAF/sub-141125/sub-141125_ses-1411251rm-1-1,4-4_icephys.nwb
     versions:
       hdmf: 3.9.0

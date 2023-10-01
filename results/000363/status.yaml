@@ -9,7 +9,11 @@ tests:
   assets_ok:
   - sub-440956/sub-440956_ses-20190207T120657_behavior+ecephys+ogen.nwb
   - sub-440956/sub-440956_ses-20190208T133600_behavior+ecephys+ogen.nwb
-  - sub-440956/sub-440956_ses-20190209T150135_behavior+ecephys+ogen.nwb
+  - path: sub-440956/sub-440956_ses-20190209T150135_behavior+ecephys+ogen.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-440956/sub-440956_ses-20190210T155629_behavior+ecephys+ogen.nwb
     versions:
       hdmf: 3.9.0
@@ -507,7 +511,11 @@ tests:
 - assets_nok:
   - sub-440956/sub-440956_ses-20190207T120657_behavior+ecephys+ogen.nwb
   - sub-440956/sub-440956_ses-20190208T133600_behavior+ecephys+ogen.nwb
-  - sub-440956/sub-440956_ses-20190209T150135_behavior+ecephys+ogen.nwb
+  - path: sub-440956/sub-440956_ses-20190209T150135_behavior+ecephys+ogen.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-440957/sub-440957_ses-20190212T153751_behavior+ecephys+ogen.nwb
     versions:
       hdmf: 3.9.0
