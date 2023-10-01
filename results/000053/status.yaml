@@ -433,7 +433,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-Orchid/sub-Orchid_ses-20190503_behavior.nwb
-  - sub-Orchid/sub-Orchid_ses-20190506_behavior.nwb
+  - path: sub-Orchid/sub-Orchid_ses-20190506_behavior.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Orchid/sub-Orchid_ses-20190508_behavior.nwb
   - path: sub-Orchid/sub-Orchid_ses-20190509_behavior.nwb
     versions:
@@ -1263,7 +1267,6 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-Orchid/sub-Orchid_ses-20190506_behavior.nwb
   - path: sub-Orchid/sub-Orchid_ses-20190509_behavior.nwb
     versions:
       hdmf: 3.9.0
@@ -1432,6 +1435,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   assets_timeout:
+  - path: sub-Orchid/sub-Orchid_ses-20190506_behavior.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-npI1/sub-npI1_ses-20190416_behavior+ecephys.nwb
     versions:
       hdmf: 3.9.0
