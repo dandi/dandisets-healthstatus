@@ -557,7 +557,11 @@ tests:
   - sub-NV28/sub-NV28_ses-20170526T112227_ophys.nwb
   - sub-NV28/sub-NV28_ses-20170526T112854_ophys.nwb
   - sub-NV28/sub-NV28_ses-20170526T114523_ophys.nwb
-  - sub-NV28/sub-NV28_ses-20170526T115702_ophys.nwb
+  - path: sub-NV28/sub-NV28_ses-20170526T115702_ophys.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-NV28/sub-NV28_ses-20170526T120605_ophys.nwb
   - sub-NV28/sub-NV28_ses-20170526T121239_ophys.nwb
   - sub-NV28/sub-NV28_ses-20170526T122129_ophys.nwb
@@ -1451,7 +1455,6 @@ tests:
   - sub-NV28/sub-NV28_ses-20170526T112227_ophys.nwb
   - sub-NV28/sub-NV28_ses-20170526T112854_ophys.nwb
   - sub-NV28/sub-NV28_ses-20170526T114523_ophys.nwb
-  - sub-NV28/sub-NV28_ses-20170526T115702_ophys.nwb
   - sub-NV28/sub-NV28_ses-20170526T120605_ophys.nwb
   - sub-NV28/sub-NV28_ses-20170526T121239_ophys.nwb
   - sub-NV28/sub-NV28_ses-20170526T122129_ophys.nwb
@@ -2045,6 +2048,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-NV28/sub-NV28_ses-20170525T001835_ophys.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-NV28/sub-NV28_ses-20170526T115702_ophys.nwb
     versions:
       hdmf: 3.9.0
       matnwb: v2.6.0.2

@@ -721,7 +721,11 @@ tests:
   - sub-Rosemary/sub-Rosemary_ses-Rosemary06_HomeCage_behavior+ecephys.nwb
   - sub-Saffron/sub-Saffron_ses-Saffron01-HomeCage_behavior+ecephys.nwb
   - sub-Saffron/sub-Saffron_ses-Saffron01-LinearTrack_behavior+ecephys.nwb
-  - sub-Saffron/sub-Saffron_ses-Saffron02-HomeCage_behavior+ecephys.nwb
+  - path: sub-Saffron/sub-Saffron_ses-Saffron02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Saffron/sub-Saffron_ses-Saffron02-LinearTrack_behavior+ecephys.nwb
   - sub-Saffron/sub-Saffron_ses-Saffron03-HomeCage_behavior+ecephys.nwb
   - sub-Saffron/sub-Saffron_ses-Saffron03-LinearTrack_behavior+ecephys.nwb
@@ -1565,7 +1569,6 @@ tests:
   - sub-Rosemary/sub-Rosemary_ses-Rosemary06_HomeCage_behavior+ecephys.nwb
   - sub-Saffron/sub-Saffron_ses-Saffron01-HomeCage_behavior+ecephys.nwb
   - sub-Saffron/sub-Saffron_ses-Saffron01-LinearTrack_behavior+ecephys.nwb
-  - sub-Saffron/sub-Saffron_ses-Saffron02-HomeCage_behavior+ecephys.nwb
   - sub-Saffron/sub-Saffron_ses-Saffron02-LinearTrack_behavior+ecephys.nwb
   - sub-Saffron/sub-Saffron_ses-Saffron03-HomeCage_behavior+ecephys.nwb
   - sub-Saffron/sub-Saffron_ses-Saffron03-LinearTrack_behavior+ecephys.nwb
@@ -1811,6 +1814,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-Provence/sub-Provence_ses-Provence06-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-Saffron/sub-Saffron_ses-Saffron02-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
