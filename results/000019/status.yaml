@@ -7,7 +7,11 @@ nassets: 31
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-EC2/sub-EC2_ses-EC2-B1.nwb
+  - path: sub-EC2/sub-EC2_ses-EC2-B1.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-EC2/sub-EC2_ses-EC2-B105.nwb
   - sub-EC2/sub-EC2_ses-EC2-B15.nwb
   - sub-EC2/sub-EC2_ses-EC2-B76.nwb
@@ -41,7 +45,6 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-EC2/sub-EC2_ses-EC2-B1.nwb
   - sub-EC2/sub-EC2_ses-EC2-B105.nwb
   - sub-EC2/sub-EC2_ses-EC2-B15.nwb
   - sub-EC2/sub-EC2_ses-EC2-B76.nwb
@@ -73,7 +76,12 @@ tests:
   - sub-EC2/sub-EC2_ses-EC2-B89.nwb
   - sub-EC2/sub-EC2_ses-EC2-B9.nwb
   - sub-GP33/sub-GP33_ses-GP33-B1.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-EC2/sub-EC2_ses-EC2-B1.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   name: matnwb_nwbRead
 untested: []
 versions:

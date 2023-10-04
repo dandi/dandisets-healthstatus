@@ -14,7 +14,11 @@ tests:
   - sub-Nitschke/sub-Nitschke_ses-20090812_behavior+ecephys.nwb
   - sub-Nitschke/sub-Nitschke_ses-20090819_behavior+ecephys.nwb
   - sub-Nitschke/sub-Nitschke_ses-20090910_behavior+ecephys.nwb
-  - sub-Nitschke/sub-Nitschke_ses-20090920_behavior+ecephys.nwb
+  - path: sub-Nitschke/sub-Nitschke_ses-20090920_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Nitschke/sub-Nitschke_ses-20090922_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
@@ -23,12 +27,16 @@ tests:
   - sub-Jenkins/sub-Jenkins_ses-20090923_behavior+ecephys.nwb
   assets_ok:
   - sub-Nitschke/sub-Nitschke_ses-20090819_behavior+ecephys.nwb
+  - path: sub-Nitschke/sub-Nitschke_ses-20090920_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout:
   - sub-Jenkins/sub-Jenkins_ses-20090912_behavior+ecephys.nwb
   - sub-Jenkins/sub-Jenkins_ses-20090918_behavior+ecephys.nwb
   - sub-Nitschke/sub-Nitschke_ses-20090812_behavior+ecephys.nwb
   - sub-Nitschke/sub-Nitschke_ses-20090910_behavior+ecephys.nwb
-  - sub-Nitschke/sub-Nitschke_ses-20090920_behavior+ecephys.nwb
   - sub-Nitschke/sub-Nitschke_ses-20090922_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []
