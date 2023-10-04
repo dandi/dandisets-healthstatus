@@ -50,7 +50,6 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-Cori/sub-Cori_ses-20161214T120000.nwb
-  - sub-Cori/sub-Cori_ses-20161217T120000.nwb
   - sub-Forssmann/sub-Forssmann_ses-20171101T120000.nwb
   - sub-Forssmann/sub-Forssmann_ses-20171102T120000.nwb
   - sub-Forssmann/sub-Forssmann_ses-20171104T120000.nwb
@@ -89,7 +88,8 @@ tests:
   - sub-Radnitz/sub-Radnitz_ses-20170112T120000.nwb
   - sub-Richards/sub-Richards_ses-20171030T120000.nwb
   - sub-Richards/sub-Richards_ses-20171102T120000.nwb
-  assets_timeout: []
+  assets_timeout:
+  - sub-Cori/sub-Cori_ses-20161217T120000.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

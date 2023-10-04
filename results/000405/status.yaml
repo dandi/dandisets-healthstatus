@@ -409,7 +409,11 @@ tests:
   - sub-s2/sub-s2_ses-Cl-T3g-012419.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-012519.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-012819.nwb
-  - sub-s2/sub-s2_ses-Cl-T3g-012919.nwb
+  - path: sub-s2/sub-s2_ses-Cl-T3g-012919.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-s2/sub-s2_ses-Cl-T3g-013019.nwb
     versions:
       hdmf: 3.9.0
@@ -760,7 +764,6 @@ tests:
   - sub-s2/sub-s2_ses-Cl-T3g-012419.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-012519.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-012819.nwb
-  - sub-s2/sub-s2_ses-Cl-T3g-012919.nwb
   - path: sub-s2/sub-s2_ses-Cl-T3g-013019.nwb
     versions:
       hdmf: 3.9.0
@@ -1127,6 +1130,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-s2/sub-s2_ses-Cl-T3g-011619.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-s2/sub-s2_ses-Cl-T3g-012919.nwb
     versions:
       hdmf: 3.9.0
       matnwb: v2.6.0.2

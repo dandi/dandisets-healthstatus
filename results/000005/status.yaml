@@ -7,7 +7,11 @@ nassets: 148
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-anm184389/sub-anm184389_ses-20130207_behavior+ecephys.nwb
+  - path: sub-anm184389/sub-anm184389_ses-20130207_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-anm184389/sub-anm184389_ses-20130211_behavior+ecephys.nwb
     versions:
       hdmf: 3.9.0
@@ -534,7 +538,6 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-anm184389/sub-anm184389_ses-20130207_behavior+ecephys.nwb
   - path: sub-anm184389/sub-anm184389_ses-20130211_behavior+ecephys.nwb
     versions:
       hdmf: 3.9.0
@@ -1035,6 +1038,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   assets_timeout:
+  - path: sub-anm184389/sub-anm184389_ses-20130207_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-anm206177/sub-anm206177_ses-20131011_behavior+icephys.nwb
     versions:
       hdmf: 3.9.0
