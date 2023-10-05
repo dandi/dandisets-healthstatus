@@ -30,7 +30,11 @@ tests:
   - sub-Dino/sub-Dino_ses-Dino-072414_ecephys.nwb
   - sub-Rizzo/sub-Rizzo_ses-Rizzo-022615_ecephys.nwb
   - sub-Rizzo/sub-Rizzo_ses-Rizzo-022715_ecephys.nwb
-  - sub-Splinter/sub-Splinter_ses-Splinter-020515_ecephys.nwb
+  - path: sub-Splinter/sub-Splinter_ses-Splinter-020515_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Splinter/sub-Splinter_ses-Splinter-020915_ecephys.nwb
   - sub-Templeton/sub-Templeton_ses-Templeton-032415_ecephys.nwb
   assets_timeout: []
@@ -61,7 +65,11 @@ tests:
   - sub-Dino/sub-Dino_ses-Dino-072414_ecephys.nwb
   - sub-Rizzo/sub-Rizzo_ses-Rizzo-022615_ecephys.nwb
   - sub-Rizzo/sub-Rizzo_ses-Rizzo-022715_ecephys.nwb
-  - sub-Splinter/sub-Splinter_ses-Splinter-020515_ecephys.nwb
+  - path: sub-Splinter/sub-Splinter_ses-Splinter-020515_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Splinter/sub-Splinter_ses-Splinter-020915_ecephys.nwb
   - sub-Templeton/sub-Templeton_ses-Templeton-032415_ecephys.nwb
   name: matnwb_nwbRead

@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-BH277/sub-BH277_ses-20210908T173241_ecephys.nwb
-  - sub-BH277/sub-BH277_ses-20210908T180823_ecephys.nwb
+  - path: sub-BH277/sub-BH277_ses-20210908T180823_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-BH279/sub-BH279_ecephys.nwb
   - sub-BH279/sub-BH279_ses-20210922T155117_ecephys.nwb
   - sub-BH279/sub-BH279_ses-20210922T162828_ecephys.nwb
@@ -28,6 +32,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-BH277/sub-BH277_ses-20210908T173241_ecephys.nwb
+  - path: sub-BH277/sub-BH277_ses-20210908T180823_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-BH279/sub-BH279_ses-20210922T183423_ecephys.nwb
   - path: sub-BH279/sub-BH279_ses-20210922T200555_ecephys.nwb
     versions:
@@ -36,7 +45,6 @@ tests:
       pynwb: 2.5.0
   - sub-BH280/sub-BH280_ses-20210925T150737_ecephys.nwb
   assets_ok:
-  - sub-BH277/sub-BH277_ses-20210908T180823_ecephys.nwb
   - sub-BH279/sub-BH279_ecephys.nwb
   - sub-BH279/sub-BH279_ses-20210922T155117_ecephys.nwb
   - sub-BH279/sub-BH279_ses-20210922T162828_ecephys.nwb
