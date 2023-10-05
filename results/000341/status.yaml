@@ -628,7 +628,11 @@ tests:
   - In_vivo/sub-1710191rm/sub-1710191rm_ses-1710191rm-4-2-2_icephys.nwb
   - In_vivo/sub-1710201og/sub-1710201og_ses-1710201og-1-1-1_icephys+image.nwb
   - In_vivo/sub-1710201og/sub-1710201og_ses-1710201og-2-1-1_icephys.nwb
-  - In_vivo/sub-1710231rm/sub-1710231rm_ses-1710231rm-1-1-2_icephys+image.nwb
+  - path: In_vivo/sub-1710231rm/sub-1710231rm_ses-1710231rm-1-1-2_icephys+image.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - In_vivo/sub-1710231rm/sub-1710231rm_ses-1710231rm-6-1,2,3-2_icephys+image.nwb
   - In_vivo/sub-1710281og/sub-1710281og_ses-1710281og-1-1,2-1_icephys+image.nwb
   - In_vivo/sub-1711151og/sub-1711151og_ses-1711151og-1-1-1_icephys+image.nwb
@@ -1529,7 +1533,6 @@ tests:
   - In_vivo/sub-1710191rm/sub-1710191rm_ses-1710191rm-4-2-2_icephys.nwb
   - In_vivo/sub-1710201og/sub-1710201og_ses-1710201og-1-1-1_icephys+image.nwb
   - In_vivo/sub-1710201og/sub-1710201og_ses-1710201og-2-1-1_icephys.nwb
-  - In_vivo/sub-1710231rm/sub-1710231rm_ses-1710231rm-1-1-2_icephys+image.nwb
   - In_vivo/sub-1710231rm/sub-1710231rm_ses-1710231rm-6-1,2,3-2_icephys+image.nwb
   - In_vivo/sub-1710281og/sub-1710281og_ses-1710281og-1-1,2-1_icephys+image.nwb
   - In_vivo/sub-1711151og/sub-1711151og_ses-1711151og-1-1-1_icephys+image.nwb
@@ -2064,6 +2067,11 @@ tests:
   - path: In_vivo/sub-1710191rm/sub-1710191rm_ses-1710191rm-2-1-2_icephys.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: In_vivo/sub-1710231rm/sub-1710231rm_ses-1710231rm-1-1-2_icephys+image.nwb
+    versions:
+      hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: In_vivo/sub-1804111rm/sub-1804111rm_ses-1804111rm-1-4,5,7-2_icephys+image.nwb
