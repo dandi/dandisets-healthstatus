@@ -59,14 +59,17 @@ tests:
   - sub-San6/sub-San6_ses-20200218T181019_ecephys.nwb
   - sub-San6/sub-San6_ses-20200218T181402_ecephys.nwb
   - sub-San6/sub-San6_ses-20200302T151055_ecephys.nwb
-  - sub-San6/sub-San6_ses-20200302T151530_ecephys.nwb
+  - path: sub-San6/sub-San6_ses-20200302T151530_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-San6/sub-San6_ses-20200302T152233_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-Rat1/sub-Rat1_ses-20200921T124059_ecephys.nwb
   - sub-San4/sub-San4_ses-20200302T142114_ecephys.nwb
-  - sub-San6/sub-San6_ses-20200302T151530_ecephys.nwb
   assets_ok:
   - sub-Rat1/sub-Rat1_ses-20200921T124159_ecephys.nwb
   - sub-Rat1/sub-Rat1_ses-20200921T124259_ecephys.nwb
@@ -118,6 +121,11 @@ tests:
   - sub-San6/sub-San6_ses-20200218T181019_ecephys.nwb
   - sub-San6/sub-San6_ses-20200218T181402_ecephys.nwb
   - sub-San6/sub-San6_ses-20200302T151055_ecephys.nwb
+  - path: sub-San6/sub-San6_ses-20200302T151530_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-San6/sub-San6_ses-20200302T152233_ecephys.nwb
   assets_timeout: []
   name: matnwb_nwbRead

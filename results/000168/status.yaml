@@ -24,7 +24,7 @@ tests:
       pynwb: 2.5.0
   - path: XCaMPgf/XCaMPgf_ANM478343_cell03.nwb
     versions:
-      hdmf: 3.9.0
+      hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - XCaMPgf/XCaMPgf_ANM478343_cell04.nwb
@@ -556,6 +556,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: XCaMPgf/XCaMPgf_ANM478343_cell03.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - XCaMPgf/XCaMPgf_ANM478343_cell04.nwb
   - XCaMPgf/XCaMPgf_ANM478343_cell05.nwb
   - XCaMPgf/XCaMPgf_ANM478345_cell03.nwb
@@ -795,11 +800,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: XCaMPgf/XCaMPgf_ANM478343_cell02.nwb
-    versions:
-      hdmf: 3.9.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: XCaMPgf/XCaMPgf_ANM478343_cell03.nwb
     versions:
       hdmf: 3.9.0
       matnwb: v2.6.0.2

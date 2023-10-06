@@ -23,7 +23,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-monk-g/sub-monk-g.nwb
+  - path: sub-monk-g/sub-monk-g.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -43,9 +47,13 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  assets_ok: []
-  assets_timeout:
-  - sub-monk-g/sub-monk-g.nwb
+  assets_ok:
+  - path: sub-monk-g/sub-monk-g.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
