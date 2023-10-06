@@ -7,7 +7,11 @@ nassets: 22
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-BWRat17/sub-BWRat17_ses-BWRat17-121712_ecephys.nwb
+  - path: sub-BWRat17/sub-BWRat17_ses-BWRat17-121712_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-BWRat17/sub-BWRat17_ses-BWRat17-121912_ecephys.nwb
   - path: sub-BWRat18/sub-BWRat18_ses-BWRat18-020513_ecephys.nwb
     versions:
@@ -51,7 +55,11 @@ tests:
   assets_ok:
   - sub-BWRat21/sub-BWRat21_ses-BWRat21-121813_ecephys.nwb
   assets_timeout:
-  - sub-BWRat17/sub-BWRat17_ses-BWRat17-121712_ecephys.nwb
+  - path: sub-BWRat17/sub-BWRat17_ses-BWRat17-121712_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-BWRat17/sub-BWRat17_ses-BWRat17-121912_ecephys.nwb
   - path: sub-BWRat18/sub-BWRat18_ses-BWRat18-020513_ecephys.nwb
     versions:

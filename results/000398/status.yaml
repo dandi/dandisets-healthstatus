@@ -64,7 +64,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-San6/sub-San6_ses-20200302T152233_ecephys.nwb
+  - path: sub-San6/sub-San6_ses-20200302T152233_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -126,7 +130,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-San6/sub-San6_ses-20200302T152233_ecephys.nwb
+  - path: sub-San6/sub-San6_ses-20200302T152233_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
