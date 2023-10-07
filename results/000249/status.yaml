@@ -133,7 +133,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-EV31/sub-EV31_ses-20170621T175341_ophys.nwb
-  - sub-EV31/sub-EV31_ses-20170621T180102_ophys.nwb
+  - path: sub-EV31/sub-EV31_ses-20170621T180102_ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-EV31/sub-EV31_ses-20170621T180723_ophys.nwb
   - sub-EV31/sub-EV31_ses-20170621T182853_ophys.nwb
   - sub-EV31/sub-EV31_ses-20170621T183925_ophys.nwb
@@ -1256,7 +1260,6 @@ tests:
   - sub-EV31/sub-EV31_ses-20170621T171002_ophys.nwb
   - sub-EV31/sub-EV31_ses-20170621T171544_ophys.nwb
   - sub-EV31/sub-EV31_ses-20170621T175341_ophys.nwb
-  - sub-EV31/sub-EV31_ses-20170621T180102_ophys.nwb
   - sub-EV31/sub-EV31_ses-20170621T180723_ophys.nwb
   - sub-EV31/sub-EV31_ses-20170621T182853_ophys.nwb
   - sub-EV31/sub-EV31_ses-20170621T183925_ophys.nwb
@@ -1888,6 +1891,11 @@ tests:
   - path: sub-EV31/sub-EV31_ses-20170621T172126_ophys.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-EV31/sub-EV31_ses-20170621T180102_ophys.nwb
+    versions:
+      hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-EV38/sub-EV38_ses-20170831T232818_ophys.nwb

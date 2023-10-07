@@ -13,7 +13,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-EC2/sub-EC2_ses-EC2-B105.nwb
-  - sub-EC2/sub-EC2_ses-EC2-B15.nwb
+  - path: sub-EC2/sub-EC2_ses-EC2-B15.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-EC2/sub-EC2_ses-EC2-B76.nwb
   - sub-EC2/sub-EC2_ses-EC2-B8.nwb
   - sub-EC2/sub-EC2_ses-EC2-B89.nwb
@@ -70,7 +74,6 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-EC2/sub-EC2_ses-EC2-B105.nwb
-  - sub-EC2/sub-EC2_ses-EC2-B15.nwb
   - sub-EC2/sub-EC2_ses-EC2-B76.nwb
   - sub-EC2/sub-EC2_ses-EC2-B8.nwb
   - sub-EC9/sub-EC9_ses-EC9-B15.nwb
@@ -117,6 +120,11 @@ tests:
   - sub-GP33/sub-GP33_ses-GP33-B30.nwb
   - sub-GP33/sub-GP33_ses-GP33-B5.nwb
   assets_ok:
+  - path: sub-EC2/sub-EC2_ses-EC2-B15.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-EC2/sub-EC2_ses-EC2-B89.nwb
   - sub-EC2/sub-EC2_ses-EC2-B9.nwb
   - path: sub-GP31/sub-GP31_ses-GP31-B65.nwb
