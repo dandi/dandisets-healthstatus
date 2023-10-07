@@ -12,7 +12,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-Achilles/sub-Achilles_ses-Achilles-11012013_behavior+ecephys.nwb
+  - path: sub-Achilles/sub-Achilles_ses-Achilles-11012013_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-Buddy/sub-Buddy_ses-Buddy-06272013_behavior+ecephys.nwb
     versions:
       hdmf: 3.10.0
@@ -42,6 +46,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-Achilles/sub-Achilles_ses-Achilles-11012013_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-Cicero/sub-Cicero_ses-Cicero-09172014_behavior+ecephys.nwb
     versions:
       hdmf: 3.10.0
@@ -54,7 +63,6 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-Achilles/sub-Achilles_ses-Achilles-11012013_behavior+ecephys.nwb
   - path: sub-Cicero/sub-Cicero_ses-Cicero-09012014_behavior+ecephys.nwb
     versions:
       hdmf: 3.10.0

@@ -7,7 +7,11 @@ nassets: 145
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-408021/sub-408021_ses-758519303_behavior+ophys.nwb
+  - path: sub-408021/sub-408021_ses-758519303_behavior+ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-408021/sub-408021_ses-759189643_behavior+ophys.nwb
     versions:
       hdmf: 3.10.0
@@ -81,7 +85,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-408021/sub-408021_ses-758519303_behavior+ophys.nwb
+  - path: sub-408021/sub-408021_ses-758519303_behavior+ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-408021/sub-408021_ses-759189643_behavior+ophys.nwb
     versions:
       hdmf: 3.10.0

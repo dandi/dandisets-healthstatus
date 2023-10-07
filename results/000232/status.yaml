@@ -110,7 +110,11 @@ tests:
   - sub-YT085/sub-YT085_ses-20200315T171107_behavior+ecephys.nwb
   - sub-YT085/sub-YT085_ses-20200316T151037_behavior+ecephys.nwb
   - sub-YT085/sub-YT085_ses-20200320T152423_behavior+ecephys.nwb
-  - sub-YT085/sub-YT085_ses-20200322T133303_behavior+ecephys.nwb
+  - path: sub-YT085/sub-YT085_ses-20200322T133303_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-YT086/sub-YT086_ses-20200314T181755_behavior+ecephys.nwb
   - sub-YT086/sub-YT086_ses-20200320T171513_behavior+ecephys.nwb
   assets_timeout:
@@ -229,7 +233,11 @@ tests:
   - sub-YT085/sub-YT085_ses-20200315T171107_behavior+ecephys.nwb
   - sub-YT085/sub-YT085_ses-20200316T151037_behavior+ecephys.nwb
   - sub-YT085/sub-YT085_ses-20200320T152423_behavior+ecephys.nwb
-  - sub-YT085/sub-YT085_ses-20200322T133303_behavior+ecephys.nwb
+  - path: sub-YT085/sub-YT085_ses-20200322T133303_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-YT086/sub-YT086_ses-20200314T181755_behavior+ecephys.nwb
   - sub-YT086/sub-YT086_ses-20200320T171513_behavior+ecephys.nwb
   name: matnwb_nwbRead
