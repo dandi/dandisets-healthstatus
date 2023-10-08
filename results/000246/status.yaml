@@ -49,8 +49,12 @@ tests:
     C2hSynL 17-5degrees_obj-1p1znpv_ophys.nwb
   - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
     C2hSynL 17-5degrees_obj-4cx979_ophys.nwb
-  - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
-    C2hSynL 17-5degrees_obj-etnmv0_ophys.nwb
+  - path: sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
+      C2hSynL 17-5degrees_obj-etnmv0_ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
     C2hSynL 17-5degrees_obj-ph0qxm_ophys.nwb
   - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1748njo_ophys.nwb
@@ -122,7 +126,13 @@ tests:
   - sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-t1qx9y_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
+      C2hSynL 17-5degrees_obj-etnmv0_ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_ok:
   - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-10xaxmr_ophys.nwb
   - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-18ryofc_ophys.nwb
@@ -166,8 +176,6 @@ tests:
     C2hSynL 17-5degrees_obj-1p1znpv_ophys.nwb
   - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
     C2hSynL 17-5degrees_obj-4cx979_ophys.nwb
-  - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
-    C2hSynL 17-5degrees_obj-etnmv0_ophys.nwb
   - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
     C2hSynL 17-5degrees_obj-ph0qxm_ophys.nwb
   - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1748njo_ophys.nwb

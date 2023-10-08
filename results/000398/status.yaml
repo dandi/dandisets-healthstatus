@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-Rat1/sub-Rat1_ses-20200921T124059_ecephys.nwb
-  - sub-Rat1/sub-Rat1_ses-20200921T124159_ecephys.nwb
+  - path: sub-Rat1/sub-Rat1_ses-20200921T124159_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-Rat1/sub-Rat1_ses-20200921T124259_ecephys.nwb
     versions:
       hdmf: 3.10.0
@@ -91,7 +95,11 @@ tests:
   - sub-Rat1/sub-Rat1_ses-20200921T124059_ecephys.nwb
   - sub-San4/sub-San4_ses-20200302T142114_ecephys.nwb
   assets_ok:
-  - sub-Rat1/sub-Rat1_ses-20200921T124159_ecephys.nwb
+  - path: sub-Rat1/sub-Rat1_ses-20200921T124159_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-Rat1/sub-Rat1_ses-20200921T124259_ecephys.nwb
     versions:
       hdmf: 3.10.0
