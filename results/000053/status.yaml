@@ -18,7 +18,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-Barbara/sub-Barbara_ses-20190429_behavior.nwb
-  - sub-Barbara/sub-Barbara_ses-20190430_behavior.nwb
+  - path: sub-Barbara/sub-Barbara_ses-20190430_behavior.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Barbara/sub-Barbara_ses-20190502_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190504_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190505_behavior.nwb
@@ -770,7 +774,6 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-Barbara/sub-Barbara_ses-20190429_behavior.nwb
-  - sub-Barbara/sub-Barbara_ses-20190430_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190502_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190504_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190505_behavior.nwb
@@ -1037,6 +1040,11 @@ tests:
   - path: sub-Azalea/sub-Azalea_ses-20190309_behavior.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-Barbara/sub-Barbara_ses-20190430_behavior.nwb
+    versions:
+      hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-Barbara/sub-Barbara_ses-20190508_behavior.nwb
