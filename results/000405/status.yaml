@@ -613,7 +613,11 @@ tests:
       pynwb: 2.5.0
   - sub-s4/sub-s4_ses-Ca-OF-031219.nwb
   - sub-s4/sub-s4_ses-Ca-OF-031919.nwb
-  - sub-s4/sub-s4_ses-Ca-OF-032119.nwb
+  - path: sub-s4/sub-s4_ses-Ca-OF-032119.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-s4/sub-s4_ses-Ca-OF-032219.nwb
   - sub-s4/sub-s4_ses-Ca-OF-032519.nwb
   - path: sub-s4/sub-s4_ses-Ca-OF-032619.nwb
@@ -848,7 +852,6 @@ tests:
   - sub-s4/sub-s4_ses-Ca-OF-030719.nwb
   - sub-s4/sub-s4_ses-Ca-OF-031219.nwb
   - sub-s4/sub-s4_ses-Ca-OF-031919.nwb
-  - sub-s4/sub-s4_ses-Ca-OF-032119.nwb
   - sub-s4/sub-s4_ses-Ca-OF-032219.nwb
   - sub-s4/sub-s4_ses-Ca-OF-032519.nwb
   - sub-s4/sub-s4_ses-Ca-OF-032819.nwb
@@ -1317,6 +1320,11 @@ tests:
   - path: sub-s4/sub-s4_ses-Ca-OF-030919.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-s4/sub-s4_ses-Ca-OF-032119.nwb
+    versions:
+      hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-s4/sub-s4_ses-Ca-OF-032619.nwb
