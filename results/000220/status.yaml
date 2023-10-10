@@ -87,7 +87,11 @@ tests:
       pynwb: 2.5.0
   - sub-20190402002/sub-20190402002_icephys.nwb
   - sub-20190402003/sub-20190402003_icephys.nwb
-  - sub-20190402004/sub-20190402004_icephys.nwb
+  - path: sub-20190402004/sub-20190402004_icephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-20190402005/sub-20190402005_icephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
@@ -174,7 +178,11 @@ tests:
       pynwb: 2.5.0
   - sub-20190402002/sub-20190402002_icephys.nwb
   - sub-20190402003/sub-20190402003_icephys.nwb
-  - sub-20190402004/sub-20190402004_icephys.nwb
+  - path: sub-20190402004/sub-20190402004_icephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-20190402005/sub-20190402005_icephys.nwb
   name: matnwb_nwbRead
 untested: []

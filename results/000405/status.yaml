@@ -590,7 +590,11 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-s3/sub-s3_ses-Al-T3g-102918.nwb
+  - path: sub-s3/sub-s3_ses-Al-T3g-102918.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-s3/sub-s3_ses-Al-T3g-111418.nwb
   - sub-s3/sub-s3_ses-Al-T3g-111618.nwb
   - sub-s4/sub-s4_ses-Ca-OF-030419.nwb
@@ -844,7 +848,6 @@ tests:
   - sub-s3/sub-s3_ses-Al-T3g-101018.nwb
   - sub-s3/sub-s3_ses-Al-T3g-101518.nwb
   - sub-s3/sub-s3_ses-Al-T3g-101718.nwb
-  - sub-s3/sub-s3_ses-Al-T3g-102918.nwb
   - sub-s3/sub-s3_ses-Al-T3g-111418.nwb
   - sub-s3/sub-s3_ses-Al-T3g-111618.nwb
   - sub-s4/sub-s4_ses-Ca-OF-030419.nwb
@@ -1305,6 +1308,11 @@ tests:
   - path: sub-s3/sub-s3_ses-Al-T3g-102218.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-s3/sub-s3_ses-Al-T3g-102918.nwb
+    versions:
+      hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-s4/sub-s4_ses-Ca-OF-030619.nwb

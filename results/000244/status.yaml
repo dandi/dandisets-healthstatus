@@ -81,7 +81,11 @@ tests:
       pynwb: 2.5.0
   - sub-VIP09/sub-VIP09_ses-awake_ophys.nwb
   - sub-VIP11/sub-VIP11_ses-awake_ophys.nwb
-  - sub-VIP13/sub-VIP13_ses-awake_ophys.nwb
+  - path: sub-VIP13/sub-VIP13_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-VIP14/sub-VIP14_ses-awake_ophys.nwb
     versions:
       hdmf: 3.10.0
@@ -167,7 +171,11 @@ tests:
       pynwb: 2.5.0
   - sub-VIP09/sub-VIP09_ses-awake_ophys.nwb
   - sub-VIP11/sub-VIP11_ses-awake_ophys.nwb
-  - sub-VIP13/sub-VIP13_ses-awake_ophys.nwb
+  - path: sub-VIP13/sub-VIP13_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-VIP14/sub-VIP14_ses-awake_ophys.nwb
     versions:
       hdmf: 3.10.0

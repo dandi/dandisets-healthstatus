@@ -7,7 +7,11 @@ nassets: 53
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-anm369962/sub-anm369962_ses-20170309.nwb
+  - path: sub-anm369962/sub-anm369962_ses-20170309.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-anm369962/sub-anm369962_ses-20170310.nwb
   - sub-anm369962/sub-anm369962_ses-20170313.nwb
   - path: sub-anm369962/sub-anm369962_ses-20170314.nwb
@@ -111,7 +115,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-anm369962/sub-anm369962_ses-20170309.nwb
+  - path: sub-anm369962/sub-anm369962_ses-20170309.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-anm369962/sub-anm369962_ses-20170310.nwb
   - sub-anm369962/sub-anm369962_ses-20170313.nwb
   - path: sub-anm369962/sub-anm369962_ses-20170314.nwb

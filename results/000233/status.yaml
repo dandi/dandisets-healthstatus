@@ -303,7 +303,11 @@ tests:
       pynwb: 2.5.0
   - sub-CGM32/sub-CGM32_ses-CGM32-576um-210215-141038_ecephys.nwb
   - sub-CGM32/sub-CGM32_ses-CGM32-576um-210216-072809_ecephys.nwb
-  - sub-CGM32/sub-CGM32_ses-CGM32-576um-210216-072928_ecephys.nwb
+  - path: sub-CGM32/sub-CGM32_ses-CGM32-576um-210216-072928_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-CGM32/sub-CGM32_ses-CGM32-576um-210216-085829_ecephys.nwb
     versions:
       hdmf: 3.9.0
@@ -876,7 +880,6 @@ tests:
   - sub-CGM32/sub-CGM32_ses-CGM32-576um-210214-090635_ecephys.nwb
   - sub-CGM32/sub-CGM32_ses-CGM32-576um-210215-093748_ecephys.nwb
   - sub-CGM32/sub-CGM32_ses-CGM32-576um-210216-072809_ecephys.nwb
-  - sub-CGM32/sub-CGM32_ses-CGM32-576um-210216-072928_ecephys.nwb
   - sub-CGM32/sub-CGM32_ses-CGM32-576um-210219-085429_ecephys.nwb
   - sub-CGM32/sub-CGM32_ses-CGM32-576um-210219-105303_ecephys.nwb
   - sub-CGM32/sub-CGM32_ses-CGM32-576um-210219-105357_ecephys.nwb
@@ -1074,6 +1077,11 @@ tests:
   - path: sub-CGM32/sub-CGM32_ses-CGM32-576um-210128-075751_ecephys.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-CGM32/sub-CGM32_ses-CGM32-576um-210216-072928_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-CGM32/sub-CGM32_ses-CGM32-576um-210219-161635_ecephys.nwb

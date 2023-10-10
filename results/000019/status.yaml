@@ -46,7 +46,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-GP31/sub-GP31_ses-GP31-B1.nwb
-  - sub-GP31/sub-GP31_ses-GP31-B2.nwb
+  - path: sub-GP31/sub-GP31_ses-GP31-B2.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-GP31/sub-GP31_ses-GP31-B21.nwb
   - sub-GP31/sub-GP31_ses-GP31-B4.nwb
   - sub-GP31/sub-GP31_ses-GP31-B6.nwb
@@ -116,7 +120,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-GP31/sub-GP31_ses-GP31-B1.nwb
-  - sub-GP31/sub-GP31_ses-GP31-B2.nwb
   - sub-GP31/sub-GP31_ses-GP31-B21.nwb
   - sub-GP31/sub-GP31_ses-GP31-B4.nwb
   - sub-GP31/sub-GP31_ses-GP31-B6.nwb
@@ -159,6 +162,11 @@ tests:
       pynwb: 2.5.0
   - sub-EC2/sub-EC2_ses-EC2-B89.nwb
   - sub-EC2/sub-EC2_ses-EC2-B9.nwb
+  - path: sub-GP31/sub-GP31_ses-GP31-B2.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-GP31/sub-GP31_ses-GP31-B65.nwb
     versions:
       hdmf: 3.10.0
