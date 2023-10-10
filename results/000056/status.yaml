@@ -12,7 +12,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-Mouse12/sub-Mouse12_ses-Mouse12-120807_behavior+ecephys.nwb
+  - path: sub-Mouse12/sub-Mouse12_ses-Mouse12-120807_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-Mouse12/sub-Mouse12_ses-Mouse12-120808_behavior+ecephys.nwb
     versions:
       hdmf: 3.10.0
@@ -102,6 +106,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-Mouse12/sub-Mouse12_ses-Mouse12-120807_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-Mouse12/sub-Mouse12_ses-Mouse12-120808_behavior+ecephys.nwb
     versions:
       hdmf: 3.10.0
@@ -117,7 +126,6 @@ tests:
   - sub-Mouse25/sub-Mouse25_ses-Mouse25-140203_behavior+ecephys.nwb
   - sub-Mouse28/sub-Mouse28_ses-Mouse28-140317_behavior+ecephys.nwb
   assets_ok:
-  - sub-Mouse12/sub-Mouse12_ses-Mouse12-120807_behavior+ecephys.nwb
   - sub-Mouse17/sub-Mouse17_ses-Mouse17-130128_behavior+ecephys.nwb
   - sub-Mouse17/sub-Mouse17_ses-Mouse17-130129_behavior+ecephys.nwb
   - path: sub-Mouse17/sub-Mouse17_ses-Mouse17-130130_behavior+ecephys.nwb

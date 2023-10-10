@@ -21,7 +21,11 @@ tests:
   - sub-EC2/sub-EC2_ses-EC2-B76.nwb
   - sub-EC2/sub-EC2_ses-EC2-B8.nwb
   - sub-EC2/sub-EC2_ses-EC2-B89.nwb
-  - sub-EC2/sub-EC2_ses-EC2-B9.nwb
+  - path: sub-EC2/sub-EC2_ses-EC2-B9.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-EC9/sub-EC9_ses-EC9-B15.nwb
   - sub-EC9/sub-EC9_ses-EC9-B39.nwb
   - sub-EC9/sub-EC9_ses-EC9-B46.nwb
@@ -96,6 +100,11 @@ tests:
   - sub-EC2/sub-EC2_ses-EC2-B105.nwb
   - sub-EC2/sub-EC2_ses-EC2-B76.nwb
   - sub-EC2/sub-EC2_ses-EC2-B8.nwb
+  - path: sub-EC2/sub-EC2_ses-EC2-B9.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-EC9/sub-EC9_ses-EC9-B15.nwb
   - sub-EC9/sub-EC9_ses-EC9-B39.nwb
   - sub-EC9/sub-EC9_ses-EC9-B46.nwb
@@ -161,7 +170,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-EC2/sub-EC2_ses-EC2-B89.nwb
-  - sub-EC2/sub-EC2_ses-EC2-B9.nwb
   - path: sub-GP31/sub-GP31_ses-GP31-B2.nwb
     versions:
       hdmf: 3.10.0
