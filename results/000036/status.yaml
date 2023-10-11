@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-389014/sub-389014_ses-20180705T152908_behavior+image+ophys.nwb
-  - sub-389014/sub-389014_ses-20180706T153828_behavior+image+ophys.nwb
+  - path: sub-389014/sub-389014_ses-20180706T153828_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-389014/sub-389014_ses-20180709T154600_behavior+image+ophys.nwb
   - sub-389014/sub-389014_ses-20180710T153808_behavior+image+ophys.nwb
   - sub-389014/sub-389014_ses-20180711T154332_behavior+image+ophys.nwb
@@ -172,7 +176,11 @@ tests:
   - sub-406876/sub-406876_ses-20180914T220948_behavior+image+ophys.nwb
   assets_ok: []
   assets_timeout:
-  - sub-389014/sub-389014_ses-20180706T153828_behavior+image+ophys.nwb
+  - path: sub-389014/sub-389014_ses-20180706T153828_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-389014/sub-389014_ses-20180711T154332_behavior+image+ophys.nwb
   - sub-389014/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb
   - sub-389014/sub-389014_ses-20180718T153707_behavior+image+ophys.nwb
