@@ -64,7 +64,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-3112/sub-3112_ses-20210227T185041_ecephys+ophys.nwb
+  - path: sub-3112/sub-3112_ses-20210227T185041_ecephys+ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-3112/sub-3112_ses-20210227T190233_ecephys+ophys.nwb
     versions:
       hdmf: 3.10.0
@@ -147,6 +151,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
+  - path: sub-3112/sub-3112_ses-20210227T185041_ecephys+ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-3278/sub-3278_ses-20210614T151114_ecephys+ophys.nwb
     versions:
       hdmf: 3.10.0
@@ -171,7 +180,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-2763/sub-2763_ses-20200828T163435_ecephys+ophys.nwb
-  - sub-3112/sub-3112_ses-20210227T185041_ecephys+ophys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

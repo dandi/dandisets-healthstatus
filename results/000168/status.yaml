@@ -139,7 +139,7 @@ tests:
       pynwb: 2.5.0
   - path: jGCaMP8f/jGCaMP8f_ANM471993_cell01.nwb
     versions:
-      hdmf: 3.9.0
+      hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: jGCaMP8f/jGCaMP8f_ANM471993_cell02.nwb
@@ -609,6 +609,11 @@ tests:
   - jGCaMP7f/jGCaMP7f_ANM478406_cell03.nwb
   - jGCaMP7f/jGCaMP7f_ANM478406_cell04.nwb
   - jGCaMP7f/jGCaMP7f_ANM478406_cell05.nwb
+  - path: jGCaMP8f/jGCaMP8f_ANM471993_cell01.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - jGCaMP8f/jGCaMP8f_ANM471994_cell02.nwb
   - jGCaMP8f/jGCaMP8f_ANM471994_cell06.nwb
   - jGCaMP8f/jGCaMP8f_ANM471994_cell07.nwb
@@ -883,11 +888,6 @@ tests:
   - path: jGCaMP7f/jGCaMP7f_ANM478406_cell08.nwb
     versions:
       hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: jGCaMP8f/jGCaMP8f_ANM471993_cell01.nwb
-    versions:
-      hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: jGCaMP8f/jGCaMP8f_ANM471993_cell02.nwb

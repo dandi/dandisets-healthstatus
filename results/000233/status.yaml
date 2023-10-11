@@ -727,7 +727,11 @@ tests:
       pynwb: 2.5.0
   - sub-bruce/sub-bruce_ses-bruce_0um_210115_164105_ecephys.nwb
   - sub-bruce/sub-bruce_ses-bruce_0um_210115_164810_ecephys.nwb
-  - sub-bruce/sub-bruce_ses-bruce_0um_210116_084745_ecephys.nwb
+  - path: sub-bruce/sub-bruce_ses-bruce_0um_210116_084745_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-dt15/sub-dt15_ses-dt15_2960um_200206_202330_ecephys.nwb
   - sub-dt15/sub-dt15_ses-dt15_2960um_200206_203844_ecephys.nwb
   - sub-dt15/sub-dt15_ses-dt15_2960um_200206_203951_ecephys.nwb
@@ -990,7 +994,6 @@ tests:
   - sub-bruce/sub-bruce_ses-bruce_0um_210115_153927_ecephys.nwb
   - sub-bruce/sub-bruce_ses-bruce_0um_210115_164105_ecephys.nwb
   - sub-bruce/sub-bruce_ses-bruce_0um_210115_164810_ecephys.nwb
-  - sub-bruce/sub-bruce_ses-bruce_0um_210116_084745_ecephys.nwb
   - sub-dt15/sub-dt15_ses-dt15_2960um_200206_202330_ecephys.nwb
   - sub-dt15/sub-dt15_ses-dt15_2960um_200206_203844_ecephys.nwb
   - sub-dt15/sub-dt15_ses-dt15_2960um_200206_203951_ecephys.nwb
@@ -1212,6 +1215,11 @@ tests:
   - path: sub-bruce/sub-bruce_ses-bruce_0um_210115_155615_ecephys.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-bruce/sub-bruce_ses-bruce_0um_210116_084745_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-dt15/sub-dt15_ses-dt15_3536um_200208_125719_ecephys.nwb

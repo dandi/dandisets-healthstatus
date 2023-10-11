@@ -7,7 +7,11 @@ nassets: 39
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Cori/sub-Cori_ses-20161214T120000.nwb
+  - path: sub-Cori/sub-Cori_ses-20161214T120000.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-Cori/sub-Cori_ses-20161217T120000.nwb
     versions:
       hdmf: 3.10.0
@@ -109,7 +113,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-Cori/sub-Cori_ses-20161214T120000.nwb
+  - path: sub-Cori/sub-Cori_ses-20161214T120000.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Forssmann/sub-Forssmann_ses-20171101T120000.nwb
   - path: sub-Forssmann/sub-Forssmann_ses-20171102T120000.nwb
     versions:

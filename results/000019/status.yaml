@@ -97,7 +97,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-GP33/sub-GP33_ses-GP33-B5.nwb
+  - path: sub-GP33/sub-GP33_ses-GP33-B5.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -170,7 +174,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-GP33/sub-GP33_ses-GP33-B5.nwb
+  - path: sub-GP33/sub-GP33_ses-GP33-B5.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_ok:
   - path: sub-EC2/sub-EC2_ses-EC2-B15.nwb
     versions:
