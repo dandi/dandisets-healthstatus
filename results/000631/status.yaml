@@ -1,0 +1,24 @@
+dandiset: '000631'
+dandiset_version: d168b3185cc8af1daf980614cc2f5931265a8b9f
+last_run: null
+last_run_duration: null
+last_run_ended: null
+nassets: null
+tests:
+- assets_nok: []
+  assets_ok:
+  - sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-20/sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-20_ses-600ns-4kV-0-8MHz
+    paired pulse trains_image.nwb
+  assets_timeout: []
+  name: pynwb_open_load_ns
+- assets_nok: []
+  assets_ok:
+  - sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-20/sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-20_ses-600ns-4kV-0-8MHz
+    paired pulse trains_image.nwb
+  assets_timeout: []
+  name: matnwb_nwbRead
+untested: []
+versions:
+  hdmf: 3.10.0
+  matnwb: v2.6.0.2
+  pynwb: 2.5.0

@@ -83,7 +83,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-San4/sub-San4_ses-20200302T142549_ecephys.nwb
+  - path: sub-San4/sub-San4_ses-20200302T142549_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-San4/sub-San4_ses-20200430T084358_ecephys.nwb
   - path: sub-San4/sub-San4_ses-20200430T084710_ecephys.nwb
     versions:
@@ -121,6 +125,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-Rat1/sub-Rat1_ses-20200921T124059_ecephys.nwb
+  - path: sub-San4/sub-San4_ses-20200302T142549_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_ok:
   - path: sub-Rat1/sub-Rat1_ses-20200921T124159_ecephys.nwb
     versions:
@@ -197,7 +206,6 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-San4/sub-San4_ses-20200302T142549_ecephys.nwb
   - sub-San4/sub-San4_ses-20200430T084358_ecephys.nwb
   - path: sub-San4/sub-San4_ses-20200430T084710_ecephys.nwb
     versions:

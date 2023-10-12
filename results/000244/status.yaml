@@ -107,7 +107,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-VIP15/sub-VIP15_ses-awake_ophys.nwb
+  - path: sub-VIP15/sub-VIP15_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
@@ -213,7 +217,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-VIP15/sub-VIP15_ses-awake_ophys.nwb
+  - path: sub-VIP15/sub-VIP15_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   name: matnwb_nwbRead
 untested: []
 versions:
