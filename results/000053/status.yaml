@@ -575,7 +575,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-Reeves/sub-Reeves_ses-20190717_behavior.nwb
-  - sub-Reeves/sub-Reeves_ses-20190718_behavior.nwb
+  - path: sub-Reeves/sub-Reeves_ses-20190718_behavior.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Reeves/sub-Reeves_ses-20190721_behavior.nwb
   - path: sub-Reeves/sub-Reeves_ses-20190722_behavior.nwb
     versions:
@@ -974,7 +978,6 @@ tests:
   - sub-Rascal/sub-Rascal_ses-20190716_behavior.nwb
   - sub-Rascal/sub-Rascal_ses-20190805_behavior.nwb
   - sub-Reeves/sub-Reeves_ses-20190717_behavior.nwb
-  - sub-Reeves/sub-Reeves_ses-20190718_behavior.nwb
   - sub-Reeves/sub-Reeves_ses-20190721_behavior.nwb
   - sub-Reeves/sub-Reeves_ses-20190723_behavior.nwb
   - sub-Reeves/sub-Reeves_ses-20190724_behavior.nwb
@@ -1434,6 +1437,11 @@ tests:
   - path: sub-Reeves/sub-Reeves_ses-20190716_behavior.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-Reeves/sub-Reeves_ses-20190718_behavior.nwb
+    versions:
+      hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-Reeves/sub-Reeves_ses-20190722_behavior.nwb

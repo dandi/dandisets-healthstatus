@@ -20,7 +20,6 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-Jenkins/sub-Jenkins_ses-20090916_behavior+ecephys.nwb
-  - sub-Nitschke/sub-Nitschke_ses-20090819_behavior+ecephys.nwb
   - sub-Nitschke/sub-Nitschke_ses-20090910_behavior+ecephys.nwb
   - sub-Nitschke/sub-Nitschke_ses-20090922_behavior+ecephys.nwb
   assets_ok:
@@ -30,6 +29,7 @@ tests:
   - sub-Jenkins/sub-Jenkins_ses-20090912_behavior+ecephys.nwb
   - sub-Jenkins/sub-Jenkins_ses-20090923_behavior+ecephys.nwb
   - sub-Nitschke/sub-Nitschke_ses-20090812_behavior+ecephys.nwb
+  - sub-Nitschke/sub-Nitschke_ses-20090819_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
