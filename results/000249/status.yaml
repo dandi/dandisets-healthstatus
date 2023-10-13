@@ -1207,7 +1207,11 @@ tests:
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T165714_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T170342_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T173713_ophys.nwb
-  - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T175524_ophys.nwb
+  - path: sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T175524_ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T185021_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T185441_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T191033_ophys.nwb
@@ -1851,7 +1855,6 @@ tests:
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T165714_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T170342_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T173713_ophys.nwb
-  - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T175524_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T185021_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T185441_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T191033_ophys.nwb
@@ -2438,6 +2441,11 @@ tests:
   - path: sub-OXTHALO-15/sub-OXTHALO-15_ses-20200206T185634_ophys.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T175524_ophys.nwb
+    versions:
+      hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-OXTHALO-19/sub-OXTHALO-19_ses-20200304T164257_ophys.nwb
