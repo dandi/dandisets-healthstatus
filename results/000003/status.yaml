@@ -7,7 +7,11 @@ nassets: 101
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140321_behavior+ecephys.nwb
+  - path: sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140321_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140324_behavior+ecephys.nwb
     versions:
       hdmf: 3.9.0
@@ -499,7 +503,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140321_behavior+ecephys.nwb
+  - path: sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140321_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140324_behavior+ecephys.nwb
     versions:
       hdmf: 3.9.0
