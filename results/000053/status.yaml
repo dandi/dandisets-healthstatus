@@ -663,7 +663,11 @@ tests:
   - sub-Ringo/sub-Ringo_ses-20190810_behavior.nwb
   - sub-Ringo/sub-Ringo_ses-20190811_behavior.nwb
   - sub-Ringo/sub-Ringo_ses-20190812_behavior.nwb
-  - sub-Ringo/sub-Ringo_ses-20190813_behavior.nwb
+  - path: sub-Ringo/sub-Ringo_ses-20190813_behavior.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-Ringo/sub-Ringo_ses-20190814_behavior.nwb
     versions:
       hdmf: 3.10.0
@@ -1011,7 +1015,6 @@ tests:
   - sub-Ringo/sub-Ringo_ses-20190810_behavior.nwb
   - sub-Ringo/sub-Ringo_ses-20190811_behavior.nwb
   - sub-Ringo/sub-Ringo_ses-20190812_behavior.nwb
-  - sub-Ringo/sub-Ringo_ses-20190813_behavior.nwb
   - sub-Rose/sub-Rose_ses-20190424_behavior.nwb
   - sub-Rose/sub-Rose_ses-20190425_behavior.nwb
   - sub-Rose/sub-Rose_ses-20190430_behavior.nwb
@@ -1526,6 +1529,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-Ringo/sub-Ringo_ses-20190807_behavior.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-Ringo/sub-Ringo_ses-20190813_behavior.nwb
     versions:
       hdmf: 3.10.0
       matnwb: v2.6.0.2

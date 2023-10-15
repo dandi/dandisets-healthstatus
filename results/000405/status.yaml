@@ -7,7 +7,11 @@ nassets: 276
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-s0/sub-s0_ses-Li-OF-052818.nwb
+  - path: sub-s0/sub-s0_ses-Li-OF-052818.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-s0/sub-s0_ses-Li-OF-052918.nwb
   - sub-s0/sub-s0_ses-Li-OF-053018.nwb
   - sub-s0/sub-s0_ses-Li-OF-053118.nwb
@@ -895,7 +899,11 @@ tests:
   - sub-s4/sub-s4_ses-Ca-T3g-041619.nwb
   - sub-s4/sub-s4_ses-Ca-T3g-042319.nwb
   assets_ok:
-  - sub-s0/sub-s0_ses-Li-OF-052818.nwb
+  - path: sub-s0/sub-s0_ses-Li-OF-052818.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-s0/sub-s0_ses-Li-OF-060518.nwb
     versions:
       hdmf: 3.9.0

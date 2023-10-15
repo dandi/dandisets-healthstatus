@@ -7,7 +7,11 @@ nassets: 54
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-BAYLORCD12/sub-BAYLORCD12_ses-20180125T191601.nwb
+  - path: sub-BAYLORCD12/sub-BAYLORCD12_ses-20180125T191601.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-BAYLORCD12/sub-BAYLORCD12_ses-20180126T122506.nwb
     versions:
       hdmf: 3.10.0
@@ -188,7 +192,11 @@ tests:
   - sub-anm00314758/sub-anm00314758_ses-20151020T104930.nwb
   - sub-anm00314760/sub-anm00314760_ses-20151021T164427.nwb
   assets_ok:
-  - sub-BAYLORCD12/sub-BAYLORCD12_ses-20180125T191601.nwb
+  - path: sub-BAYLORCD12/sub-BAYLORCD12_ses-20180125T191601.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-BAYLORCD12/sub-BAYLORCD12_ses-20180126T122506.nwb
     versions:
       hdmf: 3.10.0
