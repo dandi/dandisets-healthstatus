@@ -129,7 +129,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-Rat11/sub-Rat11_ses-Rat11-20150401_ecephys+image.nwb
+  - path: sub-Rat11/sub-Rat11_ses-Rat11-20150401_ecephys+image.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-Rat11/sub-Rat11_ses-Rat11-20150403_ecephys+image.nwb
     versions:
       hdmf: 3.10.0
@@ -198,7 +202,6 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-Rat11/sub-Rat11_ses-Rat11-20150401_ecephys+image.nwb
   - path: sub-Rat11/sub-Rat11_ses-Rat11-20150403_ecephys+image.nwb
     versions:
       hdmf: 3.10.0
@@ -268,6 +271,11 @@ tests:
   - sub-Rat09/sub-Rat09_ses-Rat09-20140404_ecephys+image.nwb
   - sub-Rat09/sub-Rat09_ses-Rat09-20140405_ecephys+image.nwb
   - sub-Rat09/sub-Rat09_ses-Rat09-20140407_ecephys+image.nwb
+  - path: sub-Rat11/sub-Rat11_ses-Rat11-20150401_ecephys+image.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   name: matnwb_nwbRead
 untested: []
 versions:

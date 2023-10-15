@@ -260,7 +260,11 @@ tests:
   - sub-EV84/sub-EV84_ses-20180810T150405_ophys.nwb
   - sub-EV84/sub-EV84_ses-20180810T151401_ophys.nwb
   - sub-EV84/sub-EV84_ses-20180810T152002_ophys.nwb
-  - sub-EV86/sub-EV86_ses-20180820T133354_ophys.nwb
+  - path: sub-EV86/sub-EV86_ses-20180820T133354_ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-EV86/sub-EV86_ses-20180820T134243_ophys.nwb
   - sub-EV86/sub-EV86_ses-20180820T135013_ophys.nwb
   - sub-EV86/sub-EV86_ses-20180820T141303_ophys.nwb
@@ -1372,7 +1376,6 @@ tests:
   - sub-EV84/sub-EV84_ses-20180810T150405_ophys.nwb
   - sub-EV84/sub-EV84_ses-20180810T151401_ophys.nwb
   - sub-EV84/sub-EV84_ses-20180810T152002_ophys.nwb
-  - sub-EV86/sub-EV86_ses-20180820T133354_ophys.nwb
   - sub-EV86/sub-EV86_ses-20180820T134243_ophys.nwb
   - sub-EV86/sub-EV86_ses-20180820T141303_ophys.nwb
   - sub-EV86/sub-EV86_ses-20180820T142636_ophys.nwb
@@ -1991,6 +1994,11 @@ tests:
   - path: sub-EV84/sub-EV84_ses-20180810T142153_ophys.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-EV86/sub-EV86_ses-20180820T133354_ophys.nwb
+    versions:
+      hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-EV86/sub-EV86_ses-20180820T135013_ophys.nwb
