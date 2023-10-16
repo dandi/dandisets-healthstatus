@@ -183,7 +183,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-lkbz_ophys.nwb
-  - sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-t1qx9y_ophys.nwb
+  - path: sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-t1qx9y_ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -364,7 +368,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-lkbz_ophys.nwb
-  - sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-t1qx9y_ophys.nwb
+  - path: sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-t1qx9y_ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

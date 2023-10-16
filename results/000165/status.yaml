@@ -707,7 +707,11 @@ tests:
       pynwb: 2.5.0
   - sub-Pepper/sub-Pepper_ses-Pepper06-LinearTrack_behavior+ecephys.nwb
   - sub-Picard/sub-Picard_ses-Picard08-HomeCage_behavior+ecephys.nwb
-  - sub-Picard/sub-Picard_ses-Picard09-HomeCage_behavior+ecephys.nwb
+  - path: sub-Picard/sub-Picard_ses-Picard09-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Picard/sub-Picard_ses-Picard10-HomeCage_behavior+ecephys.nwb
   - sub-Picard/sub-Picard_ses-Picard12-HomeCage_behavior+ecephys.nwb
   - path: sub-Picard/sub-Picard_ses-Picard15-HomeCage_behavior+ecephys.nwb
@@ -1634,7 +1638,6 @@ tests:
       pynwb: 2.5.0
   - sub-Pepper/sub-Pepper_ses-Pepper06-LinearTrack_behavior+ecephys.nwb
   - sub-Picard/sub-Picard_ses-Picard08-HomeCage_behavior+ecephys.nwb
-  - sub-Picard/sub-Picard_ses-Picard09-HomeCage_behavior+ecephys.nwb
   - sub-Picard/sub-Picard_ses-Picard10-HomeCage_behavior+ecephys.nwb
   - sub-Picard/sub-Picard_ses-Picard12-HomeCage_behavior+ecephys.nwb
   - sub-Picard/sub-Picard_ses-Picard16-HomeCage_behavior+ecephys.nwb
@@ -1972,6 +1975,11 @@ tests:
   - path: sub-Paprika/sub-Paprika_ses-Paprika01-LinearTrack_behavior+ecephys.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-Picard/sub-Picard_ses-Picard09-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-Provence/sub-Provence_ses-Provence05-LinearTrack_behavior+ecephys.nwb

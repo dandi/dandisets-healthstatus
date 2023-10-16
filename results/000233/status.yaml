@@ -7,7 +7,11 @@ nassets: 345
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-CGM1/sub-CGM1_ses-CGM1-0um-181130-112307_ecephys.nwb
+  - path: sub-CGM1/sub-CGM1_ses-CGM1-0um-181130-112307_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-CGM1/sub-CGM1_ses-CGM1-144um-181130-121628_ecephys.nwb
   - sub-CGM1/sub-CGM1_ses-CGM1-288um-181130-123859_ecephys.nwb
   - sub-CGM1/sub-CGM1_ses-CGM1-432um-181130-143939_ecephys.nwb
@@ -787,7 +791,6 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-CGM1/sub-CGM1_ses-CGM1-0um-181130-112307_ecephys.nwb
   - sub-CGM1/sub-CGM1_ses-CGM1-144um-181130-121628_ecephys.nwb
   - sub-CGM1/sub-CGM1_ses-CGM1-288um-181130-123859_ecephys.nwb
   - sub-CGM1/sub-CGM1_ses-CGM1-432um-181130-143939_ecephys.nwb
@@ -1038,6 +1041,11 @@ tests:
   - sub-ros/sub-ros_ses-ros_210319_163951_ecephys.nwb
   - sub-ros/sub-ros_ses-ros_210324_085014_ecephys.nwb
   assets_ok:
+  - path: sub-CGM1/sub-CGM1_ses-CGM1-0um-181130-112307_ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-CGM1/sub-CGM1_ses-CGM1_144um_181130_121628_ecephys.nwb
   - path: sub-CGM1/sub-CGM1_ses-CGM1_288um_181130_123859_ecephys.nwb
     versions:
