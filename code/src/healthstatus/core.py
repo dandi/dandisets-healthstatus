@@ -49,13 +49,13 @@ class VersionedPath(BaseModel):
 
 
 class TestStatus(BaseModel):
+    name: str
     assets_nok: Sequence[Union[str, VersionedPath]] = Field(default_factory=list)
     assets_nok_lineno: Optional[int] = Field(default=None, exclude=True)
     assets_ok: Sequence[Union[str, VersionedPath]] = Field(default_factory=list)
     assets_ok_lineno: Optional[int] = Field(default=None, exclude=True)
     assets_timeout: Sequence[Union[str, VersionedPath]] = Field(default_factory=list)
     assets_timeout_lineno: Optional[int] = Field(default=None, exclude=True)
-    name: str
 
     def counts(self) -> tuple[int, int, int]:
         return (len(self.assets_ok), len(self.assets_nok), len(self.assets_timeout))
