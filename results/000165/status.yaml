@@ -96,7 +96,11 @@ tests:
   - sub-Basil/sub-Basil_ses-Basil03-LinearTrack_behavior+ecephys.nwb
   - sub-Basil/sub-Basil_ses-Basil04-HomeCage_behavior+ecephys.nwb
   - sub-Basil/sub-Basil_ses-Basil04-LinearTrack_behavior+ecephys.nwb
-  - sub-Basil/sub-Basil_ses-Basil05-HomeCage_behavior+ecephys.nwb
+  - path: sub-Basil/sub-Basil_ses-Basil05-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-Basil/sub-Basil_ses-Basil05_LinearTrack_behavior+ecephys.nwb
     versions:
       hdmf: 3.9.0
@@ -1122,7 +1126,11 @@ tests:
   - sub-Basil/sub-Basil_ses-Basil03-LinearTrack_behavior+ecephys.nwb
   - sub-Basil/sub-Basil_ses-Basil04-HomeCage_behavior+ecephys.nwb
   - sub-Basil/sub-Basil_ses-Basil04-LinearTrack_behavior+ecephys.nwb
-  - sub-Basil/sub-Basil_ses-Basil05-HomeCage_behavior+ecephys.nwb
+  - path: sub-Basil/sub-Basil_ses-Basil05-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-Basil/sub-Basil_ses-Basil05_LinearTrack_behavior+ecephys.nwb
     versions:
       hdmf: 3.9.0
