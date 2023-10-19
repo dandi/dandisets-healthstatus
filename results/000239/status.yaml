@@ -167,7 +167,11 @@ tests:
   - sub-MX180601/sub-MX180601_ses-20180726T131239_behavior.nwb
   - sub-MX180601/sub-MX180601_ses-20180727T130005.nwb
   - sub-MX180601/sub-MX180601_ses-20180727T130005_behavior.nwb
-  - sub-MX180601/sub-MX180601_ses-20180728T140319.nwb
+  - path: sub-MX180601/sub-MX180601_ses-20180728T140319.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-MX180601/sub-MX180601_ses-20180728T140319_behavior.nwb
   - sub-MX180601/sub-MX180601_ses-20180729T120132.nwb
   - sub-MX180602/sub-MX180602_ses-20180617T143646.nwb
@@ -1318,7 +1322,6 @@ tests:
   - sub-MX180601/sub-MX180601_ses-20180726T131239_behavior.nwb
   - sub-MX180601/sub-MX180601_ses-20180727T130005.nwb
   - sub-MX180601/sub-MX180601_ses-20180727T130005_behavior.nwb
-  - sub-MX180601/sub-MX180601_ses-20180728T140319.nwb
   - sub-MX180601/sub-MX180601_ses-20180728T140319_behavior.nwb
   - sub-MX180601/sub-MX180601_ses-20180729T120132.nwb
   - sub-MX180602/sub-MX180602_ses-20180617T143646.nwb
@@ -1948,6 +1951,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-MX180601/sub-MX180601_ses-20180722T130108.nwb
+  - path: sub-MX180601/sub-MX180601_ses-20180728T140319.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-MX180602/sub-MX180602_ses-20180625T113748.nwb
     versions:
       hdmf: 3.9.0

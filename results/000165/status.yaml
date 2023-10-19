@@ -778,7 +778,11 @@ tests:
   - sub-Riker/sub-Riker_ses-Riker09-HomeCage_behavior+ecephys.nwb
   - sub-Riker/sub-Riker_ses-Riker10-HomeCage_behavior+ecephys.nwb
   - sub-Riker/sub-Riker_ses-Riker12-HomeCage_behavior+ecephys.nwb
-  - sub-Riker/sub-Riker_ses-Riker15-HomeCage_behavior+ecephys.nwb
+  - path: sub-Riker/sub-Riker_ses-Riker15-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-Riker/sub-Riker_ses-Riker16-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.10.0
@@ -1686,7 +1690,6 @@ tests:
   - sub-Riker/sub-Riker_ses-Riker09-HomeCage_behavior+ecephys.nwb
   - sub-Riker/sub-Riker_ses-Riker10-HomeCage_behavior+ecephys.nwb
   - sub-Riker/sub-Riker_ses-Riker12-HomeCage_behavior+ecephys.nwb
-  - sub-Riker/sub-Riker_ses-Riker15-HomeCage_behavior+ecephys.nwb
   - sub-Riker/sub-Riker_ses-Riker17-HomeCage_behavior+ecephys.nwb
   - sub-Rolypoly/sub-Rolypoly_ses-Rolypoly01-HomeCage_behavior+ecephys.nwb
   - sub-Rolypoly/sub-Rolypoly_ses-Rolypoly02-HomeCage_behavior+ecephys.nwb
@@ -2085,6 +2088,11 @@ tests:
   - path: sub-Picard/sub-Picard_ses-Picard15-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-Riker/sub-Riker_ses-Riker15-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-Thyme/sub-Thyme_ses-Thyme05-LinearTrack_behavior+ecephys.nwb

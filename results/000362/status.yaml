@@ -7,7 +7,11 @@ nassets: 52
 tests:
 - assets_nok: []
   assets_ok:
-  - jGCaMP8f/jGCaMP8f_ANM471993_cell01.nwb
+  - path: jGCaMP8f/jGCaMP8f_ANM471993_cell01.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: jGCaMP8f/jGCaMP8f_ANM471993_cell02.nwb
     versions:
       hdmf: 3.10.0
@@ -178,7 +182,6 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - jGCaMP8f/jGCaMP8f_ANM471993_cell01.nwb
   - path: jGCaMP8f/jGCaMP8f_ANM471993_cell02.nwb
     versions:
       hdmf: 3.10.0
@@ -228,6 +231,11 @@ tests:
   - jGCaMP8f/jGCaMP8f_ANM471994_cell08.nwb
   - jGCaMP8m/jGCaMP8m_ANM472180_cell05.nwb
   assets_timeout:
+  - path: jGCaMP8f/jGCaMP8f_ANM471993_cell01.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - jGCaMP8f/jGCaMP8f_ANM471994_cell01.nwb
   - path: jGCaMP8f/jGCaMP8f_ANM471994_cell02.nwb
     versions:
