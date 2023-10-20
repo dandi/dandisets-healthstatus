@@ -10,10 +10,10 @@ tests:
   - sub-tg19/sub-tg19_behavior+ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-tg19/sub-tg19_behavior+ophys.nwb
+- assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-tg19/sub-tg19_behavior+ophys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

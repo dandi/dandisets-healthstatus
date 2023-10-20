@@ -214,7 +214,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-R6/sub-R6_ses-20200210T210000_obj-1t1rfdq_behavior+ophys.nwb
-  - sub-R6/sub-R6_ses-20200210T210000_obj-qb15q4_ophys.nwb
+  - path: sub-R6/sub-R6_ses-20200210T210000_obj-qb15q4_ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-R6/sub-R6_ses-20200210T210000_obj-r0awni_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
@@ -428,7 +432,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-R6/sub-R6_ses-20200210T210000_obj-1t1rfdq_behavior+ophys.nwb
-  - sub-R6/sub-R6_ses-20200210T210000_obj-qb15q4_ophys.nwb
+  - path: sub-R6/sub-R6_ses-20200210T210000_obj-qb15q4_ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-R6/sub-R6_ses-20200210T210000_obj-r0awni_ophys.nwb
   name: matnwb_nwbRead
 untested: []

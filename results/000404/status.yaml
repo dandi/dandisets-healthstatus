@@ -24,7 +24,6 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-monk-g/sub-monk-g_ses-session5.nwb
-  - sub-monk-g/sub-monk-g_ses-session6.nwb
   - sub-monk-j/sub-monk-j_ses-session0.nwb
   assets_ok:
   - sub-monk-g/sub-monk-g_ses-session0.nwb
@@ -37,7 +36,8 @@ tests:
   - sub-monk-j/sub-monk-j_ses-session1.nwb
   - sub-monk-j/sub-monk-j_ses-session2.nwb
   - sub-monk-j/sub-monk-j_ses-session3.nwb
-  assets_timeout: []
+  assets_timeout:
+  - sub-monk-g/sub-monk-g_ses-session6.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

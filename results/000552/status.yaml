@@ -10,10 +10,10 @@ tests:
   - sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210319_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210319_behavior+ecephys.nwb
+- assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210319_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
