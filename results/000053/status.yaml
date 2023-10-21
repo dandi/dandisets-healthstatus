@@ -547,7 +547,11 @@ tests:
   - sub-Pinky/sub-Pinky_ses-20191106_obj-luu3aw_behavior.nwb
   - sub-Pinky/sub-Pinky_ses-20191106_obj-xjieli_behavior.nwb
   - sub-Rascal/sub-Rascal_ses-20190531_behavior.nwb
-  - sub-Rascal/sub-Rascal_ses-20190604_behavior.nwb
+  - path: sub-Rascal/sub-Rascal_ses-20190604_behavior.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Rascal/sub-Rascal_ses-20190605_behavior.nwb
   - path: sub-Rascal/sub-Rascal_ses-20190611_behavior.nwb
     versions:
@@ -1001,7 +1005,6 @@ tests:
   - sub-Pinky/sub-Pinky_ses-20191106_obj-luu3aw_behavior.nwb
   - sub-Pinky/sub-Pinky_ses-20191106_obj-xjieli_behavior.nwb
   - sub-Rascal/sub-Rascal_ses-20190531_behavior.nwb
-  - sub-Rascal/sub-Rascal_ses-20190604_behavior.nwb
   - sub-Rascal/sub-Rascal_ses-20190605_behavior.nwb
   - sub-Rascal/sub-Rascal_ses-20190612_behavior.nwb
   - sub-Rascal/sub-Rascal_ses-20190613_behavior.nwb
@@ -1465,6 +1468,11 @@ tests:
   - path: sub-Pinky/sub-Pinky_ses-20191106_obj-98sunb_behavior.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-Rascal/sub-Rascal_ses-20190604_behavior.nwb
+    versions:
+      hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-Rascal/sub-Rascal_ses-20190611_behavior.nwb
