@@ -89,7 +89,11 @@ tests:
   - sub-Bashir/sub-Bashir_ses-Bashir06-HomeCage_behavior+ecephys.nwb
   - sub-Bashir/sub-Bashir_ses-Bashir07_HomeCage_behavior+ecephys.nwb
   - sub-Basil/sub-Basil_ses-Basil01-HomeCage_behavior+ecephys.nwb
-  - sub-Basil/sub-Basil_ses-Basil01-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Basil/sub-Basil_ses-Basil01-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Basil/sub-Basil_ses-Basil02-HomeCage_behavior+ecephys.nwb
   - sub-Basil/sub-Basil_ses-Basil02-LinearTrack_behavior+ecephys.nwb
   - sub-Basil/sub-Basil_ses-Basil03-HomeCage_behavior+ecephys.nwb
@@ -1139,7 +1143,6 @@ tests:
   - sub-Bashir/sub-Bashir_ses-Bashir06-HomeCage_behavior+ecephys.nwb
   - sub-Bashir/sub-Bashir_ses-Bashir07_HomeCage_behavior+ecephys.nwb
   - sub-Basil/sub-Basil_ses-Basil01-HomeCage_behavior+ecephys.nwb
-  - sub-Basil/sub-Basil_ses-Basil01-LinearTrack_behavior+ecephys.nwb
   - sub-Basil/sub-Basil_ses-Basil02-HomeCage_behavior+ecephys.nwb
   - sub-Basil/sub-Basil_ses-Basil02-LinearTrack_behavior+ecephys.nwb
   - sub-Basil/sub-Basil_ses-Basil03-HomeCage_behavior+ecephys.nwb
@@ -1918,6 +1921,11 @@ tests:
   - path: sub-Adobo/sub-Adobo_ses-Adobo03-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-Basil/sub-Basil_ses-Basil01-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-Beverly/sub-Beverly_ses-Beverly15-HomeCage_behavior+ecephys.nwb
