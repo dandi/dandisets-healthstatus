@@ -109,7 +109,11 @@ tests:
   - sub-Crocus/sub-Crocus_ses-20190129_behavior.nwb
   - sub-Crocus/sub-Crocus_ses-20190208_behavior.nwb
   - sub-Daisy/sub-Daisy_ses-20190425_behavior.nwb
-  - sub-Daisy/sub-Daisy_ses-20190426_behavior.nwb
+  - path: sub-Daisy/sub-Daisy_ses-20190426_behavior.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Daisy/sub-Daisy_ses-20190430_behavior.nwb
   - path: sub-Daisy/sub-Daisy_ses-20190501_behavior.nwb
     versions:
@@ -874,7 +878,6 @@ tests:
   - sub-Crocus/sub-Crocus_ses-20190129_behavior.nwb
   - sub-Crocus/sub-Crocus_ses-20190208_behavior.nwb
   - sub-Daisy/sub-Daisy_ses-20190425_behavior.nwb
-  - sub-Daisy/sub-Daisy_ses-20190426_behavior.nwb
   - sub-Daisy/sub-Daisy_ses-20190430_behavior.nwb
   - sub-Daisy/sub-Daisy_ses-20190502_behavior.nwb
   - sub-Daisy/sub-Daisy_ses-20190506_behavior.nwb
@@ -1166,6 +1169,11 @@ tests:
   - path: sub-Case/sub-Case_ses-20191110_behavior.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-Daisy/sub-Daisy_ses-20190426_behavior.nwb
+    versions:
+      hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-Daisy/sub-Daisy_ses-20190501_behavior.nwb

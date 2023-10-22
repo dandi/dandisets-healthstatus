@@ -25,7 +25,6 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-M43/sub-M43_ses-20201203T150431_behavior+ecephys.nwb
-  - sub-M45/sub-M45_ses-20201209T141009_behavior+ecephys.nwb
   - sub-M50/sub-M50_ses-20211026T152836_behavior+ecephys.nwb
   assets_ok: []
   assets_timeout:
@@ -39,6 +38,7 @@ tests:
   - sub-M41/sub-M41_ses-20201127T144127_behavior+ecephys.nwb
   - sub-M42/sub-M42_ses-20201201T143600_behavior+ecephys.nwb
   - sub-M44/sub-M44_ses-20201207T155850_behavior+ecephys.nwb
+  - sub-M45/sub-M45_ses-20201209T141009_behavior+ecephys.nwb
   - sub-M52/sub-M52_ses-20211102T155806_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []
