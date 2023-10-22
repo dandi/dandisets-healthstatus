@@ -202,7 +202,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-jf42400/sub-jf42400_ses-20100615_behavior+icephys.nwb
+  - path: sub-jf42400/sub-jf42400_ses-20100615_behavior+icephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -392,7 +396,11 @@ tests:
       pynwb: 2.5.0
   - sub-jf37166/sub-jf37166_ses-20100304_behavior+icephys.nwb
   - sub-jf42400/sub-jf42400_ses-20100612_behavior+icephys.nwb
-  - sub-jf42400/sub-jf42400_ses-20100615_behavior+icephys.nwb
+  - path: sub-jf42400/sub-jf42400_ses-20100615_behavior+icephys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout:
   - path: sub-anm226694/sub-anm226694_ses-20140225_behavior+icephys+ogen.nwb
     versions:
