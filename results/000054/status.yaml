@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-F1/sub-F1_ses-20190407T210000_behavior+ophys.nwb
-  - sub-F1/sub-F1_ses-20190409T210000_behavior+ophys.nwb
+  - path: sub-F1/sub-F1_ses-20190409T210000_behavior+ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-F1/sub-F1_ses-20190411T210000_behavior+ophys.nwb
     versions:
       hdmf: 3.10.0
@@ -247,7 +251,11 @@ tests:
   - sub-R2/sub-R2_ses-20190206T210000_ophys.nwb
   assets_timeout:
   - sub-F1/sub-F1_ses-20190407T210000_behavior+ophys.nwb
-  - sub-F1/sub-F1_ses-20190409T210000_behavior+ophys.nwb
+  - path: sub-F1/sub-F1_ses-20190409T210000_behavior+ophys.nwb
+    versions:
+      hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-F1/sub-F1_ses-20190411T210000_behavior+ophys.nwb
     versions:
       hdmf: 3.10.0
