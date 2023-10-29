@@ -57,7 +57,6 @@ tests:
   - sub-GP31/sub-GP31_ses-GP31-B4.nwb
   - sub-GP31/sub-GP31_ses-GP31-B6.nwb
   - sub-GP31/sub-GP31_ses-GP31-B63.nwb
-  - sub-GP31/sub-GP31_ses-GP31-B67.nwb
   - sub-GP31/sub-GP31_ses-GP31-B69.nwb
   - sub-GP31/sub-GP31_ses-GP31-B78.nwb
   - sub-GP31/sub-GP31_ses-GP31-B83.nwb
@@ -73,7 +72,8 @@ tests:
   - sub-GP31/sub-GP31_ses-GP31-B65.nwb
   - sub-GP31/sub-GP31_ses-GP31-B71.nwb
   - sub-GP31/sub-GP31_ses-GP31-B82.nwb
-  assets_timeout: []
+  assets_timeout:
+  - sub-GP31/sub-GP31_ses-GP31-B67.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

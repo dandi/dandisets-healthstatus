@@ -59,7 +59,6 @@ tests:
   - sub-EE/sub-EE_ses-EE-082_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-084_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-085_ecephys.nwb
-  - sub-EE/sub-EE_ses-EE-087_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-089_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-196_behavior+ecephys.nwb
   - sub-FF/sub-FF_ses-FF-103_behavior+ecephys.nwb
@@ -67,7 +66,8 @@ tests:
   - sub-GG/sub-GG_ses-GG-063_behavior+ecephys.nwb
   - sub-GG/sub-GG_ses-GG-069_behavior+ecephys.nwb
   - sub-GG/sub-GG_ses-GG-097_behavior+ecephys.nwb
-  assets_timeout: []
+  assets_timeout:
+  - sub-EE/sub-EE_ses-EE-087_ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

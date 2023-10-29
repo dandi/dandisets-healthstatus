@@ -476,11 +476,6 @@ tests:
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170626102537.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170628084013.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170703034632.nwb
-  - path: sub-mouse4-fni19/sub-mouse4-fni19_ses-170703043500.nwb
-    versions:
-      hdmf: 3.9.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
   - path: sub-mouse4-fni19/sub-mouse4-fni19_ses-170707064900.nwb
     versions:
       hdmf: 3.9.0
@@ -565,6 +560,11 @@ tests:
   - path: sub-mouse4-fni19/sub-mouse4-fni19_ses-170625160521.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-mouse4-fni19/sub-mouse4-fni19_ses-170703043500.nwb
+    versions:
+      hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   name: pynwb_open_load_ns
@@ -1087,7 +1087,7 @@ tests:
       pynwb: 2.5.0
   - path: sub-mouse4-fni19/sub-mouse4-fni19_ses-170703043500.nwb
     versions:
-      hdmf: 3.9.0
+      hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-mouse4-fni19/sub-mouse4-fni19_ses-170707064900.nwb
