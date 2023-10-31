@@ -7,13 +7,21 @@ nassets: 2
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Jenkins/sub-Jenkins_ses-large_desc-test_ecephys.nwb
+  - path: sub-Jenkins/sub-Jenkins_ses-large_desc-test_ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Jenkins/sub-Jenkins_ses-large_desc-train_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-Jenkins/sub-Jenkins_ses-large_desc-test_ecephys.nwb
-  assets_ok: []
+- assets_nok: []
+  assets_ok:
+  - path: sub-Jenkins/sub-Jenkins_ses-large_desc-test_ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout:
   - sub-Jenkins/sub-Jenkins_ses-large_desc-train_behavior+ecephys.nwb
   name: matnwb_nwbRead

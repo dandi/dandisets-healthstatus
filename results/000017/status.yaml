@@ -41,7 +41,11 @@ tests:
   - sub-Richards/sub-Richards_ses-20171031T120000.nwb
   - sub-Richards/sub-Richards_ses-20171101T120000.nwb
   - sub-Richards/sub-Richards_ses-20171102T120000.nwb
-  - sub-Tatum/sub-Tatum_ses-20171206T120000.nwb
+  - path: sub-Tatum/sub-Tatum_ses-20171206T120000.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Tatum/sub-Tatum_ses-20171207T120000.nwb
   - sub-Tatum/sub-Tatum_ses-20171208T120000.nwb
   - sub-Tatum/sub-Tatum_ses-20171209T120000.nwb
@@ -66,7 +70,6 @@ tests:
   - sub-Radnitz/sub-Radnitz_ses-20170112T120000.nwb
   - sub-Richards/sub-Richards_ses-20171029T120000.nwb
   - sub-Richards/sub-Richards_ses-20171101T120000.nwb
-  - sub-Tatum/sub-Tatum_ses-20171206T120000.nwb
   - sub-Tatum/sub-Tatum_ses-20171207T120000.nwb
   - sub-Tatum/sub-Tatum_ses-20171208T120000.nwb
   - sub-Tatum/sub-Tatum_ses-20171209T120000.nwb
@@ -90,6 +93,11 @@ tests:
   - sub-Moniz/sub-Moniz_ses-20170518T120000.nwb
   - sub-Radnitz/sub-Radnitz_ses-20170111T120000.nwb
   - sub-Richards/sub-Richards_ses-20171030T120000.nwb
+  - path: sub-Tatum/sub-Tatum_ses-20171206T120000.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   name: matnwb_nwbRead
 untested: []
 versions:

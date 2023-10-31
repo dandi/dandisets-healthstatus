@@ -10,13 +10,13 @@ tests:
   - sub-rbp4-jRGECO1a-21/sub-rbp4-jRGECO1a-21_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok:
+- assets_nok:
   - sub-rbp4-jRGECO1a-21/sub-rbp4-jRGECO1a-21_ophys.nwb
+  assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.10.0
+  hdmf: 3.11.0
   matnwb: v2.6.0.2
   pynwb: 2.5.0
