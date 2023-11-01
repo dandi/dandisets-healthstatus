@@ -33,7 +33,11 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-3445/sub-3445_ses-20210814T223214_ecephys+ophys.nwb
+  - path: sub-3445/sub-3445_ses-20210814T223214_ecephys+ophys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-3445/sub-3445_ses-20210814T223641_ecephys+ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
@@ -66,7 +70,11 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-3445/sub-3445_ses-20210814T223214_ecephys+ophys.nwb
+  - path: sub-3445/sub-3445_ses-20210814T223214_ecephys+ophys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-3445/sub-3445_ses-20210814T223641_ecephys+ophys.nwb
   name: matnwb_nwbRead
 untested: []

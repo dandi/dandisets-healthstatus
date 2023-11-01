@@ -52,7 +52,11 @@ tests:
       pynwb: 2.5.0
   - sub-Tatum/sub-Tatum_ses-20171207T120000.nwb
   - sub-Tatum/sub-Tatum_ses-20171208T120000.nwb
-  - sub-Tatum/sub-Tatum_ses-20171209T120000.nwb
+  - path: sub-Tatum/sub-Tatum_ses-20171209T120000.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Theiler/sub-Theiler_ses-20171011T120000.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
@@ -80,7 +84,11 @@ tests:
   - sub-Richards/sub-Richards_ses-20171101T120000.nwb
   - sub-Tatum/sub-Tatum_ses-20171207T120000.nwb
   - sub-Tatum/sub-Tatum_ses-20171208T120000.nwb
-  - sub-Tatum/sub-Tatum_ses-20171209T120000.nwb
+  - path: sub-Tatum/sub-Tatum_ses-20171209T120000.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Theiler/sub-Theiler_ses-20171011T120000.nwb
   assets_ok:
   - sub-Cori/sub-Cori_ses-20161217T120000.nwb
