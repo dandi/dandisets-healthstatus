@@ -7,7 +7,11 @@ nassets: 513
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-213/sub-213_ses-DAsensor-VS-VR-SPD-5.nwb
+  - path: sub-213/sub-213_ses-DAsensor-VS-VR-SPD-5.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-213/sub-213_ses-DAsensor-VS-VR-THREE-TP-4.nwb
   - sub-213/sub-213_ses-DAsensor-VS-VR-TP-PAUSE-5.nwb
   - path: sub-214/sub-214_ses-DAsensor-VS-VR-TP-PAUSE-6.nwb
@@ -17,9 +21,13 @@ tests:
       pynwb: 2.5.0
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-213/sub-213_ses-DAsensor-VS-VR-SPD-5.nwb
+- assets_nok: []
   assets_ok:
+  - path: sub-213/sub-213_ses-DAsensor-VS-VR-SPD-5.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-213/sub-213_ses-DAsensor-VS-VR-THREE-TP-4.nwb
   - sub-213/sub-213_ses-DAsensor-VS-VR-TP-PAUSE-5.nwb
   - path: sub-214/sub-214_ses-DAsensor-VS-VR-TP-PAUSE-6.nwb

@@ -5,9 +5,13 @@ last_run_duration: 12362.457066
 last_run_ended: '2023-02-04T13:32:48.760709-05:00'
 nassets: 31
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-EC2/sub-EC2_ses-EC2-B1.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_ok:
-  - sub-EC2/sub-EC2_ses-EC2-B1.nwb
   - sub-EC2/sub-EC2_ses-EC2-B105.nwb
   - sub-EC2/sub-EC2_ses-EC2-B15.nwb
   - sub-EC2/sub-EC2_ses-EC2-B76.nwb
@@ -45,6 +49,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-EC2/sub-EC2_ses-EC2-B1.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-EC2/sub-EC2_ses-EC2-B105.nwb
   - sub-EC2/sub-EC2_ses-EC2-B76.nwb
   - sub-EC2/sub-EC2_ses-EC2-B8.nwb
@@ -74,7 +83,6 @@ tests:
   - sub-GP33/sub-GP33_ses-GP33-B30.nwb
   - sub-GP33/sub-GP33_ses-GP33-B5.nwb
   assets_ok:
-  - sub-EC2/sub-EC2_ses-EC2-B1.nwb
   - sub-EC2/sub-EC2_ses-EC2-B15.nwb
   - sub-GP31/sub-GP31_ses-GP31-B2.nwb
   - sub-GP31/sub-GP31_ses-GP31-B21.nwb
