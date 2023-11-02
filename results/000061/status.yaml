@@ -61,7 +61,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-Rat11/sub-Rat11_ses-Rat11-20150331_ecephys+image.nwb
-  - sub-Rat11/sub-Rat11_ses-Rat11-20150401_ecephys+image.nwb
+  - path: sub-Rat11/sub-Rat11_ses-Rat11-20150401_ecephys+image.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Rat11/sub-Rat11_ses-Rat11-20150403_ecephys+image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
@@ -123,7 +127,11 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-Rat11/sub-Rat11_ses-Rat11-20150401_ecephys+image.nwb
+  - path: sub-Rat11/sub-Rat11_ses-Rat11-20150401_ecephys+image.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   name: matnwb_nwbRead
 untested: []
 versions:
