@@ -629,7 +629,11 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-anm324792/sub-anm324792_ses-20170520T193555_behavior+icephys+ogen.nwb
+  - path: sub-anm324792/sub-anm324792_ses-20170520T193555_behavior+icephys+ogen.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-anm324792/sub-anm324792_ses-20170520T193731_behavior+icephys+ogen.nwb
     versions:
       hdmf: 3.10.0
@@ -822,7 +826,6 @@ tests:
   - sub-anm323953/sub-anm323953_ses-20170520T190618_behavior+icephys+ogen.nwb
   - sub-anm324791/sub-anm324791_ses-20170520T191415_behavior+icephys+ogen.nwb
   - sub-anm324791/sub-anm324791_ses-20170520T192447_behavior+icephys+ogen.nwb
-  - sub-anm324792/sub-anm324792_ses-20170520T193555_behavior+icephys+ogen.nwb
   assets_ok:
   - path: sub-anm00229327/sub-anm00229327_ses-20170627T093438_ecephys.nwb
     versions:
@@ -1276,6 +1279,11 @@ tests:
   - path: sub-anm323952/sub-anm323952_ses-20170520T184934_behavior+icephys+ogen.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-anm324792/sub-anm324792_ses-20170520T193555_behavior+icephys+ogen.nwb
+    versions:
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   name: matnwb_nwbRead

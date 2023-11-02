@@ -7,7 +7,11 @@ nassets: 36
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-H17.03.013/sub-H17.03.013_ses-636982248_icephys.nwb
+  - path: sub-H17.03.013/sub-H17.03.013_ses-636982248_icephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-H17.03.013/sub-H17.03.013_ses-636991746_icephys.nwb
   - sub-H17.06.013/sub-H17.06.013_ses-643583112_icephys.nwb
   - sub-H17.26.003/sub-H17.26.003_ses-650074243_icephys.nwb
@@ -58,7 +62,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-H17.03.013/sub-H17.03.013_ses-636982248_icephys.nwb
+  - path: sub-H17.03.013/sub-H17.03.013_ses-636982248_icephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-H17.03.013/sub-H17.03.013_ses-636991746_icephys.nwb
   - sub-H17.06.013/sub-H17.06.013_ses-643583112_icephys.nwb
   - sub-H17.26.003/sub-H17.26.003_ses-650074243_icephys.nwb
