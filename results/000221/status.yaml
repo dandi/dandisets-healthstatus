@@ -5,7 +5,12 @@ last_run_duration: 909704.728126
 last_run_ended: '2023-03-02T14:20:10.849835-05:00'
 nassets: 263
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-SC020/sub-SC020_ses-SC020-040319_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_ok:
   - path: sub-HI159/sub-HI159_ecephys+ogen.nwb
     versions:
@@ -710,7 +715,6 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-SC020/sub-SC020_ses-SC020-040319_ecephys+ogen.nwb
   - path: sub-SC020/sub-SC020_ses-SC020-040419_ecephys+ogen.nwb
     versions:
       hdmf: 3.10.0
@@ -877,7 +881,11 @@ tests:
   - sub-SC009/sub-SC009_ses-SC009-112518_ecephys+ogen.nwb
   - sub-SC009/sub-SC009_ses-SC009-112718_ecephys+ogen.nwb
   - sub-SC009/sub-SC009_ses-SC009-112818_ecephys+ogen.nwb
-  - sub-SC020/sub-SC020_ses-SC020-040319_ecephys+ogen.nwb
+  - path: sub-SC020/sub-SC020_ses-SC020-040319_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-SC020/sub-SC020_ses-SC020-040519_ecephys+ogen.nwb
   - sub-SC020/sub-SC020_ses-SC020-040619_ecephys+ogen.nwb
   - sub-SC020/sub-SC020_ses-SC020-040719_ecephys+ogen.nwb

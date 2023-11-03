@@ -5,7 +5,12 @@ last_run_duration: 407825.401445
 last_run_ended: '2023-02-25T06:10:29.166832-05:00'
 nassets: 60
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-KSt117/sub-KSt117_ses-20150629T120000_behavior.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_ok:
   - sub-KSm30/sub-KSm30_ses-20160831T120000_behavior.nwb
   - path: sub-KSm31/sub-KSm31_ses-20160824T120000_behavior.nwb
@@ -109,7 +114,6 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-KSt117/sub-KSt117_ses-20150629T120000_behavior.nwb
   - path: sub-KSt119/sub-KSt119_ses-20150703T120000_behavior.nwb
     versions:
       hdmf: 3.10.0
@@ -245,7 +249,12 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-KSt117/sub-KSt117_ses-20150629T120000_behavior.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_ok: []
   assets_timeout:
   - path: sub-KSm11/sub-KSm11_ses-20160616T120000_behavior.nwb
@@ -317,7 +326,6 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-KSt117/sub-KSt117_ses-20150629T120000_behavior.nwb
   - path: sub-KSt119/sub-KSt119_ses-20150702T120000_behavior.nwb
     versions:
       hdmf: 3.10.0

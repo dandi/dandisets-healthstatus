@@ -5,7 +5,12 @@ last_run_duration: 38856.607806
 last_run_ended: '2023-02-26T18:48:43.237343-05:00'
 nassets: 72
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1pgfsq2_ophys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_ok:
   - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-10xaxmr_ophys.nwb
   - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-18ryofc_ophys.nwb
@@ -91,7 +96,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-180hxgx_ophys.nwb
-  - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1pgfsq2_ophys.nwb
   - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1y5iyhl_ophys.nwb
     versions:
       hdmf: 3.10.0
@@ -265,6 +269,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
+  - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1pgfsq2_ophys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-13tfg1g_ophys.nwb
     versions:
       hdmf: 3.10.0
@@ -344,7 +353,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-180hxgx_ophys.nwb
-  - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1pgfsq2_ophys.nwb
   - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1y5iyhl_ophys.nwb
     versions:
       hdmf: 3.10.0

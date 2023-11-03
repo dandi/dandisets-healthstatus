@@ -5,7 +5,12 @@ last_run_duration: 131125.241291
 last_run_ended: '2023-02-21T03:09:21.982466-05:00'
 nassets: 62
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-190921-191001/sub-190921-191001_ses-191001-a000_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_ok:
   - sub-171029-171110/sub-171029-171110_ses-171110-a000_behavior+ophys.nwb
   - path: sub-171029-171110/sub-171029-171110_ses-171110-a002_ophys.nwb
@@ -161,11 +166,6 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - path: sub-190921-191001/sub-190921-191001_ses-191001-a000_behavior+image+ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
   - path: sub-190921-191002/sub-190921-191002_ses-191002-a001_behavior+image+ophys.nwb
     versions:
       hdmf: 3.10.0
@@ -259,6 +259,11 @@ tests:
   - path: sub-190828-190909/sub-190828-190909_ses-190909-a000_behavior+image+ophys.nwb
     versions:
       hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-190921-191001/sub-190921-191001_ses-191001-a000_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-190921-191002/sub-190921-191002_ses-191002-a001_behavior+image+ophys.nwb
@@ -420,11 +425,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-190921-190930/sub-190921-190930_ses-190930-a003_behavior+image+ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-190921-191001/sub-190921-191001_ses-191001-a000_behavior+image+ophys.nwb
     versions:
       hdmf: 3.10.0
       matnwb: v2.6.0.2

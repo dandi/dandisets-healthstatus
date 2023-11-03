@@ -5,7 +5,12 @@ last_run_duration: 276201.988749
 last_run_ended: '2023-02-20T01:38:43.357688-05:00'
 nassets: 1121
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 09_obj-3pcxos.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_ok:
   - path: sub-Mouse 2054/sub-Mouse 2054_ses-Session 01_obj-19zvma1.nwb
     versions:
@@ -1991,11 +1996,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.4.0
   - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 09_obj-1sa6tg2.nwb
-    versions:
-      hdmf: 3.8.1
-      matnwb: v2.6.0.2
-      pynwb: 2.4.0
-  - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 09_obj-3pcxos.nwb
     versions:
       hdmf: 3.8.1
       matnwb: v2.6.0.2
@@ -6140,9 +6140,9 @@ tests:
       pynwb: 2.4.0
   - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 09_obj-3pcxos.nwb
     versions:
-      hdmf: 3.8.1
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
-      pynwb: 2.4.0
+      pynwb: 2.5.0
   - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 09_obj-iuw64b.nwb
     versions:
       hdmf: 3.8.1

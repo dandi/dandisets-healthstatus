@@ -5,7 +5,12 @@ last_run_duration: 172216.600301
 last_run_ended: '2023-03-06T06:34:12.225257-05:00'
 nassets: 276
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-s4/sub-s4_ses-Ca-T3g-032919.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_ok:
   - path: sub-s0/sub-s0_ses-Li-OF-052818.nwb
     versions:
@@ -752,7 +757,6 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-s4/sub-s4_ses-Ca-T3g-032919.nwb
   - path: sub-s4/sub-s4_ses-Ca-T3g-040119.nwb
     versions:
       hdmf: 3.10.0
@@ -964,7 +968,11 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-s4/sub-s4_ses-Ca-T3g-032919.nwb
+  - path: sub-s4/sub-s4_ses-Ca-T3g-032919.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-s4/sub-s4_ses-Ca-T3g-041619.nwb
   - path: sub-s4/sub-s4_ses-Ca-T3g-042319.nwb
     versions:

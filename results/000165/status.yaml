@@ -930,7 +930,11 @@ tests:
       pynwb: 2.5.0
   - sub-Salt/sub-Salt_ses-Salt05-LinearTrack_behavior+ecephys.nwb
   - sub-Salt/sub-Salt_ses-Salt06-HomeCage_behavior+ecephys.nwb
-  - sub-Salt/sub-Salt_ses-Salt06-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Salt/sub-Salt_ses-Salt06-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-Sato/sub-Sato_ses-Sato01-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.9.0
@@ -1839,7 +1843,6 @@ tests:
   - sub-Salt/sub-Salt_ses-Salt04-LinearTrack_behavior+ecephys.nwb
   - sub-Salt/sub-Salt_ses-Salt05-LinearTrack_behavior+ecephys.nwb
   - sub-Salt/sub-Salt_ses-Salt06-HomeCage_behavior+ecephys.nwb
-  - sub-Salt/sub-Salt_ses-Salt06-LinearTrack_behavior+ecephys.nwb
   - sub-Sato/sub-Sato_ses-Sato02-HomeCage_behavior+ecephys.nwb
   - sub-Sato/sub-Sato_ses-Sato03-HomeCage_behavior+ecephys.nwb
   - sub-Sato/sub-Sato_ses-Sato04-HomeCage_behavior+ecephys.nwb
@@ -2136,6 +2139,11 @@ tests:
   - path: sub-Salt/sub-Salt_ses-Salt05-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-Salt/sub-Salt_ses-Salt06-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-Sato/sub-Sato_ses-Sato01-HomeCage_behavior+ecephys.nwb

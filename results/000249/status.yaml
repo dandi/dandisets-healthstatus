@@ -5,7 +5,12 @@ last_run_duration: 288588.255262
 last_run_ended: '2023-03-01T19:16:14.260160-05:00'
 nassets: 777
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-EV30/sub-EV30_ses-20170608T001124_ophys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_ok:
   - path: sub-EV06/sub-EV06_ses-20190121T202304_ophys.nwb
     versions:
@@ -112,7 +117,6 @@ tests:
   - sub-EV27/sub-EV27_ses-20170425T194739_ophys.nwb
   - sub-EV27/sub-EV27_ses-20170425T195559_ophys.nwb
   - sub-EV30/sub-EV30_ses-20170608T000044_ophys.nwb
-  - sub-EV30/sub-EV30_ses-20170608T001124_ophys.nwb
   - path: sub-EV30/sub-EV30_ses-20170608T001958_ophys.nwb
     versions:
       hdmf: 3.9.0
@@ -1384,7 +1388,11 @@ tests:
   - sub-EV27/sub-EV27_ses-20170425T193829_ophys.nwb
   - sub-EV27/sub-EV27_ses-20170425T194739_ophys.nwb
   - sub-EV27/sub-EV27_ses-20170425T195559_ophys.nwb
-  - sub-EV30/sub-EV30_ses-20170608T001124_ophys.nwb
+  - path: sub-EV30/sub-EV30_ses-20170608T001124_ophys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-EV30/sub-EV30_ses-20170608T004511_ophys.nwb
   - sub-EV30/sub-EV30_ses-20170608T005603_ophys.nwb
   - sub-EV30/sub-EV30_ses-20170608T010353_ophys.nwb

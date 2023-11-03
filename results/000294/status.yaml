@@ -5,17 +5,17 @@ last_run_duration: 6410.372842
 last_run_ended: '2023-02-27T05:51:59.193705-05:00'
 nassets: 2
 tests:
-- assets_nok: []
+- assets_nok:
+  - sub-3436/sub-3436_ses-20211011T115848_ecephys+icephys.nwb
   assets_ok:
   - sub-3148/sub-3148_ses-20211006T112406_ecephys+icephys.nwb
-  assets_timeout:
-  - sub-3436/sub-3436_ses-20211011T115848_ecephys+icephys.nwb
+  assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-3148/sub-3148_ses-20211006T112406_ecephys+icephys.nwb
-  assets_ok: []
-  assets_timeout:
   - sub-3436/sub-3436_ses-20211011T115848_ecephys+icephys.nwb
+  assets_ok: []
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

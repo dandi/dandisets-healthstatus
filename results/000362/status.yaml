@@ -5,7 +5,12 @@ last_run_duration: 189106.518071
 last_run_ended: '2023-03-05T02:50:38.087480-05:00'
 nassets: 52
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: jGCaMP8f/jGCaMP8f_ANM478407_cell03.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_ok:
   - path: jGCaMP8f/jGCaMP8f_ANM471993_cell01.nwb
     versions:
@@ -95,11 +100,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - jGCaMP8f/jGCaMP8f_ANM478407_cell02.nwb
-  - path: jGCaMP8f/jGCaMP8f_ANM478407_cell03.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
   - path: jGCaMP8f/jGCaMP8f_ANM478407_cell04.nwb
     versions:
       hdmf: 3.10.0
@@ -248,6 +248,11 @@ tests:
       pynwb: 2.5.0
   - jGCaMP8f/jGCaMP8f_ANM478349_cell03.nwb
   - jGCaMP8f/jGCaMP8f_ANM478407_cell02.nwb
+  - path: jGCaMP8f/jGCaMP8f_ANM478407_cell03.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: jGCaMP8f/jGCaMP8f_ANM478407_cell07.nwb
     versions:
       hdmf: 3.11.0
@@ -333,11 +338,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: jGCaMP8f/jGCaMP8f_ANM478407_cell01.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: jGCaMP8f/jGCaMP8f_ANM478407_cell03.nwb
     versions:
       hdmf: 3.10.0
       matnwb: v2.6.0.2

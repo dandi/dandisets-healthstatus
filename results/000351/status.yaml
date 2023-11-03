@@ -5,7 +5,12 @@ last_run_duration: 85370.291187
 last_run_ended: '2023-03-03T14:03:01.263474-05:00'
 nassets: 428
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day10.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_ok:
   - sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day1-30.nwb
   - sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day2-30.nwb
@@ -897,11 +902,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day1.nwb
-  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day10.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
   - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day11.nwb
   - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day12.nwb
     versions:
@@ -1850,7 +1850,7 @@ tests:
   - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day1.nwb
   - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day10.nwb
     versions:
-      hdmf: 3.10.0
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day11.nwb

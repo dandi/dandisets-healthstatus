@@ -5,7 +5,12 @@ last_run_duration: 43946.567695
 last_run_ended: '2023-03-02T22:36:37.451492-05:00'
 nassets: 12
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-20170113-3/sub-20170113-3_ses-20170113T150834_ophys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_ok:
   - sub-20161022-1/sub-20161022-1_ses-20161022T151003_ophys.nwb
   - path: sub-20161109-2/sub-20161109-2_ses-20161109T211950_ophys.nwb
@@ -25,7 +30,6 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-20170113-3/sub-20170113-3_ses-20170113T150834_ophys.nwb
   - sub-20170113-4/sub-20170113-4_ses-20170113T171241_ophys.nwb
   - path: sub-20170127-1/sub-20170127-1_ses-20170127T111652_ophys.nwb
     versions:
@@ -45,7 +49,12 @@ tests:
   - sub-20170228-4/sub-20170228-4_ses-20170228T185002_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-20170113-3/sub-20170113-3_ses-20170113T150834_ophys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_ok: []
   assets_timeout:
   - sub-20161022-1/sub-20161022-1_ses-20161022T151003_ophys.nwb
@@ -66,7 +75,6 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-20170113-3/sub-20170113-3_ses-20170113T150834_ophys.nwb
   - sub-20170113-4/sub-20170113-4_ses-20170113T171241_ophys.nwb
   - path: sub-20170127-1/sub-20170127-1_ses-20170127T111652_ophys.nwb
     versions:

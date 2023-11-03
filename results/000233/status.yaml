@@ -5,7 +5,12 @@ last_run_duration: 1032946.70018
 last_run_ended: '2023-03-06T05:39:37.896695-05:00'
 nassets: 345
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-CGM1/sub-CGM1_ses-CGM1-792um-181201-110104_ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_ok:
   - path: sub-CGM1/sub-CGM1_ses-CGM1-0um-181130-112307_ecephys.nwb
     versions:
@@ -18,7 +23,6 @@ tests:
   - sub-CGM1/sub-CGM1_ses-CGM1-504um-181130-180733_ecephys.nwb
   - sub-CGM1/sub-CGM1_ses-CGM1-576um-181130-190500_ecephys.nwb
   - sub-CGM1/sub-CGM1_ses-CGM1-720um-181130-194600_ecephys.nwb
-  - sub-CGM1/sub-CGM1_ses-CGM1-792um-181201-110104_ecephys.nwb
   - path: sub-CGM1/sub-CGM1_ses-CGM1-792um-181202-104805_ecephys.nwb
     versions:
       hdmf: 3.10.0
@@ -849,7 +853,11 @@ tests:
   - sub-CGM1/sub-CGM1_ses-CGM1-504um-181130-180733_ecephys.nwb
   - sub-CGM1/sub-CGM1_ses-CGM1-576um-181130-190500_ecephys.nwb
   - sub-CGM1/sub-CGM1_ses-CGM1-720um-181130-194600_ecephys.nwb
-  - sub-CGM1/sub-CGM1_ses-CGM1-792um-181201-110104_ecephys.nwb
+  - path: sub-CGM1/sub-CGM1_ses-CGM1-792um-181201-110104_ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-CGM1/sub-CGM1_ses-CGM1-792um-181203-091816_ecephys.nwb
   - sub-CGM1/sub-CGM1_ses-CGM1-792um-181203-202231_ecephys.nwb
   - sub-CGM1/sub-CGM1_ses-CGM1-792um-181204-104520_ecephys.nwb
