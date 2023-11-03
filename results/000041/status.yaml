@@ -40,7 +40,11 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-Rizzo/sub-Rizzo_ses-Rizzo-022615_ecephys.nwb
+  - path: sub-Rizzo/sub-Rizzo_ses-Rizzo-022615_ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-Rizzo/sub-Rizzo_ses-Rizzo-022715_ecephys.nwb
     versions:
       hdmf: 3.11.0
@@ -53,7 +57,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
-  - sub-Rizzo/sub-Rizzo_ses-Rizzo-022615_ecephys.nwb
+  - path: sub-Rizzo/sub-Rizzo_ses-Rizzo-022615_ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout:
   - sub-BWRat17/sub-BWRat17_ses-BWRat17-121712_ecephys.nwb
   - sub-BWRat17/sub-BWRat17_ses-BWRat17-121912_ecephys.nwb

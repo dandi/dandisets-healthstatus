@@ -94,7 +94,11 @@ tests:
       pynwb: 2.5.0
   - sub-Case/sub-Case_ses-20191109_obj-1dpu7bd_behavior.nwb
   - sub-Case/sub-Case_ses-20191109_obj-1dv1ats_behavior.nwb
-  - sub-Case/sub-Case_ses-20191109_obj-1i1uw8w_behavior.nwb
+  - path: sub-Case/sub-Case_ses-20191109_obj-1i1uw8w_behavior.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Case/sub-Case_ses-20191109_obj-1kyfp8i_behavior.nwb
   - sub-Case/sub-Case_ses-20191109_obj-1q111zj_behavior.nwb
   - sub-Case/sub-Case_ses-20191109_obj-36x5vd_behavior.nwb
@@ -893,7 +897,6 @@ tests:
   - sub-Carnation/sub-Carnation_ses-20190523_behavior.nwb
   - sub-Case/sub-Case_ses-20191109_obj-1dpu7bd_behavior.nwb
   - sub-Case/sub-Case_ses-20191109_obj-1dv1ats_behavior.nwb
-  - sub-Case/sub-Case_ses-20191109_obj-1i1uw8w_behavior.nwb
   - sub-Case/sub-Case_ses-20191109_obj-1kyfp8i_behavior.nwb
   - sub-Case/sub-Case_ses-20191109_obj-36x5vd_behavior.nwb
   - sub-Case/sub-Case_ses-20191109_obj-era7g6_behavior.nwb
@@ -1182,6 +1185,11 @@ tests:
   - path: sub-Case/sub-Case_ses-20191109_obj-1aomdb1_behavior.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-Case/sub-Case_ses-20191109_obj-1i1uw8w_behavior.nwb
+    versions:
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-Case/sub-Case_ses-20191109_obj-1q111zj_behavior.nwb

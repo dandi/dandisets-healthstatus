@@ -1317,7 +1317,11 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-OXTHALO-19/sub-OXTHALO-19_ses-20200304T164845_ophys.nwb
+  - path: sub-OXTHALO-19/sub-OXTHALO-19_ses-20200304T164845_ophys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-OXTHALO-19/sub-OXTHALO-19_ses-20200304T172122_ophys.nwb
   - sub-OXTHALO-19/sub-OXTHALO-19_ses-20200304T173937_ophys.nwb
   - sub-OXTHALO-19/sub-OXTHALO-19_ses-20200304T175624_ophys.nwb
@@ -1931,7 +1935,6 @@ tests:
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T185441_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T191033_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T191853_ophys.nwb
-  - sub-OXTHALO-19/sub-OXTHALO-19_ses-20200304T164845_ophys.nwb
   - sub-OXTHALO-19/sub-OXTHALO-19_ses-20200304T172122_ophys.nwb
   - sub-OXTHALO-19/sub-OXTHALO-19_ses-20200304T173937_ophys.nwb
   - sub-OXTHALO-19/sub-OXTHALO-19_ses-20200304T175624_ophys.nwb
@@ -2643,6 +2646,11 @@ tests:
   - path: sub-OXTHALO-19/sub-OXTHALO-19_ses-20200304T164257_ophys.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-OXTHALO-19/sub-OXTHALO-19_ses-20200304T164845_ophys.nwb
+    versions:
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   assets_timeout: []

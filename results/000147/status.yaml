@@ -36,7 +36,11 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-P1/sub-P1_ses-2018-10-22_ecephys.nwb
+  - path: sub-P1/sub-P1_ses-2018-10-22_ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -70,7 +74,11 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-P1/sub-P1_ses-2018-10-22_ecephys.nwb
+  - path: sub-P1/sub-P1_ses-2018-10-22_ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
