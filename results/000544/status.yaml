@@ -5,15 +5,15 @@ last_run_duration: null
 last_run_ended: null
 nassets: null
 tests:
-- assets_nok:
+- assets_nok: []
+  assets_ok:
   - sub-484677/sub-484677_ses-20210415T161621_behavior+ecephys+ogen.nwb
-  assets_ok: []
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-484677/sub-484677_ses-20210415T161621_behavior+ecephys+ogen.nwb
+- assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-484677/sub-484677_ses-20210415T161621_behavior+ecephys+ogen.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

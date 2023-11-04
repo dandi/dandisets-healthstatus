@@ -5,14 +5,14 @@ last_run_duration: null
 last_run_ended: null
 nassets: null
 tests:
-- assets_nok:
+- assets_nok: []
+  assets_ok:
   - sub-CS51/sub-CS51_ses-P51CSR2_behavior+ecephys.nwb
-  assets_ok: []
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
+- assets_nok: []
+  assets_ok:
   - sub-CS51/sub-CS51_ses-P51CSR2_behavior+ecephys.nwb
-  assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

@@ -176,7 +176,11 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-CGM30/sub-CGM30_ses-CGM30-0um-210131-101140_ecephys.nwb
+  - path: sub-CGM30/sub-CGM30_ses-CGM30-0um-210131-101140_ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-CGM30/sub-CGM30_ses-CGM30-0um-210202-081800_ecephys.nwb
   - path: sub-CGM30/sub-CGM30_ses-CGM30-0um-210202-085206_ecephys.nwb
     versions:
@@ -907,7 +911,6 @@ tests:
   - sub-CGM3/sub-CGM3_ses-CGM3_681um_190302_212204_ecephys.nwb
   - sub-CGM3/sub-CGM3_ses-CGM3_72um_190301_134959_ecephys.nwb
   - sub-CGM30/sub-CGM30_ecephys.nwb
-  - sub-CGM30/sub-CGM30_ses-CGM30-0um-210131-101140_ecephys.nwb
   - sub-CGM30/sub-CGM30_ses-CGM30-0um-210202-081800_ecephys.nwb
   - sub-CGM30/sub-CGM30_ses-CGM30-0um-210203-084448_ecephys.nwb
   - sub-CGM30/sub-CGM30_ses-CGM30-0um-210204-083312_ecephys.nwb
@@ -1409,6 +1412,11 @@ tests:
   - path: sub-CGM3/sub-CGM3_ses-CGM3_609um_190301_183850_ecephys.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-CGM30/sub-CGM30_ses-CGM30-0um-210131-101140_ecephys.nwb
+    versions:
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-CGM30/sub-CGM30_ses-CGM30-0um-210202-105601_ecephys.nwb

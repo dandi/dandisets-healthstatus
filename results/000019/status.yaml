@@ -52,7 +52,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-GP31/sub-GP31_ses-GP31-B65.nwb
-  - sub-GP31/sub-GP31_ses-GP31-B67.nwb
+  - path: sub-GP31/sub-GP31_ses-GP31-B67.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-GP31/sub-GP31_ses-GP31-B69.nwb
   - sub-GP31/sub-GP31_ses-GP31-B71.nwb
   - sub-GP31/sub-GP31_ses-GP31-B78.nwb
@@ -111,6 +115,11 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
+  - path: sub-GP31/sub-GP31_ses-GP31-B67.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-GP31/sub-GP31_ses-GP31-B69.nwb
   - sub-GP31/sub-GP31_ses-GP31-B78.nwb
   - sub-GP31/sub-GP31_ses-GP31-B82.nwb
@@ -128,8 +137,7 @@ tests:
   - sub-GP31/sub-GP31_ses-GP31-B21.nwb
   - sub-GP31/sub-GP31_ses-GP31-B65.nwb
   - sub-GP31/sub-GP31_ses-GP31-B71.nwb
-  assets_timeout:
-  - sub-GP31/sub-GP31_ses-GP31-B67.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

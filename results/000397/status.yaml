@@ -5,16 +5,16 @@ last_run_duration: 5312.932187
 last_run_ended: '2023-03-03T15:31:34.594722-05:00'
 nassets: 3
 tests:
-- assets_nok:
-  - sub-Pt03/sub-Pt03_ecephys.nwb
+- assets_nok: []
   assets_ok:
   - sub-Pt01/sub-Pt01_ecephys.nwb
   - sub-Pt02/sub-Pt02_ecephys.nwb
+  - sub-Pt03/sub-Pt03_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
+- assets_nok: []
+  assets_ok:
   - sub-Pt03/sub-Pt03_ecephys.nwb
-  assets_ok: []
   assets_timeout:
   - sub-Pt01/sub-Pt01_ecephys.nwb
   - sub-Pt02/sub-Pt02_ecephys.nwb
