@@ -184,7 +184,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-10/sub-10_ses-3_behavior+ecephys.nwb
-  - sub-10/sub-10_ses-4_behavior+ecephys.nwb
+  - path: sub-10/sub-10_ses-4_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-10/sub-10_ses-5_behavior+ecephys.nwb
     versions:
       hdmf: 3.11.0
@@ -240,6 +244,11 @@ tests:
   - path: sub-03/sub-03_ses-6_behavior+ecephys.nwb
     versions:
       hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-10/sub-10_ses-4_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   assets_ok:
@@ -370,7 +379,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-10/sub-10_ses-3_behavior+ecephys.nwb
-  - sub-10/sub-10_ses-4_behavior+ecephys.nwb
   - path: sub-10/sub-10_ses-6_behavior+ecephys.nwb
     versions:
       hdmf: 3.10.0

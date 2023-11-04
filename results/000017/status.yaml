@@ -47,7 +47,11 @@ tests:
   - sub-Muller/sub-Muller_ses-20170107T120000.nwb
   - sub-Muller/sub-Muller_ses-20170108T120000.nwb
   - sub-Muller/sub-Muller_ses-20170109T120000.nwb
-  - sub-Radnitz/sub-Radnitz_ses-20170108T120000.nwb
+  - path: sub-Radnitz/sub-Radnitz_ses-20170108T120000.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Radnitz/sub-Radnitz_ses-20170109T120000.nwb
   - path: sub-Radnitz/sub-Radnitz_ses-20170110T120000.nwb
     versions:
@@ -105,7 +109,11 @@ tests:
   - sub-Moniz/sub-Moniz_ses-20170515T120000.nwb
   - sub-Muller/sub-Muller_ses-20170107T120000.nwb
   - sub-Muller/sub-Muller_ses-20170109T120000.nwb
-  - sub-Radnitz/sub-Radnitz_ses-20170108T120000.nwb
+  - path: sub-Radnitz/sub-Radnitz_ses-20170108T120000.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Radnitz/sub-Radnitz_ses-20170109T120000.nwb
   - path: sub-Radnitz/sub-Radnitz_ses-20170110T120000.nwb
     versions:
