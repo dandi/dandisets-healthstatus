@@ -56,7 +56,11 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-M52/sub-M52_ses-20211102T155806_behavior+ecephys.nwb
+  - path: sub-M52/sub-M52_ses-20211102T155806_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -111,7 +115,11 @@ tests:
       pynwb: 2.5.0
   - sub-M44/sub-M44_ses-20201207T155850_behavior+ecephys.nwb
   - sub-M45/sub-M45_ses-20201209T141009_behavior+ecephys.nwb
-  - sub-M52/sub-M52_ses-20211102T155806_behavior+ecephys.nwb
+  - path: sub-M52/sub-M52_ses-20211102T155806_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   name: matnwb_nwbRead
 untested: []
 versions:

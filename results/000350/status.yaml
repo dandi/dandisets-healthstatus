@@ -38,7 +38,11 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-20170113-4/sub-20170113-4_ses-20170113T171241_ophys.nwb
+  - path: sub-20170113-4/sub-20170113-4_ses-20170113T171241_ophys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-20170127-1/sub-20170127-1_ses-20170127T111652_ophys.nwb
     versions:
       hdmf: 3.11.0
@@ -63,7 +67,12 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  assets_ok: []
+  assets_ok:
+  - path: sub-20170113-4/sub-20170113-4_ses-20170113T171241_ophys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout:
   - path: sub-20161022-1/sub-20161022-1_ses-20161022T151003_ophys.nwb
     versions:
@@ -91,7 +100,6 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-20170113-4/sub-20170113-4_ses-20170113T171241_ophys.nwb
   - path: sub-20170127-1/sub-20170127-1_ses-20170127T111652_ophys.nwb
     versions:
       hdmf: 3.11.0
