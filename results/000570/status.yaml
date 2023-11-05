@@ -10,10 +10,10 @@ tests:
   - sub-591270122/sub-591270122_ses-591419661_icephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-591270122/sub-591270122_ses-591419661_icephys.nwb
+- assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-591270122/sub-591270122_ses-591419661_icephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
