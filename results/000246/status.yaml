@@ -80,8 +80,12 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
-    C2hSynL 17-5degrees_obj-4cx979_ophys.nwb
+  - path: sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
+      C2hSynL 17-5degrees_obj-4cx979_ophys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
       C2hSynL 17-5degrees_obj-etnmv0_ophys.nwb
     versions:
@@ -276,6 +280,12 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
+      C2hSynL 17-5degrees_obj-4cx979_ophys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
       C2hSynL 17-5degrees_obj-etnmv0_ophys.nwb
     versions:
       hdmf: 3.10.0
@@ -355,8 +365,6 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
-    C2hSynL 17-5degrees_obj-4cx979_ophys.nwb
   - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
     C2hSynL 17-5degrees_obj-ph0qxm_ophys.nwb
   - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1748njo_ophys.nwb

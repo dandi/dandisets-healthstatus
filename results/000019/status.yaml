@@ -44,7 +44,11 @@ tests:
       pynwb: 2.5.0
   - sub-EC9/sub-EC9_ses-EC9-B53.nwb
   - sub-EC9/sub-EC9_ses-EC9-B60.nwb
-  - sub-EC9/sub-EC9_ses-EC9-B63.nwb
+  - path: sub-EC9/sub-EC9_ses-EC9-B63.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-GP31/sub-GP31_ses-GP31-B1.nwb
   - path: sub-GP31/sub-GP31_ses-GP31-B2.nwb
     versions:
@@ -121,7 +125,6 @@ tests:
       pynwb: 2.5.0
   - sub-EC9/sub-EC9_ses-EC9-B53.nwb
   - sub-EC9/sub-EC9_ses-EC9-B60.nwb
-  - sub-EC9/sub-EC9_ses-EC9-B63.nwb
   - sub-GP31/sub-GP31_ses-GP31-B1.nwb
   - path: sub-GP31/sub-GP31_ses-GP31-B2.nwb
     versions:
@@ -161,7 +164,12 @@ tests:
   - sub-EC2/sub-EC2_ses-EC2-B15.nwb
   - sub-GP31/sub-GP31_ses-GP31-B21.nwb
   - sub-GP31/sub-GP31_ses-GP31-B71.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-EC9/sub-EC9_ses-EC9-B63.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   name: matnwb_nwbRead
 untested: []
 versions:

@@ -217,7 +217,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-P54CS/sub-P54CS_ses-20180101_obj-1vx1a5w_ecephys+image.nwb
+  - path: sub-P54CS/sub-P54CS_ses-20180101_obj-1vx1a5w_ecephys+image.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-P55CS/sub-P55CS_ses-20180301_ecephys+image.nwb
     versions:
       hdmf: 3.11.0
@@ -474,7 +478,6 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-P54CS/sub-P54CS_ses-20180101_obj-1vx1a5w_ecephys+image.nwb
   - path: sub-P55CS/sub-P55CS_ses-20180301_ecephys+image.nwb
     versions:
       hdmf: 3.11.0
@@ -560,6 +563,11 @@ tests:
   - path: sub-P47CS/sub-P47CS_ses-20170201_ecephys+image.nwb
     versions:
       hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-P54CS/sub-P54CS_ses-20180101_obj-1vx1a5w_ecephys+image.nwb
+    versions:
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   name: matnwb_nwbRead

@@ -72,7 +72,7 @@ tests:
       pynwb: 2.5.0
   - path: sub-Camelia/sub-Camelia_ses-20190116_behavior.nwb
     versions:
-      hdmf: 3.9.0
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-Camelia/sub-Camelia_ses-20190212_behavior.nwb
@@ -1181,11 +1181,6 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - path: sub-Camelia/sub-Camelia_ses-20190116_behavior.nwb
-    versions:
-      hdmf: 3.9.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
   - sub-Camelia/sub-Camelia_ses-20190212_behavior.nwb
   - path: sub-Carnation/sub-Carnation_ses-20190513_behavior.nwb
     versions:
@@ -1759,6 +1754,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   assets_timeout:
+  - path: sub-Camelia/sub-Camelia_ses-20190116_behavior.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-Ford Prefect/sub-Ford Prefect_ses-20191111_obj-2uhsu2_behavior.nwb
     versions:
       hdmf: 3.10.0

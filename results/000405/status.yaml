@@ -543,7 +543,11 @@ tests:
   - sub-s2/sub-s2_ses-Cl-T3g-112818.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-112918.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-113018.nwb
-  - sub-s2/sub-s2_ses-Cl-T3g-120118.nwb
+  - path: sub-s2/sub-s2_ses-Cl-T3g-120118.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-s2/sub-s2_ses-Cl-T3g-120318.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-120418.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-120518.nwb
@@ -926,7 +930,6 @@ tests:
   - sub-s2/sub-s2_ses-Cl-T3g-112818.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-112918.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-113018.nwb
-  - sub-s2/sub-s2_ses-Cl-T3g-120118.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-120418.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-120518.nwb
   - sub-s2/sub-s2_ses-Cl-T3g-120918.nwb
@@ -1378,6 +1381,11 @@ tests:
   - path: sub-s2/sub-s2_ses-Cl-T3g-021419.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-s2/sub-s2_ses-Cl-T3g-120118.nwb
+    versions:
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-s2/sub-s2_ses-Cl-T3g-120318.nwb

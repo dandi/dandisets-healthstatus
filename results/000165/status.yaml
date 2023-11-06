@@ -1113,7 +1113,7 @@ tests:
   - sub-Worf/sub-Worf_ses-Worf10-HomeCage_behavior+ecephys.nwb
   - path: sub-Worf/sub-Worf_ses-Worf12-HomeCage_behavior+ecephys.nwb
     versions:
-      hdmf: 3.9.0
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-Worf/sub-Worf_ses-Worf15-HomeCage_behavior+ecephys.nwb
@@ -1996,6 +1996,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-Worf/sub-Worf_ses-Worf10-HomeCage_behavior+ecephys.nwb
+  - path: sub-Worf/sub-Worf_ses-Worf12-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Worf/sub-Worf_ses-Worf15-HomeCage_behavior+ecephys.nwb
   - sub-Worf/sub-Worf_ses-Worf16-HomeCage_behavior+ecephys.nwb
   - sub-Worf/sub-Worf_ses-Worf17-HomeCage_behavior+ecephys.nwb
@@ -2188,11 +2193,6 @@ tests:
   - path: sub-Tuvok/sub-Tuvok_ses-Tuvok04-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-Worf/sub-Worf_ses-Worf12-HomeCage_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   assets_timeout:
