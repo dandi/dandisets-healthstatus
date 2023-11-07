@@ -42,7 +42,11 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-EV104/sub-EV104_ses-20190218T190432_ophys.nwb
+  - path: sub-EV104/sub-EV104_ses-20190218T190432_ophys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-EV104/sub-EV104_ses-20190218T191047_ophys.nwb
   - path: sub-EV104/sub-EV104_ses-20190218T191815_ophys.nwb
     versions:
@@ -1356,7 +1360,6 @@ tests:
   - sub-EV06/sub-EV06_ses-20190121T213930_ophys.nwb
   - sub-EV104/sub-EV104_ses-20190218T181936_ophys.nwb
   - sub-EV104/sub-EV104_ses-20190218T182850_ophys.nwb
-  - sub-EV104/sub-EV104_ses-20190218T190432_ophys.nwb
   - sub-EV104/sub-EV104_ses-20190218T191047_ophys.nwb
   - sub-EV104/sub-EV104_ses-20190218T192431_ophys.nwb
   - sub-EV105/sub-EV105_ses-20190208T150218_ophys.nwb
@@ -1986,6 +1989,11 @@ tests:
   - path: sub-EV104/sub-EV104_ses-20190218T184913_ophys.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-EV104/sub-EV104_ses-20190218T190432_ophys.nwb
+    versions:
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-EV104/sub-EV104_ses-20190218T191815_ophys.nwb
