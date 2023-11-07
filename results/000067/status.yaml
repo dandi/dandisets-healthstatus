@@ -12,7 +12,11 @@ tests:
   - sub-EE/sub-EE_ses-EE-044_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-045_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-046_ecephys.nwb
-  - sub-EE/sub-EE_ses-EE-047_ecephys.nwb
+  - path: sub-EE/sub-EE_ses-EE-047_ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-EE/sub-EE_ses-EE-048_ecephys.nwb
     versions:
       hdmf: 3.11.0
@@ -119,7 +123,11 @@ tests:
   - sub-EE/sub-EE_ses-EE-043_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-044_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-046_ecephys.nwb
-  - sub-EE/sub-EE_ses-EE-047_ecephys.nwb
+  - path: sub-EE/sub-EE_ses-EE-047_ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-EE/sub-EE_ses-EE-049_behavior+ecephys.nwb
     versions:
       hdmf: 3.11.0
