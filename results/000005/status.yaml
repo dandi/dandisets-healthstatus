@@ -9,7 +9,7 @@ tests:
   assets_ok:
   - path: sub-anm184389/sub-anm184389_ses-20130207_behavior+ecephys.nwb
     versions:
-      hdmf: 3.9.0
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-anm184389/sub-anm184389_ses-20130211_behavior+ecephys.nwb
@@ -800,6 +800,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   assets_ok:
+  - path: sub-anm184389/sub-anm184389_ses-20130207_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-anm186997/sub-anm186997_ses-20130321_behavior+ecephys.nwb
     versions:
       hdmf: 3.9.0
@@ -1174,11 +1179,6 @@ tests:
       pynwb: 2.5.0
   - sub-anm337495/sub-anm337495_ses-20160601_behavior+icephys+ogen.nwb
   assets_timeout:
-  - path: sub-anm184389/sub-anm184389_ses-20130207_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.9.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
   - path: sub-anm184389/sub-anm184389_ses-20130212_behavior+ecephys.nwb
     versions:
       hdmf: 3.11.0

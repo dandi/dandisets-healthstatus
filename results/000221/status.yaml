@@ -769,7 +769,11 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-SC391203/sub-SC391203_ses-SC391203-102117_ecephys+ogen.nwb
+  - path: sub-SC391203/sub-SC391203_ses-SC391203-102117_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -905,7 +909,6 @@ tests:
   - sub-SC028/sub-SC028_ses-SC028-092719_ecephys+ogen.nwb
   - sub-SC028/sub-SC028_ses-SC028-092819_ecephys+ogen.nwb
   - sub-SC391203/sub-SC391203_ses-SC391203-101917_ecephys+ogen.nwb
-  - sub-SC391203/sub-SC391203_ses-SC391203-102117_ecephys+ogen.nwb
   assets_ok:
   - path: sub-HI211/sub-HI211_ses-HI211-072419_ecephys+ogen.nwb
     versions:
@@ -1536,6 +1539,11 @@ tests:
   - path: sub-SC391203/sub-SC391203_ses-SC391203-102017_ecephys+ogen.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-SC391203/sub-SC391203_ses-SC391203-102117_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   name: matnwb_nwbRead
