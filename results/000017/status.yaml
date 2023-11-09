@@ -26,7 +26,11 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-Hench/sub-Hench_ses-20170615T120000.nwb
+  - path: sub-Hench/sub-Hench_ses-20170615T120000.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Hench/sub-Hench_ses-20170616T120000.nwb
   - sub-Hench/sub-Hench_ses-20170617T120000.nwb
   - path: sub-Hench/sub-Hench_ses-20170618T120000.nwb
@@ -133,6 +137,11 @@ tests:
       pynwb: 2.5.0
   - sub-Forssmann/sub-Forssmann_ses-20171101T120000.nwb
   - sub-Forssmann/sub-Forssmann_ses-20171102T120000.nwb
+  - path: sub-Hench/sub-Hench_ses-20170615T120000.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-Lederberg/sub-Lederberg_ses-20171205T120000.nwb
     versions:
       hdmf: 3.11.0
@@ -215,7 +224,6 @@ tests:
   - sub-Muller/sub-Muller_ses-20170108T120000.nwb
   - sub-Richards/sub-Richards_ses-20171031T120000.nwb
   assets_timeout:
-  - sub-Hench/sub-Hench_ses-20170615T120000.nwb
   - sub-Hench/sub-Hench_ses-20170617T120000.nwb
   - path: sub-Hench/sub-Hench_ses-20170618T120000.nwb
     versions:

@@ -140,7 +140,7 @@ tests:
   - sub-216219/sub-216219_ses-20130820_obj-8kjwwt_behavior+ophys.nwb
   - path: sub-216219/sub-216219_ses-20130820_obj-upv7sr_behavior+ophys.nwb
     versions:
-      hdmf: 3.10.0
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-216219/sub-216219_ses-20130820_obj-wwnqyd_behavior+ophys.nwb
@@ -747,6 +747,11 @@ tests:
       pynwb: 2.5.0
   - sub-216219/sub-216219_ses-20130820_obj-1bbw9a0_behavior+ophys.nwb
   - sub-216219/sub-216219_ses-20130820_obj-8kjwwt_behavior+ophys.nwb
+  - path: sub-216219/sub-216219_ses-20130820_obj-upv7sr_behavior+ophys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-216219/sub-216219_ses-20130821_obj-15zarrq_behavior+ophys.nwb
     versions:
       hdmf: 3.9.0
@@ -1193,11 +1198,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   assets_ok:
-  - path: sub-216219/sub-216219_ses-20130820_obj-upv7sr_behavior+ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
   - path: sub-216219/sub-216219_ses-20130820_obj-wwnqyd_behavior+ophys.nwb
     versions:
       hdmf: 3.9.0

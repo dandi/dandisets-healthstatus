@@ -1285,7 +1285,11 @@ tests:
   - sub-NV77/sub-NV77_ses-20180626T131043_ophys.nwb
   - sub-NV77/sub-NV77_ses-20180628T152353_ophys.nwb
   - sub-NV77/sub-NV77_ses-20180628T153201_ophys.nwb
-  - sub-NV77/sub-NV77_ses-20180628T153802_ophys.nwb
+  - path: sub-NV77/sub-NV77_ses-20180628T153802_ophys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-NV77/sub-NV77_ses-20180628T160050_ophys.nwb
   - sub-NV77/sub-NV77_ses-20180628T161038_ophys.nwb
   - sub-NV84/sub-NV84_ses-20180801T154155_ophys.nwb
@@ -1932,7 +1936,6 @@ tests:
   - sub-NV77/sub-NV77_ses-20180626T131043_ophys.nwb
   - sub-NV77/sub-NV77_ses-20180628T152353_ophys.nwb
   - sub-NV77/sub-NV77_ses-20180628T153201_ophys.nwb
-  - sub-NV77/sub-NV77_ses-20180628T153802_ophys.nwb
   - sub-NV77/sub-NV77_ses-20180628T160050_ophys.nwb
   - sub-NV77/sub-NV77_ses-20180628T161038_ophys.nwb
   - sub-NV84/sub-NV84_ses-20180801T154155_ophys.nwb
@@ -2686,6 +2689,11 @@ tests:
   - path: sub-NV77/sub-NV77_ses-20180626T124337_ophys.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-NV77/sub-NV77_ses-20180628T153802_ophys.nwb
+    versions:
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-NV84/sub-NV84_ses-20180801T155317_ophys.nwb
