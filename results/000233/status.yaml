@@ -43,7 +43,11 @@ tests:
       pynwb: 2.5.0
   - sub-CGM1/sub-CGM1_ses-CGM1-792um-181205-150939_ecephys.nwb
   - sub-CGM1/sub-CGM1_ses-CGM1-792um-181206-092445_ecephys.nwb
-  - sub-CGM1/sub-CGM1_ses-CGM1-792um-181207-093114_ecephys.nwb
+  - path: sub-CGM1/sub-CGM1_ses-CGM1-792um-181207-093114_ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-CGM1/sub-CGM1_ses-CGM1-792um-181208-110949_ecephys.nwb
   - path: sub-CGM1/sub-CGM1_ses-CGM1-792um-181209-121938_ecephys.nwb
     versions:
@@ -883,7 +887,6 @@ tests:
   - sub-CGM1/sub-CGM1_ses-CGM1-792um-181204-213239_ecephys.nwb
   - sub-CGM1/sub-CGM1_ses-CGM1-792um-181205-150939_ecephys.nwb
   - sub-CGM1/sub-CGM1_ses-CGM1-792um-181206-092445_ecephys.nwb
-  - sub-CGM1/sub-CGM1_ses-CGM1-792um-181207-093114_ecephys.nwb
   - sub-CGM1/sub-CGM1_ses-CGM1-792um-181208-110949_ecephys.nwb
   - sub-CGM1/sub-CGM1_ses-CGM1-792um-181210-102142_ecephys.nwb
   - sub-CGM1/sub-CGM1_ses-CGM1_0um_181130_112307_ecephys.nwb
@@ -1382,6 +1385,11 @@ tests:
   - path: sub-CGM1/sub-CGM1_ses-CGM1-792um-181205-095338_ecephys.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-CGM1/sub-CGM1_ses-CGM1-792um-181207-093114_ecephys.nwb
+    versions:
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-CGM1/sub-CGM1_ses-CGM1-792um-181209-121938_ecephys.nwb
