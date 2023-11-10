@@ -24,6 +24,7 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-BH279/sub-BH279_ecephys.nwb
+  - sub-BH279/sub-BH279_ses-20210922T162828_ecephys.nwb
   - sub-BH280/sub-BH280_ses-20210925T154326_ecephys.nwb
   assets_ok:
   - sub-BH277/sub-BH277_ses-20210908T173241_ecephys.nwb
@@ -36,8 +37,7 @@ tests:
   - sub-BH280/sub-BH280_ses-20210925T150737_ecephys.nwb
   - sub-BH280/sub-BH280_ses-20210925T171407_ecephys.nwb
   - sub-BH280/sub-BH280_ses-20210925T175546_ecephys.nwb
-  assets_timeout:
-  - sub-BH279/sub-BH279_ses-20210922T162828_ecephys.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
