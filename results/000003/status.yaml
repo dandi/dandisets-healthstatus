@@ -17,7 +17,11 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140325_behavior+ecephys.nwb
+  - path: sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140325_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140327_behavior+ecephys.nwb
     versions:
       hdmf: 3.10.0
@@ -517,7 +521,6 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140325_behavior+ecephys.nwb
   - path: sub-YutaMouse23/sub-YutaMouse23_ses-YutaMouse23-140804_behavior+ecephys.nwb
     versions:
       hdmf: 3.10.0
@@ -761,6 +764,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   assets_timeout:
+  - path: sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140325_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140327_behavior+ecephys.nwb
     versions:
       hdmf: 3.10.0

@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-Mouse12/sub-Mouse12_ses-Mouse12-120806_behavior+ecephys.nwb
-  - sub-Mouse12/sub-Mouse12_ses-Mouse12-120807_behavior+ecephys.nwb
+  - path: sub-Mouse12/sub-Mouse12_ses-Mouse12-120807_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-Mouse12/sub-Mouse12_ses-Mouse12-120808_behavior+ecephys.nwb
     versions:
       hdmf: 3.11.0
@@ -130,7 +134,11 @@ tests:
       pynwb: 2.5.0
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-Mouse12/sub-Mouse12_ses-Mouse12-120807_behavior+ecephys.nwb
+  - path: sub-Mouse12/sub-Mouse12_ses-Mouse12-120807_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-Mouse12/sub-Mouse12_ses-Mouse12-120809_behavior+ecephys.nwb
     versions:
       hdmf: 3.11.0

@@ -239,7 +239,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-roquefort/sub-roquefort_ses-roquefort-22_behavior+ecephys.nwb
+  - path: sub-roquefort/sub-roquefort_ses-roquefort-22_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
@@ -477,7 +481,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-roquefort/sub-roquefort_ses-roquefort-22_behavior+ecephys.nwb
+  - path: sub-roquefort/sub-roquefort_ses-roquefort-22_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   name: matnwb_nwbRead
 untested: []
 versions:

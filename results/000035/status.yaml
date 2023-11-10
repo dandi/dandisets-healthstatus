@@ -210,7 +210,11 @@ tests:
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-29_slice-20200410-slice-3_cell-20200410-sample-29_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-2_slice-20200410-slice-1_cell-20200410-sample-2_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-30_slice-20200410-slice-3_cell-20200410-sample-30_icephys.nwb
-  - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-4_slice-20200410-slice-1_cell-20200410-sample-4_icephys.nwb
+  - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-4_slice-20200410-slice-1_cell-20200410-sample-4_icephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-5_slice-20200410-slice-1_cell-20200410-sample-5_icephys.nwb
     versions:
       hdmf: 3.11.0
@@ -702,7 +706,6 @@ tests:
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-29_slice-20200410-slice-3_cell-20200410-sample-29_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-2_slice-20200410-slice-1_cell-20200410-sample-2_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-30_slice-20200410-slice-3_cell-20200410-sample-30_icephys.nwb
-  - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-4_slice-20200410-slice-1_cell-20200410-sample-4_icephys.nwb
   - sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-6_slice-20200410-slice-1_cell-20200410-sample-6_icephys.nwb
   - sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-11_slice-20200409-slice-2_cell-20200409-sample-11_icephys.nwb
   - sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-1_slice-20200409-slice-1_cell-20200409-sample-1_icephys.nwb
@@ -934,6 +937,11 @@ tests:
   - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-26_slice-20200410-slice-3_cell-20200410-sample-26_icephys.nwb
     versions:
       hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-4_slice-20200410-slice-1_cell-20200410-sample-4_icephys.nwb
+    versions:
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-5_slice-20200410-slice-1_cell-20200410-sample-5_icephys.nwb
