@@ -183,7 +183,11 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-Dorian/sub-Dorian_ses-20191109_obj-y2g78n_behavior.nwb
+  - path: sub-Dorian/sub-Dorian_ses-20191109_obj-y2g78n_behavior.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-Dorian/sub-Dorian_ses-20191110_obj-12jluf8_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191110_obj-15kpiha_behavior.nwb
   - path: sub-Dorian/sub-Dorian_ses-20191110_obj-1881hs0_behavior.nwb
@@ -697,7 +701,7 @@ tests:
       pynwb: 2.5.0
   - path: sub-Reeves/sub-Reeves_ses-20190804_behavior.nwb
     versions:
-      hdmf: 3.9.0
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-Reeves/sub-Reeves_ses-20190805_behavior.nwb
@@ -963,7 +967,6 @@ tests:
   - sub-Dorian/sub-Dorian_ses-20191109_obj-f59zci_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191109_obj-hka0xx_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191109_obj-uf981b_behavior.nwb
-  - sub-Dorian/sub-Dorian_ses-20191109_obj-y2g78n_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191110_obj-12jluf8_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191110_obj-15kpiha_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191110_obj-1dyh51t_behavior.nwb
@@ -1667,7 +1670,7 @@ tests:
       pynwb: 2.5.0
   - path: sub-Reeves/sub-Reeves_ses-20190804_behavior.nwb
     versions:
-      hdmf: 3.9.0
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-Reeves/sub-Reeves_ses-20190806_behavior.nwb
@@ -1811,6 +1814,11 @@ tests:
       pynwb: 2.5.0
   assets_timeout:
   - path: sub-Camelia/sub-Camelia_ses-20190116_behavior.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-Dorian/sub-Dorian_ses-20191109_obj-y2g78n_behavior.nwb
     versions:
       hdmf: 3.11.0
       matnwb: v2.6.0.2

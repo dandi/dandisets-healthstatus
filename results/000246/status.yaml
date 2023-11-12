@@ -56,7 +56,7 @@ tests:
       pynwb: 2.5.0
   - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-1i2zpp3_ophys.nwb
     versions:
-      hdmf: 3.10.0
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-1kz5p4z_ophys.nwb
@@ -307,6 +307,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-1i2zpp3_ophys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
       C2hSynL 17-5degrees_obj-4cx979_ophys.nwb
     versions:
@@ -363,11 +368,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-17ibh2w_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-1i2zpp3_ophys.nwb
     versions:
       hdmf: 3.10.0
       matnwb: v2.6.0.2

@@ -13,7 +13,11 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-1/sub-1_ses-18516002_tis-1-1_icephys.nwb
+  - path: sub-1/sub-1_ses-18516002_tis-1-1_icephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-1/sub-1_ses-18516003_tis-1-1_icephys.nwb
   - sub-1/sub-1_ses-18516004_tis-1-1_icephys.nwb
   - sub-1/sub-1_ses-18516005_tis-1-1_icephys.nwb
@@ -713,7 +717,11 @@ tests:
   - sub-4/sub-4_ses-18531023_tis-4-2_cell-c41_icephys.nwb
   - sub-4/sub-4_ses-18531024_tis-4-2_cell-c41_icephys.nwb
   - sub-4/sub-4_ses-18531025_tis-4-2_cell-c41_icephys.nwb
-  - sub-4/sub-4_ses-18531026_tis-4-2_cell-c41_icephys.nwb
+  - path: sub-4/sub-4_ses-18531026_tis-4-2_cell-c41_icephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-4/sub-4_ses-18531027_tis-4-2_cell-c41_icephys.nwb
     versions:
       hdmf: 3.9.0
@@ -816,7 +824,6 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-1/sub-1_ses-18516000_tis-1-1_icephys.nwb
-  - sub-1/sub-1_ses-18516002_tis-1-1_icephys.nwb
   - sub-1/sub-1_ses-18516003_tis-1-1_icephys.nwb
   - sub-1/sub-1_ses-18516004_tis-1-1_icephys.nwb
   - sub-1/sub-1_ses-18516005_tis-1-1_icephys.nwb
@@ -1188,7 +1195,11 @@ tests:
   - sub-4/sub-4_ses-18531023_tis-4-2_cell-c41_icephys.nwb
   - sub-4/sub-4_ses-18531024_tis-4-2_cell-c41_icephys.nwb
   - sub-4/sub-4_ses-18531025_tis-4-2_cell-c41_icephys.nwb
-  - sub-4/sub-4_ses-18531026_tis-4-2_cell-c41_icephys.nwb
+  - path: sub-4/sub-4_ses-18531026_tis-4-2_cell-c41_icephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-4/sub-4_ses-18531027_tis-4-2_cell-c41_icephys.nwb
     versions:
       hdmf: 3.9.0
@@ -1577,6 +1588,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   assets_timeout:
+  - path: sub-1/sub-1_ses-18516002_tis-1-1_icephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-1/sub-1_ses-18516015_tis-1-2_cell-c3_icephys.nwb
     versions:
       hdmf: 3.10.0
