@@ -4,11 +4,7 @@ import subprocess
 import sys
 from typing import Optional
 import anyio
-from .config import (
-    MATNWB_INSTALL_DIR,
-    PYNWB_OPEN_LOAD_NS_SCRIPT,
-    TIMEOUT,
-)
+from .config import MATNWB_INSTALL_DIR, PYNWB_OPEN_LOAD_NS_SCRIPT, TIMEOUT
 from .core import Asset, Outcome, TestResult
 
 
@@ -21,7 +17,7 @@ async def run_test_command(
     if env is not None:
         env = {**os.environ, **env}
     try:
-        async with anyio.fail_after(TIMEOUT):
+        with anyio.fail_after(TIMEOUT):
             r = await anyio.run_process(
                 command,
                 stdout=subprocess.PIPE,
@@ -63,9 +59,7 @@ async def matnwb_nwbRead(asset: Asset) -> TestResult:
             "matlab",
             "-nodesktop",
             "-batch",
-            (
-                f"nwb = nwbRead({str(asset.filepath)!r})"
-            ),
+            f"nwb = nwbRead({str(asset.filepath)!r})",
         ],
         env={"MATLABPATH": f"{MATNWB_INSTALL_DIR}"},
     )

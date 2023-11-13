@@ -4,12 +4,11 @@ from collections.abc import Iterator
 from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
-import json
 import logging
 from pathlib import Path
-from typing import Dict, List, Optional, Sequence, Union
+from typing import Any, Dict, List, Optional, Sequence, Union
 import anyio
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field, field_validator
 import yaml
 from .yamllineno import load_yaml_lineno
 
@@ -43,9 +42,17 @@ class VersionedPath(BaseModel):
     path: str
     versions: Dict[str, str]
 
-    @validator("versions")
-    def _rmlinenos(cls, value: dict[str, str]) -> dict[str, str]:  # noqa: B902, U100
-        return {k: v for k, v in value.items() if not k.endswith("_lineno")}
+    @field_validator("versions", mode="before")
+    @classmethod
+    def _rmlinenos(cls, value: Any) -> Any:
+        if isinstance(value, dict):
+            return {
+                k: v
+                for k, v in value.items()
+                if isinstance(k, str) and not k.endswith("_lineno")
+            }
+        else:
+            return value
 
 
 class TestStatus(BaseModel):
@@ -137,17 +144,25 @@ class DandisetStatus(BaseModel):
     untested_lineno: int = Field(default=0, exclude=True)
     versions: Dict[str, str]
 
-    @validator("versions")
-    def _rmlinenos(cls, value: dict[str, str]) -> dict[str, str]:  # noqa: B902, U100
-        return {k: v for k, v in value.items() if not k.endswith("_lineno")}
+    @field_validator("versions", mode="before")
+    @classmethod
+    def _rmlinenos(cls, value: Any) -> Any:
+        if isinstance(value, dict):
+            return {
+                k: v
+                for k, v in value.items()
+                if isinstance(k, str) and not k.endswith("_lineno")
+            }
+        else:
+            return value
 
     @classmethod
     def from_file(cls, dandiset: str, yamlfile: Path) -> DandisetStatus:
         with yamlfile.open() as fp:
-            return cls.parse_obj({"dandiset": dandiset, **load_yaml_lineno(fp)})
+            return cls.model_validate({"dandiset": dandiset, **load_yaml_lineno(fp)})
 
     def to_file(self, path: Path) -> None:
-        jsonable = json.loads(self.json())
+        jsonable = self.model_dump(mode="json")
         path.write_text(yaml.dump(jsonable))
 
     def update_asset(self, res: TestResult, versions: dict[str, str]) -> None:

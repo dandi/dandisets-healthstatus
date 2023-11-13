@@ -25,7 +25,7 @@ async def pool_tasks(
                 await func(inp)
 
     async with anyio.create_task_group() as tg:
-        sender, receiver = anyio.create_memory_object_stream(math.inf)
+        sender, receiver = anyio.create_memory_object_stream[T](math.inf)
         async with receiver:
             for _ in range(max(1, workers)):
                 tg.start_soon(dowork, receiver.clone())
