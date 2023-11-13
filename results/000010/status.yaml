@@ -629,7 +629,7 @@ tests:
       pynwb: 2.5.0
   - path: sub-226244/sub-226244_ses-20131114_obj-1bk2zc4_behavior+ophys.nwb
     versions:
-      hdmf: 3.9.0
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-226244/sub-226244_ses-20131114_obj-qclugt_behavior+ophys.nwb
@@ -1211,11 +1211,6 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - path: sub-226244/sub-226244_ses-20131114_obj-1bk2zc4_behavior+ophys.nwb
-    versions:
-      hdmf: 3.9.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
   assets_timeout:
   - path: sub-210861/sub-210861_ses-20130703_behavior+ecephys+ogen.nwb
     versions:
@@ -1270,6 +1265,11 @@ tests:
   - path: sub-221977/sub-221977_ses-20140118_behavior+ecephys+ogen.nwb
     versions:
       hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-226244/sub-226244_ses-20131114_obj-1bk2zc4_behavior+ophys.nwb
+    versions:
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   name: matnwb_nwbRead

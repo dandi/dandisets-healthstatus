@@ -114,7 +114,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-s0/sub-s0_ses-Li-T3g-061418.nwb
+  - path: sub-s0/sub-s0_ses-Li-T3g-061418.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-s0/sub-s0_ses-Li-T3g-061518.nwb
     versions:
       hdmf: 3.9.0
@@ -844,7 +848,6 @@ tests:
   - sub-s0/sub-s0_ses-Li-T3g-053018.nwb
   - sub-s0/sub-s0_ses-Li-T3g-060118.nwb
   - sub-s0/sub-s0_ses-Li-T3g-060418.nwb
-  - sub-s0/sub-s0_ses-Li-T3g-061418.nwb
   - sub-s0/sub-s0_ses-Li-T3g-061818.nwb
   - sub-s0/sub-s0_ses-Li-T3g-062018.nwb
   - sub-s0/sub-s0_ses-Li-T3g-062818.nwb
@@ -1631,6 +1634,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   assets_timeout:
+  - path: sub-s0/sub-s0_ses-Li-T3g-061418.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-s2/sub-s2_ses-Cl-T3g-010218.nwb
     versions:
       hdmf: 3.10.0

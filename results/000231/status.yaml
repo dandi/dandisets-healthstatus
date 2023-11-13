@@ -306,7 +306,6 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-267CR/sub-267CR_ses-20200328T145158_behavior+ecephys+image.nwb
   - path: sub-267CR/sub-267CR_ses-20200329T140946_behavior+ecephys+image.nwb
     versions:
       hdmf: 3.10.0
@@ -530,7 +529,12 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-267CR/sub-267CR_ses-20200328T145158_behavior+ecephys+image.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-219CR/sub-219CR_ses-20190403T123013_behavior+image.nwb
@@ -593,7 +597,6 @@ tests:
       hdmf: 3.9.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-267CR/sub-267CR_ses-20200328T145158_behavior+ecephys+image.nwb
   - sub-267CR/sub-267CR_ses-20200331T161053_behavior+ecephys+image.nwb
   - path: sub-KF119/sub-KF119_ses-20180110T161350_behavior+image.nwb
     versions:
@@ -875,6 +878,11 @@ tests:
   - path: sub-267CR/sub-267CR_ses-20200326T151949_behavior+ecephys+image.nwb
     versions:
       hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-267CR/sub-267CR_ses-20200328T145158_behavior+ecephys+image.nwb
+    versions:
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-267CR/sub-267CR_ses-20200329T140946_behavior+ecephys+image.nwb

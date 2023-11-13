@@ -191,9 +191,9 @@ tests:
       pynwb: 2.4.0
   - path: sub-Mouse 2054/sub-Mouse 2054_ses-Session 14.nwb
     versions:
-      hdmf: 3.8.1
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
-      pynwb: 2.4.0
+      pynwb: 2.5.0
   - sub-Mouse 2054/sub-Mouse 2054_ses-Session 15.nwb
   - path: sub-Mouse 2055/sub-Mouse 2055_ses-Session 01_obj-1a88shm.nwb
     versions:
@@ -4853,11 +4853,6 @@ tests:
       hdmf: 3.8.1
       matnwb: v2.6.0.2
       pynwb: 2.4.0
-  - path: sub-Mouse 2054/sub-Mouse 2054_ses-Session 14.nwb
-    versions:
-      hdmf: 3.8.1
-      matnwb: v2.6.0.2
-      pynwb: 2.4.0
   - path: sub-Mouse 2055/sub-Mouse 2055_ses-Session 01_obj-1a88shm.nwb
     versions:
       hdmf: 3.8.1
@@ -9477,7 +9472,12 @@ tests:
       pynwb: 2.5.0
   - sub-Mouse 2086/sub-Mouse 2086_ses-Session 20_obj-1gat3gz.nwb
   - sub-Mouse 2086/sub-Mouse 2086_ses-Session 20_obj-1lqv4hh.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-Mouse 2054/sub-Mouse 2054_ses-Session 14.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   name: matnwb_nwbRead
 untested: []
 versions:

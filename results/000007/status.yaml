@@ -26,7 +26,7 @@ tests:
       pynwb: 2.5.0
   - path: sub-BAYLORCD13/sub-BAYLORCD13_ses-20171211T135437.nwb
     versions:
-      hdmf: 3.10.0
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-BAYLORCD13/sub-BAYLORCD13_ses-20171212T131814.nwb
@@ -309,11 +309,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-BAYLORCD12/sub-BAYLORCD12_ses-20180129T160551.nwb
-  - path: sub-BAYLORCD13/sub-BAYLORCD13_ses-20171211T135437.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
   - sub-BAYLORCD13/sub-BAYLORCD13_ses-20171212T131814.nwb
   - path: sub-BAYLORCD13/sub-BAYLORCD13_ses-20171213T135007.nwb
     versions:
@@ -472,6 +467,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   assets_timeout:
+  - path: sub-BAYLORCD13/sub-BAYLORCD13_ses-20171211T135437.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-BAYLORCD8/sub-BAYLORCD8_ses-20171019T123347.nwb
     versions:
       hdmf: 3.10.0
