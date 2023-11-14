@@ -10,10 +10,10 @@ tests:
   - sub-11/sub-11_ses-11_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok: []
-  assets_timeout:
+- assets_nok:
   - sub-11/sub-11_ses-11_ecephys.nwb
+  assets_ok: []
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
