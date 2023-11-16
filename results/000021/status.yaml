@@ -573,7 +573,11 @@ tests:
       pynwb: 2.5.0
   - sub-744915196/sub-744915196_ses-762602078_probe-768909188_ecephys.nwb
   - sub-745276220/sub-745276220_ses-762120172.nwb
-  - sub-745276220/sub-745276220_ses-762120172_probe-768908145_ecephys.nwb
+  - path: sub-745276220/sub-745276220_ses-762120172_probe-768908145_ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-745276220/sub-745276220_ses-762120172_probe-768908148_ecephys.nwb
     versions:
       hdmf: 3.10.0
@@ -932,7 +936,6 @@ tests:
       pynwb: 2.5.0
   - sub-744915196/sub-744915196_ses-762602078_probe-768909188_ecephys.nwb
   - sub-745276220/sub-745276220_ses-762120172.nwb
-  - sub-745276220/sub-745276220_ses-762120172_probe-768908145_ecephys.nwb
   - sub-745276220/sub-745276220_ses-762120172_probe-768908152_ecephys.nwb
   - path: sub-757329617/sub-757329617_ses-773418906_probe-792676156_ecephys.nwb
     versions:
@@ -1271,6 +1274,11 @@ tests:
   - path: sub-744915196/sub-744915196_ses-762602078_probe-768909186_ecephys.nwb
     versions:
       hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-745276220/sub-745276220_ses-762120172_probe-768908145_ecephys.nwb
+    versions:
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-745276220/sub-745276220_ses-762120172_probe-768908148_ecephys.nwb

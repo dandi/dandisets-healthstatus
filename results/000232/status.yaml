@@ -271,7 +271,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-YT086/sub-YT086_ses-20200314T181755_behavior+ecephys.nwb
-  - sub-YT086/sub-YT086_ses-20200320T171513_behavior+ecephys.nwb
+  - path: sub-YT086/sub-YT086_ses-20200320T171513_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout:
   - path: sub-EF0148/sub-EF0148_ses-20190306T134049_behavior+ecephys.nwb
     versions:
@@ -615,7 +619,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - sub-YT086/sub-YT086_ses-20200314T181755_behavior+ecephys.nwb
-  - sub-YT086/sub-YT086_ses-20200320T171513_behavior+ecephys.nwb
+  - path: sub-YT086/sub-YT086_ses-20200320T171513_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   name: matnwb_nwbRead
 untested: []
 versions:
