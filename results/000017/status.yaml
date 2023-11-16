@@ -153,7 +153,11 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-Theiler/sub-Theiler_ses-20171011T120000.nwb
+  - path: sub-Theiler/sub-Theiler_ses-20171011T120000.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -253,7 +257,11 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-Theiler/sub-Theiler_ses-20171011T120000.nwb
+  - path: sub-Theiler/sub-Theiler_ses-20171011T120000.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   assets_ok:
   - sub-Cori/sub-Cori_ses-20161217T120000.nwb
   - path: sub-Forssmann/sub-Forssmann_ses-20171105T120000.nwb
