@@ -1099,7 +1099,11 @@ tests:
   - sub-MX200101/sub-MX200101_ses-20201103T134319.nwb
   - sub-MX200101/sub-MX200101_ses-20201104T134339.nwb
   - sub-MX200101/sub-MX200101_ses-20201108T145601.nwb
-  - sub-MX200101/sub-MX200101_ses-20201109T145211.nwb
+  - path: sub-MX200101/sub-MX200101_ses-20201109T145211.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - sub-MX200101/sub-MX200101_ses-20201110T155016.nwb
   - path: sub-MX200101/sub-MX200101_ses-20201111T142605.nwb
     versions:
@@ -1897,7 +1901,6 @@ tests:
   - sub-MX200101/sub-MX200101_ses-20201103T134319.nwb
   - sub-MX200101/sub-MX200101_ses-20201104T134339.nwb
   - sub-MX200101/sub-MX200101_ses-20201108T145601.nwb
-  - sub-MX200101/sub-MX200101_ses-20201109T145211.nwb
   - sub-MX200101/sub-MX200101_ses-20201110T155016.nwb
   - sub-MX200101/sub-MX200101_ses-20201118T163947.nwb
   - sub-MX200101/sub-MX200101_ses-20201121T152520.nwb
@@ -2465,6 +2468,11 @@ tests:
   - path: sub-MX200101/sub-MX200101_ses-20201030T152600.nwb
     versions:
       hdmf: 3.9.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-MX200101/sub-MX200101_ses-20201109T145211.nwb
+    versions:
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-MX200101/sub-MX200101_ses-20201111T142605.nwb

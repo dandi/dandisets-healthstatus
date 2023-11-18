@@ -21,7 +21,8 @@ tests:
   - sub-20170228-4/sub-20170228-4_ses-20170228T185002_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-20170127-1/sub-20170127-1_ses-20170127T111652_ophys.nwb
   assets_ok:
   - sub-20170113-4/sub-20170113-4_ses-20170113T171241_ophys.nwb
   assets_timeout:
@@ -32,7 +33,6 @@ tests:
   - sub-20170111-1/sub-20170111-1_ses-20170111T123355_ophys.nwb
   - sub-20170113-2/sub-20170113-2_ses-20170113T124907_ophys.nwb
   - sub-20170113-3/sub-20170113-3_ses-20170113T150834_ophys.nwb
-  - sub-20170127-1/sub-20170127-1_ses-20170127T111652_ophys.nwb
   - sub-20170203-1/sub-20170203-1_ses-20170203T122038_ophys.nwb
   - sub-20170228-3/sub-20170228-3_ses-20170228T165730_ophys.nwb
   - sub-20170228-4/sub-20170228-4_ses-20170228T185002_ophys.nwb
