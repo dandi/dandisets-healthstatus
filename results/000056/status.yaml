@@ -108,7 +108,11 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-Mouse25/sub-Mouse25_ses-Mouse25-140129_behavior+ecephys.nwb
+  - path: sub-Mouse25/sub-Mouse25_ses-Mouse25-140129_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
   - path: sub-Mouse25/sub-Mouse25_ses-Mouse25-140130_behavior+ecephys.nwb
     versions:
       hdmf: 3.11.0
@@ -195,7 +199,6 @@ tests:
       hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
-  - sub-Mouse25/sub-Mouse25_ses-Mouse25-140129_behavior+ecephys.nwb
   assets_ok:
   - sub-Mouse17/sub-Mouse17_ses-Mouse17-130125_behavior+ecephys.nwb
   - sub-Mouse17/sub-Mouse17_ses-Mouse17-130128_behavior+ecephys.nwb
@@ -237,6 +240,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-Mouse25/sub-Mouse25_ses-Mouse25-140128_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.11.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-Mouse25/sub-Mouse25_ses-Mouse25-140129_behavior+ecephys.nwb
     versions:
       hdmf: 3.11.0
       matnwb: v2.6.0.2

@@ -1037,11 +1037,6 @@ tests:
       pynwb: 2.5.0
   - sub-MX200101/sub-MX200101_ses-20200926T114852.nwb
   - sub-MX200101/sub-MX200101_ses-20200927T153441.nwb
-  - path: sub-MX200101/sub-MX200101_ses-20200927T153441_behavior.nwb
-    versions:
-      hdmf: 3.9.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
   - path: sub-MX200101/sub-MX200101_ses-20200928T133528.nwb
     versions:
       hdmf: 3.10.0
@@ -1390,6 +1385,11 @@ tests:
   - path: sub-MX181002/sub-MX181002_ses-20190101T134726_behavior.nwb
     versions:
       hdmf: 3.10.0
+      matnwb: v2.6.0.2
+      pynwb: 2.5.0
+  - path: sub-MX200101/sub-MX200101_ses-20200927T153441_behavior.nwb
+    versions:
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-MX200101/sub-MX200101_ses-20200928T133528_behavior.nwb
@@ -2755,7 +2755,7 @@ tests:
       pynwb: 2.5.0
   - path: sub-MX200101/sub-MX200101_ses-20200927T153441_behavior.nwb
     versions:
-      hdmf: 3.9.0
+      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-MX200101/sub-MX200101_ses-20200928T133528_behavior.nwb
