@@ -239,6 +239,30 @@ class DandisetStatus(BaseModel):
         s += " |"
         return s
 
+    def iter_each_asset_test(self) -> Iterator[AssetTestInfo]:
+        for t in self.tests:
+            for asset in t.assets_ok:
+                yield AssetTestInfo(
+                    asset_path=getpath(asset),
+                    testname=t.name,
+                    versions=getversions(asset) or self.versions,
+                    outcome=Outcome.PASS,
+                )
+            for asset in t.assets_nok:
+                yield AssetTestInfo(
+                    asset_path=getpath(asset),
+                    testname=t.name,
+                    versions=getversions(asset) or self.versions,
+                    outcome=Outcome.FAIL,
+                )
+            for asset in t.assets_timeout:
+                yield AssetTestInfo(
+                    asset_path=getpath(asset),
+                    testname=t.name,
+                    versions=getversions(asset) or self.versions,
+                    outcome=Outcome.TIMEOUT,
+                )
+
 
 @dataclass
 class TestSummary:
@@ -286,6 +310,14 @@ class TestSummary:
             s += "\u2014"
         s += " |"
         return s
+
+
+@dataclass
+class AssetTestInfo:
+    asset_path: str
+    testname: str
+    versions: dict[str, str]
+    outcome: Outcome
 
 
 def getpath(asset: str | VersionedPath) -> str:
