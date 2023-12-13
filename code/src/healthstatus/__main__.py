@@ -1,4 +1,5 @@
 from __future__ import annotations
+from collections import Counter, defaultdict
 import logging
 from operator import attrgetter
 from pathlib import Path
@@ -10,6 +11,7 @@ from time import sleep
 from typing import Optional
 import anyio
 import click
+from packaging.version import Version
 from .checker import AssetReport, Dandiset, HealthStatus
 from .config import MATNWB_INSTALL_DIR
 from .core import Asset, DandisetStatus, Outcome, TestSummary, log
@@ -117,18 +119,16 @@ def check(
 
 @main.command()
 def report() -> None:
-    dandiset_qtys = {
-        Outcome.PASS: 0,
-        Outcome.FAIL: 0,
-        Outcome.TIMEOUT: 0,
-    }
-    asset_qtys = {
-        Outcome.PASS: 0,
-        Outcome.FAIL: 0,
-        Outcome.TIMEOUT: 0,
-    }
+    dandiset_qtys: Counter[Outcome] = Counter()
+    asset_qtys: Counter[Outcome] = Counter()
+    # Mapping from package names to package versions to test outcomes to
+    # quantities:
+    version_qtys: dict[str, dict[str, Counter[Outcome]]] = defaultdict(
+        lambda: defaultdict(Counter)
+    )
     all_statuses = []
     test_summaries = {tn: TestSummary(tn) for tn in TESTS.keys()}
+    assets_seen = 0
     for p in Path("results").iterdir():
         if re.fullmatch(r"\d{6,}", p.name) and p.is_dir():
             status = DandisetStatus.from_file(p.name, p / "status.yaml")
@@ -139,10 +139,35 @@ def report() -> None:
             dandiset_qtys[Outcome.PASS] += bool(not failed and not timedout and passed)
             dandiset_qtys[Outcome.FAIL] += bool(failed)
             dandiset_qtys[Outcome.TIMEOUT] += bool(timedout)
+            for ati in status.iter_each_asset_test():
+                assets_seen += 1
+                for pkg, ver in ati.versions.items():
+                    version_qtys[pkg][ver][ati.outcome] += 1
             for tn in TESTS.keys():
                 test_summaries[tn].register(p.name, status.test_counts(tn))
             all_statuses.append(status)
+            assets_seen += len(status.untested)
     with open("README.md", "w") as fp:
+        print("# Versions (passed/failed/timed out/not tested)", file=fp)
+        for pkg, data in sorted(version_qtys.items()):
+            print(f"- {pkg}: ", end="", file=fp)
+            for i, (ver, outcomes) in enumerate(
+                sorted(data.items(), key=lambda it: Version(it[0]), reverse=True)
+            ):
+                if i != 0:
+                    print(", ", end="", file=fp)
+                passed = outcomes[Outcome.PASS]
+                failed = outcomes[Outcome.FAIL]
+                timedout = outcomes[Outcome.TIMEOUT]
+                not_tested = assets_seen - sum(outcomes.values())
+                print(
+                    f"{ver} ({passed}/{failed}/{timedout}/{not_tested})",
+                    end="",
+                    file=fp,
+                )
+            print(file=fp)
+        print(file=fp)
+        print("# Summary", file=fp)
         print(
             "| Test / (Dandisets/assets)"
             f" | Passed ({dandiset_qtys[Outcome.PASS]}/{asset_qtys[Outcome.PASS]})"
@@ -155,6 +180,7 @@ def report() -> None:
         for tn in TESTS.keys():
             print(test_summaries[tn].as_row(), file=fp)
         print(file=fp)
+        print("# By Dandiset", file=fp)
         print("| Dandiset | " + " | ".join(TESTS.keys()) + " | Untested |", file=fp)
         print("| --- | " + " | ".join("---" for _ in TESTS) + " | --- |", file=fp)
         for s in sorted(all_statuses, key=attrgetter("dandiset")):
