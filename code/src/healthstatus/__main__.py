@@ -4,18 +4,15 @@ import logging
 from operator import attrgetter
 from pathlib import Path
 import re
-from signal import SIGINT
-import subprocess
 import sys
-from time import sleep
 from typing import Optional
 import anyio
 import click
-from ghreq import Client
 from packaging.version import Version
 from .checker import AssetReport, Dandiset, HealthStatus
 from .config import MATNWB_INSTALL_DIR
 from .core import Asset, DandisetStatus, Outcome, TestSummary, log
+from .mounts import fused
 from .tests import TESTS
 from .util import MatNWBInstaller, get_package_versions
 
@@ -64,7 +61,6 @@ def check(
     dandisets: tuple[str, ...],
     mode: str,
 ) -> None:
-    update_dandisets(Path(dataset_path))
     installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
     installer.install(update=True)
     hs = HealthStatus(
@@ -74,30 +70,13 @@ def check(
         dandiset_jobs=dandiset_jobs,
     )
     hs.versions["matnwb"] = installer.get_version()
-    with open("fuse.log", "wb") as fp:
-        with subprocess.Popen(
-            [
-                "datalad",
-                "fusefs",
-                "-d",
-                str(dataset_path),
-                "--foreground",
-                "--mode-transparent",
-                str(mount_point),
-            ],
-            stdout=fp,
-            stderr=fp,
-        ) as p:
-            sleep(3)
-            try:
-                if mode == "all":
-                    anyio.run(hs.run_all)
-                elif mode in ("random-asset", "random-outdated-asset-first"):
-                    anyio.run(hs.run_random_assets, mode)
-                else:
-                    raise AssertionError(f"Unexpected mode: {mode!r}")
-            finally:
-                p.send_signal(SIGINT)
+    with fused(dataset_path=dataset_path, mount_path=mount_point, update=True):
+        if mode == "all":
+            anyio.run(hs.run_all)
+        elif mode in ("random-asset", "random-outdated-asset-first"):
+            anyio.run(hs.run_random_assets, mode)
+        else:
+            raise AssertionError(f"Unexpected mode: {mode!r}")
 
 
 @main.command()
@@ -230,30 +209,6 @@ def find_dandiset(asset: Path) -> Optional[Path]:
         if (p / "dandiset.yaml").exists():
             return p
     return None
-
-
-def update_dandisets(dataset_path: Path) -> None:
-    # Importing this at the top of the file leads to some weird import error
-    # when running tests:
-    from datalad.api import Dataset
-
-    log.info("Updating Dandisets dataset ...")
-    # Fetch just the public repositories from the dandisets org, and then get
-    # or update just those subdatasets rather than trying to get all
-    # subdatasets and failing on private/embargoed ones
-    datasets = set()
-    with Client() as client:
-        for repo in client.paginate("/users/dandisets/repos"):
-            name = repo["name"]
-            if re.fullmatch("[0-9]{6}", name):
-                datasets.add(name)
-    ds = Dataset(dataset_path)
-    ds.update(follow="parentds", how="ff-only", recursive=True, recursion_limit=1)
-    for sub in ds.subdatasets(state="present"):
-        name = Path(sub["path"]).relative_to(dataset_path).as_posix()
-        datasets.discard(name)
-    if datasets:
-        ds.get(path=list(datasets), jobs=5, get_data=False)
 
 
 if __name__ == "__main__":
