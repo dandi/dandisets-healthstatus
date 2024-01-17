@@ -8,6 +8,7 @@ from signal import SIGINT
 import subprocess
 from time import sleep
 from ghreq import Client
+import requests
 from .core import log
 
 
@@ -65,3 +66,25 @@ def update_dandisets(dataset_path: Path) -> None:
         datasets.discard(name)
     if datasets:
         ds.get(path=list(datasets), jobs=5, get_data=False)
+
+
+@contextmanager
+def dandidav(logdir: Path | None = None) -> Iterator[str]:
+    if logdir is None:
+        logdir = Path()
+    with (logdir / "dandidav.log").open("wb") as fp:
+        with subprocess.Popen(["dandidav"], stdout=fp, stderr=fp) as p:
+            try:
+                url = "http://127.0.0.1:8080"
+                for _ in range(10):
+                    try:
+                        requests.get(url, timeout=1)
+                    except requests.RequestException:
+                        sleep(1)
+                    else:
+                        break
+                else:
+                    raise RuntimeError("WebDAV server did not start up time")
+                yield url
+            finally:
+                p.send_signal(SIGINT)
