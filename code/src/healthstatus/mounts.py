@@ -24,6 +24,7 @@ def fused(
     if logdir is None:
         logdir = Path()
     with (logdir / "fuse.log").open("wb") as fp:
+        log.debug("Starting `datalad fusefs` process ...")
         with subprocess.Popen(
             [
                 "datalad",
@@ -41,6 +42,7 @@ def fused(
             try:
                 yield
             finally:
+                log.debug("Terminating `datalad fusefs` process ...")
                 p.send_signal(SIGINT)
 
 
@@ -73,6 +75,7 @@ def dandidav(logdir: Path | None = None) -> Iterator[str]:
     if logdir is None:
         logdir = Path()
     with (logdir / "dandidav.log").open("wb") as fp:
+        log.debug("Starting `dandidav` process ...")
         with subprocess.Popen(["dandidav"], stdout=fp, stderr=fp) as p:
             try:
                 url = "http://127.0.0.1:8080"
@@ -87,11 +90,13 @@ def dandidav(logdir: Path | None = None) -> Iterator[str]:
                     raise RuntimeError("WebDAV server did not start up time")
                 yield url
             finally:
+                log.debug("Terminating `dandidav` process ...")
                 p.send_signal(SIGINT)
 
 
 @contextmanager
 def webdavfs(url: str, mount_path: str | os.PathLike[str]) -> Iterator[None]:
+    log.debug("Mounting webdavfs mount ...")
     subprocess.run(
         ["sudo", "mount", "-t", "webdavfs", url, os.fspath(mount_path)],
         check=True,
@@ -99,6 +104,7 @@ def webdavfs(url: str, mount_path: str | os.PathLike[str]) -> Iterator[None]:
     try:
         yield
     finally:
+        log.debug("Unmounting webdavfs mount ...")
         subprocess.run(["sudo", "umount", os.fspath(mount_path)], check=True)
 
 
