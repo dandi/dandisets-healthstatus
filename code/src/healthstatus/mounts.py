@@ -88,3 +88,20 @@ def dandidav(logdir: Path | None = None) -> Iterator[str]:
                 yield url
             finally:
                 p.send_signal(SIGINT)
+
+
+@contextmanager
+def webdavfs(url: str, mount_path: str | os.PathLike[str]) -> Iterator[None]:
+    subprocess.run(
+        ["sudo", "mount", "-t", "webdavfs", url, os.fspath(mount_path)],
+        check=True,
+    )
+    try:
+        yield
+    finally:
+        subprocess.run(["sudo", "umount", os.fspath(mount_path)], check=True)
+
+
+@contextmanager
+def davfs2(url: str, mount_path: str | os.PathLike[str]) -> Iterator[None]:
+    raise NotImplementedError

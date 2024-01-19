@@ -3,7 +3,7 @@ set -ex
 
 PYTHON="$HOME"/miniconda3/bin/python
 DANDISETS_PATH=/mnt/backup/dandi/dandisets-healthstatus/dandisets
-MOUNT_PATH=/mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse
+MOUNT_PATH=/tmp/dandisets-fuse
 
 cd "$(dirname "$0")"/..
 #git reset --hard HEAD
