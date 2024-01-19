@@ -27,6 +27,7 @@ class TestResult:
     asset_path: str
     outcome: Outcome
     output: Optional[str] = None
+    elapsed: Optional[float] = None
 
 
 @dataclass
