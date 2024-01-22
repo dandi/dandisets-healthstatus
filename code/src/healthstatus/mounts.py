@@ -32,6 +32,14 @@ class AssetInDandiset:
         return AssetInDandiset(dandiset_id, asset_path)
 
 
+@dataclass
+class MountBenchmark:
+    mount_name: str
+    asset: AssetInDandiset
+    testname: str
+    elapsed: float
+
+
 class Mounter(ABC):
     @property
     @abstractmethod

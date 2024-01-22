@@ -1,11 +1,13 @@
 from __future__ import annotations
 from collections import Counter, defaultdict
+from csv import DictWriter
 from enum import Enum
 import logging
 from operator import attrgetter
 from pathlib import Path
 import re
 import sys
+import textwrap
 from typing import Generic, Optional, TypeVar
 import anyio
 import click
@@ -13,7 +15,13 @@ from packaging.version import Version
 from .checker import AssetReport, Dandiset, HealthStatus
 from .config import MATNWB_INSTALL_DIR
 from .core import Asset, DandisetStatus, Outcome, TestSummary, log
-from .mounts import AssetInDandiset, FuseMounter, MountType, iter_mounters
+from .mounts import (
+    AssetInDandiset,
+    FuseMounter,
+    MountBenchmark,
+    MountType,
+    iter_mounters,
+)
 from .tests import TESTS, TIMED_TESTS
 from .util import MatNWBInstaller, get_package_versions
 
@@ -274,6 +282,7 @@ def time_mounts(
 ) -> None:
     installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
     installer.install(update=True)
+    results = []
     for mounter in iter_mounters(
         types=mounts,
         dataset_path=dataset_path,
@@ -292,10 +301,39 @@ def time_mounts(
                     log.info("Running test %r", tname)
                     r = anyio.run(tfunc, asset_obj)
                     if r.outcome is Outcome.PASS:
+                        assert r.elapsed is not None
                         log.info("Test passed in %f seconds", r.elapsed)
+                        results.append(
+                            MountBenchmark(
+                                mount_name=mounter.name,
+                                asset=a,
+                                testname=tname,
+                                elapsed=r.elapsed,
+                            )
+                        )
+                    elif r.outcome is Outcome.FAIL:
+                        assert r.output is not None
+                        log.error(
+                            "Test failed; output:\n\n%s\n",
+                            textwrap.indent(r.output, " " * 4),
+                        )
+                        sys.exit(1)
                     else:
-                        log.info("Test result: %s", r.outcome.name)
-    ### Summary?
+                        assert r.outcome is Outcome.TIMEOUT
+                        log.error("Test timed out")
+                        sys.exit(1)
+    csvout = DictWriter(sys.stdout, ["mount", "dandiset", "asset", "test", "time_sec"])
+    csvout.writeheader()
+    for res in results:
+        csvout.writerow(
+            {
+                "mount": res.mount_name,
+                "dandiset": res.asset.dandiset_id,
+                "asset": res.asset.asset_path,
+                "test": res.testname,
+                "time_sec": res.elapsed,
+            }
+        )
 
 
 def find_dandiset(asset: Path) -> Optional[Path]:
