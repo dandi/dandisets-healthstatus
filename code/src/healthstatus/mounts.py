@@ -167,6 +167,7 @@ def iter_mounters(
     types: set[MountType],
     dataset_path: Path | None,
     mount_path: Path,
+    update_dataset: bool = True,
 ) -> Iterator[Mounter]:
     logdir = Path()
     if MountType.FUSEFS in types:
@@ -175,7 +176,7 @@ def iter_mounters(
         yield FuseMounter(
             dataset_path=dataset_path,
             mount_path=mount_path,
-            update=True,
+            update=update_dataset,
             logdir=logdir,
         )
     if MountType.WEBDAVFS in types:

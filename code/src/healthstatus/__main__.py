@@ -21,6 +21,7 @@ E = TypeVar("E", bound="Enum")
 
 
 class EnumSet(click.ParamType, Generic[E]):
+    # The enum's values must be strs.
     name = "enumset"
 
     def __init__(self, klass: type[E]) -> None:
@@ -249,6 +250,15 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
     default=set(MountType),
     show_default="all",
 )
+@click.option(
+    "--update-dataset/--no-update-dataset",
+    help=(
+        "Whether to pull the latest changes to the Dandisets dataset repository"
+        " before fuse-mounting"
+    ),
+    default=True,
+    show_default=True,
+)
 @click.argument(
     "assets",
     nargs=-1,
@@ -260,11 +270,13 @@ def time_mounts(
     dataset_path: Path | None,
     mount_point: Path,
     mounts: set[MountType],
+    update_dataset: bool,
 ) -> None:
     for mounter in iter_mounters(
         types=mounts,
         dataset_path=dataset_path,
         mount_path=mount_point,
+        update_dataset=update_dataset,
     ):
         log.info("Testing with mount type: %s", mounter.name)
         with mounter.mount():
