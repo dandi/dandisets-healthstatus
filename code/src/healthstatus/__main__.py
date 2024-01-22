@@ -12,8 +12,8 @@ from packaging.version import Version
 from .checker import AssetReport, Dandiset, HealthStatus
 from .config import MATNWB_INSTALL_DIR
 from .core import Asset, DandisetStatus, Outcome, TestSummary, log
-from .mounts import fused
-from .tests import TESTS
+from .mounts import AssetInDandiset, FuseMounter, MounterFactory
+from .tests import TESTS, TIMED_TESTS
 from .util import MatNWBInstaller, get_package_versions
 
 
@@ -30,7 +30,7 @@ def main() -> None:
 @click.option(
     "-d",
     "--dataset-path",
-    type=click.Path(file_okay=False, exists=True, path_type=anyio.Path),
+    type=click.Path(file_okay=False, exists=True, path_type=Path),
     required=True,
 )
 @click.option(
@@ -44,7 +44,7 @@ def main() -> None:
 @click.option(
     "-m",
     "--mount-point",
-    type=click.Path(file_okay=False, exists=True, path_type=anyio.Path),
+    type=click.Path(file_okay=False, exists=True, path_type=Path),
     required=True,
 )
 @click.option(
@@ -55,8 +55,8 @@ def main() -> None:
 )
 @click.argument("dandisets", nargs=-1)
 def check(
-    dataset_path: anyio.Path,
-    mount_point: anyio.Path,
+    dataset_path: Path,
+    mount_point: Path,
     dandiset_jobs: int,
     dandisets: tuple[str, ...],
     mode: str,
@@ -64,13 +64,14 @@ def check(
     installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
     installer.install(update=True)
     hs = HealthStatus(
-        backup_root=mount_point,
+        backup_root=anyio.Path(str(mount_point)),
         reports_root=Path.cwd(),
         dandisets=dandisets,
         dandiset_jobs=dandiset_jobs,
     )
     hs.versions["matnwb"] = installer.get_version()
-    with fused(dataset_path=dataset_path, mount_path=mount_point, update=True):
+    mnt = FuseMounter(dataset_path=dataset_path, mount_path=mount_point, update=True)
+    with mnt.mount():
         if mode == "all":
             anyio.run(hs.run_all)
         elif mode in ("random-asset", "random-outdated-asset-first"):
@@ -200,6 +201,50 @@ def test_files(
             report.register_test_result(r)
             report.dump(asset_paths)
     sys.exit(0 if ok else 1)
+
+
+@main.command()
+@click.option(
+    "-d",
+    "--dataset-path",
+    type=click.Path(file_okay=False, exists=True, path_type=Path),
+    required=True,
+)
+@click.option(
+    "-m",
+    "--mount-point",
+    type=click.Path(file_okay=False, exists=True, path_type=Path),
+    required=True,
+)
+@click.argument(
+    "assets",
+    nargs=-1,
+    type=AssetInDandiset.parse,
+    metavar="DANDISET_ID/ASSET_PATH ...",
+)
+def time_mounts(
+    assets: tuple[AssetInDandiset, ...], dataset_path: Path, mount_point: Path
+) -> None:
+    factory = MounterFactory(dataset_path=dataset_path, mount_path=mount_point)
+    for mounter in factory.iter_mounters():
+        log.info("Testing with mount type: %s", mounter.name)
+        with mounter.mount():
+            for a in assets:
+                log.info(
+                    "Testing Dandiset %s, asset %s ...", a.dandiset_id, a.asset_path
+                )
+                fpath = mounter.resolve(a)
+                asset_obj = Asset(
+                    filepath=anyio.Path(str(fpath)), asset_path=a.asset_path
+                )
+                for tname, tfunc in TIMED_TESTS.items():
+                    log.info("Running test %r", tname)
+                    r = anyio.run(tfunc, asset_obj)
+                    if r.outcome is Outcome.PASS:
+                        log.info("Test passed in %f seconds", r.elapsed)
+                    else:
+                        log.info("Test result: %s", r.outcome.name)
+    ### Summary?
 
 
 def find_dandiset(asset: Path) -> Optional[Path]:
