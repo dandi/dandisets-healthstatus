@@ -272,6 +272,8 @@ def time_mounts(
     mounts: set[MountType],
     update_dataset: bool,
 ) -> None:
+    installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
+    installer.install(update=True)
     for mounter in iter_mounters(
         types=mounts,
         dataset_path=dataset_path,
