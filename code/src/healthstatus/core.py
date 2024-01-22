@@ -6,12 +6,14 @@ from datetime import datetime
 from enum import Enum
 import logging
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Sequence, Union
+from typing import Any, Dict, List, NewType, Optional, Sequence, Union
 from pydantic import BaseModel, Field, field_validator
 import yaml
 from .yamllineno import load_yaml_lineno
 
 log = logging.getLogger(__package__)
+
+AssetPath = NewType("AssetPath", str)
 
 
 class Outcome(Enum):
@@ -22,20 +24,33 @@ class Outcome(Enum):
 
 @dataclass
 class TestResult:
-    testname: str
-    asset_path: str
     outcome: Outcome
-    output: Optional[str] = None
-    elapsed: Optional[float] = None
+    output: str | None = None  # Only set if outcome is FAIL
+    elapsed: float | None = None  # Only set if outcome is PASS
 
 
 @dataclass
 class Asset:
     filepath: Path
-    asset_path: str
+    asset_path: AssetPath
 
     def is_nwb(self) -> bool:
         return self.filepath.suffix.lower() == ".nwb"
+
+
+@dataclass
+class AssetTestResult:
+    testname: str
+    asset_path: AssetPath
+    result: TestResult
+
+    @property
+    def outcome(self) -> Outcome:
+        return self.result.outcome
+
+    @property
+    def output(self) -> str | None:
+        return self.result.output
 
 
 class VersionedPath(BaseModel):
@@ -75,13 +90,16 @@ class TestStatus(BaseModel):
         for asset in self.assets_timeout:
             yield (getpath(asset), Outcome.TIMEOUT)
 
-    def outdated_assets(self, current_versions: dict[str, str]) -> Iterator[str]:
+    def outdated_assets(self, current_versions: dict[str, str]) -> Iterator[AssetPath]:
         for asset in [*self.assets_ok, *self.assets_nok, *self.assets_timeout]:
             if getversions(asset) != current_versions:
                 yield getpath(asset)
 
     def update_asset(
-        self, asset_path: str, outcome: Outcome, versions: Optional[dict[str, str]]
+        self,
+        asset_path: AssetPath,
+        outcome: Outcome,
+        versions: Optional[dict[str, str]],
     ) -> None:
         self.assets_ok = [a for a in self.assets_ok if getpath(a) != asset_path]
         self.assets_nok = [a for a in self.assets_nok if getpath(a) != asset_path]
@@ -165,7 +183,7 @@ class DandisetStatus(BaseModel):
         jsonable = self.model_dump(mode="json")
         path.write_text(yaml.dump(jsonable))
 
-    def update_asset(self, res: TestResult, versions: dict[str, str]) -> None:
+    def update_asset(self, res: AssetTestResult, versions: dict[str, str]) -> None:
         try:
             t = next(t for t in self.tests if t.name == res.testname)
         except StopIteration:
@@ -179,7 +197,9 @@ class DandisetStatus(BaseModel):
         if vdict is not None:
             self.prune_versions(versions)
 
-    def retain(self, asset_paths: set[str], current_versions: dict[str, str]) -> None:
+    def retain(
+        self, asset_paths: set[AssetPath], current_versions: dict[str, str]
+    ) -> None:
         for t in self.tests:
             t.assets_ok = [a for a in t.assets_ok if getpath(a) in asset_paths]
             t.assets_nok = [a for a in t.assets_nok if getpath(a) in asset_paths]
@@ -314,17 +334,17 @@ class TestSummary:
 
 @dataclass
 class AssetTestInfo:
-    asset_path: str
+    asset_path: AssetPath
     testname: str
     versions: dict[str, str]
     outcome: Outcome
 
 
-def getpath(asset: str | VersionedPath) -> str:
+def getpath(asset: str | VersionedPath) -> AssetPath:
     if isinstance(asset, str):
-        return asset
+        return AssetPath(asset)
     else:
-        return asset.path
+        return AssetPath(asset.path)
 
 
 def getversions(asset: str | VersionedPath) -> Optional[dict[str, str]]:

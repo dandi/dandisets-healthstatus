@@ -13,13 +13,13 @@ from time import sleep
 import click
 from ghreq import Client
 import requests
-from .core import log
+from .core import AssetPath, log
 
 
 @dataclass
 class AssetInDandiset:
     dandiset_id: str
-    asset_path: str
+    asset_path: AssetPath
 
     @classmethod
     def parse(cls, s: str) -> AssetInDandiset:
@@ -29,7 +29,7 @@ class AssetInDandiset:
                 f"invalid asset-in-dandiset: {s!r}: must be in form"
                 " <dandiset-id>/<asset-path>"
             )
-        return AssetInDandiset(dandiset_id, asset_path)
+        return AssetInDandiset(dandiset_id, AssetPath(asset_path))
 
 
 @dataclass

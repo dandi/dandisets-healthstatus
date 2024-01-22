@@ -14,7 +14,7 @@ import click
 from packaging.version import Version
 from .checker import AssetReport, Dandiset, HealthStatus
 from .config import MATNWB_INSTALL_DIR
-from .core import Asset, DandisetStatus, Outcome, TestSummary, log
+from .core import AssetPath, AssetTestResult, DandisetStatus, Outcome, TestSummary, log
 from .mounts import (
     AssetInDandiset,
     FuseMounter,
@@ -183,7 +183,9 @@ def report() -> None:
         print(file=fp)
         print("# By Dandiset", file=fp)
         print("| Dandiset | " + " | ".join(TESTS.keys()) + " | Untested |", file=fp)
-        print("| --- | " + " | ".join("---" for _ in TESTS) + " | --- |", file=fp)
+        print(
+            "| --- | " + " | ".join("---" for _ in TESTS.keys()) + " | --- |", file=fp
+        )
         for s in sorted(all_statuses, key=attrgetter("dandiset")):
             print(s.as_row(), file=fp)
 
@@ -204,9 +206,9 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
     else:
         installer.download(update=False)
     versions["matnwb"] = installer.get_version()
-    testfunc = TESTS[testname]
+    testfunc = TESTS.get(testname)
     ok = True
-    dandiset_cache: dict[Path, tuple[Dandiset, set[str]]] = {}
+    dandiset_cache: dict[Path, tuple[Dandiset, set[AssetPath]]] = {}
     for f in files:
         if save_results and (path := find_dandiset(Path(f))) is not None:
             try:
@@ -218,14 +220,13 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
                 asset_paths = anyio.run(dandiset.get_asset_paths)
                 dandiset_cache[path] = (dandiset, asset_paths)
             report = AssetReport(dandiset=dandiset)
-            ap = Path(f).relative_to(path).as_posix()
+            ap = AssetPath(Path(f).relative_to(path).as_posix())
         else:
             report = None
             asset_paths = None
-            ap = str(f)
-        asset = Asset(filepath=f, asset_path=ap)
+            ap = None
         log.info("Testing %s ...", f)
-        r = anyio.run(testfunc, asset)
+        r = anyio.run(testfunc.run, f)
         if r.output is not None:
             print(r.output, end="")
         log.info("%s: %s", f, r.outcome.name)
@@ -234,7 +235,13 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
         if save_results:
             assert report is not None
             assert asset_paths is not None
-            report.register_test_result(r)
+            assert ap is not None
+            atr = AssetTestResult(
+                testname=testname,
+                asset_path=AssetPath(ap),
+                result=r,
+            )
+            report.register_test_result(atr)
             report.dump(asset_paths)
     sys.exit(0 if ok else 1)
 
@@ -296,10 +303,9 @@ def time_mounts(
                     "Testing Dandiset %s, asset %s ...", a.dandiset_id, a.asset_path
                 )
                 fpath = mounter.resolve(a)
-                asset_obj = Asset(filepath=fpath, asset_path=a.asset_path)
-                for tname, tfunc in TIMED_TESTS.items():
-                    log.info("Running test %r", tname)
-                    r = anyio.run(tfunc, asset_obj)
+                for tfunc in TIMED_TESTS:
+                    log.info("Running test %r", tfunc.NAME)
+                    r = anyio.run(tfunc.run, fpath)
                     if r.outcome is Outcome.PASS:
                         assert r.elapsed is not None
                         log.info("Test passed in %f seconds", r.elapsed)
@@ -307,7 +313,7 @@ def time_mounts(
                             MountBenchmark(
                                 mount_name=mounter.name,
                                 asset=a,
-                                testname=tname,
+                                testname=tfunc.NAME,
                                 elapsed=r.elapsed,
                             )
                         )
@@ -347,11 +353,10 @@ def time_files(testname: str, files: tuple[Path, ...]) -> None:
     if "matnwb" in testname.lower():
         installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
         installer.install(update=True)
-    testfunc = TIMED_TESTS[testname]
+    testfunc = TIMED_TESTS.get(testname)
     for f in files:
-        asset = Asset(filepath=f, asset_path=str(f))
         log.info("Testing %s ...", f)
-        r = anyio.run(testfunc, asset)
+        r = anyio.run(testfunc.run, f)
         if r.outcome is Outcome.PASS:
             assert r.elapsed is not None
             log.info("Test passed in %f seconds", r.elapsed)

@@ -1,6 +1,6 @@
 from __future__ import annotations
 from collections import defaultdict, deque
-from collections.abc import AsyncGenerator, AsyncIterator, Awaitable, Callable
+from collections.abc import AsyncGenerator, AsyncIterator
 from dataclasses import dataclass, field
 from datetime import datetime
 from os.path import getsize
@@ -15,14 +15,15 @@ from .aioutil import pool_tasks
 from .config import WORKERS_PER_DANDISET
 from .core import (
     Asset,
+    AssetPath,
+    AssetTestResult,
     DandisetStatus,
     Outcome,
-    TestResult,
     TestStatus,
     UntestedAsset,
     log,
 )
-from .tests import TESTFUNCS, TESTS
+from .tests import TESTS, Test
 from .util import get_package_versions
 
 
@@ -30,18 +31,22 @@ from .util import get_package_versions
 class TestCase:
     dandiset_id: str
     asset: Asset
-    testfunc: Callable[[Asset], Awaitable[TestResult]]
+    testfunc: Test
 
-    async def run(self) -> TestResult:
-        r = await self.testfunc(self.asset)
+    async def run(self) -> AssetTestResult:
+        r = await self.testfunc.run(self.asset.filepath)
         log.info(
             "Dandiset %s, asset %s, test %s: %s",
             self.dandiset_id,
             self.asset.asset_path,
-            r.testname,
+            self.testfunc.NAME,
             r.outcome.name,
         )
-        return r
+        return AssetTestResult(
+            testname=self.testfunc.NAME,
+            asset_path=self.asset.asset_path,
+            result=r,
+        )
 
 
 @dataclass
@@ -159,7 +164,7 @@ class Dandiset:
 
         async def dowork(job: TestCase | Untested) -> None:
             res = await job.run()
-            if isinstance(res, TestResult):
+            if isinstance(res, AssetTestResult):
                 report.register_test_result(res)
             else:
                 assert isinstance(res, UntestedAsset)
@@ -172,7 +177,7 @@ class Dandiset:
                 )
                 report.nassets += 1
                 if asset.is_nwb():
-                    for t in TESTFUNCS:
+                    for t in TESTS:
                         yield TestCase(
                             asset=asset, testfunc=t, dandiset_id=self.identifier
                         )
@@ -220,17 +225,17 @@ class Dandiset:
             report.register_test_result(await job.run())
 
         async def aiterjobs() -> AsyncGenerator[TestCase, None]:
-            for t in TESTFUNCS:
+            for t in TESTS:
                 yield TestCase(asset=asset, testfunc=t, dandiset_id=self.identifier)
 
         await pool_tasks(dowork, aiterjobs(), WORKERS_PER_DANDISET)
         return report
 
     async def aiterassets(self) -> AsyncIterator[Asset]:
-        def mkasset(filepath: Path) -> Asset:
+        def mkasset(filepath: anyio.Path) -> Asset:
             return Asset(
-                filepath=filepath,
-                asset_path=filepath.relative_to(self.path).as_posix(),
+                filepath=Path(filepath),
+                asset_path=AssetPath(filepath.relative_to(self.path).as_posix()),
             )
 
         dirs = deque([anyio.Path(self.path)])
@@ -246,13 +251,13 @@ class Dandiset:
                     continue
                 if await p.is_dir():
                     if p.suffix in (".zarr", ".ngff"):
-                        yield mkasset(Path(p))
+                        yield mkasset(p)
                     else:
                         dirs.append(p)
                 elif p.name != "dandiset.yaml":
-                    yield mkasset(Path(p))
+                    yield mkasset(p)
 
-    async def get_asset_paths(self) -> set[str]:
+    async def get_asset_paths(self) -> set[AssetPath]:
         log.info("Scanning Dandiset %s", self.identifier)
         return {asset.asset_path async for asset in self.aiterassets()}
 
@@ -268,7 +273,7 @@ class DandisetReport:
     started: datetime = field(default_factory=lambda: datetime.now().astimezone())
     ended: Optional[datetime] = None
 
-    def register_test_result(self, r: TestResult) -> None:
+    def register_test_result(self, r: AssetTestResult) -> None:
         self.tests[r.testname].by_outcome[r.outcome].append(r)
 
     def register_untested(self, d: UntestedAsset) -> None:
@@ -321,40 +326,40 @@ class DandisetReport:
 
 @dataclass
 class TestReport:
-    by_outcome: dict[Outcome, list[TestResult]] = field(
+    by_outcome: dict[Outcome, list[AssetTestResult]] = field(
         init=False, default_factory=lambda: defaultdict(list)
     )
 
     @property
-    def passed(self) -> list[TestResult]:
+    def passed(self) -> list[AssetTestResult]:
         return self.by_outcome[Outcome.PASS]
 
     @property
-    def failed(self) -> list[TestResult]:
+    def failed(self) -> list[AssetTestResult]:
         return self.by_outcome[Outcome.FAIL]
 
     @property
-    def timedout(self) -> list[TestResult]:
+    def timedout(self) -> list[AssetTestResult]:
         return self.by_outcome[Outcome.TIMEOUT]
 
 
 @dataclass
 class AssetReport:
     dandiset: Dandiset
-    results: list[TestResult] = field(default_factory=list)
+    results: list[AssetTestResult] = field(default_factory=list)
     started: datetime = field(default_factory=lambda: datetime.now().astimezone())
 
-    def register_test_result(self, r: TestResult) -> None:
+    def register_test_result(self, r: AssetTestResult) -> None:
         self.results.append(r)
 
-    def dump(self, asset_paths: set[str]) -> None:
+    def dump(self, asset_paths: set[AssetPath]) -> None:
         try:
             status = self.dandiset.load_status()
         except FileNotFoundError:
             status = DandisetStatus(
                 dandiset=self.dandiset.identifier,
                 dandiset_version=self.dandiset.commit,
-                tests=[TestStatus(name=testname) for testname in TESTS],
+                tests=[TestStatus(name=testname) for testname in TESTS.keys()],
                 versions=self.dandiset.versions,
             )
         for r in self.results:
