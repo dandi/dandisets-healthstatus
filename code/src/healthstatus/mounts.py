@@ -60,7 +60,18 @@ class FuseMounter(Mounter):
 
     @contextmanager
     def mount(self) -> Iterator[None]:
-        if self.update:
+        if not self.dataset_path.exists():
+            log.info("Cloning dandi/dandisets to %s ...", self.dataset_path)
+            subprocess.run(
+                [
+                    "datalad",
+                    "clone",
+                    "git@github.com:dandi/dandisets.git",
+                    os.fspath(self.dataset_path),
+                ],
+                check=True,
+            )
+        elif self.update:
             update_dandisets(self.dataset_path)
         with (self.logdir / "fuse.log").open("wb") as fp:
             log.debug("Starting `datalad fusefs` process ...")
