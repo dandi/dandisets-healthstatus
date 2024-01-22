@@ -1,20 +1,49 @@
 from __future__ import annotations
 from collections import Counter, defaultdict
+from enum import Enum
 import logging
 from operator import attrgetter
 from pathlib import Path
 import re
 import sys
-from typing import Optional
+from typing import Generic, Optional, TypeVar
 import anyio
 import click
 from packaging.version import Version
 from .checker import AssetReport, Dandiset, HealthStatus
 from .config import MATNWB_INSTALL_DIR
 from .core import Asset, DandisetStatus, Outcome, TestSummary, log
-from .mounts import AssetInDandiset, FuseMounter, MounterFactory
+from .mounts import AssetInDandiset, FuseMounter, MountType, iter_mounters
 from .tests import TESTS, TIMED_TESTS
 from .util import MatNWBInstaller, get_package_versions
+
+E = TypeVar("E", bound="Enum")
+
+
+class EnumSet(click.ParamType, Generic[E]):
+    name = "enumset"
+
+    def __init__(self, klass: type[E]) -> None:
+        self.klass = klass
+
+    def convert(
+        self,
+        value: str | set[E],
+        param: click.Parameter | None,
+        ctx: click.Context | None,
+    ) -> set[E]:
+        if not isinstance(value, str):
+            return value
+        selected = set()
+        for v in re.split(r"\s*,\s*", value):
+            try:
+                selected.add(self.klass(v))
+            except ValueError:
+                self.fail(f"{value!r}: invalid option {v!r}", param, ctx)
+        return selected
+
+    def get_metavar(self, _param: click.Parameter) -> str:
+        return "[" + ",".join(v.value for v in self.klass) + "]"
 
 
 @click.group()
@@ -206,13 +235,19 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
     "-d",
     "--dataset-path",
     type=click.Path(file_okay=False, exists=True, path_type=Path),
-    required=True,
 )
 @click.option(
     "-m",
     "--mount-point",
     type=click.Path(file_okay=False, exists=True, path_type=Path),
     required=True,
+)
+@click.option(
+    "-M",
+    "--mounts",
+    type=EnumSet(MountType),
+    default=set(MountType),
+    show_default="all",
 )
 @click.argument(
     "assets",
@@ -221,10 +256,16 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
     metavar="DANDISET_ID/ASSET_PATH ...",
 )
 def time_mounts(
-    assets: tuple[AssetInDandiset, ...], dataset_path: Path, mount_point: Path
+    assets: tuple[AssetInDandiset, ...],
+    dataset_path: Path | None,
+    mount_point: Path,
+    mounts: set[MountType],
 ) -> None:
-    factory = MounterFactory(dataset_path=dataset_path, mount_path=mount_point)
-    for mounter in factory.iter_mounters():
+    for mounter in iter_mounters(
+        types=mounts,
+        dataset_path=dataset_path,
+        mount_path=mount_point,
+    ):
         log.info("Testing with mount type: %s", mounter.name)
         with mounter.mount():
             for a in assets:

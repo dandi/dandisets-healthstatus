@@ -3,12 +3,14 @@ from abc import ABC, abstractmethod
 from collections.abc import Iterator
 from contextlib import AbstractContextManager, contextmanager
 from dataclasses import dataclass, field
+from enum import Enum
 import os
 from pathlib import Path
 import re
 from signal import SIGINT
 import subprocess
 from time import sleep
+import click
 from ghreq import Client
 import requests
 from .core import log
@@ -155,21 +157,31 @@ class DavFS2Mounter(DandiDavMounter):
         raise NotImplementedError
 
 
-@dataclass
-class MounterFactory:
-    dataset_path: Path
-    mount_path: Path
-    logdir: Path = field(default_factory=Path)
+class MountType(Enum):
+    FUSEFS = "fusefs"
+    WEBDAVFS = "webdavfs"
+    DAVFS2 = "davfs2"
 
-    def iter_mounters(self) -> Iterator[Mounter]:
+
+def iter_mounters(
+    types: set[MountType],
+    dataset_path: Path | None,
+    mount_path: Path,
+) -> Iterator[Mounter]:
+    logdir = Path()
+    if MountType.FUSEFS in types:
+        if dataset_path is None:
+            raise click.UsageError("--dataset-path must be set when using fusefs mount")
         yield FuseMounter(
-            dataset_path=self.dataset_path,
-            mount_path=self.mount_path,
+            dataset_path=dataset_path,
+            mount_path=mount_path,
             update=True,
-            logdir=self.logdir,
+            logdir=logdir,
         )
-        yield WebDavFSMounter(mount_path=self.mount_path, logdir=self.logdir)
-        yield DavFS2Mounter(mount_path=self.mount_path, logdir=self.logdir)
+    if MountType.WEBDAVFS in types:
+        yield WebDavFSMounter(mount_path=mount_path, logdir=logdir)
+    if MountType.DAVFS2 in types:
+        yield DavFS2Mounter(mount_path=mount_path, logdir=logdir)
 
 
 def update_dandisets(dataset_path: Path) -> None:
