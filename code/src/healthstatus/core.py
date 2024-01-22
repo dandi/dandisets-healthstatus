@@ -7,7 +7,6 @@ from enum import Enum
 import logging
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence, Union
-import anyio
 from pydantic import BaseModel, Field, field_validator
 import yaml
 from .yamllineno import load_yaml_lineno
@@ -32,7 +31,7 @@ class TestResult:
 
 @dataclass
 class Asset:
-    filepath: anyio.Path
+    filepath: Path
     asset_path: str
 
     def is_nwb(self) -> bool:

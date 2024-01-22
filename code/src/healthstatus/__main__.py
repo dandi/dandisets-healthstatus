@@ -64,7 +64,7 @@ def check(
     installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
     installer.install(update=True)
     hs = HealthStatus(
-        backup_root=anyio.Path(str(mount_point)),
+        backup_root=mount_point,
         reports_root=Path.cwd(),
         dandisets=dandisets,
         dandiset_jobs=dandiset_jobs,
@@ -156,11 +156,9 @@ def report() -> None:
 @click.argument(
     "files",
     nargs=-1,
-    type=click.Path(exists=True, dir_okay=False, path_type=anyio.Path),
+    type=click.Path(exists=True, dir_okay=False, path_type=Path),
 )
-def test_files(
-    testname: str, files: tuple[anyio.Path, ...], save_results: bool
-) -> None:
+def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> None:
     versions = get_package_versions()
     installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
     if "matnwb" in testname.lower():
@@ -177,7 +175,7 @@ def test_files(
                 dandiset, asset_paths = dandiset_cache[path]
             except KeyError:
                 dandiset = Dandiset(
-                    path=anyio.Path(path), reports_root=Path.cwd(), versions=versions
+                    path=path, reports_root=Path.cwd(), versions=versions
                 )
                 asset_paths = anyio.run(dandiset.get_asset_paths)
                 dandiset_cache[path] = (dandiset, asset_paths)
@@ -234,9 +232,7 @@ def time_mounts(
                     "Testing Dandiset %s, asset %s ...", a.dandiset_id, a.asset_path
                 )
                 fpath = mounter.resolve(a)
-                asset_obj = Asset(
-                    filepath=anyio.Path(str(fpath)), asset_path=a.asset_path
-                )
+                asset_obj = Asset(filepath=fpath, asset_path=a.asset_path)
                 for tname, tfunc in TIMED_TESTS.items():
                     log.info("Running test %r", tname)
                     r = anyio.run(tfunc, asset_obj)

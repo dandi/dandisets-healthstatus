@@ -1,11 +1,10 @@
 from pathlib import Path
-import anyio
 
 MATNWB_INSTALL_DIR = Path("matnwb")  # in current working directory
 
 PACKAGES_TO_VERSION = ["pynwb", "hdmf"]
 
-PYNWB_OPEN_LOAD_NS_SCRIPT = anyio.Path(__file__).with_name("pynwb_open_load_ns.py")
+PYNWB_OPEN_LOAD_NS_SCRIPT = Path(__file__).with_name("pynwb_open_load_ns.py")
 
 TIMEOUT = 3600
 

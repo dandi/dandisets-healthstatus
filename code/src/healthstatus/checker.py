@@ -74,7 +74,7 @@ class Untested:
 
 @dataclass
 class HealthStatus:
-    backup_root: anyio.Path
+    backup_root: Path
     reports_root: Path
     dandisets: tuple[str, ...]
     dandiset_jobs: int
@@ -106,12 +106,12 @@ class HealthStatus:
             for did in self.dandisets:
                 yield await self.get_dandiset(self.backup_root / did)
         else:
-            async for p in self.backup_root.iterdir():
+            async for p in anyio.Path(self.backup_root).iterdir():
                 if re.fullmatch(r"\d{6,}", p.name) and await p.is_dir():
                     log.info("Found Dandiset %s", p.name)
-                    yield await self.get_dandiset(p)
+                    yield await self.get_dandiset(Path(p))
 
-    async def get_dandiset(self, path: anyio.Path) -> Dandiset:
+    async def get_dandiset(self, path: Path) -> Dandiset:
         return Dandiset(
             path=path, reports_root=self.reports_root, versions=self.versions
         )
@@ -119,7 +119,7 @@ class HealthStatus:
 
 @dataclass
 class Dandiset:
-    path: anyio.Path
+    path: Path
     commit: str = field(init=False)
     reports_root: Path
     versions: dict[str, str]
@@ -227,13 +227,13 @@ class Dandiset:
         return report
 
     async def aiterassets(self) -> AsyncIterator[Asset]:
-        def mkasset(filepath: anyio.Path) -> Asset:
+        def mkasset(filepath: Path) -> Asset:
             return Asset(
                 filepath=filepath,
                 asset_path=filepath.relative_to(self.path).as_posix(),
             )
 
-        dirs = deque([self.path])
+        dirs = deque([anyio.Path(self.path)])
         while dirs:
             async for p in dirs.popleft().iterdir():
                 if p.name in (
@@ -246,11 +246,11 @@ class Dandiset:
                     continue
                 if await p.is_dir():
                     if p.suffix in (".zarr", ".ngff"):
-                        yield mkasset(p)
+                        yield mkasset(Path(p))
                     else:
                         dirs.append(p)
                 elif p.name != "dandiset.yaml":
-                    yield mkasset(p)
+                    yield mkasset(Path(p))
 
     async def get_asset_paths(self) -> set[str]:
         log.info("Scanning Dandiset %s", self.identifier)
