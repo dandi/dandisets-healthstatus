@@ -336,6 +336,37 @@ def time_mounts(
         )
 
 
+@main.command()
+@click.argument("testname", type=click.Choice(list(TIMED_TESTS.keys())))
+@click.argument(
+    "files",
+    nargs=-1,
+    type=click.Path(exists=True, dir_okay=False, path_type=Path),
+)
+def time_files(testname: str, files: tuple[Path, ...]) -> None:
+    if "matnwb" in testname.lower():
+        installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
+        installer.install(update=True)
+    testfunc = TIMED_TESTS[testname]
+    for f in files:
+        asset = Asset(filepath=f, asset_path=str(f))
+        log.info("Testing %s ...", f)
+        r = anyio.run(testfunc, asset)
+        if r.outcome is Outcome.PASS:
+            assert r.elapsed is not None
+            log.info("Test passed in %f seconds", r.elapsed)
+        elif r.outcome is Outcome.FAIL:
+            assert r.output is not None
+            log.error(
+                "Test failed; output:\n\n%s\n", textwrap.indent(r.output, " " * 4)
+            )
+            sys.exit(1)
+        else:
+            assert r.outcome is Outcome.TIMEOUT
+            log.error("Test timed out")
+            sys.exit(1)
+
+
 def find_dandiset(asset: Path) -> Optional[Path]:
     if not asset.is_absolute():
         asset = asset.absolute()
