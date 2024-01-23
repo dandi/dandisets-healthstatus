@@ -311,7 +311,7 @@ def time_mounts(
         mount_path=mount_point,
         update_dataset=update_dataset,
     ):
-        log.info("Testing with mount type: %s", mounter.name)
+        log.info("Testing with mount type: %s", mounter.type.value)
         with mounter.mount():
             for a in assets:
                 log.info(
@@ -326,7 +326,7 @@ def time_mounts(
                         log.info("Test passed in %f seconds", r.elapsed)
                         results.append(
                             MountBenchmark(
-                                mount_name=mounter.name,
+                                mount_type=mounter.type,
                                 asset=a,
                                 testname=tfunc.NAME,
                                 elapsed=r.elapsed,
@@ -343,12 +343,14 @@ def time_mounts(
                         assert r.outcome is Outcome.TIMEOUT
                         log.error("Test timed out")
                         sys.exit(1)
-    csvout = DictWriter(sys.stdout, ["mount", "dandiset", "asset", "test", "time_sec"])
+    csvout = DictWriter(
+        sys.stdout, ["mount_type", "dandiset", "asset", "test", "time_sec"]
+    )
     csvout.writeheader()
     for res in results:
         csvout.writerow(
             {
-                "mount": res.mount_name,
+                "mount_type": res.mount_type.value,
                 "dandiset": res.asset.dandiset_id,
                 "asset": res.asset.asset_path,
                 "test": res.testname,

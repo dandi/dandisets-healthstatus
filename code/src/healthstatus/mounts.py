@@ -32,9 +32,15 @@ class AssetInDandiset:
         return AssetInDandiset(dandiset_id, AssetPath(asset_path))
 
 
+class MountType(Enum):
+    FUSEFS = "fusefs"
+    WEBDAVFS = "webdavfs"
+    DAVFS2 = "davfs2"
+
+
 @dataclass
 class MountBenchmark:
-    mount_name: str
+    mount_type: MountType
     asset: AssetInDandiset
     testname: str
     elapsed: float
@@ -43,7 +49,7 @@ class MountBenchmark:
 class Mounter(ABC):
     @property
     @abstractmethod
-    def name(self) -> str:
+    def type(self) -> MountType:
         ...
 
     @abstractmethod
@@ -63,8 +69,8 @@ class FuseMounter(Mounter):
     logdir: Path = field(default_factory=Path)
 
     @property
-    def name(self) -> str:
-        return "fusefs"
+    def type(self) -> MountType:
+        return MountType.FUSEFS
 
     @contextmanager
     def mount(self) -> Iterator[None]:
@@ -149,8 +155,8 @@ class DandiDavMounter(Mounter):
 
 class WebDavFSMounter(DandiDavMounter):
     @property
-    def name(self) -> str:
-        return "webdavfs"
+    def type(self) -> MountType:
+        return MountType.WEBDAVFS
 
     @contextmanager
     def mount_webdav(self, url: str) -> Iterator[None]:
@@ -168,18 +174,12 @@ class WebDavFSMounter(DandiDavMounter):
 
 class DavFS2Mounter(DandiDavMounter):
     @property
-    def name(self) -> str:
-        return "davfs2"
+    def type(self) -> MountType:
+        return MountType.DAVFS2
 
     @contextmanager
     def mount_webdav(self, url: str) -> Iterator[None]:
         raise NotImplementedError
-
-
-class MountType(Enum):
-    FUSEFS = "fusefs"
-    WEBDAVFS = "webdavfs"
-    DAVFS2 = "davfs2"
 
 
 def iter_mounters(
