@@ -53,7 +53,7 @@ class EnumSet(click.ParamType, Generic[E]):
         return "[" + ",".join(v.value for v in self.klass) + "]"
 
 
-@click.group()
+@click.group(context_settings={"help_option_names": ["-h", "--help"]})
 def main() -> None:
     logging.basicConfig(
         format="%(asctime)s [%(levelname)-8s] %(message)s",
@@ -67,6 +67,7 @@ def main() -> None:
     "-d",
     "--dataset-path",
     type=click.Path(file_okay=False, exists=True, path_type=Path),
+    help="Directory containing a clone of dandi/dandisets",
     required=True,
 )
 @click.option(
@@ -81,11 +82,19 @@ def main() -> None:
     "-m",
     "--mount-point",
     type=click.Path(file_okay=False, exists=True, path_type=Path),
+    help="Directory at which to mount Dandisets",
     required=True,
 )
 @click.option(
     "--mode",
     type=click.Choice(["all", "random-asset", "random-outdated-asset-first"]),
+    help=(
+        "Strategy for selecting which assets to test on.  'all' - Test all"
+        " assets. 'random-asset' - Test one randomly-selected NWB per Dandiset."
+        "  'random-outdated-asset-first' - Test one randomly-selected NWB per"
+        " Dandiset that has not been tested with the latest package versions,"
+        " falling back to 'random-asset' if there are no such assets"
+    ),
     default="all",
     show_default=True,
 )
@@ -97,6 +106,7 @@ def check(
     dandisets: tuple[str, ...],
     mode: str,
 ) -> None:
+    """Run health status tests on Dandiset assets and record the results"""
     pkg_versions = {}
     for t in TESTS:
         pkg_versions.update(t.prepare())
@@ -119,6 +129,7 @@ def check(
 
 @main.command()
 def report() -> None:
+    """Produce a README.md file summarizing `check` results"""
     dandiset_qtys: Counter[Outcome] = Counter()
     asset_qtys: Counter[Outcome] = Counter()
     # Mapping from package names to package versions to test outcomes to
@@ -190,7 +201,11 @@ def report() -> None:
 
 
 @main.command()
-@click.option("--save-results", is_flag=True)
+@click.option(
+    "--save-results",
+    is_flag=True,
+    help="Record test results for Dandiset assets",
+)
 @click.argument("testname", type=click.Choice(list(TESTS.keys())))
 @click.argument(
     "files",
@@ -198,6 +213,7 @@ def report() -> None:
     type=click.Path(exists=True, dir_okay=False, path_type=Path),
 )
 def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> None:
+    """Run a single health status test on some number of files"""
     pkg_versions = {}
     for t in TESTS:
         pkg_versions.update(t.prepare(minimal=t.NAME != testname))
@@ -246,26 +262,29 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
     "-d",
     "--dataset-path",
     type=click.Path(file_okay=False, exists=True, path_type=Path),
+    help=(
+        "Directory containing a clone of dandi/dandisets.  Required when using"
+        " the fusefs mount."
+    ),
 )
 @click.option(
     "-m",
     "--mount-point",
     type=click.Path(file_okay=False, exists=True, path_type=Path),
+    help="Directory at which to mount Dandisets",
     required=True,
 )
 @click.option(
     "-M",
     "--mounts",
     type=EnumSet(MountType),
+    help="Comma-separated list of mount types to test against",
     default=set(MountType),
     show_default="all",
 )
 @click.option(
     "--update-dataset/--no-update-dataset",
-    help=(
-        "Whether to pull the latest changes to the Dandisets dataset repository"
-        " before fuse-mounting"
-    ),
+    help="Whether to update the dandi/dandisets clone before fuse-mounting",
     default=True,
     show_default=True,
 )
@@ -282,6 +301,7 @@ def time_mounts(
     mounts: set[MountType],
     update_dataset: bool,
 ) -> None:
+    """Run timed tests on Dandiset assets using various mounting technologies"""
     for t in TESTS:
         t.prepare()
     results = []
@@ -345,6 +365,7 @@ def time_mounts(
     type=click.Path(exists=True, dir_okay=False, path_type=Path),
 )
 def time_files(testname: str, files: tuple[Path, ...]) -> None:
+    """Run a single timed test on some number of files"""
     testfunc = TIMED_TESTS.get(testname)
     testfunc.prepare()
     for f in files:
