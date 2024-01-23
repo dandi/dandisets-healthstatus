@@ -179,7 +179,16 @@ class DavFS2Mounter(DandiDavMounter):
 
     @contextmanager
     def mount_webdav(self, url: str) -> Iterator[None]:
-        raise NotImplementedError
+        log.debug("Mounting davfs2 mount ...")
+        subprocess.run(
+            ["sudo", "mount", "-t", "davfs", url, os.fspath(self.mount_path)],
+            check=True,
+        )
+        try:
+            yield
+        finally:
+            log.debug("Unmounting davfs2 mount ...")
+            subprocess.run(["sudo", "umount", os.fspath(self.mount_path)], check=True)
 
 
 def iter_mounters(
