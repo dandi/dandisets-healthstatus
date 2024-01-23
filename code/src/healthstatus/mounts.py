@@ -166,7 +166,16 @@ class WebDavFSMounter(DandiDavMounter):
     def mount_webdav(self, url: str) -> Iterator[None]:
         log.debug("Mounting webdavfs mount ...")
         subprocess.run(
-            ["sudo", "mount", "-t", "webdavfs", url, os.fspath(self.mount_path)],
+            [
+                "sudo",
+                "mount",
+                "-t",
+                "webdavfs",
+                "-o",
+                "allow_other",
+                url,
+                os.fspath(self.mount_path),
+            ],
             check=True,
         )
         try:
