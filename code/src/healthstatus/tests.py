@@ -1,6 +1,7 @@
 from __future__ import annotations
 from collections.abc import Iterator
 from dataclasses import dataclass, field
+from importlib.metadata import version
 import os
 from pathlib import Path
 import shlex
@@ -9,7 +10,12 @@ import sys
 import time
 from typing import ClassVar, Protocol
 import anyio
-from .config import MATNWB_INSTALL_DIR, PYNWB_OPEN_LOAD_NS_SCRIPT, TIMEOUT
+from .config import (
+    MATNWB_INSTALL_DIR,
+    PACKAGES_TO_VERSION,
+    PYNWB_OPEN_LOAD_NS_SCRIPT,
+    TIMEOUT,
+)
 from .core import Outcome, TestResult, log
 from .util import MatNWBInstaller
 
@@ -17,7 +23,7 @@ from .util import MatNWBInstaller
 class Test(Protocol):
     NAME: ClassVar[str]
 
-    def prepare(self) -> None:
+    def prepare(self, minimal: bool = False) -> dict[str, str]:
         ...
 
     async def run(self, path: Path) -> TestResult:
@@ -52,8 +58,8 @@ TIMED_TESTS = TestRegistry()
 class PyNwbTest:
     NAME: ClassVar[str] = "pynwb_open_load_ns"
 
-    def prepare(self) -> None:
-        pass
+    def prepare(self, minimal: bool = False) -> dict[str, str]:  # noqa: U100
+        return {pkg: version(pkg) for pkg in PACKAGES_TO_VERSION}
 
     async def run(self, path: Path) -> TestResult:
         return await run_test_command(
@@ -66,8 +72,13 @@ class PyNwbTest:
 class MatNwbTest:
     NAME: ClassVar[str] = "matnwb_nwbRead"
 
-    def prepare(self) -> None:
-        MatNWBInstaller(MATNWB_INSTALL_DIR).install(update=True)
+    def prepare(self, minimal: bool = False) -> dict[str, str]:
+        installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
+        if minimal:
+            installer.download(update=False)
+        else:
+            installer.install(update=True)
+        return {"matnwb": installer.get_version()}
 
     async def run(self, path: Path) -> TestResult:
         return await run_test_command(
@@ -80,8 +91,8 @@ class MatNwbTest:
 class DandiLsTest:
     NAME: ClassVar[str] = "dandi_ls"
 
-    def prepare(self) -> None:
-        pass
+    def prepare(self, minimal: bool = False) -> dict[str, str]:  # noqa: U100
+        return {}
 
     async def run(self, path: Path) -> TestResult:
         return await run_test_command(

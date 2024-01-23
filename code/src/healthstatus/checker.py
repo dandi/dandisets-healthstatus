@@ -24,7 +24,6 @@ from .core import (
     log,
 )
 from .tests import TESTS, Test
-from .util import get_package_versions
 
 
 @dataclass
@@ -83,7 +82,7 @@ class HealthStatus:
     reports_root: Path
     dandisets: tuple[str, ...]
     dandiset_jobs: int
-    versions: dict[str, str] = field(default_factory=get_package_versions)
+    versions: dict[str, str]
 
     async def run_all(self) -> None:
         async def dowork(dandiset: Dandiset) -> None:

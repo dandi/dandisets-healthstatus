@@ -13,7 +13,6 @@ import anyio
 import click
 from packaging.version import Version
 from .checker import AssetReport, Dandiset, HealthStatus
-from .config import MATNWB_INSTALL_DIR
 from .core import AssetPath, AssetTestResult, DandisetStatus, Outcome, TestSummary, log
 from .mounts import (
     AssetInDandiset,
@@ -23,7 +22,6 @@ from .mounts import (
     iter_mounters,
 )
 from .tests import TESTS, TIMED_TESTS
-from .util import MatNWBInstaller, get_package_versions
 
 E = TypeVar("E", bound="Enum")
 
@@ -99,15 +97,16 @@ def check(
     dandisets: tuple[str, ...],
     mode: str,
 ) -> None:
-    installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
-    installer.install(update=True)
+    pkg_versions = {}
+    for t in TESTS:
+        pkg_versions.update(t.prepare())
     hs = HealthStatus(
         backup_root=mount_point,
         reports_root=Path.cwd(),
         dandisets=dandisets,
         dandiset_jobs=dandiset_jobs,
+        versions=pkg_versions,
     )
-    hs.versions["matnwb"] = installer.get_version()
     mnt = FuseMounter(dataset_path=dataset_path, mount_path=mount_point, update=True)
     with mnt.mount():
         if mode == "all":
@@ -199,13 +198,9 @@ def report() -> None:
     type=click.Path(exists=True, dir_okay=False, path_type=Path),
 )
 def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> None:
-    versions = get_package_versions()
-    installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
-    if "matnwb" in testname.lower():
-        installer.install(update=True)
-    else:
-        installer.download(update=False)
-    versions["matnwb"] = installer.get_version()
+    pkg_versions = {}
+    for t in TESTS:
+        pkg_versions.update(t.prepare(minimal=t.NAME != testname))
     testfunc = TESTS.get(testname)
     ok = True
     dandiset_cache: dict[Path, tuple[Dandiset, set[AssetPath]]] = {}
@@ -215,7 +210,7 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
                 dandiset, asset_paths = dandiset_cache[path]
             except KeyError:
                 dandiset = Dandiset(
-                    path=path, reports_root=Path.cwd(), versions=versions
+                    path=path, reports_root=Path.cwd(), versions=pkg_versions
                 )
                 asset_paths = anyio.run(dandiset.get_asset_paths)
                 dandiset_cache[path] = (dandiset, asset_paths)
@@ -287,8 +282,8 @@ def time_mounts(
     mounts: set[MountType],
     update_dataset: bool,
 ) -> None:
-    installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
-    installer.install(update=True)
+    for t in TESTS:
+        t.prepare()
     results = []
     for mounter in iter_mounters(
         types=mounts,
@@ -350,10 +345,8 @@ def time_mounts(
     type=click.Path(exists=True, dir_okay=False, path_type=Path),
 )
 def time_files(testname: str, files: tuple[Path, ...]) -> None:
-    if "matnwb" in testname.lower():
-        installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
-        installer.install(update=True)
     testfunc = TIMED_TESTS.get(testname)
+    testfunc.prepare()
     for f in files:
         log.info("Testing %s ...", f)
         r = anyio.run(testfunc.run, f)
