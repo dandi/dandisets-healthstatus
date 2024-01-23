@@ -66,7 +66,7 @@ def main() -> None:
 @click.option(
     "-d",
     "--dataset-path",
-    type=click.Path(file_okay=False, exists=True, path_type=Path),
+    type=click.Path(file_okay=False, path_type=Path),
     help="Directory containing a clone of dandi/dandisets",
     required=True,
 )
@@ -261,7 +261,7 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
 @click.option(
     "-d",
     "--dataset-path",
-    type=click.Path(file_okay=False, exists=True, path_type=Path),
+    type=click.Path(file_okay=False, path_type=Path),
     help=(
         "Directory containing a clone of dandi/dandisets.  Required when using"
         " the fusefs mount."
