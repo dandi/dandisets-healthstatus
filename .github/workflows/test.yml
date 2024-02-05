@@ -54,5 +54,6 @@ jobs:
         with:
           directory: code
           fail_ci_if_error: false
+          token: ${{ secrets.CODECOV_TOKEN }}
 
 # vim:set et sts=2:
