@@ -5,7 +5,7 @@ PYTHON="$HOME"/miniconda3/bin/python
 DANDISETS_PATH=/mnt/backup/dandi/dandisets-healthstatus/dandisets
 MOUNT_PATH=/mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse
 
-cd "$(dirname "$0")"
+cd "$(dirname "$0")"/..
 #git reset --hard HEAD
 #git clean -df
 
