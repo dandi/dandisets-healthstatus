@@ -1,16 +1,20 @@
 dandiset: '000615'
-dandiset_version: e9f4e9b7af48372eac0eeefdfb0a8ba42329a280
-last_run: null
-last_run_duration: null
-last_run_ended: null
-nassets: null
+dandiset_version: b165a0e0d0c8e41998a2b48b86a9dd47a0a7a6fa
+last_run: '2024-02-24T02:08:41.219583-05:00'
+last_run_duration: 5894.818613
+last_run_ended: '2024-02-24T03:46:56.038196-05:00'
+nassets: 3
 tests:
 - assets_nok: []
   assets_ok:
+  - sub-001/sub-001_ses-20220411.nwb
+  - sub-001/sub-001_ses-20220526.nwb
   - sub-001/sub-001_ses-20220706.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-001/sub-001_ses-20220411.nwb
+  - sub-001/sub-001_ses-20220526.nwb
   assets_ok: []
   assets_timeout:
   - sub-001/sub-001_ses-20220706.nwb

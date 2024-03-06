@@ -1,18 +1,52 @@
 dandiset: 000448
-dandiset_version: 0454e0879a669af2e1edcb504db4438013b43579
-last_run: null
-last_run_duration: null
-last_run_ended: null
-nassets: null
+dandiset_version: 52dc3d182620bdb4cc0f4a47288198005be6fae6
+last_run: '2024-02-11T21:25:45.095322-05:00'
+last_run_duration: 5621.292209
+last_run_ended: '2024-02-11T22:59:26.387531-05:00'
+nassets: 18
 tests:
 - assets_nok: []
   assets_ok:
   - sub-001-F/sub-001-F_ses-08-05-2022-cell09-F_image.nwb
+  - sub-001-R/sub-001-R_ses-08-05-2022-cell09-R_image.nwb
+  - sub-002-F/sub-002-F_ses-08-05-2022-cell12-F_image.nwb
+  - sub-002-R/sub-002-R_ses-08-05-2022-cell12-R_image.nwb
+  - sub-003-F/sub-003-F_ses-08-05-2022-cell19-F_image.nwb
+  - sub-003-R/sub-003-R_ses-08-05-2022-cell19-R_image.nwb
+  - sub-004-F/sub-004-F_ses-08-05-2022-cell23-F_image.nwb
+  - sub-004-R/sub-004-R_ses-08-05-2022-cell23-R_image.nwb
+  - sub-005-F/sub-005-F_ses-08-05-2022-cell08-F_image.nwb
+  - sub-005-R/sub-005-R_ses-08-05-2022-cell08-R_image.nwb
+  - sub-006-F/sub-006-F_ses-08-05-2022-cell13-F_image.nwb
+  - sub-006-R/sub-006-R_ses-08-05-2022-cell13-R_image.nwb
+  - sub-007-F/sub-007-F_ses-08-05-2022-cell16-F_image.nwb
+  - sub-007-R/sub-007-R_ses-08-05-2022-cell16-R_image.nwb
+  - sub-008-F/sub-008-F_ses-08-05-2022-cell22-F_image.nwb
+  - sub-008-R/sub-008-R_ses-08-05-2022-cell22-R_image.nwb
+  - sub-009-F/sub-009-F_ses-08-05-2022-cell24-F_image.nwb
+  - sub-009-R/sub-009-R_ses-08-05-2022-cell24-R_image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-001-R/sub-001-R_ses-08-05-2022-cell09-R_image.nwb
+  - sub-003-F/sub-003-F_ses-08-05-2022-cell19-F_image.nwb
+  - sub-004-R/sub-004-R_ses-08-05-2022-cell23-R_image.nwb
+  - sub-005-R/sub-005-R_ses-08-05-2022-cell08-R_image.nwb
+  - sub-006-F/sub-006-F_ses-08-05-2022-cell13-F_image.nwb
+  - sub-007-R/sub-007-R_ses-08-05-2022-cell16-R_image.nwb
+  - sub-009-F/sub-009-F_ses-08-05-2022-cell24-F_image.nwb
+  - sub-009-R/sub-009-R_ses-08-05-2022-cell24-R_image.nwb
   assets_ok:
   - sub-001-F/sub-001-F_ses-08-05-2022-cell09-F_image.nwb
+  - sub-002-F/sub-002-F_ses-08-05-2022-cell12-F_image.nwb
+  - sub-002-R/sub-002-R_ses-08-05-2022-cell12-R_image.nwb
+  - sub-003-R/sub-003-R_ses-08-05-2022-cell19-R_image.nwb
+  - sub-004-F/sub-004-F_ses-08-05-2022-cell23-F_image.nwb
+  - sub-005-F/sub-005-F_ses-08-05-2022-cell08-F_image.nwb
+  - sub-006-R/sub-006-R_ses-08-05-2022-cell13-R_image.nwb
+  - sub-007-F/sub-007-F_ses-08-05-2022-cell16-F_image.nwb
+  - sub-008-F/sub-008-F_ses-08-05-2022-cell22-F_image.nwb
+  - sub-008-R/sub-008-R_ses-08-05-2022-cell22-R_image.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

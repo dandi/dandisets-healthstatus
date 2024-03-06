@@ -1,8 +1,8 @@
 dandiset: '000044'
-dandiset_version: a32074604a6f689150124ef4dfd2c2f5823e15a2
-last_run: '2023-02-08T08:14:21.675795-05:00'
-last_run_duration: 6803.339427
-last_run_ended: '2023-02-08T10:07:45.015222-05:00'
+dandiset_version: 36c28bd9c205030a8cb7c3d7d8dd84b1a2543495
+last_run: '2024-01-10T12:51:55.772122-05:00'
+last_run_duration: 9479.466984
+last_run_ended: '2024-01-10T15:29:55.239106-05:00'
 nassets: 8
 tests:
 - assets_nok: []
@@ -18,16 +18,16 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - sub-Achilles/sub-Achilles_ses-Achilles-11012013_behavior+ecephys.nwb
   - sub-Buddy/sub-Buddy_ses-Buddy-06272013_behavior+ecephys.nwb
   - sub-Cicero/sub-Cicero_ses-Cicero-09012014_behavior+ecephys.nwb
   - sub-Cicero/sub-Cicero_ses-Cicero-09172014_behavior+ecephys.nwb
   - sub-Gatsby/sub-Gatsby_ses-Gatsby-08022013_behavior+ecephys.nwb
+  - sub-Gatsby/sub-Gatsby_ses-Gatsby-08282013_behavior+ecephys.nwb
   assets_ok:
   - sub-Achilles/sub-Achilles_ses-Achilles-10252013_behavior+ecephys.nwb
-  - sub-Achilles/sub-Achilles_ses-Achilles-11012013_behavior+ecephys.nwb
-  assets_timeout:
   - sub-Cicero/sub-Cicero_ses-Cicero-09102014_behavior+ecephys.nwb
-  - sub-Gatsby/sub-Gatsby_ses-Gatsby-08282013_behavior+ecephys.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

@@ -1,7 +1,8 @@
-dandiset_version: 34b946b354f83ef707de196268ab4367801052dc
-last_run: 2023-02-25 06:10:29.276100-05:00
-last_run_duration: 7.910914
-last_run_ended: 2023-02-25 06:10:37.187014-05:00
+dandiset: '000243'
+dandiset_version: cffa4350fef0b7e77c94c5ff5c26008eaeb0492a
+last_run: '2024-02-02T23:54:23.448192-05:00'
+last_run_duration: 20.63325
+last_run_ended: '2024-02-02T23:54:44.081442-05:00'
 nassets: 5
 tests: []
 untested:
@@ -18,14 +19,15 @@ untested:
   mime_type: application/json
   size: 311
 - asset: sub-S01/anat/sub-S01_T2w.nii.gz
-  file_type: symbolic link to ../../.git/annex/objects/jv/9z/SHA256E-s3055088659--5b1e00770b77364a849be386b0914db610b10e9de1b1306b836506647595018c.nii.gz/SHA256E-s3055088659--5b1e00770b77364a849be386b0914db610b10e9de1b1306b836506647595018c.nii.gz
-  mime_type: inode/symlink
+  file_type: 'gzip compressed data, was "S64520_m0.nii", last modified: Wed Aug 28
+    13:32:29 2013, from Unix, original size modulo 2^32 3564000352'
+  mime_type: application/gzip
   size: 3055088659
 - asset: sub-S01/anat/sub-S01_T2w.ome.zarr
   file_type: setgid, directory
   mime_type: inode/directory
   size: 0
 versions:
-  hdmf: 3.5.1
-  matnwb: v2.6.0.0
-  pynwb: 2.2.0
+  hdmf: 3.11.0
+  matnwb: v2.6.0.2
+  pynwb: 2.5.0

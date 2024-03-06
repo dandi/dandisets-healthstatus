@@ -1,8 +1,8 @@
 dandiset: 000129
-dandiset_version: 95abbdedbdf33941fffc45797c28f0aa0e0c3af8
-last_run: '2023-02-12T17:57:06.868962-05:00'
-last_run_duration: 1775.446826
-last_run_ended: '2023-02-12T18:26:42.315788-05:00'
+dandiset_version: 2b13f17482ac22f57a1b4bc566d546021d1cacd4
+last_run: '2024-01-15T05:31:52.520016-05:00'
+last_run_duration: 1411.705379
+last_run_ended: '2024-01-15T05:55:24.225395-05:00'
 nassets: 2
 tests:
 - assets_nok: []
@@ -11,9 +11,9 @@ tests:
   - sub-Indy/sub-Indy_desc-train_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok:
+- assets_nok:
   - sub-Indy/sub-Indy_desc-test_ecephys.nwb
+  assets_ok:
   - sub-Indy/sub-Indy_desc-train_behavior+ecephys.nwb
   assets_timeout: []
   name: matnwb_nwbRead

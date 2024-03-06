@@ -1,8 +1,8 @@
 dandiset: 000139
-dandiset_version: a1104d7915c8d1ce0b34cd118ce45f2dca7cf7f4
-last_run: '2023-02-12T18:26:42.325914-05:00'
-last_run_duration: 2724.868228
-last_run_ended: '2023-02-12T19:12:07.194142-05:00'
+dandiset_version: a58477f399cd2f5550d0f8440041d5f2ff0754d1
+last_run: '2024-01-15T06:18:28.055087-05:00'
+last_run_duration: 1223.663444
+last_run_ended: '2024-01-15T06:38:51.718531-05:00'
 nassets: 2
 tests:
 - assets_nok: []
@@ -11,11 +11,11 @@ tests:
   - sub-Jenkins/sub-Jenkins_ses-medium_desc-train_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-Jenkins/sub-Jenkins_ses-medium_desc-train_behavior+ecephys.nwb
   assets_ok:
   - sub-Jenkins/sub-Jenkins_ses-medium_desc-test_ecephys.nwb
-  assets_timeout:
-  - sub-Jenkins/sub-Jenkins_ses-medium_desc-train_behavior+ecephys.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

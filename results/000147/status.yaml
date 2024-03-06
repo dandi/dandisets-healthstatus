@@ -1,8 +1,8 @@
 dandiset: '000147'
-dandiset_version: 403dd69149823f6335dd8ede6b1e73e70e6fd76f
-last_run: '2023-02-12T20:05:01.106571-05:00'
-last_run_duration: 5710.728635
-last_run_ended: '2023-02-12T21:40:11.835206-05:00'
+dandiset_version: ba61346c11e0b39b0bce7cc5c66fc7f05685ca12
+last_run: '2024-01-15T07:32:35.634030-05:00'
+last_run_duration: 3598.03211
+last_run_ended: '2024-01-15T08:32:33.666140-05:00'
 nassets: 10
 tests:
 - assets_nok: []
@@ -19,19 +19,19 @@ tests:
   - sub-P1/sub-P1_ses-2018-10-22_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok:
+- assets_nok:
   - sub-P1/sub-P1_ses-2018-09-10_ecephys.nwb
   - sub-P1/sub-P1_ses-2018-09-17a_ecephys.nwb
+  - sub-P1/sub-P1_ses-2018-10-01_ecephys.nwb
+  - sub-P1/sub-P1_ses-2018-10-17_ecephys.nwb
+  - sub-P1/sub-P1_ses-2018-10-22_ecephys.nwb
+  assets_ok:
   - sub-P1/sub-P1_ses-2018-09-17b_ecephys.nwb
   - sub-P1/sub-P1_ses-2018-09-24_ecephys.nwb
   - sub-P1/sub-P1_ses-2018-09-26_ecephys.nwb
-  - sub-P1/sub-P1_ses-2018-10-01_ecephys.nwb
   - sub-P1/sub-P1_ses-2018-10-12_ecephys.nwb
-  - sub-P1/sub-P1_ses-2018-10-22_ecephys.nwb
-  assets_timeout:
   - sub-P1/sub-P1_ses-2018-10-15_ecephys.nwb
-  - sub-P1/sub-P1_ses-2018-10-17_ecephys.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

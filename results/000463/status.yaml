@@ -1,18 +1,74 @@
 dandiset: '000463'
-dandiset_version: 7e92ce188cbafd9b902fae14828d1b71ca8e5002
-last_run: null
-last_run_duration: null
-last_run_ended: null
-nassets: null
+dandiset_version: e5624d9df561d7f2f0a1ce8433888a0856d41480
+last_run: '2024-02-12T13:50:16.538977-05:00'
+last_run_duration: 25079.898162
+last_run_ended: '2024-02-12T20:48:16.437139-05:00'
+nassets: 29
 tests:
 - assets_nok: []
   assets_ok:
+  - sub-BH395/sub-BH395_ses-20221213T174039_ecephys.nwb
+  - sub-BH395/sub-BH395_ses-20221213T180853_ecephys.nwb
   - sub-BH395/sub-BH395_ses-20221213T183140_ecephys.nwb
+  - sub-BH395/sub-BH395_ses-20221213T185547_ecephys.nwb
+  - sub-BH395/sub-BH395_ses-20221213T195834_ecephys.nwb
+  - sub-BH396/sub-BH396_ses-20221117T215447_ecephys.nwb
+  - sub-BH396/sub-BH396_ses-20221117T220434_ecephys.nwb
+  - sub-BH396/sub-BH396_ses-20221117T221038_ecephys.nwb
+  - sub-BH396/sub-BH396_ses-20221117T224848_ecephys.nwb
+  - sub-BH396/sub-BH396_ses-20221117T225429_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T202916_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T213946_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T221353_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T224653_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T231819_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230208T000953_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230208T005106_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230208T012808_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T200303_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T204015_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T212616_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T215744_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T222833_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T230505_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T235435_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230215T002717_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230215T010415_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230215T013638_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230215T015857_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-BH395/sub-BH395_ses-20221213T174039_ecephys.nwb
+  - sub-BH395/sub-BH395_ses-20221213T180853_ecephys.nwb
+  - sub-BH395/sub-BH395_ses-20221213T195834_ecephys.nwb
+  - sub-BH396/sub-BH396_ses-20221117T215447_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T213946_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T231819_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230208T005106_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T204015_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T222833_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230215T002717_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230215T013638_ecephys.nwb
   assets_ok:
   - sub-BH395/sub-BH395_ses-20221213T183140_ecephys.nwb
+  - sub-BH395/sub-BH395_ses-20221213T185547_ecephys.nwb
+  - sub-BH396/sub-BH396_ses-20221117T220434_ecephys.nwb
+  - sub-BH396/sub-BH396_ses-20221117T221038_ecephys.nwb
+  - sub-BH396/sub-BH396_ses-20221117T224848_ecephys.nwb
+  - sub-BH396/sub-BH396_ses-20221117T225429_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T202916_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T221353_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T224653_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230208T000953_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230208T012808_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T200303_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T212616_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T215744_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T230505_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T235435_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230215T010415_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230215T015857_ecephys.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

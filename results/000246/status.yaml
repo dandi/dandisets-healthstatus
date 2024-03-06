@@ -1,646 +1,1996 @@
 dandiset: '000246'
-dandiset_version: 5112a3083eec5f81de411801ea1bde72a3229352
-last_run: '2023-02-26T08:01:06.629537-05:00'
-last_run_duration: 38856.607806
-last_run_ended: '2023-02-26T18:48:43.237343-05:00'
-nassets: 72
+dandiset_version: b4dec768646d9f928869ddeeb94ba8f18a49a280
+last_run: '2024-02-03T17:33:05.303596-05:00'
+last_run_duration: 569642.711479
+last_run_ended: '2024-02-10T07:47:08.015075-05:00'
+nassets: 983
 tests:
-- assets_nok:
-  - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1pgfsq2_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+- assets_nok: []
   assets_ok:
   - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-10xaxmr_ophys.nwb
-  - path: sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-18ryofc_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-1n5lrz_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-1sztjnh_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-7gmctf_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-8xcsna_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-18ryofc_ophys.nwb
+  - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-1n5lrz_ophys.nwb
+  - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-1sztjnh_ophys.nwb
+  - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-7gmctf_ophys.nwb
+  - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-8xcsna_ophys.nwb
   - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-b72y98_ophys.nwb
-  - path: sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-ymqpl1_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-17ibh2w_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-17yc8kb_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-1i2zpp3_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-1kz5p4z_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-2sze6j_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-6a44m_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-i9m8yu_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-nnx8k5_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
-      C2hSynL 17-5degrees_obj-17w3r04_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
-      C2hSynL 17-5degrees_obj-1p1znpv_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
-      C2hSynL 17-5degrees_obj-4cx979_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
-      C2hSynL 17-5degrees_obj-etnmv0_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-ymqpl1_ophys.nwb
+  - sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-17ibh2w_ophys.nwb
+  - sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-17yc8kb_ophys.nwb
+  - sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-1i2zpp3_ophys.nwb
+  - sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-1kz5p4z_ophys.nwb
+  - sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-2sze6j_ophys.nwb
+  - sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-6a44m_ophys.nwb
+  - sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-i9m8yu_ophys.nwb
+  - sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-nnx8k5_ophys.nwb
+  - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
+    C2hSynL 17-5degrees_obj-17w3r04_ophys.nwb
+  - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
+    C2hSynL 17-5degrees_obj-1p1znpv_ophys.nwb
+  - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
+    C2hSynL 17-5degrees_obj-4cx979_ophys.nwb
+  - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
+    C2hSynL 17-5degrees_obj-etnmv0_ophys.nwb
   - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
     C2hSynL 17-5degrees_obj-ph0qxm_ophys.nwb
-  - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1748njo_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-180hxgx_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1y5iyhl_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-du848d_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-gztoew_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-yqqchh_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse20-C1 -19degree/sub-mouse20-C1 -19degree_obj-19lqqxh_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse20-C1 -19degree/sub-mouse20-C1 -19degree_obj-1b8swvj_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1748njo_ophys.nwb
+  - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-180hxgx_ophys.nwb
+  - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1pgfsq2_ophys.nwb
+  - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1y5iyhl_ophys.nwb
+  - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-du848d_ophys.nwb
+  - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-gztoew_ophys.nwb
+  - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-yqqchh_ophys.nwb
+  - sub-mouse20-C1 -19degree/sub-mouse20-C1 -19degree_obj-19lqqxh_ophys.nwb
+  - sub-mouse20-C1 -19degree/sub-mouse20-C1 -19degree_obj-1b8swvj_ophys.nwb
   - sub-mouse20-C1 -19degree/sub-mouse20-C1 -19degree_obj-4tk76z_ophys.nwb
-  - path: sub-mouse20-C1 -19degree/sub-mouse20-C1 -19degree_obj-fln7qz_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-1sgp9e1_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-1tlpv13_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-1v5tbp0_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-1vmfui0_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-6odzwy_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-k1w5xv_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-ltc7bl_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-qqau6l_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-11k80zv_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-13tfg1g_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-1abnhtz_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-mouse20-C1 -19degree/sub-mouse20-C1 -19degree_obj-fln7qz_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-1sgp9e1_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-1tlpv13_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-1v5tbp0_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-1vmfui0_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-6odzwy_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-k1w5xv_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-ltc7bl_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-qqau6l_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-11k80zv_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-13tfg1g_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-1abnhtz_ophys.nwb
   - sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-1rke2nc_ophys.nwb
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-1yhwhdo_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-idla16_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-kbg3x2_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-1yhwhdo_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-idla16_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-kbg3x2_ophys.nwb
   - sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-177brh7_ophys.nwb
-  - path: sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-17kpv2s_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-194069f_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-1fet5p3_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-17kpv2s_ophys.nwb
+  - sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-194069f_ophys.nwb
+  - sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-1fet5p3_ophys.nwb
   - sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-1vew7tk_ophys.nwb
   - sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-7qbffv_ophys.nwb
   - sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-oemt1h_ophys.nwb
-  - path: sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-ybnn5r_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-112hm3c_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-19qw0dy_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-1e7v34_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-3bpi3r_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-ybnn5r_ophys.nwb
+  - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-112hm3c_ophys.nwb
+  - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-19qw0dy_ophys.nwb
+  - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-1e7v34_ophys.nwb
+  - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-3bpi3r_ophys.nwb
   - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-6zao4_ophys.nwb
-  - path: sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-dl3n2g_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-i44jjf_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-dl3n2g_ophys.nwb
+  - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-i44jjf_ophys.nwb
   - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-ti90r_ophys.nwb
-  - path: sub-mouse6-DC1-5L-C2-5R-1 5Right/sub-mouse6-DC1-5L-C2-5R-1 5Right_obj-50e46p_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-mouse6-DC1-5L-C2-5R-1 5Right/sub-mouse6-DC1-5L-C2-5R-1 5Right_obj-50e46p_ophys.nwb
   - sub-mouse6-DC1-5L-C2-5R-1 5Right/sub-mouse6-DC1-5L-C2-5R-1 5Right_obj-rc0l7g_ophys.nwb
-  - path: sub-mouse6-DC1-5L-C2-5R-1 5Right/sub-mouse6-DC1-5L-C2-5R-1 5Right_obj-sx16qt_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-1b9sdws_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-1j59qiu_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-mouse6-DC1-5L-C2-5R-1 5Right/sub-mouse6-DC1-5L-C2-5R-1 5Right_obj-sx16qt_ophys.nwb
+  - sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-1b9sdws_ophys.nwb
+  - sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-1j59qiu_ophys.nwb
   - sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-1qrkeek_ophys.nwb
-  - path: sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-d6o8n1_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-lkbz_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-t1qx9y_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-d6o8n1_ophys.nwb
+  - sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-lkbz_ophys.nwb
+  - sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-t1qx9y_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-15ivtr4_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-17xrhwe_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-18wfb4m_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1bi71hh_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1chlfru_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1ehzer_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1ewggb2_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1jwb3wp_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1paud1e_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1pru07h_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1s8g8e0_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-6eew2m_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-6fix0t_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-7jurkd_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-aj9pbb_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-aueezb_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-b3i430_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-cjcg5b_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-jj5ehz_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-mnye8e_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-vzc94n_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-xjmolk_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-xx3yw4_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-18vyl1u_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1ba9pc8_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1cdbrcv_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1dfdlx4_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1hc7f0q_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1kijlvb_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1qnvhdn_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1r0uglk_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1rqhzqg_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1xbyrwf_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1z0xsis_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-3g33o5_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-3pd06o_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-5s5gin_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-mercl9_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-miud6g_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-o4bnpf_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-sckgtf_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-sxjkn8_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-yk5nrx_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-yl24xl_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230521_obj-14j6yfl_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230521_obj-1gfdizu_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230521_obj-e4zl73_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230521_obj-ir4pi1_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230521_obj-ixx9nt_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-10yp8nw_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-17l7jnx_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-19bmqbj_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-1pyauhs_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-1r63kvj_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-1stn495_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-1vjv7se_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-1wzzt6l_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-7ma28t_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-co3bug_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-cptjhv_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-hkxms2_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-os5gzg_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-udi3y7_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-y4fv8_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-11x13pl_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-14aksab_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-15ndr_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-1ci9leo_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-1gg5dhh_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-1j2cs5a_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-1jevvp4_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-1qr4rj0_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-1wc3g7w_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-1xqpf7i_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-52zoj3_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-6orzri_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-a8kwax_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-arj84n_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-bgn3jn_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-bq59a_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-cgoiao_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-prohv4_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-rch54z_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-vm3d5r_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-yhae5s_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-12m0s1x_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-13155tc_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-1atyh0p_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-1dbp2e_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-1o84ogz_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-1p1ero7_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-1slkad9_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-1tovr63_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-3alwpr_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-5ozn2c_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-793b7k_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-81h7ve_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-8iimej_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-ehpzry_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-hawi54_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-hqaqwf_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-lybolh_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-ohcapo_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-sgqt1h_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-wiu9w3_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-zqo840_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-10d6rsu_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-10di9gf_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-15n9jlz_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-176jnhg_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-184mtsh_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-1b2fp9r_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-1ct29c3_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-1jo04fr_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-1k01mur_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-1xkjwcm_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-1ykgdm7_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-bimkvj_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-cu4ydq_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-dx7nz1_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-k5ql3_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-xszhdi_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-zsppjm_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-zvfyfe_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-14p0s2i_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-18xjt92_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-19psdsm_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-1aaebg8_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-1anewip_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-1aubdhx_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-1ga8x6f_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-1i5odis_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-1is2dn2_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-1mgn7ov_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-1mofpza_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-1rgbn5a_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-39aeyi_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-3mmyt4_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-5wqrmo_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-7qd5qn_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-8dgvno_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-dt7614_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-f9w8e0_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-keg05s_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-u02hea_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-v1kks8_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-114rpj2_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-12orzy4_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-17i134m_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-1aivdyx_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-1aux9zw_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-1ctdv52_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-1jpaltj_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-1ql66y2_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-1xg4ene_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-6jwaib_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-fe6w4f_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-g68rdg_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-hw3406_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-j5sace_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-nejnme_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-q4l8ib_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-tgnss9_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-vjrw71_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-wco1ox_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-11j0xqr_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-13kwulz_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-148bhu1_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-18a9zy4_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-1cvh383_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-1hcycau_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-1o5myd2_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-1qnkon9_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-1ujq3k3_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-1v1xog7_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-1wz55ks_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-31p7fx_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-3hlg41_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-3u5jnu_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-53nnnf_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-5dx8i2_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-aewtoi_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-pc9u44_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-u3pq2o_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-uqvwyv_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-z2fk48_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230510_obj-ik8wnw_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230510_obj-kv6fhz_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230510_obj-yupmh5_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-12flrgr_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-134lxrx_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-16kig7u_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-17yrumd_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-19chqjo_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-1ek0gwf_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-1o8a1su_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-1qmnn9o_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-1wps9tp_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-aseqnz_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-bwsvg6_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-c30clt_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-fmqjbw_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-kmekto_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-lr4jjx_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-ue3lv9_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-x9bq79_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-xdpuwo_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-12gr4t3_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-17dbuaa_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-17xyvxl_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-18kek1d_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-1a3f5ip_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-1atjspf_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-1cc8w4g_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-6zuw24_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-9v74cs_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-bwduwe_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-g5x12p_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-hin9zp_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-nnlsm2_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-pi9y0j_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-taoyh5_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-w2tcis_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-w3fufp_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-yvq01k_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-1gp9i7q_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-1o8ogww_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-1pxfwj3_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-1r2gkhw_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-1sqzw5s_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-1ub75nq_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-2rii41_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-aadnf2_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-aafovy_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-ac9yua_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-cl6gbr_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-kdwktx_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-r79pz2_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-t3dyku_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-12cwr8y_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-16ajzon_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-16urzxx_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-1ct9m4i_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-1fd63gh_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-1uqox99_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-bb8yb4_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-bgrz6_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-lxa61r_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-pb3gtt_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-ug7z0i_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-vusr7a_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-wcnatx_ophys.nwb
+  - sub-phpV13-1/sub-phpV13-1_ses-20230808_obj-1id80e_ophys.nwb
+  - sub-phpV13-1/sub-phpV13-1_ses-20230808_obj-1jri1cw_ophys.nwb
+  - sub-phpV13-1/sub-phpV13-1_ses-20230808_obj-1reyfpp_ophys.nwb
+  - sub-phpV13-1/sub-phpV13-1_ses-20230808_obj-1wpflgh_ophys.nwb
+  - sub-phpV13-1/sub-phpV13-1_ses-20230808_obj-nczfx9_ophys.nwb
+  - sub-phpV13-1/sub-phpV13-1_ses-20230808_obj-nxe7yi_ophys.nwb
+  - sub-phpV13-1/sub-phpV13-1_ses-20230808_obj-r3qpz6_ophys.nwb
+  - sub-phpV13-1/sub-phpV13-1_ses-20230808_obj-vot17r_ophys.nwb
+  - sub-phpV13-3/sub-phpV13-3_ses-20230909_obj-b96gyj_ophys.nwb
+  - sub-phpV13-3/sub-phpV13-3_ses-20230909_obj-o2n06d_ophys.nwb
+  - sub-phpV13-3/sub-phpV13-3_ses-20230909_obj-uprxuj_ophys.nwb
+  - sub-phpV13-3/sub-phpV13-3_ses-20230909_obj-wz4m97_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-10oav9o_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-12vsy76_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-17zrqqi_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-18eqoyh_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1amdgmh_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1f8mx3e_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1fqc1aj_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1ggerdd_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1glftmu_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1gm49jl_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1kez2qr_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1lh3vpc_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1me0boc_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1nsykl3_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1omkklp_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1rftsw2_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1t0vimu_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1vuhi7w_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1wh2dad_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1ypyw8c_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-2grj3l_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-6ncw7y_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-9i69qt_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-amva8f_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-q87t7v_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-vi96xf_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-12div6x_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-12p8agp_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-1jv2ts1_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-1n0ruxk_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-1r023m1_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-1svgyps_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-1w0ilvu_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-22b9k4_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-3rpn7b_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-9f71dt_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-bk0eq8_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-bogcs5_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-c5zntl_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-11i7znr_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-18sc8ey_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-1a3brhd_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-1dpdbh3_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-1io0gdc_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-1rreumc_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-1sduhf6_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-1u9we6g_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-1wxxa3r_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-2luef6_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-2lyh8d_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-3m4guv_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-8e01kh_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-b3e9im_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-db4fk0_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-dsyzh3_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-em48bq_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-jh9fhv_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-ka3rmy_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-mj015_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-n3q1sg_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-pfu0km_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-si6jb3_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-w7zu5j_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-we5ldh_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-xqsk12_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-102e8g8_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-12cnx36_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-12lx6vc_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-141c7la_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-150402a_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-16p0k4l_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-1b3c431_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-1ekrwgf_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-1k1kh8v_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-1nfvghe_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-1nz4mp7_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-1qdi75b_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-1wvjgrr_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-1yeutpu_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-3shquh_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-3w6wqg_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-4r18h5_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-77zbgf_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-9x7ng4_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-en0v8b_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-ghpxz7_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-w108l_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-wbn2it_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-10zv05w_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-17wr3oc_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1dr6vm7_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1emlsk9_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1g7hh6a_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1gwn6mc_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1j57g8f_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1jvn1f6_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1kh8pe1_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1mlkw4o_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1oj41a5_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1pfcvo6_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1qmozg3_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1u0ij0m_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1x9lx2n_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-2jm2o5_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-2zy4pn_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-7z8egn_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-8ux323_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-f8osg9_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-ie2v27_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-j67vrs_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-jiwi9v_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-ltewx0_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-lw5thn_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-ms8rpr_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-msaxb2_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-uavvcb_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-vmgeu0_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-wh4agj_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-xixvrx_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-10bul5u_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-10cr8m3_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-149nko9_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-164asvm_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-17g1sph_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-17o4u3k_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-17o9ayi_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-17yypvv_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-18hs4le_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-1bp4zrx_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-1l7jotc_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-1mu3r6h_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-1padd2w_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-1w3a3cf_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-1y34u4z_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-4pa15h_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-6bt2f2_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-77w4m0_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-bgqvpt_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-f2buld_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-g0vq6j_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-jmxszi_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-nv9z8q_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-umbeye_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-w685eh_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-wakqd2_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-11csdla_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-13seubs_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-14xiie5_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-17nzr1x_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-1deje5r_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-1nt2ura_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-1p19vcl_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-1qg4uz3_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-1vfdc1o_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-1vml2s8_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-4rphac_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-5fox26_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-em8dy1_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-ja7jqa_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-m2d1ep_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-rwlvvc_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-skdj6i_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-wlnfnb_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-zyt5nf_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-16r17oo_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-19opywn_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-1de2ozy_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-1it0rbj_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-1j4l7jr_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-1lcne8k_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-1otsqm4_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-1ro7c7w_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-1tikdqv_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-1ugkfgr_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-1vi3o1w_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-2xgpzk_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-36csnb_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-7thoo2_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-a03dwp_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-bp66c5_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-ddqzkc_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-evmhu2_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-g2rrs9_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-lpm65j_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-lwkq8t_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-pav14s_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-pt7h7a_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-vdoa4n_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-w841p4_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-y03qa2_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-12n0jui_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-159ntiz_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-15hrzbx_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-187aq09_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-19ao519_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-19tayfs_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1b2si0g_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1dagklp_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1fyayfz_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1ggzzah_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1k0el7a_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1kp8ykk_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1mooweh_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1sx521j_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1thy31a_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1tm21f8_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1tq05ww_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-408kud_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-6wxba9_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-6y3dm8_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-86h16j_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-8bvjcg_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-ax3fs9_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-cmwu6g_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-j39ogg_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-klxbk0_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-m9hizd_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-nededb_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-pobg4u_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-pwe2f_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-ujlw9g_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-yuyqbr_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-142m8m4_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-15p2bmf_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-17mf0yg_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-1gdoduh_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-1imj31e_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-1j91j1f_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-1st5bzi_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-1umxfhl_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-1xsns98_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-1y8kwmd_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-1yfs3b0_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-1ypy8bg_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-6javzg_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-bo7rn5_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-f1i5lb_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-fblkqu_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-fcgomj_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-i2k2is_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-i5r1i4_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-wktnv1_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230918_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-11jlgyf_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-1az8uxb_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-1o52g11_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-1qcjbjd_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-33bkbp_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-4tonuv_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-8miqaq_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-g2rfvk_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-j9tcgp_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-uw9uk3_ophys.nwb
+  - sub-phpV16-3/sub-phpV16-3_ses-20230918_obj-1ngbkex_ophys.nwb
+  - sub-phpV16-3/sub-phpV16-3_ses-20230918_obj-1qlypri_ophys.nwb
+  - sub-phpV16-3/sub-phpV16-3_ses-20230918_obj-eo3zzc_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-125gh10_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-12abvoh_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-13lfok7_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-15bllyb_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-17vfd3f_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-18f3gto_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-1b7my8p_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-1c7ai21_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-1f9wi63_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-1x1cmy7_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-2pw1jb_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-3ns0rj_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-42milx_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-4dvow5_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-77kuth_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-9lp58q_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-ey81wz_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-j4qox0_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-jxv6g5_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-ksuvqz_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-l1mtud_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-o5skkr_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-p2d29h_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-ts68i9_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-z9eubf_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-ztnxag_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-140j261_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-15yvykn_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-19a58je_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-1binji0_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-1e2w904_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-1g5oedx_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-1jnqhxu_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-1p52wom_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-1p7utzn_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-1ri46k4_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-1ucwq5u_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-1wns2o3_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-3xmx35_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-enyi0l_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-lyrlvl_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-qmppjk_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-rrv3nf_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-w2a7i9_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-14bo95t_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-157gflz_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-16bfnyz_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-16vxor0_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-1b9tkzj_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-1bq5yh9_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-1j26w4k_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-1nrlb2y_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-1ntiwps_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-1r41csf_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-1rfmslw_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-2twrb2_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-7hwqbo_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-8j94hr_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-a6y7z6_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-bmeig3_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-bpv2q9_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-cdhgbb_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-pa0hu8_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-pxkdha_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-pye6t1_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-uo0htn_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-v4ptl2_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-y2d4k3_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-111cr9_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-157fkml_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-1c9ts2i_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-1dzt7jy_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-1hbcwhn_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-1j0qwpz_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-1qhrso9_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-3hgjrt_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-5v21g6_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-7y86c3_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-821nup_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-akws8p_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-bc3gho_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-kxh0zo_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-n15yen_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-ndwcdr_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-qu4yrm_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-thbltu_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-12k8bw7_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-16g7qi3_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-1olhkbl_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-1qukf09_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-38o8bb_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-5c33ri_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-5gq7i1_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-7y3kso_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-c17bj9_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-kaiijc_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-q1mj4b_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-r2px09_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-r4zriy_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-16i06nn_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-17clknw_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1aldxgp_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1auos6c_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1dyfken_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1exbpg1_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1g5az8z_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1i67ujq_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1le3fgl_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1q748h0_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1rkhjss_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1tnj13m_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-7ph4s2_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-7yac69_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-dmwgr6_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-ea3nk4_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-gg6yx9_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-grrwt0_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-jsdehj_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-jwle1s_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-k6ed35_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-laqvaq_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-lo4a75_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-o08olb_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-p4n76w_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-rizhyt_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-yfwot5_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-13qg1zr_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-1azcgd9_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-1bd3k6h_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-1fgfi3q_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-1nxx3z4_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-1pcx4gl_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-1tne1e_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-1upfhf5_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-2um583_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-62dz64_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-8tg10c_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-9kz0ls_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-gnc9rb_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-qr1k1u_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-ti2djx_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-108afew_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-1969it7_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-1e21ujn_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-1eatak5_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-1lyt9uc_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-1m8agpt_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-1mjto6e_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-1ueq47w_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-1w0lrtw_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-1xt8kmx_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-45df4a_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-bwtwt8_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-inm200_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-krn32p_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-m0oyow_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-m11io8_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-px40ei_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-tvspdr_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-uzuusr_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-v57wvr_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-weowjl_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-xq4d7v_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-yhi837_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-z3jccz_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-11qv17b_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-14uca98_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-174wlp5_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-1ey80az_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-1ggkdty_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-1h3z6ta_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-1lp5cmk_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-1rfaa1y_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-2f40ca_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-3zzlwg_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-4q794m_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-8pi9zm_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-b36phb_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-czrpy7_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-eu0beg_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-j855y6_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-kyfg7q_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-n7l5so_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-nke5o3_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-nwq5tn_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-nxnt1k_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-xaw7hr_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-y05ej0_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-yrulrq_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-zgbu37_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-13gcuze_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-15h9htk_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-1dh31uy_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-1hicoj6_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-1jc37bx_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-1uyyayn_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-1vg72np_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-1wt4of8_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-1wut0ow_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-1xrdazd_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-1y8exyk_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-443qxy_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-9o99o4_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-iep222_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-jcz43l_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-jo5fhg_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-jznygr_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-meytdj_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-q432xx_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-un4btn_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-y2f54d_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-10iz3xy_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-179ed14_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-17kpvnm_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-17ph17j_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-1bprwi_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-1d2dgm7_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-1giuec4_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-1izadyp_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-1v3qrc2_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-1ynllvw_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-557u0z_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-64r64z_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-849kky_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-befjxk_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-bu0n26_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-cmd5bx_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-d8x8qh_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-oaeyp8_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-sw92qw_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-xe584u_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-zexmy6_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-11pf5ft_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-11w82r6_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-121cq2k_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-13scu4h_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-16ltqwm_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-16m3dd_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-18irmwz_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-1c0t5t2_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-1fv6054_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-1kok3rl_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-1vkxoj6_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-2e9rny_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-2g99c1_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-6329hf_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-aguoor_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-b9tnkm_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-gp9ihg_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-pko0ij_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-truojm_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-tuw56t_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-uyc6tb_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-10o5263_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-166qb42_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-190fo9x_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-1fbt044_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-1k371fy_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-1l56nnz_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-1mfxt3d_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-1n1s81v_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-1s53ez3_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-1wyif26_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-2b4oaq_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-3sivd3_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-a6ojv9_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-gj3lo2_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-gweb4h_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-j8bze5_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-lkj3iw_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-lyxg6j_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-pb9ih3_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-utesji_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-x75yq9_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-zkgjao_ophys.nwb
+  - sub-phpV8-6/sub-phpV8-6_ses-20230515_obj-169t4hf_ophys.nwb
+  - sub-phpV8-6/sub-phpV8-6_ses-20230515_obj-17dg796_ophys.nwb
+  - sub-phpV8-6/sub-phpV8-6_ses-20230515_obj-19hlrnw_ophys.nwb
+  - sub-phpV8-6/sub-phpV8-6_ses-20230515_obj-1ryor1x_ophys.nwb
+  - sub-phpV8-6/sub-phpV8-6_ses-20230515_obj-1xia77x_ophys.nwb
+  - sub-phpV8-6/sub-phpV8-6_ses-20230515_obj-7lusx3_ophys.nwb
+  - sub-phpV8-6/sub-phpV8-6_ses-20230515_obj-cmr9fx_ophys.nwb
+  - sub-phpV8-6/sub-phpV8-6_ses-20230515_obj-krpr4q_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-14qq7uo_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-19z8pnc_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1b42ws3_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1e8bosa_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1g6b2f2_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1hhjc4m_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1hto9eg_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1i8ekxc_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1p2kfmy_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1qzruh3_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1rusabf_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1tbrox7_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1tnihh1_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1ulp1p3_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1w6trjq_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1ye78r4_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-2omja0_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-3eslmx_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-67vwu1_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-euk8ya_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-evu4gg_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-j1bdik_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-jw70dh_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-ly7ihr_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-nrmji1_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-p30eyh_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-re1m1w_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-tpy6kj_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-vlvttx_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-xoq3h2_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-10y77a_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-1errbvt_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-1k644i0_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-1qad8yb_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-1tr1jow_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-1tz06dm_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-1yyp0eq_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-4ft01n_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-6huxj5_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-9sx0ry_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-a3906o_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-am1yv2_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-czbnbh_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-df4liq_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-ep3qgy_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-i9qjv_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-ihpuxz_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-k3n0y7_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-ps20i0_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-qww47_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-11yt6ns_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-12coff8_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-12ok38h_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-16ea5bs_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-16lons9_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-17p45mn_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-1bhytzd_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-1l7o6he_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-1nd0m90_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-1nzt66d_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-1ombup4_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-1v2s7g7_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-1xywy5x_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-2j2mor_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-amne1i_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-c7y1c9_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-cskbmj_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-e59fyt_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-jxii99_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-wcqvv1_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-12d3ks0_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-18fad1_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-1iqh184_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-1lli6om_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-1r2c1ye_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-1rmh3g6_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-1ryixn3_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-1s1vcbt_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-1uw72cx_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-5rps9c_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-5tylm0_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-64pvuv_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-e7hyzz_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-hvy02d_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-ina9ck_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-j5jq5h_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-o5h01f_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-qnlwds_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-15fjms9_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-17z286t_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1d3yc4d_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1e95bz6_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1m059we_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1m6p8h4_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1n8x1rq_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1sc3b0h_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1v361nw_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1wgyvei_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1xquavx_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1yicq5t_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-2rjlmy_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-6h7j4_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-79ba1d_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-d5subt_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-szusep_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-topbtr_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-w1s8bk_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-xu8kn2_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-1i2zpp3_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
-      C2hSynL 17-5degrees_obj-4cx979_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
-      C2hSynL 17-5degrees_obj-etnmv0_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1pgfsq2_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse20-C1 -19degree/sub-mouse20-C1 -19degree_obj-1b8swvj_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-13tfg1g_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-1kz5p4z_ophys.nwb
+  - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-dl3n2g_ophys.nwb
+  - sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-1b9sdws_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1chlfru_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1paud1e_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1pru07h_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1s8g8e0_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-6eew2m_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-6fix0t_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-7jurkd_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-b3i430_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-xjmolk_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1cdbrcv_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1hc7f0q_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1qnvhdn_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1xbyrwf_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1z0xsis_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-o4bnpf_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230521_obj-14j6yfl_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230521_obj-e4zl73_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-1pyauhs_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-7ma28t_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-cptjhv_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-11x13pl_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-1j2cs5a_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-1jevvp4_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-bgn3jn_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-cgoiao_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-rch54z_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-vm3d5r_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-13155tc_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-1o84ogz_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-793b7k_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-8iimej_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-ohcapo_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-1k01mur_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-xszhdi_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-18xjt92_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-1i5odis_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-12orzy4_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-wco1ox_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-1cvh383_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-1qnkon9_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-53nnnf_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-12flrgr_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-17yrumd_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-bwsvg6_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-1ub75nq_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1glftmu_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-vi96xf_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-12div6x_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-1r023m1_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-1w0ilvu_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-bk0eq8_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-bogcs5_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-11i7znr_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-ka3rmy_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-1yeutpu_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1pfcvo6_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1qmozg3_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-8ux323_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-f8osg9_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-10bul5u_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-149nko9_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-18hs4le_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-bgqvpt_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-w685eh_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-17nzr1x_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-4rphac_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-19opywn_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-1de2ozy_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-1lcne8k_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-bp66c5_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-g2rrs9_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-lwkq8t_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-w841p4_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-8bvjcg_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-cmwu6g_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-pobg4u_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-pwe2f_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-yuyqbr_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-15p2bmf_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-1imj31e_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-1j91j1f_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-1st5bzi_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-1y8kwmd_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-fblkqu_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-17vfd3f_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-16bfnyz_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-1j26w4k_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-1rfmslw_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-2twrb2_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-7y86c3_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-7y3kso_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-kaiijc_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1q748h0_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1rkhjss_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-gg6yx9_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-1bd3k6h_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-1pcx4gl_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-1tne1e_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-8tg10c_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-gnc9rb_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-1e21ujn_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-1lyt9uc_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-1m8agpt_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-45df4a_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-px40ei_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-tvspdr_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-weowjl_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-xq4d7v_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-1h3z6ta_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-1rfaa1y_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-2f40ca_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-4q794m_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-8pi9zm_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-b36phb_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-eu0beg_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-kyfg7q_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-nwq5tn_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-yrulrq_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-zgbu37_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-1jc37bx_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-1uyyayn_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-1wut0ow_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-1xrdazd_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-9o99o4_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-meytdj_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-un4btn_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-y2f54d_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-1d2dgm7_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-1izadyp_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-1v3qrc2_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-1ynllvw_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-557u0z_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-64r64z_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-849kky_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-bu0n26_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-11pf5ft_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-11w82r6_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-121cq2k_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-13scu4h_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-18irmwz_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-1c0t5t2_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-1fv6054_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-1vkxoj6_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-2g99c1_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-truojm_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-1k371fy_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-1mfxt3d_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-1n1s81v_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-a6ojv9_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-j8bze5_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-lyxg6j_ophys.nwb
+  - sub-phpV8-6/sub-phpV8-6_ses-20230515_obj-17dg796_ophys.nwb
+  - sub-phpV8-6/sub-phpV8-6_ses-20230515_obj-krpr4q_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1b42ws3_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1tbrox7_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-3eslmx_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-j1bdik_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-p30eyh_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-ihpuxz_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-12ok38h_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-1bhytzd_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-1nd0m90_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-1xywy5x_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-jxii99_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-12d3ks0_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-18fad1_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-1rmh3g6_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-1ryixn3_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-1s1vcbt_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-5rps9c_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-5tylm0_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1d3yc4d_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1n8x1rq_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-6h7j4_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-szusep_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-w1s8bk_ophys.nwb
   assets_ok:
   - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-10xaxmr_ophys.nwb
-  - path: sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-18ryofc_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-1n5lrz_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-1sztjnh_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-7gmctf_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-8xcsna_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-18ryofc_ophys.nwb
+  - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-1n5lrz_ophys.nwb
+  - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-1sztjnh_ophys.nwb
+  - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-7gmctf_ophys.nwb
+  - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-8xcsna_ophys.nwb
   - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-b72y98_ophys.nwb
-  - path: sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-ymqpl1_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-17ibh2w_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-1kz5p4z_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-2sze6j_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-6a44m_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-i9m8yu_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-nnx8k5_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
-      C2hSynL 17-5degrees_obj-17w3r04_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
-      C2hSynL 17-5degrees_obj-1p1znpv_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-ymqpl1_ophys.nwb
+  - sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-17ibh2w_ophys.nwb
+  - sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-17yc8kb_ophys.nwb
+  - sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-1i2zpp3_ophys.nwb
+  - sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-2sze6j_ophys.nwb
+  - sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-6a44m_ophys.nwb
+  - sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-i9m8yu_ophys.nwb
+  - sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-nnx8k5_ophys.nwb
+  - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
+    C2hSynL 17-5degrees_obj-17w3r04_ophys.nwb
+  - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
+    C2hSynL 17-5degrees_obj-1p1znpv_ophys.nwb
+  - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
+    C2hSynL 17-5degrees_obj-4cx979_ophys.nwb
+  - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
+    C2hSynL 17-5degrees_obj-etnmv0_ophys.nwb
   - sub-mouse12-C2hSynL-C2CAGR-3 C2hSynL 17-5degrees/sub-mouse12-C2hSynL-C2CAGR-3
     C2hSynL 17-5degrees_obj-ph0qxm_ophys.nwb
-  - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1748njo_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-180hxgx_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1y5iyhl_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-du848d_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-gztoew_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-yqqchh_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse20-C1 -19degree/sub-mouse20-C1 -19degree_obj-19lqqxh_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1748njo_ophys.nwb
+  - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-180hxgx_ophys.nwb
+  - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1pgfsq2_ophys.nwb
+  - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-1y5iyhl_ophys.nwb
+  - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-du848d_ophys.nwb
+  - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-gztoew_ophys.nwb
+  - sub-mouse2-DC1-1L-C2-1R-2/sub-mouse2-DC1-1L-C2-1R-2_obj-yqqchh_ophys.nwb
+  - sub-mouse20-C1 -19degree/sub-mouse20-C1 -19degree_obj-19lqqxh_ophys.nwb
+  - sub-mouse20-C1 -19degree/sub-mouse20-C1 -19degree_obj-1b8swvj_ophys.nwb
   - sub-mouse20-C1 -19degree/sub-mouse20-C1 -19degree_obj-4tk76z_ophys.nwb
-  - path: sub-mouse20-C1 -19degree/sub-mouse20-C1 -19degree_obj-fln7qz_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-1sgp9e1_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-1v5tbp0_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-1vmfui0_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-6odzwy_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-ltc7bl_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-qqau6l_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-11k80zv_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-1abnhtz_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-mouse20-C1 -19degree/sub-mouse20-C1 -19degree_obj-fln7qz_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-1sgp9e1_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-1tlpv13_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-1v5tbp0_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-1vmfui0_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-6odzwy_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-k1w5xv_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-ltc7bl_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-qqau6l_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-11k80zv_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-13tfg1g_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-1abnhtz_ophys.nwb
   - sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-1rke2nc_ophys.nwb
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-1yhwhdo_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-idla16_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-kbg3x2_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-1yhwhdo_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-idla16_ophys.nwb
+  - sub-mouse3-DC1-1L-C2-1R-3 Right/sub-mouse3-DC1-1L-C2-1R-3 Right_obj-kbg3x2_ophys.nwb
   - sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-177brh7_ophys.nwb
-  - path: sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-17kpv2s_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-194069f_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-1fet5p3_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-17kpv2s_ophys.nwb
+  - sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-194069f_ophys.nwb
+  - sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-1fet5p3_ophys.nwb
   - sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-1vew7tk_ophys.nwb
   - sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-7qbffv_ophys.nwb
   - sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-oemt1h_ophys.nwb
-  - path: sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-ybnn5r_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-112hm3c_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-19qw0dy_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-1e7v34_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-3bpi3r_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-mouse4-DC1-1L-C2-1R-4 Right/sub-mouse4-DC1-1L-C2-1R-4 Right_obj-ybnn5r_ophys.nwb
+  - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-112hm3c_ophys.nwb
+  - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-19qw0dy_ophys.nwb
+  - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-1e7v34_ophys.nwb
+  - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-3bpi3r_ophys.nwb
   - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-6zao4_ophys.nwb
-  - path: sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-dl3n2g_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-i44jjf_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-i44jjf_ophys.nwb
   - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-ti90r_ophys.nwb
-  - path: sub-mouse6-DC1-5L-C2-5R-1 5Right/sub-mouse6-DC1-5L-C2-5R-1 5Right_obj-50e46p_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-mouse6-DC1-5L-C2-5R-1 5Right/sub-mouse6-DC1-5L-C2-5R-1 5Right_obj-50e46p_ophys.nwb
   - sub-mouse6-DC1-5L-C2-5R-1 5Right/sub-mouse6-DC1-5L-C2-5R-1 5Right_obj-rc0l7g_ophys.nwb
-  - path: sub-mouse6-DC1-5L-C2-5R-1 5Right/sub-mouse6-DC1-5L-C2-5R-1 5Right_obj-sx16qt_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-1b9sdws_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-1j59qiu_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-mouse6-DC1-5L-C2-5R-1 5Right/sub-mouse6-DC1-5L-C2-5R-1 5Right_obj-sx16qt_ophys.nwb
+  - sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-1j59qiu_ophys.nwb
   - sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-1qrkeek_ophys.nwb
-  - path: sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-d6o8n1_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-t1qx9y_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-d6o8n1_ophys.nwb
+  - sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-lkbz_ophys.nwb
+  - sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-t1qx9y_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-15ivtr4_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-17xrhwe_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-18wfb4m_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1bi71hh_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1ehzer_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1ewggb2_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1jwb3wp_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-aj9pbb_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-aueezb_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-cjcg5b_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-jj5ehz_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-mnye8e_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-vzc94n_ophys.nwb
+  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-xx3yw4_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-18vyl1u_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1ba9pc8_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1dfdlx4_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1kijlvb_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1r0uglk_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-1rqhzqg_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-3g33o5_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-3pd06o_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-5s5gin_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-mercl9_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-miud6g_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-sckgtf_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-sxjkn8_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-yk5nrx_ophys.nwb
+  - sub-phpV10-6/sub-phpV10-6_ses-20230515_obj-yl24xl_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230521_obj-1gfdizu_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230521_obj-ir4pi1_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230521_obj-ixx9nt_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-10yp8nw_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-17l7jnx_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-19bmqbj_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-1r63kvj_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-1stn495_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-1vjv7se_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-1wzzt6l_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-co3bug_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-hkxms2_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-os5gzg_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-udi3y7_ophys.nwb
+  - sub-phpV10-7/sub-phpV10-7_ses-20230522_obj-y4fv8_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-14aksab_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-15ndr_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-1ci9leo_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-1gg5dhh_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-1qr4rj0_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-1wc3g7w_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-1xqpf7i_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-52zoj3_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-6orzri_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-a8kwax_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-arj84n_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-bq59a_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-prohv4_ophys.nwb
+  - sub-phpV11-1/sub-phpV11-1_ses-20230419_obj-yhae5s_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-12m0s1x_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-1atyh0p_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-1dbp2e_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-1p1ero7_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-1slkad9_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-1tovr63_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-3alwpr_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-5ozn2c_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-81h7ve_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-ehpzry_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-hawi54_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-hqaqwf_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-lybolh_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-sgqt1h_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-wiu9w3_ophys.nwb
+  - sub-phpV11-4/sub-phpV11-4_ses-20230508_obj-zqo840_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-10d6rsu_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-10di9gf_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-15n9jlz_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-176jnhg_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-184mtsh_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-1b2fp9r_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-1ct29c3_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-1jo04fr_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-1xkjwcm_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-1ykgdm7_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-bimkvj_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-cu4ydq_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-dx7nz1_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-k5ql3_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-zsppjm_ophys.nwb
+  - sub-phpV11-5/sub-phpV11-5_ses-20230508_obj-zvfyfe_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-14p0s2i_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-19psdsm_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-1aaebg8_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-1anewip_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-1aubdhx_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-1ga8x6f_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-1is2dn2_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-1mgn7ov_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-1mofpza_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-1rgbn5a_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-39aeyi_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-3mmyt4_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-5wqrmo_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-7qd5qn_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-8dgvno_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-dt7614_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-f9w8e0_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-keg05s_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-u02hea_ophys.nwb
+  - sub-phpV12-1/sub-phpV12-1_ses-20230413_obj-v1kks8_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-114rpj2_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-17i134m_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-1aivdyx_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-1aux9zw_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-1ctdv52_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-1jpaltj_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-1ql66y2_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-1xg4ene_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-6jwaib_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-fe6w4f_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-g68rdg_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-hw3406_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-j5sace_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-nejnme_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-q4l8ib_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-tgnss9_ophys.nwb
+  - sub-phpV12-2/sub-phpV12-2_ses-20230417_obj-vjrw71_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-11j0xqr_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-13kwulz_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-148bhu1_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-18a9zy4_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-1hcycau_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-1o5myd2_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-1ujq3k3_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-1v1xog7_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-1wz55ks_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-31p7fx_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-3hlg41_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-3u5jnu_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-5dx8i2_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-aewtoi_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-pc9u44_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-u3pq2o_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-uqvwyv_ophys.nwb
+  - sub-phpV12-3/sub-phpV12-3_ses-20230510_obj-z2fk48_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230510_obj-ik8wnw_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230510_obj-yupmh5_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-134lxrx_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-16kig7u_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-19chqjo_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-1ek0gwf_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-1o8a1su_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-1qmnn9o_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-1wps9tp_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-aseqnz_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-c30clt_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-fmqjbw_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-kmekto_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-lr4jjx_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-ue3lv9_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-x9bq79_ophys.nwb
+  - sub-phpV12-4/sub-phpV12-4_ses-20230511_obj-xdpuwo_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-12gr4t3_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-17dbuaa_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-17xyvxl_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-18kek1d_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-1a3f5ip_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-1atjspf_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-1cc8w4g_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-6zuw24_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-9v74cs_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-bwduwe_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-g5x12p_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-hin9zp_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-nnlsm2_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-pi9y0j_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-taoyh5_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-w2tcis_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-w3fufp_ophys.nwb
+  - sub-phpV12-6/sub-phpV12-6_ses-20230530_obj-yvq01k_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-1gp9i7q_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-1o8ogww_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-1pxfwj3_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-1r2gkhw_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-1sqzw5s_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-2rii41_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-aadnf2_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-aafovy_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-ac9yua_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-cl6gbr_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-kdwktx_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-r79pz2_ophys.nwb
+  - sub-phpV12-7/sub-phpV12-7_ses-20230531_obj-t3dyku_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-12cwr8y_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-16ajzon_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-16urzxx_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-1ct9m4i_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-1fd63gh_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-1uqox99_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-bb8yb4_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-bgrz6_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-lxa61r_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-pb3gtt_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-ug7z0i_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-vusr7a_ophys.nwb
+  - sub-phpV12-9/sub-phpV12-9_ses-20230708_obj-wcnatx_ophys.nwb
+  - sub-phpV13-1/sub-phpV13-1_ses-20230808_obj-1id80e_ophys.nwb
+  - sub-phpV13-1/sub-phpV13-1_ses-20230808_obj-1jri1cw_ophys.nwb
+  - sub-phpV13-1/sub-phpV13-1_ses-20230808_obj-1reyfpp_ophys.nwb
+  - sub-phpV13-1/sub-phpV13-1_ses-20230808_obj-1wpflgh_ophys.nwb
+  - sub-phpV13-1/sub-phpV13-1_ses-20230808_obj-nczfx9_ophys.nwb
+  - sub-phpV13-1/sub-phpV13-1_ses-20230808_obj-nxe7yi_ophys.nwb
+  - sub-phpV13-1/sub-phpV13-1_ses-20230808_obj-r3qpz6_ophys.nwb
+  - sub-phpV13-1/sub-phpV13-1_ses-20230808_obj-vot17r_ophys.nwb
+  - sub-phpV13-3/sub-phpV13-3_ses-20230909_obj-b96gyj_ophys.nwb
+  - sub-phpV13-3/sub-phpV13-3_ses-20230909_obj-o2n06d_ophys.nwb
+  - sub-phpV13-3/sub-phpV13-3_ses-20230909_obj-uprxuj_ophys.nwb
+  - sub-phpV13-3/sub-phpV13-3_ses-20230909_obj-wz4m97_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-10oav9o_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-12vsy76_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-17zrqqi_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-18eqoyh_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1amdgmh_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1f8mx3e_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1fqc1aj_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1ggerdd_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1gm49jl_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1kez2qr_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1lh3vpc_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1me0boc_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1nsykl3_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1omkklp_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1rftsw2_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1t0vimu_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1vuhi7w_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1wh2dad_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-1ypyw8c_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-2grj3l_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-6ncw7y_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-9i69qt_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-amva8f_ophys.nwb
+  - sub-phpV13-4/sub-phpV13-4_ses-20230918_obj-q87t7v_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-12p8agp_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-1jv2ts1_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-1n0ruxk_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-1svgyps_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-22b9k4_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-3rpn7b_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-9f71dt_ophys.nwb
+  - sub-phpV14-1/sub-phpV14-1_ses-20230809_obj-c5zntl_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-18sc8ey_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-1a3brhd_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-1dpdbh3_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-1io0gdc_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-1rreumc_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-1sduhf6_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-1u9we6g_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-1wxxa3r_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-2luef6_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-2lyh8d_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-3m4guv_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-8e01kh_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-b3e9im_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-db4fk0_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-dsyzh3_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-em48bq_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-jh9fhv_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-mj015_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-n3q1sg_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-pfu0km_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-si6jb3_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-w7zu5j_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-we5ldh_ophys.nwb
+  - sub-phpV14-2/sub-phpV14-2_ses-20230817_obj-xqsk12_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-102e8g8_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-12cnx36_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-12lx6vc_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-141c7la_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-150402a_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-16p0k4l_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-1b3c431_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-1ekrwgf_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-1k1kh8v_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-1nfvghe_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-1nz4mp7_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-1qdi75b_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-1wvjgrr_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-3shquh_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-3w6wqg_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-4r18h5_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-77zbgf_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-9x7ng4_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-en0v8b_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-ghpxz7_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-w108l_ophys.nwb
+  - sub-phpV14-3/sub-phpV14-3_ses-20230914_obj-wbn2it_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-10zv05w_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-17wr3oc_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1dr6vm7_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1emlsk9_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1g7hh6a_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1gwn6mc_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1j57g8f_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1jvn1f6_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1kh8pe1_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1mlkw4o_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1oj41a5_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1u0ij0m_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-1x9lx2n_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-2jm2o5_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-2zy4pn_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-7z8egn_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-ie2v27_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-j67vrs_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-jiwi9v_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-ltewx0_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-lw5thn_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-ms8rpr_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-msaxb2_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-uavvcb_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-vmgeu0_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-wh4agj_ophys.nwb
+  - sub-phpV14-4/sub-phpV14-4_ses-20230921_obj-xixvrx_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-10cr8m3_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-164asvm_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-17g1sph_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-17o4u3k_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-17o9ayi_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-17yypvv_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-1bp4zrx_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-1l7jotc_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-1mu3r6h_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-1padd2w_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-1w3a3cf_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-1y34u4z_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-4pa15h_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-6bt2f2_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-77w4m0_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-f2buld_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-g0vq6j_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-jmxszi_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-nv9z8q_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-umbeye_ophys.nwb
+  - sub-phpV15-1/sub-phpV15-1_ses-20230826_obj-wakqd2_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-11csdla_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-13seubs_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-14xiie5_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-1deje5r_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-1nt2ura_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-1p19vcl_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-1qg4uz3_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-1vfdc1o_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-1vml2s8_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-5fox26_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-em8dy1_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-ja7jqa_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-m2d1ep_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-rwlvvc_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-skdj6i_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-wlnfnb_ophys.nwb
+  - sub-phpV15-2/sub-phpV15-2_ses-20230905_obj-zyt5nf_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-16r17oo_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-1it0rbj_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-1j4l7jr_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-1otsqm4_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-1ro7c7w_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-1tikdqv_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-1ugkfgr_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-1vi3o1w_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-2xgpzk_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-36csnb_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-7thoo2_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-a03dwp_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-ddqzkc_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-evmhu2_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-lpm65j_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-pav14s_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-pt7h7a_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-vdoa4n_ophys.nwb
+  - sub-phpV15-3/sub-phpV15-3_ses-20230924_obj-y03qa2_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-12n0jui_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-159ntiz_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-15hrzbx_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-187aq09_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-19ao519_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-19tayfs_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1b2si0g_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1dagklp_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1fyayfz_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1ggzzah_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1k0el7a_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1kp8ykk_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1mooweh_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1sx521j_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1thy31a_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1tm21f8_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-1tq05ww_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-408kud_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-6wxba9_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-6y3dm8_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-86h16j_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-ax3fs9_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-j39ogg_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-klxbk0_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-m9hizd_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-nededb_ophys.nwb
+  - sub-phpV15-4/sub-phpV15-4_ses-20230925_obj-ujlw9g_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-142m8m4_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-17mf0yg_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-1gdoduh_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-1umxfhl_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-1xsns98_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-1yfs3b0_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-1ypy8bg_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-6javzg_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-bo7rn5_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-f1i5lb_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-fcgomj_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-i2k2is_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-i5r1i4_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230827_obj-wktnv1_ophys.nwb
+  - sub-phpV16-1/sub-phpV16-1_ses-20230918_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-11jlgyf_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-1az8uxb_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-1o52g11_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-1qcjbjd_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-33bkbp_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-4tonuv_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-8miqaq_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-g2rfvk_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-j9tcgp_ophys.nwb
+  - sub-phpV16-2/sub-phpV16-2_ses-20230906_obj-uw9uk3_ophys.nwb
+  - sub-phpV16-3/sub-phpV16-3_ses-20230918_obj-1ngbkex_ophys.nwb
+  - sub-phpV16-3/sub-phpV16-3_ses-20230918_obj-1qlypri_ophys.nwb
+  - sub-phpV16-3/sub-phpV16-3_ses-20230918_obj-eo3zzc_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-125gh10_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-12abvoh_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-13lfok7_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-15bllyb_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-18f3gto_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-1b7my8p_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-1c7ai21_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-1f9wi63_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-1x1cmy7_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-2pw1jb_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-3ns0rj_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-42milx_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-4dvow5_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-77kuth_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-9lp58q_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-ey81wz_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-j4qox0_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-jxv6g5_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-ksuvqz_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-l1mtud_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-o5skkr_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-p2d29h_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-ts68i9_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-z9eubf_ophys.nwb
+  - sub-phpV17-1/sub-phpV17-1_ses-20230828_obj-ztnxag_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-140j261_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-15yvykn_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-19a58je_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-1binji0_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-1e2w904_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-1g5oedx_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-1jnqhxu_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-1p52wom_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-1p7utzn_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-1ri46k4_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-1ucwq5u_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-1wns2o3_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-3xmx35_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-enyi0l_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-lyrlvl_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-qmppjk_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-rrv3nf_ophys.nwb
+  - sub-phpV17-2/sub-phpV17-2_ses-20230910_obj-w2a7i9_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-14bo95t_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-157gflz_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-16vxor0_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-1b9tkzj_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-1bq5yh9_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-1nrlb2y_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-1ntiwps_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-1r41csf_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-7hwqbo_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-8j94hr_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-a6y7z6_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-bmeig3_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-bpv2q9_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-cdhgbb_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-pa0hu8_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-pxkdha_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-pye6t1_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-uo0htn_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-v4ptl2_ophys.nwb
+  - sub-phpV17-3/sub-phpV17-3_ses-20230926_obj-y2d4k3_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-111cr9_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-157fkml_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-1c9ts2i_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-1dzt7jy_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-1hbcwhn_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-1j0qwpz_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-1qhrso9_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-3hgjrt_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-5v21g6_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-821nup_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-akws8p_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-bc3gho_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-kxh0zo_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-n15yen_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-ndwcdr_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-qu4yrm_ophys.nwb
+  - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-thbltu_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-12k8bw7_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-16g7qi3_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-1olhkbl_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-1qukf09_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-38o8bb_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-5c33ri_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-5gq7i1_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-c17bj9_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-q1mj4b_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-r2px09_ophys.nwb
+  - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-r4zriy_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-16i06nn_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-17clknw_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1aldxgp_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1auos6c_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1dyfken_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1exbpg1_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1g5az8z_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1i67ujq_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1le3fgl_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1tnj13m_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-7ph4s2_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-7yac69_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-dmwgr6_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-ea3nk4_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-grrwt0_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-jsdehj_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-jwle1s_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-k6ed35_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-laqvaq_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-lo4a75_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-o08olb_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-p4n76w_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-rizhyt_ophys.nwb
+  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-yfwot5_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-13qg1zr_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-1azcgd9_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-1fgfi3q_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-1nxx3z4_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-1upfhf5_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-2um583_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-62dz64_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-9kz0ls_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-qr1k1u_ophys.nwb
+  - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-ti2djx_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-108afew_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-1969it7_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-1eatak5_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-1mjto6e_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-1ueq47w_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-1w0lrtw_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-1xt8kmx_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-bwtwt8_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-inm200_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-krn32p_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-m0oyow_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-m11io8_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-uzuusr_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-v57wvr_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-yhi837_ophys.nwb
+  - sub-phpV7-4/sub-phpV7-4_ses-20230428_obj-z3jccz_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-11qv17b_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-14uca98_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-174wlp5_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-1ey80az_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-1ggkdty_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-1lp5cmk_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-3zzlwg_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-czrpy7_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-j855y6_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-n7l5so_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-nke5o3_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-nxnt1k_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-xaw7hr_ophys.nwb
+  - sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-y05ej0_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-13gcuze_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-15h9htk_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-1dh31uy_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-1hicoj6_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-1vg72np_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-1wt4of8_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-1y8exyk_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-443qxy_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-iep222_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-jcz43l_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-jo5fhg_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-jznygr_ophys.nwb
+  - sub-phpV7-7/sub-phpV7-7_ses-20230519_obj-q432xx_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-10iz3xy_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-179ed14_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-17kpvnm_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-17ph17j_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-1bprwi_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-1giuec4_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-befjxk_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-cmd5bx_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-d8x8qh_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-oaeyp8_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-sw92qw_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-xe584u_ophys.nwb
+  - sub-phpV8-3/sub-phpV8-3_ses-20230413_obj-zexmy6_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-16ltqwm_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-16m3dd_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-1kok3rl_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-2e9rny_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-6329hf_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-aguoor_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-b9tnkm_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-gp9ihg_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-pko0ij_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-tuw56t_ophys.nwb
+  - sub-phpV8-4/sub-phpV8-4_ses-20230502_obj-uyc6tb_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-10o5263_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-166qb42_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-190fo9x_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-1fbt044_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-1l56nnz_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-1s53ez3_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-1wyif26_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-2b4oaq_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-3sivd3_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-gj3lo2_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-gweb4h_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-lkj3iw_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-pb9ih3_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-utesji_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-x75yq9_ophys.nwb
+  - sub-phpV8-5/sub-phpV8-5_ses-20230510_obj-zkgjao_ophys.nwb
+  - sub-phpV8-6/sub-phpV8-6_ses-20230515_obj-169t4hf_ophys.nwb
+  - sub-phpV8-6/sub-phpV8-6_ses-20230515_obj-19hlrnw_ophys.nwb
+  - sub-phpV8-6/sub-phpV8-6_ses-20230515_obj-1ryor1x_ophys.nwb
+  - sub-phpV8-6/sub-phpV8-6_ses-20230515_obj-1xia77x_ophys.nwb
+  - sub-phpV8-6/sub-phpV8-6_ses-20230515_obj-7lusx3_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-14qq7uo_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-19z8pnc_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1e8bosa_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1g6b2f2_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1hhjc4m_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1hto9eg_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1i8ekxc_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1p2kfmy_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1qzruh3_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1rusabf_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1tnihh1_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1ulp1p3_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1w6trjq_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-1ye78r4_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-2omja0_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-67vwu1_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-euk8ya_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-evu4gg_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-jw70dh_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-ly7ihr_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-nrmji1_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-re1m1w_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-tpy6kj_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-vlvttx_ophys.nwb
+  - sub-phpV9-10/sub-phpV9-10_ses-20230802_obj-xoq3h2_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-10y77a_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-1errbvt_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-1k644i0_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-1qad8yb_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-1tr1jow_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-1tz06dm_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-1yyp0eq_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-4ft01n_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-6huxj5_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-9sx0ry_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-a3906o_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-am1yv2_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-czbnbh_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-df4liq_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-ep3qgy_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-i9qjv_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-k3n0y7_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-ps20i0_ophys.nwb
+  - sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-qww47_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-11yt6ns_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-12coff8_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-16ea5bs_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-16lons9_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-17p45mn_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-1l7o6he_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-1nzt66d_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-1ombup4_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-1v2s7g7_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-2j2mor_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-amne1i_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-c7y1c9_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-cskbmj_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-e59fyt_ophys.nwb
+  - sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-wcqvv1_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-1iqh184_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-1lli6om_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-1r2c1ye_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-1uw72cx_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-64pvuv_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-e7hyzz_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-hvy02d_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-ina9ck_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-j5jq5h_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-o5h01f_ophys.nwb
+  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-qnlwds_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-15fjms9_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-17z286t_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1e95bz6_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1m059we_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1m6p8h4_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1sc3b0h_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1v361nw_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1wgyvei_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1xquavx_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-1yicq5t_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-2rjlmy_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-79ba1d_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-d5subt_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-topbtr_ophys.nwb
+  - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-xu8kn2_ophys.nwb
   assets_timeout:
-  - path: sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-17yc8kb_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-1tlpv13_ophys.nwb
-    versions:
-      hdmf: 3.10.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse3-DC1-1L-C2-1R-3 Left/sub-mouse3-DC1-1L-C2-1R-3 Left_obj-k1w5xv_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-lkbz_ophys.nwb
-    versions:
-      hdmf: 3.11.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
+  - sub-phpV12-4/sub-phpV12-4_ses-20230510_obj-kv6fhz_ophys.nwb
+  - sub-phpV8-6/sub-phpV8-6_ses-20230515_obj-cmr9fx_ophys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.9.0
+  hdmf: 3.11.0
   matnwb: v2.6.0.2
   pynwb: 2.5.0

@@ -1,19 +1,75 @@
 dandiset: '000623'
-dandiset_version: c555dab6f1646d71861709e9bc5e1f1f40b7c041
-last_run: null
-last_run_duration: null
-last_run_ended: null
-nassets: null
+dandiset_version: 0762d6e0f38be64421d19cc7e977048010f09856
+last_run: '2024-02-25T05:33:35.776133-05:00'
+last_run_duration: 70561.527543
+last_run_ended: '2024-02-26T01:09:37.303676-05:00'
+nassets: 29
 tests:
 - assets_nok: []
   assets_ok:
+  - sub-CS41/sub-CS41_ses-P41CSR1_behavior+ecephys.nwb
+  - sub-CS41/sub-CS41_ses-P41CSR2_behavior+ecephys.nwb
+  - sub-CS42/sub-CS42_ses-P42CSR1_behavior+ecephys.nwb
+  - sub-CS42/sub-CS42_ses-P42CSR2_behavior+ecephys.nwb
+  - sub-CS43/sub-CS43_ses-P43CSR1_behavior+ecephys.nwb
+  - sub-CS43/sub-CS43_ses-P43CSR2_behavior+ecephys.nwb
+  - sub-CS44/sub-CS44_ses-P44CSR1_behavior+ecephys.nwb
+  - sub-CS47/sub-CS47_ses-P47CSR1_behavior+ecephys.nwb
+  - sub-CS47/sub-CS47_ses-P47CSR2_behavior+ecephys.nwb
+  - sub-CS48/sub-CS48_ses-P48CSR1_behavior+ecephys.nwb
+  - sub-CS48/sub-CS48_ses-P48CSR2_behavior+ecephys.nwb
+  - sub-CS49/sub-CS49_ses-P49CSR1_behavior+ecephys.nwb
+  - sub-CS49/sub-CS49_ses-P49CSR2_behavior+ecephys.nwb
+  - sub-CS51/sub-CS51_ses-P51CSR1_behavior+ecephys.nwb
   - sub-CS51/sub-CS51_ses-P51CSR2_behavior+ecephys.nwb
+  - sub-CS53/sub-CS53_ses-P53CSR1_behavior+ecephys.nwb
+  - sub-CS53/sub-CS53_ses-P53CSR2_behavior+ecephys.nwb
+  - sub-CS54/sub-CS54_ses-P54CSR1_behavior+ecephys.nwb
+  - sub-CS54/sub-CS54_ses-P54CSR2_behavior+ecephys.nwb
+  - sub-CS55/sub-CS55_ses-P55CSR1_behavior+ecephys.nwb
+  - sub-CS55/sub-CS55_ses-P55CSR2_behavior+ecephys.nwb
+  - sub-CS56/sub-CS56_ses-P56CSR1_behavior+ecephys.nwb
+  - sub-CS56/sub-CS56_ses-P56CSR2_behavior+ecephys.nwb
+  - sub-CS57/sub-CS57_ses-P57CSR1_behavior+ecephys.nwb
+  - sub-CS57/sub-CS57_ses-P57CSR2_behavior+ecephys.nwb
+  - sub-CS58/sub-CS58_ses-P58CSR1_behavior+ecephys.nwb
+  - sub-CS60/sub-CS60_ses-P60CSR1_behavior+ecephys.nwb
+  - sub-CS62/sub-CS62_ses-P62CSR1_behavior+ecephys.nwb
+  - sub-CS62/sub-CS62_ses-P62CSR2_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok: []
-  assets_timeout:
+- assets_nok:
+  - sub-CS41/sub-CS41_ses-P41CSR1_behavior+ecephys.nwb
+  - sub-CS42/sub-CS42_ses-P42CSR1_behavior+ecephys.nwb
+  - sub-CS42/sub-CS42_ses-P42CSR2_behavior+ecephys.nwb
+  - sub-CS43/sub-CS43_ses-P43CSR2_behavior+ecephys.nwb
+  - sub-CS44/sub-CS44_ses-P44CSR1_behavior+ecephys.nwb
+  - sub-CS47/sub-CS47_ses-P47CSR1_behavior+ecephys.nwb
+  - sub-CS53/sub-CS53_ses-P53CSR1_behavior+ecephys.nwb
+  - sub-CS55/sub-CS55_ses-P55CSR2_behavior+ecephys.nwb
+  - sub-CS56/sub-CS56_ses-P56CSR2_behavior+ecephys.nwb
+  - sub-CS57/sub-CS57_ses-P57CSR2_behavior+ecephys.nwb
+  - sub-CS60/sub-CS60_ses-P60CSR1_behavior+ecephys.nwb
+  assets_ok:
+  - sub-CS41/sub-CS41_ses-P41CSR2_behavior+ecephys.nwb
+  - sub-CS47/sub-CS47_ses-P47CSR2_behavior+ecephys.nwb
+  - sub-CS48/sub-CS48_ses-P48CSR2_behavior+ecephys.nwb
+  - sub-CS49/sub-CS49_ses-P49CSR2_behavior+ecephys.nwb
+  - sub-CS51/sub-CS51_ses-P51CSR1_behavior+ecephys.nwb
   - sub-CS51/sub-CS51_ses-P51CSR2_behavior+ecephys.nwb
+  - sub-CS53/sub-CS53_ses-P53CSR2_behavior+ecephys.nwb
+  - sub-CS55/sub-CS55_ses-P55CSR1_behavior+ecephys.nwb
+  - sub-CS57/sub-CS57_ses-P57CSR1_behavior+ecephys.nwb
+  - sub-CS58/sub-CS58_ses-P58CSR1_behavior+ecephys.nwb
+  - sub-CS62/sub-CS62_ses-P62CSR1_behavior+ecephys.nwb
+  - sub-CS62/sub-CS62_ses-P62CSR2_behavior+ecephys.nwb
+  assets_timeout:
+  - sub-CS43/sub-CS43_ses-P43CSR1_behavior+ecephys.nwb
+  - sub-CS48/sub-CS48_ses-P48CSR1_behavior+ecephys.nwb
+  - sub-CS49/sub-CS49_ses-P49CSR1_behavior+ecephys.nwb
+  - sub-CS54/sub-CS54_ses-P54CSR1_behavior+ecephys.nwb
+  - sub-CS54/sub-CS54_ses-P54CSR2_behavior+ecephys.nwb
+  - sub-CS56/sub-CS56_ses-P56CSR1_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

@@ -1,27 +1,33 @@
 dandiset: '000167'
-dandiset_version: a445f0b12634283f0b4b6f0c81e56a4c47f7e74c
-last_run: '2023-02-14T14:34:27.559009-05:00'
-last_run_duration: 16844.44196
-last_run_ended: '2023-02-14T19:15:12.000969-05:00'
-nassets: 5
+dandiset_version: 3240b86ea30bff35c3f75214eba95999d8520f4c
+last_run: '2024-01-17T00:15:28.978219-05:00'
+last_run_duration: 8283.817042
+last_run_ended: '2024-01-17T02:33:32.795261-05:00'
+nassets: 6
 tests:
 - assets_nok: []
   assets_ok:
   - sub-163/sub-163_ses-20200212T160655_ophys.nwb
+  - sub-164/sub-164_ses-20200124T161514_image+ophys.nwb
   - sub-7/sub-7_ses-20200213T113524_ophys.nwb
   - sub-8/sub-8_ses-20200204T180138_ophys.nwb
   - sub-9/sub-9_ses-20200204T154200_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-8/sub-8_ses-20200204T180138_ophys.nwb
-  assets_ok: []
-  assets_timeout:
-  - sub-163/sub-163_ses-20200212T160655_ophys.nwb
+  - sub-164/sub-164_ses-20200124T161514_image+ophys.nwb
   - sub-7/sub-7_ses-20200213T113524_ophys.nwb
+  - sub-8/sub-8_ses-20200204T180138_ophys.nwb
+  assets_ok:
+  - sub-163/sub-163_ses-20200212T160655_ophys.nwb
+  assets_timeout:
   - sub-9/sub-9_ses-20200204T154200_ophys.nwb
   name: matnwb_nwbRead
-untested: []
+untested:
+- asset: sub-164/sub-164_ses-20200124T161514_image+ophys/dfbe7f63-8653-4084-aa84-c282ffcd7871_external_file_0.mkv
+  file_type: Matroska data
+  mime_type: video/x-matroska
+  size: 200609925
 versions:
   hdmf: 3.11.0
   matnwb: v2.6.0.2

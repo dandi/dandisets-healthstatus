@@ -1,19 +1,59 @@
 dandiset: '000541'
-dandiset_version: 91a7fc0478f8a91c359727e731b049cdcd4eaf88
-last_run: null
-last_run_duration: null
-last_run_ended: null
-nassets: null
+dandiset_version: 607b3cafe5d84620390744663e9c05d6a32b1062
+last_run: '2024-02-15T22:58:56.240475-05:00'
+last_run_duration: 72701.745722
+last_run_ended: '2024-02-16T19:10:37.986197-05:00'
+nassets: 21
 tests:
 - assets_nok:
+  - sub-20190924-01/sub-20190924-01_ses-20190924_ophys.nwb
+  - sub-20190924-02/sub-20190924-02_ses-20190924_ophys.nwb
   - sub-20190924-03/sub-20190924-03_ses-20190924_ophys.nwb
+  - sub-20190925-01/sub-20190925-01_ses-20190925_ophys.nwb
+  - sub-20190925-04/sub-20190925-04_ses-20190925_ophys.nwb
+  - sub-20190928-01/sub-20190928-01_ses-20190928_ophys.nwb
+  - sub-20190928-03/sub-20190928-03_ses-20190928_ophys.nwb
+  - sub-20190928-05/sub-20190928-05_ses-20190928_ophys.nwb
+  - sub-20190928-07/sub-20190928-07_ses-20190928_ophys.nwb
+  - sub-20190928-08/sub-20190928-08_ses-20190928_ophys.nwb
+  - sub-20190928-11/sub-20190928-11_ses-20190928_ophys.nwb
+  - sub-20190928-13/sub-20190928-13_ses-20190928_ophys.nwb
+  - sub-20190929-02/sub-20190929-02_ses-20190929_ophys.nwb
+  - sub-20190929-03/sub-20190929-03_ses-20190929_ophys.nwb
+  - sub-20190929-05/sub-20190929-05_ses-20190929_ophys.nwb
+  - sub-20190929-06/sub-20190929-06_ses-20190929_ophys.nwb
+  - sub-20190929-07/sub-20190929-07_ses-20190929_ophys.nwb
+  - sub-20191030-03/sub-20191030-03_ses-20191030_ophys.nwb
+  - sub-20191030-07/sub-20191030-07_ses-20191030_ophys.nwb
+  - sub-20191104-08/sub-20191104-08_ses-20191104_ophys.nwb
+  - sub-20191104-10/sub-20191104-10_ses-20191104_ophys.nwb
   assets_ok: []
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-20190925-04/sub-20190925-04_ses-20190925_ophys.nwb
+  - sub-20190928-03/sub-20190928-03_ses-20190928_ophys.nwb
+  - sub-20190928-05/sub-20190928-05_ses-20190928_ophys.nwb
+  - sub-20190928-08/sub-20190928-08_ses-20190928_ophys.nwb
+  - sub-20190928-13/sub-20190928-13_ses-20190928_ophys.nwb
+  - sub-20191030-03/sub-20191030-03_ses-20191030_ophys.nwb
   assets_ok: []
   assets_timeout:
+  - sub-20190924-01/sub-20190924-01_ses-20190924_ophys.nwb
+  - sub-20190924-02/sub-20190924-02_ses-20190924_ophys.nwb
   - sub-20190924-03/sub-20190924-03_ses-20190924_ophys.nwb
+  - sub-20190925-01/sub-20190925-01_ses-20190925_ophys.nwb
+  - sub-20190928-01/sub-20190928-01_ses-20190928_ophys.nwb
+  - sub-20190928-07/sub-20190928-07_ses-20190928_ophys.nwb
+  - sub-20190928-11/sub-20190928-11_ses-20190928_ophys.nwb
+  - sub-20190929-02/sub-20190929-02_ses-20190929_ophys.nwb
+  - sub-20190929-03/sub-20190929-03_ses-20190929_ophys.nwb
+  - sub-20190929-05/sub-20190929-05_ses-20190929_ophys.nwb
+  - sub-20190929-06/sub-20190929-06_ses-20190929_ophys.nwb
+  - sub-20190929-07/sub-20190929-07_ses-20190929_ophys.nwb
+  - sub-20191030-07/sub-20191030-07_ses-20191030_ophys.nwb
+  - sub-20191104-08/sub-20191104-08_ses-20191104_ophys.nwb
+  - sub-20191104-10/sub-20191104-10_ses-20191104_ophys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

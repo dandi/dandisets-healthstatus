@@ -1,18 +1,44 @@
 dandiset: '000462'
-dandiset_version: 71143bb96a81449a0217a7209a8314db479aedf3
-last_run: null
-last_run_duration: null
-last_run_ended: null
-nassets: null
+dandiset_version: 5b579cff1c49614aded3fa0d03b65c38de8672b8
+last_run: '2024-02-12T12:02:49.691445-05:00'
+last_run_duration: 6446.8336
+last_run_ended: '2024-02-12T13:50:16.525045-05:00'
+nassets: 14
 tests:
 - assets_nok: []
   assets_ok:
+  - sub-009/sub-009_ophys.nwb
+  - sub-011/sub-011_ophys.nwb
+  - sub-012/sub-012_ophys.nwb
+  - sub-014/sub-014_ophys.nwb
   - sub-CFC16/sub-CFC16_ophys.nwb
+  - sub-CFC17/sub-CFC17_ophys.nwb
+  - sub-CFC19/sub-CFC19_ophys.nwb
+  - sub-CFC4/sub-CFC4_ophys.nwb
+  - sub-NR14/sub-NR14_ophys.nwb
+  - sub-NR21/sub-NR21_ophys.nwb
+  - sub-NR23/sub-NR23_ophys.nwb
+  - sub-NR32/sub-NR32_ophys.nwb
+  - sub-NR34/sub-NR34_ophys.nwb
+  - sub-NR6/sub-NR6_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok:
+- assets_nok:
+  - sub-009/sub-009_ophys.nwb
+  - sub-011/sub-011_ophys.nwb
+  - sub-012/sub-012_ophys.nwb
+  - sub-014/sub-014_ophys.nwb
   - sub-CFC16/sub-CFC16_ophys.nwb
+  - sub-CFC17/sub-CFC17_ophys.nwb
+  - sub-CFC19/sub-CFC19_ophys.nwb
+  - sub-CFC4/sub-CFC4_ophys.nwb
+  - sub-NR21/sub-NR21_ophys.nwb
+  - sub-NR23/sub-NR23_ophys.nwb
+  - sub-NR32/sub-NR32_ophys.nwb
+  - sub-NR34/sub-NR34_ophys.nwb
+  assets_ok:
+  - sub-NR14/sub-NR14_ophys.nwb
+  - sub-NR6/sub-NR6_ophys.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

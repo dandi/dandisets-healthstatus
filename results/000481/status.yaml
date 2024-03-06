@@ -1,18 +1,20 @@
 dandiset: 000481
-dandiset_version: b978bed3659f4694a719ae04a781ced3d9c45336
-last_run: null
-last_run_duration: null
-last_run_ended: null
-nassets: null
+dandiset_version: 1b22f3f1e2d5159dc2db2e7c2d6019f14b099d09
+last_run: '2024-02-13T18:19:08.375418-05:00'
+last_run_duration: 1461.218877
+last_run_ended: '2024-02-13T18:43:29.594295-05:00'
+nassets: 2
 tests:
 - assets_nok: []
   assets_ok:
   - sub-525/sub-525_ecephys.nwb
+  - sub-525/sub-525_ses-20230412T102003.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
+- assets_nok: []
+  assets_ok:
   - sub-525/sub-525_ecephys.nwb
-  assets_ok: []
+  - sub-525/sub-525_ses-20230412T102003.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

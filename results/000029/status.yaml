@@ -1,9 +1,9 @@
 dandiset: 000029
-dandiset_version: f03f8891e8fdd754e2e2bfb25d6154694574090c
-last_run: '2023-03-02T20:59:49.729160-05:00'
-last_run_duration: 4741.828002
-last_run_ended: '2023-03-02T22:18:51.557162-05:00'
-nassets: 5
+dandiset_version: 513e570e84d83e495f6296a9cc26fa5cc43d8a18
+last_run: '2024-02-08T06:00:57.963287-05:00'
+last_run_duration: 758.867923
+last_run_ended: '2024-02-08T06:13:36.831210-05:00'
+nassets: 9
 tests:
 - assets_nok: []
   assets_ok:
@@ -19,11 +19,27 @@ tests:
   - sub-anm369962/sub-anm369962_behavior+ecephys.nwb
   - sub-anm369963/sub-anm369963_behavior+ecephys.nwb
   - sub-anm369964/sub-anm369964_behavior+ecephys.nwb
-  assets_ok: []
-  assets_timeout:
   - sub-monk-g/sub-monk-g.nwb
+  assets_ok: []
+  assets_timeout: []
   name: matnwb_nwbRead
-untested: []
+untested:
+- asset: baz
+  file_type: ASCII text
+  mime_type: text/plain
+  size: 4
+- asset: test1234
+  file_type: ASCII text
+  mime_type: text/plain
+  size: 9
+- asset: test12345
+  file_type: ASCII text
+  mime_type: text/plain
+  size: 9
+- asset: bar-renamed-3334
+  file_type: ASCII text
+  mime_type: text/plain
+  size: 4
 versions:
   hdmf: 3.11.0
   matnwb: v2.6.0.2

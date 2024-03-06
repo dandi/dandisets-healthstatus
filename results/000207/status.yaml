@@ -1,18 +1,54 @@
 dandiset: '000207'
-dandiset_version: 5cdd35818746beb880ca0799717619163279b842
-last_run: '2023-02-14T23:44:42.913745-05:00'
-last_run_duration: 25803.071665
-last_run_ended: '2023-02-15T06:54:45.985410-05:00'
+dandiset_version: 6bec3d2f48ac34874cd2db99c86825b3f1aa79e3
+last_run: '2024-01-17T03:23:03.337374-05:00'
+last_run_duration: 18778.177286
+last_run_ended: '2024-01-17T08:36:01.514660-05:00'
 nassets: 19
 tests:
 - assets_nok: []
   assets_ok:
+  - sub-1/sub-1_ses-1_ecephys.nwb
+  - sub-10/sub-10_ses-10_ecephys.nwb
   - sub-11/sub-11_ses-11_ecephys.nwb
+  - sub-12/sub-12_ses-12_ecephys.nwb
+  - sub-13/sub-13_ses-13_ecephys.nwb
+  - sub-14/sub-14_ses-14_ecephys.nwb
+  - sub-15/sub-15_ses-15_ecephys.nwb
+  - sub-16/sub-16_ses-16_ecephys.nwb
+  - sub-17/sub-17_ses-17_ecephys.nwb
+  - sub-18/sub-18_ses-18_ecephys.nwb
+  - sub-19/sub-19_ses-19_ecephys.nwb
+  - sub-2/sub-2_ses-2_ecephys.nwb
+  - sub-3/sub-3_ses-3_ecephys.nwb
+  - sub-4/sub-4_ses-4_ecephys.nwb
+  - sub-5/sub-5_ses-5_ecephys.nwb
+  - sub-6/sub-6_ses-6_ecephys.nwb
+  - sub-7/sub-7_ses-7_ecephys.nwb
+  - sub-8/sub-8_ses-8_ecephys.nwb
+  - sub-9/sub-9_ses-9_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok:
+- assets_nok:
   - sub-11/sub-11_ses-11_ecephys.nwb
+  - sub-13/sub-13_ses-13_ecephys.nwb
+  - sub-14/sub-14_ses-14_ecephys.nwb
+  - sub-15/sub-15_ses-15_ecephys.nwb
+  - sub-17/sub-17_ses-17_ecephys.nwb
+  - sub-18/sub-18_ses-18_ecephys.nwb
+  - sub-19/sub-19_ses-19_ecephys.nwb
+  - sub-4/sub-4_ses-4_ecephys.nwb
+  - sub-6/sub-6_ses-6_ecephys.nwb
+  assets_ok:
+  - sub-1/sub-1_ses-1_ecephys.nwb
+  - sub-10/sub-10_ses-10_ecephys.nwb
+  - sub-12/sub-12_ses-12_ecephys.nwb
+  - sub-16/sub-16_ses-16_ecephys.nwb
+  - sub-2/sub-2_ses-2_ecephys.nwb
+  - sub-3/sub-3_ses-3_ecephys.nwb
+  - sub-5/sub-5_ses-5_ecephys.nwb
+  - sub-7/sub-7_ses-7_ecephys.nwb
+  - sub-8/sub-8_ses-8_ecephys.nwb
+  - sub-9/sub-9_ses-9_ecephys.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

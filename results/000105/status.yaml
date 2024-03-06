@@ -1,19 +1,20 @@
-dandiset_version: 4cd9f0e81aefc9fa8fd067cb5787c37447a6060c
-last_run: 2023-02-11 19:55:38.263184-05:00
-last_run_duration: 2.954557
-last_run_ended: 2023-02-11 19:55:41.217741-05:00
+dandiset: '000105'
+dandiset_version: 6ac3ae7c1a2bad55dc8ce04beb91355ce9cfd517
+last_run: '2024-01-14T12:43:54.504422-05:00'
+last_run_duration: 9.193496
+last_run_ended: '2024-01-14T12:44:03.697918-05:00'
 nassets: 2
 tests: []
 untested:
 - asset: sub-mgh191021520/ses-20210124/microscopy/sub-mgh191021520_ses-20210124_sample-150slab_SPIM.h5
-  file_type: symbolic link to ../../../.git/annex/objects/Gf/pX/SHA256E-s2542027975111--9f0d152216a8abe53bc823bd97d309087b7c447b563453d326b005e17ab39d88.h5/SHA256E-s2542027975111--9f0d152216a8abe53bc823bd97d309087b7c447b563453d326b005e17ab39d88.h5
-  mime_type: inode/symlink
+  file_type: Hierarchical Data Format (version 5) data
+  mime_type: application/x-hdf
   size: 2542027975111
 - asset: sub-mgh191021520/ses-20210124/microscopy/sub-mgh191021520_ses-20210124_sample-150slab_SPIM.json
   file_type: JSON data
   mime_type: application/json
   size: 641
 versions:
-  hdmf: 3.5.1
-  matnwb: v2.6.0.0
-  pynwb: 2.2.0
+  hdmf: 3.11.0
+  matnwb: v2.6.0.2
+  pynwb: 2.5.0

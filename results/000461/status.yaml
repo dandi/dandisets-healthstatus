@@ -1,18 +1,44 @@
 dandiset: '000461'
-dandiset_version: 68a93b01fe61be79424369177c1c55b17f58f498
-last_run: null
-last_run_duration: null
-last_run_ended: null
-nassets: null
+dandiset_version: c534ebc981e29da6b676b5c410241ddbed4b1dea
+last_run: '2024-02-12T10:23:40.684571-05:00'
+last_run_duration: 5948.991885
+last_run_ended: '2024-02-12T12:02:49.676456-05:00'
+nassets: 14
 tests:
 - assets_nok: []
   assets_ok:
+  - sub-000/sub-000_ophys.nwb
+  - sub-000/sub-000_ses-20230311T080000_ophys.nwb
+  - sub-001/sub-001_ophys.nwb
+  - sub-001/sub-001_ses-20230311T120000_ophys.nwb
+  - sub-0010/sub-0010_ses-20230311T120000_ophys.nwb
   - sub-0011/sub-0011_ses-20230226T130000_ophys.nwb
+  - sub-002/sub-002_ses-20230226T130000_ophys.nwb
+  - sub-003/sub-003_ses-20230311T120000_ophys.nwb
+  - sub-004/sub-004_ses-20230306T110000_ophys.nwb
+  - sub-005/sub-005_ses-20230311T120000_ophys.nwb
+  - sub-006/sub-006_ses-20230306T110000_ophys.nwb
+  - sub-007/sub-007_ses-20230311T120000_ophys.nwb
+  - sub-008/sub-008_ses-20230311T080000_ophys.nwb
+  - sub-009/sub-009_ses-20230311T120000_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok:
+- assets_nok:
+  - sub-001/sub-001_ses-20230311T120000_ophys.nwb
   - sub-0011/sub-0011_ses-20230226T130000_ophys.nwb
+  - sub-005/sub-005_ses-20230311T120000_ophys.nwb
+  - sub-006/sub-006_ses-20230306T110000_ophys.nwb
+  - sub-007/sub-007_ses-20230311T120000_ophys.nwb
+  - sub-008/sub-008_ses-20230311T080000_ophys.nwb
+  assets_ok:
+  - sub-000/sub-000_ophys.nwb
+  - sub-000/sub-000_ses-20230311T080000_ophys.nwb
+  - sub-001/sub-001_ophys.nwb
+  - sub-0010/sub-0010_ses-20230311T120000_ophys.nwb
+  - sub-002/sub-002_ses-20230226T130000_ophys.nwb
+  - sub-003/sub-003_ses-20230311T120000_ophys.nwb
+  - sub-004/sub-004_ses-20230306T110000_ophys.nwb
+  - sub-009/sub-009_ses-20230311T120000_ophys.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
