@@ -18,7 +18,6 @@ tests:
   - sub-433242/sub-433242_ses-826788987_behavior+image+ophys.nwb
   - sub-433242/sub-433242_ses-829248349_behavior+image+ophys.nwb
   - sub-437812/sub-437812_ses-847488960_behavior+image+ophys.nwb
-  - sub-437812/sub-437812_ses-848089631_behavior+image+ophys.nwb
   - sub-437813/sub-437813_ses-847488858_behavior+image+ophys.nwb
   - sub-438097/sub-438097_ses-830149321_behavior+image+ophys.nwb
   - sub-438097/sub-438097_ses-830764081_behavior+image+ophys.nwb
@@ -50,7 +49,12 @@ tests:
   - sub-440299/sub-440299_ses-833870314_behavior+image+ophys.nwb
   - sub-440299/sub-440299_ses-836464549_behavior+image+ophys.nwb
   - sub-440299/sub-440299_ses-837094917_behavior+image+ophys.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-437812/sub-437812_ses-848089631_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-416366/sub-416366_ses-768476976_behavior+image+ophys.nwb
@@ -58,7 +62,6 @@ tests:
   - sub-433242/sub-433242_ses-826156469_behavior+image+ophys.nwb
   - sub-433242/sub-433242_ses-826788987_behavior+image+ophys.nwb
   - sub-433242/sub-433242_ses-829248349_behavior+image+ophys.nwb
-  - sub-437812/sub-437812_ses-848089631_behavior+image+ophys.nwb
   - sub-437813/sub-437813_ses-847488858_behavior+image+ophys.nwb
   - sub-438097/sub-438097_ses-830764081_behavior+image+ophys.nwb
   - sub-438097/sub-438097_ses-832175186_behavior+image+ophys.nwb
@@ -82,6 +85,11 @@ tests:
   - sub-432373/sub-432373_ses-812785966_behavior+image+ophys.nwb
   - sub-432373/sub-432373_ses-817048539_behavior+image+ophys.nwb
   - sub-437812/sub-437812_ses-847488960_behavior+image+ophys.nwb
+  - path: sub-437812/sub-437812_ses-848089631_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-438097/sub-438097_ses-830149321_behavior+image+ophys.nwb
   - sub-438378/sub-438378_ses-830149483_behavior+image+ophys.nwb
   - sub-438378/sub-438378_ses-830766957_behavior+image+ophys.nwb

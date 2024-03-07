@@ -25,7 +25,11 @@ tests:
   - sub-jaq/sub-jaq_ses-jaq-09_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-10_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-11_behavior+ecephys.nwb
-  - sub-jaq/sub-jaq_ses-jaq-12_behavior+ecephys.nwb
+  - path: sub-jaq/sub-jaq_ses-jaq-12_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-jaq/sub-jaq_ses-jaq-13_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-14_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-15_behavior+ecephys.nwb
@@ -89,7 +93,11 @@ tests:
   - sub-jaq/sub-jaq_ses-jaq-08_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-09_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-10_behavior+ecephys.nwb
-  - sub-jaq/sub-jaq_ses-jaq-12_behavior+ecephys.nwb
+  - path: sub-jaq/sub-jaq_ses-jaq-12_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-jaq/sub-jaq_ses-jaq-14_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-15_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-16_behavior+ecephys.nwb

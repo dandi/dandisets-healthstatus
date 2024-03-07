@@ -10,13 +10,13 @@ tests:
   - sub-fly01/sub-fly01_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
+- assets_nok: []
+  assets_ok:
   - sub-fly01/sub-fly01_ophys.nwb
-  assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.11.0
+  hdmf: 3.12.2
   matnwb: v2.6.0.2
-  pynwb: 2.5.0
+  pynwb: 2.6.0

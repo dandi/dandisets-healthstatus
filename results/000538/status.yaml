@@ -17,7 +17,11 @@ tests:
   - sub-195901J2Pcell2t2hp/sub-195901J2Pcell2t2hp_ses-20230302T195901_image.nwb
   - sub-201125J2Pcell3t1hp/sub-201125J2Pcell3t1hp_ses-20230302T201125_image.nwb
   - sub-203147J2Pcell4t1hp/sub-203147J2Pcell4t1hp_ses-20230302T203147_image.nwb
-  - sub-204028J2Pcell5t1hp/sub-204028J2Pcell5t1hp_ses-20230302T204028_image.nwb
+  - path: sub-204028J2Pcell5t1hp/sub-204028J2Pcell5t1hp_ses-20230302T204028_image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -32,7 +36,11 @@ tests:
   - sub-195654J2Pcell2t1hp/sub-195654J2Pcell2t1hp_ses-20230302T195654_image.nwb
   - sub-201125J2Pcell3t1hp/sub-201125J2Pcell3t1hp_ses-20230302T201125_image.nwb
   - sub-203147J2Pcell4t1hp/sub-203147J2Pcell4t1hp_ses-20230302T203147_image.nwb
-  - sub-204028J2Pcell5t1hp/sub-204028J2Pcell5t1hp_ses-20230302T204028_image.nwb
+  - path: sub-204028J2Pcell5t1hp/sub-204028J2Pcell5t1hp_ses-20230302T204028_image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

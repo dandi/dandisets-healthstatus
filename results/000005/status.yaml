@@ -19,7 +19,11 @@ tests:
   - sub-anm196837/sub-anm196837_ses-20130830_behavior+icephys.nwb
   - sub-anm199549/sub-anm199549_ses-20130530_behavior+ecephys.nwb
   - sub-anm199549/sub-anm199549_ses-20130604_behavior+ecephys.nwb
-  - sub-anm199549/sub-anm199549_ses-20130605_behavior+ecephys.nwb
+  - path: sub-anm199549/sub-anm199549_ses-20130605_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-anm199551/sub-anm199551_ses-20130626_behavior+ecephys.nwb
   - sub-anm199552/sub-anm199552_ses-20130601_behavior+ecephys.nwb
   - sub-anm199552/sub-anm199552_ses-20130602_behavior+ecephys.nwb
@@ -162,6 +166,11 @@ tests:
   - sub-anm186997/sub-anm186997_ses-20130321_behavior+ecephys.nwb
   - sub-anm190964/sub-anm190964_ses-20130504_behavior+icephys+ogen.nwb
   - sub-anm199549/sub-anm199549_ses-20130604_behavior+ecephys.nwb
+  - path: sub-anm199549/sub-anm199549_ses-20130605_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-anm199551/sub-anm199551_ses-20130626_behavior+ecephys.nwb
   - sub-anm199552/sub-anm199552_ses-20130601_behavior+ecephys.nwb
   - sub-anm199552/sub-anm199552_ses-20130603_behavior+ecephys.nwb
@@ -300,7 +309,6 @@ tests:
   - sub-anm190964/sub-anm190964_ses-20130507_behavior+icephys+ogen.nwb
   - sub-anm196837/sub-anm196837_ses-20130830_behavior+icephys.nwb
   - sub-anm199549/sub-anm199549_ses-20130530_behavior+ecephys.nwb
-  - sub-anm199549/sub-anm199549_ses-20130605_behavior+ecephys.nwb
   - sub-anm199552/sub-anm199552_ses-20130602_behavior+ecephys.nwb
   - sub-anm220470/sub-anm220470_ses-20140409_obj-bb09nm_behavior+icephys+ogen.nwb
   - sub-anm223517/sub-anm223517_ses-20140401_behavior+icephys+ogen.nwb

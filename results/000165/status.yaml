@@ -554,7 +554,11 @@ tests:
   - sub-Thyme/sub-Thyme_ses-Thyme06-HomeCage_behavior+ecephys.nwb
   - sub-Thyme/sub-Thyme_ses-Thyme06-LinearTrack_behavior+ecephys.nwb
   - sub-Tuvok/sub-Tuvok_ses-Tuvok01-HomeCage_behavior+ecephys.nwb
-  - sub-Tuvok/sub-Tuvok_ses-Tuvok02-HomeCage_behavior+ecephys.nwb
+  - path: sub-Tuvok/sub-Tuvok_ses-Tuvok02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Tuvok/sub-Tuvok_ses-Tuvok03-HomeCage_behavior+ecephys.nwb
   - sub-Tuvok/sub-Tuvok_ses-Tuvok04-HomeCage_behavior+ecephys.nwb
   - sub-Tuvok/sub-Tuvok_ses-Tuvok05-HomeCage_behavior+ecephys.nwb
@@ -1038,7 +1042,11 @@ tests:
   - sub-Thyme/sub-Thyme_ses-Thyme03-HomeCage_behavior+ecephys.nwb
   - sub-Thyme/sub-Thyme_ses-Thyme03-LinearTrack_behavior+ecephys.nwb
   - sub-Thyme/sub-Thyme_ses-Thyme04-HomeCage_behavior+ecephys.nwb
-  - sub-Tuvok/sub-Tuvok_ses-Tuvok02-HomeCage_behavior+ecephys.nwb
+  - path: sub-Tuvok/sub-Tuvok_ses-Tuvok02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Tuvok/sub-Tuvok_ses-Tuvok03-HomeCage_behavior+ecephys.nwb
   assets_ok:
   - sub-Adobo/sub-Adobo_ses-Adobo04-LinearTrack_behavior+ecephys.nwb

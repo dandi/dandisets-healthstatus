@@ -1,0 +1,22 @@
+dandiset: 000686
+dandiset_version: 409b909df1d44f173fe5aa98763049bb3e2c1a73
+last_run: null
+last_run_duration: null
+last_run_ended: null
+nassets: null
+tests:
+- assets_nok: []
+  assets_ok:
+  - sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish5-2)/sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish5-2)_ses-1p-x-10cycles-Control-600ns-200ms-6-4kV_image.nwb
+  assets_timeout: []
+  name: pynwb_open_load_ns
+- assets_nok: []
+  assets_ok:
+  - sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish5-2)/sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish5-2)_ses-1p-x-10cycles-Control-600ns-200ms-6-4kV_image.nwb
+  assets_timeout: []
+  name: matnwb_nwbRead
+untested: []
+versions:
+  hdmf: 3.12.2
+  matnwb: v2.6.0.2
+  pynwb: 2.6.0

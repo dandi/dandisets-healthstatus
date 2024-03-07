@@ -10,13 +10,13 @@ tests:
   - sub-swil11/sub-swil11_ses-20220413T171109_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
+- assets_nok: []
+  assets_ok:
   - sub-swil11/sub-swil11_ses-20220413T171109_ecephys.nwb
-  assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.11.0
+  hdmf: 3.12.2
   matnwb: v2.6.0.2
-  pynwb: 2.5.0
+  pynwb: 2.6.0

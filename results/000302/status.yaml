@@ -26,7 +26,11 @@ tests:
   - sub-ANM-0178/sub-ANM-0178_ses-20211118_behavior+ecephys+ogen.nwb
   - sub-ANM-0178/sub-ANM-0178_ses-20211120_behavior+ecephys+ogen.nwb
   - sub-ANM-0178/sub-ANM-0178_ses-20211121_behavior+ecephys+ogen.nwb
-  - sub-ANM-0178/sub-ANM-0178_ses-20211122_behavior+ecephys.nwb
+  - path: sub-ANM-0178/sub-ANM-0178_ses-20211122_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-ANM-0179/sub-ANM-0179_ses-20211121_behavior+ecephys.nwb
   - sub-ANM-0180/sub-ANM-0180_ses-20211121_behavior+ecephys+ogen.nwb
   - sub-ANM-0180/sub-ANM-0180_ses-20211122_behavior+ecephys.nwb
@@ -55,7 +59,6 @@ tests:
   - sub-ANM-0178/sub-ANM-0178_ses-20211118_behavior+ecephys+ogen.nwb
   - sub-ANM-0178/sub-ANM-0178_ses-20211120_behavior+ecephys+ogen.nwb
   - sub-ANM-0178/sub-ANM-0178_ses-20211121_behavior+ecephys+ogen.nwb
-  - sub-ANM-0178/sub-ANM-0178_ses-20211122_behavior+ecephys.nwb
   - sub-ANM-0179/sub-ANM-0179_ses-20211121_behavior+ecephys.nwb
   - sub-ANM-0180/sub-ANM-0180_ses-20211121_behavior+ecephys+ogen.nwb
   - sub-ANM-0180/sub-ANM-0180_ses-20211122_behavior+ecephys.nwb
@@ -75,7 +78,12 @@ tests:
   - sub-ANM-0190/sub-ANM-0190_ses-20211130_behavior+ecephys.nwb
   - sub-ANM-0190/sub-ANM-0190_ses-20211202_behavior+ecephys+ogen.nwb
   - sub-ANM-0190/sub-ANM-0190_ses-20211203_behavior+ecephys+ogen.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-ANM-0178/sub-ANM-0178_ses-20211122_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   name: matnwb_nwbRead
 untested: []
 versions:
