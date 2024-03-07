@@ -1,8 +1,8 @@
 from __future__ import annotations
 from collections import Counter, defaultdict
 import logging
-import os
 from operator import attrgetter
+import os
 from pathlib import Path
 import re
 from signal import SIGINT
@@ -69,10 +69,7 @@ def check(
     # so we want to prevent git asking password and have to avoid non-0 exit
     # from datalad
     # Ref: https://github.com/dandi/dandisets-healthstatus/issues/73
-    kw = dict(
-        env=dict(GIT_TERMINAL_PROMPT='0', **os.environ),
-        check=False,
-    )
+    env = {**os.environ, "GIT_TERMINAL_PROMPT": "0"}
     subprocess.run(
         [
             "datalad",
@@ -85,11 +82,13 @@ def check(
             "-r",
             "-R1",
         ],
-        **kw
+        env=env,
+        check=False,
     )
     subprocess.run(
         ["datalad", "get", "-d", str(dataset_path), "-r", "-R1", "-J5", "-n"],
-        **kw
+        env=env,
+        check=False,
     )
     installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
     installer.install(update=True)
