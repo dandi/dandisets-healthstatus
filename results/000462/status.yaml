@@ -13,7 +13,11 @@ tests:
   - sub-014/sub-014_ophys.nwb
   - sub-CFC16/sub-CFC16_ophys.nwb
   - sub-CFC17/sub-CFC17_ophys.nwb
-  - sub-CFC19/sub-CFC19_ophys.nwb
+  - path: sub-CFC19/sub-CFC19_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-CFC4/sub-CFC4_ophys.nwb
   - path: sub-NR14/sub-NR14_ophys.nwb
     versions:
@@ -34,7 +38,11 @@ tests:
   - sub-014/sub-014_ophys.nwb
   - sub-CFC16/sub-CFC16_ophys.nwb
   - sub-CFC17/sub-CFC17_ophys.nwb
-  - sub-CFC19/sub-CFC19_ophys.nwb
+  - path: sub-CFC19/sub-CFC19_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-CFC4/sub-CFC4_ophys.nwb
   - path: sub-NR14/sub-NR14_ophys.nwb
     versions:

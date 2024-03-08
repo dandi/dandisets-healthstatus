@@ -17,7 +17,11 @@ tests:
   - sub-KSt93/sub-KSt93_ses-20150416T120000_behavior.nwb
   - sub-KSt94/sub-KSt94_ses-20150424T120000_behavior.nwb
   assets_timeout:
-  - sub-KSm11/sub-KSm11_ses-20160616T120000_behavior.nwb
+  - path: sub-KSm11/sub-KSm11_ses-20160616T120000_behavior.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-KSm30/sub-KSm30_ses-20160831T120000_behavior.nwb
   - sub-KSm31/sub-KSm31_ses-20160824T120000_behavior.nwb
   - sub-KSm6/sub-KSm6_ses-20160602T120000_behavior.nwb
@@ -77,7 +81,11 @@ tests:
   - sub-KSt93/sub-KSt93_ses-20150416T120000_behavior.nwb
   assets_ok: []
   assets_timeout:
-  - sub-KSm11/sub-KSm11_ses-20160616T120000_behavior.nwb
+  - path: sub-KSm11/sub-KSm11_ses-20160616T120000_behavior.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-KSm30/sub-KSm30_ses-20160831T120000_behavior.nwb
   - sub-KSm31/sub-KSm31_ses-20160824T120000_behavior.nwb
   - sub-KSm6/sub-KSm6_ses-20160602T120000_behavior.nwb

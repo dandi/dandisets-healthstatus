@@ -13,7 +13,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-CS-fly#-2/sub-CS-fly#-2_behavior.nwb
-  - sub-CS-fly#-3/sub-CS-fly#-3_behavior.nwb
+  - path: sub-CS-fly#-3/sub-CS-fly#-3_behavior.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -22,9 +26,13 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-CS-fly#-3/sub-CS-fly#-3_behavior.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-CS-fly#-2/sub-CS-fly#-2_behavior.nwb
-  - sub-CS-fly#-3/sub-CS-fly#-3_behavior.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

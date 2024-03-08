@@ -27,7 +27,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-Fig2-75-02/sub-Fig2-75-02_ses-BPAE-bipolar-75 percent_image.nwb
-  - sub-Fig2-75-05/sub-Fig2-75-05_ses-BPAE-bipolar-75 percent_image.nwb
+  - path: sub-Fig2-75-05/sub-Fig2-75-05_ses-BPAE-bipolar-75 percent_image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Fig2-75-10/sub-Fig2-75-10_ses-BPAE-bipolar-75 percent_image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
@@ -40,7 +44,6 @@ tests:
   - sub-Fig2-25-10/sub-Fig2-25-10_ses-BPAE-bipolar-25 percent_image.nwb
   - sub-Fig2-50-06/sub-Fig2-50-06_ses-BPAE-bipolar-50 percent_image.nwb
   - sub-Fig2-50-13/sub-Fig2-50-13_ses-BPAE-bipolar-50 percent_image.nwb
-  - sub-Fig2-75-05/sub-Fig2-75-05_ses-BPAE-bipolar-75 percent_image.nwb
   - sub-Fig2-75-10/sub-Fig2-75-10_ses-BPAE-bipolar-75 percent_image.nwb
   assets_ok:
   - sub-Fig2-0-03/sub-Fig2-0-03_ses-BPAE-bipolar-0 percent_image.nwb
@@ -55,6 +58,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-Fig2-75-02/sub-Fig2-75-02_ses-BPAE-bipolar-75 percent_image.nwb
+  - path: sub-Fig2-75-05/sub-Fig2-75-05_ses-BPAE-bipolar-75 percent_image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

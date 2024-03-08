@@ -62,7 +62,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-anm00314760/sub-anm00314760_ses-20151020T155230.nwb
+  - path: sub-anm00314760/sub-anm00314760_ses-20151020T155230.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-anm00314760/sub-anm00314760_ses-20151021T164427.nwb
   - sub-anm00314760/sub-anm00314760_ses-20151022T163913.nwb
   assets_timeout: []
@@ -117,7 +121,6 @@ tests:
   - sub-anm00314757/sub-anm00314757_ses-20151021T180248.nwb
   - sub-anm00314758/sub-anm00314758_ses-20151020T104930.nwb
   - sub-anm00314758/sub-anm00314758_ses-20151022T112047.nwb
-  - sub-anm00314760/sub-anm00314760_ses-20151020T155230.nwb
   - sub-anm00314760/sub-anm00314760_ses-20151021T164427.nwb
   - sub-anm00314760/sub-anm00314760_ses-20151022T163913.nwb
   assets_timeout:
@@ -128,6 +131,11 @@ tests:
   - sub-BAYLORCD13/sub-BAYLORCD13_ses-20171215T133939.nwb
   - sub-BAYLORCD14/sub-BAYLORCD14_ses-20171024T112103.nwb
   - sub-BAYLORCD14/sub-BAYLORCD14_ses-20171025T114022.nwb
+  - path: sub-anm00314760/sub-anm00314760_ses-20151020T155230.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   name: matnwb_nwbRead
 untested: []
 versions:

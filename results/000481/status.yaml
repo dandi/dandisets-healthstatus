@@ -8,25 +8,17 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-525/sub-525_ecephys.nwb
-  - path: sub-525/sub-525_ses-20230412T102003.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
+  - sub-525/sub-525_ses-20230412T102003.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok:
+- assets_nok:
   - sub-525/sub-525_ecephys.nwb
+  assets_ok: []
   assets_timeout:
-  - path: sub-525/sub-525_ses-20230412T102003.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
+  - sub-525/sub-525_ses-20230412T102003.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.11.0
+  hdmf: 3.12.2
   matnwb: v2.6.0.2
-  pynwb: 2.5.0
+  pynwb: 2.6.0

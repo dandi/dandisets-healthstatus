@@ -1,5 +1,5 @@
-dandiset: '000711'
-dandiset_version: 4fa579b795b3e7df90da0dc021dad608d6f48b9f
+dandiset: 000937
+dandiset_version: bba637cf67b182d94177aa009c9e9deb0ad020d0
 last_run: null
 last_run_duration: null
 last_run_ended: null
@@ -7,13 +7,13 @@ nassets: null
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-431252/sub-431252_ses-20190201T094139_image.nwb
+  - sub-j16/sub-j16_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-j16/sub-j16_behavior+ecephys.nwb
   assets_ok: []
-  assets_timeout:
-  - sub-431252/sub-431252_ses-20190201T094139_image.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

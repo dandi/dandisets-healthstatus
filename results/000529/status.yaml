@@ -35,7 +35,11 @@ tests:
   - sub-SIROF/sub-SIROF_obj-11y4w1z_ecephys.nwb
   - sub-SIROF/sub-SIROF_obj-18mw32i_ecephys.nwb
   - sub-SIROF/sub-SIROF_obj-1q7tsgd_ecephys.nwb
-  - sub-SIROF/sub-SIROF_obj-81qh22_ecephys.nwb
+  - path: sub-SIROF/sub-SIROF_obj-81qh22_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-SIROF/sub-SIROF_obj-lprsag_ecephys.nwb
   - sub-SIROF/sub-SIROF_obj-mwwvxg_ecephys.nwb
   assets_timeout: []
@@ -48,7 +52,6 @@ tests:
   - sub-RuOx/sub-RuOx_obj-1ip2lmq_ecephys.nwb
   - sub-RuOx/sub-RuOx_obj-3pfoo4_ecephys.nwb
   - sub-RuOx/sub-RuOx_obj-t4d093_ecephys.nwb
-  - sub-SIROF/sub-SIROF_obj-81qh22_ecephys.nwb
   assets_ok:
   - sub-AIROF/sub-AIROF_obj-578a6_ecephys.nwb
   - sub-AIROF/sub-AIROF_obj-7z0i2i_ecephys.nwb
@@ -71,6 +74,11 @@ tests:
   - sub-SIROF/sub-SIROF_obj-11y4w1z_ecephys.nwb
   - sub-SIROF/sub-SIROF_obj-18mw32i_ecephys.nwb
   - sub-SIROF/sub-SIROF_obj-1q7tsgd_ecephys.nwb
+  - path: sub-SIROF/sub-SIROF_obj-81qh22_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-SIROF/sub-SIROF_obj-lprsag_ecephys.nwb
   - sub-SIROF/sub-SIROF_obj-mwwvxg_ecephys.nwb
   assets_timeout: []

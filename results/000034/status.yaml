@@ -7,7 +7,11 @@ nassets: 6
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
+  - path: sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-P29-16-05-14-retina02-left/sub-P29-16-05-14-retina02-left_ecephys.nwb
   - sub-c1/sub-c1_ecephys.nwb
   - sub-mouse412804/sub-mouse412804_ecephys.nwb
@@ -28,7 +32,11 @@ tests:
   assets_ok:
   - sub-mouse412804/sub-mouse412804_ses-20200824T155542.nwb
   assets_timeout:
-  - sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
+  - path: sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-P29-16-05-14-retina02-left/sub-P29-16-05-14-retina02-left_ecephys.nwb
   - sub-c1/sub-c1_ecephys.nwb
   - sub-mouse412804/sub-mouse412804_ecephys.nwb

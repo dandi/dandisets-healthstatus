@@ -12,7 +12,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-484677/sub-484677_behavior+ecephys+ogen.nwb
+  - path: sub-484677/sub-484677_behavior+ecephys+ogen.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-484677/sub-484677_ses-20210415T161621_behavior+ecephys+ogen.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
@@ -24,7 +28,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_timeout:
-  - sub-484677/sub-484677_behavior+ecephys+ogen.nwb
+  - path: sub-484677/sub-484677_behavior+ecephys+ogen.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-484677/sub-484677_ses-20210415T161621_behavior+ecephys+ogen.nwb
   name: matnwb_nwbRead
 untested: []
