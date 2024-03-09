@@ -12,7 +12,11 @@ tests:
   - sub-anm369962/sub-anm369962_ses-20170313.nwb
   - sub-anm369962/sub-anm369962_ses-20170314.nwb
   - sub-anm369962/sub-anm369962_ses-20170316.nwb
-  - sub-anm369962/sub-anm369962_ses-20170317.nwb
+  - path: sub-anm369962/sub-anm369962_ses-20170317.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-anm369963/sub-anm369963_ses-20170226.nwb
   - sub-anm369963/sub-anm369963_ses-20170227.nwb
   - sub-anm369963/sub-anm369963_ses-20170228.nwb
@@ -73,7 +77,6 @@ tests:
 - assets_nok:
   - sub-anm369962/sub-anm369962_ses-20170309.nwb
   - sub-anm369962/sub-anm369962_ses-20170314.nwb
-  - sub-anm369962/sub-anm369962_ses-20170317.nwb
   - sub-anm369963/sub-anm369963_ses-20170226.nwb
   - sub-anm369963/sub-anm369963_ses-20170227.nwb
   - sub-anm369963/sub-anm369963_ses-20170228.nwb
@@ -126,7 +129,12 @@ tests:
   - sub-anm372907/sub-anm372907_ses-20170613.nwb
   - sub-anm372909/sub-anm372909_ses-20170520.nwb
   - sub-anm372909/sub-anm372909_ses-20170522.nwb
-  assets_ok: []
+  assets_ok:
+  - path: sub-anm369962/sub-anm369962_ses-20170317.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_timeout:
   - sub-anm369962/sub-anm369962_ses-20170310.nwb
   - sub-anm369962/sub-anm369962_ses-20170313.nwb

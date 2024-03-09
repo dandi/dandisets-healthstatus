@@ -169,7 +169,11 @@ tests:
       pynwb: 2.6.0
   - sub-Cumin/sub-Cumin_ses-Cumin04-LinearTrack_behavior+ecephys.nwb
   - sub-Cumin/sub-Cumin_ses-Cumin05-HomeCage_behavior+ecephys.nwb
-  - sub-Cumin/sub-Cumin_ses-Cumin05-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Cumin/sub-Cumin_ses-Cumin05-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Cumin/sub-Cumin_ses-Cumin06-HomeCage_behavior+ecephys.nwb
   - sub-Cumin/sub-Cumin_ses-Cumin06-LinearTrack_behavior+ecephys.nwb
   - sub-Dax/sub-Dax_ses-Dax01_HomeCage_behavior+ecephys.nwb
@@ -739,7 +743,6 @@ tests:
       pynwb: 2.6.0
   - sub-Cumin/sub-Cumin_ses-Cumin04-LinearTrack_behavior+ecephys.nwb
   - sub-Cumin/sub-Cumin_ses-Cumin05-HomeCage_behavior+ecephys.nwb
-  - sub-Cumin/sub-Cumin_ses-Cumin05-LinearTrack_behavior+ecephys.nwb
   - sub-Cumin/sub-Cumin_ses-Cumin06-HomeCage_behavior+ecephys.nwb
   - sub-Cumin/sub-Cumin_ses-Cumin06-LinearTrack_behavior+ecephys.nwb
   - sub-Dax/sub-Dax_ses-Dax01_HomeCage_behavior+ecephys.nwb
@@ -1070,6 +1073,11 @@ tests:
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon04-HomeCage_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon06-HomeCage_behavior+ecephys.nwb
   - sub-Coriander/sub-Coriander_ses-Coriander03-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Cumin/sub-Cumin_ses-Cumin05-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Dax/sub-Dax_ses-Dax05-HomeCage_behavior+ecephys.nwb
   - sub-Dill/sub-Dill_ses-Dill02-LinearTrack_behavior+ecephys.nwb
   - sub-Fruitfly/sub-Fruitfly_ses-Fruitfly04-HomeCage_behavior+ecephys.nwb

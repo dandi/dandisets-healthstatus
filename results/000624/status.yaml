@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-Rat10/sub-Rat10_ses-20221215T120000_behavior.nwb
-  - sub-Rat2/sub-Rat2_ses-20220429T120000_behavior.nwb
+  - path: sub-Rat2/sub-Rat2_ses-20220429T120000_behavior.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Rat3/sub-Rat3_ses-20220530T120000_behavior.nwb
   - sub-Rat332/sub-Rat332_ses-20220922T000000_obj-10z48pa_image.nwb
   - sub-Rat332/sub-Rat332_ses-20220922T000000_obj-1vnvq86_image.nwb
@@ -45,7 +49,6 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-Rat2/sub-Rat2_ses-20220429T120000_behavior.nwb
   - sub-Rat332/sub-Rat332_ses-20220922T000000_obj-1xl94wt_image.nwb
   - sub-Rat332/sub-Rat332_ses-20220922T000000_obj-ogozfz_image.nwb
   - sub-Rat335/sub-Rat335_ses-20220922T000000_obj-1fu2bxj_image.nwb
@@ -57,6 +60,11 @@ tests:
   - sub-Rat8/sub-Rat8_ses-20221220T120000_behavior.nwb
   assets_ok:
   - sub-Rat10/sub-Rat10_ses-20221215T120000_behavior.nwb
+  - path: sub-Rat2/sub-Rat2_ses-20220429T120000_behavior.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Rat3/sub-Rat3_ses-20220530T120000_behavior.nwb
   - sub-Rat332/sub-Rat332_ses-20220922T000000_obj-10z48pa_image.nwb
   - sub-Rat332/sub-Rat332_ses-20220922T000000_obj-1vnvq86_image.nwb

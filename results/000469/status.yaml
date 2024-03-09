@@ -41,7 +41,11 @@ tests:
   - sub-20/sub-20_ses-1_ecephys+image.nwb
   - sub-20/sub-20_ses-2_ecephys+image.nwb
   - sub-21/sub-21_ses-1_ecephys+image.nwb
-  - sub-21/sub-21_ses-2_ecephys+image.nwb
+  - path: sub-21/sub-21_ses-2_ecephys+image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-3/sub-3_ses-1_ecephys+image.nwb
   - sub-3/sub-3_ses-2_ecephys+image.nwb
   - sub-4/sub-4_ses-1_ecephys+image.nwb
@@ -78,7 +82,6 @@ tests:
   - sub-20/sub-20_ses-1_ecephys+image.nwb
   - sub-20/sub-20_ses-2_ecephys+image.nwb
   - sub-21/sub-21_ses-1_ecephys+image.nwb
-  - sub-21/sub-21_ses-2_ecephys+image.nwb
   - sub-3/sub-3_ses-2_ecephys+image.nwb
   - sub-4/sub-4_ses-1_ecephys+image.nwb
   - sub-4/sub-4_ses-2_ecephys+image.nwb
@@ -108,6 +111,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-18/sub-18_ses-1_ecephys+image.nwb
+  - path: sub-21/sub-21_ses-2_ecephys+image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-3/sub-3_ses-1_ecephys+image.nwb
   - sub-8/sub-8_ses-1_ecephys+image.nwb
   name: matnwb_nwbRead
