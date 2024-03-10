@@ -27,7 +27,11 @@ tests:
   - sub-BH268/sub-BH268_ses-20210707T144841_ecephys.nwb
   - sub-BH269/sub-BH269_ses-20210716T141155_ecephys.nwb
   - sub-BH270/sub-BH270_ses-20210802T150757_ecephys.nwb
-  - sub-BH270/sub-BH270_ses-20210802T154532_ecephys.nwb
+  - path: sub-BH270/sub-BH270_ses-20210802T154532_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-BH270/sub-BH270_ses-20210802T170825_ecephys.nwb
   - sub-BH270/sub-BH270_ses-20210802T175221_ecephys.nwb
   - sub-BH270/sub-BH270_ses-20210802T201553_ecephys.nwb
@@ -108,7 +112,6 @@ tests:
   - sub-BH268/sub-BH268_ses-20210707T144841_ecephys.nwb
   - sub-BH269/sub-BH269_ses-20210716T141155_ecephys.nwb
   - sub-BH270/sub-BH270_ses-20210802T150757_ecephys.nwb
-  - sub-BH270/sub-BH270_ses-20210802T154532_ecephys.nwb
   - sub-BH270/sub-BH270_ses-20210802T170825_ecephys.nwb
   - sub-BH270/sub-BH270_ses-20210802T175221_ecephys.nwb
   - sub-BH270/sub-BH270_ses-20210802T201553_ecephys.nwb
@@ -156,6 +159,11 @@ tests:
   - sub-BH297/sub-BH297_ses-20211012T180912_ecephys.nwb
   - sub-BH301/sub-BH301_ses-20211103T161306_ecephys.nwb
   assets_ok:
+  - path: sub-BH270/sub-BH270_ses-20210802T154532_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-BH274/sub-BH274_ses-20210806T193524_ecephys.nwb
   - path: sub-BH275/sub-BH275_ses-20210901T175735_ecephys.nwb
     versions:

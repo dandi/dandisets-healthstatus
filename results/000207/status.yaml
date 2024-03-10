@@ -19,7 +19,11 @@ tests:
   - sub-14/sub-14_ses-14_ecephys.nwb
   - sub-15/sub-15_ses-15_ecephys.nwb
   - sub-16/sub-16_ses-16_ecephys.nwb
-  - sub-17/sub-17_ses-17_ecephys.nwb
+  - path: sub-17/sub-17_ses-17_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-18/sub-18_ses-18_ecephys.nwb
   - path: sub-19/sub-19_ses-19_ecephys.nwb
     versions:
@@ -45,7 +49,11 @@ tests:
   - sub-13/sub-13_ses-13_ecephys.nwb
   - sub-14/sub-14_ses-14_ecephys.nwb
   - sub-15/sub-15_ses-15_ecephys.nwb
-  - sub-17/sub-17_ses-17_ecephys.nwb
+  - path: sub-17/sub-17_ses-17_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-18/sub-18_ses-18_ecephys.nwb
   - sub-4/sub-4_ses-4_ecephys.nwb
   - sub-6/sub-6_ses-6_ecephys.nwb

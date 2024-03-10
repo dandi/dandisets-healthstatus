@@ -10,7 +10,11 @@ tests:
   - sub-173732Voltron2JF525cell2-488/sub-173732Voltron2JF525cell2-488_ses-20230302T173732_image.nwb
   - sub-180242Voltron2JF525cell3/sub-180242Voltron2JF525cell3_ses-20230302T180242_image.nwb
   - sub-182405Voltron2JF525cell4t1/sub-182405Voltron2JF525cell4t1_ses-20230302T182405_image.nwb
-  - sub-184058Voltron2JF525cell5ref/sub-184058Voltron2JF525cell5ref_ses-20230302T184058_image.nwb
+  - path: sub-184058Voltron2JF525cell5ref/sub-184058Voltron2JF525cell5ref_ses-20230302T184058_image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-190334Voltron2JF525cell6t1/sub-190334Voltron2JF525cell6t1_ses-20230302T190334_image.nwb
     versions:
       hdmf: 3.12.2
@@ -38,7 +42,11 @@ tests:
   - sub-195901J2Pcell2t2hp/sub-195901J2Pcell2t2hp_ses-20230302T195901_image.nwb
   assets_ok:
   - sub-182405Voltron2JF525cell4t1/sub-182405Voltron2JF525cell4t1_ses-20230302T182405_image.nwb
-  - sub-184058Voltron2JF525cell5ref/sub-184058Voltron2JF525cell5ref_ses-20230302T184058_image.nwb
+  - path: sub-184058Voltron2JF525cell5ref/sub-184058Voltron2JF525cell5ref_ses-20230302T184058_image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-190334Voltron2JF525cell6t1/sub-190334Voltron2JF525cell6t1_ses-20230302T190334_image.nwb
     versions:
       hdmf: 3.12.2

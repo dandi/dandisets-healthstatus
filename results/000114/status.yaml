@@ -21,7 +21,11 @@ tests:
   - sub-ROV41/sub-ROV41_ses-Day 3-retrieval_ophys.nwb
   - sub-ROV43/sub-ROV43_ses-Day 1-obs_ophys.nwb
   - sub-ROV44/sub-ROV44_ses-Day 1-obs_ophys.nwb
-  - sub-ROV45/sub-ROV45_ses-Day 1-obs_ophys.nwb
+  - path: sub-ROV45/sub-ROV45_ses-Day 1-obs_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-ROV49/sub-ROV49_ses-Day 1-obs_ophys.nwb
   - sub-V110/sub-V110_ses-03032018_ecephys.nwb
   - sub-V111/sub-V111_ses-03032018_ecephys.nwb
@@ -66,7 +70,11 @@ tests:
   - sub-ROV41/sub-ROV41_ses-Day 3-retrieval_ophys.nwb
   - sub-ROV43/sub-ROV43_ses-Day 1-obs_ophys.nwb
   - sub-ROV44/sub-ROV44_ses-Day 1-obs_ophys.nwb
-  - sub-ROV45/sub-ROV45_ses-Day 1-obs_ophys.nwb
+  - path: sub-ROV45/sub-ROV45_ses-Day 1-obs_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-ROV49/sub-ROV49_ses-Day 1-obs_ophys.nwb
   - sub-V118/sub-V118_ses-03222018_ecephys.nwb
   assets_ok: []
