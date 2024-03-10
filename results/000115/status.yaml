@@ -38,7 +38,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-jaq/sub-jaq_ses-jaq-13_behavior+ecephys.nwb
+  - path: sub-jaq/sub-jaq_ses-jaq-13_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-jaq/sub-jaq_ses-jaq-14_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-15_behavior+ecephys.nwb
   - sub-jaq/sub-jaq_ses-jaq-16_behavior+ecephys.nwb
@@ -83,7 +87,6 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-jaq/sub-jaq_ses-jaq-13_behavior+ecephys.nwb
   - sub-montague/sub-montague_ses-montague-03_behavior+ecephys.nwb
   assets_ok: []
   assets_timeout:
@@ -114,6 +117,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-jaq/sub-jaq_ses-jaq-12_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-jaq/sub-jaq_ses-jaq-13_behavior+ecephys.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2

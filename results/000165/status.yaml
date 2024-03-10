@@ -508,7 +508,11 @@ tests:
   - sub-Scotty/sub-Scotty_ses-Scotty04-HomeCage_behavior+ecephys.nwb
   - sub-Scotty/sub-Scotty_ses-Scotty05-HomeCage_behavior+ecephys.nwb
   - sub-Scotty/sub-Scotty_ses-Scotty06-HomeCage_behavior+ecephys.nwb
-  - sub-Scotty/sub-Scotty_ses-Scotty07-HomeCage_behavior+ecephys.nwb
+  - path: sub-Scotty/sub-Scotty_ses-Scotty07-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-SevenOfNine/sub-SevenOfNine_ses-SevenOfNine01-HomeCage_behavior+ecephys.nwb
   - sub-SevenOfNine/sub-SevenOfNine_ses-SevenOfNine02-HomeCage_behavior+ecephys.nwb
   - sub-SevenOfNine/sub-SevenOfNine_ses-SevenOfNine03-HomeCage_behavior+ecephys.nwb
@@ -1017,7 +1021,6 @@ tests:
   - sub-Scotty/sub-Scotty_ses-Scotty04-HomeCage_behavior+ecephys.nwb
   - sub-Scotty/sub-Scotty_ses-Scotty05-HomeCage_behavior+ecephys.nwb
   - sub-Scotty/sub-Scotty_ses-Scotty06-HomeCage_behavior+ecephys.nwb
-  - sub-Scotty/sub-Scotty_ses-Scotty07-HomeCage_behavior+ecephys.nwb
   - sub-SevenOfNine/sub-SevenOfNine_ses-SevenOfNine01-HomeCage_behavior+ecephys.nwb
   - sub-SevenOfNine/sub-SevenOfNine_ses-SevenOfNine02-HomeCage_behavior+ecephys.nwb
   - sub-SevenOfNine/sub-SevenOfNine_ses-SevenOfNine03-HomeCage_behavior+ecephys.nwb
@@ -1145,6 +1148,11 @@ tests:
   - sub-Salt/sub-Salt_ses-Salt06-LinearTrack_behavior+ecephys.nwb
   - sub-Scotty/sub-Scotty_ses-Scotty01-HomeCage_behavior+ecephys.nwb
   - sub-Scotty/sub-Scotty_ses-Scotty03-HomeCage_behavior+ecephys.nwb
+  - path: sub-Scotty/sub-Scotty_ses-Scotty07-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Sumac/sub-Sumac_ses-Sumac06-HomeCage_behavior+ecephys.nwb
   - sub-TPol/sub-TPol_ses-TPol03-HomeCage_behavior+ecephys.nwb
   - sub-Tarragon/sub-Tarragon_ses-Tarragon03-LinearTrack_behavior+ecephys.nwb

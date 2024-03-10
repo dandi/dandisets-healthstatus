@@ -7,7 +7,11 @@ nassets: 115
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-460654/sub-460654_ses-20190611T181840_behavior+ophys.nwb
+  - path: sub-460654/sub-460654_ses-20190611T181840_behavior+ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-460654/sub-460654_ses-20190612T185927_behavior+ophys.nwb
   - sub-460654/sub-460654_ses-20190613T181526_behavior+ophys.nwb
   - sub-460654/sub-460654_ses-20190614T201428_behavior+ophys.nwb
@@ -181,7 +185,11 @@ tests:
   - sub-525492/sub-525492_ses-20200717T171906_behavior+ophys.nwb
   - sub-529404/sub-529404_ses-20200720T161939_behavior+ophys.nwb
   assets_ok:
-  - sub-460654/sub-460654_ses-20190611T181840_behavior+ophys.nwb
+  - path: sub-460654/sub-460654_ses-20190611T181840_behavior+ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-460654/sub-460654_ses-20190614T201428_behavior+ophys.nwb
   - sub-460654/sub-460654_ses-20190617T191008_behavior+ophys.nwb
   - sub-460654/sub-460654_ses-20190618T184442_behavior+ophys.nwb

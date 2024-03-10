@@ -15,7 +15,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-BH395/sub-BH395_ses-20221213T195834_ecephys.nwb
+  - path: sub-BH395/sub-BH395_ses-20221213T195834_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-BH396/sub-BH396_ses-20221117T215447_ecephys.nwb
   - sub-BH396/sub-BH396_ses-20221117T220434_ecephys.nwb
   - sub-BH396/sub-BH396_ses-20221117T221038_ecephys.nwb
@@ -57,7 +61,6 @@ tests:
 - assets_nok:
   - sub-BH395/sub-BH395_ses-20221213T174039_ecephys.nwb
   - sub-BH395/sub-BH395_ses-20221213T180853_ecephys.nwb
-  - sub-BH395/sub-BH395_ses-20221213T195834_ecephys.nwb
   - sub-BH396/sub-BH396_ses-20221117T215447_ecephys.nwb
   - sub-BH401/sub-BH401_ses-20230207T213946_ecephys.nwb
   - sub-BH401/sub-BH401_ses-20230208T005106_ecephys.nwb
@@ -67,6 +70,11 @@ tests:
   assets_ok:
   - sub-BH395/sub-BH395_ses-20221213T183140_ecephys.nwb
   - path: sub-BH395/sub-BH395_ses-20221213T185547_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-BH395/sub-BH395_ses-20221213T195834_ecephys.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2

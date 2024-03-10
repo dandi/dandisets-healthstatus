@@ -309,7 +309,11 @@ tests:
   - Human_persistent_RAF/sub-160909/sub-160909_ses-1609091rm-4-4-3_icephys.nwb
   - Human_persistent_RAF/sub-160909/sub-160909_ses-1609091rm-5-1,2-4_icephys.nwb
   - Human_persistent_RAF/sub-160909/sub-160909_ses-1609091rm-5-3-3_icephys.nwb
-  - Human_persistent_RAF/sub-160909/sub-160909_ses-1609091rm-6-1-4_icephys.nwb
+  - path: Human_persistent_RAF/sub-160909/sub-160909_ses-1609091rm-6-1-4_icephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - Human_persistent_RAF/sub-160909/sub-160909_ses-1609091rm-6-2,43-3_icephys.nwb
   - Human_persistent_RAF/sub-160909/sub-160909_ses-1609092rm-1-1-4_icephys.nwb
   - Human_persistent_RAF/sub-160909/sub-160909_ses-1609093rm-3-1-4_icephys.nwb
@@ -1527,7 +1531,6 @@ tests:
   - Human_persistent_RAF/sub-160909/sub-160909_ses-1609091rm-4-4-3_icephys.nwb
   - Human_persistent_RAF/sub-160909/sub-160909_ses-1609091rm-5-1,2-4_icephys.nwb
   - Human_persistent_RAF/sub-160909/sub-160909_ses-1609091rm-5-3-3_icephys.nwb
-  - Human_persistent_RAF/sub-160909/sub-160909_ses-1609091rm-6-1-4_icephys.nwb
   - Human_persistent_RAF/sub-160909/sub-160909_ses-1609091rm-6-2,43-3_icephys.nwb
   - Human_persistent_RAF/sub-160909/sub-160909_ses-1609092rm-1-1-4_icephys.nwb
   - Human_persistent_RAF/sub-160909/sub-160909_ses-1609093rm-3-1-4_icephys.nwb
@@ -2220,6 +2223,11 @@ tests:
       hdmf: 3.10.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
+  - path: Human_persistent_RAF/sub-160909/sub-160909_ses-1609091rm-6-1-4_icephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: Human_persistent_RAF/sub-160909/sub-160909_ses-1609092rm-1-2-3_icephys.nwb
     versions:
       hdmf: 3.11.0

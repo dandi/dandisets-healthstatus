@@ -13,7 +13,11 @@ tests:
   - XCaMPgf/XCaMPgf_ANM478343_cell03.nwb
   - XCaMPgf/XCaMPgf_ANM478343_cell04.nwb
   - XCaMPgf/XCaMPgf_ANM478343_cell05.nwb
-  - XCaMPgf/XCaMPgf_ANM478343_cell06.nwb
+  - path: XCaMPgf/XCaMPgf_ANM478343_cell06.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - XCaMPgf/XCaMPgf_ANM478343_cell07.nwb
   - XCaMPgf/XCaMPgf_ANM478345_cell01.nwb
   - XCaMPgf/XCaMPgf_ANM478345_cell03.nwb
@@ -198,7 +202,6 @@ tests:
 - assets_nok:
   - XCaMPgf/XCaMPgf_ANM478343_cell04.nwb
   - XCaMPgf/XCaMPgf_ANM478343_cell05.nwb
-  - XCaMPgf/XCaMPgf_ANM478343_cell06.nwb
   - XCaMPgf/XCaMPgf_ANM478343_cell07.nwb
   - XCaMPgf/XCaMPgf_ANM478345_cell01.nwb
   - XCaMPgf/XCaMPgf_ANM478345_cell04.nwb
@@ -236,6 +239,11 @@ tests:
   - jGCaMP8f/jGCaMP8f_ANM478410_cell05.nwb
   - jGCaMP8s/jGCaMP8s_ANM472182_cell07.nwb
   assets_ok:
+  - path: XCaMPgf/XCaMPgf_ANM478343_cell06.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - jGCaMP7f/jGCaMP7f_ANM478347_cell04.nwb
   - jGCaMP7f/jGCaMP7f_ANM478404_cell04.nwb
   - path: jGCaMP8f/jGCaMP8f_ANM471994_cell03.nwb

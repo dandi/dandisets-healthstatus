@@ -14,10 +14,10 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
+  - sub-Pt01/sub-Pt01_ecephys.nwb
   - sub-Pt02/sub-Pt02_ecephys.nwb
   - sub-Pt03/sub-Pt03_ecephys.nwb
-  assets_timeout:
-  - sub-Pt01/sub-Pt01_ecephys.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

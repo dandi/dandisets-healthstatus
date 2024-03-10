@@ -28,7 +28,11 @@ tests:
   - sub-2022-02-12-w00-NP1/sub-2022-02-12-w00-NP1_ses-20220212_ophys.nwb
   - sub-2022-02-12-w01-NP1/sub-2022-02-12-w01-NP1_ses-20220212.nwb
   - sub-2022-02-12-w01-NP1/sub-2022-02-12-w01-NP1_ses-20220212_ophys.nwb
-  - sub-2022-02-22-w04-NP1/sub-2022-02-22-w04-NP1_ses-20220222.nwb
+  - path: sub-2022-02-22-w04-NP1/sub-2022-02-22-w04-NP1_ses-20220222.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-2022-02-22-w04-NP1/sub-2022-02-22-w04-NP1_ses-20220222_ophys.nwb
   - path: sub-2022-03-05-w00-NP1/sub-2022-03-05-w00-NP1_ses-20220305.nwb
     versions:
@@ -55,7 +59,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-2022-02-12-w00-NP1/sub-2022-02-12-w00-NP1_ses-20220212_ophys.nwb
-  - sub-2022-02-22-w04-NP1/sub-2022-02-22-w04-NP1_ses-20220222.nwb
   - sub-2022-02-22-w04-NP1/sub-2022-02-22-w04-NP1_ses-20220222_ophys.nwb
   assets_ok: []
   assets_timeout:
@@ -72,6 +75,11 @@ tests:
       pynwb: 2.6.0
   - sub-2022-02-12-w01-NP1/sub-2022-02-12-w01-NP1_ses-20220212.nwb
   - sub-2022-02-12-w01-NP1/sub-2022-02-12-w01-NP1_ses-20220212_ophys.nwb
+  - path: sub-2022-02-22-w04-NP1/sub-2022-02-22-w04-NP1_ses-20220222.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-2022-03-05-w00-NP1/sub-2022-03-05-w00-NP1_ses-20220305.nwb
     versions:
       hdmf: 3.12.2

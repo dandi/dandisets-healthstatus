@@ -7,7 +7,11 @@ nassets: 14
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-21-07-19-b-act/sub-21-07-19-b-act_ses-20210914-m1_ophys.nwb
+  - path: sub-21-07-19-b-act/sub-21-07-19-b-act_ses-20210914-m1_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-21-09-01-b-act/sub-21-09-01-b-act_ses-20210901-m1_ophys.nwb
     versions:
       hdmf: 3.12.2
@@ -40,7 +44,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-21-07-19-b-act/sub-21-07-19-b-act_ses-20210914-m1_ophys.nwb
+  - path: sub-21-07-19-b-act/sub-21-07-19-b-act_ses-20210914-m1_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-21-10-08-b-act/sub-21-10-08-b-act_ses-20211008-m1_ophys.nwb
   - sub-BPN-M6/sub-BPN-M6_ses-20210526-m1_ophys.nwb
   - sub-BPN-M6/sub-BPN-M6_ses-zstack-up-94min_ophys.nwb
