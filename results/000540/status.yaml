@@ -520,7 +520,11 @@ tests:
   - sub-SLR126/sub-SLR126_ses-20220802_obj-15eeg95_behavior+image.nwb
   - sub-SLR126/sub-SLR126_ses-20220802_obj-1fv9sjs_behavior+image.nwb
   - sub-SLR126/sub-SLR126_ses-20220802_obj-1l8xdk0_behavior+image.nwb
-  - sub-SLR126/sub-SLR126_ses-20220802_obj-1vrj4oo_behavior+image.nwb
+  - path: sub-SLR126/sub-SLR126_ses-20220802_obj-1vrj4oo_behavior+image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-SLR126/sub-SLR126_ses-20220802_obj-2mqt3v_behavior+image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
@@ -1039,7 +1043,11 @@ tests:
   - sub-SLR126/sub-SLR126_ses-20220801_obj-hgxsr5_behavior+image.nwb
   - sub-SLR126/sub-SLR126_ses-20220802_obj-15eeg95_behavior+image.nwb
   - sub-SLR126/sub-SLR126_ses-20220802_obj-1l8xdk0_behavior+image.nwb
-  - sub-SLR126/sub-SLR126_ses-20220802_obj-1vrj4oo_behavior+image.nwb
+  - path: sub-SLR126/sub-SLR126_ses-20220802_obj-1vrj4oo_behavior+image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-SLR126/sub-SLR126_ses-20220802_obj-2mqt3v_behavior+image.nwb
   assets_timeout: []
   name: matnwb_nwbRead

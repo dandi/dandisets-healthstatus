@@ -42,9 +42,17 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-FF/sub-FF_ses-FF-130_behavior+ecephys.nwb
-  - sub-FF/sub-FF_ses-FF-167_behavior+ecephys.nwb
+  - path: sub-FF/sub-FF_ses-FF-167_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-GG/sub-GG_ses-GG-063_behavior+ecephys.nwb
-  - sub-GG/sub-GG_ses-GG-069_behavior+ecephys.nwb
+  - path: sub-GG/sub-GG_ses-GG-069_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-GG/sub-GG_ses-GG-097_behavior+ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -59,7 +67,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-EE/sub-EE_ses-EE-049_behavior+ecephys.nwb
-  - sub-FF/sub-FF_ses-FF-167_behavior+ecephys.nwb
+  - path: sub-GG/sub-GG_ses-GG-069_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-GG/sub-GG_ses-GG-097_behavior+ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -105,8 +117,12 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-FF/sub-FF_ses-FF-130_behavior+ecephys.nwb
+  - path: sub-FF/sub-FF_ses-FF-167_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-GG/sub-GG_ses-GG-063_behavior+ecephys.nwb
-  - sub-GG/sub-GG_ses-GG-069_behavior+ecephys.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

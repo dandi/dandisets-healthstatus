@@ -7,7 +7,11 @@ nassets: 19
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-17797/sub-17797_ses-4-scan-10_behavior+image+ophys.nwb
+  - path: sub-17797/sub-17797_ses-4-scan-10_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-17797/sub-17797_ses-4-scan-7_behavior+image+ophys.nwb
     versions:
       hdmf: 3.12.2
@@ -51,7 +55,11 @@ tests:
 - assets_nok: []
   assets_ok: []
   assets_timeout:
-  - sub-17797/sub-17797_ses-4-scan-10_behavior+image+ophys.nwb
+  - path: sub-17797/sub-17797_ses-4-scan-10_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-17797/sub-17797_ses-4-scan-7_behavior+image+ophys.nwb
     versions:
       hdmf: 3.12.2

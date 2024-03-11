@@ -11,7 +11,11 @@ tests:
   - sub-Cori/sub-Cori_ses-20161217T120000.nwb
   - sub-Cori/sub-Cori_ses-20161218T120000.nwb
   - sub-Forssmann/sub-Forssmann_ses-20171101T120000.nwb
-  - sub-Forssmann/sub-Forssmann_ses-20171102T120000.nwb
+  - path: sub-Forssmann/sub-Forssmann_ses-20171102T120000.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-Forssmann/sub-Forssmann_ses-20171104T120000.nwb
     versions:
       hdmf: 3.12.2
@@ -50,7 +54,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-Radnitz/sub-Radnitz_ses-20170110T120000.nwb
-  - sub-Radnitz/sub-Radnitz_ses-20170111T120000.nwb
+  - path: sub-Radnitz/sub-Radnitz_ses-20170111T120000.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-Radnitz/sub-Radnitz_ses-20170112T120000.nwb
     versions:
       hdmf: 3.12.2
@@ -89,6 +97,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-Radnitz/sub-Radnitz_ses-20170110T120000.nwb
+  - path: sub-Radnitz/sub-Radnitz_ses-20170111T120000.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Richards/sub-Richards_ses-20171030T120000.nwb
   - sub-Richards/sub-Richards_ses-20171102T120000.nwb
   - sub-Tatum/sub-Tatum_ses-20171206T120000.nwb
@@ -96,6 +109,11 @@ tests:
   - sub-Tatum/sub-Tatum_ses-20171208T120000.nwb
   - sub-Tatum/sub-Tatum_ses-20171209T120000.nwb
   assets_ok:
+  - path: sub-Forssmann/sub-Forssmann_ses-20171102T120000.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Lederberg/sub-Lederberg_ses-20171205T120000.nwb
   - sub-Lederberg/sub-Lederberg_ses-20171206T120000.nwb
   - sub-Lederberg/sub-Lederberg_ses-20171210T120000.nwb
@@ -109,7 +127,6 @@ tests:
   - sub-Muller/sub-Muller_ses-20170108T120000.nwb
   - sub-Muller/sub-Muller_ses-20170109T120000.nwb
   - sub-Radnitz/sub-Radnitz_ses-20170108T120000.nwb
-  - sub-Radnitz/sub-Radnitz_ses-20170111T120000.nwb
   - path: sub-Radnitz/sub-Radnitz_ses-20170112T120000.nwb
     versions:
       hdmf: 3.12.2
@@ -121,7 +138,6 @@ tests:
   assets_timeout:
   - sub-Cori/sub-Cori_ses-20161218T120000.nwb
   - sub-Forssmann/sub-Forssmann_ses-20171101T120000.nwb
-  - sub-Forssmann/sub-Forssmann_ses-20171102T120000.nwb
   - path: sub-Forssmann/sub-Forssmann_ses-20171104T120000.nwb
     versions:
       hdmf: 3.12.2

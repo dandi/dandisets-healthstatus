@@ -303,7 +303,11 @@ tests:
   - sub-Reeves/sub-Reeves_ses-20190925_behavior.nwb
   - sub-Reeves/sub-Reeves_ses-20190930_behavior.nwb
   - sub-Ringo/sub-Ringo_ses-20190729_behavior.nwb
-  - sub-Ringo/sub-Ringo_ses-20190731_behavior.nwb
+  - path: sub-Ringo/sub-Ringo_ses-20190731_behavior.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Ringo/sub-Ringo_ses-20190803_behavior.nwb
   - sub-Ringo/sub-Ringo_ses-20190804_behavior.nwb
   - sub-Ringo/sub-Ringo_ses-20190806_behavior.nwb
@@ -382,7 +386,11 @@ tests:
       pynwb: 2.6.0
   - sub-npJ4/sub-npJ4_ses-20190511_behavior+ecephys.nwb
   - sub-npJ4/sub-npJ4_ses-20190511_behavior.nwb
-  - sub-npJ4/sub-npJ4_ses-20190512_behavior+ecephys.nwb
+  - path: sub-npJ4/sub-npJ4_ses-20190512_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-npJ5/sub-npJ5_ses-20190505_behavior.nwb
   - sub-npJ5/sub-npJ5_ses-20190505_obj-10plzqh_behavior+ecephys.nwb
   - sub-npJ5/sub-npJ5_ses-20190505_obj-1ti12l8_behavior+ecephys.nwb
@@ -705,7 +713,11 @@ tests:
   - sub-Reeves/sub-Reeves_ses-20190925_behavior.nwb
   - sub-Reeves/sub-Reeves_ses-20190930_behavior.nwb
   - sub-Ringo/sub-Ringo_ses-20190729_behavior.nwb
-  - sub-Ringo/sub-Ringo_ses-20190731_behavior.nwb
+  - path: sub-Ringo/sub-Ringo_ses-20190731_behavior.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Ringo/sub-Ringo_ses-20190803_behavior.nwb
   - sub-Ringo/sub-Ringo_ses-20190804_behavior.nwb
   - sub-Ringo/sub-Ringo_ses-20190807_behavior.nwb
@@ -767,7 +779,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-npJ4/sub-npJ4_ses-20190512_behavior+ecephys.nwb
+  - path: sub-npJ4/sub-npJ4_ses-20190512_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-npJ5/sub-npJ5_ses-20190505_obj-10plzqh_behavior+ecephys.nwb
   - sub-npJ5/sub-npJ5_ses-20190505_obj-1ti12l8_behavior+ecephys.nwb
   name: matnwb_nwbRead

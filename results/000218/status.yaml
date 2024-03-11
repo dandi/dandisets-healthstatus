@@ -9,7 +9,11 @@ tests:
   assets_ok:
   - sub-DT1/sub-DT1_ses-DT1-rLS-20150723-1584um_ecephys.nwb
   - sub-DT1/sub-DT1_ses-DT1-rLS-20150723-1728um_ecephys.nwb
-  - sub-DT1/sub-DT1_ses-DT1-rLS-20150724-1800um_ecephys.nwb
+  - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150724-1800um_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-DT1/sub-DT1_ses-DT1-rLS-20150724-1872um_ecephys.nwb
   - sub-DT1/sub-DT1_ses-DT1-rLS-20150725-1944um_ecephys.nwb
   - sub-DT1/sub-DT1_ses-DT1-rLS-20150726-2016um_ecephys.nwb
@@ -117,7 +121,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-DT9/sub-DT9_ses-20170507-468um-36um-merge_behavior+ecephys.nwb
+  - path: sub-DT9/sub-DT9_ses-20170507-468um-36um-merge_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-DT9/sub-DT9_ses-20170508-468um-36um-170508-102251_behavior+ecephys.nwb
   - sub-DT9/sub-DT9_ses-20170509-468um-36um-170509-103451_behavior+ecephys.nwb
   - sub-DT9/sub-DT9_ses-20170518-828um-864um-merge_behavior+ecephys.nwb
@@ -156,10 +164,19 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-DT9/sub-DT9_ses-20170507-468um-36um-merge_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_timeout:
   - sub-DT1/sub-DT1_ses-DT1-rLS-20150723-1584um_ecephys.nwb
   - sub-DT1/sub-DT1_ses-DT1-rLS-20150723-1728um_ecephys.nwb
-  - sub-DT1/sub-DT1_ses-DT1-rLS-20150724-1800um_ecephys.nwb
+  - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150724-1800um_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-DT1/sub-DT1_ses-DT1-rLS-20150724-1872um_ecephys.nwb
   - sub-DT1/sub-DT1_ses-DT1-rLS-20150725-1944um_ecephys.nwb
   - sub-DT1/sub-DT1_ses-DT1-rLS-20150726-2016um_ecephys.nwb
@@ -240,7 +257,6 @@ tests:
   - sub-DT9/sub-DT9_ses-20170502-288um-0um-merge_behavior+ecephys.nwb
   - sub-DT9/sub-DT9_ses-20170504-396um-0um-merge_behavior+ecephys.nwb
   - sub-DT9/sub-DT9_ses-20170505-396um-0um-merge_behavior+ecephys.nwb
-  - sub-DT9/sub-DT9_ses-20170507-468um-36um-merge_behavior+ecephys.nwb
   - sub-DT9/sub-DT9_ses-20170508-468um-36um-170508-102251_behavior+ecephys.nwb
   - sub-DT9/sub-DT9_ses-20170509-468um-36um-170509-103451_behavior+ecephys.nwb
   - sub-DT9/sub-DT9_ses-20170518-828um-864um-merge_behavior+ecephys.nwb

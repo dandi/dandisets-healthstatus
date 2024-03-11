@@ -31,7 +31,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-YMV12/sub-YMV12_ses-YMV12-171211_ecephys.nwb
-  - sub-YMV13/sub-YMV13_ses-YMV13-180127_ecephys.nwb
+  - path: sub-YMV13/sub-YMV13_ses-YMV13-180127_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-YMV14/sub-YMV14_ses-YMV14-180128_ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -43,7 +47,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-YMV17/sub-YMV17_ses-YMV17-180207_ecephys.nwb
+  - path: sub-YMV17/sub-YMV17_ses-YMV17-180207_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-YMV18/sub-YMV18_ses-YMV18-180208_ecephys.nwb
   - sub-YMV19/sub-YMV19_ses-YMV19-180209_ecephys.nwb
   assets_timeout: []
@@ -75,7 +83,11 @@ tests:
   - sub-YMV09/sub-YMV09_ses-YMV09-171204_ecephys.nwb
   - sub-YMV10/sub-YMV10_ses-YMV10-171213_ecephys.nwb
   - sub-YMV12/sub-YMV12_ses-YMV12-171211_ecephys.nwb
-  - sub-YMV13/sub-YMV13_ses-YMV13-180127_ecephys.nwb
+  - path: sub-YMV13/sub-YMV13_ses-YMV13-180127_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-YMV14/sub-YMV14_ses-YMV14-180128_ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -87,7 +99,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-YMV17/sub-YMV17_ses-YMV17-180207_ecephys.nwb
+  - path: sub-YMV17/sub-YMV17_ses-YMV17-180207_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-YMV18/sub-YMV18_ses-YMV18-180208_ecephys.nwb
   - sub-YMV19/sub-YMV19_ses-YMV19-180209_ecephys.nwb
   name: matnwb_nwbRead
