@@ -2,7 +2,6 @@ from __future__ import annotations
 from collections import Counter, defaultdict
 import logging
 from operator import attrgetter
-import os
 from pathlib import Path
 import re
 from signal import SIGINT
@@ -65,11 +64,6 @@ def check(
     mode: str,
 ) -> None:
     log.info("Updating Dandisets dataset ...")
-    # We have embargoed dandisets which should not be cloned
-    # so we want to prevent git asking password and have to avoid non-0 exit
-    # from datalad
-    # Ref: https://github.com/dandi/dandisets-healthstatus/issues/73
-    env = {**os.environ, "GIT_TERMINAL_PROMPT": "0"}
     subprocess.run(
         [
             "datalad",
@@ -82,13 +76,11 @@ def check(
             "-r",
             "-R1",
         ],
-        env=env,
-        check=False,
+        check=True,
     )
     subprocess.run(
         ["datalad", "get", "-d", str(dataset_path), "-r", "-R1", "-J5", "-n"],
-        env=env,
-        check=False,
+        check=True,
     )
     installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
     installer.install(update=True)
