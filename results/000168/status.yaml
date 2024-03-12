@@ -185,7 +185,11 @@ tests:
   - jGCaMP8s/jGCaMP8s_ANM479120_cell08.nwb
   - jGCaMP8s/jGCaMP8s_ANM479571_cell02.nwb
   - jGCaMP8s/jGCaMP8s_ANM479571_cell04.nwb
-  - jGCaMP8s/jGCaMP8s_ANM479571_cell05.nwb
+  - path: jGCaMP8s/jGCaMP8s_ANM479571_cell05.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - jGCaMP8s/jGCaMP8s_ANM479571_cell06.nwb
   - jGCaMP8s/jGCaMP8s_ANM479571_cell07.nwb
   - jGCaMP8s/jGCaMP8s_ANM479572_cell01.nwb
@@ -251,6 +255,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - jGCaMP8s/jGCaMP8s_ANM472182_cell07.nwb
+  - path: jGCaMP8s/jGCaMP8s_ANM479571_cell05.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: XCaMPgf/XCaMPgf_ANM478343_cell06.nwb
     versions:
@@ -397,7 +406,6 @@ tests:
   - jGCaMP8s/jGCaMP8s_ANM479120_cell08.nwb
   - jGCaMP8s/jGCaMP8s_ANM479571_cell02.nwb
   - jGCaMP8s/jGCaMP8s_ANM479571_cell04.nwb
-  - jGCaMP8s/jGCaMP8s_ANM479571_cell05.nwb
   - jGCaMP8s/jGCaMP8s_ANM479571_cell06.nwb
   - jGCaMP8s/jGCaMP8s_ANM479571_cell07.nwb
   - jGCaMP8s/jGCaMP8s_ANM479572_cell01.nwb

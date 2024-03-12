@@ -45,7 +45,11 @@ tests:
       pynwb: 2.6.0
   - sub-07/sub-07_ses-20160212T171400_ecephys+image.nwb
   - sub-07/sub-07_ses-20160212T171400_ecephys.nwb
-  - sub-08/sub-08_ses-20161217T120200_ecephys+image.nwb
+  - path: sub-08/sub-08_ses-20161217T120200_ecephys+image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-08/sub-08_ses-20161217T120200_ecephys.nwb
   - sub-09/sub-09_ses-20170311T170500_ecephys+image.nwb
   - sub-09/sub-09_ses-20170311T170500_ecephys.nwb
@@ -69,6 +73,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-07/sub-07_ses-20160212T171400_ecephys.nwb
+  - path: sub-08/sub-08_ses-20161217T120200_ecephys+image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-08/sub-08_ses-20161217T120200_ecephys.nwb
   - sub-09/sub-09_ses-20170311T170500_ecephys+image.nwb
   - sub-09/sub-09_ses-20170311T170500_ecephys.nwb
@@ -94,7 +103,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-07/sub-07_ses-20160212T171400_ecephys+image.nwb
-  - sub-08/sub-08_ses-20161217T120200_ecephys+image.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested:

@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-255200/sub-255200_ses-20140910_behavior+ecephys+ogen.nwb
-  - sub-255200/sub-255200_ses-20140910_behavior.nwb
+  - path: sub-255200/sub-255200_ses-20140910_behavior.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-255200/sub-255200_ses-20140911_behavior+ecephys+ogen.nwb
   - sub-255200/sub-255200_ses-20140912_behavior+ecephys+ogen.nwb
   - sub-255200/sub-255200_ses-20140913_behavior+ecephys+ogen.nwb
@@ -237,9 +241,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-298740/sub-298740_ses-20150729_behavior+ecephys+ogen.nwb
-  assets_ok: []
+  assets_ok:
+  - path: sub-255200/sub-255200_ses-20140910_behavior.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_timeout:
-  - sub-255200/sub-255200_ses-20140910_behavior.nwb
   - sub-255200/sub-255200_ses-20140911_behavior+ecephys+ogen.nwb
   - sub-255200/sub-255200_ses-20140912_behavior+ecephys+ogen.nwb
   - sub-255200/sub-255200_ses-20140913_behavior+ecephys+ogen.nwb

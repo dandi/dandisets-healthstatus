@@ -9,7 +9,11 @@ tests:
   - sub-EC2/sub-EC2_ses-EC2-B1.nwb
   assets_ok:
   - sub-EC2/sub-EC2_ses-EC2-B105.nwb
-  - sub-EC2/sub-EC2_ses-EC2-B15.nwb
+  - path: sub-EC2/sub-EC2_ses-EC2-B15.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-EC2/sub-EC2_ses-EC2-B76.nwb
   - path: sub-EC2/sub-EC2_ses-EC2-B8.nwb
     versions:
@@ -71,7 +75,11 @@ tests:
 - assets_nok:
   - sub-EC2/sub-EC2_ses-EC2-B1.nwb
   - sub-EC2/sub-EC2_ses-EC2-B105.nwb
-  - sub-EC2/sub-EC2_ses-EC2-B15.nwb
+  - path: sub-EC2/sub-EC2_ses-EC2-B15.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-EC2/sub-EC2_ses-EC2-B76.nwb
   - path: sub-EC2/sub-EC2_ses-EC2-B8.nwb
     versions:

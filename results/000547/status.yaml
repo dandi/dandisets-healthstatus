@@ -7,7 +7,11 @@ nassets: 70
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-305/sub-305_ses-1strec-0_ophys.nwb
+  - path: sub-305/sub-305_ses-1strec-0_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-305/sub-305_ses-2ndrec-100_ophys.nwb
   - sub-305/sub-305_ses-3rdrec-0_ophys.nwb
   - sub-305/sub-305_ses-4threc-100_ophys.nwb
@@ -104,7 +108,6 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-305/sub-305_ses-1strec-0_ophys.nwb
   - sub-305/sub-305_ses-2ndrec-100_ophys.nwb
   - sub-305/sub-305_ses-4threc-100_ophys.nwb
   - sub-307/sub-307_ses-1strec-0_ophys.nwb
@@ -149,6 +152,11 @@ tests:
   - sub-315/sub-315_ses-3rdrec-0_ophys.nwb
   - sub-315/sub-315_ses-4threc-100_ophys.nwb
   assets_ok:
+  - path: sub-305/sub-305_ses-1strec-0_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-305/sub-305_ses-3rdrec-0_ophys.nwb
   - sub-309/sub-309_ses-1strec-0_ophys.nwb
   - sub-309/sub-309_ses-3rdrec-0_ophys.nwb

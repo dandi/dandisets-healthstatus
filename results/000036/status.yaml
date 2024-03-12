@@ -7,7 +7,11 @@ nassets: 57
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-389014/sub-389014_ses-20180705T152908_behavior+image+ophys.nwb
+  - path: sub-389014/sub-389014_ses-20180705T152908_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-389014/sub-389014_ses-20180706T153828_behavior+image+ophys.nwb
   - sub-389014/sub-389014_ses-20180709T154600_behavior+image+ophys.nwb
   - sub-389014/sub-389014_ses-20180710T153808_behavior+image+ophys.nwb
@@ -95,6 +99,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-389014/sub-389014_ses-20180705T152908_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-389020/sub-389020_ses-20180710T152650_behavior+image+ophys.nwb
   - path: sub-389020/sub-389020_ses-20180717T152348_behavior+image+ophys.nwb
     versions:
@@ -112,7 +121,6 @@ tests:
   - sub-406876/sub-406876_ses-20180912T212600_behavior+image+ophys.nwb
   assets_ok: []
   assets_timeout:
-  - sub-389014/sub-389014_ses-20180705T152908_behavior+image+ophys.nwb
   - sub-389014/sub-389014_ses-20180706T153828_behavior+image+ophys.nwb
   - sub-389014/sub-389014_ses-20180709T154600_behavior+image+ophys.nwb
   - sub-389014/sub-389014_ses-20180710T153808_behavior+image+ophys.nwb

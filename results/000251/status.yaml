@@ -142,7 +142,11 @@ tests:
   - sub-215/sub-215_ses-DAsensor-VS-VR-TP-PAUSE-7.nwb
   - sub-217/sub-217_ses-DAsensor-VS-VR-8.nwb
   - sub-217/sub-217_ses-DAsensor-VS-VR-SPD-8.nwb
-  - sub-217/sub-217_ses-DAsensor-VS-VR-THREE-TP-7.nwb
+  - path: sub-217/sub-217_ses-DAsensor-VS-VR-THREE-TP-7.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-217/sub-217_ses-DAsensor-VS-VR-TP-PAUSE-8.nwb
     versions:
       hdmf: 3.12.2
@@ -947,7 +951,11 @@ tests:
   - sub-214/sub-214_ses-DAsensor-VS-VR-6.nwb
   - sub-214/sub-214_ses-DAsensor-VS-VR-TP-PAUSE-6.nwb
   - sub-215/sub-215_ses-DAsensor-VS-VR-THREE-TP-6.nwb
-  - sub-217/sub-217_ses-DAsensor-VS-VR-THREE-TP-7.nwb
+  - path: sub-217/sub-217_ses-DAsensor-VS-VR-THREE-TP-7.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-217/sub-217_ses-DAsensor-VS-VR-TP-PAUSE-8.nwb
     versions:
       hdmf: 3.12.2

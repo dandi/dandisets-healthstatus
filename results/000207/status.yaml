@@ -53,7 +53,11 @@ tests:
   - sub-6/sub-6_ses-6_ecephys.nwb
   - sub-7/sub-7_ses-7_ecephys.nwb
   - sub-8/sub-8_ses-8_ecephys.nwb
-  - sub-9/sub-9_ses-9_ecephys.nwb
+  - path: sub-9/sub-9_ses-9_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -104,7 +108,11 @@ tests:
   - sub-5/sub-5_ses-5_ecephys.nwb
   - sub-7/sub-7_ses-7_ecephys.nwb
   - sub-8/sub-8_ses-8_ecephys.nwb
-  - sub-9/sub-9_ses-9_ecephys.nwb
+  - path: sub-9/sub-9_ses-9_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

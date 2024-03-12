@@ -14,7 +14,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-147463/sub-147463_ses-147463-20191113-probe0_ecephys+ogen.nwb
+  - path: sub-147463/sub-147463_ses-147463-20191113-probe0_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-147465/sub-147465_ses-147465-20191113-probe0_ecephys+ogen.nwb
     versions:
       hdmf: 3.12.2
@@ -60,7 +64,6 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-128514/sub-128514_ses-128514-20191215-probe0_behavior+ecephys+ogen.nwb
-  - sub-147463/sub-147463_ses-147463-20191113-probe0_ecephys+ogen.nwb
   - sub-152414/sub-152414_ses-152414-20191023-probe0_ecephys+ogen.nwb
   - sub-152417/sub-152417_ses-152417-20191023-probe0_ecephys+ogen.nwb
   - sub-156130/sub-156130_ses-156130-20191112-probe0_ecephys+ogen.nwb
@@ -86,6 +89,11 @@ tests:
   assets_timeout:
   - sub-128515/sub-128515_ses-128515-20191216-probe0_ecephys+ogen.nwb
   - path: sub-128516/sub-128516_ses-128516-20191215-probe0_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-147463/sub-147463_ses-147463-20191113-probe0_ecephys+ogen.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2

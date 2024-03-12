@@ -58,7 +58,11 @@ tests:
   - sub-MS13/sub-MS13_ses-Peter-MS13-171128-113924-concat_desc-processed_behavior+ecephys.nwb
   - sub-MS13/sub-MS13_ses-Peter-MS13-171128-113924-concat_desc-raw_ecephys.nwb
   - sub-MS13/sub-MS13_ses-Peter-MS13-171129-105507-concat_desc-processed_behavior+ecephys.nwb
-  - sub-MS13/sub-MS13_ses-Peter-MS13-171129-105507-concat_desc-raw_ecephys.nwb
+  - path: sub-MS13/sub-MS13_ses-Peter-MS13-171129-105507-concat_desc-raw_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-MS13/sub-MS13_ses-Peter-MS13-171130-121758-concat_desc-processed_behavior+ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -197,7 +201,11 @@ tests:
   - sub-MS13/sub-MS13_ses-Peter-MS13-171128-113924-concat_desc-processed_behavior+ecephys.nwb
   - sub-MS13/sub-MS13_ses-Peter-MS13-171128-113924-concat_desc-raw_ecephys.nwb
   - sub-MS13/sub-MS13_ses-Peter-MS13-171129-105507-concat_desc-processed_behavior+ecephys.nwb
-  - sub-MS13/sub-MS13_ses-Peter-MS13-171129-105507-concat_desc-raw_ecephys.nwb
+  - path: sub-MS13/sub-MS13_ses-Peter-MS13-171129-105507-concat_desc-raw_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-MS13/sub-MS13_ses-Peter-MS13-171130-121758-concat_desc-processed_behavior+ecephys.nwb
     versions:
       hdmf: 3.12.2

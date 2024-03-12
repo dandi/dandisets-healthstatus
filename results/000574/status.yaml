@@ -63,7 +63,11 @@ tests:
   - sub-07/sub-07_ses-20160305T103200_obj-1d0jeko_behavior+ecephys.nwb
   - sub-07/sub-07_ses-20160305T103200_obj-1wdu15t_behavior+ecephys.nwb
   - sub-07/sub-07_ses-20160305T103200_obj-9hzkt8_behavior+ecephys.nwb
-  - sub-07/sub-07_ses-20160305T103200_obj-boqvfp_behavior+ecephys.nwb
+  - path: sub-07/sub-07_ses-20160305T103200_obj-boqvfp_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-08/sub-08_ses-20170111T115400_behavior+ecephys.nwb
   - sub-08/sub-08_ses-20170111T120500_behavior+ecephys.nwb
   - sub-08/sub-08_ses-20170113T121400_behavior+ecephys.nwb
@@ -117,7 +121,6 @@ tests:
   - sub-07/sub-07_ses-20160305T103200_obj-1d0jeko_behavior+ecephys.nwb
   - sub-07/sub-07_ses-20160305T103200_obj-1wdu15t_behavior+ecephys.nwb
   - sub-07/sub-07_ses-20160305T103200_obj-9hzkt8_behavior+ecephys.nwb
-  - sub-07/sub-07_ses-20160305T103200_obj-boqvfp_behavior+ecephys.nwb
   - sub-08/sub-08_ses-20170111T115400_behavior+ecephys.nwb
   - sub-08/sub-08_ses-20170113T121600_behavior+ecephys.nwb
   - sub-09/sub-09_ses-20150115T144300_obj-13cfy3x_behavior+ecephys.nwb
@@ -141,6 +144,11 @@ tests:
       pynwb: 2.6.0
   - sub-06/sub-06_ses-20140828T152100_behavior+ecephys.nwb
   - sub-07/sub-07_ses-20160302T170100_behavior+ecephys.nwb
+  - path: sub-07/sub-07_ses-20160305T103200_obj-boqvfp_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-08/sub-08_ses-20170111T120500_behavior+ecephys.nwb
   - sub-08/sub-08_ses-20170113T121400_behavior+ecephys.nwb
   - path: sub-09/sub-09_ses-20150115T144300_obj-106jgmp_behavior+ecephys.nwb
