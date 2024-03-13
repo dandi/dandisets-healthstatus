@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-Fig1F/sub-Fig1F_ses-BPAE-staining_image.nwb
-  - sub-Fig2-0-03/sub-Fig2-0-03_ses-BPAE-bipolar-0 percent_image.nwb
+  - path: sub-Fig2-0-03/sub-Fig2-0-03_ses-BPAE-bipolar-0 percent_image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Fig2-0-06/sub-Fig2-0-06_ses-BPAE-bipolar-0 percent_image.nwb
   - path: sub-Fig2-0-07/sub-Fig2-0-07_ses-BPAE-bipolar-0 percent_image.nwb
     versions:
@@ -70,7 +74,11 @@ tests:
   - sub-Fig2-25-10/sub-Fig2-25-10_ses-BPAE-bipolar-25 percent_image.nwb
   - sub-Fig2-75-10/sub-Fig2-75-10_ses-BPAE-bipolar-75 percent_image.nwb
   assets_ok:
-  - sub-Fig2-0-03/sub-Fig2-0-03_ses-BPAE-bipolar-0 percent_image.nwb
+  - path: sub-Fig2-0-03/sub-Fig2-0-03_ses-BPAE-bipolar-0 percent_image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-Fig2-0-07/sub-Fig2-0-07_ses-BPAE-bipolar-0 percent_image.nwb
     versions:
       hdmf: 3.12.2

@@ -7,7 +7,11 @@ nassets: 18
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-001-F/sub-001-F_ses-08-05-2022-cell09-F_image.nwb
+  - path: sub-001-F/sub-001-F_ses-08-05-2022-cell09-F_image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-001-R/sub-001-R_ses-08-05-2022-cell09-R_image.nwb
     versions:
       hdmf: 3.12.2
@@ -68,7 +72,11 @@ tests:
   - sub-007-R/sub-007-R_ses-08-05-2022-cell16-R_image.nwb
   - sub-009-R/sub-009-R_ses-08-05-2022-cell24-R_image.nwb
   assets_ok:
-  - sub-001-F/sub-001-F_ses-08-05-2022-cell09-F_image.nwb
+  - path: sub-001-F/sub-001-F_ses-08-05-2022-cell09-F_image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-001-R/sub-001-R_ses-08-05-2022-cell09-R_image.nwb
     versions:
       hdmf: 3.12.2

@@ -42,7 +42,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-195901J2Pcell2t2hp/sub-195901J2Pcell2t2hp_ses-20230302T195901_image.nwb
+  - path: sub-195901J2Pcell2t2hp/sub-195901J2Pcell2t2hp_ses-20230302T195901_image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-201125J2Pcell3t1hp/sub-201125J2Pcell3t1hp_ses-20230302T201125_image.nwb
   - path: sub-203147J2Pcell4t1hp/sub-203147J2Pcell4t1hp_ses-20230302T203147_image.nwb
     versions:
@@ -56,8 +60,7 @@ tests:
       pynwb: 2.6.0
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-195901J2Pcell2t2hp/sub-195901J2Pcell2t2hp_ses-20230302T195901_image.nwb
+- assets_nok: []
   assets_ok:
   - path: sub-173732Voltron2JF525cell2-488/sub-173732Voltron2JF525cell2-488_ses-20230302T173732_image.nwb
     versions:
@@ -90,6 +93,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-195654J2Pcell2t1hp/sub-195654J2Pcell2t1hp_ses-20230302T195654_image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-195901J2Pcell2t2hp/sub-195901J2Pcell2t2hp_ses-20230302T195901_image.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2

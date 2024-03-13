@@ -40,7 +40,11 @@ tests:
   - sub-1-4/sub-1-4_ses-20210123_obj-swe4ri_ecephys.nwb
   - sub-1-4/sub-1-4_ses-20210123_obj-x8xgp_ecephys.nwb
   - sub-1-4/sub-1-4_ses-20210123_obj-ysgrhv_ecephys.nwb
-  - sub-1-4/sub-1-4_ses-20210123_obj-zktbd_ecephys.nwb
+  - path: sub-1-4/sub-1-4_ses-20210123_obj-zktbd_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-1-7/sub-1-7_ses-20210119_obj-17191li_ecephys.nwb
   - path: sub-1-7/sub-1-7_ses-20210119_obj-bfdkvp_ecephys.nwb
     versions:
@@ -179,7 +183,6 @@ tests:
   - sub-1-4/sub-1-4_ses-20210123_obj-swe4ri_ecephys.nwb
   - sub-1-4/sub-1-4_ses-20210123_obj-x8xgp_ecephys.nwb
   - sub-1-4/sub-1-4_ses-20210123_obj-ysgrhv_ecephys.nwb
-  - sub-1-4/sub-1-4_ses-20210123_obj-zktbd_ecephys.nwb
   - path: sub-1-7/sub-1-7_ses-20210119_obj-bfdkvp_ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -267,6 +270,11 @@ tests:
   - sub-8/sub-8_ses-20210907_ecephys.nwb
   assets_ok:
   - path: sub-1-24/sub-1-24_ses-20210910_obj-eq8s2q_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-1-4/sub-1-4_ses-20210123_obj-zktbd_ecephys.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2

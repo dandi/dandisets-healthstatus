@@ -30,7 +30,11 @@ tests:
   - sub-San2/sub-San2_ses-20190904T115428_ecephys.nwb
   - sub-San2/sub-San2_ses-20190904T115958_ecephys.nwb
   - sub-San4/sub-San4_ses-20191028T151843_ecephys.nwb
-  - sub-San4/sub-San4_ses-20191107T150118_ecephys.nwb
+  - path: sub-San4/sub-San4_ses-20191107T150118_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-San4/sub-San4_ses-20191107T150515_ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -96,7 +100,6 @@ tests:
   - sub-Rat2/sub-Rat2_ses-20200924T154006_ecephys.nwb
   - sub-Rat2/sub-Rat2_ses-20200924T155523_ecephys.nwb
   - sub-San2/sub-San2_ses-20190904T115428_ecephys.nwb
-  - sub-San4/sub-San4_ses-20191107T150118_ecephys.nwb
   - sub-San4/sub-San4_ses-20191127T122703_ecephys.nwb
   - sub-San4/sub-San4_ses-20191216T144004_ecephys.nwb
   - sub-San4/sub-San4_ses-20200106T151106_ecephys.nwb
@@ -124,6 +127,11 @@ tests:
   - sub-Rat2/sub-Rat2_ses-20200924T155623_ecephys.nwb
   - sub-San2/sub-San2_ses-20190904T115958_ecephys.nwb
   - sub-San4/sub-San4_ses-20191028T151843_ecephys.nwb
+  - path: sub-San4/sub-San4_ses-20191107T150118_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-San4/sub-San4_ses-20191107T150515_ecephys.nwb
     versions:
       hdmf: 3.12.2
