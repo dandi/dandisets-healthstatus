@@ -7,7 +7,11 @@ nassets: 87
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-P10HMH/sub-P10HMH_ses-20060901_ecephys+image.nwb
+  - path: sub-P10HMH/sub-P10HMH_ses-20060901_ecephys+image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-P11HMH/sub-P11HMH_ses-20061101_ecephys+image.nwb
   - sub-P14HMH/sub-P14HMH_ses-20070601_obj-1t8wrd5_ecephys+image.nwb
   - path: sub-P14HMH/sub-P14HMH_ses-20070601_obj-7studd_ecephys+image.nwb
@@ -133,6 +137,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-P10HMH/sub-P10HMH_ses-20060901_ecephys+image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-P14HMH/sub-P14HMH_ses-20070601_obj-7studd_ecephys+image.nwb
     versions:
       hdmf: 3.12.2
@@ -251,7 +260,6 @@ tests:
   - sub-TWH107/sub-TWH107_ses-20181201_ecephys+image.nwb
   assets_ok: []
   assets_timeout:
-  - sub-P10HMH/sub-P10HMH_ses-20060901_ecephys+image.nwb
   - sub-P11HMH/sub-P11HMH_ses-20061101_ecephys+image.nwb
   - sub-P14HMH/sub-P14HMH_ses-20070601_obj-1t8wrd5_ecephys+image.nwb
   - sub-P18HMH/sub-P18HMH_ses-20080601_ecephys+image.nwb

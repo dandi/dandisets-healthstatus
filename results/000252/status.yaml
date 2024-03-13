@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-N1/sub-N1_ses-2019-02-12_ecephys.nwb
-  - sub-N1/sub-N1_ses-2019-12-20_ecephys.nwb
+  - path: sub-N1/sub-N1_ses-2019-12-20_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-P1/sub-P1_ses-2015-08-12_ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -55,9 +59,13 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-N1/sub-N1_ses-2019-02-12_ecephys.nwb
-  - sub-N1/sub-N1_ses-2019-12-20_ecephys.nwb
   - sub-P1/sub-P1_ses-2016-05-23_ecephys.nwb
   assets_ok:
+  - path: sub-N1/sub-N1_ses-2019-12-20_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-P1/sub-P1_ses-2015-08-12_ecephys.nwb
     versions:
       hdmf: 3.12.2

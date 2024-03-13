@@ -142,7 +142,11 @@ tests:
   - sub-35/sub-35_ses-20211008_ecephys.nwb
   - sub-37/sub-37_ses-20211007_obj-1a67qb4_ecephys.nwb
   - sub-37/sub-37_ses-20211007_obj-1d48zvc_ecephys.nwb
-  - sub-37/sub-37_ses-20211007_obj-o174ue_ecephys.nwb
+  - path: sub-37/sub-37_ses-20211007_obj-o174ue_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-8/sub-8_ses-20210907_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
@@ -260,7 +264,6 @@ tests:
   - sub-35/sub-35_ses-20211008_ecephys.nwb
   - sub-37/sub-37_ses-20211007_obj-1a67qb4_ecephys.nwb
   - sub-37/sub-37_ses-20211007_obj-1d48zvc_ecephys.nwb
-  - sub-37/sub-37_ses-20211007_obj-o174ue_ecephys.nwb
   - sub-8/sub-8_ses-20210907_ecephys.nwb
   assets_ok:
   - path: sub-1-24/sub-1-24_ses-20210910_obj-eq8s2q_ecephys.nwb
@@ -285,6 +288,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-24/sub-24_ses-20210823_obj-dks6eb_ecephys.nwb
+  - path: sub-37/sub-37_ses-20211007_obj-o174ue_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

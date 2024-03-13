@@ -67,7 +67,11 @@ tests:
   - sub-CS58/sub-CS58_ses-P58CSR1_behavior+ecephys.nwb
   - sub-CS60/sub-CS60_ses-P60CSR1_behavior+ecephys.nwb
   - sub-CS62/sub-CS62_ses-P62CSR1_behavior+ecephys.nwb
-  - sub-CS62/sub-CS62_ses-P62CSR2_behavior+ecephys.nwb
+  - path: sub-CS62/sub-CS62_ses-P62CSR2_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -118,7 +122,11 @@ tests:
   - sub-CS57/sub-CS57_ses-P57CSR1_behavior+ecephys.nwb
   - sub-CS58/sub-CS58_ses-P58CSR1_behavior+ecephys.nwb
   - sub-CS62/sub-CS62_ses-P62CSR1_behavior+ecephys.nwb
-  - sub-CS62/sub-CS62_ses-P62CSR2_behavior+ecephys.nwb
+  - path: sub-CS62/sub-CS62_ses-P62CSR2_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_timeout:
   - path: sub-CS44/sub-CS44_ses-P44CSR1_behavior+ecephys.nwb
     versions:
