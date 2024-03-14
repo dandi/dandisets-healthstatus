@@ -94,7 +94,11 @@ tests:
       pynwb: 2.6.0
   - sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-513-1-1_ecephys.nwb
   - sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-513-1-2_ecephys.nwb
-  - sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-513-2-2_ecephys.nwb
+  - path: sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-513-2-2_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-513-2-3_ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -205,7 +209,6 @@ tests:
   - sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-509-1-1_ecephys.nwb
   - sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-513-1-1_ecephys.nwb
   - sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-513-1-2_ecephys.nwb
-  - sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-513-2-2_ecephys.nwb
   - sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-531-2-1_ecephys.nwb
   - sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-624-2-1_ecephys.nwb
   - sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-624-2-2_ecephys.nwb
@@ -290,6 +293,11 @@ tests:
   - sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-1103-1-1_ecephys.nwb
   - sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-419-1-8_ecephys.nwb
   - path: sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-509-1-2_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-513-2-2_ecephys.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2

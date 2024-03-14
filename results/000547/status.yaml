@@ -113,7 +113,11 @@ tests:
   - sub-314/sub-314_ses-3rdrec-0_ophys.nwb
   - sub-314/sub-314_ses-4threc-100_ophys.nwb
   - sub-314/sub-314_ses-5threc-0_ophys.nwb
-  - sub-314/sub-314_ses-6threc-100_ophys.nwb
+  - path: sub-314/sub-314_ses-6threc-100_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-314/sub-314_ses-7threc-0_ophys.nwb
   - sub-314/sub-314_ses-8threc-100_ophys.nwb
   - sub-314/sub-314_ses-9threc-0_ophys.nwb
@@ -238,7 +242,11 @@ tests:
       pynwb: 2.6.0
   - sub-314/sub-314_ses-3rdrec-0_ophys.nwb
   - sub-314/sub-314_ses-4threc-100_ophys.nwb
-  - sub-314/sub-314_ses-6threc-100_ophys.nwb
+  - path: sub-314/sub-314_ses-6threc-100_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

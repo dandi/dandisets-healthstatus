@@ -46,7 +46,11 @@ tests:
   - sub-465226/sub-465226_ses-20190624T221613_behavior+ophys.nwb
   - sub-465226/sub-465226_ses-20190625T201821_behavior+ophys.nwb
   - sub-465226/sub-465226_ses-20190626T213653_behavior+ophys.nwb
-  - sub-465226/sub-465226_ses-20190627T221333_behavior+ophys.nwb
+  - path: sub-465226/sub-465226_ses-20190627T221333_behavior+ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-465226/sub-465226_ses-20190628T212611_behavior+ophys.nwb
   - sub-465226/sub-465226_ses-20190701T220738_behavior+ophys.nwb
   - sub-465226/sub-465226_ses-20190702T214625_behavior+ophys.nwb
@@ -173,7 +177,6 @@ tests:
   - sub-460654/sub-460654_ses-20190619T180008_behavior+ophys.nwb
   - sub-463813/sub-463813_ses-20190701T152503_behavior+ophys.nwb
   - sub-465226/sub-465226_ses-20190624T221613_behavior+ophys.nwb
-  - sub-465226/sub-465226_ses-20190627T221333_behavior+ophys.nwb
   - sub-465226/sub-465226_ses-20190628T212611_behavior+ophys.nwb
   - sub-465226/sub-465226_ses-20190702T214625_behavior+ophys.nwb
   - sub-465226/sub-465226_ses-20190703T211800_behavior+ophys.nwb
@@ -236,6 +239,11 @@ tests:
   - sub-463813/sub-463813_ses-20190710T153603_behavior+ophys.nwb
   - sub-465226/sub-465226_ses-20190625T201821_behavior+ophys.nwb
   - sub-465226/sub-465226_ses-20190626T213653_behavior+ophys.nwb
+  - path: sub-465226/sub-465226_ses-20190627T221333_behavior+ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-465226/sub-465226_ses-20190701T220738_behavior+ophys.nwb
   - sub-465231/sub-465231_ses-20190618T203328_behavior+ophys.nwb
   - sub-465231/sub-465231_ses-20190620T193953_behavior+ophys.nwb

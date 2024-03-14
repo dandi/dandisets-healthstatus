@@ -7,7 +7,11 @@ nassets: 28
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-EE/sub-EE_ses-EE-042_ecephys.nwb
+  - path: sub-EE/sub-EE_ses-EE-042_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-EE/sub-EE_ses-EE-043_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-044_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-045_ecephys.nwb
@@ -103,7 +107,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_ok:
-  - sub-EE/sub-EE_ses-EE-042_ecephys.nwb
+  - path: sub-EE/sub-EE_ses-EE-042_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-EE/sub-EE_ses-EE-043_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-044_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-045_ecephys.nwb
