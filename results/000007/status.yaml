@@ -40,7 +40,11 @@ tests:
   - sub-BAYLORCD6/sub-BAYLORCD6_ses-20170614T111143.nwb
   - sub-BAYLORCD8/sub-BAYLORCD8_ses-20171016T121417.nwb
   - sub-BAYLORCD8/sub-BAYLORCD8_ses-20171017T114425.nwb
-  - sub-BAYLORCD8/sub-BAYLORCD8_ses-20171018T123550.nwb
+  - path: sub-BAYLORCD8/sub-BAYLORCD8_ses-20171018T123550.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-BAYLORCD8/sub-BAYLORCD8_ses-20171019T123347.nwb
   - path: sub-BAYLORCD8/sub-BAYLORCD8_ses-20171020T124659.nwb
     versions:
@@ -124,7 +128,6 @@ tests:
   - sub-BAYLORCD6/sub-BAYLORCD6_ses-20170614T111143.nwb
   - sub-BAYLORCD8/sub-BAYLORCD8_ses-20171016T121417.nwb
   - sub-BAYLORCD8/sub-BAYLORCD8_ses-20171017T114425.nwb
-  - sub-BAYLORCD8/sub-BAYLORCD8_ses-20171018T123550.nwb
   - sub-BAYLORCD8/sub-BAYLORCD8_ses-20171019T123347.nwb
   - sub-BAYLORNL12/sub-BAYLORNL12_ses-20170610T122530.nwb
   - sub-BAYLORNL12/sub-BAYLORNL12_ses-20170612T115219.nwb
@@ -158,6 +161,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-BAYLORCD13/sub-BAYLORCD13_ses-20171212T131814.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-BAYLORCD8/sub-BAYLORCD8_ses-20171018T123550.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2

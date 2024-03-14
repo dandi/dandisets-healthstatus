@@ -55,7 +55,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-NR34/sub-NR34_ophys.nwb
+  - path: sub-NR34/sub-NR34_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-NR6/sub-NR6_ophys.nwb
     versions:
       hdmf: 3.12.2
@@ -77,7 +81,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-NR23/sub-NR23_ophys.nwb
-  - sub-NR34/sub-NR34_ophys.nwb
+  - path: sub-NR34/sub-NR34_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-009/sub-009_ophys.nwb
     versions:

@@ -29,7 +29,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-KSt93/sub-KSt93_ses-20150416T120000_behavior.nwb
+  - path: sub-KSt93/sub-KSt93_ses-20150416T120000_behavior.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-KSt94/sub-KSt94_ses-20150424T120000_behavior.nwb
   assets_timeout:
   - path: sub-KSm11/sub-KSm11_ses-20160616T120000_behavior.nwb
@@ -109,8 +113,7 @@ tests:
   - sub-KSt99/sub-KSt99_ses-20150506T120000_obj-1wybaw_behavior.nwb
   - sub-KSt99/sub-KSt99_ses-20150506T120000_obj-r9qsp2_behavior.nwb
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-KSt93/sub-KSt93_ses-20150416T120000_behavior.nwb
+- assets_nok: []
   assets_ok: []
   assets_timeout:
   - path: sub-KSm11/sub-KSm11_ses-20160616T120000_behavior.nwb
@@ -202,6 +205,11 @@ tests:
       pynwb: 2.6.0
   - sub-KSt91/sub-KSt91_ses-20150413T120000_obj-u72o7l_behavior.nwb
   - path: sub-KSt92/sub-KSt92_ses-20150405T120000_behavior.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-KSt93/sub-KSt93_ses-20150416T120000_behavior.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
