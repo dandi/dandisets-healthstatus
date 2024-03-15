@@ -16,7 +16,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-2022-01-22-w04-NP1/sub-2022-01-22-w04-NP1_ses-20220122.nwb
+  - path: sub-2022-01-22-w04-NP1/sub-2022-01-22-w04-NP1_ses-20220122.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-2022-01-22-w04-NP1/sub-2022-01-22-w04-NP1_ses-20220122_ophys.nwb
     versions:
       hdmf: 3.12.2
@@ -78,7 +82,6 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-2022-01-22-w04-NP1/sub-2022-01-22-w04-NP1_ses-20220122.nwb
   - path: sub-2022-02-11-w03-NP1/sub-2022-02-11-w03-NP1_ses-20220211.nwb
     versions:
       hdmf: 3.12.2
@@ -93,6 +96,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-2021-12-03-w00-NP1/sub-2021-12-03-w00-NP1_ses-20211203_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-2022-01-22-w04-NP1/sub-2022-01-22-w04-NP1_ses-20220122.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2

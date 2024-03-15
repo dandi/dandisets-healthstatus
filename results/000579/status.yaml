@@ -222,7 +222,11 @@ tests:
   - sub-6/sub-6_ses-mouse-6-session-date-2017-08-24-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
   - sub-6/sub-6_ses-mouse-6-session-date-2017-08-25-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
   - sub-6/sub-6_ses-mouse-6-session-date-2017-08-31-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-Mouse-7-widefield-retinotopy-and-window-vessel_ophys.nwb
+  - path: sub-7/sub-7_ses-Mouse-7-widefield-retinotopy-and-window-vessel_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-7/sub-7_ses-mouse-7-session-date-2017-07-14-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
   - sub-7/sub-7_ses-mouse-7-session-date-2017-07-16-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
   - sub-7/sub-7_ses-mouse-7-session-date-2017-07-17-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
@@ -473,6 +477,11 @@ tests:
   - sub-3/sub-3_ses-Mouse-3-widefield-retinotopy-and-window-vessel_ophys.nwb
   - sub-4/sub-4_ses-Mouse-4-widefield-retinotopy-and-window-vessel_ophys.nwb
   - sub-5/sub-5_ses-Mouse-5-widefield-retinotopy-and-window-vessel_ophys.nwb
+  - path: sub-7/sub-7_ses-Mouse-7-widefield-retinotopy-and-window-vessel_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_timeout:
   - sub-10/sub-10_ses-mouse-10-session-date-2017-09-22-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
   - sub-10/sub-10_ses-mouse-10-session-date-2017-09-23-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
@@ -616,7 +625,6 @@ tests:
   - sub-6/sub-6_ses-mouse-6-session-date-2017-08-24-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
   - sub-6/sub-6_ses-mouse-6-session-date-2017-08-25-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
   - sub-6/sub-6_ses-mouse-6-session-date-2017-08-31-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-Mouse-7-widefield-retinotopy-and-window-vessel_ophys.nwb
   - sub-7/sub-7_ses-mouse-7-session-date-2017-07-16-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
   - sub-7/sub-7_ses-mouse-7-session-date-2017-07-17-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
   - sub-7/sub-7_ses-mouse-7-session-date-2017-07-18-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb

@@ -39,7 +39,11 @@ tests:
   - sub-02/sub-02_ses-20160213T153700_obj-lcaqlc_behavior+ecephys.nwb
   - sub-03/sub-03_ses-20150304T165900_behavior+ecephys.nwb
   - sub-03/sub-03_ses-20150305T085500_behavior+ecephys.nwb
-  - sub-03/sub-03_ses-20150306T173300_behavior+ecephys.nwb
+  - path: sub-03/sub-03_ses-20150306T173300_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-04/sub-04_ses-20170118T103700_behavior+ecephys.nwb
   - sub-04/sub-04_ses-20170118T104700_behavior+ecephys.nwb
   - sub-05/sub-05_ses-20170706T115300_obj-17gax9n_behavior+ecephys.nwb
@@ -168,7 +172,6 @@ tests:
   - sub-02/sub-02_ses-20160213T153700_obj-lcaqlc_behavior+ecephys.nwb
   - sub-03/sub-03_ses-20150304T165900_behavior+ecephys.nwb
   - sub-03/sub-03_ses-20150305T085500_behavior+ecephys.nwb
-  - sub-03/sub-03_ses-20150306T173300_behavior+ecephys.nwb
   - sub-04/sub-04_ses-20170118T103700_behavior+ecephys.nwb
   - sub-05/sub-05_ses-20170706T141100_behavior+ecephys.nwb
   - sub-06/sub-06_ses-20140827T165900_behavior+ecephys.nwb
@@ -197,7 +200,12 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-09/sub-09_ses-20150115T144300_obj-u2fzwy_behavior+ecephys.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-03/sub-03_ses-20150306T173300_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   name: matnwb_nwbRead
 untested: []
 versions:

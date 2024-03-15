@@ -80,7 +80,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-SIROF/sub-SIROF_obj-lprsag_ecephys.nwb
+  - path: sub-SIROF/sub-SIROF_obj-lprsag_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-SIROF/sub-SIROF_obj-mwwvxg_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
@@ -159,7 +163,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-SIROF/sub-SIROF_obj-lprsag_ecephys.nwb
+  - path: sub-SIROF/sub-SIROF_obj-lprsag_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-SIROF/sub-SIROF_obj-mwwvxg_ecephys.nwb
   assets_timeout: []
   name: matnwb_nwbRead
