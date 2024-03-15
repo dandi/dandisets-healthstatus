@@ -125,7 +125,11 @@ tests:
   - sub-MS21/sub-MS21_ses-Peter-MS21-180802-120147-concat_desc-raw_ecephys.nwb
   - sub-MS21/sub-MS21_ses-Peter-MS21-180803-142301-concat_desc-processed_behavior+ecephys.nwb
   - sub-MS21/sub-MS21_ses-Peter-MS21-180803-142301-concat_desc-raw_ecephys.nwb
-  - sub-MS22/sub-MS22_ses-Peter-MS22-180621-131028-concat_desc-processed_behavior+ecephys.nwb
+  - path: sub-MS22/sub-MS22_ses-Peter-MS22-180621-131028-concat_desc-processed_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-MS22/sub-MS22_ses-Peter-MS22-180621-131028-concat_desc-raw_ecephys.nwb
   - sub-MS22/sub-MS22_ses-Peter-MS22-180622-115734-concat_desc-processed_behavior+ecephys.nwb
   - sub-MS22/sub-MS22_ses-Peter-MS22-180622-115734-concat_desc-raw_ecephys.nwb
@@ -173,7 +177,6 @@ tests:
   - sub-MS21/sub-MS21_ses-Peter-MS21-180627-143449-concat_desc-processed_behavior+ecephys.nwb
   - sub-MS21/sub-MS21_ses-Peter-MS21-180711-112927-concat_desc-raw_ecephys.nwb
   - sub-MS21/sub-MS21_ses-Peter-MS21-180712-103200-concat_desc-processed_behavior+ecephys.nwb
-  - sub-MS22/sub-MS22_ses-Peter-MS22-180621-131028-concat_desc-processed_behavior+ecephys.nwb
   - sub-MS22/sub-MS22_ses-Peter-MS22-180628-120341-concat_desc-raw_ecephys.nwb
   - sub-MS22/sub-MS22_ses-Peter-MS22-180720-110055-concat_desc-raw_ecephys.nwb
   assets_ok:
@@ -288,6 +291,11 @@ tests:
   - sub-MS21/sub-MS21_ses-Peter-MS21-180802-120147-concat_desc-raw_ecephys.nwb
   - sub-MS21/sub-MS21_ses-Peter-MS21-180803-142301-concat_desc-processed_behavior+ecephys.nwb
   - sub-MS21/sub-MS21_ses-Peter-MS21-180803-142301-concat_desc-raw_ecephys.nwb
+  - path: sub-MS22/sub-MS22_ses-Peter-MS22-180621-131028-concat_desc-processed_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-MS22/sub-MS22_ses-Peter-MS22-180621-131028-concat_desc-raw_ecephys.nwb
   - sub-MS22/sub-MS22_ses-Peter-MS22-180622-115734-concat_desc-processed_behavior+ecephys.nwb
   - sub-MS22/sub-MS22_ses-Peter-MS22-180622-115734-concat_desc-raw_ecephys.nwb

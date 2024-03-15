@@ -90,7 +90,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-439900/sub-439900_ses-835537233_behavior+image+ophys.nwb
-  - sub-439900/sub-439900_ses-835970284_behavior+image+ophys.nwb
+  - path: sub-439900/sub-439900_ses-835970284_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-440208/sub-440208_ses-20190313T174911_behavior+image+ophys.nwb
   - sub-440208/sub-440208_ses-837081368_behavior+image+ophys.nwb
   - sub-440299/sub-440299_ses-833016683_behavior+image+ophys.nwb
@@ -119,7 +123,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-439900/sub-439900_ses-835970284_behavior+image+ophys.nwb
   - sub-440208/sub-440208_ses-837081368_behavior+image+ophys.nwb
   - sub-440299/sub-440299_ses-833016683_behavior+image+ophys.nwb
   - sub-440299/sub-440299_ses-833870314_behavior+image+ophys.nwb
@@ -201,6 +204,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-439900/sub-439900_ses-835537233_behavior+image+ophys.nwb
+  - path: sub-439900/sub-439900_ses-835970284_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-440208/sub-440208_ses-20190313T174911_behavior+image+ophys.nwb
   name: matnwb_nwbRead
 untested: []

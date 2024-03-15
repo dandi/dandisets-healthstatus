@@ -89,7 +89,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-San6/sub-San6_ses-20200218T181019_ecephys.nwb
-  - sub-San6/sub-San6_ses-20200218T181402_ecephys.nwb
+  - path: sub-San6/sub-San6_ses-20200218T181402_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-San6/sub-San6_ses-20200302T151055_ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -120,7 +124,6 @@ tests:
   - sub-San6/sub-San6_ses-20200204T145647_ecephys.nwb
   - sub-San6/sub-San6_ses-20200218T175723_ecephys.nwb
   - sub-San6/sub-San6_ses-20200218T181019_ecephys.nwb
-  - sub-San6/sub-San6_ses-20200218T181402_ecephys.nwb
   assets_ok:
   - sub-Rat1/sub-Rat1_ses-20200921T131823_ecephys.nwb
   - path: sub-Rat1/sub-Rat1_ses-20200921T131923_ecephys.nwb
@@ -184,6 +187,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-San6/sub-San6_ses-20200218T180538_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-San6/sub-San6_ses-20200218T181402_ecephys.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2

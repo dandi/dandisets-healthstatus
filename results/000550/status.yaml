@@ -34,7 +34,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-Fig6-5xBi-10kHz-03/sub-Fig6-5xBi-10kHz-03_ses-BPAE-5xBipolar-10kHz_image.nwb
-  - sub-Fig6-5xBi-10kHz-09/sub-Fig6-5xBi-10kHz-09_ses-BPAE-5xBipolar-10kHz_image.nwb
+  - path: sub-Fig6-5xBi-10kHz-09/sub-Fig6-5xBi-10kHz-09_ses-BPAE-5xBipolar-10kHz_image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-Fig6-5xBi-10kHz-10/sub-Fig6-5xBi-10kHz-10_ses-BPAE-5xBipolar-10kHz_image.nwb
     versions:
       hdmf: 3.12.2
@@ -81,7 +85,6 @@ tests:
 - assets_nok:
   - sub-Fig6-5xBi-0,83MHz-13/sub-Fig6-5xBi-0,83MHz-13_ses-BPAE-5xBipolar-0,83MHz_image.nwb
   - sub-Fig6-5xBi-10kHz-03/sub-Fig6-5xBi-10kHz-03_ses-BPAE-5xBipolar-10kHz_image.nwb
-  - sub-Fig6-5xBi-10kHz-09/sub-Fig6-5xBi-10kHz-09_ses-BPAE-5xBipolar-10kHz_image.nwb
   - sub-Fig6-5xUni-100kHz-05/sub-Fig6-5xUni-100kHz-05_ses-BPAE-5xUnipolar-100kHz_image.nwb
   assets_ok:
   - path: sub-Fig6-5xBi-0,83MHz-08/sub-Fig6-5xBi-0,83MHz-08_ses-BPAE-5xBipolar-0,83MHz_image.nwb
@@ -105,6 +108,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-Fig6-5xBi-100kHz-11/sub-Fig6-5xBi-100kHz-11_ses-BPAE-5xBipolar-100kHz_image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-Fig6-5xBi-10kHz-09/sub-Fig6-5xBi-10kHz-09_ses-BPAE-5xBipolar-10kHz_image.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2

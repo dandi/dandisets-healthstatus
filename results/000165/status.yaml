@@ -338,7 +338,11 @@ tests:
   - sub-Mustard/sub-Mustard_ses-Mustard05-LinearTrack_behavior+ecephys.nwb
   - sub-Mustard/sub-Mustard_ses-Mustard06-LinearTrack_behavior+ecephys.nwb
   - sub-Neelix/sub-Neelix_ses-Neelix01-HomeCage_behavior+ecephys.nwb
-  - sub-Neelix/sub-Neelix_ses-Neelix02-HomeCage_behavior+ecephys.nwb
+  - path: sub-Neelix/sub-Neelix_ses-Neelix02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Neelix/sub-Neelix_ses-Neelix03-HomeCage_behavior+ecephys.nwb
   - path: sub-Neelix/sub-Neelix_ses-Neelix04_HomeCage_behavior+ecephys.nwb
     versions:
@@ -923,7 +927,6 @@ tests:
   - sub-Mustard/sub-Mustard_ses-Mustard02-LinearTrack_behavior+ecephys.nwb
   - sub-Mustard/sub-Mustard_ses-Mustard03-LinearTrack_behavior+ecephys.nwb
   - sub-Mustard/sub-Mustard_ses-Mustard04-LinearTrack_behavior+ecephys.nwb
-  - sub-Neelix/sub-Neelix_ses-Neelix02-HomeCage_behavior+ecephys.nwb
   - sub-Neelix/sub-Neelix_ses-Neelix03-HomeCage_behavior+ecephys.nwb
   - path: sub-Neelix/sub-Neelix_ses-Neelix04_HomeCage_behavior+ecephys.nwb
     versions:
@@ -1187,6 +1190,11 @@ tests:
   - sub-Mustard/sub-Mustard_ses-Mustard05-LinearTrack_behavior+ecephys.nwb
   - sub-Mustard/sub-Mustard_ses-Mustard06-LinearTrack_behavior+ecephys.nwb
   - sub-Neelix/sub-Neelix_ses-Neelix01-HomeCage_behavior+ecephys.nwb
+  - path: sub-Neelix/sub-Neelix_ses-Neelix02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Nerys/sub-Nerys_ses-Nerys01_HomeCage_behavior+ecephys.nwb
   - sub-Nutmeg/sub-Nutmeg_ses-Nutmeg03-HomeCage_behavior+ecephys.nwb
   - sub-Nutmeg/sub-Nutmeg_ses-Nutmeg06-HomeCage_behavior+ecephys.nwb
