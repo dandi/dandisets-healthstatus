@@ -84,7 +84,11 @@ tests:
   - sub-mouse2-fni17/sub-mouse2-fni17_ses-170719124221.nwb
   - sub-mouse2-fni17/sub-mouse2-fni17_ses-170722172014.nwb
   - sub-mouse2-fni17/sub-mouse2-fni17_ses-170723060120.nwb
-  - sub-mouse2-fni17/sub-mouse2-fni17_ses-170723153322.nwb
+  - path: sub-mouse2-fni17/sub-mouse2-fni17_ses-170723153322.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-mouse2-fni17/sub-mouse2-fni17_ses-170723205806.nwb
   - sub-mouse2-fni17/sub-mouse2-fni17_ses-170724051215.nwb
   - sub-mouse2-fni17/sub-mouse2-fni17_ses-170725043726.nwb
@@ -207,7 +211,11 @@ tests:
 - assets_nok:
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-170808184141.nwb
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-170814191401.nwb
-  - sub-mouse2-fni17/sub-mouse2-fni17_ses-170723153322.nwb
+  - path: sub-mouse2-fni17/sub-mouse2-fni17_ses-170723153322.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-mouse2-fni17/sub-mouse2-fni17_ses-170723205806.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170625140616.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170626102537.nwb

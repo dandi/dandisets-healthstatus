@@ -7,7 +7,11 @@ nassets: 27
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-AIROF/sub-AIROF_obj-122qg8l_ecephys.nwb
+  - path: sub-AIROF/sub-AIROF_obj-122qg8l_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-AIROF/sub-AIROF_obj-1yoevrs_ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -93,10 +97,14 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-AIROF/sub-AIROF_obj-122qg8l_ecephys.nwb
   - sub-AIROF/sub-AIROF_obj-o40thn_ecephys.nwb
   - sub-RuOx/sub-RuOx_obj-3pfoo4_ecephys.nwb
   assets_ok:
+  - path: sub-AIROF/sub-AIROF_obj-122qg8l_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-AIROF/sub-AIROF_obj-1yoevrs_ecephys.nwb
     versions:
       hdmf: 3.12.2

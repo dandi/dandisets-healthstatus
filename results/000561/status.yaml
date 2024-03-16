@@ -111,7 +111,11 @@ tests:
   - sub-181/sub-181_ses-20201030.nwb
   - sub-182/sub-182_ses-20200923.nwb
   - sub-182/sub-182_ses-20200924.nwb
-  - sub-182/sub-182_ses-20200925.nwb
+  - path: sub-182/sub-182_ses-20200925.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-182/sub-182_ses-20200929.nwb
   - sub-182/sub-182_ses-20200930.nwb
   - sub-182/sub-182_ses-20201001.nwb
@@ -338,7 +342,6 @@ tests:
   - sub-181/sub-181_ses-20200921.nwb
   - sub-181/sub-181_ses-20201005.nwb
   - sub-181/sub-181_ses-20201008.nwb
-  - sub-182/sub-182_ses-20200925.nwb
   - sub-182/sub-182_ses-20201006.nwb
   - sub-182/sub-182_ses-20201007.nwb
   - sub-182/sub-182_ses-20201027.nwb
@@ -450,6 +453,11 @@ tests:
   - sub-181/sub-181_ses-20201030.nwb
   - sub-182/sub-182_ses-20200923.nwb
   - sub-182/sub-182_ses-20200924.nwb
+  - path: sub-182/sub-182_ses-20200925.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-182/sub-182_ses-20200929.nwb
   - sub-182/sub-182_ses-20200930.nwb
   - sub-182/sub-182_ses-20201001.nwb
