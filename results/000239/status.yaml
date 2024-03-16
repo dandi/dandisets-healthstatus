@@ -744,7 +744,11 @@ tests:
   - sub-WO010401/sub-WO010401_ses-20191128T132628_behavior.nwb
   - sub-WO010401/sub-WO010401_ses-20191129T124135_behavior.nwb
   - sub-WO010401/sub-WO010401_ses-20191201T140021_behavior.nwb
-  - sub-WO010402/sub-WO010402_ses-20191128T141313_behavior.nwb
+  - path: sub-WO010402/sub-WO010402_ses-20191128T141313_behavior.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-WO010402/sub-WO010402_ses-20191129T134851_behavior.nwb
   - sub-WO010402/sub-WO010402_ses-20191130T171021_behavior.nwb
   assets_timeout:
@@ -1645,7 +1649,11 @@ tests:
   - sub-WO010401/sub-WO010401_ses-20191128T132628_behavior.nwb
   - sub-WO010401/sub-WO010401_ses-20191129T124135_behavior.nwb
   - sub-WO010401/sub-WO010401_ses-20191201T140021_behavior.nwb
-  - sub-WO010402/sub-WO010402_ses-20191128T141313_behavior.nwb
+  - path: sub-WO010402/sub-WO010402_ses-20191128T141313_behavior.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-WO010402/sub-WO010402_ses-20191129T134851_behavior.nwb
   - sub-WO010402/sub-WO010402_ses-20191130T171021_behavior.nwb
   name: matnwb_nwbRead

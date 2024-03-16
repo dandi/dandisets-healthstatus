@@ -84,7 +84,11 @@ tests:
   - sub-172658cell5q6a-900-700filter/sub-172658cell5q6a-900-700filter_ses-20220602T172658_image.nwb
   - sub-172721cell5/sub-172721cell5_ses-20220601T172721_image.nwb
   - sub-173014cell6q6a-900-700filter/sub-173014cell6q6a-900-700filter_ses-20220602T173014_image.nwb
-  - sub-173028cell6/sub-173028cell6_ses-20220601T173028_image.nwb
+  - path: sub-173028cell6/sub-173028cell6_ses-20220601T173028_image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-173236cell7q6a-900-700filter/sub-173236cell7q6a-900-700filter_ses-20220602T173236_image.nwb
     versions:
       hdmf: 3.12.2
@@ -211,7 +215,6 @@ tests:
   - sub-130028JEDI-cell2-hp-roifix/sub-130028JEDI-cell2-hp-roifix_ses-20220617T130028_image.nwb
   - sub-130854JEDI-cell6-hp/sub-130854JEDI-cell6-hp_ses-20220617T130854_image.nwb
   - sub-131129JEDI-cell7-hp/sub-131129JEDI-cell7-hp_ses-20220617T131129_image.nwb
-  - sub-173028cell6/sub-173028cell6_ses-20220601T173028_image.nwb
   - sub-174626cell11q6a-900-700filter/sub-174626cell11q6a-900-700filter_ses-20220602T174626_image.nwb
   - sub-175024cell13q6a-900-700filter/sub-175024cell13q6a-900-700filter_ses-20220602T175024_image.nwb
   - sub-175355cell15q6a-900-700filter/sub-175355cell15q6a-900-700filter_ses-20220602T175355_image.nwb
@@ -295,6 +298,11 @@ tests:
   - sub-172658cell5q6a-900-700filter/sub-172658cell5q6a-900-700filter_ses-20220602T172658_image.nwb
   - sub-172721cell5/sub-172721cell5_ses-20220601T172721_image.nwb
   - sub-173014cell6q6a-900-700filter/sub-173014cell6q6a-900-700filter_ses-20220602T173014_image.nwb
+  - path: sub-173028cell6/sub-173028cell6_ses-20220601T173028_image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-173236cell7q6a-900-700filter/sub-173236cell7q6a-900-700filter_ses-20220602T173236_image.nwb
     versions:
       hdmf: 3.12.2

@@ -185,7 +185,11 @@ tests:
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c21_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c24_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c26_ecephys.nwb
-  - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c27_ecephys.nwb
+  - path: sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c27_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c28_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c42_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c44_ecephys.nwb
@@ -242,7 +246,6 @@ tests:
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c21_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c24_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c26_ecephys.nwb
-  - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c27_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c42_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c44_ecephys.nwb
   - test2.nwb
@@ -378,6 +381,11 @@ tests:
   - sub-paired-english/sub-paired-english_ses-paired-english-m57-191105-163645_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-2014-11-25-Pair-3-0_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c14_ecephys.nwb
+  - path: sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c27_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c28_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c45_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c46_ecephys.nwb

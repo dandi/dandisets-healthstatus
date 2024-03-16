@@ -181,7 +181,11 @@ tests:
   - sub-KM131/sub-KM131_ses-20180118T170853_behavior+ecephys+image.nwb
   - sub-KM131/sub-KM131_ses-20180119T170444_behavior+ecephys+image.nwb
   - sub-KM131/sub-KM131_ses-20180122T193748_behavior+ecephys+image.nwb
-  - sub-KM91/sub-KM91_ses-20161215T193854_behavior+image.nwb
+  - path: sub-KM91/sub-KM91_ses-20161215T193854_behavior+image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-KM91/sub-KM91_ses-20161216T143049_behavior+image.nwb
   - sub-KM91/sub-KM91_ses-20170118T170550_behavior+image.nwb
   - sub-KM91/sub-KM91_ses-20170119T182155_behavior+image.nwb
@@ -367,7 +371,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-KM91/sub-KM91_ses-20161215T193854_behavior+image.nwb
+  - path: sub-KM91/sub-KM91_ses-20161215T193854_behavior+image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-KM91/sub-KM91_ses-20170118T170550_behavior+image.nwb
   - sub-KM91/sub-KM91_ses-20170119T182155_behavior+image.nwb
   name: matnwb_nwbRead

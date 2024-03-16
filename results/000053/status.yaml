@@ -236,7 +236,11 @@ tests:
   - sub-Lukas/sub-Lukas_ses-20191109_obj-tv693m_behavior.nwb
   - sub-Lupine/sub-Lupine_ses-20190125_behavior.nwb
   - sub-Magnolia/sub-Magnolia_ses-20190119_behavior.nwb
-  - sub-Magnolia/sub-Magnolia_ses-20190201_behavior.nwb
+  - path: sub-Magnolia/sub-Magnolia_ses-20190201_behavior.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-Magnolia/sub-Magnolia_ses-20190202_behavior.nwb
     versions:
       hdmf: 3.12.2
@@ -702,7 +706,11 @@ tests:
   - sub-Lukas/sub-Lukas_ses-20191109_obj-tv693m_behavior.nwb
   - sub-Lupine/sub-Lupine_ses-20190125_behavior.nwb
   - sub-Magnolia/sub-Magnolia_ses-20190119_behavior.nwb
-  - sub-Magnolia/sub-Magnolia_ses-20190201_behavior.nwb
+  - path: sub-Magnolia/sub-Magnolia_ses-20190201_behavior.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-Magnolia/sub-Magnolia_ses-20190202_behavior.nwb
     versions:
       hdmf: 3.12.2

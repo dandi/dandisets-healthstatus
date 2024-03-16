@@ -759,7 +759,11 @@ tests:
   - sub-NV60/sub-NV60_ses-20180309T144134_ophys.nwb
   - sub-NV60/sub-NV60_ses-20180309T144919_ophys.nwb
   - sub-NV63/sub-NV63_ses-20180308T121743_ophys.nwb
-  - sub-NV63/sub-NV63_ses-20180308T122553_ophys.nwb
+  - path: sub-NV63/sub-NV63_ses-20180308T122553_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-NV63/sub-NV63_ses-20180308T125439_ophys.nwb
   - sub-NV63/sub-NV63_ses-20180327T132121_ophys.nwb
   - sub-NV63/sub-NV63_ses-20180327T133940_ophys.nwb
@@ -860,7 +864,6 @@ tests:
   - sub-NV119/sub-NV119_ses-20190411T165200_ophys.nwb
   - sub-NV21/sub-NV21_ses-20170322T000033_ophys.nwb
   - sub-NV32/sub-NV32_ses-20170612T164835_ophys.nwb
-  - sub-NV63/sub-NV63_ses-20180308T122553_ophys.nwb
   assets_ok:
   - sub-EV06/sub-EV06_ses-20190121T202304_ophys.nwb
   - sub-EV06/sub-EV06_ses-20190121T203600_ophys.nwb
@@ -1604,6 +1607,11 @@ tests:
   - sub-NV60/sub-NV60_ses-20180309T144134_ophys.nwb
   - sub-NV60/sub-NV60_ses-20180309T144919_ophys.nwb
   - sub-NV63/sub-NV63_ses-20180308T121743_ophys.nwb
+  - path: sub-NV63/sub-NV63_ses-20180308T122553_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-NV63/sub-NV63_ses-20180308T125439_ophys.nwb
   - sub-NV63/sub-NV63_ses-20180327T132121_ophys.nwb
   - sub-NV63/sub-NV63_ses-20180327T133940_ophys.nwb
