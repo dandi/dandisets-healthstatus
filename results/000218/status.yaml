@@ -7,7 +7,11 @@ nassets: 98
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-DT1/sub-DT1_ses-DT1-rLS-20150723-1584um_ecephys.nwb
+  - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150723-1584um_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-DT1/sub-DT1_ses-DT1-rLS-20150723-1728um_ecephys.nwb
   - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150724-1800um_ecephys.nwb
     versions:
@@ -245,7 +249,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_timeout:
-  - sub-DT1/sub-DT1_ses-DT1-rLS-20150723-1584um_ecephys.nwb
+  - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150723-1584um_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-DT1/sub-DT1_ses-DT1-rLS-20150723-1728um_ecephys.nwb
   - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150724-1800um_ecephys.nwb
     versions:

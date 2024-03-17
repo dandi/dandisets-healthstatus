@@ -23,7 +23,11 @@ tests:
   - sub-703279277/sub-703279277_ses-719161530_probe-729445658_ecephys.nwb
   - sub-707296975/sub-707296975_ses-721123822.nwb
   - sub-707296975/sub-707296975_ses-721123822_probe-760213137_ecephys.nwb
-  - sub-707296975/sub-707296975_ses-721123822_probe-760213142_ecephys.nwb
+  - path: sub-707296975/sub-707296975_ses-721123822_probe-760213142_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-707296975/sub-707296975_ses-721123822_probe-760213145_ecephys.nwb
   - sub-707296975/sub-707296975_ses-721123822_probe-760213147_ecephys.nwb
   - sub-707296975/sub-707296975_ses-721123822_probe-760213150_ecephys.nwb
@@ -296,7 +300,6 @@ tests:
   - sub-699733573/sub-699733573_ses-715093703_probe-810755803_ecephys.nwb
   - sub-703279277/sub-703279277_ses-719161530.nwb
   - sub-703279277/sub-703279277_ses-719161530_probe-729445658_ecephys.nwb
-  - sub-707296975/sub-707296975_ses-721123822_probe-760213142_ecephys.nwb
   - sub-707296975/sub-707296975_ses-721123822_probe-760213145_ecephys.nwb
   - sub-707296975/sub-707296975_ses-721123822_probe-760213150_ecephys.nwb
   - sub-716813540/sub-716813540_ses-739448407_probe-757968489_ecephys.nwb
@@ -348,6 +351,11 @@ tests:
   - sub-703279277/sub-703279277_ses-719161530_probe-729445654_ecephys.nwb
   - sub-703279277/sub-703279277_ses-719161530_probe-729445656_ecephys.nwb
   - sub-707296975/sub-707296975_ses-721123822_probe-760213137_ecephys.nwb
+  - path: sub-707296975/sub-707296975_ses-721123822_probe-760213142_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-707296975/sub-707296975_ses-721123822_probe-760213147_ecephys.nwb
   - sub-707296975/sub-707296975_ses-721123822_probe-760213153_ecephys.nwb
   - sub-716813540/sub-716813540_ses-739448407_probe-757968493_ecephys.nwb

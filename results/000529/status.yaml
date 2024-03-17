@@ -55,7 +55,11 @@ tests:
   - sub-RuOx/sub-RuOx_obj-3pfoo4_ecephys.nwb
   - sub-RuOx/sub-RuOx_obj-57wh23_ecephys.nwb
   - sub-RuOx/sub-RuOx_obj-b9ezsh_ecephys.nwb
-  - sub-RuOx/sub-RuOx_obj-gan4pb_ecephys.nwb
+  - path: sub-RuOx/sub-RuOx_obj-gan4pb_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-RuOx/sub-RuOx_obj-k89anw_ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -150,7 +154,11 @@ tests:
       pynwb: 2.6.0
   - sub-RuOx/sub-RuOx_obj-57wh23_ecephys.nwb
   - sub-RuOx/sub-RuOx_obj-b9ezsh_ecephys.nwb
-  - sub-RuOx/sub-RuOx_obj-gan4pb_ecephys.nwb
+  - path: sub-RuOx/sub-RuOx_obj-gan4pb_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-RuOx/sub-RuOx_obj-k89anw_ecephys.nwb
     versions:
       hdmf: 3.12.2

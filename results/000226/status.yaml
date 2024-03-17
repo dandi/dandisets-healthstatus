@@ -130,7 +130,11 @@ tests:
   - sub-KSt95/sub-KSt95_ses-20150429T120000_behavior.nwb
   - sub-KSt96/sub-KSt96_ses-20150420T120000_behavior.nwb
   - sub-KSt97/sub-KSt97_ses-20150427T120000_behavior.nwb
-  - sub-KSt99/sub-KSt99_ses-20150506T120000_obj-1wybaw_behavior.nwb
+  - path: sub-KSt99/sub-KSt99_ses-20150506T120000_obj-1wybaw_behavior.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-KSt99/sub-KSt99_ses-20150506T120000_obj-r9qsp2_behavior.nwb
   name: pynwb_open_load_ns
 - assets_nok: []
@@ -258,7 +262,11 @@ tests:
   - sub-KSt95/sub-KSt95_ses-20150429T120000_behavior.nwb
   - sub-KSt96/sub-KSt96_ses-20150420T120000_behavior.nwb
   - sub-KSt97/sub-KSt97_ses-20150427T120000_behavior.nwb
-  - sub-KSt99/sub-KSt99_ses-20150506T120000_obj-1wybaw_behavior.nwb
+  - path: sub-KSt99/sub-KSt99_ses-20150506T120000_obj-1wybaw_behavior.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-KSt99/sub-KSt99_ses-20150506T120000_obj-r9qsp2_behavior.nwb
   name: matnwb_nwbRead
 untested: []
