@@ -2,7 +2,6 @@ from __future__ import annotations
 from collections import Counter, defaultdict
 import logging
 from operator import attrgetter
-import os
 from pathlib import Path
 import re
 from signal import SIGINT
@@ -12,6 +11,7 @@ from time import sleep
 from typing import Optional
 import anyio
 import click
+from ghreq import Client
 from packaging.version import Version
 from .checker import AssetReport, Dandiset, HealthStatus
 from .config import MATNWB_INSTALL_DIR
@@ -64,32 +64,7 @@ def check(
     dandisets: tuple[str, ...],
     mode: str,
 ) -> None:
-    log.info("Updating Dandisets dataset ...")
-    # We have embargoed dandisets which should not be cloned
-    # so we want to prevent git asking password and have to avoid non-0 exit
-    # from datalad
-    # Ref: https://github.com/dandi/dandisets-healthstatus/issues/73
-    env = {**os.environ, "GIT_TERMINAL_PROMPT": "0"}
-    subprocess.run(
-        [
-            "datalad",
-            "update",
-            "-d",
-            str(dataset_path),
-            "--follow",
-            "parentds",
-            "--how=ff-only",
-            "-r",
-            "-R1",
-        ],
-        env=env,
-        check=False,
-    )
-    subprocess.run(
-        ["datalad", "get", "-d", str(dataset_path), "-r", "-R1", "-J5", "-n"],
-        env=env,
-        check=False,
-    )
+    update_dandisets(Path(dataset_path))
     installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
     installer.install(update=True)
     hs = HealthStatus(
@@ -255,6 +230,30 @@ def find_dandiset(asset: Path) -> Optional[Path]:
         if (p / "dandiset.yaml").exists():
             return p
     return None
+
+
+def update_dandisets(dataset_path: Path) -> None:
+    # Importing this at the top of the file leads to some weird import error
+    # when running tests:
+    from datalad.api import Dataset
+
+    log.info("Updating Dandisets dataset ...")
+    # Fetch just the public repositories from the dandisets org, and then get
+    # or update just those subdatasets rather than trying to get all
+    # subdatasets and failing on private/embargoed ones
+    datasets = set()
+    with Client() as client:
+        for repo in client.paginate("/users/dandisets/repos"):
+            name = repo["name"]
+            if re.fullmatch("[0-9]{6}", name):
+                datasets.add(name)
+    ds = Dataset(dataset_path)
+    ds.update(follow="parentds", how="ff-only", recursive=True, recursion_limit=1)
+    for sub in ds.subdatasets(state="present"):
+        name = Path(sub["path"]).relative_to(dataset_path).as_posix()
+        datasets.discard(name)
+    if datasets:
+        ds.get(path=list(datasets), jobs=5, get_data=False)
 
 
 if __name__ == "__main__":
