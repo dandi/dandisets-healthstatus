@@ -7,7 +7,11 @@ nassets: 174
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-440956/sub-440956_ses-20190207T120657_behavior+ecephys+image+ogen.nwb
+  - path: sub-440956/sub-440956_ses-20190207T120657_behavior+ecephys+image+ogen.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-440956/sub-440956_ses-20190208T133600_behavior+ecephys+ogen.nwb
     versions:
       hdmf: 3.12.2
@@ -306,7 +310,11 @@ tests:
   assets_ok:
   - sub-440956/sub-440956_ses-20190210T155629_behavior+ecephys+ogen.nwb
   assets_timeout:
-  - sub-440956/sub-440956_ses-20190207T120657_behavior+ecephys+image+ogen.nwb
+  - path: sub-440956/sub-440956_ses-20190207T120657_behavior+ecephys+image+ogen.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-440956/sub-440956_ses-20190208T133600_behavior+ecephys+ogen.nwb
     versions:
       hdmf: 3.12.2

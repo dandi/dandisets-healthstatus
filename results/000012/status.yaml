@@ -7,7 +7,11 @@ nassets: 297
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-1/sub-1_ses-18516000_tis-1-1_icephys.nwb
+  - path: sub-1/sub-1_ses-18516000_tis-1-1_icephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-1/sub-1_ses-18516001_tis-1-1_icephys.nwb
   - sub-1/sub-1_ses-18516002_tis-1-1_icephys.nwb
   - sub-1/sub-1_ses-18516003_tis-1-1_icephys.nwb
@@ -606,6 +610,11 @@ tests:
   - sub-4/sub-4_ses-18531054_tis-4-2_cell-c45_icephys.nwb
   - sub-4/sub-4_ses-18531055_tis-4-2_cell-c45_icephys.nwb
   assets_ok:
+  - path: sub-1/sub-1_ses-18516000_tis-1-1_icephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-1/sub-1_ses-18516024_tis-1-2_cell-c4_icephys.nwb
     versions:
       hdmf: 3.12.2
@@ -710,7 +719,6 @@ tests:
       pynwb: 2.6.0
   - sub-4/sub-4_ses-18531047_tis-4-2_cell-c44_icephys.nwb
   assets_timeout:
-  - sub-1/sub-1_ses-18516000_tis-1-1_icephys.nwb
   - sub-1/sub-1_ses-18516001_tis-1-1_icephys.nwb
   - sub-1/sub-1_ses-18516002_tis-1-1_icephys.nwb
   - sub-1/sub-1_ses-18516003_tis-1-1_icephys.nwb

@@ -7,7 +7,11 @@ nassets: 52
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-anm101105/sub-anm101105_ses-20100619_behavior+icephys.nwb
+  - path: sub-anm101105/sub-anm101105_ses-20100619_behavior+icephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-anm101105/sub-anm101105_ses-20100620_behavior+icephys.nwb
   - sub-anm101105/sub-anm101105_ses-20100621_behavior+icephys.nwb
   - path: sub-anm106211/sub-anm106211_ses-20100925_behavior+icephys.nwb
@@ -140,7 +144,11 @@ tests:
   - sub-anm244028/sub-anm244028_ses-20141021_obj-1a5sqoc_behavior+icephys+ogen.nwb
   - sub-jf35892/sub-jf35892_ses-20100308_behavior+icephys.nwb
   assets_ok:
-  - sub-anm101105/sub-anm101105_ses-20100619_behavior+icephys.nwb
+  - path: sub-anm101105/sub-anm101105_ses-20100619_behavior+icephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-anm101105/sub-anm101105_ses-20100620_behavior+icephys.nwb
   - sub-anm101105/sub-anm101105_ses-20100621_behavior+icephys.nwb
   - path: sub-anm106211/sub-anm106211_ses-20100925_behavior+icephys.nwb
