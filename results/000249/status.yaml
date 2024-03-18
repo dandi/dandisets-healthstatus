@@ -48,7 +48,11 @@ tests:
   - sub-EV123/sub-EV123_ses-20190520T133927_ophys.nwb
   - sub-EV123/sub-EV123_ses-20190520T135421_ophys.nwb
   - sub-EV17/sub-EV17_ses-20170211T125312_ophys.nwb
-  - sub-EV17/sub-EV17_ses-20170211T130142_ophys.nwb
+  - path: sub-EV17/sub-EV17_ses-20170211T130142_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-EV17/sub-EV17_ses-20170211T131726_ophys.nwb
   - sub-EV17/sub-EV17_ses-20170211T132425_ophys.nwb
   - sub-EV17/sub-EV17_ses-20170211T133425_ophys.nwb
@@ -918,7 +922,11 @@ tests:
   - sub-EV123/sub-EV123_ses-20190520T133927_ophys.nwb
   - sub-EV123/sub-EV123_ses-20190520T135421_ophys.nwb
   - sub-EV17/sub-EV17_ses-20170211T125312_ophys.nwb
-  - sub-EV17/sub-EV17_ses-20170211T130142_ophys.nwb
+  - path: sub-EV17/sub-EV17_ses-20170211T130142_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-EV17/sub-EV17_ses-20170211T131726_ophys.nwb
   - sub-EV17/sub-EV17_ses-20170211T132425_ophys.nwb
   - sub-EV17/sub-EV17_ses-20170211T133425_ophys.nwb

@@ -234,7 +234,11 @@ tests:
   - sub-440889/sub-440889_ses-837360280_behavior+image+ophys.nwb
   - sub-440889/sub-440889_ses-837360280_behavior+ophys.nwb
   - sub-440889/sub-440889_ses-837360280_obj-raw_behavior+image+ophys.nwb
-  - sub-440889/sub-440889_ses-838633305_behavior+image+ophys.nwb
+  - path: sub-440889/sub-440889_ses-838633305_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-440889/sub-440889_ses-838633305_behavior+ophys.nwb
   - sub-440889/sub-440889_ses-838633305_obj-raw_behavior+image+ophys.nwb
   assets_timeout: []
@@ -470,7 +474,11 @@ tests:
   - sub-440889/sub-440889_ses-836968429_obj-raw_behavior+image+ophys.nwb
   - sub-440889/sub-440889_ses-837360280_behavior+image+ophys.nwb
   - sub-440889/sub-440889_ses-837360280_obj-raw_behavior+image+ophys.nwb
-  - sub-440889/sub-440889_ses-838633305_behavior+image+ophys.nwb
+  - path: sub-440889/sub-440889_ses-838633305_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-440889/sub-440889_ses-838633305_obj-raw_behavior+image+ophys.nwb
   name: matnwb_nwbRead
 untested: []
