@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T102302_ecephys.nwb
-  - sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T104800_ecephys.nwb
+  - path: sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T104800_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T105013_ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -119,7 +123,6 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T102302_ecephys.nwb
-  - sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T104800_ecephys.nwb
   - sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T105715_ecephys.nwb
   - sub-YBT-Rat2-ECoG1024/sub-YBT-Rat2-ECoG1024_ses-20200317T144139_ecephys.nwb
   - sub-YBT-Rat2-ECoG1024/sub-YBT-Rat2-ECoG1024_ses-20200317T152654_ecephys.nwb
@@ -133,6 +136,11 @@ tests:
   - sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T143729_ecephys.nwb
   - sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T144133_ecephys.nwb
   assets_ok:
+  - path: sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T104800_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T105013_ecephys.nwb
     versions:
       hdmf: 3.12.2

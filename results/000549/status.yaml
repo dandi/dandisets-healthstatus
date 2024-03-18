@@ -7,7 +7,11 @@ nassets: 26
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Fig4-5-Bi100us-09/sub-Fig4-5-Bi100us-09_ses-BPAE-5xBipolar-100us_image.nwb
+  - path: sub-Fig4-5-Bi100us-09/sub-Fig4-5-Bi100us-09_ses-BPAE-5xBipolar-100us_image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-Fig4-5-Bi100us-11/sub-Fig4-5-Bi100us-11_ses-BPAE-5xBipolar-100us_image.nwb
     versions:
       hdmf: 3.12.2
@@ -108,7 +112,6 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-Fig4-5-Bi100us-09/sub-Fig4-5-Bi100us-09_ses-BPAE-5xBipolar-100us_image.nwb
   - sub-Fig4-5-Bi100us-13/sub-Fig4-5-Bi100us-13_ses-BPAE-5xBipolar-100us_image.nwb
   - sub-Fig4-5-Bi300ns-15/sub-Fig4-5-Bi300ns-15_ses-BPAE-5xBipolar-300ns_image.nwb
   - sub-Fig4-5-Bi50us-06/sub-Fig4-5-Bi50us-06_ses-BPAE-5xBipolar-50us_image.nwb
@@ -120,6 +123,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_ok:
+  - path: sub-Fig4-5-Bi100us-09/sub-Fig4-5-Bi100us-09_ses-BPAE-5xBipolar-100us_image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-Fig4-5-Bi100us-11/sub-Fig4-5-Bi100us-11_ses-BPAE-5xBipolar-100us_image.nwb
     versions:
       hdmf: 3.12.2

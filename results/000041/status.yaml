@@ -83,7 +83,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-Dino/sub-Dino_ses-Dino-072414_ecephys.nwb
+  - path: sub-Dino/sub-Dino_ses-Dino-072414_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-Rizzo/sub-Rizzo_ses-Rizzo-022615_ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -108,7 +112,6 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-Dino/sub-Dino_ses-Dino-072414_ecephys.nwb
   - sub-Splinter/sub-Splinter_ses-Splinter-020515_ecephys.nwb
   assets_ok:
   - path: sub-Rizzo/sub-Rizzo_ses-Rizzo-022615_ecephys.nwb
@@ -194,6 +197,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-Dino/sub-Dino_ses-Dino-072314_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-Dino/sub-Dino_ses-Dino-072414_ecephys.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2

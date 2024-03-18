@@ -600,7 +600,11 @@ tests:
   - sub-TPol/sub-TPol_ses-TPol04-HomeCage_behavior+ecephys.nwb
   - sub-TPol/sub-TPol_ses-TPol05-HomeCage_behavior+ecephys.nwb
   - sub-TPol/sub-TPol_ses-TPol06-HomeCage_behavior+ecephys.nwb
-  - sub-TPol/sub-TPol_ses-TPol07-HomeCage_behavior+ecephys.nwb
+  - path: sub-TPol/sub-TPol_ses-TPol07-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Tarragon/sub-Tarragon_ses-Tarragon01-HomeCage_behavior+ecephys.nwb
   - sub-Tarragon/sub-Tarragon_ses-Tarragon01-LinearTrack_behavior+ecephys.nwb
   - sub-Tarragon/sub-Tarragon_ses-Tarragon02-HomeCage_behavior+ecephys.nwb
@@ -1146,7 +1150,6 @@ tests:
   - sub-TPol/sub-TPol_ses-TPol04-HomeCage_behavior+ecephys.nwb
   - sub-TPol/sub-TPol_ses-TPol05-HomeCage_behavior+ecephys.nwb
   - sub-TPol/sub-TPol_ses-TPol06-HomeCage_behavior+ecephys.nwb
-  - sub-TPol/sub-TPol_ses-TPol07-HomeCage_behavior+ecephys.nwb
   - sub-Tarragon/sub-Tarragon_ses-Tarragon01-HomeCage_behavior+ecephys.nwb
   - sub-Tarragon/sub-Tarragon_ses-Tarragon01-LinearTrack_behavior+ecephys.nwb
   - sub-Tarragon/sub-Tarragon_ses-Tarragon02-HomeCage_behavior+ecephys.nwb
@@ -1267,6 +1270,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-TPol/sub-TPol_ses-TPol03-HomeCage_behavior+ecephys.nwb
+  - path: sub-TPol/sub-TPol_ses-TPol07-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Tarragon/sub-Tarragon_ses-Tarragon03-LinearTrack_behavior+ecephys.nwb
   assets_timeout:
   - sub-Tarragon/sub-Tarragon_ses-Tarragon04-HomeCage_behavior+ecephys.nwb
