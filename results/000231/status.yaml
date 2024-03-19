@@ -134,7 +134,11 @@ tests:
   - sub-267CR/sub-267CR_ses-20200329T140946_behavior+ecephys+image.nwb
   - sub-267CR/sub-267CR_ses-20200330T154638_behavior+ecephys+image.nwb
   - sub-267CR/sub-267CR_ses-20200331T161053_behavior+ecephys+image.nwb
-  - sub-267CR/sub-267CR_ses-20200401T140713_behavior+ecephys+image.nwb
+  - path: sub-267CR/sub-267CR_ses-20200401T140713_behavior+ecephys+image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-KF119/sub-KF119_ses-20180109T173511_behavior+image.nwb
   - sub-KF119/sub-KF119_ses-20180110T161350_behavior+image.nwb
   - sub-KF119/sub-KF119_ses-20180111T182144_behavior+image.nwb
@@ -253,7 +257,6 @@ tests:
   - sub-267CR/sub-267CR_ses-20200329T140946_behavior+ecephys+image.nwb
   - sub-267CR/sub-267CR_ses-20200330T154638_behavior+ecephys+image.nwb
   - sub-267CR/sub-267CR_ses-20200331T161053_behavior+ecephys+image.nwb
-  - sub-267CR/sub-267CR_ses-20200401T140713_behavior+ecephys+image.nwb
   - sub-KF119/sub-KF119_ses-20180109T173511_behavior+image.nwb
   - sub-KF119/sub-KF119_ses-20180111T182144_behavior+image.nwb
   - sub-KF119/sub-KF119_ses-20180112T160910_behavior+image.nwb
@@ -373,6 +376,11 @@ tests:
       pynwb: 2.6.0
   - sub-267CR/sub-267CR_ses-20200326T151949_behavior+ecephys+image.nwb
   - sub-267CR/sub-267CR_ses-20200328T145158_behavior+ecephys+image.nwb
+  - path: sub-267CR/sub-267CR_ses-20200401T140713_behavior+ecephys+image.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-KF119/sub-KF119_ses-20180110T161350_behavior+image.nwb
   - sub-KF132/sub-KF132_ses-20180219T185541_behavior+image.nwb
   - sub-KF132/sub-KF132_ses-20180221T155455_behavior+image.nwb

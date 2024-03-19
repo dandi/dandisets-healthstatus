@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210302_behavior+ecephys.nwb
-  - sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210312_behavior+ecephys.nwb
+  - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210312_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210314_behavior+ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -207,7 +211,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210312_behavior+ecephys.nwb
+  - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210312_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210319_behavior+ecephys.nwb
   - sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210322_behavior+ecephys.nwb
   - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210328_behavior+ecephys.nwb

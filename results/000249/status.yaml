@@ -14,7 +14,11 @@ tests:
   - sub-EV06/sub-EV06_ses-20190121T212350_ophys.nwb
   - sub-EV06/sub-EV06_ses-20190121T213930_ophys.nwb
   - sub-EV104/sub-EV104_ses-20190218T181936_ophys.nwb
-  - sub-EV104/sub-EV104_ses-20190218T182850_ophys.nwb
+  - path: sub-EV104/sub-EV104_ses-20190218T182850_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-EV104/sub-EV104_ses-20190218T183454_ophys.nwb
   - sub-EV104/sub-EV104_ses-20190218T184913_ophys.nwb
   - sub-EV104/sub-EV104_ses-20190218T190432_ophys.nwb
@@ -892,7 +896,11 @@ tests:
   - sub-EV06/sub-EV06_ses-20190121T212350_ophys.nwb
   - sub-EV06/sub-EV06_ses-20190121T213930_ophys.nwb
   - sub-EV104/sub-EV104_ses-20190218T181936_ophys.nwb
-  - sub-EV104/sub-EV104_ses-20190218T182850_ophys.nwb
+  - path: sub-EV104/sub-EV104_ses-20190218T182850_ophys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-EV104/sub-EV104_ses-20190218T183454_ophys.nwb
   - sub-EV104/sub-EV104_ses-20190218T184913_ophys.nwb
   - sub-EV104/sub-EV104_ses-20190218T190432_ophys.nwb
