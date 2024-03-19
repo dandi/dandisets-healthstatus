@@ -37,7 +37,11 @@ tests:
       pynwb: 2.6.0
   - sub-BH249/sub-BH249_ses-20211108_obj-1gyvr1i.nwb
   - sub-BH249/sub-BH249_ses-20211108_obj-1sbgoas.nwb
-  - sub-BH249/sub-BH249_ses-20211108_obj-gvug5l.nwb
+  - path: sub-BH249/sub-BH249_ses-20211108_obj-gvug5l.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-BH250/sub-BH250_ses-20211103_obj-1effznk.nwb
   - sub-BH250/sub-BH250_ses-20211103_obj-1w64gxv.nwb
   - path: sub-BH250/sub-BH250_ses-20211103_obj-q4v2gq.nwb
@@ -214,7 +218,11 @@ tests:
 - assets_nok:
   - sub-BH248/sub-BH248_ses-20211107_obj-13j2ha0.nwb
   - sub-BH248/sub-BH248_ses-20211107_obj-1hklyrh.nwb
-  - sub-BH249/sub-BH249_ses-20211108_obj-gvug5l.nwb
+  - path: sub-BH249/sub-BH249_ses-20211108_obj-gvug5l.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-BH250/sub-BH250_ses-20211103_obj-1effznk.nwb
   - sub-BH251/sub-BH251_ses-20211110_obj-t53ap5.nwb
   - sub-BH252/sub-BH252_ses-20211111_obj-1s22i1h.nwb

@@ -193,7 +193,11 @@ tests:
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-2015-09-03-Pair-9-0B_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c14_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c16_ecephys.nwb
-  - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c19_ecephys.nwb
+  - path: sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c19_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c21_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c24_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c26_ecephys.nwb
@@ -253,7 +257,6 @@ tests:
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-2015-09-03-Pair-9-0A_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-2015-09-03-Pair-9-0B_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c16_ecephys.nwb
-  - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c19_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c21_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c24_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c26_ecephys.nwb
@@ -405,6 +408,11 @@ tests:
   - sub-paired-english/sub-paired-english_ses-paired-english-m57-191105-163645_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-2014-11-25-Pair-3-0_ecephys.nwb
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c14_ecephys.nwb
+  - path: sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c19_ecephys.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c27_ecephys.nwb
     versions:
       hdmf: 3.12.2

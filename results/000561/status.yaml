@@ -15,7 +15,11 @@ tests:
   - sub-176/sub-176_ses-20201001.nwb
   - sub-176/sub-176_ses-20201005.nwb
   - sub-176/sub-176_ses-20201006.nwb
-  - sub-176/sub-176_ses-20201014.nwb
+  - path: sub-176/sub-176_ses-20201014.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-176/sub-176_ses-20201015.nwb
   - sub-176/sub-176_ses-20201019.nwb
   - path: sub-176/sub-176_ses-20201021.nwb
@@ -341,7 +345,6 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-176/sub-176_ses-20200929.nwb
-  - sub-176/sub-176_ses-20201014.nwb
   - sub-178/sub-178.nwb
   - sub-178/sub-178_ses-20201009.nwb
   - sub-178/sub-178_ses-20201026.nwb
@@ -388,6 +391,11 @@ tests:
   - sub-176/sub-176_ses-20201001.nwb
   - sub-176/sub-176_ses-20201005.nwb
   - sub-176/sub-176_ses-20201006.nwb
+  - path: sub-176/sub-176_ses-20201014.nwb
+    versions:
+      hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-176/sub-176_ses-20201015.nwb
   - sub-176/sub-176_ses-20201019.nwb
   - path: sub-176/sub-176_ses-20201021.nwb
