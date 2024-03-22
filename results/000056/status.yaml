@@ -129,7 +129,7 @@ tests:
   - sub-Mouse28/sub-Mouse28_ses-Mouse28-140312_behavior+ecephys.nwb
   - path: sub-Mouse28/sub-Mouse28_ses-Mouse28-140313_behavior+ecephys.nwb
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-Mouse28/sub-Mouse28_ses-Mouse28-140317_behavior+ecephys.nwb
@@ -254,11 +254,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-Mouse28/sub-Mouse28_ses-Mouse28-140313_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - sub-Mouse28/sub-Mouse28_ses-Mouse28-140317_behavior+ecephys.nwb
   - path: sub-Mouse32/sub-Mouse32_ses-Mouse32-140820_behavior+ecephys.nwb
     versions:
@@ -274,6 +269,11 @@ tests:
   - path: sub-Mouse17/sub-Mouse17_ses-Mouse17-130202_behavior+ecephys.nwb
     versions:
       hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-Mouse28/sub-Mouse28_ses-Mouse28-140313_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   name: matnwb_nwbRead

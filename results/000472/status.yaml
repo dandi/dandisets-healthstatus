@@ -10,7 +10,11 @@ tests:
   - sub-2021-12-03-w00-NP1/sub-2021-12-03-w00-NP1_ses-20211203_ophys.nwb
   - sub-2022-01-22-w04-NP1/sub-2022-01-22-w04-NP1_ses-20220122.nwb
   - sub-2022-01-22-w04-NP1/sub-2022-01-22-w04-NP1_ses-20220122_ophys.nwb
-  - sub-2022-02-11-w03-NP1/sub-2022-02-11-w03-NP1_ses-20220211.nwb
+  - path: sub-2022-02-11-w03-NP1/sub-2022-02-11-w03-NP1_ses-20220211.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-2022-02-11-w03-NP1/sub-2022-02-11-w03-NP1_ses-20220211_ophys.nwb
   - sub-2022-02-12-w00-NP1/sub-2022-02-12-w00-NP1_ses-20220212.nwb
   - sub-2022-02-12-w00-NP1/sub-2022-02-12-w00-NP1_ses-20220212_ophys.nwb
@@ -29,14 +33,18 @@ tests:
   assets_ok: []
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-2022-02-11-w03-NP1/sub-2022-02-11-w03-NP1_ses-20220211.nwb
+- assets_nok: []
   assets_ok: []
   assets_timeout:
   - sub-2021-12-03-w00-NP1/sub-2021-12-03-w00-NP1_ses-20211203.nwb
   - sub-2021-12-03-w00-NP1/sub-2021-12-03-w00-NP1_ses-20211203_ophys.nwb
   - sub-2022-01-22-w04-NP1/sub-2022-01-22-w04-NP1_ses-20220122.nwb
   - sub-2022-01-22-w04-NP1/sub-2022-01-22-w04-NP1_ses-20220122_ophys.nwb
+  - path: sub-2022-02-11-w03-NP1/sub-2022-02-11-w03-NP1_ses-20220211.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-2022-02-11-w03-NP1/sub-2022-02-11-w03-NP1_ses-20220211_ophys.nwb
   - sub-2022-02-12-w00-NP1/sub-2022-02-12-w00-NP1_ses-20220212.nwb
   - sub-2022-02-12-w00-NP1/sub-2022-02-12-w00-NP1_ses-20220212_ophys.nwb

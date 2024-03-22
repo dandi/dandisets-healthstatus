@@ -108,7 +108,7 @@ tests:
       pynwb: 2.6.0
   - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T143506_ecephys.nwb
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T143729_ecephys.nwb
@@ -231,6 +231,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T143506_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T143955_ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -246,12 +251,7 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  assets_timeout:
-  - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T143506_ecephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

@@ -96,7 +96,11 @@ tests:
       pynwb: 2.6.0
   - sub-DT7/sub-DT7_ses-20170412-1440um-1170um-170412-103153_behavior+ecephys.nwb
   - sub-DT8/sub-DT8_ses-20170125-0um-0um-merge_behavior+ecephys.nwb
-  - sub-DT8/sub-DT8_ses-20170128-0um-72um-merge_behavior+ecephys.nwb
+  - path: sub-DT8/sub-DT8_ses-20170128-0um-72um-merge_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-DT8/sub-DT8_ses-20170201-72um-432um-merge_behavior+ecephys.nwb
   - path: sub-DT8/sub-DT8_ses-20170202-72um-576um-170202-092033_behavior+ecephys.nwb
     versions:
@@ -252,7 +256,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-DT8/sub-DT8_ses-20170125-0um-0um-merge_behavior+ecephys.nwb
-  - sub-DT8/sub-DT8_ses-20170128-0um-72um-merge_behavior+ecephys.nwb
   - sub-DT8/sub-DT8_ses-20170201-72um-432um-merge_behavior+ecephys.nwb
   - path: sub-DT8/sub-DT8_ses-20170202-72um-576um-170202-092033_behavior+ecephys.nwb
     versions:
@@ -319,6 +322,11 @@ tests:
   - sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3468um-1252um-20160226-160226-124132_behavior+ecephys.nwb
   - sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3540um-1288um-20160227-160227-121226_behavior+ecephys.nwb
   - sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3540um-1288um-20160228-160228-135001_behavior+ecephys.nwb
+  - path: sub-DT8/sub-DT8_ses-20170128-0um-72um-merge_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-DT9/sub-DT9_ses-20170501-216um-0um-170501-112210_behavior+ecephys.nwb
     versions:
       hdmf: 3.12.2
