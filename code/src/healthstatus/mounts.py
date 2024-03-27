@@ -79,6 +79,7 @@ class FuseMounter(Mounter):
     def mount(self) -> Iterator[None]:
         if not self.dataset_path.exists():
             log.info("Cloning dandi/dandisets to %s ...", self.dataset_path)
+            self.dataset_path.mkdir(parents=True, exist_ok=True)
             subprocess.run(
                 [
                     "datalad",
@@ -91,6 +92,7 @@ class FuseMounter(Mounter):
             get_dandisets(Dataset(self.dataset_path))
         elif self.update:
             update_dandisets(self.dataset_path)
+        self.mount_path.mkdir(parents=True, exist_ok=True)
         with (self.logdir / "fuse.log").open("wb") as fp:
             log.debug("Starting `datalad fusefs` process ...")
             with subprocess.Popen(
@@ -128,6 +130,7 @@ class WebDavFSMounter(Mounter):
     @contextmanager
     def mount(self) -> Iterator[None]:
         log.debug("Mounting webdavfs mount ...")
+        self.mount_path.mkdir(parents=True, exist_ok=True)
         subprocess.run(
             [
                 "sudo",
@@ -162,6 +165,7 @@ class DavFS2Mounter(Mounter):
     @contextmanager
     def mount(self) -> Iterator[None]:
         log.debug("Mounting davfs2 mount ...")
+        self.mount_path.mkdir(parents=True, exist_ok=True)
         subprocess.run(
             ["sudo", "mount", "-t", "davfs", DANDIDAV_URL, os.fspath(self.mount_path)],
             check=True,
