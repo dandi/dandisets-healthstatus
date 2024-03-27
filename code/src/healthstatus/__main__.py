@@ -302,7 +302,7 @@ def time_mounts(
     update_dataset: bool,
 ) -> None:
     """Run timed tests on Dandiset assets using various mounting technologies"""
-    for t in TESTS:
+    for t in TIMED_TESTS:
         t.prepare()
     results = []
     for mounter in iter_mounters(
