@@ -13,8 +13,9 @@ from time import sleep
 from typing import Any
 import click
 from ghreq import Client
-import requests
 from .core import AssetPath, log
+
+DANDIDAV_URL = "https://webdav.dandiarchive.org"
 
 
 @dataclass
@@ -118,52 +119,15 @@ class FuseMounter(Mounter):
 
 
 @dataclass
-class DandiDavMounter(Mounter):
+class WebDavFSMounter(Mounter):
     mount_path: Path
-    logdir: Path = field(default_factory=Path)
 
-    @contextmanager
-    def dandidav(self) -> Iterator[str]:
-        with (self.logdir / "dandidav.log").open("wb") as fp:
-            log.debug("Starting `dandidav` process ...")
-            with subprocess.Popen(["dandidav"], stdout=fp, stderr=fp) as p:
-                try:
-                    url = "http://127.0.0.1:8080"
-                    for _ in range(10):
-                        try:
-                            requests.get(url, timeout=1)
-                        except requests.RequestException:
-                            sleep(1)
-                        else:
-                            break
-                    else:
-                        raise RuntimeError("WebDAV server did not start up time")
-                    yield url
-                finally:
-                    log.debug("Terminating `dandidav` process ...")
-                    p.send_signal(SIGINT)
-
-    @abstractmethod
-    def mount_webdav(self, url: str) -> AbstractContextManager[None]:
-        ...
-
-    @contextmanager
-    def mount(self) -> Iterator[None]:
-        with self.dandidav() as url:
-            with self.mount_webdav(url):
-                yield
-
-    def resolve(self, asset: AssetInDandiset) -> Path:
-        return self.mount_path / asset.dandiset_id / "draft" / asset.asset_path
-
-
-class WebDavFSMounter(DandiDavMounter):
     @property
     def type(self) -> MountType:
         return MountType.WEBDAVFS
 
     @contextmanager
-    def mount_webdav(self, url: str) -> Iterator[None]:
+    def mount(self) -> Iterator[None]:
         log.debug("Mounting webdavfs mount ...")
         subprocess.run(
             [
@@ -173,7 +137,7 @@ class WebDavFSMounter(DandiDavMounter):
                 "webdavfs",
                 "-o",
                 "allow_other",
-                url,
+                DANDIDAV_URL,
                 os.fspath(self.mount_path),
             ],
             check=True,
@@ -184,17 +148,23 @@ class WebDavFSMounter(DandiDavMounter):
             log.debug("Unmounting webdavfs mount ...")
             subprocess.run(["sudo", "umount", os.fspath(self.mount_path)], check=True)
 
+    def resolve(self, asset: AssetInDandiset) -> Path:
+        return self.mount_path / asset.dandiset_id / "draft" / asset.asset_path
 
-class DavFS2Mounter(DandiDavMounter):
+
+@dataclass
+class DavFS2Mounter(Mounter):
+    mount_path: Path
+
     @property
     def type(self) -> MountType:
         return MountType.DAVFS2
 
     @contextmanager
-    def mount_webdav(self, url: str) -> Iterator[None]:
+    def mount(self) -> Iterator[None]:
         log.debug("Mounting davfs2 mount ...")
         subprocess.run(
-            ["sudo", "mount", "-t", "davfs", url, os.fspath(self.mount_path)],
+            ["sudo", "mount", "-t", "davfs", DANDIDAV_URL, os.fspath(self.mount_path)],
             check=True,
         )
         try:
@@ -202,6 +172,9 @@ class DavFS2Mounter(DandiDavMounter):
         finally:
             log.debug("Unmounting davfs2 mount ...")
             subprocess.run(["sudo", "umount", os.fspath(self.mount_path)], check=True)
+
+    def resolve(self, asset: AssetInDandiset) -> Path:
+        return self.mount_path / asset.dandiset_id / "draft" / asset.asset_path
 
 
 def iter_mounters(
@@ -221,9 +194,9 @@ def iter_mounters(
             logdir=logdir,
         )
     if MountType.WEBDAVFS in types:
-        yield WebDavFSMounter(mount_path=mount_path, logdir=logdir)
+        yield WebDavFSMounter(mount_path=mount_path)
     if MountType.DAVFS2 in types:
-        yield DavFS2Mounter(mount_path=mount_path, logdir=logdir)
+        yield DavFS2Mounter(mount_path=mount_path)
 
 
 def update_dandisets(dataset_path: Path) -> None:
