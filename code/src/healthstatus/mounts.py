@@ -12,6 +12,7 @@ import subprocess
 from time import sleep
 from typing import Any
 import click
+from datalad.api import Dataset
 from ghreq import Client
 from .core import AssetPath, log
 
@@ -76,8 +77,6 @@ class FuseMounter(Mounter):
 
     @contextmanager
     def mount(self) -> Iterator[None]:
-        from datalad.api import Dataset
-
         if not self.dataset_path.exists():
             log.info("Cloning dandi/dandisets to %s ...", self.dataset_path)
             subprocess.run(
@@ -200,12 +199,7 @@ def iter_mounters(
 
 
 def update_dandisets(dataset_path: Path) -> None:
-    # Importing this at the top of the file leads to some weird import error
-    # when running tests:
-    from datalad.api import Dataset
-
     log.info("Updating Dandisets dataset ...")
-
     ds = Dataset(dataset_path)
     ds.update(follow="parentds", how="ff-only", recursive=True, recursion_limit=1)
     get_dandisets(ds)
