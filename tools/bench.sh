@@ -2,15 +2,20 @@
 set -ex
 
 PYTHON="$HOME"/miniconda3/bin/python
-DANDISETS_PATH=/mnt/backup/dandi/dandisets-healthstatus/dandisets
+DANDISETS_PATH="$HOME"/healthstatus-dandisets
 MOUNT_PATH=/tmp/dandisets-fuse
 
 cd "$(dirname "$0")"/..
 
-"$PYTHON" -m virtualenv --clear venv
-. venv/bin/activate
-pip install './code[dandi]'
-pip install 'git+https://github.com/jwodder/filesystem_spec@rlock-cache'
+if [ ! -e venv ]
+then
+    "$PYTHON" -m virtualenv venv
+    . venv/bin/activate
+    pip install -e './code[dandi]'
+    pip install 'git+https://github.com/jwodder/filesystem_spec@rlock-cache'
+else
+    . venv/bin/activate
+fi
 
 dandisets-healthstatus time-mounts \
     -d "$DANDISETS_PATH" \
