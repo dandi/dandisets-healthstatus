@@ -13,7 +13,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-001/sub-001_ses-20220526.nwb
-  - sub-001/sub-001_ses-20220706.nwb
+  - path: sub-001/sub-001_ses-20220706.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
@@ -25,7 +29,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-001/sub-001_ses-20220526.nwb
-  - sub-001/sub-001_ses-20220706.nwb
+  - path: sub-001/sub-001_ses-20220706.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   name: matnwb_nwbRead
 untested: []
 versions:

@@ -261,7 +261,11 @@ tests:
   - sub-Garrett/sub-Garrett_ses-Garrett05_HomeCage_behavior+ecephys.nwb
   - sub-Garrett/sub-Garrett_ses-Garrett06_HomeCage_behavior+ecephys.nwb
   - sub-Grasshopper/sub-Grasshopper_ses-Grasshopper01-HomeCage_behavior+ecephys.nwb
-  - sub-Grasshopper/sub-Grasshopper_ses-Grasshopper02_desc-HomeCage_behavior+ecephys.nwb
+  - path: sub-Grasshopper/sub-Grasshopper_ses-Grasshopper02_desc-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Grasshopper/sub-Grasshopper_ses-Grasshopper03-HomeCage_behavior+ecephys.nwb
   - sub-Grasshopper/sub-Grasshopper_ses-Grasshopper04-HomeCage_behavior+ecephys.nwb
   - sub-Grasshopper/sub-Grasshopper_ses-Grasshopper05-HomeCage_behavior+ecephys.nwb
@@ -894,7 +898,6 @@ tests:
   - sub-Garrett/sub-Garrett_ses-Garrett04-HomeCage_behavior+ecephys.nwb
   - sub-Garrett/sub-Garrett_ses-Garrett06_HomeCage_behavior+ecephys.nwb
   - sub-Grasshopper/sub-Grasshopper_ses-Grasshopper01-HomeCage_behavior+ecephys.nwb
-  - sub-Grasshopper/sub-Grasshopper_ses-Grasshopper02_desc-HomeCage_behavior+ecephys.nwb
   - sub-Grasshopper/sub-Grasshopper_ses-Grasshopper03-HomeCage_behavior+ecephys.nwb
   - sub-Grasshopper/sub-Grasshopper_ses-Grasshopper04-HomeCage_behavior+ecephys.nwb
   - sub-Grasshopper/sub-Grasshopper_ses-Grasshopper05-HomeCage_behavior+ecephys.nwb
@@ -1311,6 +1314,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_timeout:
+  - path: sub-Grasshopper/sub-Grasshopper_ses-Grasshopper02_desc-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Tarragon/sub-Tarragon_ses-Tarragon04-HomeCage_behavior+ecephys.nwb
   - sub-Tarragon/sub-Tarragon_ses-Tarragon04-LinearTrack_behavior+ecephys.nwb
   - sub-Tarragon/sub-Tarragon_ses-Tarragon05-HomeCage_behavior+ecephys.nwb

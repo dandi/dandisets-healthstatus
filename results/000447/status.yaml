@@ -13,7 +13,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-JDS-NFN-JS17/sub-JDS-NFN-JS17_behavior+ecephys.nwb
-  - sub-JDS-NFN-JS21/sub-JDS-NFN-JS21_behavior+ecephys.nwb
+  - path: sub-JDS-NFN-JS21/sub-JDS-NFN-JS21_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-JDS-NFN-JS34/sub-JDS-NFN-JS34_behavior+ecephys.nwb
   - sub-JDS-NFN-ZT2/sub-JDS-NFN-ZT2_behavior+ecephys.nwb
   assets_timeout: []
@@ -25,9 +29,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-JDS-NFN-JS17/sub-JDS-NFN-JS17_behavior+ecephys.nwb
+  - path: sub-JDS-NFN-JS21/sub-JDS-NFN-JS21_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-JDS-NFN-ZT2/sub-JDS-NFN-ZT2_behavior+ecephys.nwb
   assets_ok:
-  - sub-JDS-NFN-JS21/sub-JDS-NFN-JS21_behavior+ecephys.nwb
   - sub-JDS-NFN-JS34/sub-JDS-NFN-JS34_behavior+ecephys.nwb
   assets_timeout: []
   name: matnwb_nwbRead

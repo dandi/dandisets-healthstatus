@@ -12,7 +12,11 @@ tests:
   - sub-MX170903/sub-MX170903_ses-20180218T142340.nwb
   - sub-MX170903/sub-MX170903_ses-20180219T150800.nwb
   - sub-MX170903/sub-MX170903_ses-20180221T163049.nwb
-  - sub-MX170903/sub-MX170903_ses-20180223T140344.nwb
+  - path: sub-MX170903/sub-MX170903_ses-20180223T140344.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-MX170903/sub-MX170903_ses-20180224T131405.nwb
   - sub-MX170903/sub-MX170903_ses-20180225T131540.nwb
   - sub-MX170903/sub-MX170903_ses-20180226T144146.nwb
@@ -980,7 +984,11 @@ tests:
   - sub-VC010102/sub-VC010102_ses-20191117T121951_behavior.nwb
   assets_ok:
   - sub-MX170903/sub-MX170903_ses-20180218T142340.nwb
-  - sub-MX170903/sub-MX170903_ses-20180223T140344.nwb
+  - path: sub-MX170903/sub-MX170903_ses-20180223T140344.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-MX170903/sub-MX170903_ses-20180224T131405.nwb
   - sub-MX170903/sub-MX170903_ses-20180226T144146.nwb
   - sub-MX170903/sub-MX170903_ses-20180301T171753.nwb
