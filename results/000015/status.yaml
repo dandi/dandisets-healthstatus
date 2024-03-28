@@ -13,7 +13,11 @@ tests:
   - sub-an041/sub-an041_ses-20140823_obj-5qbi06.nwb
   - sub-an041/sub-an041_ses-20140823_obj-6xh5s8.nwb
   - sub-an041/sub-an041_ses-20140823_obj-9l0ag0.nwb
-  - sub-an041/sub-an041_ses-20140823_obj-c486zn.nwb
+  - path: sub-an041/sub-an041_ses-20140823_obj-c486zn.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-an041/sub-an041_ses-20140823_obj-m2u696.nwb
   - sub-an041/sub-an041_ses-20140825_obj-1k6balg.nwb
   - sub-an041/sub-an041_ses-20140825_obj-a0owv2.nwb
@@ -328,7 +332,6 @@ tests:
   - sub-an041/sub-an041_ses-20140821_obj-jpt9d0.nwb
   - sub-an041/sub-an041_ses-20140823_obj-14abxhj.nwb
   - sub-an041/sub-an041_ses-20140823_obj-6xh5s8.nwb
-  - sub-an041/sub-an041_ses-20140823_obj-c486zn.nwb
   - sub-an041/sub-an041_ses-20140823_obj-m2u696.nwb
   - sub-an041/sub-an041_ses-20140825_obj-1k6balg.nwb
   - sub-an041/sub-an041_ses-20140825_obj-kghsci.nwb
@@ -428,6 +431,11 @@ tests:
   assets_ok:
   - sub-an041/sub-an041_ses-20140823_obj-5qbi06.nwb
   - sub-an041/sub-an041_ses-20140823_obj-9l0ag0.nwb
+  - path: sub-an041/sub-an041_ses-20140823_obj-c486zn.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-an041/sub-an041_ses-20140825_obj-a0owv2.nwb
   - sub-an041/sub-an041_ses-20140826_obj-16dkvj5.nwb
   - sub-an041/sub-an041_ses-20140826_obj-1q44jv8.nwb

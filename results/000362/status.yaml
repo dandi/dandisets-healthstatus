@@ -11,7 +11,11 @@ tests:
   - jGCaMP8f/jGCaMP8f_ANM471993_cell02.nwb
   - jGCaMP8f/jGCaMP8f_ANM471993_cell03.nwb
   - jGCaMP8f/jGCaMP8f_ANM471994_cell01.nwb
-  - jGCaMP8f/jGCaMP8f_ANM471994_cell02.nwb
+  - path: jGCaMP8f/jGCaMP8f_ANM471994_cell02.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: jGCaMP8f/jGCaMP8f_ANM471994_cell03.nwb
     versions:
       hdmf: 3.12.2
@@ -154,7 +158,6 @@ tests:
   - jGCaMP8f/jGCaMP8f_ANM471993_cell02.nwb
   - jGCaMP8f/jGCaMP8f_ANM471993_cell03.nwb
   - jGCaMP8f/jGCaMP8f_ANM471994_cell01.nwb
-  - jGCaMP8f/jGCaMP8f_ANM471994_cell02.nwb
   - jGCaMP8f/jGCaMP8f_ANM471994_cell05.nwb
   - jGCaMP8f/jGCaMP8f_ANM471994_cell08.nwb
   - jGCaMP8f/jGCaMP8f_ANM478342_cell01.nwb
@@ -212,6 +215,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_timeout:
+  - path: jGCaMP8f/jGCaMP8f_ANM471994_cell02.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: jGCaMP8f/jGCaMP8f_ANM471994_cell03.nwb
     versions:
       hdmf: 3.12.2
