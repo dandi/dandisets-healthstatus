@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-219CR/sub-219CR_ses-20190403T123013_behavior+image.nwb
-  - sub-219CR/sub-219CR_ses-20190404T152625_behavior+image.nwb
+  - path: sub-219CR/sub-219CR_ses-20190404T152625_behavior+image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-219CR/sub-219CR_ses-20190408T153246_behavior+image.nwb
   - sub-219CR/sub-219CR_ses-20190409T144717_behavior+image.nwb
   - sub-219CR/sub-219CR_ses-20190410T150524_behavior+image.nwb
@@ -292,7 +296,11 @@ tests:
   - sub-KM91/sub-KM91_ses-20170313T135620_behavior+image.nwb
   assets_ok: []
   assets_timeout:
-  - sub-219CR/sub-219CR_ses-20190404T152625_behavior+image.nwb
+  - path: sub-219CR/sub-219CR_ses-20190404T152625_behavior+image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-219CR/sub-219CR_ses-20190408T153246_behavior+image.nwb
   - sub-219CR/sub-219CR_ses-20190418T141317_behavior+image.nwb
   - sub-219CR/sub-219CR_ses-20190419T152632_behavior+image.nwb

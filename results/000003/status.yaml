@@ -202,7 +202,7 @@ tests:
   - sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161013_behavior+ecephys.nwb
   - path: sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161014_behavior+ecephys.nwb
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161016_behavior+ecephys.nwb
@@ -333,11 +333,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161014_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   assets_timeout:
   - sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140325_behavior+ecephys.nwb
   - sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140327_behavior+ecephys.nwb
@@ -412,6 +407,11 @@ tests:
   - path: sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161011_behavior+ecephys.nwb
     versions:
       hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161014_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   name: matnwb_nwbRead

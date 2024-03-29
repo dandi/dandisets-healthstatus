@@ -11,9 +11,9 @@ tests:
   - sub-Haydn/sub-Haydn_desc-train_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-Haydn/sub-Haydn_desc-test_ecephys.nwb
+- assets_nok: []
   assets_ok:
+  - sub-Haydn/sub-Haydn_desc-test_ecephys.nwb
   - sub-Haydn/sub-Haydn_desc-train_ecephys.nwb
   assets_timeout: []
   name: matnwb_nwbRead

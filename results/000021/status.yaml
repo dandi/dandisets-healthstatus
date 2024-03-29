@@ -318,7 +318,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-775876808/sub-775876808_ses-798911424_probe-800036206_ecephys.nwb
-  - sub-776061236/sub-776061236_ses-797828357.nwb
+  - path: sub-776061236/sub-776061236_ses-797828357.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-776061236/sub-776061236_ses-797828357_probe-805579734_ecephys.nwb
   - sub-776061236/sub-776061236_ses-797828357_probe-805579738_ecephys.nwb
   - sub-776061236/sub-776061236_ses-797828357_probe-805579741_ecephys.nwb
@@ -647,7 +651,11 @@ tests:
   - sub-745276220/sub-745276220_ses-762120172.nwb
   - sub-769360771/sub-769360771_ses-791319847.nwb
   - sub-772616820/sub-772616820_ses-799864342.nwb
-  - sub-776061236/sub-776061236_ses-797828357.nwb
+  - path: sub-776061236/sub-776061236_ses-797828357.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   name: matnwb_nwbRead
 untested: []
 versions:

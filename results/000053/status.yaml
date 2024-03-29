@@ -12,7 +12,11 @@ tests:
   - sub-Barbara/sub-Barbara_ses-20190429_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190430_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190502_behavior.nwb
-  - sub-Barbara/sub-Barbara_ses-20190504_behavior.nwb
+  - path: sub-Barbara/sub-Barbara_ses-20190504_behavior.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Barbara/sub-Barbara_ses-20190505_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190506_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190508_behavior.nwb
@@ -577,7 +581,11 @@ tests:
   - sub-Azalea/sub-Azalea_ses-20190309_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190429_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190430_behavior.nwb
-  - sub-Barbara/sub-Barbara_ses-20190504_behavior.nwb
+  - path: sub-Barbara/sub-Barbara_ses-20190504_behavior.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Barbara/sub-Barbara_ses-20190508_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190509_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190511_behavior.nwb

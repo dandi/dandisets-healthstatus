@@ -206,7 +206,11 @@ tests:
   - sub-269/sub-269_ses-Ca-VS-VR-BTW-TRACKS-REWSIZE-1.nwb
   - sub-269/sub-269_ses-Ca-VS-VR-DYNSPD-2.nwb
   - sub-271/sub-271_ses-Ca-VS-VR-CLOOP-PATTERN-1.nwb
-  - sub-271/sub-271_ses-Ca-VS-VR-CLOOP-SOLID-1.nwb
+  - path: sub-271/sub-271_ses-Ca-VS-VR-CLOOP-SOLID-1.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-272/sub-272_ses-Ca-VS-VR-BTW-TRACKS-REWSIZE-2.nwb
   - sub-272/sub-272_ses-Ca-VS-VR-DYNSPD-3.nwb
   - sub-273/sub-273_ses-Ca-VS-VR-BTW-TRACKS-REWSIZE-3.nwb
@@ -722,7 +726,6 @@ tests:
   - sub-253/sub-253_ses-Ca-VS-VR-TP-BTW-TRACKS-6.nwb
   - sub-269/sub-269_ses-Ca-VS-VR-DYNSPD-2.nwb
   - sub-271/sub-271_ses-Ca-VS-VR-CLOOP-PATTERN-1.nwb
-  - sub-271/sub-271_ses-Ca-VS-VR-CLOOP-SOLID-1.nwb
   - sub-272/sub-272_ses-Ca-VS-VR-DYNSPD-3.nwb
   - sub-276/sub-276_ses-Ca-VS-VR-BTW-TRACKS-REWSIZE-4.nwb
   - sub-277/sub-277_ses-Ca-VS-VR-DYNSPD-5.nwb
@@ -1067,6 +1070,11 @@ tests:
   - sub-244/sub-244_ses-Ca-VS-VR-TP-BTW-TRACKS-3.nwb
   - sub-249/sub-249_ses-Ca-VS-VR-BWD-TP-5.nwb
   - sub-269/sub-269_ses-Ca-VS-VR-BTW-TRACKS-REWSIZE-1.nwb
+  - path: sub-271/sub-271_ses-Ca-VS-VR-CLOOP-SOLID-1.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-272/sub-272_ses-Ca-VS-VR-BTW-TRACKS-REWSIZE-2.nwb
   - sub-273/sub-273_ses-Ca-VS-VR-BTW-TRACKS-REWSIZE-3.nwb
   - sub-276/sub-276_ses-Ca-VS-VR-DYNSPD-4.nwb
