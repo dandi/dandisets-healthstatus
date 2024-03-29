@@ -10,10 +10,10 @@ tests:
   assets_ok: []
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-8/sub-8_ophys.nwb
+- assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-8/sub-8_ophys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

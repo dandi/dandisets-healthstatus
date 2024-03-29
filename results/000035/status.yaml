@@ -15,7 +15,11 @@ tests:
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-15_slice-20200407-slice-5_cell-20200407-sample-15_icephys.nwb
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-16_slice-20200407-slice-5_cell-20200407-sample-16_icephys.nwb
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-18_slice-20200407-slice-5_cell-20200407-sample-18_icephys.nwb
-  - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-19_slice-20200407-slice-5_cell-20200407-sample-19_icephys.nwb
+  - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-19_slice-20200407-slice-5_cell-20200407-sample-19_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-1_slice-20200407-slice-1_cell-20200407-sample-1_icephys.nwb
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-20_slice-20200407-slice-5_cell-20200407-sample-20_icephys.nwb
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-21_slice-20200407-slice-5_cell-20200407-sample-21_icephys.nwb
@@ -311,7 +315,6 @@ tests:
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-15_slice-20200407-slice-5_cell-20200407-sample-15_icephys.nwb
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-16_slice-20200407-slice-5_cell-20200407-sample-16_icephys.nwb
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-18_slice-20200407-slice-5_cell-20200407-sample-18_icephys.nwb
-  - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-19_slice-20200407-slice-5_cell-20200407-sample-19_icephys.nwb
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-24_slice-20200407-slice-5_cell-20200407-sample-24_icephys.nwb
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-26_slice-20200407-slice-5_cell-20200407-sample-26_icephys.nwb
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-4_slice-20200407-slice-1_cell-20200407-sample-4_icephys.nwb
@@ -429,6 +432,11 @@ tests:
   assets_ok:
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-12_slice-20200406-slice-4_cell-20200406-sample-12_icephys.nwb
   assets_timeout:
+  - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-19_slice-20200407-slice-5_cell-20200407-sample-19_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-1_slice-20200407-slice-1_cell-20200407-sample-1_icephys.nwb
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-20_slice-20200407-slice-5_cell-20200407-sample-20_icephys.nwb
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-21_slice-20200407-slice-5_cell-20200407-sample-21_icephys.nwb
