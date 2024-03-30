@@ -7,66 +7,26 @@ nassets: 6
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-P29-16-05-14-retina02-left/sub-P29-16-05-14-retina02-left_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-c1/sub-c1_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-mouse412804/sub-mouse412804_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-mouse412804/sub-mouse412804_ses-20200824T155542.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
+  - sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
+  - sub-P29-16-05-14-retina02-left/sub-P29-16-05-14-retina02-left_ecephys.nwb
+  - sub-c1/sub-c1_ecephys.nwb
+  - sub-mouse412804/sub-mouse412804_ecephys.nwb
+  - sub-mouse412804/sub-mouse412804_ses-20200824T155542.nwb
   - sub-mouse412804/sub-mouse412804_ses-20200824T155543.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - path: sub-mouse412804/sub-mouse412804_ses-20200824T155542.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
+  - sub-mouse412804/sub-mouse412804_ses-20200824T155542.nwb
   assets_ok:
   - sub-mouse412804/sub-mouse412804_ses-20200824T155543.nwb
   assets_timeout:
-  - path: sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-P29-16-05-14-retina02-left/sub-P29-16-05-14-retina02-left_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-c1/sub-c1_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-mouse412804/sub-mouse412804_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
+  - sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
+  - sub-P29-16-05-14-retina02-left/sub-P29-16-05-14-retina02-left_ecephys.nwb
+  - sub-c1/sub-c1_ecephys.nwb
+  - sub-mouse412804/sub-mouse412804_ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.12.2
+  hdmf: 3.13.0
   matnwb: v2.6.0.2
   pynwb: 2.6.0
