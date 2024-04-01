@@ -151,7 +151,13 @@ class WebDavFSMounter(Mounter):
             subprocess.run(["sudo", "umount", os.fspath(self.mount_path)], check=True)
 
     def resolve(self, asset: AssetInDandiset) -> Path:
-        return self.mount_path / asset.dandiset_id / "draft" / asset.asset_path
+        return (
+            self.mount_path
+            / "dandisets"
+            / asset.dandiset_id
+            / "draft"
+            / asset.asset_path
+        )
 
 
 @dataclass
@@ -177,7 +183,13 @@ class DavFS2Mounter(Mounter):
             subprocess.run(["sudo", "umount", os.fspath(self.mount_path)], check=True)
 
     def resolve(self, asset: AssetInDandiset) -> Path:
-        return self.mount_path / asset.dandiset_id / "draft" / asset.asset_path
+        return (
+            self.mount_path
+            / "dandisets"
+            / asset.dandiset_id
+            / "draft"
+            / asset.asset_path
+        )
 
 
 def iter_mounters(
