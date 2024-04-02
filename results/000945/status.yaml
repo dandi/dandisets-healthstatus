@@ -1,0 +1,22 @@
+dandiset: 000945
+dandiset_version: 468ed4fd93a763a5dd2c1d2fadbe436fa0caaa31
+last_run: null
+last_run_duration: null
+last_run_ended: null
+nassets: null
+tests:
+- assets_nok: []
+  assets_ok:
+  - sub-BH508/sub-BH508_ses-20240307T002354_ecephys.nwb
+  assets_timeout: []
+  name: pynwb_open_load_ns
+- assets_nok:
+  - sub-BH508/sub-BH508_ses-20240307T002354_ecephys.nwb
+  assets_ok: []
+  assets_timeout: []
+  name: matnwb_nwbRead
+untested: []
+versions:
+  hdmf: 3.13.0
+  matnwb: v2.6.0.2
+  pynwb: 2.6.0

@@ -46,14 +46,22 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-008-R/sub-008-R_ses-08-05-2022-cell22-R_image.nwb
+  - path: sub-008-R/sub-008-R_ses-08-05-2022-cell22-R_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-009-F/sub-009-F_ses-08-05-2022-cell24-F_image.nwb
   - sub-009-R/sub-009-R_ses-08-05-2022-cell24-R_image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-007-R/sub-007-R_ses-08-05-2022-cell16-R_image.nwb
-  - sub-008-R/sub-008-R_ses-08-05-2022-cell22-R_image.nwb
+  - path: sub-008-R/sub-008-R_ses-08-05-2022-cell22-R_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-009-R/sub-009-R_ses-08-05-2022-cell24-R_image.nwb
   assets_ok:
   - path: sub-001-F/sub-001-F_ses-08-05-2022-cell09-F_image.nwb

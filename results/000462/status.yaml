@@ -16,7 +16,11 @@ tests:
   - sub-012/sub-012_ophys.nwb
   - sub-014/sub-014_ophys.nwb
   - sub-CFC16/sub-CFC16_ophys.nwb
-  - sub-CFC17/sub-CFC17_ophys.nwb
+  - path: sub-CFC17/sub-CFC17_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-CFC19/sub-CFC19_ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -53,7 +57,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-CFC17/sub-CFC17_ophys.nwb
+  - path: sub-CFC17/sub-CFC17_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-CFC19/sub-CFC19_ophys.nwb
     versions:
       hdmf: 3.13.0

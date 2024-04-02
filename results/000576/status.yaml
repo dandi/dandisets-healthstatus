@@ -7,7 +7,11 @@ nassets: 27
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-01/sub-01_ses-20140828T132700_ecephys+image.nwb
+  - path: sub-01/sub-01_ses-20140828T132700_ecephys+image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-01/sub-01_ses-20140828T132700_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -66,7 +70,6 @@ tests:
   - sub-07/sub-07_ses-20160212T171400_ecephys+image.nwb
   - sub-08/sub-08_ses-20161217T120200_ecephys+image.nwb
   assets_ok:
-  - sub-01/sub-01_ses-20140828T132700_ecephys+image.nwb
   - path: sub-01/sub-01_ses-20140828T132700_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -91,6 +94,11 @@ tests:
   - sub-09/sub-09_ses-20170311T170500_ecephys+image.nwb
   - sub-09/sub-09_ses-20170311T170500_ecephys.nwb
   assets_timeout:
+  - path: sub-01/sub-01_ses-20140828T132700_ecephys+image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-04/sub-04_ses-20120829T175200_ecephys.nwb
     versions:
       hdmf: 3.13.0
