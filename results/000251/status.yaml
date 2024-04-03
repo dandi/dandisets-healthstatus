@@ -12,7 +12,11 @@ tests:
   - sub-108/sub-108_ses-Ca-VS-VR-THREE-TP-2.nwb
   - sub-110/sub-110_ses-Ca-VS-MB-2.nwb
   - sub-110/sub-110_ses-Ca-VS-MB-SPD-2.nwb
-  - sub-110/sub-110_ses-Ca-VS-MB-THREE-TP-1.nwb
+  - path: sub-110/sub-110_ses-Ca-VS-MB-THREE-TP-1.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-110/sub-110_ses-Ca-VS-VR-3.nwb
   - sub-110/sub-110_ses-Ca-VS-VR-SPD-3.nwb
   - sub-110/sub-110_ses-Ca-VS-VR-THREE-TP-3.nwb
@@ -643,7 +647,6 @@ tests:
   - sub-108/sub-108_ses-Ca-VS-VR-THREE-TP-2.nwb
   - sub-110/sub-110_ses-Ca-VS-MB-2.nwb
   - sub-110/sub-110_ses-Ca-VS-MB-SPD-2.nwb
-  - sub-110/sub-110_ses-Ca-VS-MB-THREE-TP-1.nwb
   - sub-110/sub-110_ses-Ca-VS-VR-SPD-3.nwb
   - sub-112/sub-112_ses-Ca-VS-VR-4.nwb
   - sub-112/sub-112_ses-Ca-VS-VR-THREE-TP-4.nwb
@@ -987,6 +990,11 @@ tests:
   - sub-81/sub-81_ses-Ca-VS-VR-THREE-TP-1.nwb
   assets_ok:
   - sub-108/sub-108_ses-Ca-VS-VR-SPD-2.nwb
+  - path: sub-110/sub-110_ses-Ca-VS-MB-THREE-TP-1.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-110/sub-110_ses-Ca-VS-VR-3.nwb
   - sub-110/sub-110_ses-Ca-VS-VR-THREE-TP-3.nwb
   - sub-112/sub-112_ses-Ca-VS-VR-SPD-4.nwb
