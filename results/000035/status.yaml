@@ -5,7 +5,12 @@ last_run_duration: 559599.649389
 last_run_ended: '2024-01-14T13:24:09.528560-05:00'
 nassets: 185
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-7_slice-20200414-slice-2_cell-20200414-sample-7_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-10_slice-20200407-slice-1_cell-20200407-sample-10_icephys.nwb
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-11_slice-20200407-slice-4_cell-20200407-sample-11_icephys.nwb
@@ -201,7 +206,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-7_slice-20200414-slice-2_cell-20200414-sample-7_icephys.nwb
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-8_slice-20200414-slice-2_cell-20200414-sample-8_icephys.nwb
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-9_slice-20200414-slice-2_cell-20200414-sample-9_icephys.nwb
   - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-10_slice-20200413-slice-2_cell-20200413-sample-10_icephys.nwb
@@ -384,7 +388,11 @@ tests:
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-2_slice-20200414-slice-1_cell-20200414-sample-2_icephys.nwb
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-4_slice-20200414-slice-1_cell-20200414-sample-4_icephys.nwb
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-5_slice-20200414-slice-2_cell-20200414-sample-5_icephys.nwb
-  - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-7_slice-20200414-slice-2_cell-20200414-sample-7_icephys.nwb
+  - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-7_slice-20200414-slice-2_cell-20200414-sample-7_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-8_slice-20200414-slice-2_cell-20200414-sample-8_icephys.nwb
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-9_slice-20200414-slice-2_cell-20200414-sample-9_icephys.nwb
   - sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-10_slice-20200413-slice-2_cell-20200413-sample-10_icephys.nwb

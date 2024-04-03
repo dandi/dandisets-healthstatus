@@ -5,7 +5,12 @@ last_run_duration: 10831.379469
 last_run_ended: '2024-02-26T04:10:08.711551-05:00'
 nassets: 46
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-Rat335/sub-Rat335_ses-20220922T000000_obj-1nzpgz3_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-Rat10/sub-Rat10_ses-20221215T120000_behavior.nwb
     versions:
@@ -59,11 +64,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-Rat335/sub-Rat335_ses-20220922T000000_obj-1n298b2_image.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-Rat335/sub-Rat335_ses-20220922T000000_obj-1nzpgz3_image.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
@@ -134,6 +134,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-Rat335/sub-Rat335_ses-20220922T000000_obj-1nzpgz3_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-Rat4/sub-Rat4_ses-20220530T120000_behavior.nwb
     versions:
       hdmf: 3.12.2
@@ -193,11 +198,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-Rat335/sub-Rat335_ses-20220922T000000_obj-1n298b2_image.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-Rat335/sub-Rat335_ses-20220922T000000_obj-1nzpgz3_image.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2

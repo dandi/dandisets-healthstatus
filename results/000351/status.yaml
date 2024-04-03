@@ -5,7 +5,12 @@ last_run_duration: 44863.818842
 last_run_ended: '2024-02-08T17:42:47.077418-05:00'
 nassets: 428
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day1.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day1-30.nwb
   - sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day2-30.nwb
@@ -358,7 +363,6 @@ tests:
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day7.nwb
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day8.nwb
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day9.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day1.nwb
   - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day10.nwb
   - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day11.nwb
   - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day12.nwb
@@ -901,7 +905,11 @@ tests:
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day7.nwb
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day8.nwb
   - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day9.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day1.nwb
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day1.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day10.nwb
   - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day11.nwb
   - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day12.nwb

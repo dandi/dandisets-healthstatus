@@ -1,0 +1,22 @@
+dandiset: 000951
+dandiset_version: ed6e449ab3704bf12667b69c2a579a7268dc7180
+last_run: null
+last_run_duration: null
+last_run_ended: null
+nassets: null
+tests:
+- assets_nok:
+  - sub-LC10ad-fly10/sub-LC10ad-fly10_ses-LC10ad-fly10-210923-1611_behavior+image.nwb
+  assets_ok: []
+  assets_timeout: []
+  name: pynwb_open_load_ns
+- assets_nok:
+  - sub-LC10ad-fly10/sub-LC10ad-fly10_ses-LC10ad-fly10-210923-1611_behavior+image.nwb
+  assets_ok: []
+  assets_timeout: []
+  name: matnwb_nwbRead
+untested: []
+versions:
+  hdmf: 3.13.0
+  matnwb: v2.6.0.2
+  pynwb: 2.6.0

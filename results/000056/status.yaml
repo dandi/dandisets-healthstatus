@@ -5,7 +5,12 @@ last_run_duration: 49207.311818
 last_run_ended: '2024-01-13T13:41:39.620904-05:00'
 nassets: 40
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-Mouse20/sub-Mouse20_ses-Mouse20-130520_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-Mouse12/sub-Mouse12_ses-Mouse12-120806_behavior+ecephys.nwb
   - path: sub-Mouse12/sub-Mouse12_ses-Mouse12-120807_behavior+ecephys.nwb
@@ -69,7 +74,6 @@ tests:
       pynwb: 2.6.0
   - sub-Mouse20/sub-Mouse20_ses-Mouse20-130516_behavior+ecephys.nwb
   - sub-Mouse20/sub-Mouse20_ses-Mouse20-130517_behavior+ecephys.nwb
-  - sub-Mouse20/sub-Mouse20_ses-Mouse20-130520_behavior+ecephys.nwb
   - path: sub-Mouse24/sub-Mouse24_ses-Mouse24-131213_behavior+ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -174,6 +178,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-Mouse20/sub-Mouse20_ses-Mouse20-130516_behavior+ecephys.nwb
+  - path: sub-Mouse20/sub-Mouse20_ses-Mouse20-130520_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Mouse28/sub-Mouse28_ses-Mouse28-140311_behavior+ecephys.nwb
   - sub-Mouse28/sub-Mouse28_ses-Mouse28-140312_behavior+ecephys.nwb
   - sub-Mouse28/sub-Mouse28_ses-Mouse28-140318_behavior+ecephys.nwb
@@ -201,7 +210,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-Mouse20/sub-Mouse20_ses-Mouse20-130517_behavior+ecephys.nwb
-  - sub-Mouse20/sub-Mouse20_ses-Mouse20-130520_behavior+ecephys.nwb
   - path: sub-Mouse24/sub-Mouse24_ses-Mouse24-131213_behavior+ecephys.nwb
     versions:
       hdmf: 3.12.2

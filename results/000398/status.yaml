@@ -5,7 +5,12 @@ last_run_duration: 19091.098579
 last_run_ended: '2024-02-08T23:27:05.706593-05:00'
 nassets: 42
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-San6/sub-San6_ses-20200302T151055_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-Rat1/sub-Rat1_ses-20200921T124059_ecephys.nwb
   - path: sub-Rat1/sub-Rat1_ses-20200921T124159_ecephys.nwb
@@ -134,11 +139,6 @@ tests:
       pynwb: 2.6.0
   - sub-San6/sub-San6_ses-20200218T181019_ecephys.nwb
   - path: sub-San6/sub-San6_ses-20200218T181402_ecephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-San6/sub-San6_ses-20200302T151055_ecephys.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
@@ -166,6 +166,11 @@ tests:
   - sub-San6/sub-San6_ses-20200204T144357_ecephys.nwb
   - sub-San6/sub-San6_ses-20200204T145647_ecephys.nwb
   - sub-San6/sub-San6_ses-20200218T181019_ecephys.nwb
+  - path: sub-San6/sub-San6_ses-20200302T151055_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-Rat1/sub-Rat1_ses-20200921T124159_ecephys.nwb
     versions:
@@ -284,11 +289,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-San6/sub-San6_ses-20200218T181402_ecephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-San6/sub-San6_ses-20200302T151055_ecephys.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2

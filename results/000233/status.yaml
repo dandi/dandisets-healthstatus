@@ -5,7 +5,12 @@ last_run_duration: 959799.620805
 last_run_ended: '2024-02-11T20:12:28.675851-05:00'
 nassets: 345
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-CGM39/sub-CGM39_ses-1080um_210202_174332_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-CGM1/sub-CGM1_ses-CGM1-0um-181130-112307_ecephys.nwb
   - sub-CGM1/sub-CGM1_ses-CGM1-144um-181130-121628_ecephys.nwb
@@ -291,7 +296,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-CGM39/sub-CGM39_ses-1080um_210202_091259_ecephys.nwb
-  - sub-CGM39/sub-CGM39_ses-1080um_210202_174332_ecephys.nwb
   - sub-CGM39/sub-CGM39_ses-1080um_210203_085823_ecephys.nwb
   - sub-CGM39/sub-CGM39_ses-1080um_210203_180742_ecephys.nwb
   - sub-CGM39/sub-CGM39_ses-1080um_210204_084312_ecephys.nwb
@@ -524,7 +528,11 @@ tests:
   - sub-CGM37/sub-CGM37_ses-848um_634um_210121_085445_ecephys.nwb
   - sub-CGM39/sub-CGM39_ses-0um_210201_111930_ecephys.nwb
   - sub-CGM39/sub-CGM39_ses-1080um_210201_131713_ecephys.nwb
-  - sub-CGM39/sub-CGM39_ses-1080um_210202_174332_ecephys.nwb
+  - path: sub-CGM39/sub-CGM39_ses-1080um_210202_174332_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-CGM39/sub-CGM39_ses-432um_210201_113434_ecephys.nwb
   - sub-CGM41/sub-CGM41_ses-288um_210205_081803_ecephys.nwb
   - sub-CGM49/sub-CGM49_ses-CGM49_512um_210223_075127_ecephys.nwb

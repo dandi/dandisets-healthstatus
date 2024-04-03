@@ -5,7 +5,12 @@ last_run_duration: 69852.204657
 last_run_ended: '2024-01-10T12:44:32.321938-05:00'
 nassets: 22
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-Dino/sub-Dino_ses-Dino-061814_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-BWRat17/sub-BWRat17_ses-BWRat17-121712_ecephys.nwb
     versions:
@@ -34,7 +39,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-Dino/sub-Dino_ses-Dino-061814_ecephys.nwb
   - path: sub-Dino/sub-Dino_ses-Dino-061914_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -63,7 +67,12 @@ tests:
   - sub-Templeton/sub-Templeton_ses-Templeton-032415_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-Dino/sub-Dino_ses-Dino-061814_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-Rizzo/sub-Rizzo_ses-Rizzo-022615_ecephys.nwb
   - sub-Rizzo/sub-Rizzo_ses-Rizzo-022715_ecephys.nwb
@@ -95,7 +104,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-Dino/sub-Dino_ses-Dino-061814_ecephys.nwb
   - path: sub-Dino/sub-Dino_ses-Dino-061914_ecephys.nwb
     versions:
       hdmf: 3.13.0

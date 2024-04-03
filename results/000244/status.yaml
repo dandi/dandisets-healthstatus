@@ -5,7 +5,12 @@ last_run_duration: 118616.761416
 last_run_ended: '2024-02-04T08:51:40.859211-05:00'
 nassets: 33
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-SLC06/sub-SLC06_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-PV02/sub-PV02_ses-awake_ophys.nwb
   - path: sub-PV03/sub-PV03_ses-awake_ophys.nwb
@@ -37,11 +42,6 @@ tests:
   - path: sub-SLC06/sub-SLC06_ses-anest_ophys.nwb
     versions:
       hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-SLC06/sub-SLC06_ses-awake_ophys.nwb
-    versions:
-      hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-SLC07/sub-SLC07_ses-anest_ophys.nwb
@@ -146,7 +146,12 @@ tests:
       pynwb: 2.6.0
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-SLC06/sub-SLC06_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-SLC10/sub-SLC10_ses-awake_ophys.nwb
   assets_timeout:
@@ -180,11 +185,6 @@ tests:
   - path: sub-SLC06/sub-SLC06_ses-anest_ophys.nwb
     versions:
       hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-SLC06/sub-SLC06_ses-awake_ophys.nwb
-    versions:
-      hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-SLC07/sub-SLC07_ses-anest_ophys.nwb

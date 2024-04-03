@@ -5,7 +5,12 @@ last_run_duration: 6446.8336
 last_run_ended: '2024-02-12T13:50:16.525045-05:00'
 nassets: 14
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-012/sub-012_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-009/sub-009_ophys.nwb
     versions:
@@ -13,7 +18,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-011/sub-011_ophys.nwb
-  - sub-012/sub-012_ophys.nwb
   - sub-014/sub-014_ophys.nwb
   - path: sub-CFC16/sub-CFC16_ophys.nwb
     versions:
@@ -61,6 +65,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-012/sub-012_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-CFC16/sub-CFC16_ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -90,7 +99,6 @@ tests:
   - sub-NR34/sub-NR34_ophys.nwb
   assets_ok:
   - sub-011/sub-011_ophys.nwb
-  - sub-012/sub-012_ophys.nwb
   - sub-014/sub-014_ophys.nwb
   - sub-NR21/sub-NR21_ophys.nwb
   - path: sub-NR32/sub-NR32_ophys.nwb

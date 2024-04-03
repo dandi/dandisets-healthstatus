@@ -5,7 +5,12 @@ last_run_duration: 3064787.998656
 last_run_ended: '2023-03-15T22:27:33.024843-04:00'
 nassets: 6615
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-c387f80c-7a5c-4f11-a8e1-fe6ba3ed8cfe/sub-c387f80c-7a5c-4f11-a8e1-fe6ba3ed8cfe_ses-5109350b-92b6-4684-8df2-6724fa226bfc_behavior+image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-00778394-c956-408d-8a6c-ca3b05a611d5/sub-00778394-c956-408d-8a6c-ca3b05a611d5_ses-00594aec-bb70-4601-862d-63a31ef0e1c0_behavior+image.nwb
   - sub-00778394-c956-408d-8a6c-ca3b05a611d5/sub-00778394-c956-408d-8a6c-ca3b05a611d5_ses-07497983-2229-4cb2-8a45-50cee3fe9089_behavior+image.nwb
@@ -8329,11 +8334,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.4.0
   - sub-c387f80c-7a5c-4f11-a8e1-fe6ba3ed8cfe/sub-c387f80c-7a5c-4f11-a8e1-fe6ba3ed8cfe_ses-491500c6-8380-4be1-84f8-24dc1f850307_behavior+image.nwb
-  - path: sub-c387f80c-7a5c-4f11-a8e1-fe6ba3ed8cfe/sub-c387f80c-7a5c-4f11-a8e1-fe6ba3ed8cfe_ses-5109350b-92b6-4684-8df2-6724fa226bfc_behavior+image.nwb
-    versions:
-      hdmf: 3.8.1
-      matnwb: v2.6.0.2
-      pynwb: 2.4.0
   - path: sub-c387f80c-7a5c-4f11-a8e1-fe6ba3ed8cfe/sub-c387f80c-7a5c-4f11-a8e1-fe6ba3ed8cfe_ses-56fd0eab-9bca-4376-a0d0-e3c87c0a9000_behavior+image.nwb
     versions:
       hdmf: 3.8.1
@@ -18023,9 +18023,9 @@ tests:
   - sub-c387f80c-7a5c-4f11-a8e1-fe6ba3ed8cfe/sub-c387f80c-7a5c-4f11-a8e1-fe6ba3ed8cfe_ses-491500c6-8380-4be1-84f8-24dc1f850307_behavior+image.nwb
   - path: sub-c387f80c-7a5c-4f11-a8e1-fe6ba3ed8cfe/sub-c387f80c-7a5c-4f11-a8e1-fe6ba3ed8cfe_ses-5109350b-92b6-4684-8df2-6724fa226bfc_behavior+image.nwb
     versions:
-      hdmf: 3.8.1
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
-      pynwb: 2.4.0
+      pynwb: 2.6.0
   - path: sub-c387f80c-7a5c-4f11-a8e1-fe6ba3ed8cfe/sub-c387f80c-7a5c-4f11-a8e1-fe6ba3ed8cfe_ses-56fd0eab-9bca-4376-a0d0-e3c87c0a9000_behavior+image.nwb
     versions:
       hdmf: 3.8.1

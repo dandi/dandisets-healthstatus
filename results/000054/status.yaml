@@ -5,7 +5,12 @@ last_run_duration: 305509.420583
 last_run_ended: '2024-01-16T08:00:10.461816-05:00'
 nassets: 85
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-F5/sub-F5_ses-20190414T210000_behavior+ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-F1/sub-F1_ses-20190407T210000_behavior+ophys.nwb
   - sub-F1/sub-F1_ses-20190409T210000_behavior+ophys.nwb
@@ -56,7 +61,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-F5/sub-F5_ses-20190413T210000_behavior+ophys.nwb
-  - sub-F5/sub-F5_ses-20190414T210000_behavior+ophys.nwb
   - sub-F5/sub-F5_ses-20190415T210000_behavior+ophys.nwb
   - sub-F5/sub-F5_ses-20190416T210000_behavior+ophys.nwb
   - sub-F5/sub-F5_ses-20190417T210000_behavior+ophys.nwb
@@ -206,7 +210,12 @@ tests:
       pynwb: 2.6.0
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-F5/sub-F5_ses-20190414T210000_behavior+ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-R2/sub-R2_ses-20190206T210000_ophys.nwb
   - sub-R4/sub-R4_ses-20190901T210000_ophys.nwb
@@ -260,7 +269,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-F5/sub-F5_ses-20190413T210000_behavior+ophys.nwb
-  - sub-F5/sub-F5_ses-20190414T210000_behavior+ophys.nwb
   - sub-F5/sub-F5_ses-20190415T210000_behavior+ophys.nwb
   - sub-F5/sub-F5_ses-20190416T210000_behavior+ophys.nwb
   - sub-F5/sub-F5_ses-20190417T210000_behavior+ophys.nwb

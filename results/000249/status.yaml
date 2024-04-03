@@ -5,7 +5,12 @@ last_run_duration: 268690.427886
 last_run_ended: '2024-02-07T04:14:27.131132-05:00'
 nassets: 777
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T185021_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-EV06/sub-EV06_ses-20190121T202304_ophys.nwb
   - sub-EV06/sub-EV06_ses-20190121T203600_ophys.nwb
@@ -896,7 +901,6 @@ tests:
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T170342_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T173713_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T175524_ophys.nwb
-  - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T185021_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T185441_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T191033_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T191853_ophys.nwb
@@ -920,6 +924,11 @@ tests:
   - sub-NV119/sub-NV119_ses-20190411T165200_ophys.nwb
   - sub-NV21/sub-NV21_ses-20170322T000033_ophys.nwb
   - sub-NV32/sub-NV32_ses-20170612T164835_ophys.nwb
+  - path: sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T185021_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-EV06/sub-EV06_ses-20190121T202304_ophys.nwb
   - sub-EV06/sub-EV06_ses-20190121T203600_ophys.nwb
@@ -1799,7 +1808,6 @@ tests:
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T170342_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T173713_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T175524_ophys.nwb
-  - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T185021_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T185441_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T191033_ophys.nwb
   - sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T191853_ophys.nwb

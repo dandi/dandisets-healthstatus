@@ -5,7 +5,12 @@ last_run_duration: 1616089.70464
 last_run_ended: '2024-02-21T00:56:37.986936-05:00'
 nassets: 754
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-MX200102/sub-MX200102_ses-20210118T135426.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-MX170903/sub-MX170903_ses-20180216T131504.nwb
   - sub-MX170903/sub-MX170903_ses-20180217T115012.nwb
@@ -759,7 +764,6 @@ tests:
   - sub-MX200102/sub-MX200102_ses-20210114T172614.nwb
   - sub-MX200102/sub-MX200102_ses-20210117T161809.nwb
   - sub-MX200102/sub-MX200102_ses-20210117T161809_behavior.nwb
-  - sub-MX200102/sub-MX200102_ses-20210118T135426.nwb
   - path: sub-MX200102/sub-MX200102_ses-20210119T173344.nwb
     versions:
       hdmf: 3.12.2
@@ -999,6 +1003,11 @@ tests:
   - sub-MX200102/sub-MX200102_ses-20201207T171447.nwb
   - sub-MX200102/sub-MX200102_ses-20210117T161809.nwb
   - sub-MX200102/sub-MX200102_ses-20210117T161809_behavior.nwb
+  - path: sub-MX200102/sub-MX200102_ses-20210118T135426.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-MX200103/sub-MX200103_ses-20210120T180225_behavior.nwb
   - sub-MX210203/sub-MX210203_ses-20210228T171636_behavior.nwb
   - sub-MX210601/sub-MX210601_ses-20210531T141051_behavior.nwb
@@ -1587,7 +1596,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-MX200102/sub-MX200102_ses-20210114T172614.nwb
-  - sub-MX200102/sub-MX200102_ses-20210118T135426.nwb
   - path: sub-MX200102/sub-MX200102_ses-20210119T173344.nwb
     versions:
       hdmf: 3.12.2

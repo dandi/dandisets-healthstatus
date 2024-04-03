@@ -5,7 +5,12 @@ last_run_duration: 194578.707763
 last_run_ended: '2024-02-07T03:06:32.797439-05:00'
 nassets: 121
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-X2015-11-09-2015-11-09-0017/sub-X2015-11-09-2015-11-09-0017_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-1801-18129009/sub-1801-18129009_icephys.nwb
   - sub-1802-18201004/sub-1802-18201004_icephys.nwb
@@ -101,11 +106,6 @@ tests:
       pynwb: 2.6.0
   - sub-X2015-10-08-15o08038/sub-X2015-10-08-15o08038_icephys.nwb
   - sub-X2015-11-09-2015-11-09-0003/sub-X2015-11-09-2015-11-09-0003_icephys.nwb
-  - path: sub-X2015-11-09-2015-11-09-0017/sub-X2015-11-09-2015-11-09-0017_icephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - sub-X2015-11-09-2015-11-09-0053/sub-X2015-11-09-2015-11-09-0053_icephys.nwb
   - sub-X2015-11-09-2015-11-09-0078/sub-X2015-11-09-2015-11-09-0078_icephys.nwb
   - sub-X2015-11-09-2015-11-09-0106/sub-X2015-11-09-2015-11-09-0106_icephys.nwb
@@ -266,6 +266,11 @@ tests:
   - sub-1912-2019-11-04-0001/sub-1912-2019-11-04-0001_icephys.nwb
   - sub-X2015-10-08-15o08020/sub-X2015-10-08-15o08020_icephys.nwb
   - sub-X2015-10-08-15o08022/sub-X2015-10-08-15o08022_icephys.nwb
+  - path: sub-X2015-11-09-2015-11-09-0017/sub-X2015-11-09-2015-11-09-0017_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-X2015-11-09-2015-11-09-0106/sub-X2015-11-09-2015-11-09-0106_icephys.nwb
   - sub-X2016-01-28-2016-01-28-0004/sub-X2016-01-28-2016-01-28-0004_icephys.nwb
   - sub-X2016-01-28-2016-01-28-0012/sub-X2016-01-28-2016-01-28-0012_icephys.nwb
@@ -389,11 +394,6 @@ tests:
       pynwb: 2.6.0
   - sub-X2015-10-08-15o08038/sub-X2015-10-08-15o08038_icephys.nwb
   - sub-X2015-11-09-2015-11-09-0003/sub-X2015-11-09-2015-11-09-0003_icephys.nwb
-  - path: sub-X2015-11-09-2015-11-09-0017/sub-X2015-11-09-2015-11-09-0017_icephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - sub-X2015-11-09-2015-11-09-0053/sub-X2015-11-09-2015-11-09-0053_icephys.nwb
   - sub-X2015-11-09-2015-11-09-0078/sub-X2015-11-09-2015-11-09-0078_icephys.nwb
   - path: sub-X2016-02-04-2016-02-04-0009/sub-X2016-02-04-2016-02-04-0009_icephys.nwb

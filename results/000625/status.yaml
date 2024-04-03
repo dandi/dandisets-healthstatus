@@ -5,10 +5,10 @@ last_run_duration: 3576.558552
 last_run_ended: '2024-02-26T05:09:45.306926-05:00'
 nassets: 3
 tests:
-- assets_nok: []
+- assets_nok:
+  - sub-tg19/sub-tg19_ses-21324_behavior+ophys.nwb
   assets_ok:
   - sub-tg19/sub-tg19_ses-21322_behavior+ophys.nwb
-  - sub-tg19/sub-tg19_ses-21324_behavior+ophys.nwb
   - sub-tg19/sub-tg19_ses-21333_behavior+ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns

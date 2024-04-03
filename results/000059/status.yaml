@@ -5,7 +5,12 @@ last_run_duration: 60203.442466
 last_run_ended: '2024-01-14T06:27:37.846688-05:00'
 nassets: 100
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-MS21/sub-MS21_ses-Peter-MS21-180621-141817-concat_desc-processed_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-MS10/sub-MS10_ses-Peter-MS10-170307-154746-concat_desc-processed_behavior+ecephys.nwb
   - sub-MS10/sub-MS10_ses-Peter-MS10-170307-154746-concat_desc-raw_ecephys.nwb
@@ -99,7 +104,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-MS13/sub-MS13_ses-Peter-MS13-171201-130527-concat_desc-raw_ecephys.nwb
-  - sub-MS21/sub-MS21_ses-Peter-MS21-180621-141817-concat_desc-processed_behavior+ecephys.nwb
   - sub-MS21/sub-MS21_ses-Peter-MS21-180621-141817-concat_desc-raw_ecephys.nwb
   - sub-MS21/sub-MS21_ses-Peter-MS21-180622-174411_desc-processed_behavior+ecephys.nwb
   - sub-MS21/sub-MS21_ses-Peter-MS21-180622-174411_desc-raw_ecephys.nwb
@@ -226,6 +230,11 @@ tests:
   - sub-MS10/sub-MS10_ses-Peter-MS10-170320-212321-concat_desc-processed_behavior+ecephys.nwb
   - sub-MS10/sub-MS10_ses-Peter-MS10-170323-173246_desc-processed_behavior+ecephys.nwb
   - sub-MS12/sub-MS12_ses-Peter-MS12-170719-095305-concat_desc-processed_behavior+ecephys.nwb
+  - path: sub-MS21/sub-MS21_ses-Peter-MS21-180621-141817-concat_desc-processed_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-MS21/sub-MS21_ses-Peter-MS21-180711-112927-concat_desc-raw_ecephys.nwb
   - sub-MS22/sub-MS22_ses-Peter-MS22-180628-120341-concat_desc-raw_ecephys.nwb
   - sub-MS22/sub-MS22_ses-Peter-MS22-180720-110055-concat_desc-raw_ecephys.nwb
@@ -318,7 +327,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-MS13/sub-MS13_ses-Peter-MS13-171201-130527-concat_desc-raw_ecephys.nwb
-  - sub-MS21/sub-MS21_ses-Peter-MS21-180621-141817-concat_desc-processed_behavior+ecephys.nwb
   - sub-MS21/sub-MS21_ses-Peter-MS21-180621-141817-concat_desc-raw_ecephys.nwb
   - sub-MS21/sub-MS21_ses-Peter-MS21-180622-174411_desc-processed_behavior+ecephys.nwb
   - sub-MS21/sub-MS21_ses-Peter-MS21-180622-174411_desc-raw_ecephys.nwb

@@ -5,7 +5,12 @@ last_run_duration: 19538.70764
 last_run_ended: '2024-02-17T05:46:56.187383-05:00'
 nassets: 26
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-Fig4-5-Uni100us-10/sub-Fig4-5-Uni100us-10_ses-BPAE-5xUnipolar-100us_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-Fig4-5-Bi100us-09/sub-Fig4-5-Bi100us-09_ses-BPAE-5xBipolar-100us_image.nwb
     versions:
@@ -65,7 +70,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-Fig4-5-Uni100us-08/sub-Fig4-5-Uni100us-08_ses-BPAE-5xUnipolar-100us_image.nwb
-  - sub-Fig4-5-Uni100us-10/sub-Fig4-5-Uni100us-10_ses-BPAE-5xUnipolar-100us_image.nwb
   - path: sub-Fig4-5-Uni100us-12/sub-Fig4-5-Uni100us-12_ses-BPAE-5xUnipolar-100us_image.nwb
     versions:
       hdmf: 3.12.2
@@ -126,6 +130,11 @@ tests:
 - assets_nok:
   - sub-Fig4-5-Bi300ns-15/sub-Fig4-5-Bi300ns-15_ses-BPAE-5xBipolar-300ns_image.nwb
   - sub-Fig4-5-Uni100us-08/sub-Fig4-5-Uni100us-08_ses-BPAE-5xUnipolar-100us_image.nwb
+  - path: sub-Fig4-5-Uni100us-10/sub-Fig4-5-Uni100us-10_ses-BPAE-5xUnipolar-100us_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-Fig4-5-Bi100us-09/sub-Fig4-5-Bi100us-09_ses-BPAE-5xBipolar-100us_image.nwb
     versions:
@@ -183,7 +192,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-Fig4-5-Uni100us-10/sub-Fig4-5-Uni100us-10_ses-BPAE-5xUnipolar-100us_image.nwb
   - path: sub-Fig4-5-Uni100us-12/sub-Fig4-5-Uni100us-12_ses-BPAE-5xUnipolar-100us_image.nwb
     versions:
       hdmf: 3.12.2

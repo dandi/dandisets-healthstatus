@@ -5,17 +5,17 @@ last_run_duration: 2004.696744
 last_run_ended: '2024-01-15T04:50:38.747382-05:00'
 nassets: 2
 tests:
-- assets_nok: []
+- assets_nok:
+  - sub-Han/sub-Han_desc-train_behavior+ecephys.nwb
   assets_ok:
   - sub-Han/sub-Han_desc-test_ecephys.nwb
-  - sub-Han/sub-Han_desc-train_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-Han/sub-Han_desc-train_behavior+ecephys.nwb
   assets_ok:
   - sub-Han/sub-Han_desc-test_ecephys.nwb
-  assets_timeout:
-  - sub-Han/sub-Han_desc-train_behavior+ecephys.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

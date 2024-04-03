@@ -5,7 +5,12 @@ last_run_duration: 81537.642956
 last_run_ended: '2024-02-12T10:23:40.638037-05:00'
 nassets: 22
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-Roqui/sub-Roqui_ses-Roqui-01_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-Jaq/sub-Jaq_ses-jaq-01_behavior+ecephys.nwb
     versions:
@@ -87,11 +92,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-Roqui/sub-Roqui_ses-Roqui-01_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-Roqui/sub-Roqui_ses-Roqui-02_behavior+ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -119,7 +119,12 @@ tests:
       pynwb: 2.6.0
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-Roqui/sub-Roqui_ses-Roqui-01_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok: []
   assets_timeout:
   - path: sub-Jaq/sub-Jaq_ses-jaq-01_behavior+ecephys.nwb
@@ -198,11 +203,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-Peanut/sub-Peanut_ses-Peanut-02_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-Roqui/sub-Roqui_ses-Roqui-01_behavior+ecephys.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2

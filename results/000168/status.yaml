@@ -5,9 +5,13 @@ last_run_duration: 647800.927202
 last_run_ended: '2024-01-24T14:30:13.749720-05:00'
 nassets: 170
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: XCaMPgf/XCaMPgf_ANM471996_cell01.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
-  - XCaMPgf/XCaMPgf_ANM471996_cell01.nwb
   - XCaMPgf/XCaMPgf_ANM478343_cell01.nwb
   - XCaMPgf/XCaMPgf_ANM478343_cell02.nwb
   - path: XCaMPgf/XCaMPgf_ANM478343_cell03.nwb
@@ -300,6 +304,11 @@ tests:
   - jGCaMP8s/jGCaMP8s_ANM479116_cell05.nwb
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: XCaMPgf/XCaMPgf_ANM471996_cell01.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - XCaMPgf/XCaMPgf_ANM478343_cell04.nwb
   - XCaMPgf/XCaMPgf_ANM478343_cell07.nwb
   - XCaMPgf/XCaMPgf_ANM478345_cell01.nwb
@@ -387,7 +396,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_timeout:
-  - XCaMPgf/XCaMPgf_ANM471996_cell01.nwb
   - XCaMPgf/XCaMPgf_ANM478343_cell01.nwb
   - XCaMPgf/XCaMPgf_ANM478343_cell02.nwb
   - path: XCaMPgf/XCaMPgf_ANM478343_cell03.nwb

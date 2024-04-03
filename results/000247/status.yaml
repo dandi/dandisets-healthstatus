@@ -5,7 +5,12 @@ last_run_duration: 397731.971843
 last_run_ended: '2024-02-15T19:29:22.118812-05:00'
 nassets: 194
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-oviDNSS1-driving-GCaMP7f-fly-ID#6067/sub-oviDNSS1-driving-GCaMP7f-fly-ID#6067_ses-2019-12-16-0002-oviDNSS1-GCaMP7f-nwb.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-oviDNSS1-&-SS01048-driving-GCaMP7f-fly-ID#8000/sub-oviDNSS1-&-SS01048-driving-GCaMP7f-fly-ID#8000_ses-2019-11-11-0000-oviDNSS1&SS01048-GCaMP7f-nwb.nwb
   - path: sub-oviDNSS1-&-SS01048-driving-GCaMP7f-fly-ID#8001/sub-oviDNSS1-&-SS01048-driving-GCaMP7f-fly-ID#8001_ses-2019-11-11-0001-oviDNSS1&SS01048-GCaMP7f-nwb.nwb
@@ -249,7 +254,6 @@ tests:
   - sub-oviDNSS1-driving-GCaMP7f-fly-ID#6064/sub-oviDNSS1-driving-GCaMP7f-fly-ID#6064_ses-2019-08-07-0003-oviDNSS1-GCaMP7f-nwb.nwb
   - sub-oviDNSS1-driving-GCaMP7f-fly-ID#6065/sub-oviDNSS1-driving-GCaMP7f-fly-ID#6065_ses-2019-12-16-0000-oviDNSS1-GCaMP7f-nwb.nwb
   - sub-oviDNSS1-driving-GCaMP7f-fly-ID#6066/sub-oviDNSS1-driving-GCaMP7f-fly-ID#6066_ses-2019-12-16-0001-oviDNSS1-GCaMP7f-nwb.nwb
-  - sub-oviDNSS1-driving-GCaMP7f-fly-ID#6067/sub-oviDNSS1-driving-GCaMP7f-fly-ID#6067_ses-2019-12-16-0002-oviDNSS1-GCaMP7f-nwb.nwb
   - path: sub-oviDNSS1-driving-GCaMP7f-fly-ID#6068/sub-oviDNSS1-driving-GCaMP7f-fly-ID#6068_ses-2019-12-16-0003-oviDNSS1-GCaMP7f-nwb.nwb
     versions:
       hdmf: 3.12.2
@@ -317,6 +321,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-oviDNSS1-&-SS01048-driving-GCaMP7f-fly-ID#8008/sub-oviDNSS1-&-SS01048-driving-GCaMP7f-fly-ID#8008_ses-2019-11-25-0000-oviDNSS1&SS01048-GCaMP7f-nwb.nwb
+  - path: sub-oviDNSS1-driving-GCaMP7f-fly-ID#6067/sub-oviDNSS1-driving-GCaMP7f-fly-ID#6067_ses-2019-12-16-0002-oviDNSS1-GCaMP7f-nwb.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-oviDNSS1-&-SS01048-driving-GCaMP7f-fly-ID#8000/sub-oviDNSS1-&-SS01048-driving-GCaMP7f-fly-ID#8000_ses-2019-11-11-0000-oviDNSS1&SS01048-GCaMP7f-nwb.nwb
   - path: sub-oviDNSS1-&-SS01048-driving-GCaMP7f-fly-ID#8001/sub-oviDNSS1-&-SS01048-driving-GCaMP7f-fly-ID#8001_ses-2019-11-11-0001-oviDNSS1&SS01048-GCaMP7f-nwb.nwb
@@ -524,7 +533,6 @@ tests:
   - sub-oviDNSS1-driving-GCaMP7f-fly-ID#6064/sub-oviDNSS1-driving-GCaMP7f-fly-ID#6064_ses-2019-08-07-0003-oviDNSS1-GCaMP7f-nwb.nwb
   - sub-oviDNSS1-driving-GCaMP7f-fly-ID#6065/sub-oviDNSS1-driving-GCaMP7f-fly-ID#6065_ses-2019-12-16-0000-oviDNSS1-GCaMP7f-nwb.nwb
   - sub-oviDNSS1-driving-GCaMP7f-fly-ID#6066/sub-oviDNSS1-driving-GCaMP7f-fly-ID#6066_ses-2019-12-16-0001-oviDNSS1-GCaMP7f-nwb.nwb
-  - sub-oviDNSS1-driving-GCaMP7f-fly-ID#6067/sub-oviDNSS1-driving-GCaMP7f-fly-ID#6067_ses-2019-12-16-0002-oviDNSS1-GCaMP7f-nwb.nwb
   - path: sub-oviDNSS1-driving-GCaMP7f-fly-ID#6068/sub-oviDNSS1-driving-GCaMP7f-fly-ID#6068_ses-2019-12-16-0003-oviDNSS1-GCaMP7f-nwb.nwb
     versions:
       hdmf: 3.12.2

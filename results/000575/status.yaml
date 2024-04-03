@@ -5,7 +5,12 @@ last_run_duration: 27148.08028
 last_run_ended: '2024-02-23T06:34:18.815966-05:00'
 nassets: 18
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-03/sub-03_ses-20170113T105000_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-01/sub-01_ses-20140827T193800_behavior+ecephys.nwb
   - path: sub-02/sub-02_ses-20171011T152100_behavior+ecephys.nwb
@@ -13,7 +18,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-03/sub-03_ses-20170113T105000_behavior+ecephys.nwb
   - sub-03/sub-03_ses-20170113T111800_behavior+ecephys.nwb
   - sub-04/sub-04_ses-20170118T161000_behavior+ecephys.nwb
   - path: sub-05/sub-05_ses-20180704T132100_behavior+ecephys.nwb
@@ -60,6 +64,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-03/sub-03_ses-20170113T105000_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-05/sub-05_ses-20180704T132100_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -86,7 +95,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-03/sub-03_ses-20170113T105000_behavior+ecephys.nwb
   - sub-03/sub-03_ses-20170113T111800_behavior+ecephys.nwb
   - sub-04/sub-04_ses-20170118T161000_behavior+ecephys.nwb
   - sub-08/sub-08_ses-20190116T110300_behavior+ecephys.nwb

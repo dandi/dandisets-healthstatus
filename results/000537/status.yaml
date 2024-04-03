@@ -5,14 +5,18 @@ last_run_duration: 83355.102225
 last_run_ended: '2024-02-16T18:38:37.544472-05:00'
 nassets: 125
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-041154cell7-JF525/sub-041154cell7-JF525_ses-20220729T041154_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-035955cell2-JF525/sub-035955cell2-JF525_ses-20220729T035955_image.nwb
   - sub-040245cell3-JF525/sub-040245cell3-JF525_ses-20220729T040245_image.nwb
   - sub-040532cell4-JF525/sub-040532cell4-JF525_ses-20220729T040532_image.nwb
   - sub-040732cell5-JF525/sub-040732cell5-JF525_ses-20220729T040732_image.nwb
   - sub-040926cell6-JF525/sub-040926cell6-JF525_ses-20220729T040926_image.nwb
-  - sub-041154cell7-JF525/sub-041154cell7-JF525_ses-20220729T041154_image.nwb
   - sub-041345cell8-JF525/sub-041345cell8-JF525_ses-20220729T041345_image.nwb
   - sub-041544cell9-JF525/sub-041544cell9-JF525_ses-20220729T041544_image.nwb
   - path: sub-041812cell10-JF525/sub-041812cell10-JF525_ses-20220729T041812_image.nwb
@@ -242,6 +246,11 @@ tests:
   - sub-035955cell2-JF525/sub-035955cell2-JF525_ses-20220729T035955_image.nwb
   - sub-040532cell4-JF525/sub-040532cell4-JF525_ses-20220729T040532_image.nwb
   - sub-040732cell5-JF525/sub-040732cell5-JF525_ses-20220729T040732_image.nwb
+  - path: sub-041154cell7-JF525/sub-041154cell7-JF525_ses-20220729T041154_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-041544cell9-JF525/sub-041544cell9-JF525_ses-20220729T041544_image.nwb
   - sub-042135cell12-JF525/sub-042135cell12-JF525_ses-20220729T042135_image.nwb
   - sub-042325cell13-JF525/sub-042325cell13-JF525_ses-20220729T042325_image.nwb
@@ -275,7 +284,6 @@ tests:
   assets_ok:
   - sub-040245cell3-JF525/sub-040245cell3-JF525_ses-20220729T040245_image.nwb
   - sub-040926cell6-JF525/sub-040926cell6-JF525_ses-20220729T040926_image.nwb
-  - sub-041154cell7-JF525/sub-041154cell7-JF525_ses-20220729T041154_image.nwb
   - sub-041345cell8-JF525/sub-041345cell8-JF525_ses-20220729T041345_image.nwb
   - path: sub-041812cell10-JF525/sub-041812cell10-JF525_ses-20220729T041812_image.nwb
     versions:

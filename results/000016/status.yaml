@@ -5,7 +5,12 @@ last_run_duration: 876467.552007
 last_run_ended: '2024-01-15T01:54:25.095690-05:00'
 nassets: 135
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-mouse4-fni19/sub-mouse4-fni19_ses-170622232029.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161220141515.nwb
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221151903.nwb
@@ -151,7 +156,6 @@ tests:
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170621104754.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170621113304.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170622104804.nwb
-  - sub-mouse4-fni19/sub-mouse4-fni19_ses-170622232029.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170625071730.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170625140616.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170625140624.nwb
@@ -270,6 +274,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-mouse2-fni17/sub-mouse2-fni17_ses-170723205806.nwb
+  - path: sub-mouse4-fni19/sub-mouse4-fni19_ses-170622232029.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170625140616.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170626102537.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170707064900.nwb
@@ -473,7 +482,6 @@ tests:
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170621113304.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170622104804.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170622202446.nwb
-  - sub-mouse4-fni19/sub-mouse4-fni19_ses-170622232029.nwb
   - path: sub-mouse4-fni19/sub-mouse4-fni19_ses-170623103709.nwb
     versions:
       hdmf: 3.12.2

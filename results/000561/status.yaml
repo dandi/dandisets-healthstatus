@@ -5,14 +5,18 @@ last_run_duration: 55700.33179
 last_run_ended: '2024-02-20T01:09:09.505859-05:00'
 nassets: 254
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-176/sub-176_ses-20201001.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-176/sub-176_ses-20200921.nwb
   - sub-176/sub-176_ses-20200923.nwb
   - sub-176/sub-176_ses-20200924.nwb
   - sub-176/sub-176_ses-20200925.nwb
   - sub-176/sub-176_ses-20200929.nwb
-  - sub-176/sub-176_ses-20201001.nwb
   - sub-176/sub-176_ses-20201005.nwb
   - sub-176/sub-176_ses-20201006.nwb
   - path: sub-176/sub-176_ses-20201014.nwb
@@ -381,6 +385,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-176/sub-176_ses-20200929.nwb
+  - path: sub-176/sub-176_ses-20201001.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-178/sub-178.nwb
   - sub-178/sub-178_ses-20201009.nwb
   - sub-178/sub-178_ses-20201026.nwb
@@ -422,7 +431,6 @@ tests:
   - sub-176/sub-176_ses-20200923.nwb
   - sub-176/sub-176_ses-20200924.nwb
   - sub-176/sub-176_ses-20200925.nwb
-  - sub-176/sub-176_ses-20201001.nwb
   - sub-176/sub-176_ses-20201005.nwb
   - sub-176/sub-176_ses-20201006.nwb
   - path: sub-176/sub-176_ses-20201014.nwb

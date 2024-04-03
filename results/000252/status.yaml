@@ -5,7 +5,12 @@ last_run_duration: 3466.377163
 last_run_ended: '2024-02-04T09:49:27.268671-05:00'
 nassets: 12
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-P1/sub-P1_ses-2016-05-20_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-N1/sub-N1_ses-2019-02-12_ecephys.nwb
     versions:
@@ -49,7 +54,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-P1/sub-P1_ses-2016-05-20_ecephys.nwb
   - sub-P1/sub-P1_ses-2016-05-23_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
@@ -69,6 +73,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-P1/sub-P1_ses-2016-05-20_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-N1/sub-N1_ses-2019-02-12_ecephys.nwb
     versions:
@@ -97,7 +106,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-P1/sub-P1_ses-2016-05-20_ecephys.nwb
   - sub-P1/sub-P1_ses-2016-05-23_ecephys.nwb
   assets_timeout: []
   name: matnwb_nwbRead

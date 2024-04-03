@@ -5,7 +5,12 @@ last_run_duration: 18778.177286
 last_run_ended: '2024-01-17T08:36:01.514660-05:00'
 nassets: 19
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-5/sub-5_ses-5_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-1/sub-1_ses-1_ecephys.nwb
   - sub-10/sub-10_ses-10_ecephys.nwb
@@ -45,7 +50,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-5/sub-5_ses-5_ecephys.nwb
   - path: sub-6/sub-6_ses-6_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -78,7 +82,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-5/sub-5_ses-5_ecephys.nwb
+  - path: sub-5/sub-5_ses-5_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-6/sub-6_ses-6_ecephys.nwb
     versions:
       hdmf: 3.13.0

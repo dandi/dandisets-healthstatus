@@ -5,7 +5,12 @@ last_run_duration: 27794.600909
 last_run_ended: '2024-01-17T10:33:14.690561-05:00'
 nassets: 118
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-BH267/sub-BH267_ses-20211119_obj-1muikb2.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-BH243/sub-BH243.nwb
   - sub-BH243/sub-BH243_ses-20211103_obj-1dppqzr.nwb
@@ -145,11 +150,6 @@ tests:
   - sub-BH267/sub-BH267_ses-20211103_obj-4umqo9.nwb
   - sub-BH267/sub-BH267_ses-20211103_obj-d7sy44.nwb
   - sub-BH267/sub-BH267_ses-20211119_obj-1aktol.nwb
-  - path: sub-BH267/sub-BH267_ses-20211119_obj-1muikb2.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - sub-BH268/sub-BH268_ses-20211103_obj-1h44oed.nwb
   - sub-BH268/sub-BH268_ses-20211103_obj-1qn1yor.nwb
   - sub-BH268/sub-BH268_ses-20211120_obj-1yl58y1.nwb
@@ -268,6 +268,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-BH265/sub-BH265_ses-20211117.nwb
+  - path: sub-BH267/sub-BH267_ses-20211119_obj-1muikb2.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-BH270/sub-BH270_ses-20211103_obj-15hqwc6.nwb
   - sub-BH271/sub-BH271_ses-20211123_obj-1mhh6o3.nwb
   - sub-BH274/sub-BH274_ses-20211125_obj-1tn1cgg.nwb
@@ -390,11 +395,6 @@ tests:
   - sub-BH267/sub-BH267_ses-20211103_obj-4umqo9.nwb
   - sub-BH267/sub-BH267_ses-20211103_obj-d7sy44.nwb
   - sub-BH267/sub-BH267_ses-20211119_obj-1aktol.nwb
-  - path: sub-BH267/sub-BH267_ses-20211119_obj-1muikb2.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - sub-BH268/sub-BH268_ses-20211103_obj-1h44oed.nwb
   - sub-BH268/sub-BH268_ses-20211103_obj-1qn1yor.nwb
   - sub-BH268/sub-BH268_ses-20211120_obj-1yl58y1.nwb

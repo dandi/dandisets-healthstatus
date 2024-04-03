@@ -5,7 +5,12 @@ last_run_duration: 137966.708055
 last_run_ended: '2024-01-15T10:43:24.342621-05:00'
 nassets: 98
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-365939/sub-365939_ses-20171017_behavior+ecephys+ogen.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-353936/sub-353936_ses-20170519_behavior+ecephys+ogen.nwb
   - path: sub-353936/sub-353936_ses-20170608_behavior+ecephys+ogen.nwb
@@ -153,7 +158,6 @@ tests:
   - sub-365938/sub-365938_ses-20171101_behavior+ecephys+ogen.nwb
   - sub-365938/sub-365938_ses-20171102_behavior+ecephys+ogen.nwb
   - sub-365938/sub-365938_ses-20171103_behavior+ecephys+ogen.nwb
-  - sub-365939/sub-365939_ses-20171017_behavior+ecephys+ogen.nwb
   - sub-365939/sub-365939_ses-20171018_behavior+ecephys+ogen.nwb
   - path: sub-365939/sub-365939_ses-20171019_behavior+ecephys+ogen.nwb
     versions:
@@ -259,7 +263,11 @@ tests:
   - sub-365938/sub-365938_ses-20171025_behavior+ecephys+ogen.nwb
   - sub-365938/sub-365938_ses-20171030_behavior+ecephys+ogen.nwb
   - sub-365938/sub-365938_ses-20171031_behavior+ecephys+ogen.nwb
-  - sub-365939/sub-365939_ses-20171017_behavior+ecephys+ogen.nwb
+  - path: sub-365939/sub-365939_ses-20171017_behavior+ecephys+ogen.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-365939/sub-365939_ses-20171020_behavior+ecephys+ogen.nwb
   - sub-365942/sub-365942_ses-20170708_behavior+ecephys+ogen.nwb
   - sub-365942/sub-365942_ses-20170713_behavior+ecephys+ogen.nwb

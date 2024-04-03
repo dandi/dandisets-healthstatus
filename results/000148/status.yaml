@@ -5,7 +5,12 @@ last_run_duration: 152246.243408
 last_run_ended: '2024-01-17T02:49:59.922479-05:00'
 nassets: 46
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-20210826003/sub-20210826003_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-20210708001/sub-20210708001_icephys.nwb
     versions:
@@ -125,7 +130,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-20210826002/sub-20210826002_icephys.nwb
-  - sub-20210826003/sub-20210826003_icephys.nwb
   - path: sub-20210908001/sub-20210908001_icephys.nwb
     versions:
       hdmf: 3.12.2
@@ -177,6 +181,11 @@ tests:
   - sub-20210709002/sub-20210709002_icephys.nwb
   - sub-20210721003/sub-20210721003_icephys.nwb
   - sub-20210721004/sub-20210721004_icephys.nwb
+  - path: sub-20210826003/sub-20210826003_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-20210908004/sub-20210908004_icephys.nwb
     versions:
       hdmf: 3.12.2
@@ -300,7 +309,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-20210826002/sub-20210826002_icephys.nwb
-  - sub-20210826003/sub-20210826003_icephys.nwb
   - path: sub-20210908001/sub-20210908001_icephys.nwb
     versions:
       hdmf: 3.12.2

@@ -5,7 +5,12 @@ last_run_duration: 71908.119143
 last_run_ended: '2024-02-10T07:05:23.178678-05:00'
 nassets: 19
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-17797/sub-17797_ses-9-scan-3_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-17797/sub-17797_ses-4-scan-10_behavior+image+ophys.nwb
     versions:
@@ -51,7 +56,6 @@ tests:
   - sub-17797/sub-17797_ses-8-scan-5_behavior+image+ophys.nwb
   - sub-17797/sub-17797_ses-8-scan-7_behavior+image+ophys.nwb
   - sub-17797/sub-17797_ses-8-scan-9_behavior+image+ophys.nwb
-  - sub-17797/sub-17797_ses-9-scan-3_behavior+image+ophys.nwb
   - sub-17797/sub-17797_ses-9-scan-4_behavior+image+ophys.nwb
   - path: sub-17797/sub-17797_ses-9-scan-6_behavior+image+ophys.nwb
     versions:
@@ -60,7 +64,12 @@ tests:
       pynwb: 2.6.0
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-17797/sub-17797_ses-9-scan-3_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok: []
   assets_timeout:
   - path: sub-17797/sub-17797_ses-4-scan-10_behavior+image+ophys.nwb
@@ -107,7 +116,6 @@ tests:
   - sub-17797/sub-17797_ses-8-scan-5_behavior+image+ophys.nwb
   - sub-17797/sub-17797_ses-8-scan-7_behavior+image+ophys.nwb
   - sub-17797/sub-17797_ses-8-scan-9_behavior+image+ophys.nwb
-  - sub-17797/sub-17797_ses-9-scan-3_behavior+image+ophys.nwb
   - sub-17797/sub-17797_ses-9-scan-4_behavior+image+ophys.nwb
   - path: sub-17797/sub-17797_ses-9-scan-6_behavior+image+ophys.nwb
     versions:

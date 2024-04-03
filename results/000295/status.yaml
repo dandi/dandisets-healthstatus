@@ -5,7 +5,12 @@ last_run_duration: 46408.526905
 last_run_ended: '2024-02-05T12:32:17.786020-05:00'
 nassets: 26
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-20220701005/sub-20220701005_ses-20220701T190224_slice-20220701005_cell-20220701005_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-20220512001/sub-20220512001_ses-20220512T161621_slice-20220512001_cell-20220512001_icephys.nwb
     versions:
@@ -118,7 +123,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-20220701005/sub-20220701005_ses-20220701T190224_slice-20220701005_cell-20220701005_icephys.nwb
   - path: sub-20220701006/sub-20220701006_ses-20220701T191236_slice-20220701006_cell-20220701006_icephys.nwb
     versions:
       hdmf: 3.12.2
@@ -228,6 +232,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-20220701005/sub-20220701005_ses-20220701T190224_slice-20220701005_cell-20220701005_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-20220701006/sub-20220701006_ses-20220701T191236_slice-20220701006_cell-20220701006_icephys.nwb
     versions:
       hdmf: 3.12.2
@@ -255,7 +264,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-20220701005/sub-20220701005_ses-20220701T190224_slice-20220701005_cell-20220701005_icephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

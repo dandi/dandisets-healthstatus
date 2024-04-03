@@ -5,7 +5,12 @@ last_run_duration: 38089.010834
 last_run_ended: '2024-02-08T16:48:25.858840-05:00'
 nassets: 52
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: jGCaMP8f/jGCaMP8f_ANM478411_cell06.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - jGCaMP8f/jGCaMP8f_ANM471993_cell01.nwb
   - jGCaMP8f/jGCaMP8f_ANM471993_cell02.nwb
@@ -130,7 +135,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - jGCaMP8f/jGCaMP8f_ANM478411_cell05.nwb
-  - jGCaMP8f/jGCaMP8f_ANM478411_cell06.nwb
   - jGCaMP8m/jGCaMP8m_ANM472179_cell01.nwb
   - path: jGCaMP8m/jGCaMP8m_ANM472179_cell02.nwb
     versions:
@@ -185,7 +189,11 @@ tests:
   - jGCaMP8f/jGCaMP8f_ANM478411_cell02.nwb
   - jGCaMP8f/jGCaMP8f_ANM478411_cell03.nwb
   - jGCaMP8f/jGCaMP8f_ANM478411_cell05.nwb
-  - jGCaMP8f/jGCaMP8f_ANM478411_cell06.nwb
+  - path: jGCaMP8f/jGCaMP8f_ANM478411_cell06.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - jGCaMP8m/jGCaMP8m_ANM472179_cell01.nwb
   - path: jGCaMP8m/jGCaMP8m_ANM472179_cell02.nwb
     versions:

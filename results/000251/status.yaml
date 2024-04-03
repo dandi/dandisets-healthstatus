@@ -5,7 +5,12 @@ last_run_duration: 159503.26758
 last_run_ended: '2024-02-06T00:17:15.187453-05:00'
 nassets: 513
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-3053/sub-3053_ses-SU-VR-ALL-OL-59.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-108/sub-108_ses-Ca-VS-VR-2.nwb
   - sub-108/sub-108_ses-Ca-VS-VR-SPD-2.nwb
@@ -532,7 +537,6 @@ tests:
   - sub-3048/sub-3048_ses-SU-VR-OL-73.nwb
   - sub-3048/sub-3048_ses-SU-VR-OL-74.nwb
   - sub-3048/sub-3048_ses-SU-VR-OL-75.nwb
-  - sub-3053/sub-3053_ses-SU-VR-ALL-OL-59.nwb
   - sub-3053/sub-3053_ses-SU-VR-ALL-OL-60.nwb
   - sub-3053/sub-3053_ses-SU-VR-ALL-SPD-59.nwb
   - sub-3053/sub-3053_ses-SU-VR-ALL-SPD-60.nwb
@@ -920,6 +924,11 @@ tests:
       pynwb: 2.6.0
   - sub-3048/sub-3048_ses-SU-VR-OL-70.nwb
   - sub-3048/sub-3048_ses-SU-VR-OL-74.nwb
+  - path: sub-3053/sub-3053_ses-SU-VR-ALL-OL-59.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-3053/sub-3053_ses-SU-VR-ALL-SPD-60.nwb
   - sub-3053/sub-3053_ses-SU-VR-OL-76.nwb
   - sub-3053/sub-3053_ses-SU-VR-OL-77.nwb
@@ -1237,7 +1246,6 @@ tests:
   - sub-3048/sub-3048_ses-SU-VR-OL-72.nwb
   - sub-3048/sub-3048_ses-SU-VR-OL-73.nwb
   - sub-3048/sub-3048_ses-SU-VR-OL-75.nwb
-  - sub-3053/sub-3053_ses-SU-VR-ALL-OL-59.nwb
   - sub-3053/sub-3053_ses-SU-VR-ALL-OL-60.nwb
   - sub-3053/sub-3053_ses-SU-VR-ALL-SPD-59.nwb
   - sub-3053/sub-3053_ses-SU-VR-ALL-TP-59.nwb

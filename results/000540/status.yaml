@@ -5,7 +5,12 @@ last_run_duration: 303680.737399
 last_run_ended: '2024-02-19T09:40:47.731300-05:00'
 nassets: 990
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-SLR096/sub-SLR096_ses-20190303_obj-1drqp7v_behavior+image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-SLR087/sub-SLR087_ses-20180706_obj-14ua2bs_behavior+image.nwb
     versions:
@@ -206,7 +211,6 @@ tests:
   - sub-SLR096/sub-SLR096_ses-20190303_obj-14s2via_behavior+image.nwb
   - sub-SLR096/sub-SLR096_ses-20190303_obj-18q8pve_behavior+image.nwb
   - sub-SLR096/sub-SLR096_ses-20190303_obj-1baczvm_behavior+image.nwb
-  - sub-SLR096/sub-SLR096_ses-20190303_obj-1drqp7v_behavior+image.nwb
   - sub-SLR096/sub-SLR096_ses-20190303_obj-1t9qv9l_behavior+image.nwb
   - sub-SLR096/sub-SLR096_ses-20190303_obj-8cvwa9_behavior+image.nwb
   - sub-SLR096/sub-SLR096_ses-20190303_obj-dp481j_behavior+image.nwb
@@ -678,7 +682,11 @@ tests:
   - sub-SLR096/sub-SLR096_ses-20190302_obj-19t7ioo_behavior+image.nwb
   - sub-SLR096/sub-SLR096_ses-20190302_obj-1rknjv0_behavior+image.nwb
   - sub-SLR096/sub-SLR096_ses-20190303_obj-14s2via_behavior+image.nwb
-  - sub-SLR096/sub-SLR096_ses-20190303_obj-1drqp7v_behavior+image.nwb
+  - path: sub-SLR096/sub-SLR096_ses-20190303_obj-1drqp7v_behavior+image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-SLR096/sub-SLR096_ses-20190304_obj-2sxzsa_behavior+image.nwb
   - sub-SLR096/sub-SLR096_ses-20190304_obj-n6qym_behavior+image.nwb
   - sub-SLR097/sub-SLR097_ses-20190302_obj-1f2nzfo_behavior+image.nwb

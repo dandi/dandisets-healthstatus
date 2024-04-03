@@ -5,7 +5,12 @@ last_run_duration: 69092.899124
 last_run_ended: '2024-01-17T03:11:43.428379-05:00'
 nassets: 19
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-YMV06/sub-YMV06_ses-YMV06-170913_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-YMV01/sub-YMV01_ses-YMV01-170818_ecephys.nwb
     versions:
@@ -16,7 +21,6 @@ tests:
   - sub-YMV03/sub-YMV03_ses-YMV03-170818_ecephys.nwb
   - sub-YMV04/sub-YMV04_ses-YMV04-170907_ecephys.nwb
   - sub-YMV05/sub-YMV05_ses-YMV05-170912_ecephys.nwb
-  - sub-YMV06/sub-YMV06_ses-YMV06-170913_ecephys.nwb
   - sub-YMV07/sub-YMV07_ses-YMV07-170914_ecephys.nwb
   - sub-YMV08/sub-YMV08_ses-YMV08-170922_ecephys.nwb
   - path: sub-YMV09/sub-YMV09_ses-YMV09-171204_ecephys.nwb
@@ -60,7 +64,12 @@ tests:
       pynwb: 2.6.0
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-YMV06/sub-YMV06_ses-YMV06-170913_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok: []
   assets_timeout:
   - path: sub-YMV01/sub-YMV01_ses-YMV01-170818_ecephys.nwb
@@ -72,7 +81,6 @@ tests:
   - sub-YMV03/sub-YMV03_ses-YMV03-170818_ecephys.nwb
   - sub-YMV04/sub-YMV04_ses-YMV04-170907_ecephys.nwb
   - sub-YMV05/sub-YMV05_ses-YMV05-170912_ecephys.nwb
-  - sub-YMV06/sub-YMV06_ses-YMV06-170913_ecephys.nwb
   - sub-YMV07/sub-YMV07_ses-YMV07-170914_ecephys.nwb
   - sub-YMV08/sub-YMV08_ses-YMV08-170922_ecephys.nwb
   - path: sub-YMV09/sub-YMV09_ses-YMV09-171204_ecephys.nwb

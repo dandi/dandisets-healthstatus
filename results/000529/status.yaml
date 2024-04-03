@@ -5,7 +5,12 @@ last_run_duration: 7609.349974
 last_run_ended: '2024-02-15T21:19:26.939774-05:00'
 nassets: 27
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-RuOx/sub-RuOx_obj-11z9vc8_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-AIROF/sub-AIROF_obj-122qg8l_ecephys.nwb
     versions:
@@ -34,11 +39,6 @@ tests:
       pynwb: 2.6.0
   - sub-AIROF/sub-AIROF_obj-o40thn_ecephys.nwb
   - path: sub-AIROF/sub-AIROF_obj-u7ou1v_ecephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-RuOx/sub-RuOx_obj-11z9vc8_ecephys.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
@@ -134,6 +134,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-AIROF/sub-AIROF_obj-o40thn_ecephys.nwb
+  - path: sub-RuOx/sub-RuOx_obj-11z9vc8_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-AIROF/sub-AIROF_obj-122qg8l_ecephys.nwb
     versions:
@@ -161,11 +166,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-AIROF/sub-AIROF_obj-u7ou1v_ecephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-RuOx/sub-RuOx_obj-11z9vc8_ecephys.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2

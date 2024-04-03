@@ -5,7 +5,12 @@ last_run_duration: 193890.094702
 last_run_ended: '2024-01-14T05:51:04.245770-05:00'
 nassets: 359
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-Snoopy/sub-Snoopy_ses-20190313_behavior.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-Azalea/sub-Azalea_ses-20190129_behavior.nwb
   - sub-Azalea/sub-Azalea_ses-20190309_behavior.nwb
@@ -406,7 +411,6 @@ tests:
       pynwb: 2.6.0
   - sub-Snoopy/sub-Snoopy_ses-20190308_behavior.nwb
   - sub-Snoopy/sub-Snoopy_ses-20190312_behavior.nwb
-  - sub-Snoopy/sub-Snoopy_ses-20190313_behavior.nwb
   - sub-Snoopy/sub-Snoopy_ses-20190321_behavior.nwb
   - sub-Snoopy/sub-Snoopy_ses-20190327_behavior.nwb
   - sub-Snoopy/sub-Snoopy_ses-20190408_behavior.nwb
@@ -581,6 +585,11 @@ tests:
   - sub-Rose/sub-Rose_ses-20190425_behavior.nwb
   - sub-Rose/sub-Rose_ses-20190501_behavior.nwb
   - sub-Snoopy/sub-Snoopy_ses-20190312_behavior.nwb
+  - path: sub-Snoopy/sub-Snoopy_ses-20190313_behavior.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Snoopy/sub-Snoopy_ses-20190321_behavior.nwb
   - sub-Snoopy/sub-Snoopy_ses-20190412_behavior.nwb
   - sub-Snoopy/sub-Snoopy_ses-20190509_behavior.nwb
@@ -905,7 +914,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-Snoopy/sub-Snoopy_ses-20190308_behavior.nwb
-  - sub-Snoopy/sub-Snoopy_ses-20190313_behavior.nwb
   - sub-Snoopy/sub-Snoopy_ses-20190327_behavior.nwb
   - sub-Snoopy/sub-Snoopy_ses-20190408_behavior.nwb
   - sub-Snoopy/sub-Snoopy_ses-20190411_behavior.nwb

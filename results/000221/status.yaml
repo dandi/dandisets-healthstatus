@@ -5,7 +5,12 @@ last_run_duration: 966385.648012
 last_run_ended: '2024-02-04T18:56:39.504851-05:00'
 nassets: 263
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-HI215/sub-HI215_ses-HI215-071519_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-HI159/sub-HI159_ecephys+ogen.nwb
   - sub-HI159/sub-HI159_ses-HI159-090418_ecephys+ogen.nwb
@@ -214,7 +219,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-HI215/sub-HI215_ses-HI215-071419_ecephys+ogen.nwb
-  - sub-HI215/sub-HI215_ses-HI215-071519_ecephys+ogen.nwb
   - path: sub-HI215/sub-HI215_ses-HI215-071619_ecephys+ogen.nwb
     versions:
       hdmf: 3.12.2
@@ -397,6 +401,11 @@ tests:
   - sub-HI204/sub-HI204_ses-HI204-062819_ecephys+ogen.nwb
   - sub-HI209/sub-HI209_ses-HI209-080619_ecephys+ogen.nwb
   - sub-HI211/sub-HI211_ses-HI211-072419_ecephys+ogen.nwb
+  - path: sub-HI215/sub-HI215_ses-HI215-071519_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-HI225/sub-HI225_ses-HI225-072319_ecephys+ogen.nwb
   - sub-HI225/sub-HI225_ses-HI225-072619_ecephys+ogen.nwb
   - sub-HI226/sub-HI226_ses-HI226-082219_ecephys+ogen.nwb
@@ -614,7 +623,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-HI215/sub-HI215_ses-HI215-071419_ecephys+ogen.nwb
-  - sub-HI215/sub-HI215_ses-HI215-071519_ecephys+ogen.nwb
   - path: sub-HI215/sub-HI215_ses-HI215-071619_ecephys+ogen.nwb
     versions:
       hdmf: 3.12.2
