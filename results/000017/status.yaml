@@ -5,7 +5,12 @@ last_run_duration: 124749.274604
 last_run_ended: '2024-01-07T03:48:22.499523-05:00'
 nassets: 39
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-Lederberg/sub-Lederberg_ses-20171209T120000.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-Cori/sub-Cori_ses-20161214T120000.nwb
     versions:
@@ -58,11 +63,6 @@ tests:
       pynwb: 2.6.0
   - sub-Lederberg/sub-Lederberg_ses-20171207T120000.nwb
   - path: sub-Lederberg/sub-Lederberg_ses-20171208T120000.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-Lederberg/sub-Lederberg_ses-20171209T120000.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
@@ -201,7 +201,7 @@ tests:
       pynwb: 2.6.0
   - path: sub-Lederberg/sub-Lederberg_ses-20171209T120000.nwb
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-Lederberg/sub-Lederberg_ses-20171210T120000.nwb

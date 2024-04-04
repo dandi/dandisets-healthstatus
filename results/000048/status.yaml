@@ -5,15 +5,15 @@ last_run_duration: 1946.637784
 last_run_ended: '2024-01-11T08:48:08.754843-05:00'
 nassets: 1
 tests:
-- assets_nok:
+- assets_nok: []
+  assets_ok:
   - sub-222549/sub-222549_ecephys+ophys.nwb
-  assets_ok: []
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-222549/sub-222549_ecephys+ophys.nwb
+- assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-222549/sub-222549_ecephys+ophys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

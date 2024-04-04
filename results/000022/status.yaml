@@ -5,7 +5,12 @@ last_run_duration: 250533.370421
 last_run_ended: '2024-01-09T02:37:31.582813-05:00'
 nassets: 169
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-820866111/sub-820866111_ses-840012044_probe-841431758_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-744912845/sub-744912845_ses-766640955.nwb
   - sub-744912845/sub-744912845_ses-766640955_probe-773592315_ecephys.nwb
@@ -282,7 +287,6 @@ tests:
   - sub-817060743/sub-817060743_ses-839068429_probe-868929142_ecephys.nwb
   - sub-820866111/sub-820866111_ses-840012044.nwb
   - sub-820866111/sub-820866111_ses-840012044_probe-841431754_ecephys.nwb
-  - sub-820866111/sub-820866111_ses-840012044_probe-841431758_ecephys.nwb
   - sub-820866111/sub-820866111_ses-840012044_probe-868297127_ecephys.nwb
   - sub-820866111/sub-820866111_ses-840012044_probe-868297129_ecephys.nwb
   - sub-820866111/sub-820866111_ses-840012044_probe-868297131_ecephys.nwb
@@ -338,6 +342,11 @@ tests:
   - sub-774672354/sub-774672354_ses-794812542_probe-810758781_ecephys.nwb
   - sub-774672354/sub-774672354_ses-794812542_probe-810758785_ecephys.nwb
   - sub-811322604/sub-811322604_ses-829720705_probe-832129159_ecephys.nwb
+  - path: sub-820866111/sub-820866111_ses-840012044_probe-841431758_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-744912845/sub-744912845_ses-766640955_probe-773592318_ecephys.nwb
   - sub-744912845/sub-744912845_ses-766640955_probe-773592320_ecephys.nwb
@@ -546,7 +555,6 @@ tests:
       pynwb: 2.6.0
   - sub-817060743/sub-817060743_ses-839068429_probe-868929142_ecephys.nwb
   - sub-820866111/sub-820866111_ses-840012044_probe-841431754_ecephys.nwb
-  - sub-820866111/sub-820866111_ses-840012044_probe-841431758_ecephys.nwb
   - sub-820866111/sub-820866111_ses-840012044_probe-868297127_ecephys.nwb
   - sub-820866111/sub-820866111_ses-840012044_probe-868297129_ecephys.nwb
   - sub-820866111/sub-820866111_ses-840012044_probe-868297131_ecephys.nwb

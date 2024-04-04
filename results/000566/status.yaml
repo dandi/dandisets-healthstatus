@@ -5,14 +5,14 @@ last_run_duration: 194.826384
 last_run_ended: '2024-02-20T12:50:55.408884-05:00'
 nassets: 1
 tests:
-- assets_nok:
+- assets_nok: []
+  assets_ok:
   - sub-fly01/sub-fly01_ophys.nwb
-  assets_ok: []
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
+- assets_nok: []
+  assets_ok:
   - sub-fly01/sub-fly01_ophys.nwb
-  assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

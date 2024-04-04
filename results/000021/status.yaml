@@ -5,7 +5,12 @@ last_run_duration: 288777.633534
 last_run_ended: '2024-01-09T09:55:32.809313-05:00'
 nassets: 214
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-742714472/sub-742714472_ses-761418226_probe-768908579_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-699733573/sub-699733573_ses-715093703.nwb
   - sub-699733573/sub-699733573_ses-715093703_probe-810755797_ecephys.nwb
@@ -259,7 +264,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-742714472/sub-742714472_ses-761418226_probe-768908579_ecephys.nwb
   - sub-742714472/sub-742714472_ses-761418226_probe-768908582_ecephys.nwb
   - sub-742714472/sub-742714472_ses-761418226_probe-768908585_ecephys.nwb
   - sub-742714472/sub-742714472_ses-761418226_probe-768908587_ecephys.nwb
@@ -380,6 +384,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-742602884/sub-742602884_ses-763673393_probe-773463013_ecephys.nwb
+  - path: sub-742714472/sub-742714472_ses-761418226_probe-768908579_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-757329617/sub-757329617_ses-773418906.nwb
   - sub-772616820/sub-772616820_ses-799864342_probe-805579713_ecephys.nwb
   - sub-775876808/sub-775876808_ses-798911424.nwb
@@ -670,7 +679,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-742714472/sub-742714472_ses-761418226_probe-768908579_ecephys.nwb
   - sub-744915196/sub-744915196_ses-762602078.nwb
   - sub-745276220/sub-745276220_ses-762120172.nwb
   - sub-769360771/sub-769360771_ses-791319847.nwb

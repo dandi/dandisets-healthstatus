@@ -5,7 +5,12 @@ last_run_duration: 122718.029698
 last_run_ended: '2024-01-04T22:26:37.508931-05:00'
 nassets: 87
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-TWH088/sub-TWH088_ses-20180301_obj-fkumf6_ecephys+image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-P10HMH/sub-P10HMH_ses-20060901_ecephys+image.nwb
     versions:
@@ -198,11 +203,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-TWH088/sub-TWH088_ses-20180301_obj-14chmi4_ecephys+image.nwb
-  - path: sub-TWH088/sub-TWH088_ses-20180301_obj-fkumf6_ecephys+image.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - sub-TWH089/sub-TWH089_ses-20180301_ecephys+image.nwb
   - sub-TWH090/sub-TWH090_ses-20180401_ecephys+image.nwb
   - sub-TWH098/sub-TWH098_ses-20180901_ecephys+image.nwb
@@ -408,7 +408,7 @@ tests:
   - sub-TWH088/sub-TWH088_ses-20180301_obj-14chmi4_ecephys+image.nwb
   - path: sub-TWH088/sub-TWH088_ses-20180301_obj-fkumf6_ecephys+image.nwb
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-TWH089/sub-TWH089_ses-20180301_ecephys+image.nwb

@@ -5,15 +5,15 @@ last_run_duration: 2073.991059
 last_run_ended: '2024-01-14T07:42:13.614046-05:00'
 nassets: 1
 tests:
-- assets_nok:
+- assets_nok: []
+  assets_ok:
   - sub-anm106211/sub-anm106211_behavior+icephys.nwb
-  assets_ok: []
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-anm106211/sub-anm106211_behavior+icephys.nwb
+- assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-anm106211/sub-anm106211_behavior+icephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

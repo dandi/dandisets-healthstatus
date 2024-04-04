@@ -5,7 +5,12 @@ last_run_duration: 232837.537303
 last_run_ended: '2024-01-06T05:01:58.159434-05:00'
 nassets: 173
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-anm00313111/sub-anm00313111_ses-20170627T094224_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-anm00229327/sub-anm00229327_ses-20170627T093438_ecephys.nwb
   - path: sub-anm00229327/sub-anm00229327_ses-20170627T093442_ecephys.nwb
@@ -204,7 +209,6 @@ tests:
   - sub-anm00313111/sub-anm00313111_ses-20170627T094213_ecephys+ogen.nwb
   - sub-anm00313111/sub-anm00313111_ses-20170627T094216_ecephys+ogen.nwb
   - sub-anm00313111/sub-anm00313111_ses-20170627T094219_ecephys+ogen.nwb
-  - sub-anm00313111/sub-anm00313111_ses-20170627T094224_ecephys+ogen.nwb
   - sub-anm00322805/sub-anm00322805_ses-20170627T094226_ecephys+ogen.nwb
   - sub-anm00322805/sub-anm00322805_ses-20170627T094229_ecephys+ogen.nwb
   - sub-anm00322805/sub-anm00322805_ses-20170627T094232_ecephys+ogen.nwb
@@ -384,6 +388,11 @@ tests:
   - sub-anm00313111/sub-anm00313111_ses-20170627T094213_ecephys+ogen.nwb
   - sub-anm00313111/sub-anm00313111_ses-20170627T094216_ecephys+ogen.nwb
   - sub-anm00313111/sub-anm00313111_ses-20170627T094219_ecephys+ogen.nwb
+  - path: sub-anm00313111/sub-anm00313111_ses-20170627T094224_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-anm00322805/sub-anm00322805_ses-20170627T094226_ecephys+ogen.nwb
   - sub-anm00322805/sub-anm00322805_ses-20170627T094229_ecephys+ogen.nwb
   - sub-anm00322805/sub-anm00322805_ses-20170627T094232_ecephys+ogen.nwb
@@ -533,7 +542,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-anm00313106/sub-anm00313106_ses-20170627T094204_ecephys+ogen.nwb
-  - sub-anm00313111/sub-anm00313111_ses-20170627T094224_ecephys+ogen.nwb
   - sub-anm00322807/sub-anm00322807_ses-20170627T094249_ecephys+ogen.nwb
   - sub-anm00322807/sub-anm00322807_ses-20170627T094308_ecephys+ogen.nwb
   - path: sub-anm00323634/sub-anm00323634_ses-20170627T094311_ecephys+ogen.nwb

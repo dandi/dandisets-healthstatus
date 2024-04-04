@@ -5,7 +5,12 @@ last_run_duration: 536338.25221
 last_run_ended: '2024-01-09T17:20:19.688256-05:00'
 nassets: 297
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-1/sub-1_ses-18516026_tis-1-2_cell-c4_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-1/sub-1_ses-18516000_tis-1-1_icephys.nwb
     versions:
@@ -49,7 +54,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-1/sub-1_ses-18516026_tis-1-2_cell-c4_icephys.nwb
   - sub-1/sub-1_ses-18516027_tis-1-2_cell-c5_icephys.nwb
   - sub-1/sub-1_ses-18516028_tis-1-2_cell-c5_icephys.nwb
   - sub-1/sub-1_ses-18516029_tis-1-2_cell-c5_icephys.nwb
@@ -451,7 +455,11 @@ tests:
   - sub-1/sub-1_ses-18516021_tis-1-2_cell-c4_icephys.nwb
   - sub-1/sub-1_ses-18516022_tis-1-2_cell-c4_icephys.nwb
   - sub-1/sub-1_ses-18516023_tis-1-2_cell-c4_icephys.nwb
-  - sub-1/sub-1_ses-18516026_tis-1-2_cell-c4_icephys.nwb
+  - path: sub-1/sub-1_ses-18516026_tis-1-2_cell-c4_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-1/sub-1_ses-18516027_tis-1-2_cell-c5_icephys.nwb
   - sub-1/sub-1_ses-18516029_tis-1-2_cell-c5_icephys.nwb
   - sub-1/sub-1_ses-18516030_tis-1-2_cell-c5_icephys.nwb

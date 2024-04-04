@@ -5,7 +5,12 @@ last_run_duration: 216805.758396
 last_run_ended: '2024-01-06T00:34:45.080459-05:00'
 nassets: 101
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-YutaMouse41/sub-YutaMouse41_ses-YutaMouse41-150908_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-YutaMouse20/sub-YutaMouse20_ses-YutaMouse20-140321_behavior+ecephys.nwb
     versions:
@@ -90,11 +95,6 @@ tests:
   - path: sub-YutaMouse41/sub-YutaMouse41_ses-YutaMouse41-150903_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-YutaMouse41/sub-YutaMouse41_ses-YutaMouse41-150908_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-YutaMouse41/sub-YutaMouse41_ses-YutaMouse41-150909_behavior+ecephys.nwb
@@ -280,7 +280,7 @@ tests:
   - sub-YutaMouse41/sub-YutaMouse41_ses-YutaMouse41-150902_behavior+ecephys.nwb
   - path: sub-YutaMouse41/sub-YutaMouse41_ses-YutaMouse41-150908_behavior+ecephys.nwb
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-YutaMouse41/sub-YutaMouse41_ses-YutaMouse41-150909_behavior+ecephys.nwb

@@ -55,7 +55,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-7/sub-7_ses-7_ecephys.nwb
+  - path: sub-7/sub-7_ses-7_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-8/sub-8_ses-8_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -99,7 +103,6 @@ tests:
   - sub-18/sub-18_ses-18_ecephys.nwb
   - sub-2/sub-2_ses-2_ecephys.nwb
   - sub-3/sub-3_ses-3_ecephys.nwb
-  - sub-7/sub-7_ses-7_ecephys.nwb
   - sub-9/sub-9_ses-9_ecephys.nwb
   assets_timeout:
   - path: sub-11/sub-11_ses-11_ecephys.nwb
@@ -113,6 +116,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-19/sub-19_ses-19_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-7/sub-7_ses-7_ecephys.nwb
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2

@@ -5,7 +5,12 @@ last_run_duration: 80732.919373
 last_run_ended: '2024-01-04T10:46:52.944779-05:00'
 nassets: 54
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-BAYLORCD6/sub-BAYLORCD6_ses-20170610T135720.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-BAYLORCD12/sub-BAYLORCD12_ses-20180125T191601.nwb
   - sub-BAYLORCD12/sub-BAYLORCD12_ses-20180126T122506.nwb
@@ -46,7 +51,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-BAYLORCD14/sub-BAYLORCD14_ses-20171028T165746.nwb
-  - sub-BAYLORCD6/sub-BAYLORCD6_ses-20170610T135720.nwb
   - sub-BAYLORCD6/sub-BAYLORCD6_ses-20170611T140007.nwb
   - sub-BAYLORCD6/sub-BAYLORCD6_ses-20170612T125622.nwb
   - path: sub-BAYLORCD6/sub-BAYLORCD6_ses-20170614T111143.nwb
@@ -192,7 +196,11 @@ tests:
       pynwb: 2.6.0
   - sub-BAYLORCD14/sub-BAYLORCD14_ses-20171026T150956.nwb
   - sub-BAYLORCD14/sub-BAYLORCD14_ses-20171028T165746.nwb
-  - sub-BAYLORCD6/sub-BAYLORCD6_ses-20170610T135720.nwb
+  - path: sub-BAYLORCD6/sub-BAYLORCD6_ses-20170610T135720.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-BAYLORCD6/sub-BAYLORCD6_ses-20170611T140007.nwb
   - sub-BAYLORCD6/sub-BAYLORCD6_ses-20170612T125622.nwb
   - sub-BAYLORCD8/sub-BAYLORCD8_ses-20171016T121417.nwb

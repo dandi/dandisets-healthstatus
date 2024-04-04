@@ -5,7 +5,12 @@ last_run_duration: 305032.19502
 last_run_ended: '2024-01-07T01:05:13.178900-05:00'
 nassets: 158
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-221541/sub-221541_ses-20130825_obj-dk0tc7_behavior+ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - path: sub-210861/sub-210861_ses-20130701_behavior+ecephys+ogen.nwb
     versions:
@@ -257,7 +262,6 @@ tests:
   - sub-221541/sub-221541_ses-20130823_obj-eob1nd_behavior+ophys.nwb
   - sub-221541/sub-221541_ses-20130825_obj-16qqh2q_behavior+ophys.nwb
   - sub-221541/sub-221541_ses-20130825_obj-4ckpu1_behavior+ophys.nwb
-  - sub-221541/sub-221541_ses-20130825_obj-dk0tc7_behavior+ophys.nwb
   - sub-221541/sub-221541_ses-20130825_obj-gs4n4w_behavior+ophys.nwb
   - path: sub-221541/sub-221541_ses-20130825_obj-v2s7lf_behavior+ophys.nwb
     versions:
@@ -508,6 +512,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-221541/sub-221541_ses-20130822_behavior+ophys.nwb
+  - path: sub-221541/sub-221541_ses-20130825_obj-dk0tc7_behavior+ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-221541/sub-221541_ses-20130825_obj-v2s7lf_behavior+ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -540,7 +549,6 @@ tests:
   - sub-221541/sub-221541_ses-20130823_obj-eob1nd_behavior+ophys.nwb
   - sub-221541/sub-221541_ses-20130825_obj-16qqh2q_behavior+ophys.nwb
   - sub-221541/sub-221541_ses-20130825_obj-4ckpu1_behavior+ophys.nwb
-  - sub-221541/sub-221541_ses-20130825_obj-dk0tc7_behavior+ophys.nwb
   - sub-221541/sub-221541_ses-20130825_obj-gs4n4w_behavior+ophys.nwb
   - sub-221541/sub-221541_ses-20130826_obj-edk6fl_behavior+ophys.nwb
   - sub-226244/sub-226244_ses-20131108_obj-1hlx2tn_behavior+ophys.nwb
