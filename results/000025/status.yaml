@@ -5,15 +5,15 @@ last_run_duration: 4110.373399
 last_run_ended: '2024-01-07T04:56:52.907872-05:00'
 nassets: 1
 tests:
-- assets_nok:
+- assets_nok: []
+  assets_ok:
   - 001_140709EXP_A1.nwb
-  assets_ok: []
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - 001_140709EXP_A1.nwb
+- assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - 001_140709EXP_A1.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

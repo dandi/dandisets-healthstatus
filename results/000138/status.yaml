@@ -5,15 +5,15 @@ last_run_duration: 2820.889554
 last_run_ended: '2024-01-15T06:44:14.834723-05:00'
 nassets: 2
 tests:
-- assets_nok:
-  - sub-Jenkins/sub-Jenkins_ses-large_desc-test_ecephys.nwb
+- assets_nok: []
   assets_ok:
+  - sub-Jenkins/sub-Jenkins_ses-large_desc-test_ecephys.nwb
   - sub-Jenkins/sub-Jenkins_ses-large_desc-train_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
+- assets_nok: []
+  assets_ok:
   - sub-Jenkins/sub-Jenkins_ses-large_desc-test_ecephys.nwb
-  assets_ok: []
   assets_timeout:
   - sub-Jenkins/sub-Jenkins_ses-large_desc-train_behavior+ecephys.nwb
   name: matnwb_nwbRead

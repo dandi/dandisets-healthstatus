@@ -5,16 +5,16 @@ last_run_duration: 1383.812863
 last_run_ended: '2024-01-15T06:18:28.048656-05:00'
 nassets: 2
 tests:
-- assets_nok:
-  - sub-Haydn/sub-Haydn_desc-train_ecephys.nwb
+- assets_nok: []
   assets_ok:
   - sub-Haydn/sub-Haydn_desc-test_ecephys.nwb
+  - sub-Haydn/sub-Haydn_desc-train_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-Haydn/sub-Haydn_desc-test_ecephys.nwb
+  assets_ok:
   - sub-Haydn/sub-Haydn_desc-train_ecephys.nwb
-  assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

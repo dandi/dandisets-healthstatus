@@ -10,10 +10,10 @@ tests:
   - sub-MonkeyL-held-in-minival/sub-MonkeyL-held-in-minival_ses-20120926_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-MonkeyL-held-in-minival/sub-MonkeyL-held-in-minival_ses-20120926_behavior+ecephys.nwb
+- assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-MonkeyL-held-in-minival/sub-MonkeyL-held-in-minival_ses-20120926_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

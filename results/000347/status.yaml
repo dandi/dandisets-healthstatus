@@ -5,8 +5,7 @@ last_run_duration: 4168.797128
 last_run_ended: '2024-02-07T19:14:54.066140-05:00'
 nassets: 9
 tests:
-- assets_nok:
-  - sub-134/sub-134_ses-20220322T110600_ophys.nwb
+- assets_nok: []
   assets_ok:
   - sub-131/sub-131_ses-20211116T203100_image+ophys.nwb
   - sub-132/sub-132_ses-20211215T003200_ophys.nwb
@@ -16,6 +15,7 @@ tests:
   - sub-134/sub-134_ses-20220322T002800_ophys.nwb
   - sub-134/sub-134_ses-20220322T033600_ophys.nwb
   - sub-134/sub-134_ses-20220322T104100_ophys.nwb
+  - sub-134/sub-134_ses-20220322T110600_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -23,12 +23,12 @@ tests:
   - sub-132/sub-132_ses-20211215T194900_ophys.nwb
   - sub-134/sub-134_ses-20220322T033600_ophys.nwb
   - sub-134/sub-134_ses-20220322T104100_ophys.nwb
-  - sub-134/sub-134_ses-20220322T110600_ophys.nwb
   assets_ok:
   - sub-132/sub-132_ses-20211215T003200_ophys.nwb
   - sub-132/sub-132_ses-20211215T013700_ophys.nwb
   - sub-132/sub-132_ses-20211215T222300_ophys.nwb
   - sub-134/sub-134_ses-20220322T002800_ophys.nwb
+  - sub-134/sub-134_ses-20220322T110600_ophys.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

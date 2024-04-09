@@ -165,7 +165,11 @@ tests:
       pynwb: 2.6.0
   - jGCaMP8m/jGCaMP8m_ANM472180_cell04.nwb
   - jGCaMP8m/jGCaMP8m_ANM472180_cell05.nwb
-  - jGCaMP8m/jGCaMP8m_ANM472180_cell06.nwb
+  - path: jGCaMP8m/jGCaMP8m_ANM472180_cell06.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - jGCaMP8m/jGCaMP8m_ANM479115_cell07.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
@@ -213,7 +217,6 @@ tests:
       pynwb: 2.6.0
   - jGCaMP8m/jGCaMP8m_ANM472180_cell04.nwb
   - jGCaMP8m/jGCaMP8m_ANM472180_cell05.nwb
-  - jGCaMP8m/jGCaMP8m_ANM472180_cell06.nwb
   - jGCaMP8m/jGCaMP8m_ANM479115_cell07.nwb
   assets_ok:
   - path: jGCaMP8f/jGCaMP8f_ANM471994_cell06.nwb
@@ -330,6 +333,11 @@ tests:
   - path: jGCaMP8m/jGCaMP8m_ANM472180_cell01.nwb
     versions:
       hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: jGCaMP8m/jGCaMP8m_ANM472180_cell06.nwb
+    versions:
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   name: matnwb_nwbRead
