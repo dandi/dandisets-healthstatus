@@ -158,7 +158,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-Rat11/sub-Rat11_ses-Rat11-20150403_ecephys+image.nwb
+  - path: sub-Rat11/sub-Rat11_ses-Rat11-20150403_ecephys+image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -196,7 +200,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-Rat11/sub-Rat11_ses-Rat11-20150403_ecephys+image.nwb
   assets_ok:
   - sub-Rat09/sub-Rat09_ses-Rat09-20140328_ecephys+image.nwb
   - sub-Rat10/sub-Rat10_ses-Rat10-20140624_ecephys+image.nwb
@@ -312,6 +315,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-Rat11/sub-Rat11_ses-Rat11-20150331_ecephys+image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-Rat11/sub-Rat11_ses-Rat11-20150403_ecephys+image.nwb
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2

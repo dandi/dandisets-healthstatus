@@ -12,7 +12,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_ok:
-  - sub-1/sub-1_ses-1_ecephys.nwb
+  - path: sub-1/sub-1_ses-1_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-10/sub-10_ses-10_ecephys.nwb
   - path: sub-11/sub-11_ses-11_ecephys.nwb
     versions:
@@ -73,7 +77,6 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-1/sub-1_ses-1_ecephys.nwb
   - path: sub-12/sub-12_ses-12_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -108,6 +111,11 @@ tests:
   - sub-3/sub-3_ses-3_ecephys.nwb
   - sub-9/sub-9_ses-9_ecephys.nwb
   assets_timeout:
+  - path: sub-1/sub-1_ses-1_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-11/sub-11_ses-11_ecephys.nwb
     versions:
       hdmf: 3.13.0

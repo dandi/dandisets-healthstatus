@@ -5,9 +5,9 @@ last_run_duration: 15320.808148
 last_run_ended: '2024-01-08T01:57:29.869511-05:00'
 nassets: 6
 tests:
-- assets_nok:
-  - sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
+- assets_nok: []
   assets_ok:
+  - sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
   - sub-P29-16-05-14-retina02-left/sub-P29-16-05-14-retina02-left_ecephys.nwb
   - sub-c1/sub-c1_ecephys.nwb
   - sub-mouse412804/sub-mouse412804_ecephys.nwb
@@ -16,11 +16,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
   - sub-mouse412804/sub-mouse412804_ses-20200824T155542.nwb
   assets_ok:
   - sub-mouse412804/sub-mouse412804_ses-20200824T155543.nwb
   assets_timeout:
+  - sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
   - sub-P29-16-05-14-retina02-left/sub-P29-16-05-14-retina02-left_ecephys.nwb
   - sub-c1/sub-c1_ecephys.nwb
   - sub-mouse412804/sub-mouse412804_ecephys.nwb

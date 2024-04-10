@@ -300,7 +300,11 @@ tests:
   - sub-Honeybee/sub-Honeybee_ses-Honeybee07_HomeCage_behavior+ecephys.nwb
   - sub-Jerk/sub-Jerk_ses-Jerk01-LinearTrack_behavior+ecephys.nwb
   - sub-Jerk/sub-Jerk_ses-Jerk01_HomeCage_behavior+ecephys.nwb
-  - sub-Jerk/sub-Jerk_ses-Jerk02-HomeCage_behavior+ecephys.nwb
+  - path: sub-Jerk/sub-Jerk_ses-Jerk02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Jerk/sub-Jerk_ses-Jerk02-LinearTrack_behavior+ecephys.nwb
   - sub-Jerk/sub-Jerk_ses-Jerk03-HomeCage_behavior+ecephys.nwb
   - sub-Jerk/sub-Jerk_ses-Jerk03-LinearTrack_behavior+ecephys.nwb
@@ -952,7 +956,6 @@ tests:
   - sub-Honeybee/sub-Honeybee_ses-Honeybee07_HomeCage_behavior+ecephys.nwb
   - sub-Jerk/sub-Jerk_ses-Jerk01-LinearTrack_behavior+ecephys.nwb
   - sub-Jerk/sub-Jerk_ses-Jerk01_HomeCage_behavior+ecephys.nwb
-  - sub-Jerk/sub-Jerk_ses-Jerk02-HomeCage_behavior+ecephys.nwb
   - sub-Jerk/sub-Jerk_ses-Jerk02-LinearTrack_behavior+ecephys.nwb
   - sub-Jerk/sub-Jerk_ses-Jerk03-HomeCage_behavior+ecephys.nwb
   - sub-Jerk/sub-Jerk_ses-Jerk03-LinearTrack_behavior+ecephys.nwb
@@ -1285,6 +1288,11 @@ tests:
   - sub-GaramMasala/sub-GaramMasala_ses-GaramMasala03-HomeCage_behavior+ecephys.nwb
   - sub-Garrett/sub-Garrett_ses-Garrett05_HomeCage_behavior+ecephys.nwb
   - sub-Guinan/sub-Guinan_ses-Guinan06-HomeCage_behavior+ecephys.nwb
+  - path: sub-Jerk/sub-Jerk_ses-Jerk02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Jerk/sub-Jerk_ses-Jerk05-LinearTrack_behavior+ecephys.nwb
   - sub-Keeler/sub-Keeler_ses-Keeler01_HomeCage_behavior+ecephys.nwb
   - sub-Kes/sub-Kes_ses-Kes05-HomeCage_behavior+ecephys.nwb
