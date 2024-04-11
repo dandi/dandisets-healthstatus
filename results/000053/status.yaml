@@ -17,7 +17,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_ok:
-  - sub-Azalea/sub-Azalea_ses-20190129_behavior.nwb
+  - path: sub-Azalea/sub-Azalea_ses-20190129_behavior.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Azalea/sub-Azalea_ses-20190309_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190429_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190430_behavior.nwb
@@ -505,7 +509,6 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-Azalea/sub-Azalea_ses-20190129_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190502_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190505_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190506_behavior.nwb
@@ -616,6 +619,11 @@ tests:
   - sub-npJ2/sub-npJ2_ses-20190511_behavior.nwb
   - sub-npJ3/sub-npJ3_ses-20190504_behavior+ecephys.nwb
   assets_ok:
+  - path: sub-Azalea/sub-Azalea_ses-20190129_behavior.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Azalea/sub-Azalea_ses-20190309_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190429_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190430_behavior.nwb
