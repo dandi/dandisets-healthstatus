@@ -77,7 +77,11 @@ tests:
       pynwb: 2.6.0
   - sub-BH250/sub-BH250_ses-20211109_obj-1pgs3t2.nwb
   - sub-BH250/sub-BH250_ses-20211109_obj-3wllbl.nwb
-  - sub-BH251/sub-BH251_ses-20211103_obj-ejk4qb.nwb
+  - path: sub-BH251/sub-BH251_ses-20211103_obj-ejk4qb.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-BH251/sub-BH251_ses-20211103_obj-rdeya.nwb
     versions:
       hdmf: 3.13.0
@@ -267,6 +271,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-BH250/sub-BH250_ses-20211103_obj-1effznk.nwb
+  - path: sub-BH251/sub-BH251_ses-20211103_obj-ejk4qb.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-BH251/sub-BH251_ses-20211110_obj-t53ap5.nwb
   - sub-BH252/sub-BH252_ses-20211111_obj-1s22i1h.nwb
   - sub-BH253/sub-BH253_ses-20211112_obj-1u6m7hs.nwb
@@ -354,7 +363,6 @@ tests:
       pynwb: 2.6.0
   - sub-BH250/sub-BH250_ses-20211109_obj-1pgs3t2.nwb
   - sub-BH250/sub-BH250_ses-20211109_obj-3wllbl.nwb
-  - sub-BH251/sub-BH251_ses-20211103_obj-ejk4qb.nwb
   - path: sub-BH251/sub-BH251_ses-20211103_obj-rdeya.nwb
     versions:
       hdmf: 3.13.0

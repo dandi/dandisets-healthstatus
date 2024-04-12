@@ -42,7 +42,7 @@ tests:
   - sub-Mouse17/sub-Mouse17_ses-Mouse17-130129_behavior+ecephys.nwb
   - path: sub-Mouse17/sub-Mouse17_ses-Mouse17-130130_behavior+ecephys.nwb
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-Mouse17/sub-Mouse17_ses-Mouse17-130131_behavior+ecephys.nwb
@@ -168,11 +168,6 @@ tests:
 - assets_nok:
   - sub-Mouse17/sub-Mouse17_ses-Mouse17-130125_behavior+ecephys.nwb
   - sub-Mouse17/sub-Mouse17_ses-Mouse17-130129_behavior+ecephys.nwb
-  - path: sub-Mouse17/sub-Mouse17_ses-Mouse17-130130_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-Mouse17/sub-Mouse17_ses-Mouse17-130131_behavior+ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -260,6 +255,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-Mouse17/sub-Mouse17_ses-Mouse17-130128_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-Mouse17/sub-Mouse17_ses-Mouse17-130130_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2

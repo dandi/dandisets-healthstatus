@@ -42,7 +42,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-BAYLORCD13/sub-BAYLORCD13_ses-20171215T133939.nwb
-  - sub-BAYLORCD14/sub-BAYLORCD14_ses-20171024T112103.nwb
+  - path: sub-BAYLORCD14/sub-BAYLORCD14_ses-20171024T112103.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-BAYLORCD14/sub-BAYLORCD14_ses-20171025T114022.nwb
     versions:
       hdmf: 3.13.0
@@ -258,6 +262,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-BAYLORCD14/sub-BAYLORCD14_ses-20171024T112103.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-BAYLORCD14/sub-BAYLORCD14_ses-20171025T114022.nwb
     versions:
       hdmf: 3.13.0
@@ -394,7 +403,6 @@ tests:
   - sub-BAYLORCD12/sub-BAYLORCD12_ses-20180128T220037.nwb
   - sub-BAYLORCD12/sub-BAYLORCD12_ses-20180130T153224.nwb
   - sub-BAYLORCD13/sub-BAYLORCD13_ses-20171215T133939.nwb
-  - sub-BAYLORCD14/sub-BAYLORCD14_ses-20171024T112103.nwb
   - path: sub-anm00314760/sub-anm00314760_ses-20151020T155230.nwb
     versions:
       hdmf: 3.12.2
