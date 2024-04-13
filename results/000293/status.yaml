@@ -12,7 +12,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_ok:
-  - sub-1801-18129009/sub-1801-18129009_icephys.nwb
+  - path: sub-1801-18129009/sub-1801-18129009_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-1802-18201004/sub-1802-18201004_icephys.nwb
   - path: sub-1802-18201011/sub-1802-18201011_icephys.nwb
     versions:
@@ -263,7 +267,6 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-1801-18129009/sub-1801-18129009_icephys.nwb
   - path: sub-1803-18220019/sub-1803-18220019_icephys.nwb
     versions:
       hdmf: 3.12.2
@@ -492,6 +495,11 @@ tests:
       pynwb: 2.6.0
   - sub-X2020-03-02-2020-03-02-0023/sub-X2020-03-02-2020-03-02-0023_icephys.nwb
   assets_timeout:
+  - path: sub-1801-18129009/sub-1801-18129009_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-1813-18329051/sub-1813-18329051_icephys.nwb
   - path: sub-X2015-11-09-2015-11-09-0107/sub-X2015-11-09-2015-11-09-0107_icephys.nwb
     versions:

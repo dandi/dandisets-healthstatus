@@ -5,16 +5,16 @@ last_run_duration: 1411.705379
 last_run_ended: '2024-01-15T05:55:24.225395-05:00'
 nassets: 2
 tests:
-- assets_nok:
-  - sub-Indy/sub-Indy_desc-test_ecephys.nwb
+- assets_nok: []
   assets_ok:
+  - sub-Indy/sub-Indy_desc-test_ecephys.nwb
   - sub-Indy/sub-Indy_desc-train_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-Indy/sub-Indy_desc-test_ecephys.nwb
+- assets_nok: []
   assets_ok: []
   assets_timeout:
+  - sub-Indy/sub-Indy_desc-test_ecephys.nwb
   - sub-Indy/sub-Indy_desc-train_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []

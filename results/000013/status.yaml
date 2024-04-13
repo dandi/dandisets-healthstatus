@@ -35,7 +35,7 @@ tests:
       pynwb: 2.6.0
   - path: sub-anm106213/sub-anm106213_ses-20101214_behavior+icephys.nwb
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-anm106213/sub-anm106213_ses-20101215_obj-1copi4i_behavior+icephys.nwb
@@ -194,6 +194,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-anm106213/sub-anm106213_ses-20101214_behavior+icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-anm226692/sub-anm226692_ses-20140224_behavior+icephys+ogen.nwb
     versions:
       hdmf: 3.13.0
@@ -243,11 +248,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-anm106213/sub-anm106213_ses-20100822_behavior+icephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-anm106213/sub-anm106213_ses-20101214_behavior+icephys.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
