@@ -74,7 +74,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-SLC10/sub-SLC10_ses-awake_ophys.nwb
+  - path: sub-SLC10/sub-SLC10_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-SLC11/sub-SLC11_ses-anest_ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -168,8 +172,7 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  assets_ok:
-  - sub-SLC10/sub-SLC10_ses-awake_ophys.nwb
+  assets_ok: []
   assets_timeout:
   - sub-PV02/sub-PV02_ses-awake_ophys.nwb
   - path: sub-PV03/sub-PV03_ses-awake_ophys.nwb
@@ -229,6 +232,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-SLC10/sub-SLC10_ses-anest_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-SLC10/sub-SLC10_ses-awake_ophys.nwb
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2

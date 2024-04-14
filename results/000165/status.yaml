@@ -103,7 +103,11 @@ tests:
   - sub-Caraway/sub-Caraway_ses-Caraway02-HomeCage_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway02_LinearTrack_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway03-HomeCage_behavior+ecephys.nwb
-  - sub-Caraway/sub-Caraway_ses-Caraway03-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Caraway/sub-Caraway_ses-Caraway03-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Caraway/sub-Caraway_ses-Caraway04-HomeCage_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway04-LinearTrack_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway05-HomeCage_behavior+ecephys.nwb
@@ -814,7 +818,6 @@ tests:
   - sub-Caraway/sub-Caraway_ses-Caraway02-HomeCage_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway02_LinearTrack_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway03-HomeCage_behavior+ecephys.nwb
-  - sub-Caraway/sub-Caraway_ses-Caraway03-LinearTrack_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway04-LinearTrack_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway05-HomeCage_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway05-LinearTrack_behavior+ecephys.nwb
@@ -1417,6 +1420,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_timeout:
+  - path: sub-Caraway/sub-Caraway_ses-Caraway03-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-Doctor/sub-Doctor_ses-Doctor03-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0

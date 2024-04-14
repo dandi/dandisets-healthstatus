@@ -153,7 +153,11 @@ tests:
   - sub-479149/sub-479149_ses-20201211T110651_behavior+ecephys.nwb
   - sub-479149/sub-479149_ses-20201214T120340_behavior+ecephys.nwb
   - sub-479149/sub-479149_ses-20201216T120333_behavior+ecephys+ogen.nwb
-  - sub-479149/sub-479149_ses-20201217T120512_behavior+ecephys+ogen.nwb
+  - path: sub-479149/sub-479149_ses-20201217T120512_behavior+ecephys+ogen.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-479149/sub-479149_ses-20201218T113815_behavior+ecephys+ogen.nwb
   - sub-480133/sub-480133_ses-20201224T122322_behavior+ecephys.nwb
   - sub-480133/sub-480133_ses-20201225T114244_behavior+ecephys+ogen.nwb
@@ -329,7 +333,6 @@ tests:
   - sub-479121/sub-479121_ses-20200924T134307_behavior+ecephys+ogen.nwb
   - sub-479149/sub-479149_ses-20201211T110651_behavior+ecephys.nwb
   - sub-479149/sub-479149_ses-20201216T120333_behavior+ecephys+ogen.nwb
-  - sub-479149/sub-479149_ses-20201217T120512_behavior+ecephys+ogen.nwb
   - sub-480133/sub-480133_ses-20201224T122322_behavior+ecephys.nwb
   - sub-480133/sub-480133_ses-20201225T114244_behavior+ecephys+ogen.nwb
   - sub-480133/sub-480133_ses-20201230T112558_behavior+ecephys+ogen.nwb
@@ -531,6 +534,11 @@ tests:
       pynwb: 2.6.0
   - sub-479149/sub-479149_ses-20201210T113111_behavior+ecephys+ogen.nwb
   - sub-479149/sub-479149_ses-20201214T120340_behavior+ecephys.nwb
+  - path: sub-479149/sub-479149_ses-20201217T120512_behavior+ecephys+ogen.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-479149/sub-479149_ses-20201218T113815_behavior+ecephys+ogen.nwb
   - sub-480133/sub-480133_ses-20201226T121710_behavior+ecephys+ogen.nwb
   - sub-480133/sub-480133_ses-20201229T125330_behavior+ecephys.nwb

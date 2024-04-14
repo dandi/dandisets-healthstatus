@@ -262,7 +262,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-BH301/sub-BH301_ses-20211103_obj-1i3mh4n.nwb
-  - sub-BH301/sub-BH301_ses-20211103_obj-w7auul.nwb
+  - path: sub-BH301/sub-BH301_ses-20211103_obj-w7auul.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-BH301/sub-BH301_ses-20211202_obj-1fd244v.nwb
   - sub-BH301/sub-BH301_ses-20211202_obj-1uo44fx.nwb
   assets_timeout: []
@@ -525,7 +529,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-BH301/sub-BH301_ses-20211103_obj-1i3mh4n.nwb
-  - sub-BH301/sub-BH301_ses-20211103_obj-w7auul.nwb
+  - path: sub-BH301/sub-BH301_ses-20211103_obj-w7auul.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-BH301/sub-BH301_ses-20211202_obj-1uo44fx.nwb
   assets_timeout: []
   name: matnwb_nwbRead

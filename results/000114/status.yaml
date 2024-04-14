@@ -57,7 +57,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-ROV41/sub-ROV41_ses-Day 2-retrieval_ophys.nwb
+  - path: sub-ROV41/sub-ROV41_ses-Day 2-retrieval_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-ROV41/sub-ROV41_ses-Day 3-obs_ophys.nwb
   - path: sub-ROV41/sub-ROV41_ses-Day 3-retrieval_ophys.nwb
     versions:
@@ -184,7 +188,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-ROV41/sub-ROV41_ses-Day 2-retrieval_ophys.nwb
   - sub-ROV41/sub-ROV41_ses-Day 3-obs_ophys.nwb
   - path: sub-ROV41/sub-ROV41_ses-Day 3-retrieval_ophys.nwb
     versions:
@@ -219,6 +222,11 @@ tests:
   assets_ok: []
   assets_timeout:
   - path: sub-ROV40/sub-ROV40_ses-Day 3-obs_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-ROV41/sub-ROV41_ses-Day 2-retrieval_ophys.nwb
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2

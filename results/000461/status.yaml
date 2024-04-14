@@ -25,7 +25,6 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-001/sub-001_ophys.nwb
-  - sub-001/sub-001_ses-20230311T120000_ophys.nwb
   - sub-0010/sub-0010_ses-20230311T120000_ophys.nwb
   - sub-002/sub-002_ses-20230226T130000_ophys.nwb
   - sub-004/sub-004_ses-20230306T110000_ophys.nwb
@@ -35,6 +34,7 @@ tests:
   assets_ok:
   - sub-000/sub-000_ophys.nwb
   - sub-000/sub-000_ses-20230311T080000_ophys.nwb
+  - sub-001/sub-001_ses-20230311T120000_ophys.nwb
   - sub-0011/sub-0011_ses-20230226T130000_ophys.nwb
   - sub-003/sub-003_ses-20230311T120000_ophys.nwb
   - sub-007/sub-007_ses-20230311T120000_ophys.nwb
