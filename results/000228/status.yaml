@@ -177,7 +177,11 @@ tests:
   - sub-H20-28-012/sub-H20-28-012_obj-1qnchn1_icephys.nwb
   - sub-H20-28-012/sub-H20-28-012_obj-g8qjm1_icephys.nwb
   - sub-H20-28-012/sub-H20-28-012_obj-tzf0d6_icephys.nwb
-  - sub-H20-28-018/sub-H20-28-018_icephys.nwb
+  - path: sub-H20-28-018/sub-H20-28-018_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-H20-28-019/sub-H20-28-019_icephys.nwb
     versions:
       hdmf: 3.12.2
@@ -279,6 +283,11 @@ tests:
   - path: sub-H20-28-012/sub-H20-28-012_obj-1dt8l2q_icephys.nwb
     versions:
       hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-H20-28-018/sub-H20-28-018_icephys.nwb
+    versions:
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-H20-28-022/sub-H20-28-022_obj-vc7ewc_icephys.nwb
@@ -442,7 +451,6 @@ tests:
   - sub-H20-28-012/sub-H20-28-012_obj-1qnchn1_icephys.nwb
   - sub-H20-28-012/sub-H20-28-012_obj-g8qjm1_icephys.nwb
   - sub-H20-28-012/sub-H20-28-012_obj-tzf0d6_icephys.nwb
-  - sub-H20-28-018/sub-H20-28-018_icephys.nwb
   - path: sub-H20-28-019/sub-H20-28-019_icephys.nwb
     versions:
       hdmf: 3.12.2

@@ -74,7 +74,7 @@ tests:
   - sub-BH270/sub-BH270_ses-20210802T150757_ecephys.nwb
   - path: sub-BH270/sub-BH270_ses-20210802T154532_ecephys.nwb
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-BH270/sub-BH270_ses-20210802T170825_ecephys.nwb
@@ -214,6 +214,11 @@ tests:
   - sub-BH266/sub-BH266_ses-20210623T162756_ecephys.nwb
   - sub-BH269/sub-BH269_ses-20210716T141155_ecephys.nwb
   - sub-BH270/sub-BH270_ses-20210802T150757_ecephys.nwb
+  - path: sub-BH270/sub-BH270_ses-20210802T154532_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-BH270/sub-BH270_ses-20210802T170825_ecephys.nwb
   - sub-BH270/sub-BH270_ses-20210802T175221_ecephys.nwb
   - sub-BH270/sub-BH270_ses-20210802T201553_ecephys.nwb
@@ -304,11 +309,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-BH268/sub-BH268_ses-20210707T144841_ecephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH270/sub-BH270_ses-20210802T154532_ecephys.nwb
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2

@@ -48,7 +48,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-SKKS088/sub-SKKS088_ses-20210216T115102_behavior+ophys.nwb
+  - path: sub-SKKS088/sub-SKKS088_ses-20210216T115102_behavior+ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-SKKS088/sub-SKKS088_ses-20210405T140935_behavior+ophys.nwb
   - sub-SKKS088/sub-SKKS088_ses-20210405T142558_behavior+ophys.nwb
   - path: sub-SKKS088/sub-SKKS088_ses-20210504T170825_behavior+ophys.nwb
@@ -297,7 +301,6 @@ tests:
   - sub-SKKS081/sub-SKKS081_ses-20201119T163121_behavior+ophys.nwb
   - sub-SKKS081/sub-SKKS081_ses-20201119T163926_behavior+ophys.nwb
   - sub-SKKS088/sub-SKKS088_ses-20210118T162630_behavior+ophys.nwb
-  - sub-SKKS088/sub-SKKS088_ses-20210216T115102_behavior+ophys.nwb
   - sub-SKKS088/sub-SKKS088_ses-20210518T160036_behavior+ophys.nwb
   - sub-SKKS089/sub-SKKS089_ses-20201205T115332_behavior+ophys.nwb
   - sub-SKKS089/sub-SKKS089_ses-20201205T120116_behavior+ophys.nwb
@@ -457,6 +460,11 @@ tests:
   - sub-SKKS127/sub-SKKS127_ses-20220811T120611_behavior+ophys.nwb
   assets_timeout:
   - path: sub-SKKS080/sub-SKKS080_ses-20201123T134059_behavior+ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-SKKS088/sub-SKKS088_ses-20210216T115102_behavior+ophys.nwb
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
