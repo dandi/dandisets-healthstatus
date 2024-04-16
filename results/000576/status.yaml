@@ -28,6 +28,7 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - sub-01/sub-01_ses-20140828T132700_ecephys.nwb
   - sub-02/sub-02_ses-20160302T164800_ecephys.nwb
   - sub-03/sub-03_ses-20150304T164400_ecephys+image.nwb
   - sub-06/sub-06_ses-20131209T113600_ecephys.nwb
@@ -36,7 +37,6 @@ tests:
   - sub-08/sub-08_ses-20161217T120200_ecephys.nwb
   - sub-09/sub-09_ses-20170311T170500_ecephys.nwb
   assets_ok:
-  - sub-01/sub-01_ses-20140828T132700_ecephys.nwb
   - sub-03/sub-03_ses-20150304T164400_ecephys.nwb
   - sub-05/sub-05_ses-20121207T173500_ecephys+image.nwb
   - sub-05/sub-05_ses-20121207T173500_ecephys.nwb

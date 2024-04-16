@@ -11,9 +11,9 @@ tests:
   - sub-Jenkins/sub-Jenkins_ses-medium_desc-train_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
+- assets_nok: []
+  assets_ok:
   - sub-Jenkins/sub-Jenkins_ses-medium_desc-test_ecephys.nwb
-  assets_ok: []
   assets_timeout:
   - sub-Jenkins/sub-Jenkins_ses-medium_desc-train_behavior+ecephys.nwb
   name: matnwb_nwbRead
