@@ -10,10 +10,10 @@ tests:
   - sub-553963/sub-553963_ses-20210301T145817_image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-553963/sub-553963_ses-20210301T145817_image.nwb
+- assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-553963/sub-553963_ses-20210301T145817_image.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

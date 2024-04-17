@@ -26,7 +26,7 @@ tests:
       pynwb: 2.6.0
   - path: sub-Forssmann/sub-Forssmann_ses-20171102T120000.nwb
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-Forssmann/sub-Forssmann_ses-20171104T120000.nwb
@@ -279,11 +279,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_ok:
-  - path: sub-Forssmann/sub-Forssmann_ses-20171102T120000.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-Lederberg/sub-Lederberg_ses-20171205T120000.nwb
     versions:
       hdmf: 3.13.0
@@ -319,6 +314,11 @@ tests:
   - sub-Richards/sub-Richards_ses-20171101T120000.nwb
   assets_timeout:
   - sub-Cori/sub-Cori_ses-20161218T120000.nwb
+  - path: sub-Forssmann/sub-Forssmann_ses-20171102T120000.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-Forssmann/sub-Forssmann_ses-20171104T120000.nwb
     versions:
       hdmf: 3.13.0

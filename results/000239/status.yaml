@@ -241,7 +241,6 @@ tests:
   - sub-MX180803/sub-MX180803_ses-20181122T135902.nwb
   - sub-MX180803/sub-MX180803_ses-20181122T135902_behavior.nwb
   - sub-MX180803/sub-MX180803_ses-20181123T122105.nwb
-  - sub-MX180803/sub-MX180803_ses-20181123T122105_behavior.nwb
   - sub-MX180803/sub-MX180803_ses-20181125T134006.nwb
   - sub-MX180803/sub-MX180803_ses-20181128T130139.nwb
   - sub-MX180803/sub-MX180803_ses-20181128T130139_behavior.nwb
@@ -842,6 +841,11 @@ tests:
   - sub-MX180803/sub-MX180803_ses-20180819T133906_behavior.nwb
   - sub-MX180803/sub-MX180803_ses-20180820T121716_behavior.nwb
   - sub-MX180803/sub-MX180803_ses-20180821T123713_behavior.nwb
+  - path: sub-MX180803/sub-MX180803_ses-20181123T122105_behavior.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-MX180804/sub-MX180804_ses-20180815T135411_behavior.nwb
   - sub-MX180804/sub-MX180804_ses-20180816T135124_behavior.nwb
   - sub-MX180804/sub-MX180804_ses-20180817T132940_behavior.nwb
@@ -1706,7 +1710,11 @@ tests:
   - sub-MX180803/sub-MX180803_ses-20180820T121716_behavior.nwb
   - sub-MX180803/sub-MX180803_ses-20180821T123713_behavior.nwb
   - sub-MX180803/sub-MX180803_ses-20181122T135902_behavior.nwb
-  - sub-MX180803/sub-MX180803_ses-20181123T122105_behavior.nwb
+  - path: sub-MX180803/sub-MX180803_ses-20181123T122105_behavior.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-MX180803/sub-MX180803_ses-20181128T130139_behavior.nwb
   - sub-MX180804/sub-MX180804_ses-20180806T114355_behavior.nwb
   - sub-MX180804/sub-MX180804_ses-20180807T104626_behavior.nwb

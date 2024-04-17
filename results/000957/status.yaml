@@ -10,10 +10,10 @@ tests:
   - sub-ZYE-0031/sub-ZYE-0031_ecephys+image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-ZYE-0031/sub-ZYE-0031_ecephys+image.nwb
+- assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-ZYE-0031/sub-ZYE-0031_ecephys+image.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

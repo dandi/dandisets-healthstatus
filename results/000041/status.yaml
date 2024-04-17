@@ -22,7 +22,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-BWRat17/sub-BWRat17_ses-BWRat17-121912_ecephys.nwb
+  - path: sub-BWRat17/sub-BWRat17_ses-BWRat17-121912_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-BWRat18/sub-BWRat18_ses-BWRat18-020513_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -108,6 +112,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-BWRat17/sub-BWRat17_ses-BWRat17-121912_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-BWRat21/sub-BWRat21_ses-BWRat21-121113_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -125,7 +134,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-BWRat17/sub-BWRat17_ses-BWRat17-121912_ecephys.nwb
   - path: sub-BWRat18/sub-BWRat18_ses-BWRat18-020513_ecephys.nwb
     versions:
       hdmf: 3.13.0

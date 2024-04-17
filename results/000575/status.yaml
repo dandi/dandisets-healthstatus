@@ -29,13 +29,13 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-01/sub-01_ses-20140827T193800_behavior+ecephys.nwb
+  - sub-02/sub-02_ses-20171011T152100_behavior+ecephys.nwb
   - sub-03/sub-03_ses-20170113T105000_behavior+ecephys.nwb
   - sub-05/sub-05_ses-20180704T132100_behavior+ecephys.nwb
   - sub-08/sub-08_ses-20190116T125000_behavior+ecephys.nwb
   - sub-09/sub-09_ses-20150305T112000_behavior+ecephys.nwb
   - sub-12/sub-12_ses-20161217T103800_obj-cpvbt2_behavior+ecephys.nwb
   assets_ok:
-  - sub-02/sub-02_ses-20171011T152100_behavior+ecephys.nwb
   - sub-11/sub-11_ses-20190515T195800_behavior+ecephys.nwb
   assets_timeout:
   - sub-03/sub-03_ses-20170113T111800_behavior+ecephys.nwb

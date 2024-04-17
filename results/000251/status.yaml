@@ -116,7 +116,11 @@ tests:
   - sub-140/sub-140_ses-Ca-VS-MB-10.nwb
   - sub-140/sub-140_ses-Ca-VS-MB-SPD-9.nwb
   - sub-140/sub-140_ses-Ca-VS-MB-THREE-TP-8.nwb
-  - sub-140/sub-140_ses-Ca-VS-MB-TP-PAUSE-7.nwb
+  - path: sub-140/sub-140_ses-Ca-VS-MB-TP-PAUSE-7.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-140/sub-140_ses-Ca-VS-VR-14.nwb
     versions:
       hdmf: 3.12.2
@@ -738,7 +742,6 @@ tests:
   - sub-139/sub-139_ses-Ca-VS-VR-TP-PAUSE-9.nwb
   - sub-140/sub-140_ses-Ca-VS-MB-10.nwb
   - sub-140/sub-140_ses-Ca-VS-MB-SPD-9.nwb
-  - sub-140/sub-140_ses-Ca-VS-MB-TP-PAUSE-7.nwb
   - sub-140/sub-140_ses-Ca-VS-VR-SPD-14.nwb
   - sub-140/sub-140_ses-Ca-VS-VR-TP-PAUSE-10.nwb
   - sub-143/sub-143_ses-Ca-VS-MB-SPD-10.nwb
@@ -1089,6 +1092,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-140/sub-140_ses-Ca-VS-MB-THREE-TP-8.nwb
+  - path: sub-140/sub-140_ses-Ca-VS-MB-TP-PAUSE-7.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-140/sub-140_ses-Ca-VS-VR-14.nwb
     versions:
       hdmf: 3.12.2
