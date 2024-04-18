@@ -113,7 +113,11 @@ tests:
   - sub-Caraway/sub-Caraway_ses-Caraway05-HomeCage_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway05-LinearTrack_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway06-HomeCage_behavior+ecephys.nwb
-  - sub-Caraway/sub-Caraway_ses-Caraway06-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Caraway/sub-Caraway_ses-Caraway06-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Cardamom/sub-Cardamom_ses-Cardamom01-HomeCage_behavior+ecephys.nwb
   - sub-Cardamom/sub-Cardamom_ses-Cardamom01-LinearTrack_behavior+ecephys.nwb
   - sub-Cardamom/sub-Cardamom_ses-Cardamom02-HomeCage_behavior+ecephys.nwb
@@ -834,7 +838,6 @@ tests:
   - sub-Caraway/sub-Caraway_ses-Caraway05-HomeCage_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway05-LinearTrack_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway06-HomeCage_behavior+ecephys.nwb
-  - sub-Caraway/sub-Caraway_ses-Caraway06-LinearTrack_behavior+ecephys.nwb
   - sub-Cardamom/sub-Cardamom_ses-Cardamom01-HomeCage_behavior+ecephys.nwb
   - sub-Cardamom/sub-Cardamom_ses-Cardamom01-LinearTrack_behavior+ecephys.nwb
   - sub-Cardamom/sub-Cardamom_ses-Cardamom02-HomeCage_behavior+ecephys.nwb
@@ -1314,6 +1317,11 @@ tests:
       pynwb: 2.6.0
   - sub-Bones/sub-Bones_ses-Bones07_HomeCage_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway04-HomeCage_behavior+ecephys.nwb
+  - path: sub-Caraway/sub-Caraway_ses-Caraway06-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Chakotay/sub-Chakotay_ses-Chakotay01-HomeCage_behavior+ecephys.nwb
   - sub-Chives/sub-Chives_ses-Chives02-HomeCage_behavior+ecephys.nwb
   - sub-Chives/sub-Chives_ses-Chives06-HomeCage_behavior+ecephys.nwb

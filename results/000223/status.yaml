@@ -5,8 +5,7 @@ last_run_duration: 69499.459982
 last_run_ended: '2024-01-25T23:45:32.718693-05:00'
 nassets: 20
 tests:
-- assets_nok:
-  - sub-3112/sub-3112_ecephys+ophys.nwb
+- assets_nok: []
   assets_ok:
   - sub-2282/sub-2282_ses-20190914T145458_ecephys+ophys.nwb
   - sub-2282/sub-2282_ses-20190914T151231_ecephys+ophys.nwb
@@ -20,6 +19,7 @@ tests:
   - sub-2763/sub-2763_ses-20200828T161323_ecephys+ophys.nwb
   - sub-2763/sub-2763_ses-20200828T163435_ecephys+ophys.nwb
   - sub-2765/sub-2765_ses-20200814T153629_ecephys+ophys.nwb
+  - sub-3112/sub-3112_ecephys+ophys.nwb
   - sub-3112/sub-3112_ses-20210227T185041_ecephys+ophys.nwb
   - sub-3112/sub-3112_ses-20210227T190233_ecephys+ophys.nwb
   - sub-3278/sub-3278_ses-20210614T151114_ecephys+ophys.nwb
@@ -31,7 +31,6 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-2282/sub-2282_ses-20190914T145458_ecephys+ophys.nwb
-  - sub-3112/sub-3112_ecephys+ophys.nwb
   assets_ok: []
   assets_timeout:
   - sub-2282/sub-2282_ses-20190914T151231_ecephys+ophys.nwb
@@ -45,6 +44,7 @@ tests:
   - sub-2763/sub-2763_ses-20200828T161323_ecephys+ophys.nwb
   - sub-2763/sub-2763_ses-20200828T163435_ecephys+ophys.nwb
   - sub-2765/sub-2765_ses-20200814T153629_ecephys+ophys.nwb
+  - sub-3112/sub-3112_ecephys+ophys.nwb
   - sub-3112/sub-3112_ses-20210227T185041_ecephys+ophys.nwb
   - sub-3112/sub-3112_ses-20210227T190233_ecephys+ophys.nwb
   - sub-3278/sub-3278_ses-20210614T151114_ecephys+ophys.nwb

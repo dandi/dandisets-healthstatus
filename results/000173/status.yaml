@@ -252,7 +252,11 @@ tests:
       pynwb: 2.6.0
   - sub-BH281/sub-BH281_ses-20211103.nwb
   - sub-BH281/sub-BH281_ses-20211130_obj-1yj2ahm.nwb
-  - sub-BH281/sub-BH281_ses-20211130_obj-br86zc.nwb
+  - path: sub-BH281/sub-BH281_ses-20211130_obj-br86zc.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-BH297/sub-BH297_ses-20211103_obj-1iqkns0.nwb
     versions:
       hdmf: 3.13.0
@@ -322,7 +326,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-BH281/sub-BH281_ses-20211130_obj-br86zc.nwb
   - sub-BH297/sub-BH297_ses-20211103_obj-tff3i1.nwb
   - sub-BH301/sub-BH301_ses-20211202_obj-1fd244v.nwb
   assets_ok:
@@ -529,6 +532,11 @@ tests:
       pynwb: 2.6.0
   - sub-BH281/sub-BH281_ses-20211103.nwb
   - sub-BH281/sub-BH281_ses-20211130_obj-1yj2ahm.nwb
+  - path: sub-BH281/sub-BH281_ses-20211130_obj-br86zc.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-BH297/sub-BH297_ses-20211103_obj-1iqkns0.nwb
     versions:
       hdmf: 3.13.0

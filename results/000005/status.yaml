@@ -33,7 +33,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-anm199551/sub-anm199551_ses-20130626_behavior+ecephys.nwb
+  - path: sub-anm199551/sub-anm199551_ses-20130626_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-anm199552/sub-anm199552_ses-20130601_behavior+ecephys.nwb
   - sub-anm199552/sub-anm199552_ses-20130602_behavior+ecephys.nwb
   - sub-anm199552/sub-anm199552_ses-20130603_behavior+ecephys.nwb
@@ -314,7 +318,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-anm199551/sub-anm199551_ses-20130626_behavior+ecephys.nwb
   - sub-anm199552/sub-anm199552_ses-20130601_behavior+ecephys.nwb
   - sub-anm199552/sub-anm199552_ses-20130603_behavior+ecephys.nwb
   - sub-anm199552/sub-anm199552_ses-20130604_behavior+ecephys.nwb
@@ -364,6 +367,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_ok:
+  - path: sub-anm199551/sub-anm199551_ses-20130626_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-anm203464/sub-anm203464_ses-20130705_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
