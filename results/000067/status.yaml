@@ -47,7 +47,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-EE/sub-EE_ses-EE-049_behavior+ecephys.nwb
+  - path: sub-EE/sub-EE_ses-EE-049_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-EE/sub-EE_ses-EE-050_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -146,7 +150,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-EE/sub-EE_ses-EE-049_behavior+ecephys.nwb
+  - path: sub-EE/sub-EE_ses-EE-049_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-EE/sub-EE_ses-EE-081_ecephys.nwb
     versions:
       hdmf: 3.13.0

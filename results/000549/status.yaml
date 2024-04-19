@@ -52,7 +52,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-Fig4-5-Bi300ns-15/sub-Fig4-5-Bi300ns-15_ses-BPAE-5xBipolar-300ns_image.nwb
+  - path: sub-Fig4-5-Bi300ns-15/sub-Fig4-5-Bi300ns-15_ses-BPAE-5xBipolar-300ns_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-Fig4-5-Bi500us-08/sub-Fig4-5-Bi500us-08_ses-BPAE-5xBipolar-500us_image.nwb
     versions:
       hdmf: 3.13.0
@@ -136,7 +140,6 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-Fig4-5-Bi300ns-15/sub-Fig4-5-Bi300ns-15_ses-BPAE-5xBipolar-300ns_image.nwb
   - path: sub-Fig4-5-Uni100us-10/sub-Fig4-5-Uni100us-10_ses-BPAE-5xUnipolar-100us_image.nwb
     versions:
       hdmf: 3.13.0
@@ -179,6 +182,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-Fig4-5-Bi300ns-08/sub-Fig4-5-Bi300ns-08_ses-BPAE-5xBipolar-300ns_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-Fig4-5-Bi300ns-15/sub-Fig4-5-Bi300ns-15_ses-BPAE-5xBipolar-300ns_image.nwb
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
