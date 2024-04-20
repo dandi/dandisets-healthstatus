@@ -324,7 +324,11 @@ tests:
   - sub-3015/sub-3015_ses-SU-VR-ALL-TP-6.nwb
   - sub-3015/sub-3015_ses-SU-VR-ALL-TP-7.nwb
   - sub-3015/sub-3015_ses-SU-VR-ALL-TP-8.nwb
-  - sub-3015/sub-3015_ses-SU-VR-ALL-TP-9.nwb
+  - path: sub-3015/sub-3015_ses-SU-VR-ALL-TP-9.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-3015/sub-3015_ses-SU-VR-OL-10.nwb
     versions:
       hdmf: 3.13.0
@@ -828,7 +832,6 @@ tests:
   - sub-3015/sub-3015_ses-SU-VR-ALL-TP-6.nwb
   - sub-3015/sub-3015_ses-SU-VR-ALL-TP-7.nwb
   - sub-3015/sub-3015_ses-SU-VR-ALL-TP-8.nwb
-  - sub-3015/sub-3015_ses-SU-VR-ALL-TP-9.nwb
   - sub-3015/sub-3015_ses-SU-VR-OL-12.nwb
   - sub-3015/sub-3015_ses-SU-VR-OL-13.nwb
   - sub-3015/sub-3015_ses-SU-VR-OL-15.nwb
@@ -1229,6 +1232,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-3015/sub-3015_ses-SU-VR-ALL-TP-5.nwb
+  - path: sub-3015/sub-3015_ses-SU-VR-ALL-TP-9.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-3015/sub-3015_ses-SU-VR-OL-10.nwb
     versions:
       hdmf: 3.13.0
