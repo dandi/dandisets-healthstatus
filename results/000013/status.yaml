@@ -39,7 +39,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-anm106213/sub-anm106213_ses-20101215_obj-1copi4i_behavior+icephys.nwb
-  - sub-anm106213/sub-anm106213_ses-20101215_obj-1ykz3wz_behavior+icephys.nwb
+  - path: sub-anm106213/sub-anm106213_ses-20101215_obj-1ykz3wz_behavior+icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-anm131970/sub-anm131970_ses-20110511_behavior+icephys.nwb
   - path: sub-anm134333/sub-anm134333_ses-20110601_behavior+icephys.nwb
     versions:
@@ -275,6 +279,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-anm106213/sub-anm106213_ses-20101215_obj-1copi4i_behavior+icephys.nwb
+  - path: sub-anm106213/sub-anm106213_ses-20101215_obj-1ykz3wz_behavior+icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-anm134333/sub-anm134333_ses-20110601_behavior+icephys.nwb
     versions:
       hdmf: 3.13.0
@@ -396,7 +405,6 @@ tests:
       pynwb: 2.6.0
   - sub-jf42400/sub-jf42400_ses-20100615_behavior+icephys.nwb
   assets_timeout:
-  - sub-anm106213/sub-anm106213_ses-20101215_obj-1ykz3wz_behavior+icephys.nwb
   - sub-anm131970/sub-anm131970_ses-20110511_behavior+icephys.nwb
   - sub-anm134333/sub-anm134333_ses-20110607_behavior+icephys.nwb
   - path: sub-anm244024/sub-anm244024_ses-20141111_behavior+icephys+ogen.nwb

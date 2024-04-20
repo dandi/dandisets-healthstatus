@@ -5,8 +5,7 @@ last_run_duration: 5948.991885
 last_run_ended: '2024-02-12T12:02:49.676456-05:00'
 nassets: 14
 tests:
-- assets_nok:
-  - sub-008/sub-008_ses-20230311T080000_ophys.nwb
+- assets_nok: []
   assets_ok:
   - sub-000/sub-000_ophys.nwb
   - sub-000/sub-000_ses-20230311T080000_ophys.nwb
@@ -20,6 +19,7 @@ tests:
   - sub-005/sub-005_ses-20230311T120000_ophys.nwb
   - sub-006/sub-006_ses-20230306T110000_ophys.nwb
   - sub-007/sub-007_ses-20230311T120000_ophys.nwb
+  - sub-008/sub-008_ses-20230311T080000_ophys.nwb
   - sub-009/sub-009_ses-20230311T120000_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
@@ -30,7 +30,6 @@ tests:
   - sub-002/sub-002_ses-20230226T130000_ophys.nwb
   - sub-004/sub-004_ses-20230306T110000_ophys.nwb
   - sub-006/sub-006_ses-20230306T110000_ophys.nwb
-  - sub-008/sub-008_ses-20230311T080000_ophys.nwb
   assets_ok:
   - sub-000/sub-000_ophys.nwb
   - sub-000/sub-000_ses-20230311T080000_ophys.nwb
@@ -38,6 +37,7 @@ tests:
   - sub-003/sub-003_ses-20230311T120000_ophys.nwb
   - sub-005/sub-005_ses-20230311T120000_ophys.nwb
   - sub-007/sub-007_ses-20230311T120000_ophys.nwb
+  - sub-008/sub-008_ses-20230311T080000_ophys.nwb
   - sub-009/sub-009_ses-20230311T120000_ophys.nwb
   assets_timeout: []
   name: matnwb_nwbRead
