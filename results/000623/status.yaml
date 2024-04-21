@@ -137,7 +137,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-CS60/sub-CS60_ses-P60CSR1_behavior+ecephys.nwb
+  - path: sub-CS60/sub-CS60_ses-P60CSR1_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-CS62/sub-CS62_ses-P62CSR1_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -171,7 +175,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-CS60/sub-CS60_ses-P60CSR1_behavior+ecephys.nwb
   assets_ok:
   - path: sub-CS48/sub-CS48_ses-P48CSR2_behavior+ecephys.nwb
     versions:
@@ -285,6 +288,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-CS58/sub-CS58_ses-P58CSR1_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-CS60/sub-CS60_ses-P60CSR1_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
