@@ -12,7 +12,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_ok:
-  - sub-PV02/sub-PV02_ses-awake_ophys.nwb
+  - path: sub-PV02/sub-PV02_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-PV03/sub-PV03_ses-awake_ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -174,7 +178,11 @@ tests:
       pynwb: 2.6.0
   assets_ok: []
   assets_timeout:
-  - sub-PV02/sub-PV02_ses-awake_ophys.nwb
+  - path: sub-PV02/sub-PV02_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-PV03/sub-PV03_ses-awake_ophys.nwb
     versions:
       hdmf: 3.13.0

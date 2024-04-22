@@ -348,7 +348,11 @@ tests:
   - sub-226244/sub-226244_ses-20131110_obj-dvr1ji_behavior+ophys.nwb
   - sub-226244/sub-226244_ses-20131110_obj-uj92z4_behavior+ophys.nwb
   - sub-226244/sub-226244_ses-20131112_obj-1ic18cz_behavior+ophys.nwb
-  - sub-226244/sub-226244_ses-20131112_obj-1mraicu_behavior+ophys.nwb
+  - path: sub-226244/sub-226244_ses-20131112_obj-1mraicu_behavior+ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-226244/sub-226244_ses-20131112_obj-rluajx_behavior+ophys.nwb
   - sub-226244/sub-226244_ses-20131112_obj-ypcznw_behavior+ophys.nwb
   - sub-226244/sub-226244_ses-20131114_obj-1bk2zc4_behavior+ophys.nwb
@@ -636,6 +640,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-226244/sub-226244_ses-20131112_obj-1mraicu_behavior+ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   assets_ok:
   - sub-216219/sub-216219_ses-20130816_obj-1ajdqvr_behavior+ophys.nwb
   - sub-216219/sub-216219_ses-20130816_obj-1do4dq2_behavior+ophys.nwb
@@ -658,7 +667,6 @@ tests:
   - sub-226244/sub-226244_ses-20131110_obj-dvr1ji_behavior+ophys.nwb
   - sub-226244/sub-226244_ses-20131110_obj-uj92z4_behavior+ophys.nwb
   - sub-226244/sub-226244_ses-20131112_obj-1ic18cz_behavior+ophys.nwb
-  - sub-226244/sub-226244_ses-20131112_obj-1mraicu_behavior+ophys.nwb
   - sub-226244/sub-226244_ses-20131112_obj-rluajx_behavior+ophys.nwb
   - sub-226244/sub-226244_ses-20131112_obj-ypcznw_behavior+ophys.nwb
   - sub-226244/sub-226244_ses-20131114_obj-1bk2zc4_behavior+ophys.nwb
