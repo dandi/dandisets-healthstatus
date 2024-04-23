@@ -12,7 +12,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_ok:
-  - sub-fCamk1/sub-fCamk1_ses-fCamk1-200827-sess9-no-raw-data_behavior+ecephys+image+ogen.nwb
+  - path: sub-fCamk1/sub-fCamk1_ses-fCamk1-200827-sess9-no-raw-data_behavior+ecephys+image+ogen.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-fCamk1/sub-fCamk1_ses-fCamk1-200827-sess9_behavior+ecephys+image+ogen.nwb
   - path: sub-fCamk1/sub-fCamk1_ses-fCamk1-200901-sess12-no-raw-data_behavior+ecephys+image+ogen.nwb
     versions:
@@ -210,6 +214,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-fCamk1/sub-fCamk1_ses-fCamk1-200827-sess9-no-raw-data_behavior+ecephys+image+ogen.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-fCamk1/sub-fCamk1_ses-fCamk1-200904-sess15-no-raw-data_behavior+ecephys+image.nwb
   - sub-fCamk1/sub-fCamk1_ses-fCamk1-200908-sess16-no-raw-data_behavior+ecephys+image.nwb
   - path: sub-fCamk1/sub-fCamk1_ses-fCamk1-200910-sess18-no-raw-data_behavior+ecephys+image.nwb
@@ -263,7 +272,6 @@ tests:
   - sub-fCamk3/sub-fCamk3_ses-fCamk3-201111-sess20-no-raw-data_behavior+ecephys+image.nwb
   - sub-fCamk5/sub-fCamk5_ses-fCamk5-210407-sess11-no-raw-data_behavior+ecephys+image.nwb
   assets_timeout:
-  - sub-fCamk1/sub-fCamk1_ses-fCamk1-200827-sess9-no-raw-data_behavior+ecephys+image+ogen.nwb
   - sub-fCamk1/sub-fCamk1_ses-fCamk1-200827-sess9_behavior+ecephys+image+ogen.nwb
   - path: sub-fCamk1/sub-fCamk1_ses-fCamk1-200901-sess12-no-raw-data_behavior+ecephys+image+ogen.nwb
     versions:
