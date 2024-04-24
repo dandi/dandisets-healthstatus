@@ -172,7 +172,7 @@ tests:
       pynwb: 2.6.0
   - path: sub-08/sub-08_ses-20170111T120500_behavior+ecephys.nwb
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-08/sub-08_ses-20170113T121400_behavior+ecephys.nwb
@@ -280,11 +280,6 @@ tests:
   - sub-04/sub-04_ses-20170118T103700_behavior+ecephys.nwb
   - sub-06/sub-06_ses-20140827T165900_behavior+ecephys.nwb
   - sub-07/sub-07_ses-20160302T170100_behavior+ecephys.nwb
-  - path: sub-08/sub-08_ses-20170111T120500_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - sub-08/sub-08_ses-20170113T121400_behavior+ecephys.nwb
   assets_timeout:
   - path: sub-01/sub-01_ses-20161214T171300_behavior+ecephys.nwb
@@ -363,6 +358,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-08/sub-08_ses-20170111T115400_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-08/sub-08_ses-20170111T120500_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
