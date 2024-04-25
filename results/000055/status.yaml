@@ -69,7 +69,7 @@ tests:
   - sub-04/sub-04_ses-5_behavior+ecephys.nwb
   - path: sub-04/sub-04_ses-6_behavior+ecephys.nwb
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-04/sub-04_ses-7_behavior+ecephys.nwb
@@ -265,11 +265,6 @@ tests:
   - sub-04/sub-04_ses-3_behavior+ecephys.nwb
   - sub-04/sub-04_ses-4_behavior+ecephys.nwb
   - sub-04/sub-04_ses-5_behavior+ecephys.nwb
-  - path: sub-04/sub-04_ses-6_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-04/sub-04_ses-7_behavior+ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -336,6 +331,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-03/sub-03_ses-5_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-04/sub-04_ses-6_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
