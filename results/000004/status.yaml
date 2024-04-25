@@ -18,7 +18,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-P11HMH/sub-P11HMH_ses-20061101_ecephys+image.nwb
-  - sub-P14HMH/sub-P14HMH_ses-20070601_obj-1t8wrd5_ecephys+image.nwb
+  - path: sub-P14HMH/sub-P14HMH_ses-20070601_obj-1t8wrd5_ecephys+image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-P14HMH/sub-P14HMH_ses-20070601_obj-7studd_ecephys+image.nwb
     versions:
       hdmf: 3.12.2
@@ -274,6 +278,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-P14HMH/sub-P14HMH_ses-20070601_obj-1t8wrd5_ecephys+image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-P14HMH/sub-P14HMH_ses-20070601_obj-7studd_ecephys+image.nwb
     versions:
       hdmf: 3.12.2
@@ -526,7 +535,6 @@ tests:
   assets_ok: []
   assets_timeout:
   - sub-P11HMH/sub-P11HMH_ses-20061101_ecephys+image.nwb
-  - sub-P14HMH/sub-P14HMH_ses-20070601_obj-1t8wrd5_ecephys+image.nwb
   - sub-P19HMH/sub-P19HMH_ses-20080601_obj-uw5up9_ecephys+image.nwb
   - sub-P21HMH/sub-P21HMH_ses-20090101_obj-1femyyi_ecephys+image.nwb
   - sub-P48HMH/sub-P48HMH_ses-20141201_ecephys+image.nwb

@@ -6,305 +6,73 @@ last_run_ended: '2024-02-12T20:48:16.437139-05:00'
 nassets: 29
 tests:
 - assets_nok:
-  - path: sub-BH396/sub-BH396_ses-20221117T225429_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
+  - sub-BH396/sub-BH396_ses-20221117T225429_ecephys.nwb
   assets_ok:
-  - path: sub-BH395/sub-BH395_ses-20221213T174039_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH395/sub-BH395_ses-20221213T180853_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH395/sub-BH395_ses-20221213T183140_ecephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH395/sub-BH395_ses-20221213T185547_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH395/sub-BH395_ses-20221213T195834_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH396/sub-BH396_ses-20221117T215447_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH396/sub-BH396_ses-20221117T220434_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH396/sub-BH396_ses-20221117T221038_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH396/sub-BH396_ses-20221117T224848_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH401/sub-BH401_ses-20230207T202916_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH401/sub-BH401_ses-20230207T213946_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH401/sub-BH401_ses-20230207T221353_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH401/sub-BH401_ses-20230207T224653_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH401/sub-BH401_ses-20230207T231819_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH401/sub-BH401_ses-20230208T000953_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH401/sub-BH401_ses-20230208T005106_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH401/sub-BH401_ses-20230208T012808_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230214T200303_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230214T204015_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230214T212616_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230214T215744_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230214T222833_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230214T230505_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230214T235435_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230215T002717_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230215T010415_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230215T013638_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230215T015857_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
+  - sub-BH395/sub-BH395_ses-20221213T174039_ecephys.nwb
+  - sub-BH395/sub-BH395_ses-20221213T180853_ecephys.nwb
+  - sub-BH395/sub-BH395_ses-20221213T183140_ecephys.nwb
+  - sub-BH395/sub-BH395_ses-20221213T185547_ecephys.nwb
+  - sub-BH395/sub-BH395_ses-20221213T195834_ecephys.nwb
+  - sub-BH396/sub-BH396_ses-20221117T215447_ecephys.nwb
+  - sub-BH396/sub-BH396_ses-20221117T220434_ecephys.nwb
+  - sub-BH396/sub-BH396_ses-20221117T221038_ecephys.nwb
+  - sub-BH396/sub-BH396_ses-20221117T224848_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T202916_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T213946_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T221353_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T224653_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T231819_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230208T000953_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230208T005106_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230208T012808_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T200303_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T204015_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T212616_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T215744_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T222833_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T230505_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T235435_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230215T002717_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230215T010415_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230215T013638_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230215T015857_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - path: sub-BH396/sub-BH396_ses-20221117T225429_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
+  - sub-BH396/sub-BH396_ses-20221117T225429_ecephys.nwb
   assets_ok:
-  - path: sub-BH395/sub-BH395_ses-20221213T174039_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH395/sub-BH395_ses-20221213T180853_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH395/sub-BH395_ses-20221213T183140_ecephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH395/sub-BH395_ses-20221213T195834_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH396/sub-BH396_ses-20221117T215447_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH396/sub-BH396_ses-20221117T220434_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH396/sub-BH396_ses-20221117T221038_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH396/sub-BH396_ses-20221117T224848_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH401/sub-BH401_ses-20230207T202916_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH401/sub-BH401_ses-20230207T213946_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH401/sub-BH401_ses-20230207T221353_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH401/sub-BH401_ses-20230207T224653_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH401/sub-BH401_ses-20230207T231819_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH401/sub-BH401_ses-20230208T000953_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH401/sub-BH401_ses-20230208T005106_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH401/sub-BH401_ses-20230208T012808_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230214T200303_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230214T204015_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230214T212616_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230214T215744_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230214T222833_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230214T230505_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230214T235435_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230215T002717_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230215T010415_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230215T013638_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-BH444/sub-BH444_ses-20230215T015857_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
+  - sub-BH395/sub-BH395_ses-20221213T174039_ecephys.nwb
+  - sub-BH395/sub-BH395_ses-20221213T180853_ecephys.nwb
+  - sub-BH395/sub-BH395_ses-20221213T183140_ecephys.nwb
+  - sub-BH395/sub-BH395_ses-20221213T195834_ecephys.nwb
+  - sub-BH396/sub-BH396_ses-20221117T215447_ecephys.nwb
+  - sub-BH396/sub-BH396_ses-20221117T220434_ecephys.nwb
+  - sub-BH396/sub-BH396_ses-20221117T221038_ecephys.nwb
+  - sub-BH396/sub-BH396_ses-20221117T224848_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T202916_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T213946_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T221353_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T224653_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230207T231819_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230208T000953_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230208T005106_ecephys.nwb
+  - sub-BH401/sub-BH401_ses-20230208T012808_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T200303_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T204015_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T212616_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T215744_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T222833_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T230505_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230214T235435_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230215T002717_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230215T010415_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230215T013638_ecephys.nwb
+  - sub-BH444/sub-BH444_ses-20230215T015857_ecephys.nwb
   assets_timeout:
-  - path: sub-BH395/sub-BH395_ses-20221213T185547_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
+  - sub-BH395/sub-BH395_ses-20221213T185547_ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.11.0
+  hdmf: 3.13.0
   matnwb: v2.6.0.2
-  pynwb: 2.5.0
+  pynwb: 2.6.0

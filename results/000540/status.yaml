@@ -469,7 +469,11 @@ tests:
   - sub-SLR112/sub-SLR112_ses-20201101_obj-ptxbqn_behavior+image.nwb
   - sub-SLR112/sub-SLR112_ses-20201101_obj-uvi1d7_behavior+image.nwb
   - sub-SLR113/sub-SLR113_ses-20201126_obj-1kxrhh4_behavior+image.nwb
-  - sub-SLR113/sub-SLR113_ses-20201126_obj-vc3dpy_behavior+image.nwb
+  - path: sub-SLR113/sub-SLR113_ses-20201126_obj-vc3dpy_behavior+image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-SLR113/sub-SLR113_ses-20201127_obj-q80d1_behavior+image.nwb
   - path: sub-SLR113/sub-SLR113_ses-20201127_obj-r8julp_behavior+image.nwb
     versions:
@@ -805,7 +809,6 @@ tests:
   - sub-SLR112/sub-SLR112_ses-20201101_obj-1ei4aqe_behavior+image.nwb
   - sub-SLR112/sub-SLR112_ses-20201101_obj-ptxbqn_behavior+image.nwb
   - sub-SLR112/sub-SLR112_ses-20201101_obj-uvi1d7_behavior+image.nwb
-  - sub-SLR113/sub-SLR113_ses-20201126_obj-vc3dpy_behavior+image.nwb
   - sub-SLR113/sub-SLR113_ses-20201128_obj-1eyijth_behavior+image.nwb
   - sub-SLR113/sub-SLR113_ses-20201128_obj-1ne723e_behavior+image.nwb
   - sub-SLR113/sub-SLR113_ses-20201128_obj-1w3qnuf_behavior+image.nwb
@@ -1219,6 +1222,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-SLR113/sub-SLR113_ses-20201126_obj-1kxrhh4_behavior+image.nwb
+  - path: sub-SLR113/sub-SLR113_ses-20201126_obj-vc3dpy_behavior+image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-SLR113/sub-SLR113_ses-20201127_obj-q80d1_behavior+image.nwb
   - path: sub-SLR113/sub-SLR113_ses-20201127_obj-r8julp_behavior+image.nwb
     versions:
