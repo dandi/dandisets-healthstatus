@@ -648,7 +648,11 @@ tests:
   - sub-Sato/sub-Sato_ses-Sato03-HomeCage_behavior+ecephys.nwb
   - sub-Sato/sub-Sato_ses-Sato04-HomeCage_behavior+ecephys.nwb
   - sub-Sato/sub-Sato_ses-Sato05-HomeCage_behavior+ecephys.nwb
-  - sub-Sato/sub-Sato_ses-Sato06-HomeCage_behavior+ecephys.nwb
+  - path: sub-Sato/sub-Sato_ses-Sato06-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Sato/sub-Sato_ses-Sato07-HomeCage_behavior+ecephys.nwb
   - sub-Scotty/sub-Scotty_ses-Scotty01-HomeCage_behavior+ecephys.nwb
   - sub-Scotty/sub-Scotty_ses-Scotty02-HomeCage_behavior+ecephys.nwb
@@ -1276,7 +1280,6 @@ tests:
   - sub-Sato/sub-Sato_ses-Sato03-HomeCage_behavior+ecephys.nwb
   - sub-Sato/sub-Sato_ses-Sato04-HomeCage_behavior+ecephys.nwb
   - sub-Sato/sub-Sato_ses-Sato05-HomeCage_behavior+ecephys.nwb
-  - sub-Sato/sub-Sato_ses-Sato06-HomeCage_behavior+ecephys.nwb
   - sub-Sato/sub-Sato_ses-Sato07-HomeCage_behavior+ecephys.nwb
   - sub-Scotty/sub-Scotty_ses-Scotty02-HomeCage_behavior+ecephys.nwb
   - sub-Scotty/sub-Scotty_ses-Scotty04-HomeCage_behavior+ecephys.nwb
@@ -1479,6 +1482,11 @@ tests:
   - sub-Sage/sub-Sage_ses-Sage06-HomeCage_behavior+ecephys.nwb
   - sub-Salt/sub-Salt_ses-Salt03-LinearTrack_behavior+ecephys.nwb
   - sub-Salt/sub-Salt_ses-Salt06-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Sato/sub-Sato_ses-Sato06-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Scotty/sub-Scotty_ses-Scotty01-HomeCage_behavior+ecephys.nwb
   - sub-Scotty/sub-Scotty_ses-Scotty03-HomeCage_behavior+ecephys.nwb
   - path: sub-Scotty/sub-Scotty_ses-Scotty07-HomeCage_behavior+ecephys.nwb
