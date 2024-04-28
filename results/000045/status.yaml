@@ -57,9 +57,9 @@ tests:
   - sub-00778394-c956-408d-8a6c-ca3b05a611d5/sub-00778394-c956-408d-8a6c-ca3b05a611d5_ses-58d8f9dc-9c1a-4c8c-b3bd-76f6435de2e6_behavior+image.nwb
   - path: sub-00778394-c956-408d-8a6c-ca3b05a611d5/sub-00778394-c956-408d-8a6c-ca3b05a611d5_ses-5bccfcd9-7c0d-4f3a-8a6c-4aa3df1142ac_behavior+image.nwb
     versions:
-      hdmf: 3.6.1
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
-      pynwb: 2.3.2
+      pynwb: 2.6.0
   - sub-00778394-c956-408d-8a6c-ca3b05a611d5/sub-00778394-c956-408d-8a6c-ca3b05a611d5_ses-5c3755f9-416a-4cdc-b346-4458f1812878_behavior+image.nwb
   - sub-00778394-c956-408d-8a6c-ca3b05a611d5/sub-00778394-c956-408d-8a6c-ca3b05a611d5_ses-5dc3dd0e-0009-44a1-8590-39a0a61b7984_behavior+image.nwb
   - sub-00778394-c956-408d-8a6c-ca3b05a611d5/sub-00778394-c956-408d-8a6c-ca3b05a611d5_ses-5e405d28-9f66-44fc-ae24-cfbbd6d0cef2_behavior+image.nwb
@@ -20497,11 +20497,6 @@ tests:
   - sub-ffcd8c5e-fe0c-4d6d-8418-d9152f1746f1/sub-ffcd8c5e-fe0c-4d6d-8418-d9152f1746f1_ses-fcbc0036-df1d-45db-8ff6-94280ce4c789_behavior+image.nwb
   - sub-ffcd8c5e-fe0c-4d6d-8418-d9152f1746f1/sub-ffcd8c5e-fe0c-4d6d-8418-d9152f1746f1_ses-ff834e5c-ce44-4bf3-97c7-6b7004ddcaa9_behavior.nwb
   assets_ok:
-  - path: sub-00778394-c956-408d-8a6c-ca3b05a611d5/sub-00778394-c956-408d-8a6c-ca3b05a611d5_ses-5bccfcd9-7c0d-4f3a-8a6c-4aa3df1142ac_behavior+image.nwb
-    versions:
-      hdmf: 3.6.1
-      matnwb: v2.6.0.2
-      pynwb: 2.3.2
   - path: sub-00778394-c956-408d-8a6c-ca3b05a611d5/sub-00778394-c956-408d-8a6c-ca3b05a611d5_ses-c6f2a840-e0a0-4d20-a251-f8dcba63e0d5_behavior.nwb
     versions:
       hdmf: 3.6.0
@@ -22325,6 +22320,11 @@ tests:
       pynwb: 2.4.0
   - sub-ffcd8c5e-fe0c-4d6d-8418-d9152f1746f1/sub-ffcd8c5e-fe0c-4d6d-8418-d9152f1746f1_ses-b1dd2d4d-9339-481e-8db5-76062d7b02fc_behavior+image.nwb
   assets_timeout:
+  - path: sub-00778394-c956-408d-8a6c-ca3b05a611d5/sub-00778394-c956-408d-8a6c-ca3b05a611d5_ses-5bccfcd9-7c0d-4f3a-8a6c-4aa3df1142ac_behavior+image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-00778394-c956-408d-8a6c-ca3b05a611d5/sub-00778394-c956-408d-8a6c-ca3b05a611d5_ses-7cdd4c94-37a5-462f-992b-4543df05d982_behavior+image.nwb
     versions:
       hdmf: 3.6.1
