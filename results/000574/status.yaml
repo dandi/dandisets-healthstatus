@@ -77,7 +77,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-02/sub-02_ses-20160213T153700_obj-lcaqlc_behavior+ecephys.nwb
+  - path: sub-02/sub-02_ses-20160213T153700_obj-lcaqlc_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-03/sub-03_ses-20150304T165900_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -246,6 +250,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-02/sub-02_ses-20160213T153700_obj-lcaqlc_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-03/sub-03_ses-20150305T085500_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -290,7 +299,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-02/sub-02_ses-20160213T153700_obj-lcaqlc_behavior+ecephys.nwb
   - sub-04/sub-04_ses-20170118T103700_behavior+ecephys.nwb
   - sub-07/sub-07_ses-20160302T170100_behavior+ecephys.nwb
   assets_timeout:

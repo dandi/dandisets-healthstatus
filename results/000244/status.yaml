@@ -5,8 +5,7 @@ last_run_duration: 118616.761416
 last_run_ended: '2024-02-04T08:51:40.859211-05:00'
 nassets: 33
 tests:
-- assets_nok:
-  - sub-SLC06/sub-SLC06_ses-awake_ophys.nwb
+- assets_nok: []
   assets_ok:
   - sub-PV02/sub-PV02_ses-awake_ophys.nwb
   - sub-PV03/sub-PV03_ses-awake_ophys.nwb
@@ -16,6 +15,7 @@ tests:
   - sub-SLC02/sub-SLC02_ses-awake_ophys.nwb
   - sub-SLC03/sub-SLC03_ses-anest_ophys.nwb
   - sub-SLC06/sub-SLC06_ses-anest_ophys.nwb
+  - sub-SLC06/sub-SLC06_ses-awake_ophys.nwb
   - sub-SLC07/sub-SLC07_ses-anest_ophys.nwb
   - sub-SLC07/sub-SLC07_ses-awake_ophys.nwb
   - sub-SLC08/sub-SLC08_ses-awake_ophys.nwb
@@ -42,8 +42,7 @@ tests:
   - sub-VIP15/sub-VIP15_ses-awake_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-SLC06/sub-SLC06_ses-awake_ophys.nwb
+- assets_nok: []
   assets_ok: []
   assets_timeout:
   - sub-PV02/sub-PV02_ses-awake_ophys.nwb
@@ -54,6 +53,7 @@ tests:
   - sub-SLC02/sub-SLC02_ses-awake_ophys.nwb
   - sub-SLC03/sub-SLC03_ses-anest_ophys.nwb
   - sub-SLC06/sub-SLC06_ses-anest_ophys.nwb
+  - sub-SLC06/sub-SLC06_ses-awake_ophys.nwb
   - sub-SLC07/sub-SLC07_ses-anest_ophys.nwb
   - sub-SLC07/sub-SLC07_ses-awake_ophys.nwb
   - sub-SLC08/sub-SLC08_ses-awake_ophys.nwb
