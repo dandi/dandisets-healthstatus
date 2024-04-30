@@ -34,7 +34,11 @@ tests:
   - sub-123/sub-123_ses-Ca-VS-MB-TP-PAUSE-1.nwb
   - sub-123/sub-123_ses-Ca-VS-VR-5.nwb
   - sub-123/sub-123_ses-Ca-VS-VR-SPD-5.nwb
-  - sub-123/sub-123_ses-Ca-VS-VR-THREE-TP-5.nwb
+  - path: sub-123/sub-123_ses-Ca-VS-VR-THREE-TP-5.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-123/sub-123_ses-Ca-VS-VR-TP-PAUSE-1.nwb
   - path: sub-124/sub-124_ses-Ca-VS-MB-4.nwb
     versions:
@@ -759,7 +763,6 @@ tests:
   - sub-123/sub-123_ses-Ca-VS-MB-TP-PAUSE-1.nwb
   - sub-123/sub-123_ses-Ca-VS-VR-5.nwb
   - sub-123/sub-123_ses-Ca-VS-VR-SPD-5.nwb
-  - sub-123/sub-123_ses-Ca-VS-VR-THREE-TP-5.nwb
   - sub-123/sub-123_ses-Ca-VS-VR-TP-PAUSE-1.nwb
   - sub-124/sub-124_ses-Ca-VS-MB-SPD-4.nwb
   - sub-124/sub-124_ses-Ca-VS-VR-6.nwb
@@ -1485,7 +1488,12 @@ tests:
   - sub-3054/sub-3054_ses-SU-VR-OL-91.nwb
   - sub-3054/sub-3054_ses-SU-VR-OL-93.nwb
   - sub-3054/sub-3054_ses-SU-VR-OL-96.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-123/sub-123_ses-Ca-VS-VR-THREE-TP-5.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   name: matnwb_nwbRead
 untested: []
 versions:
