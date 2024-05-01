@@ -466,7 +466,11 @@ tests:
   - sub-Odo/sub-Odo_ses-Odo05-HomeCage_behavior+ecephys.nwb
   - sub-Odo/sub-Odo_ses-Odo06_HomeCage_behavior+ecephys.nwb
   - sub-Odo/sub-Odo_ses-Odo07-HomeCage_behavior+ecephys.nwb
-  - sub-OldBay/sub-OldBay_ses-OldBay01-HomeCage_behavior+ecephys.nwb
+  - path: sub-OldBay/sub-OldBay_ses-OldBay01-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-OldBay/sub-OldBay_ses-OldBay01_LinearTrack_behavior+ecephys.nwb
   - sub-OldBay/sub-OldBay_ses-OldBay02-HomeCage_behavior+ecephys.nwb
   - sub-OldBay/sub-OldBay_ses-OldBay02-LinearTrack_behavior+ecephys.nwb
@@ -1142,7 +1146,6 @@ tests:
   - sub-Odo/sub-Odo_ses-Odo04-HomeCage_behavior+ecephys.nwb
   - sub-Odo/sub-Odo_ses-Odo05-HomeCage_behavior+ecephys.nwb
   - sub-Odo/sub-Odo_ses-Odo07-HomeCage_behavior+ecephys.nwb
-  - sub-OldBay/sub-OldBay_ses-OldBay01-HomeCage_behavior+ecephys.nwb
   - sub-OldBay/sub-OldBay_ses-OldBay01_LinearTrack_behavior+ecephys.nwb
   - sub-OldBay/sub-OldBay_ses-OldBay02-LinearTrack_behavior+ecephys.nwb
   - sub-OldBay/sub-OldBay_ses-OldBay04-HomeCage_behavior+ecephys.nwb
@@ -1469,6 +1472,11 @@ tests:
   - sub-OBrien/sub-OBrien_ses-OBrien01-HomeCage_behavior+ecephys.nwb
   - sub-OBrien/sub-OBrien_ses-OBrien07-HomeCage_behavior+ecephys.nwb
   - sub-Odo/sub-Odo_ses-Odo06_HomeCage_behavior+ecephys.nwb
+  - path: sub-OldBay/sub-OldBay_ses-OldBay01-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-OldBay/sub-OldBay_ses-OldBay02-HomeCage_behavior+ecephys.nwb
   - path: sub-OldBay/sub-OldBay_ses-OldBay03-HomeCage_behavior+ecephys.nwb
     versions:
