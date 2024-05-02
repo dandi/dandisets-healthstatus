@@ -688,7 +688,11 @@ tests:
   - sub-SevenOfNine/sub-SevenOfNine_ses-SevenOfNine05-HomeCage_behavior+ecephys.nwb
   - sub-SevenOfNine/sub-SevenOfNine_ses-SevenOfNine06-HomeCage_behavior+ecephys.nwb
   - sub-SevenOfNine/sub-SevenOfNine_ses-SevenOfNine07-HomeCage_behavior+ecephys.nwb
-  - sub-Sulu/sub-Sulu_ses-Sulu01_HomeCage_behavior+ecephys.nwb
+  - path: sub-Sulu/sub-Sulu_ses-Sulu01_HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - sub-Sulu/sub-Sulu_ses-Sulu02-HomeCage_behavior+ecephys.nwb
   - sub-Sulu/sub-Sulu_ses-Sulu03_HomeCage_behavior+ecephys.nwb
   - sub-Sulu/sub-Sulu_ses-Sulu04-HomeCage_behavior+ecephys.nwb
@@ -1319,7 +1323,6 @@ tests:
   - sub-SevenOfNine/sub-SevenOfNine_ses-SevenOfNine05-HomeCage_behavior+ecephys.nwb
   - sub-SevenOfNine/sub-SevenOfNine_ses-SevenOfNine06-HomeCage_behavior+ecephys.nwb
   - sub-SevenOfNine/sub-SevenOfNine_ses-SevenOfNine07-HomeCage_behavior+ecephys.nwb
-  - sub-Sulu/sub-Sulu_ses-Sulu01_HomeCage_behavior+ecephys.nwb
   - sub-Sulu/sub-Sulu_ses-Sulu02-HomeCage_behavior+ecephys.nwb
   - sub-Sulu/sub-Sulu_ses-Sulu03_HomeCage_behavior+ecephys.nwb
   - sub-Sulu/sub-Sulu_ses-Sulu04-HomeCage_behavior+ecephys.nwb
@@ -1522,6 +1525,11 @@ tests:
   - path: sub-Scotty/sub-Scotty_ses-Scotty07-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.12.2
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
+  - path: sub-Sulu/sub-Sulu_ses-Sulu01_HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-Sumac/sub-Sumac_ses-Sumac03-LinearTrack_behavior+ecephys.nwb

@@ -45,7 +45,11 @@ tests:
       pynwb: 2.6.0
   - sub-MS10/sub-MS10_ses-Peter-MS10-170319-180352-concat_desc-raw_ecephys.nwb
   - sub-MS10/sub-MS10_ses-Peter-MS10-170320-212321-concat_desc-processed_behavior+ecephys.nwb
-  - sub-MS10/sub-MS10_ses-Peter-MS10-170320-212321-concat_desc-raw_ecephys.nwb
+  - path: sub-MS10/sub-MS10_ses-Peter-MS10-170320-212321-concat_desc-raw_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-MS10/sub-MS10_ses-Peter-MS10-170321-164406-concat_desc-processed_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -372,7 +376,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-MS10/sub-MS10_ses-Peter-MS10-170319-180352-concat_desc-raw_ecephys.nwb
-  - sub-MS10/sub-MS10_ses-Peter-MS10-170320-212321-concat_desc-raw_ecephys.nwb
+  - path: sub-MS10/sub-MS10_ses-Peter-MS10-170320-212321-concat_desc-raw_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-MS10/sub-MS10_ses-Peter-MS10-170321-164406-concat_desc-processed_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0

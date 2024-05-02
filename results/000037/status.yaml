@@ -330,7 +330,11 @@ tests:
       pynwb: 2.6.0
   - sub-433458/sub-433458_ses-828475005_obj-raw_behavior+image+ophys.nwb
   - sub-433458/sub-433458_ses-829520904_behavior+image+ophys.nwb
-  - sub-433458/sub-433458_ses-829520904_behavior+ophys.nwb
+  - path: sub-433458/sub-433458_ses-829520904_behavior+ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-440889/sub-440889_ses-832883243_behavior+image+ophys.nwb
     versions:
       hdmf: 3.12.2
@@ -466,7 +470,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-433458/sub-433458_ses-829520904_behavior+ophys.nwb
+  - path: sub-433458/sub-433458_ses-829520904_behavior+ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.6.0
   - path: sub-433458/sub-433458_ses-829520904_obj-raw_behavior+image+ophys.nwb
     versions:
       hdmf: 3.13.0
