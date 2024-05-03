@@ -10,10 +10,10 @@ tests:
   - sub-fly-099/sub-fly-099_ses-20200627142647_behavior+image+ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok: []
-  assets_timeout:
+- assets_nok:
   - sub-fly-099/sub-fly-099_ses-20200627142647_behavior+image+ophys.nwb
+  assets_ok: []
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
