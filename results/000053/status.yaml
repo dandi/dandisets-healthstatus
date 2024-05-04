@@ -175,7 +175,11 @@ tests:
   - sub-Ella/sub-Ella_ses-20190414_behavior.nwb
   - sub-Ella/sub-Ella_ses-20190416_behavior.nwb
   - sub-Ella/sub-Ella_ses-20191029_behavior.nwb
-  - sub-Ella/sub-Ella_ses-20191030_behavior.nwb
+  - path: sub-Ella/sub-Ella_ses-20191030_behavior.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Ella/sub-Ella_ses-20191103_behavior.nwb
   - path: sub-Ella/sub-Ella_ses-20191104_behavior.nwb
     versions:
@@ -640,7 +644,6 @@ tests:
   - sub-Ella/sub-Ella_ses-20190102_behavior.nwb
   - sub-Ella/sub-Ella_ses-20190408_behavior.nwb
   - sub-Ella/sub-Ella_ses-20190414_behavior.nwb
-  - sub-Ella/sub-Ella_ses-20191030_behavior.nwb
   - sub-Ella/sub-Ella_ses-20191204_behavior.nwb
   - sub-Flip/sub-Flip_ses-20190802_behavior.nwb
   - sub-Flip/sub-Flip_ses-20190807_behavior.nwb
@@ -837,6 +840,11 @@ tests:
       pynwb: 2.6.0
   - sub-Ella/sub-Ella_ses-20190416_behavior.nwb
   - sub-Ella/sub-Ella_ses-20191029_behavior.nwb
+  - path: sub-Ella/sub-Ella_ses-20191030_behavior.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Ella/sub-Ella_ses-20191103_behavior.nwb
   - path: sub-Ella/sub-Ella_ses-20191104_behavior.nwb
     versions:

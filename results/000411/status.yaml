@@ -10,13 +10,13 @@ tests:
   - sub-001/sub-001_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok:
+- assets_nok:
   - sub-001/sub-001_ecephys.nwb
+  assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
   hdmf: 3.13.0
   matnwb: v2.6.0.2
-  pynwb: 2.6.0
+  pynwb: 2.7.0

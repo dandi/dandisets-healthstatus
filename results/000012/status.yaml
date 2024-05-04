@@ -35,7 +35,11 @@ tests:
   - sub-1/sub-1_ses-18516008_tis-1-2_cell-c3_icephys.nwb
   - sub-1/sub-1_ses-18516009_tis-1-2_cell-c3_icephys.nwb
   - sub-1/sub-1_ses-18516010_tis-1-2_cell-c3_icephys.nwb
-  - sub-1/sub-1_ses-18516011_tis-1-2_cell-c3_icephys.nwb
+  - path: sub-1/sub-1_ses-18516011_tis-1-2_cell-c3_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-1/sub-1_ses-18516012_tis-1-2_cell-c3_icephys.nwb
   - sub-1/sub-1_ses-18516013_tis-1-2_cell-c3_icephys.nwb
   - sub-1/sub-1_ses-18516014_tis-1-2_cell-c3_icephys.nwb
@@ -547,6 +551,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-1/sub-1_ses-18516011_tis-1-2_cell-c3_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-1/sub-1_ses-18516013_tis-1-2_cell-c3_icephys.nwb
   - sub-1/sub-1_ses-18516014_tis-1-2_cell-c3_icephys.nwb
   - sub-1/sub-1_ses-18516015_tis-1-2_cell-c3_icephys.nwb
@@ -998,7 +1007,6 @@ tests:
   - sub-1/sub-1_ses-18516008_tis-1-2_cell-c3_icephys.nwb
   - sub-1/sub-1_ses-18516009_tis-1-2_cell-c3_icephys.nwb
   - sub-1/sub-1_ses-18516010_tis-1-2_cell-c3_icephys.nwb
-  - sub-1/sub-1_ses-18516011_tis-1-2_cell-c3_icephys.nwb
   - sub-1/sub-1_ses-18516012_tis-1-2_cell-c3_icephys.nwb
   - path: sub-1/sub-1_ses-18516030_tis-1-2_cell-c5_icephys.nwb
     versions:

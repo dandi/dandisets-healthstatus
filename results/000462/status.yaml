@@ -19,7 +19,11 @@ tests:
   - sub-NR21/sub-NR21_ophys.nwb
   - sub-NR23/sub-NR23_ophys.nwb
   - sub-NR32/sub-NR32_ophys.nwb
-  - sub-NR34/sub-NR34_ophys.nwb
+  - path: sub-NR34/sub-NR34_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-NR6/sub-NR6_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
@@ -37,7 +41,11 @@ tests:
   - sub-CFC19/sub-CFC19_ophys.nwb
   - sub-NR14/sub-NR14_ophys.nwb
   - sub-NR32/sub-NR32_ophys.nwb
-  - sub-NR34/sub-NR34_ophys.nwb
+  - path: sub-NR34/sub-NR34_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-NR6/sub-NR6_ophys.nwb
   assets_timeout: []
   name: matnwb_nwbRead
