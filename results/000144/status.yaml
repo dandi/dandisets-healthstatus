@@ -7,21 +7,13 @@ nassets: 2
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-8675309/sub-8675309_ses-2000-01-01 00-00-00_ophys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
+  - sub-8675309/sub-8675309_ses-2000-01-01 00-00-00_ophys.nwb
   - sub-8675309/sub-8675309_ses-20211008T163543_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
-  - path: sub-8675309/sub-8675309_ses-2000-01-01 00-00-00_ophys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
+  - sub-8675309/sub-8675309_ses-2000-01-01 00-00-00_ophys.nwb
   - sub-8675309/sub-8675309_ses-20211008T163543_ophys.nwb
   assets_timeout: []
   name: matnwb_nwbRead
@@ -29,4 +21,4 @@ untested: []
 versions:
   hdmf: 3.13.0
   matnwb: v2.6.0.2
-  pynwb: 2.6.0
+  pynwb: 2.7.0

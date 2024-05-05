@@ -30,7 +30,11 @@ tests:
   - sub-Roqui/sub-Roqui_ses-Roqui-01_behavior+ecephys.nwb
   - sub-Roqui/sub-Roqui_ses-Roqui-02_behavior+ecephys.nwb
   - sub-Roqui/sub-Roqui_ses-Roqui-03_behavior+ecephys.nwb
-  - sub-Roqui/sub-Roqui_ses-Roqui-04_behavior+ecephys.nwb
+  - path: sub-Roqui/sub-Roqui_ses-Roqui-04_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Roqui/sub-Roqui_ses-Roqui-05_behavior+ecephys.nwb
   - sub-Roqui/sub-Roqui_ses-Roqui-06_behavior+ecephys.nwb
   assets_timeout: []
@@ -61,7 +65,11 @@ tests:
   - sub-Roqui/sub-Roqui_ses-Roqui-01_behavior+ecephys.nwb
   - sub-Roqui/sub-Roqui_ses-Roqui-02_behavior+ecephys.nwb
   - sub-Roqui/sub-Roqui_ses-Roqui-03_behavior+ecephys.nwb
-  - sub-Roqui/sub-Roqui_ses-Roqui-04_behavior+ecephys.nwb
+  - path: sub-Roqui/sub-Roqui_ses-Roqui-04_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Roqui/sub-Roqui_ses-Roqui-05_behavior+ecephys.nwb
   - sub-Roqui/sub-Roqui_ses-Roqui-06_behavior+ecephys.nwb
   name: matnwb_nwbRead

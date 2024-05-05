@@ -7,7 +7,11 @@ nassets: 8
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Achilles/sub-Achilles_ses-Achilles-10252013_behavior+ecephys.nwb
+  - path: sub-Achilles/sub-Achilles_ses-Achilles-10252013_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Achilles/sub-Achilles_ses-Achilles-11012013_behavior+ecephys.nwb
   - sub-Buddy/sub-Buddy_ses-Buddy-06272013_behavior+ecephys.nwb
   - path: sub-Cicero/sub-Cicero_ses-Cicero-09012014_behavior+ecephys.nwb
@@ -23,9 +27,13 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
+  - path: sub-Achilles/sub-Achilles_ses-Achilles-10252013_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Achilles/sub-Achilles_ses-Achilles-11012013_behavior+ecephys.nwb
   assets_timeout:
-  - sub-Achilles/sub-Achilles_ses-Achilles-10252013_behavior+ecephys.nwb
   - sub-Buddy/sub-Buddy_ses-Buddy-06272013_behavior+ecephys.nwb
   - path: sub-Cicero/sub-Cicero_ses-Cicero-09012014_behavior+ecephys.nwb
     versions:

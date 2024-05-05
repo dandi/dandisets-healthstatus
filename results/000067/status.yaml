@@ -27,7 +27,11 @@ tests:
   - sub-EE/sub-EE_ses-EE-083_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-084_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-085_ecephys.nwb
-  - sub-EE/sub-EE_ses-EE-086_ecephys.nwb
+  - path: sub-EE/sub-EE_ses-EE-086_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-EE/sub-EE_ses-EE-087_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-089_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-196_behavior+ecephys.nwb
@@ -44,6 +48,11 @@ tests:
 - assets_nok:
   - sub-EE/sub-EE_ses-EE-049_behavior+ecephys.nwb
   - sub-EE/sub-EE_ses-EE-081_ecephys.nwb
+  - path: sub-EE/sub-EE_ses-EE-086_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-EE/sub-EE_ses-EE-088_behavior+ecephys.nwb
   - sub-FF/sub-FF_ses-FF-130_behavior+ecephys.nwb
   assets_ok:
@@ -63,7 +72,6 @@ tests:
   - sub-EE/sub-EE_ses-EE-082_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-083_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-085_ecephys.nwb
-  - sub-EE/sub-EE_ses-EE-086_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-087_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-089_ecephys.nwb
   - sub-EE/sub-EE_ses-EE-210_ecephys.nwb

@@ -15,7 +15,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-9/sub-9_ses-20200204T154200_ophys.nwb
+  - path: sub-9/sub-9_ses-20200204T154200_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -25,7 +29,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-9/sub-9_ses-20200204T154200_ophys.nwb
+  - path: sub-9/sub-9_ses-20200204T154200_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   assets_ok: []
   assets_timeout:
   - sub-163/sub-163_ses-20200212T160655_ophys.nwb

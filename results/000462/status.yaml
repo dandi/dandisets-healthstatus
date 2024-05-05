@@ -10,7 +10,11 @@ tests:
   - sub-009/sub-009_ophys.nwb
   - sub-011/sub-011_ophys.nwb
   - sub-012/sub-012_ophys.nwb
-  - sub-014/sub-014_ophys.nwb
+  - path: sub-014/sub-014_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-CFC16/sub-CFC16_ophys.nwb
   - sub-CFC17/sub-CFC17_ophys.nwb
   - sub-CFC19/sub-CFC19_ophys.nwb
@@ -37,7 +41,11 @@ tests:
   assets_ok:
   - sub-009/sub-009_ophys.nwb
   - sub-012/sub-012_ophys.nwb
-  - sub-014/sub-014_ophys.nwb
+  - path: sub-014/sub-014_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-CFC19/sub-CFC19_ophys.nwb
   - sub-NR14/sub-NR14_ophys.nwb
   - sub-NR32/sub-NR32_ophys.nwb

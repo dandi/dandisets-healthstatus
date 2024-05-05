@@ -10,7 +10,11 @@ tests:
   - sub-PV02/sub-PV02_ses-awake_ophys.nwb
   - sub-PV03/sub-PV03_ses-awake_ophys.nwb
   - sub-PV04/sub-PV04_ses-awake_ophys.nwb
-  - sub-PV05/sub-PV05_ses-awake_ophys.nwb
+  - path: sub-PV05/sub-PV05_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-SLC02/sub-SLC02_ses-anest_ophys.nwb
   - sub-SLC02/sub-SLC02_ses-awake_ophys.nwb
   - sub-SLC03/sub-SLC03_ses-anest_ophys.nwb
@@ -52,7 +56,11 @@ tests:
   - sub-PV02/sub-PV02_ses-awake_ophys.nwb
   - sub-PV03/sub-PV03_ses-awake_ophys.nwb
   - sub-PV04/sub-PV04_ses-awake_ophys.nwb
-  - sub-PV05/sub-PV05_ses-awake_ophys.nwb
+  - path: sub-PV05/sub-PV05_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-SLC02/sub-SLC02_ses-anest_ophys.nwb
   - sub-SLC02/sub-SLC02_ses-awake_ophys.nwb
   - sub-SLC03/sub-SLC03_ses-anest_ophys.nwb
