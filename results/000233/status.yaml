@@ -567,7 +567,11 @@ tests:
   - sub-Vanessa/sub-Vanessa_ses-Vanessa_210219_174006_ecephys.nwb
   - sub-Vanessa/sub-Vanessa_ses-Vanessa_210226_073342_ecephys.nwb
   - sub-Vanessa/sub-Vanessa_ses-Vanessa_210302_082520_ecephys.nwb
-  - sub-bruce/sub-bruce_ses-bruce_0um_210110_171041_ecephys.nwb
+  - path: sub-bruce/sub-bruce_ses-bruce_0um_210110_171041_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-bruce/sub-bruce_ses-bruce_0um_210111_114120_ecephys.nwb
   - sub-bruce/sub-bruce_ses-bruce_0um_210112_112238_ecephys.nwb
   - sub-bruce/sub-bruce_ses-bruce_0um_210113_092852_ecephys.nwb
@@ -1172,7 +1176,11 @@ tests:
   - sub-Vanessa/sub-Vanessa_ses-Vanessa_210219_164638_ecephys.nwb
   - sub-Vanessa/sub-Vanessa_ses-Vanessa_210219_174006_ecephys.nwb
   - sub-Vanessa/sub-Vanessa_ses-Vanessa_210226_073342_ecephys.nwb
-  - sub-bruce/sub-bruce_ses-bruce_0um_210110_171041_ecephys.nwb
+  - path: sub-bruce/sub-bruce_ses-bruce_0um_210110_171041_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-dt15/sub-dt15_ses-dt15_2960um_200206_203951_ecephys.nwb
   - sub-dt15/sub-dt15_ses-dt15_3248um_200207_115931_ecephys.nwb
   - sub-dt15/sub-dt15_ses-dt15_3536um_200208_125719_ecephys.nwb

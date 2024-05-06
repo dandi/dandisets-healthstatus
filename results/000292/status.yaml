@@ -7,7 +7,11 @@ nassets: 11
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-18118024/sub-18118024_icephys.nwb
+  - path: sub-18118024/sub-18118024_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-18130014/sub-18130014_icephys.nwb
   - sub-18208024/sub-18208024_icephys.nwb
   - sub-19o22001/sub-19o22001_icephys.nwb
@@ -31,7 +35,11 @@ tests:
 - assets_nok:
   - sub-19o22018/sub-19o22018_icephys.nwb
   assets_ok:
-  - sub-18118024/sub-18118024_icephys.nwb
+  - path: sub-18118024/sub-18118024_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-18130014/sub-18130014_icephys.nwb
   - sub-18208024/sub-18208024_icephys.nwb
   - sub-19o22001/sub-19o22001_icephys.nwb
