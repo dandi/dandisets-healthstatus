@@ -41,7 +41,11 @@ tests:
   - sub-SOM10/sub-SOM10_ses-awake_ophys.nwb
   - sub-SOM11/sub-SOM11_ses-awake_ophys.nwb
   - sub-SOM14/sub-SOM14_ses-awake_ophys.nwb
-  - sub-SOM15/sub-SOM15_ses-awake_ophys.nwb
+  - path: sub-SOM15/sub-SOM15_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-VIP06/sub-VIP06_ses-awake_ophys.nwb
   - sub-VIP09/sub-VIP09_ses-awake_ophys.nwb
   - path: sub-VIP11/sub-VIP11_ses-awake_ophys.nwb
@@ -91,7 +95,11 @@ tests:
   - sub-SOM10/sub-SOM10_ses-awake_ophys.nwb
   - sub-SOM11/sub-SOM11_ses-awake_ophys.nwb
   - sub-SOM14/sub-SOM14_ses-awake_ophys.nwb
-  - sub-SOM15/sub-SOM15_ses-awake_ophys.nwb
+  - path: sub-SOM15/sub-SOM15_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-VIP06/sub-VIP06_ses-awake_ophys.nwb
   - sub-VIP09/sub-VIP09_ses-awake_ophys.nwb
   - path: sub-VIP11/sub-VIP11_ses-awake_ophys.nwb

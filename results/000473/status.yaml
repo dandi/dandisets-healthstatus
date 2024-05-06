@@ -5,8 +5,7 @@ last_run_duration: 22734.24826
 last_run_ended: '2024-02-13T17:20:47.027743-05:00'
 nassets: 25
 tests:
-- assets_nok:
-  - sub-156130/sub-156130_ses-156130-20191112-probe0_ecephys+ogen.nwb
+- assets_nok: []
   assets_ok:
   - sub-128514/sub-128514_ses-128514-20191215-probe0_behavior+ecephys+ogen.nwb
   - path: sub-128515/sub-128515_ses-128515-20191216-probe0_ecephys+ogen.nwb
@@ -20,6 +19,11 @@ tests:
   - sub-152414/sub-152414_ses-152414-20191023-probe0_ecephys+ogen.nwb
   - sub-152417/sub-152417_ses-152417-20191023-probe0_ecephys+ogen.nwb
   - sub-152419/sub-152419_ses-152419-20191106-probe0_ecephys+ogen.nwb
+  - path: sub-156130/sub-156130_ses-156130-20191112-probe0_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-156131/sub-156131_ses-156131-20191112-probe0_ecephys+ogen.nwb
   - sub-216300/sub-216300_ses-216300-20200518-probe0_ecephys+ogen.nwb
   - sub-216301/sub-216301_ses-216301-20200521-probe0_ecephys+ogen.nwb
@@ -55,7 +59,11 @@ tests:
       pynwb: 2.7.0
   - sub-147465/sub-147465_ses-147465-20191113-probe0_ecephys+ogen.nwb
   - sub-152419/sub-152419_ses-152419-20191106-probe0_ecephys+ogen.nwb
-  - sub-156130/sub-156130_ses-156130-20191112-probe0_ecephys+ogen.nwb
+  - path: sub-156130/sub-156130_ses-156130-20191112-probe0_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-156131/sub-156131_ses-156131-20191112-probe0_ecephys+ogen.nwb
   - sub-216300/sub-216300_ses-216300-20200518-probe0_ecephys+ogen.nwb
   - sub-258412/sub-258412_ses-258412-20200915-probe0_ecephys+ogen.nwb

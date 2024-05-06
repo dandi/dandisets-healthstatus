@@ -23,7 +23,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-JDS-NFN-ZT2/sub-JDS-NFN-ZT2_behavior+ecephys.nwb
+  - path: sub-JDS-NFN-ZT2/sub-JDS-NFN-ZT2_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -37,6 +41,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-JDS-NFN-ZT2/sub-JDS-NFN-ZT2_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   assets_ok: []
   assets_timeout:
   - sub-JDS-NFN-JS21/sub-JDS-NFN-JS21_behavior+ecephys.nwb
@@ -45,7 +54,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-JDS-NFN-ZT2/sub-JDS-NFN-ZT2_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

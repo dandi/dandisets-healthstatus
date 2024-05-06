@@ -7,7 +7,11 @@ nassets: 9
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-RAT123/sub-RAT123.nwb
+  - path: sub-RAT123/sub-RAT123.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-anm369962/sub-anm369962_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -27,7 +31,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-RAT123/sub-RAT123.nwb
+  - path: sub-RAT123/sub-RAT123.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-anm369962/sub-anm369962_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0

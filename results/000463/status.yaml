@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-BH395/sub-BH395_ses-20221213T174039_ecephys.nwb
-  - sub-BH395/sub-BH395_ses-20221213T180853_ecephys.nwb
+  - path: sub-BH395/sub-BH395_ses-20221213T180853_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-BH395/sub-BH395_ses-20221213T183140_ecephys.nwb
   - sub-BH395/sub-BH395_ses-20221213T185547_ecephys.nwb
   - path: sub-BH395/sub-BH395_ses-20221213T195834_ecephys.nwb
@@ -53,7 +57,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-BH395/sub-BH395_ses-20221213T174039_ecephys.nwb
-  - sub-BH395/sub-BH395_ses-20221213T180853_ecephys.nwb
+  - path: sub-BH395/sub-BH395_ses-20221213T180853_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-BH395/sub-BH395_ses-20221213T183140_ecephys.nwb
   - path: sub-BH395/sub-BH395_ses-20221213T195834_ecephys.nwb
     versions:

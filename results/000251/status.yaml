@@ -599,7 +599,11 @@ tests:
   - sub-3045/sub-3045_ses-SU-VR-ALL-TP-48.nwb
   - sub-3045/sub-3045_ses-SU-VR-ALL-TP-49.nwb
   - sub-3045/sub-3045_ses-SU-VR-ALL-TP-50.nwb
-  - sub-3045/sub-3045_ses-SU-VR-ALL-TP-51.nwb
+  - path: sub-3045/sub-3045_ses-SU-VR-ALL-TP-51.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-3045/sub-3045_ses-SU-VR-ALL-TP-52.nwb
   - sub-3045/sub-3045_ses-SU-VR-ALL-TP-53.nwb
   - sub-3045/sub-3045_ses-SU-VR-OL-56.nwb
@@ -993,7 +997,6 @@ tests:
   - sub-3045/sub-3045_ses-SU-VR-ALL-TP-48.nwb
   - sub-3045/sub-3045_ses-SU-VR-ALL-TP-49.nwb
   - sub-3045/sub-3045_ses-SU-VR-ALL-TP-50.nwb
-  - sub-3045/sub-3045_ses-SU-VR-ALL-TP-51.nwb
   - sub-3045/sub-3045_ses-SU-VR-ALL-TP-52.nwb
   - sub-3045/sub-3045_ses-SU-VR-ALL-TP-53.nwb
   - sub-3045/sub-3045_ses-SU-VR-OL-56.nwb
@@ -1465,6 +1468,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-3045/sub-3045_ses-SU-VR-ALL-TP-51.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-3045/sub-3045_ses-SU-VR-OL-66.nwb
   - path: sub-3045/sub-3045_ses-SU-VR-OL-68.nwb
     versions:

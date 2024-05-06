@@ -5,12 +5,7 @@ last_run_duration: 64150.055962
 last_run_ended: '2024-01-04T06:10:29.950110-05:00'
 nassets: 53
 tests:
-- assets_nok:
-  - path: sub-anm372905/sub-anm372905_ses-20170717.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
+- assets_nok: []
   assets_ok:
   - sub-anm369962/sub-anm369962_ses-20170309.nwb
   - sub-anm369962/sub-anm369962_ses-20170310.nwb
@@ -194,6 +189,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-anm372905/sub-anm372905_ses-20170717.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-anm372906/sub-anm372906_ses-20170608.nwb
     versions:
       hdmf: 3.12.2
@@ -432,7 +432,7 @@ tests:
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.7.0
   - path: sub-anm372906/sub-anm372906_ses-20170608.nwb
     versions:
       hdmf: 3.12.2
