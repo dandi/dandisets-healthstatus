@@ -13,7 +13,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-128516/sub-128516_ses-128516-20191215-probe0_ecephys+ogen.nwb
+  - path: sub-128516/sub-128516_ses-128516-20191215-probe0_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-147463/sub-147463_ses-147463-20191113-probe0_ecephys+ogen.nwb
   - sub-147465/sub-147465_ses-147465-20191113-probe0_ecephys+ogen.nwb
   - sub-152414/sub-152414_ses-152414-20191023-probe0_ecephys+ogen.nwb
@@ -57,6 +61,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-128516/sub-128516_ses-128516-20191215-probe0_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-147465/sub-147465_ses-147465-20191113-probe0_ecephys+ogen.nwb
   - sub-152419/sub-152419_ses-152419-20191106-probe0_ecephys+ogen.nwb
   - path: sub-156130/sub-156130_ses-156130-20191112-probe0_ecephys+ogen.nwb
@@ -71,7 +80,6 @@ tests:
   - sub-268951/sub-268951_ses-268951-20200922-probe0_ecephys+ogen.nwb
   assets_ok: []
   assets_timeout:
-  - sub-128516/sub-128516_ses-128516-20191215-probe0_ecephys+ogen.nwb
   - sub-147463/sub-147463_ses-147463-20191113-probe0_ecephys+ogen.nwb
   - sub-152414/sub-152414_ses-152414-20191023-probe0_ecephys+ogen.nwb
   - sub-152417/sub-152417_ses-152417-20191023-probe0_ecephys+ogen.nwb
