@@ -242,7 +242,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-fCamk5/sub-fCamk5_ses-fCamk5-210414-sess16_behavior+ecephys+image.nwb
+  - path: sub-fCamk5/sub-fCamk5_ses-fCamk5-210414-sess16_behavior+ecephys+image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -483,7 +487,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-fCamk5/sub-fCamk5_ses-fCamk5-210414-sess16_behavior+ecephys+image.nwb
+  - path: sub-fCamk5/sub-fCamk5_ses-fCamk5-210414-sess16_behavior+ecephys+image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   name: matnwb_nwbRead
 untested:
 - asset: sub-fCamk1/sub-fCamk1_ses-fCamk1-200827-sess9_behavior+ecephys+image+ogen/f8fd9725-9333-4ca5-8ca6-58e3bbd02c7a_external_file_0.avi

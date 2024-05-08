@@ -55,7 +55,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-GP33/sub-GP33_ses-GP33-B1.nwb
+  - path: sub-GP33/sub-GP33_ses-GP33-B1.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-GP33/sub-GP33_ses-GP33-B30.nwb
   - sub-GP33/sub-GP33_ses-GP33-B5.nwb
   assets_timeout: []
@@ -101,7 +105,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-GP33/sub-GP33_ses-GP33-B1.nwb
   - sub-GP33/sub-GP33_ses-GP33-B30.nwb
   - sub-GP33/sub-GP33_ses-GP33-B5.nwb
   assets_ok:
@@ -113,6 +116,11 @@ tests:
       pynwb: 2.7.0
   - sub-GP31/sub-GP31_ses-GP31-B65.nwb
   - sub-GP31/sub-GP31_ses-GP31-B67.nwb
+  - path: sub-GP33/sub-GP33_ses-GP33-B1.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
