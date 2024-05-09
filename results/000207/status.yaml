@@ -16,7 +16,11 @@ tests:
   - sub-11/sub-11_ses-11_ecephys.nwb
   - sub-12/sub-12_ses-12_ecephys.nwb
   - sub-13/sub-13_ses-13_ecephys.nwb
-  - sub-14/sub-14_ses-14_ecephys.nwb
+  - path: sub-14/sub-14_ses-14_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-15/sub-15_ses-15_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -66,7 +70,11 @@ tests:
   - sub-11/sub-11_ses-11_ecephys.nwb
   - sub-12/sub-12_ses-12_ecephys.nwb
   - sub-13/sub-13_ses-13_ecephys.nwb
-  - sub-14/sub-14_ses-14_ecephys.nwb
+  - path: sub-14/sub-14_ses-14_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-15/sub-15_ses-15_ecephys.nwb
     versions:
       hdmf: 3.13.0

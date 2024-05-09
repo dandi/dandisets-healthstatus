@@ -297,7 +297,11 @@ tests:
   - sub-282/sub-282_ses-Ca-VS-VR-CLOOP-PATTERN-4.nwb
   - sub-282/sub-282_ses-Ca-VS-VR-CLOOP-SOLID-4.nwb
   - sub-283/sub-283_ses-Ca-VS-VR-CLOOP-PATTERN-5.nwb
-  - sub-283/sub-283_ses-Ca-VS-VR-CLOOP-SOLID-5.nwb
+  - path: sub-283/sub-283_ses-Ca-VS-VR-CLOOP-SOLID-5.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-288/sub-288_ses-Ca-VS-VR-CLOOP-PATTERN-6.nwb
   - sub-288/sub-288_ses-Ca-VS-VR-CLOOP-SOLID-6.nwb
   - sub-3014/sub-3014_ses-SU-VR-ALL-OL-1.nwb
@@ -878,7 +882,6 @@ tests:
   - sub-280/sub-280_ses-Ca-VS-VR-CLOOP-SOLID-3.nwb
   - sub-282/sub-282_ses-Ca-VS-VR-CLOOP-SOLID-4.nwb
   - sub-283/sub-283_ses-Ca-VS-VR-CLOOP-PATTERN-5.nwb
-  - sub-283/sub-283_ses-Ca-VS-VR-CLOOP-SOLID-5.nwb
   - sub-288/sub-288_ses-Ca-VS-VR-CLOOP-SOLID-6.nwb
   - sub-3014/sub-3014_ses-SU-VR-ALL-OL-1.nwb
   - sub-3014/sub-3014_ses-SU-VR-ALL-TP-1.nwb
@@ -1299,6 +1302,11 @@ tests:
       pynwb: 2.6.0
   - sub-280/sub-280_ses-Ca-VS-VR-CLOOP-PATTERN-3.nwb
   - sub-282/sub-282_ses-Ca-VS-VR-CLOOP-PATTERN-4.nwb
+  - path: sub-283/sub-283_ses-Ca-VS-VR-CLOOP-SOLID-5.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-288/sub-288_ses-Ca-VS-VR-CLOOP-PATTERN-6.nwb
   - path: sub-3014/sub-3014_ses-SU-VR-ALL-SPD-1.nwb
     versions:

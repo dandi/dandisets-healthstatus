@@ -68,7 +68,6 @@ tests:
   - sub-442571/sub-442571_ses-20190303T144606_behavior+ecephys+image+ogen.nwb
   - sub-449141/sub-449141_ses-20190530T173316_behavior+ecephys+image+ogen.nwb
   - sub-449141/sub-449141_ses-20190603T160047_behavior+ecephys+image+ogen.nwb
-  - sub-449141/sub-449141_ses-20190604T152447_behavior+ecephys+image+ogen.nwb
   - sub-455219/sub-455219_ses-20190805T152117_behavior+ecephys+image+ogen.nwb
   - path: sub-455219/sub-455219_ses-20190807T134913_behavior+ecephys+ogen.nwb
     versions:
@@ -396,6 +395,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-449141/sub-449141_ses-20190604T152447_behavior+ecephys+image+ogen.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-455219/sub-455219_ses-20190806T143015_behavior+ecephys+image+ogen.nwb
     versions:
       hdmf: 3.13.0
@@ -583,7 +587,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-449141/sub-449141_ses-20190603T160047_behavior+ecephys+image+ogen.nwb
-  - sub-449141/sub-449141_ses-20190604T152447_behavior+ecephys+image+ogen.nwb
+  - path: sub-449141/sub-449141_ses-20190604T152447_behavior+ecephys+image+ogen.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-455219/sub-455219_ses-20190805T152117_behavior+ecephys+image+ogen.nwb
   - path: sub-455219/sub-455219_ses-20190806T143015_behavior+ecephys+image+ogen.nwb
     versions:
