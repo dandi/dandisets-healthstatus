@@ -395,7 +395,11 @@ tests:
   - sub-Mace/sub-Mace_ses-Mace02-LinearTrack_behavior+ecephys.nwb
   - sub-Mace/sub-Mace_ses-Mace02_HomeCage_behavior+ecephys.nwb
   - sub-Mace/sub-Mace_ses-Mace03-HomeCage_behavior+ecephys.nwb
-  - sub-Mace/sub-Mace_ses-Mace03_LinearTrack_behavior+ecephys.nwb
+  - path: sub-Mace/sub-Mace_ses-Mace03_LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Mace/sub-Mace_ses-Mace04-HomeCage_behavior+ecephys.nwb
   - sub-Mace/sub-Mace_ses-Mace04-LinearTrack_behavior+ecephys.nwb
   - sub-Mace/sub-Mace_ses-Mace05-HomeCage_behavior+ecephys.nwb
@@ -1134,7 +1138,6 @@ tests:
       pynwb: 2.6.0
   - sub-Mace/sub-Mace_ses-Mace01-HomeCage_behavior+ecephys.nwb
   - sub-Mace/sub-Mace_ses-Mace02-LinearTrack_behavior+ecephys.nwb
-  - sub-Mace/sub-Mace_ses-Mace03_LinearTrack_behavior+ecephys.nwb
   - sub-Mace/sub-Mace_ses-Mace04-LinearTrack_behavior+ecephys.nwb
   - sub-Mace/sub-Mace_ses-Mace05-HomeCage_behavior+ecephys.nwb
   - sub-Mace/sub-Mace_ses-Mace05_LinearTrack_behavior+ecephys.nwb
@@ -1491,6 +1494,11 @@ tests:
   - sub-Ladybug/sub-Ladybug_ses-Ladybug07-HomeCage_behavior+ecephys.nwb
   - sub-Mace/sub-Mace_ses-Mace02_HomeCage_behavior+ecephys.nwb
   - sub-Mace/sub-Mace_ses-Mace03-HomeCage_behavior+ecephys.nwb
+  - path: sub-Mace/sub-Mace_ses-Mace03_LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Mace/sub-Mace_ses-Mace04-HomeCage_behavior+ecephys.nwb
   - sub-Mace/sub-Mace_ses-Mace06-LinearTrack_behavior+ecephys.nwb
   - sub-Mantis/sub-Mantis_ses-Mantis02-HomeCage_behavior+ecephys.nwb

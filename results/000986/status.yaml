@@ -1,5 +1,5 @@
-dandiset: '000710'
-dandiset_version: bf69daf8ab333630851d287ff9cd4da902085828
+dandiset: 000986
+dandiset_version: 67f42e2e90e5a5696e0a6d4e46c75e2592e95bde
 last_run: null
 last_run_duration: null
 last_run_ended: null
@@ -7,12 +7,12 @@ nassets: null
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-VR34/sub-VR34_ecephys.nwb
+  - sub-LA3/sub-LA3_behavior.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-VR34/sub-VR34_ecephys.nwb
-  assets_ok: []
+- assets_nok: []
+  assets_ok:
+  - sub-LA3/sub-LA3_behavior.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
