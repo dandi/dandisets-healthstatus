@@ -15,7 +15,11 @@ tests:
       pynwb: 2.7.0
   - sub-Jaq/sub-Jaq_ses-jaq-03_behavior+ecephys.nwb
   - sub-Jaq/sub-Jaq_ses-jaq-04_behavior+ecephys.nwb
-  - sub-Lotus/sub-Lotus_ses-Lotus-01_behavior+ecephys.nwb
+  - path: sub-Lotus/sub-Lotus_ses-Lotus-01_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-Lotus/sub-Lotus_ses-Lotus-02_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -74,7 +78,11 @@ tests:
       pynwb: 2.7.0
   - sub-Jaq/sub-Jaq_ses-jaq-03_behavior+ecephys.nwb
   - sub-Jaq/sub-Jaq_ses-jaq-04_behavior+ecephys.nwb
-  - sub-Lotus/sub-Lotus_ses-Lotus-01_behavior+ecephys.nwb
+  - path: sub-Lotus/sub-Lotus_ses-Lotus-01_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-Lotus/sub-Lotus_ses-Lotus-02_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0

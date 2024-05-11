@@ -56,7 +56,11 @@ tests:
   - sub-Muller/sub-Muller_ses-20170108T120000.nwb
   - sub-Muller/sub-Muller_ses-20170109T120000.nwb
   - sub-Radnitz/sub-Radnitz_ses-20170108T120000.nwb
-  - sub-Radnitz/sub-Radnitz_ses-20170109T120000.nwb
+  - path: sub-Radnitz/sub-Radnitz_ses-20170109T120000.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Radnitz/sub-Radnitz_ses-20170110T120000.nwb
   - sub-Radnitz/sub-Radnitz_ses-20170111T120000.nwb
   - path: sub-Radnitz/sub-Radnitz_ses-20170112T120000.nwb
@@ -106,6 +110,11 @@ tests:
   - sub-Moniz/sub-Moniz_ses-20170516T120000.nwb
   - sub-Muller/sub-Muller_ses-20170107T120000.nwb
   - sub-Muller/sub-Muller_ses-20170108T120000.nwb
+  - path: sub-Radnitz/sub-Radnitz_ses-20170109T120000.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Radnitz/sub-Radnitz_ses-20170110T120000.nwb
   - path: sub-Radnitz/sub-Radnitz_ses-20170112T120000.nwb
     versions:
@@ -153,7 +162,6 @@ tests:
   assets_timeout:
   - sub-Forssmann/sub-Forssmann_ses-20171102T120000.nwb
   - sub-Forssmann/sub-Forssmann_ses-20171104T120000.nwb
-  - sub-Radnitz/sub-Radnitz_ses-20170109T120000.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
