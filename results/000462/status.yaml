@@ -13,7 +13,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-011/sub-011_ophys.nwb
-  - sub-012/sub-012_ophys.nwb
+  - path: sub-012/sub-012_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-014/sub-014_ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -84,7 +88,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-012/sub-012_ophys.nwb
+  - path: sub-012/sub-012_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-014/sub-014_ophys.nwb
     versions:
       hdmf: 3.13.0

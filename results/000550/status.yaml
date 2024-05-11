@@ -7,7 +7,11 @@ nassets: 17
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Fig6-5xBi-0,83MHz-08/sub-Fig6-5xBi-0,83MHz-08_ses-BPAE-5xBipolar-0,83MHz_image.nwb
+  - path: sub-Fig6-5xBi-0,83MHz-08/sub-Fig6-5xBi-0,83MHz-08_ses-BPAE-5xBipolar-0,83MHz_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Fig6-5xBi-0,83MHz-11/sub-Fig6-5xBi-0,83MHz-11_ses-BPAE-5xBipolar-0,83MHz_image.nwb
   - path: sub-Fig6-5xBi-0,83MHz-13/sub-Fig6-5xBi-0,83MHz-13_ses-BPAE-5xBipolar-0,83MHz_image.nwb
     versions:
@@ -64,7 +68,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
-  - sub-Fig6-5xBi-0,83MHz-08/sub-Fig6-5xBi-0,83MHz-08_ses-BPAE-5xBipolar-0,83MHz_image.nwb
+  - path: sub-Fig6-5xBi-0,83MHz-08/sub-Fig6-5xBi-0,83MHz-08_ses-BPAE-5xBipolar-0,83MHz_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Fig6-5xBi-0,83MHz-11/sub-Fig6-5xBi-0,83MHz-11_ses-BPAE-5xBipolar-0,83MHz_image.nwb
   - path: sub-Fig6-5xBi-0,83MHz-13/sub-Fig6-5xBi-0,83MHz-13_ses-BPAE-5xBipolar-0,83MHz_image.nwb
     versions:
