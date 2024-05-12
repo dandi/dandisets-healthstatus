@@ -23,7 +23,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-CFC16/sub-CFC16_ophys.nwb
+  - path: sub-CFC16/sub-CFC16_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-CFC17/sub-CFC17_ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -65,7 +69,6 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-011/sub-011_ophys.nwb
-  - sub-CFC16/sub-CFC16_ophys.nwb
   - path: sub-CFC17/sub-CFC17_ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -94,6 +97,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-014/sub-014_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
+  - path: sub-CFC16/sub-CFC16_ophys.nwb
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
