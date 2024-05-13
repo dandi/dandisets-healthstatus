@@ -49,7 +49,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-BH248/sub-BH248_ses-20211103_obj-xdta1j.nwb
+  - path: sub-BH248/sub-BH248_ses-20211103_obj-xdta1j.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-BH248/sub-BH248_ses-20211107_obj-13j2ha0.nwb
     versions:
       hdmf: 3.13.0
@@ -368,6 +372,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-BH248/sub-BH248_ses-20211103_obj-xdta1j.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-BH248/sub-BH248_ses-20211107_obj-1hklyrh.nwb
   - path: sub-BH249/sub-BH249_ses-20211108_obj-gvug5l.nwb
     versions:
@@ -453,7 +462,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-BH248/sub-BH248_ses-20211103_obj-xdta1j.nwb
   - path: sub-BH248/sub-BH248_ses-20211107_obj-13j2ha0.nwb
     versions:
       hdmf: 3.13.0

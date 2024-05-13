@@ -206,7 +206,11 @@ tests:
   - sub-Cricket/sub-Cricket_ses-Cricket02-HomeCage_behavior+ecephys.nwb
   - sub-Cricket/sub-Cricket_ses-Cricket03-HomeCage_behavior+ecephys.nwb
   - sub-Cricket/sub-Cricket_ses-Cricket04-HomeCage_behavior+ecephys.nwb
-  - sub-Cricket/sub-Cricket_ses-Cricket05-HomeCage_behavior+ecephys.nwb
+  - path: sub-Cricket/sub-Cricket_ses-Cricket05-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Cricket/sub-Cricket_ses-Cricket06-HomeCage_behavior+ecephys.nwb
   - sub-Cricket/sub-Cricket_ses-Cricket07-HomeCage_behavior+ecephys.nwb
   - sub-Cumin/sub-Cumin_ses-Cumin01-HomeCage_behavior+ecephys.nwb
@@ -1001,7 +1005,6 @@ tests:
   - sub-Cricket/sub-Cricket_ses-Cricket02-HomeCage_behavior+ecephys.nwb
   - sub-Cricket/sub-Cricket_ses-Cricket03-HomeCage_behavior+ecephys.nwb
   - sub-Cricket/sub-Cricket_ses-Cricket04-HomeCage_behavior+ecephys.nwb
-  - sub-Cricket/sub-Cricket_ses-Cricket05-HomeCage_behavior+ecephys.nwb
   - sub-Cricket/sub-Cricket_ses-Cricket06-HomeCage_behavior+ecephys.nwb
   - sub-Cricket/sub-Cricket_ses-Cricket07-HomeCage_behavior+ecephys.nwb
   - sub-Cumin/sub-Cumin_ses-Cumin01-HomeCage_behavior+ecephys.nwb
@@ -1484,6 +1487,11 @@ tests:
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon04-HomeCage_behavior+ecephys.nwb
   - sub-Cinnamon/sub-Cinnamon_ses-Cinnamon06-HomeCage_behavior+ecephys.nwb
   - sub-Coriander/sub-Coriander_ses-Coriander03-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Cricket/sub-Cricket_ses-Cricket05-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-Cumin/sub-Cumin_ses-Cumin05-LinearTrack_behavior+ecephys.nwb
     versions:
       hdmf: 3.12.2

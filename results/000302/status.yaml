@@ -5,8 +5,7 @@ last_run_duration: 45913.816515
 last_run_ended: '2024-02-15T21:17:11.213999-05:00'
 nassets: 32
 tests:
-- assets_nok:
-  - sub-ANM-0188/sub-ANM-0188_ses-20211130_behavior+ecephys.nwb
+- assets_nok: []
   assets_ok:
   - sub-ANM-0170/sub-ANM-0170_ses-20210905_behavior+ecephys.nwb
   - sub-ANM-0170/sub-ANM-0170_ses-20210906_behavior+ecephys.nwb
@@ -74,6 +73,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-ANM-0181/sub-ANM-0181_ses-20211121_behavior+ecephys.nwb
+  - path: sub-ANM-0188/sub-ANM-0188_ses-20211130_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-ANM-0188/sub-ANM-0188_ses-20211202_behavior+ecephys+ogen.nwb
   - sub-ANM-0188/sub-ANM-0188_ses-20211203_behavior+ecephys+ogen.nwb
   - path: sub-ANM-0190/sub-ANM-0190_ses-20211130_behavior+ecephys.nwb
@@ -85,8 +89,7 @@ tests:
   - sub-ANM-0190/sub-ANM-0190_ses-20211203_behavior+ecephys+ogen.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-ANM-0188/sub-ANM-0188_ses-20211130_behavior+ecephys.nwb
+- assets_nok: []
   assets_ok:
   - sub-ANM-0174/sub-ANM-0174_ses-20210909_behavior+ecephys.nwb
   - path: sub-ANM-0174/sub-ANM-0174_ses-20210910_behavior+ecephys+ogen.nwb
@@ -103,6 +106,11 @@ tests:
       pynwb: 2.7.0
   - sub-ANM-0180/sub-ANM-0180_ses-20211122_behavior+ecephys.nwb
   - sub-ANM-0181/sub-ANM-0181_ses-20211121_behavior+ecephys.nwb
+  - path: sub-ANM-0188/sub-ANM-0188_ses-20211130_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-ANM-0190/sub-ANM-0190_ses-20211130_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0

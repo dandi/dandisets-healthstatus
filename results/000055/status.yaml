@@ -175,7 +175,7 @@ tests:
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.7.0
   - path: sub-09/sub-09_ses-5_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -262,11 +262,6 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-03/sub-03_ses-6_behavior+ecephys.nwb
-  - path: sub-09/sub-09_ses-4_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   assets_ok:
   - path: sub-03/sub-03_ses-3_behavior+ecephys.nwb
     versions:
@@ -444,6 +439,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-09/sub-09_ses-4_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-09/sub-09_ses-5_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0

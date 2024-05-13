@@ -909,7 +909,11 @@ tests:
   - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1g5az8z_ophys.nwb
   - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1i67ujq_ophys.nwb
   - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1le3fgl_ophys.nwb
-  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1q748h0_ophys.nwb
+  - path: sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1q748h0_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1rkhjss_ophys.nwb
   - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1tnj13m_ophys.nwb
   - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-7ph4s2_ophys.nwb
@@ -1382,7 +1386,6 @@ tests:
   - sub-phpV18-1/sub-phpV18-1_ses-20230904_obj-7y86c3_ophys.nwb
   - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-7y3kso_ophys.nwb
   - sub-phpV18-2/sub-phpV18-2_ses-20230911_obj-kaiijc_ophys.nwb
-  - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1q748h0_ophys.nwb
   - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1rkhjss_ophys.nwb
   - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-gg6yx9_ophys.nwb
   - sub-phpV7-3/sub-phpV7-3_ses-20230410_obj-1bd3k6h_ophys.nwb
@@ -2260,6 +2263,11 @@ tests:
   - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1g5az8z_ophys.nwb
   - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1i67ujq_ophys.nwb
   - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1le3fgl_ophys.nwb
+  - path: sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1q748h0_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-1tnj13m_ophys.nwb
   - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-7ph4s2_ophys.nwb
   - sub-phpV18-3/sub-phpV18-3_ses-20230921_obj-7yac69_ophys.nwb

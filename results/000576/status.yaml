@@ -12,7 +12,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-01/sub-01_ses-20140828T132700_ecephys.nwb
+  - path: sub-01/sub-01_ses-20140828T132700_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-02/sub-02_ses-20160302T164800_ecephys+image.nwb
   - path: sub-02/sub-02_ses-20160302T164800_ecephys.nwb
     versions:
@@ -77,7 +81,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-01/sub-01_ses-20140828T132700_ecephys.nwb
   - path: sub-02/sub-02_ses-20160302T164800_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -118,6 +121,11 @@ tests:
       pynwb: 2.7.0
   - sub-09/sub-09_ses-20170311T170500_ecephys.nwb
   assets_ok:
+  - path: sub-01/sub-01_ses-20140828T132700_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-02/sub-02_ses-20160302T164800_ecephys+image.nwb
   - sub-03/sub-03_ses-20150304T164400_ecephys.nwb
   - path: sub-04/sub-04_ses-20120829T175200_ecephys.nwb

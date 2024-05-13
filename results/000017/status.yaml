@@ -14,7 +14,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-Cori/sub-Cori_ses-20161218T120000.nwb
+  - path: sub-Cori/sub-Cori_ses-20161218T120000.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Forssmann/sub-Forssmann_ses-20171101T120000.nwb
   - sub-Forssmann/sub-Forssmann_ses-20171102T120000.nwb
   - sub-Forssmann/sub-Forssmann_ses-20171104T120000.nwb
@@ -94,6 +98,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-Cori/sub-Cori_ses-20161214T120000.nwb
+  - path: sub-Cori/sub-Cori_ses-20161218T120000.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Forssmann/sub-Forssmann_ses-20171101T120000.nwb
   - sub-Forssmann/sub-Forssmann_ses-20171105T120000.nwb
   - sub-Hench/sub-Hench_ses-20170616T120000.nwb
@@ -155,7 +164,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-Cori/sub-Cori_ses-20161218T120000.nwb
   - path: sub-Hench/sub-Hench_ses-20170615T120000.nwb
     versions:
       hdmf: 3.13.0
