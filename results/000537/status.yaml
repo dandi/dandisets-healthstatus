@@ -16,7 +16,11 @@ tests:
   - sub-040245cell3-JF525/sub-040245cell3-JF525_ses-20220729T040245_image.nwb
   - sub-040532cell4-JF525/sub-040532cell4-JF525_ses-20220729T040532_image.nwb
   - sub-040732cell5-JF525/sub-040732cell5-JF525_ses-20220729T040732_image.nwb
-  - sub-040926cell6-JF525/sub-040926cell6-JF525_ses-20220729T040926_image.nwb
+  - path: sub-040926cell6-JF525/sub-040926cell6-JF525_ses-20220729T040926_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-041345cell8-JF525/sub-041345cell8-JF525_ses-20220729T041345_image.nwb
   - path: sub-041544cell9-JF525/sub-041544cell9-JF525_ses-20220729T041544_image.nwb
     versions:
@@ -412,7 +416,11 @@ tests:
   - sub-232830cell16-spiral-hp/sub-232830cell16-spiral-hp_ses-20220505T232830_image.nwb
   assets_ok:
   - sub-040245cell3-JF525/sub-040245cell3-JF525_ses-20220729T040245_image.nwb
-  - sub-040926cell6-JF525/sub-040926cell6-JF525_ses-20220729T040926_image.nwb
+  - path: sub-040926cell6-JF525/sub-040926cell6-JF525_ses-20220729T040926_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-041345cell8-JF525/sub-041345cell8-JF525_ses-20220729T041345_image.nwb
   - path: sub-041544cell9-JF525/sub-041544cell9-JF525_ses-20220729T041544_image.nwb
     versions:

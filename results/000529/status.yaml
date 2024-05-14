@@ -7,7 +7,11 @@ nassets: 27
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-AIROF/sub-AIROF_obj-122qg8l_ecephys.nwb
+  - path: sub-AIROF/sub-AIROF_obj-122qg8l_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-AIROF/sub-AIROF_obj-1yoevrs_ecephys.nwb
   - sub-AIROF/sub-AIROF_obj-578a6_ecephys.nwb
   - sub-AIROF/sub-AIROF_obj-7z0i2i_ecephys.nwb
@@ -93,7 +97,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   assets_ok:
-  - sub-AIROF/sub-AIROF_obj-122qg8l_ecephys.nwb
+  - path: sub-AIROF/sub-AIROF_obj-122qg8l_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-AIROF/sub-AIROF_obj-1yoevrs_ecephys.nwb
   - sub-AIROF/sub-AIROF_obj-7z0i2i_ecephys.nwb
   - path: sub-AIROF/sub-AIROF_obj-lr1nqg_ecephys.nwb

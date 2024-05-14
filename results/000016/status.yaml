@@ -273,7 +273,11 @@ tests:
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170823024359.nwb
   - sub-mouse4-fni19/sub-mouse4-fni19_ses-170823033544.nwb
   assets_timeout:
-  - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221145840.nwb
+  - path: sub-mouse1-fni16/sub-mouse1-fni16_ses-161221145840.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221150439.nwb
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221152112.nwb
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221191914.nwb
@@ -412,7 +416,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221145840.nwb
+  - path: sub-mouse1-fni16/sub-mouse1-fni16_ses-161221145840.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221150439.nwb
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221151903.nwb
   - sub-mouse1-fni16/sub-mouse1-fni16_ses-161221152112.nwb

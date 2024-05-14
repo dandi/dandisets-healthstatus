@@ -50,7 +50,11 @@ tests:
       pynwb: 2.7.0
   - sub-SLC09/sub-SLC09_ses-awake_ophys.nwb
   - sub-SLC10/sub-SLC10_ses-anest_ophys.nwb
-  - sub-SLC10/sub-SLC10_ses-awake_ophys.nwb
+  - path: sub-SLC10/sub-SLC10_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-SLC11/sub-SLC11_ses-anest_ophys.nwb
   - path: sub-SLC11/sub-SLC11_ses-awake_ophys.nwb
     versions:
@@ -136,7 +140,11 @@ tests:
       pynwb: 2.7.0
   - sub-SLC09/sub-SLC09_ses-awake_ophys.nwb
   - sub-SLC10/sub-SLC10_ses-anest_ophys.nwb
-  - sub-SLC10/sub-SLC10_ses-awake_ophys.nwb
+  - path: sub-SLC10/sub-SLC10_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-SLC11/sub-SLC11_ses-anest_ophys.nwb
   - path: sub-SLC11/sub-SLC11_ses-awake_ophys.nwb
     versions:
