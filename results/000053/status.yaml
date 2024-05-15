@@ -523,7 +523,11 @@ tests:
   - sub-Reeves/sub-Reeves_ses-20190828_behavior.nwb
   - sub-Reeves/sub-Reeves_ses-20190925_behavior.nwb
   - sub-Reeves/sub-Reeves_ses-20190930_behavior.nwb
-  - sub-Ringo/sub-Ringo_ses-20190729_behavior.nwb
+  - path: sub-Ringo/sub-Ringo_ses-20190729_behavior.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-Ringo/sub-Ringo_ses-20190731_behavior.nwb
     versions:
       hdmf: 3.12.2
@@ -1185,7 +1189,11 @@ tests:
   - sub-Reeves/sub-Reeves_ses-20190820_behavior.nwb
   - sub-Reeves/sub-Reeves_ses-20190925_behavior.nwb
   - sub-Reeves/sub-Reeves_ses-20190930_behavior.nwb
-  - sub-Ringo/sub-Ringo_ses-20190729_behavior.nwb
+  - path: sub-Ringo/sub-Ringo_ses-20190729_behavior.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-Ringo/sub-Ringo_ses-20190731_behavior.nwb
     versions:
       hdmf: 3.12.2

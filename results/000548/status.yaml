@@ -7,7 +7,11 @@ nassets: 19
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Fig3-Bi10-08/sub-Fig3-Bi10-08_ses-BPAE-bipolar-10pulses_image.nwb
+  - path: sub-Fig3-Bi10-08/sub-Fig3-Bi10-08_ses-BPAE-bipolar-10pulses_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-Fig3-Bi15-07/sub-Fig3-Bi15-07_ses-BPAE-bipolar-15pulses_image.nwb
     versions:
       hdmf: 3.13.0
@@ -82,7 +86,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
-  - sub-Fig3-Bi10-08/sub-Fig3-Bi10-08_ses-BPAE-bipolar-10pulses_image.nwb
+  - path: sub-Fig3-Bi10-08/sub-Fig3-Bi10-08_ses-BPAE-bipolar-10pulses_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-Fig3-Bi15-07/sub-Fig3-Bi15-07_ses-BPAE-bipolar-15pulses_image.nwb
     versions:
       hdmf: 3.13.0

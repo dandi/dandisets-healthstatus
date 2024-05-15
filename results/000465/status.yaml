@@ -51,7 +51,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-YBT-Rat3-ECoG1024/sub-YBT-Rat3-ECoG1024_ses-20200604T160742_ecephys.nwb
+  - path: sub-YBT-Rat3-ECoG1024/sub-YBT-Rat3-ECoG1024_ses-20200604T160742_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-YBT-Rat3-ECoG1024/sub-YBT-Rat3-ECoG1024_ses-20200604T160906_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -99,6 +103,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T102302_ecephys.nwb
+  - path: sub-YBT-Rat3-ECoG1024/sub-YBT-Rat3-ECoG1024_ses-20200604T160742_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   assets_ok:
   - path: sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T104800_ecephys.nwb
     versions:
@@ -143,7 +152,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-YBT-Rat3-ECoG1024/sub-YBT-Rat3-ECoG1024_ses-20200604T160742_ecephys.nwb
   - path: sub-YBT-Rat3-ECoG1024/sub-YBT-Rat3-ECoG1024_ses-20200604T160906_ecephys.nwb
     versions:
       hdmf: 3.13.0
