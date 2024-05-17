@@ -7,7 +7,11 @@ nassets: 18
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Fig1F/sub-Fig1F_ses-BPAE-staining_image.nwb
+  - path: sub-Fig1F/sub-Fig1F_ses-BPAE-staining_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-Fig2-0-03/sub-Fig2-0-03_ses-BPAE-bipolar-0 percent_image.nwb
     versions:
       hdmf: 3.13.0
@@ -89,7 +93,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
-  - sub-Fig1F/sub-Fig1F_ses-BPAE-staining_image.nwb
+  - path: sub-Fig1F/sub-Fig1F_ses-BPAE-staining_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-Fig2-0-03/sub-Fig2-0-03_ses-BPAE-bipolar-0 percent_image.nwb
     versions:
       hdmf: 3.13.0

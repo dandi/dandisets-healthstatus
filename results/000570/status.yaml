@@ -6,6 +6,11 @@ last_run_ended: '2024-02-24T10:36:00.144683-05:00'
 nassets: 155
 tests:
 - assets_nok:
+  - path: sub-1005024327/sub-1005024327_ses-1005671030_icephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-1064223281/sub-1064223281_ses-1065914773_icephys.nwb
     versions:
       hdmf: 3.13.0
@@ -88,11 +93,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-1001372857/sub-1001372857_ses-1002962014_icephys.nwb
-  - path: sub-1005024327/sub-1005024327_ses-1005671030_icephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - sub-1026212250/sub-1026212250_ses-1027446425_icephys.nwb
   - path: sub-1029212302/sub-1029212302_ses-1030953959_icephys.nwb
     versions:
@@ -443,7 +443,7 @@ tests:
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.7.0
   - sub-1026212250/sub-1026212250_ses-1027446425_icephys.nwb
   - path: sub-1029212302/sub-1029212302_ses-1030953959_icephys.nwb
     versions:

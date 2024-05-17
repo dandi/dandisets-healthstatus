@@ -353,7 +353,11 @@ tests:
   - sub-11265/sub-11265_ses-31010601_behavior+ecephys.nwb
   - sub-11278/sub-11278_ses-30080505_behavior+ecephys.nwb
   - sub-11278/sub-11278_ses-31080502_behavior+ecephys.nwb
-  - sub-11340/sub-11340_ses-01120501_behavior+ecephys.nwb
+  - path: sub-11340/sub-11340_ses-01120501_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-11340/sub-11340_ses-22110501_behavior+ecephys.nwb
   - path: sub-11340/sub-11340_ses-25110501_behavior+ecephys.nwb
     versions:
@@ -715,7 +719,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-11340/sub-11340_ses-01120501_behavior+ecephys.nwb
+  - path: sub-11340/sub-11340_ses-01120501_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-11340/sub-11340_ses-22110501_behavior+ecephys.nwb
   - path: sub-11340/sub-11340_ses-25110501_behavior+ecephys.nwb
     versions:
