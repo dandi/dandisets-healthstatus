@@ -10,7 +10,11 @@ tests:
   assets_ok:
   - sub-ROV40/sub-ROV40_ses-Day 1-obs_ophys.nwb
   - sub-ROV40/sub-ROV40_ses-Day 1-retrieval_ophys.nwb
-  - sub-ROV40/sub-ROV40_ses-Day 2-obs_ophys.nwb
+  - path: sub-ROV40/sub-ROV40_ses-Day 2-obs_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-ROV40/sub-ROV40_ses-Day 2-retrieval_ophys.nwb
   - path: sub-ROV40/sub-ROV40_ses-Day 3-obs_ophys.nwb
     versions:
@@ -110,7 +114,11 @@ tests:
 - assets_nok:
   - sub-ROV40/sub-ROV40_ses-Day 1-obs_ophys.nwb
   - sub-ROV40/sub-ROV40_ses-Day 1-retrieval_ophys.nwb
-  - sub-ROV40/sub-ROV40_ses-Day 2-obs_ophys.nwb
+  - path: sub-ROV40/sub-ROV40_ses-Day 2-obs_ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-ROV40/sub-ROV40_ses-Day 2-retrieval_ophys.nwb
   - path: sub-ROV40/sub-ROV40_ses-Day 3-obs_ophys.nwb
     versions:

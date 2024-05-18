@@ -5,9 +5,13 @@ last_run_duration: 21608.614818
 last_run_ended: '2024-02-13T00:41:40.749933-05:00'
 nassets: 36
 tests:
-- assets_nok:
-  - sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T102302_ecephys.nwb
+- assets_nok: []
   assets_ok:
+  - path: sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T102302_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T104800_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -114,13 +118,17 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T102302_ecephys.nwb
   - path: sub-YBT-Rat3-ECoG1024/sub-YBT-Rat3-ECoG1024_ses-20200604T160742_ecephys.nwb
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   assets_ok:
+  - path: sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T102302_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T104800_ecephys.nwb
     versions:
       hdmf: 3.13.0

@@ -22,7 +22,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-EC2/sub-EC2_ses-EC2-B89.nwb
-  - sub-EC9/sub-EC9_ses-EC9-B15.nwb
+  - path: sub-EC9/sub-EC9_ses-EC9-B15.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-EC9/sub-EC9_ses-EC9-B39.nwb
     versions:
       hdmf: 3.13.0
@@ -124,7 +128,6 @@ tests:
       pynwb: 2.7.0
   - sub-EC2/sub-EC2_ses-EC2-B89.nwb
   - sub-EC2/sub-EC2_ses-EC2-B9.nwb
-  - sub-EC9/sub-EC9_ses-EC9-B15.nwb
   - sub-EC9/sub-EC9_ses-EC9-B46.nwb
   - path: sub-EC9/sub-EC9_ses-EC9-B49.nwb
     versions:
@@ -179,6 +182,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   assets_ok:
+  - path: sub-EC9/sub-EC9_ses-EC9-B15.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-EC9/sub-EC9_ses-EC9-B39.nwb
     versions:
       hdmf: 3.13.0

@@ -42,7 +42,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-664605504/sub-664605504_ses-696130311_behavior+ophys.nwb
+  - path: sub-664605504/sub-664605504_ses-696130311_behavior+ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-664744816/sub-664744816_ses-689705421_behavior+ophys.nwb
   - path: sub-664744816/sub-664744816_ses-690759629_behavior+ophys.nwb
     versions:
@@ -332,7 +336,6 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-664605504/sub-664605504_ses-696130311_behavior+ophys.nwb
   - sub-664744816/sub-664744816_ses-689705421_behavior+ophys.nwb
   - path: sub-664744816/sub-664744816_ses-690759629_behavior+ophys.nwb
     versions:
@@ -436,6 +439,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-664605504/sub-664605504_ses-696130311_behavior+ophys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-666788991/sub-666788991_ses-695169813_behavior+ophys.nwb
     versions:
       hdmf: 3.12.2
