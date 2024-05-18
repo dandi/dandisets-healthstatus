@@ -20,9 +20,9 @@ tests:
   - sub-fCamk1/sub-fCamk1_ses-fCamk1-200827-sess9_behavior+ecephys+image+ogen.nwb
   - path: sub-fCamk1/sub-fCamk1_ses-fCamk1-200901-sess12-no-raw-data_behavior+ecephys+image+ogen.nwb
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.13.0
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.7.0
   - path: sub-fCamk1/sub-fCamk1_ses-fCamk1-200901-sess12_behavior+ecephys+image+ogen.nwb
     versions:
       hdmf: 3.13.0
@@ -263,6 +263,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-fCamk1/sub-fCamk1_ses-fCamk1-200901-sess12-no-raw-data_behavior+ecephys+image+ogen.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-fCamk1/sub-fCamk1_ses-fCamk1-200910-sess18-no-raw-data_behavior+ecephys+image.nwb
     versions:
       hdmf: 3.13.0
@@ -306,11 +311,6 @@ tests:
   - sub-fCamk5/sub-fCamk5_ses-fCamk5-210407-sess11-no-raw-data_behavior+ecephys+image.nwb
   assets_timeout:
   - sub-fCamk1/sub-fCamk1_ses-fCamk1-200827-sess9_behavior+ecephys+image+ogen.nwb
-  - path: sub-fCamk1/sub-fCamk1_ses-fCamk1-200901-sess12-no-raw-data_behavior+ecephys+image+ogen.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-fCamk1/sub-fCamk1_ses-fCamk1-200901-sess12_behavior+ecephys+image+ogen.nwb
     versions:
       hdmf: 3.13.0

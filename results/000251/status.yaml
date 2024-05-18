@@ -12,7 +12,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_ok:
-  - sub-108/sub-108_ses-Ca-VS-VR-2.nwb
+  - path: sub-108/sub-108_ses-Ca-VS-VR-2.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-108/sub-108_ses-Ca-VS-VR-SPD-2.nwb
   - sub-108/sub-108_ses-Ca-VS-VR-THREE-TP-2.nwb
   - sub-110/sub-110_ses-Ca-VS-MB-2.nwb
@@ -823,7 +827,6 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-108/sub-108_ses-Ca-VS-VR-2.nwb
   - sub-108/sub-108_ses-Ca-VS-VR-THREE-TP-2.nwb
   - sub-110/sub-110_ses-Ca-VS-MB-2.nwb
   - sub-110/sub-110_ses-Ca-VS-MB-SPD-2.nwb
@@ -1148,6 +1151,11 @@ tests:
   - sub-81/sub-81_ses-Ca-VS-VR-SPD-1.nwb
   - sub-81/sub-81_ses-Ca-VS-VR-THREE-TP-1.nwb
   assets_ok:
+  - path: sub-108/sub-108_ses-Ca-VS-VR-2.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-108/sub-108_ses-Ca-VS-VR-SPD-2.nwb
   - path: sub-110/sub-110_ses-Ca-VS-MB-THREE-TP-1.nwb
     versions:
