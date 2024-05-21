@@ -5,8 +5,7 @@ last_run_duration: 69852.204657
 last_run_ended: '2024-01-10T12:44:32.321938-05:00'
 nassets: 22
 tests:
-- assets_nok:
-  - sub-Dino/sub-Dino_ses-Dino-061814_ecephys.nwb
+- assets_nok: []
   assets_ok:
   - path: sub-BWRat17/sub-BWRat17_ses-BWRat17-121712_ecephys.nwb
     versions:
@@ -51,6 +50,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-Bogey/sub-Bogey_ses-Bogey-012615_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
+  - path: sub-Dino/sub-Dino_ses-Dino-061814_ecephys.nwb
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
@@ -103,8 +107,7 @@ tests:
       pynwb: 2.7.0
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-Dino/sub-Dino_ses-Dino-061814_ecephys.nwb
+- assets_nok: []
   assets_ok: []
   assets_timeout:
   - path: sub-BWRat17/sub-BWRat17_ses-BWRat17-121712_ecephys.nwb
@@ -150,6 +153,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-Bogey/sub-Bogey_ses-Bogey-012615_ecephys.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
+  - path: sub-Dino/sub-Dino_ses-Dino-061814_ecephys.nwb
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2

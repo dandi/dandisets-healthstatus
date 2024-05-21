@@ -12,7 +12,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_ok:
-  - sub-035955cell2-JF525/sub-035955cell2-JF525_ses-20220729T035955_image.nwb
+  - path: sub-035955cell2-JF525/sub-035955cell2-JF525_ses-20220729T035955_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-040245cell3-JF525/sub-040245cell3-JF525_ses-20220729T040245_image.nwb
   - sub-040532cell4-JF525/sub-040532cell4-JF525_ses-20220729T040532_image.nwb
   - sub-040732cell5-JF525/sub-040732cell5-JF525_ses-20220729T040732_image.nwb
@@ -403,7 +407,6 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-035955cell2-JF525/sub-035955cell2-JF525_ses-20220729T035955_image.nwb
   - sub-040532cell4-JF525/sub-040532cell4-JF525_ses-20220729T040532_image.nwb
   - sub-040732cell5-JF525/sub-040732cell5-JF525_ses-20220729T040732_image.nwb
   - path: sub-041154cell7-JF525/sub-041154cell7-JF525_ses-20220729T041154_image.nwb
@@ -430,6 +433,11 @@ tests:
   - sub-220619cell7-spiral-hp/sub-220619cell7-spiral-hp_ses-20220505T220619_image.nwb
   - sub-232830cell16-spiral-hp/sub-232830cell16-spiral-hp_ses-20220505T232830_image.nwb
   assets_ok:
+  - path: sub-035955cell2-JF525/sub-035955cell2-JF525_ses-20220729T035955_image.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-040245cell3-JF525/sub-040245cell3-JF525_ses-20220729T040245_image.nwb
   - path: sub-040926cell6-JF525/sub-040926cell6-JF525_ses-20220729T040926_image.nwb
     versions:

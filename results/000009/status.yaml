@@ -43,7 +43,11 @@ tests:
       pynwb: 2.7.0
   - sub-anm00234218/sub-anm00234218_ses-20170627T093521_ecephys+ogen.nwb
   - sub-anm00234218/sub-anm00234218_ses-20170627T093528_ecephys+ogen.nwb
-  - sub-anm00234218/sub-anm00234218_ses-20170627T093532_ecephys+ogen.nwb
+  - path: sub-anm00234218/sub-anm00234218_ses-20170627T093532_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-anm00237800/sub-anm00237800_ses-20170627T093536_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -586,6 +590,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-anm00234218/sub-anm00234218_ses-20170627T093532_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-anm00237800/sub-anm00237800_ses-20170627T093536_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -910,7 +919,6 @@ tests:
   - sub-anm00229327/sub-anm00229327_ses-20170627T093452_ecephys.nwb
   - sub-anm00234218/sub-anm00234218_ses-20170627T093521_ecephys+ogen.nwb
   - sub-anm00234218/sub-anm00234218_ses-20170627T093528_ecephys+ogen.nwb
-  - sub-anm00234218/sub-anm00234218_ses-20170627T093532_ecephys+ogen.nwb
   - path: sub-anm323951/sub-anm323951_ses-20170520T191036_behavior+icephys+ogen.nwb
     versions:
       hdmf: 3.13.0

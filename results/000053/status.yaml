@@ -56,7 +56,11 @@ tests:
   - sub-Barbara/sub-Barbara_ses-20190617_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190618_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190622_behavior.nwb
-  - sub-Camelia/sub-Camelia_ses-20190116_behavior.nwb
+  - path: sub-Camelia/sub-Camelia_ses-20190116_behavior.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Camelia/sub-Camelia_ses-20190212_behavior.nwb
   - sub-Carnation/sub-Carnation_ses-20190513_behavior.nwb
   - sub-Carnation/sub-Carnation_ses-20190522_behavior.nwb
@@ -799,7 +803,11 @@ tests:
   - sub-Barbara/sub-Barbara_ses-20190616_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190617_behavior.nwb
   - sub-Barbara/sub-Barbara_ses-20190622_behavior.nwb
-  - sub-Camelia/sub-Camelia_ses-20190116_behavior.nwb
+  - path: sub-Camelia/sub-Camelia_ses-20190116_behavior.nwb
+    versions:
+      hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Carnation/sub-Carnation_ses-20190513_behavior.nwb
   - path: sub-Carnation/sub-Carnation_ses-20190523_behavior.nwb
     versions:

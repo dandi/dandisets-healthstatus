@@ -1,5 +1,5 @@
-dandiset: 000784
-dandiset_version: 45d19161d30b3be49dc789cced36b3b2021b701b
+dandiset: '001030'
+dandiset_version: 6ca877efc3ea601f9a2c43687ec5124fd1c2be97
 last_run: null
 last_run_duration: null
 last_run_ended: null
@@ -7,13 +7,13 @@ nassets: null
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-F/sub-F_ses-20230917_obj-4vkwbz_ecephys.nwb
+  - sub-c6-1-0V/sub-c6-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
-  assets_ok: []
-  assets_timeout:
-  - sub-F/sub-F_ses-20230917_obj-4vkwbz_ecephys.nwb
+  assets_ok:
+  - sub-c6-1-0V/sub-c6-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
