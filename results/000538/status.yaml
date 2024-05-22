@@ -7,7 +7,11 @@ nassets: 11
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-173732Voltron2JF525cell2-488/sub-173732Voltron2JF525cell2-488_ses-20230302T173732_image.nwb
+  - path: sub-173732Voltron2JF525cell2-488/sub-173732Voltron2JF525cell2-488_ses-20230302T173732_image.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-180242Voltron2JF525cell3/sub-180242Voltron2JF525cell3_ses-20230302T180242_image.nwb
   - sub-182405Voltron2JF525cell4t1/sub-182405Voltron2JF525cell4t1_ses-20230302T182405_image.nwb
   - sub-184058Voltron2JF525cell5ref/sub-184058Voltron2JF525cell5ref_ses-20230302T184058_image.nwb
@@ -22,7 +26,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
-  - sub-173732Voltron2JF525cell2-488/sub-173732Voltron2JF525cell2-488_ses-20230302T173732_image.nwb
+  - path: sub-173732Voltron2JF525cell2-488/sub-173732Voltron2JF525cell2-488_ses-20230302T173732_image.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-180242Voltron2JF525cell3/sub-180242Voltron2JF525cell3_ses-20230302T180242_image.nwb
   - sub-182405Voltron2JF525cell4t1/sub-182405Voltron2JF525cell4t1_ses-20230302T182405_image.nwb
   - sub-184058Voltron2JF525cell5ref/sub-184058Voltron2JF525cell5ref_ses-20230302T184058_image.nwb

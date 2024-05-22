@@ -11,14 +11,14 @@ tests:
   - sub-Jenkins/sub-Jenkins_ses-medium_desc-train_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-Jenkins/sub-Jenkins_ses-medium_desc-train_behavior+ecephys.nwb
   assets_ok:
   - sub-Jenkins/sub-Jenkins_ses-medium_desc-test_ecephys.nwb
-  assets_timeout:
-  - sub-Jenkins/sub-Jenkins_ses-medium_desc-train_behavior+ecephys.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.13.0
+  hdmf: 3.14.0
   matnwb: v2.6.0.2
   pynwb: 2.7.0

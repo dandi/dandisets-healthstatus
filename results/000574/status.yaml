@@ -225,7 +225,7 @@ tests:
       pynwb: 2.7.0
   - path: sub-09/sub-09_ses-20150115T144300_obj-u2fzwy_behavior+ecephys.nwb
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   assets_timeout: []
@@ -330,6 +330,11 @@ tests:
   - path: sub-09/sub-09_ses-20150115T144300_obj-1qba6e_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
+  - path: sub-09/sub-09_ses-20150115T144300_obj-u2fzwy_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   assets_ok: []
@@ -449,11 +454,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-09/sub-09_ses-20150115T144300_obj-u2fzwy_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   name: matnwb_nwbRead
 untested: []
 versions:

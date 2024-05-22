@@ -10,13 +10,13 @@ tests:
   - sub-10p-x4-600ns-200ms-3-2kV-YP-(dish11)/sub-10p-x4-600ns-200ms-3-2kV-YP-(dish11)_ses-10p-x4-600ns-200ms-3-2kV-YP_image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
+- assets_nok: []
+  assets_ok:
   - sub-10p-x4-600ns-200ms-3-2kV-YP-(dish11)/sub-10p-x4-600ns-200ms-3-2kV-YP-(dish11)_ses-10p-x4-600ns-200ms-3-2kV-YP_image.nwb
-  assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.13.0
+  hdmf: 3.14.0
   matnwb: v2.6.0.2
   pynwb: 2.7.0

@@ -5,18 +5,18 @@ last_run_duration: null
 last_run_ended: null
 nassets: null
 tests:
-- assets_nok: []
-  assets_ok: []
-  assets_timeout:
+- assets_nok:
   - sub-1288510508/sub-1288510508_ses-1290506819_icephys.nwb
+  assets_ok: []
+  assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok: []
-  assets_timeout:
+- assets_nok:
   - sub-1288510508/sub-1288510508_ses-1290506819_icephys.nwb
+  assets_ok: []
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.13.0
+  hdmf: 3.14.0
   matnwb: v2.6.0.2
   pynwb: 2.7.0
