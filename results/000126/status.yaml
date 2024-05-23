@@ -15,7 +15,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   assets_ok:
-  - sub-1/sub-1.nwb
+  - path: sub-1/sub-1.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -27,7 +31,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   assets_ok:
-  - sub-1/sub-1.nwb
+  - path: sub-1/sub-1.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   assets_timeout:
   - sub-1001658946/sub-1001658946_obj-n1u30_icephys.nwb
   name: matnwb_nwbRead
