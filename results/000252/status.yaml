@@ -16,7 +16,11 @@ tests:
   - sub-P1/sub-P1_ses-2015-08-12_ecephys.nwb
   - sub-P1/sub-P1_ses-2015-08-14_ecephys.nwb
   - sub-P1/sub-P1_ses-2015-08-17_ecephys.nwb
-  - sub-P1/sub-P1_ses-2015-08-21_ecephys.nwb
+  - path: sub-P1/sub-P1_ses-2015-08-21_ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-P1/sub-P1_ses-2016-04-27_ecephys.nwb
   - sub-P1/sub-P1_ses-2016-05-04_ecephys.nwb
   - sub-P1/sub-P1_ses-2016-05-11_ecephys.nwb
@@ -35,13 +39,17 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-P1/sub-P1_ses-2015-08-21_ecephys.nwb
   - sub-P1/sub-P1_ses-2016-05-20_ecephys.nwb
   assets_ok:
   - sub-N1/sub-N1_ses-2019-12-20_ecephys.nwb
   - sub-P1/sub-P1_ses-2015-08-12_ecephys.nwb
   - sub-P1/sub-P1_ses-2015-08-14_ecephys.nwb
   - sub-P1/sub-P1_ses-2015-08-17_ecephys.nwb
+  - path: sub-P1/sub-P1_ses-2015-08-21_ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-P1/sub-P1_ses-2016-04-27_ecephys.nwb
   - sub-P1/sub-P1_ses-2016-05-04_ecephys.nwb
   - sub-P1/sub-P1_ses-2016-05-11_ecephys.nwb

@@ -7,36 +7,20 @@ nassets: 3
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-CS-fly#-1/sub-CS-fly#-1_behavior.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
+  - sub-CS-fly#-1/sub-CS-fly#-1_behavior.nwb
   - sub-CS-fly#-2/sub-CS-fly#-2_behavior.nwb
-  - path: sub-CS-fly#-3/sub-CS-fly#-3_behavior.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
+  - sub-CS-fly#-3/sub-CS-fly#-3_behavior.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
   assets_timeout:
-  - path: sub-CS-fly#-1/sub-CS-fly#-1_behavior.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
+  - sub-CS-fly#-1/sub-CS-fly#-1_behavior.nwb
   - sub-CS-fly#-2/sub-CS-fly#-2_behavior.nwb
-  - path: sub-CS-fly#-3/sub-CS-fly#-3_behavior.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
+  - sub-CS-fly#-3/sub-CS-fly#-3_behavior.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.13.0
+  hdmf: 3.14.0
   matnwb: v2.6.0.2
   pynwb: 2.7.0

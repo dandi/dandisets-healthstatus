@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-RSpinal-Random-Wave-01/sub-RSpinal-Random-Wave-01_ses-20210724T194543_behavior+ophys.nwb
-  - sub-RSpinal-Random-Wave-03/sub-RSpinal-Random-Wave-03_ses-20211007T145521_behavior+ophys.nwb
+  - path: sub-RSpinal-Random-Wave-03/sub-RSpinal-Random-Wave-03_ses-20211007T145521_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-RSpinal-Random-Wave-04/sub-RSpinal-Random-Wave-04_ses-20211008T101450_behavior+ophys.nwb
     versions:
       hdmf: 3.14.0
@@ -27,7 +31,11 @@ tests:
   assets_ok: []
   assets_timeout:
   - sub-RSpinal-Random-Wave-01/sub-RSpinal-Random-Wave-01_ses-20210724T194543_behavior+ophys.nwb
-  - sub-RSpinal-Random-Wave-03/sub-RSpinal-Random-Wave-03_ses-20211007T145521_behavior+ophys.nwb
+  - path: sub-RSpinal-Random-Wave-03/sub-RSpinal-Random-Wave-03_ses-20211007T145521_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-RSpinal-Random-Wave-04/sub-RSpinal-Random-Wave-04_ses-20211008T101450_behavior+ophys.nwb
     versions:
       hdmf: 3.14.0

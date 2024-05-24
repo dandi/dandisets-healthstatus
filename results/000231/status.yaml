@@ -122,7 +122,11 @@ tests:
       pynwb: 2.6.0
   - sub-228CR/sub-228CR_ses-20190721T164631_behavior+ecephys+image.nwb
   - sub-229CR/sub-229CR_ses-20191003T142216_behavior+image.nwb
-  - sub-229CR/sub-229CR_ses-20191004T114505_behavior+image.nwb
+  - path: sub-229CR/sub-229CR_ses-20191004T114505_behavior+image.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-229CR/sub-229CR_ses-20191009T172531_behavior+ecephys+image.nwb
     versions:
       hdmf: 3.13.0
@@ -557,7 +561,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-229CR/sub-229CR_ses-20191003T142216_behavior+image.nwb
-  - sub-229CR/sub-229CR_ses-20191004T114505_behavior+image.nwb
+  - path: sub-229CR/sub-229CR_ses-20191004T114505_behavior+image.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-229CR/sub-229CR_ses-20191009T172531_behavior+ecephys+image.nwb
     versions:
       hdmf: 3.13.0

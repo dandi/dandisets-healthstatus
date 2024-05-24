@@ -18,7 +18,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-rbp4-jRGECO1a-21/sub-rbp4-jRGECO1a-21_ophys.nwb
-  - sub-wt-vpm-556-857-7/sub-wt-vpm-556-857-7_ophys.nwb
+  - path: sub-wt-vpm-556-857-7/sub-wt-vpm-556-857-7_ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -34,7 +38,11 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-wt-vpm-556-857-7/sub-wt-vpm-556-857-7_ophys.nwb
+  - path: sub-wt-vpm-556-857-7/sub-wt-vpm-556-857-7_ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

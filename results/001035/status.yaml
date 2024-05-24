@@ -1,0 +1,22 @@
+dandiset: '001035'
+dandiset_version: d3aa69bb880ccc74bbe2f1d084638b78d5f9a92f
+last_run: null
+last_run_duration: null
+last_run_ended: null
+nassets: null
+tests:
+- assets_nok: []
+  assets_ok:
+  - sub-20-4/sub-20-4_ses-5120Hz-sine-stimulation-5-4V_image.nwb
+  assets_timeout: []
+  name: pynwb_open_load_ns
+- assets_nok: []
+  assets_ok:
+  - sub-20-4/sub-20-4_ses-5120Hz-sine-stimulation-5-4V_image.nwb
+  assets_timeout: []
+  name: matnwb_nwbRead
+untested: []
+versions:
+  hdmf: 3.14.0
+  matnwb: v2.6.0.2
+  pynwb: 2.7.0
