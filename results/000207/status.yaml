@@ -34,7 +34,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-5/sub-5_ses-5_ecephys.nwb
-  - sub-6/sub-6_ses-6_ecephys.nwb
+  - path: sub-6/sub-6_ses-6_ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-7/sub-7_ses-7_ecephys.nwb
   - sub-8/sub-8_ses-8_ecephys.nwb
   - sub-9/sub-9_ses-9_ecephys.nwb
@@ -71,7 +75,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-5/sub-5_ses-5_ecephys.nwb
-  - sub-6/sub-6_ses-6_ecephys.nwb
+  - path: sub-6/sub-6_ses-6_ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-7/sub-7_ses-7_ecephys.nwb
   - sub-9/sub-9_ses-9_ecephys.nwb
   name: matnwb_nwbRead

@@ -286,7 +286,11 @@ tests:
   - sub-SLR095/sub-SLR095_ses-20190218_obj-hw5ymv_behavior+image.nwb
   - sub-SLR096/sub-SLR096_ses-20190302_obj-19t7ioo_behavior+image.nwb
   - sub-SLR096/sub-SLR096_ses-20190302_obj-1rknjv0_behavior+image.nwb
-  - sub-SLR096/sub-SLR096_ses-20190302_obj-1vfccl9_behavior+image.nwb
+  - path: sub-SLR096/sub-SLR096_ses-20190302_obj-1vfccl9_behavior+image.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-SLR096/sub-SLR096_ses-20190302_obj-zwd5d5_behavior+image.nwb
   - path: sub-SLR096/sub-SLR096_ses-20190303_obj-14s2via_behavior+image.nwb
     versions:
@@ -1197,7 +1201,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-SLR095/sub-SLR095_ses-20190218_obj-hw5ymv_behavior+image.nwb
-  - sub-SLR096/sub-SLR096_ses-20190302_obj-1vfccl9_behavior+image.nwb
+  - path: sub-SLR096/sub-SLR096_ses-20190302_obj-1vfccl9_behavior+image.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-SLR096/sub-SLR096_ses-20190302_obj-zwd5d5_behavior+image.nwb
   - path: sub-SLR096/sub-SLR096_ses-20190303_obj-14s2via_behavior+image.nwb
     versions:

@@ -6,12 +6,14 @@ last_run_ended: null
 nassets: null
 tests:
 - assets_nok: []
-  assets_ok: []
+  assets_ok:
+  - sub-M3/sub-M3_ses-20240522.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-M3/sub-M3_ses-20240522.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

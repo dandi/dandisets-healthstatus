@@ -164,7 +164,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-Chives/sub-Chives_ses-Chives05-LinearTrack_behavior+ecephys.nwb
-  - sub-Chives/sub-Chives_ses-Chives06-HomeCage_behavior+ecephys.nwb
+  - path: sub-Chives/sub-Chives_ses-Chives06-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Chives/sub-Chives_ses-Chives06-LinearTrack_behavior+ecephys.nwb
   - sub-Cicada/sub-Cicada_ses-Cicada01-HomeCage_behavior+ecephys.nwb
   - sub-Cicada/sub-Cicada_ses-Cicada02-HomeCage_behavior+ecephys.nwb
@@ -1018,6 +1022,11 @@ tests:
   - sub-Chives/sub-Chives_ses-Chives04-HomeCage_behavior+ecephys.nwb
   - sub-Chives/sub-Chives_ses-Chives04-LinearTrack_behavior+ecephys.nwb
   - sub-Chives/sub-Chives_ses-Chives05-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Chives/sub-Chives_ses-Chives06-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Chives/sub-Chives_ses-Chives06-LinearTrack_behavior+ecephys.nwb
   - sub-Cicada/sub-Cicada_ses-Cicada01-HomeCage_behavior+ecephys.nwb
   - sub-Cicada/sub-Cicada_ses-Cicada02-HomeCage_behavior+ecephys.nwb
@@ -1524,7 +1533,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-Chives/sub-Chives_ses-Chives06-HomeCage_behavior+ecephys.nwb
   - sub-Cicada/sub-Cicada_ses-Cicada07-HomeCage_behavior+ecephys.nwb
   - path: sub-Cinnamon/sub-Cinnamon_ses-Cinnamon01-HomeCage_behavior+ecephys.nwb
     versions:
