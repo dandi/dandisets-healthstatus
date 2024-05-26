@@ -9,7 +9,11 @@ tests:
   - sub-CS54/sub-CS54_ses-P54CSR2_behavior+ecephys.nwb
   assets_ok:
   - sub-CS41/sub-CS41_ses-P41CSR1_behavior+ecephys.nwb
-  - sub-CS41/sub-CS41_ses-P41CSR2_behavior+ecephys.nwb
+  - path: sub-CS41/sub-CS41_ses-P41CSR2_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-CS42/sub-CS42_ses-P42CSR1_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.0
@@ -150,7 +154,11 @@ tests:
   - sub-CS57/sub-CS57_ses-P57CSR2_behavior+ecephys.nwb
   assets_ok: []
   assets_timeout:
-  - sub-CS41/sub-CS41_ses-P41CSR2_behavior+ecephys.nwb
+  - path: sub-CS41/sub-CS41_ses-P41CSR2_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-CS42/sub-CS42_ses-P42CSR2_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0

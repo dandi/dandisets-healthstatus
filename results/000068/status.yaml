@@ -11,10 +11,10 @@ tests:
   - sub-abcd/sub-abcd_icephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-abcd/sub-abcd_icephys.nwb
+- assets_nok: []
   assets_ok:
   - sub-abcd/icephys_example.nwb
+  - sub-abcd/sub-abcd_icephys.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
