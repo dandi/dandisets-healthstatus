@@ -39,7 +39,11 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-NR34/sub-NR34_ophys.nwb
+  - path: sub-NR34/sub-NR34_ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-NR6/sub-NR6_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
@@ -66,7 +70,11 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-NR34/sub-NR34_ophys.nwb
+  - path: sub-NR34/sub-NR34_ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-NR6/sub-NR6_ophys.nwb
   assets_ok:
   - sub-009/sub-009_ophys.nwb

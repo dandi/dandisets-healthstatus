@@ -533,7 +533,11 @@ tests:
   - sub-4/sub-4_ses-18531003_tis-4-1_cell-c38_icephys.nwb
   - sub-4/sub-4_ses-18531004_tis-4-1_cell-c38_icephys.nwb
   - sub-4/sub-4_ses-18531005_tis-4-2_cell-c39_icephys.nwb
-  - sub-4/sub-4_ses-18531006_tis-4-2_icephys.nwb
+  - path: sub-4/sub-4_ses-18531006_tis-4-2_icephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-4/sub-4_ses-18531007_tis-4-2_icephys.nwb
   - sub-4/sub-4_ses-18531008_tis-4-2_icephys.nwb
   - sub-4/sub-4_ses-18531009_tis-4-2_icephys.nwb
@@ -858,6 +862,11 @@ tests:
   - sub-4/sub-4_ses-18531002_tis-4-1_cell-c38_icephys.nwb
   - sub-4/sub-4_ses-18531003_tis-4-1_cell-c38_icephys.nwb
   - sub-4/sub-4_ses-18531004_tis-4-1_cell-c38_icephys.nwb
+  - path: sub-4/sub-4_ses-18531006_tis-4-2_icephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-4/sub-4_ses-18531008_tis-4-2_icephys.nwb
   - sub-4/sub-4_ses-18531009_tis-4-2_icephys.nwb
   - sub-4/sub-4_ses-18531011_tis-4-2_icephys.nwb
@@ -1110,7 +1119,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-4/sub-4_ses-18531005_tis-4-2_cell-c39_icephys.nwb
-  - sub-4/sub-4_ses-18531006_tis-4-2_icephys.nwb
   - sub-4/sub-4_ses-18531007_tis-4-2_icephys.nwb
   - path: sub-4/sub-4_ses-18531010_tis-4-2_icephys.nwb
     versions:

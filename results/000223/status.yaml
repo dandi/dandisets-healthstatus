@@ -29,7 +29,7 @@ tests:
       pynwb: 2.7.0
   - path: sub-2282/sub-2282_ses-20190914T170145_ecephys+ophys.nwb
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-2610/sub-2610_ses-20201005T153308_ecephys+ophys.nwb
@@ -111,6 +111,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-2282/sub-2282_ses-20190914T170145_ecephys+ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   assets_ok: []
   assets_timeout:
   - path: sub-2282/sub-2282_ses-20190914T145458_ecephys+ophys.nwb
@@ -124,11 +129,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-2282/sub-2282_ses-20190914T164312_ecephys+ophys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
-  - path: sub-2282/sub-2282_ses-20190914T170145_ecephys+ophys.nwb
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2

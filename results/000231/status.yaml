@@ -390,7 +390,7 @@ tests:
   - sub-KM91/sub-KM91_ses-20161216T143049_behavior+image.nwb
   - path: sub-KM91/sub-KM91_ses-20170118T170550_behavior+image.nwb
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-KM91/sub-KM91_ses-20170313T135620_behavior+image.nwb
@@ -461,6 +461,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-KM91/sub-KM91_ses-20161216T143049_behavior+image.nwb
+  - path: sub-KM91/sub-KM91_ses-20170118T170550_behavior+image.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-KM91/sub-KM91_ses-20170119T182155_behavior+image.nwb
     versions:
       hdmf: 3.13.0
@@ -781,11 +786,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-KM91/sub-KM91_ses-20170118T170550_behavior+image.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   name: matnwb_nwbRead
 untested:
 - asset: sub-219CR/sub-219CR_ses-20190403T123013_behavior+image/a969df11-1d5e-4088-822e-e1a6730d74a2_external_file_0.mkv

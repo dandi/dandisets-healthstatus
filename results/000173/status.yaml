@@ -201,7 +201,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-BH265/sub-BH265_ses-20211117.nwb
+  - path: sub-BH265/sub-BH265_ses-20211117.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-BH266/sub-BH266_ses-20211103_obj-16u7lei.nwb
     versions:
       hdmf: 3.13.0
@@ -419,7 +423,6 @@ tests:
       pynwb: 2.6.0
   - sub-BH256/sub-BH256_ses-20211103_obj-18gtju1.nwb
   - sub-BH256/sub-BH256_ses-20211103_obj-1vwfnfi.nwb
-  - sub-BH265/sub-BH265_ses-20211117.nwb
   - sub-BH271/sub-BH271_ses-20211123_obj-1mhh6o3.nwb
   - path: sub-BH272/sub-BH272_ses-20211124_obj-j524am.nwb
     versions:
@@ -596,6 +599,11 @@ tests:
   - path: sub-BH265/sub-BH265_ses-20211103.nwb
     versions:
       hdmf: 3.13.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
+  - path: sub-BH265/sub-BH265_ses-20211117.nwb
+    versions:
+      hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-BH266/sub-BH266_ses-20211103_obj-16u7lei.nwb
