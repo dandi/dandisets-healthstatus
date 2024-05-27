@@ -20,7 +20,11 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-CFC17/sub-CFC17_ophys.nwb
+  - path: sub-CFC17/sub-CFC17_ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-CFC19/sub-CFC19_ophys.nwb
   - sub-CFC4/sub-CFC4_ophys.nwb
   - sub-NR14/sub-NR14_ophys.nwb
@@ -53,7 +57,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-CFC17/sub-CFC17_ophys.nwb
   - sub-CFC4/sub-CFC4_ophys.nwb
   - path: sub-NR21/sub-NR21_ophys.nwb
     versions:
@@ -85,6 +88,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-014/sub-014_ophys.nwb
+  - path: sub-CFC17/sub-CFC17_ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-CFC19/sub-CFC19_ophys.nwb
   - sub-NR14/sub-NR14_ophys.nwb
   assets_timeout: []

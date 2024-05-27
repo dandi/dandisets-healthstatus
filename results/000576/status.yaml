@@ -13,7 +13,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-01/sub-01_ses-20140828T132700_ecephys.nwb
-  - sub-02/sub-02_ses-20160302T164800_ecephys+image.nwb
+  - path: sub-02/sub-02_ses-20160302T164800_ecephys+image.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-02/sub-02_ses-20160302T164800_ecephys.nwb
   - path: sub-03/sub-03_ses-20150304T164400_ecephys+image.nwb
     versions:
@@ -74,6 +78,11 @@ tests:
   - sub-09/sub-09_ses-20170311T170500_ecephys.nwb
   assets_ok:
   - sub-01/sub-01_ses-20140828T132700_ecephys.nwb
+  - path: sub-02/sub-02_ses-20160302T164800_ecephys+image.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-04/sub-04_ses-20120829T175200_ecephys.nwb
   - path: sub-05/sub-05_ses-20121207T173500_ecephys+image.nwb
     versions:
@@ -94,8 +103,7 @@ tests:
   - sub-07/sub-07_ses-20160212T171400_ecephys+image.nwb
   - sub-07/sub-07_ses-20160212T171400_ecephys.nwb
   - sub-08/sub-08_ses-20161217T120200_ecephys+image.nwb
-  assets_timeout:
-  - sub-02/sub-02_ses-20160302T164800_ecephys+image.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
 untested:
 - asset: sub-01/sub-01_ses-20140828T132700_ecephys+image/b154b52f-1818-4b7a-9e77-28fbbeef4b70_external_file_0.avi
