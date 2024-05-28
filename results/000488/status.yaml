@@ -5,12 +5,7 @@ last_run_duration: 152094.60862
 last_run_ended: '2024-02-20T12:47:40.530099-05:00'
 nassets: 43
 tests:
-- assets_nok:
-  - path: sub-438378/sub-438378_ses-829524157_behavior+image+ophys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
+- assets_nok: []
   assets_ok:
   - path: sub-416366/sub-416366_ses-768476976_behavior+image+ophys.nwb
     versions:
@@ -84,6 +79,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-438378/sub-438378_ses-829524157_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-438378/sub-438378_ses-830149483_behavior+image+ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -216,12 +216,7 @@ tests:
       pynwb: 2.6.0
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - path: sub-438378/sub-438378_ses-829524157_behavior+image+ophys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
+- assets_nok: []
   assets_ok: []
   assets_timeout:
   - path: sub-416366/sub-416366_ses-768476976_behavior+image+ophys.nwb
@@ -296,6 +291,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-438378/sub-438378_ses-829524157_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-438378/sub-438378_ses-830149483_behavior+image+ophys.nwb
     versions:
       hdmf: 3.13.0

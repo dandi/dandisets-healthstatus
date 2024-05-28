@@ -543,7 +543,11 @@ tests:
   - sub-OldBay/sub-OldBay_ses-OldBay06-LinearTrack_behavior+ecephys.nwb
   - sub-Paprika/sub-Paprika_ses-Paprika01-LinearTrack_behavior+ecephys.nwb
   - sub-Paprika/sub-Paprika_ses-Paprika01_HomeCage_behavior+ecephys.nwb
-  - sub-Paprika/sub-Paprika_ses-Paprika02-HomeCage_behavior+ecephys.nwb
+  - path: sub-Paprika/sub-Paprika_ses-Paprika02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Paprika/sub-Paprika_ses-Paprika02-LinearTrack_behavior+ecephys.nwb
   - path: sub-Paprika/sub-Paprika_ses-Paprika03-HomeCage_behavior+ecephys.nwb
     versions:
@@ -1290,7 +1294,6 @@ tests:
   - sub-OldBay/sub-OldBay_ses-OldBay05_HomeCage_behavior+ecephys.nwb
   - sub-OldBay/sub-OldBay_ses-OldBay06-HomeCage_behavior+ecephys.nwb
   - sub-Paprika/sub-Paprika_ses-Paprika01_HomeCage_behavior+ecephys.nwb
-  - sub-Paprika/sub-Paprika_ses-Paprika02-HomeCage_behavior+ecephys.nwb
   - sub-Paprika/sub-Paprika_ses-Paprika02-LinearTrack_behavior+ecephys.nwb
   - path: sub-Paprika/sub-Paprika_ses-Paprika03-HomeCage_behavior+ecephys.nwb
     versions:
@@ -1665,6 +1668,11 @@ tests:
   - sub-OldBay/sub-OldBay_ses-OldBay05-LinearTrack_behavior+ecephys.nwb
   - sub-OldBay/sub-OldBay_ses-OldBay06-LinearTrack_behavior+ecephys.nwb
   - sub-Paprika/sub-Paprika_ses-Paprika01-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Paprika/sub-Paprika_ses-Paprika02-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - path: sub-Paprika/sub-Paprika_ses-Paprika03-LinearTrack_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0

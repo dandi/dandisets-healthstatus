@@ -121,7 +121,11 @@ tests:
       pynwb: 2.7.0
   - sub-Richards/sub-Richards_ses-20171101T120000.nwb
   - sub-Richards/sub-Richards_ses-20171102T120000.nwb
-  - sub-Tatum/sub-Tatum_ses-20171206T120000.nwb
+  - path: sub-Tatum/sub-Tatum_ses-20171206T120000.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Tatum/sub-Tatum_ses-20171207T120000.nwb
   - sub-Tatum/sub-Tatum_ses-20171208T120000.nwb
   - path: sub-Tatum/sub-Tatum_ses-20171209T120000.nwb
@@ -226,6 +230,11 @@ tests:
       pynwb: 2.7.0
   - sub-Richards/sub-Richards_ses-20171101T120000.nwb
   - sub-Richards/sub-Richards_ses-20171102T120000.nwb
+  - path: sub-Tatum/sub-Tatum_ses-20171206T120000.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-Tatum/sub-Tatum_ses-20171207T120000.nwb
   - sub-Tatum/sub-Tatum_ses-20171208T120000.nwb
   - path: sub-Tatum/sub-Tatum_ses-20171209T120000.nwb
@@ -254,7 +263,6 @@ tests:
   - sub-Moniz/sub-Moniz_ses-20170515T120000.nwb
   - sub-Muller/sub-Muller_ses-20170109T120000.nwb
   - sub-Radnitz/sub-Radnitz_ses-20170111T120000.nwb
-  - sub-Tatum/sub-Tatum_ses-20171206T120000.nwb
   assets_timeout:
   - sub-Forssmann/sub-Forssmann_ses-20171102T120000.nwb
   - sub-Forssmann/sub-Forssmann_ses-20171104T120000.nwb
