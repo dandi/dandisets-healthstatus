@@ -55,7 +55,11 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-BPN-OLD-M3/sub-BPN-OLD-M3_ses-20210513-m1_obj-1ph4cqe_ophys.nwb
+  - path: sub-BPN-OLD-M3/sub-BPN-OLD-M3_ses-20210513-m1_obj-1ph4cqe_ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
   - sub-BPN-OLD-M3/sub-BPN-OLD-M3_ses-20210513-m1_obj-1u1mjbm_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
@@ -75,7 +79,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-BPN-OLD-M3/sub-BPN-OLD-M3_ses-20210513-m1_obj-1ph4cqe_ophys.nwb
   assets_ok:
   - sub-21-09-01-b-act/sub-21-09-01-b-act_ses-20210901-m1_ophys.nwb
   - path: sub-21-09-20-b-act/sub-21-09-20-b-act_ses-20210920-m1_ophys.nwb
@@ -106,6 +109,11 @@ tests:
       pynwb: 2.7.0
   - sub-BPN-M7/sub-BPN-M7_ses-20210527-m1_obj-wuc3ag_ophys.nwb
   - path: sub-BPN-OLD-M2/sub-BPN-OLD-M2_ses-20210511-m1_obj-z4hlsa_ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.7.0
+  - path: sub-BPN-OLD-M3/sub-BPN-OLD-M3_ses-20210513-m1_obj-1ph4cqe_ophys.nwb
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
