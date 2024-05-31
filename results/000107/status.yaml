@@ -5,9 +5,9 @@ last_run_duration: 244.457154
 last_run_ended: '2024-01-14T12:48:08.176133-05:00'
 nassets: 1
 tests:
-- assets_nok:
+- assets_nok: []
+  assets_ok:
   - PS_Stimsets-20190906.nwb
-  assets_ok: []
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -19,4 +19,4 @@ untested: []
 versions:
   hdmf: 3.14.0
   matnwb: v2.6.0.2
-  pynwb: 2.7.0
+  pynwb: 2.8.0

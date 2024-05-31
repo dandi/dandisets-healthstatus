@@ -5,8 +5,7 @@ last_run_duration: 58839.350703
 last_run_ended: '2024-01-15T05:57:13.844971-05:00'
 nassets: 30
 tests:
-- assets_nok:
-  - sub-V118/sub-V118_ses-03222018_ecephys.nwb
+- assets_nok: []
   assets_ok:
   - sub-ROV40/sub-ROV40_ses-Day 1-obs_ophys.nwb
   - sub-ROV40/sub-ROV40_ses-Day 1-retrieval_ophys.nwb
@@ -123,6 +122,11 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-V118/sub-V118_ses-03222018_ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-V85/sub-V85_ses-12102017-2_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -200,7 +204,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-V118/sub-V118_ses-03222018_ecephys.nwb
   assets_ok: []
   assets_timeout:
   - path: sub-V110/sub-V110_ses-03032018_ecephys.nwb
@@ -250,6 +253,11 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-V118/sub-V118_ses-03222018_ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-V85/sub-V85_ses-12102017-2_ecephys.nwb
     versions:
       hdmf: 3.13.0

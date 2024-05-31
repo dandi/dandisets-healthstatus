@@ -10,13 +10,13 @@ tests:
   - sub-TR12-512ch/sub-TR12-512ch_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok:
+- assets_nok:
   - sub-TR12-512ch/sub-TR12-512ch_ecephys.nwb
+  assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
   hdmf: 3.14.0
   matnwb: v2.6.0.2
-  pynwb: 2.7.0
+  pynwb: 2.8.0

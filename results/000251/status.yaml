@@ -855,7 +855,11 @@ tests:
   - sub-3054/sub-3054_ses-SU-VR-OL-89.nwb
   - sub-3054/sub-3054_ses-SU-VR-OL-90.nwb
   - sub-3054/sub-3054_ses-SU-VR-OL-91.nwb
-  - sub-3054/sub-3054_ses-SU-VR-OL-92.nwb
+  - path: sub-3054/sub-3054_ses-SU-VR-OL-92.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-3054/sub-3054_ses-SU-VR-OL-93.nwb
   - sub-3054/sub-3054_ses-SU-VR-OL-94.nwb
   - sub-3054/sub-3054_ses-SU-VR-OL-95.nwb
@@ -1178,7 +1182,6 @@ tests:
   - sub-3054/sub-3054_ses-SU-VR-OL-85.nwb
   - sub-3054/sub-3054_ses-SU-VR-OL-88.nwb
   - sub-3054/sub-3054_ses-SU-VR-OL-89.nwb
-  - sub-3054/sub-3054_ses-SU-VR-OL-92.nwb
   - sub-3054/sub-3054_ses-SU-VR-OL-94.nwb
   - sub-3054/sub-3054_ses-SU-VR-OL-95.nwb
   - sub-3054/sub-3054_ses-SU-VR-OL-97.nwb
@@ -1726,6 +1729,11 @@ tests:
       pynwb: 2.7.0
   - sub-3054/sub-3054_ses-SU-VR-OL-90.nwb
   - sub-3054/sub-3054_ses-SU-VR-OL-91.nwb
+  - path: sub-3054/sub-3054_ses-SU-VR-OL-92.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-3054/sub-3054_ses-SU-VR-OL-93.nwb
   - sub-3054/sub-3054_ses-SU-VR-OL-96.nwb
   assets_timeout:
