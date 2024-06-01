@@ -13,7 +13,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - sub-Pt02/sub-Pt02_ecephys.nwb
-  - sub-Pt03/sub-Pt03_ecephys.nwb
+  - path: sub-Pt03/sub-Pt03_ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -22,9 +26,13 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
+  - path: sub-Pt03/sub-Pt03_ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   assets_ok:
   - sub-Pt02/sub-Pt02_ecephys.nwb
-  - sub-Pt03/sub-Pt03_ecephys.nwb
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
