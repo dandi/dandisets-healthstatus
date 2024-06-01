@@ -9,7 +9,11 @@ tests:
   - sub-1001658946/sub-1001658946_obj-17kkp88_icephys.nwb
   - sub-1001658946/sub-1001658946_obj-n1u30_icephys.nwb
   assets_ok:
-  - sub-1/sub-1.nwb
+  - path: sub-1/sub-1.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-1001658946/sub-1001658946_obj-831bdx_icephys.nwb
     versions:
       hdmf: 3.14.0
@@ -36,7 +40,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   assets_ok:
-  - sub-1/sub-1.nwb
+  - path: sub-1/sub-1.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

@@ -349,7 +349,11 @@ tests:
   - sub-11207/sub-11207_ses-27060504_behavior+ecephys.nwb
   - sub-11207/sub-11207_ses-30060501_behavior+ecephys.nwb
   - sub-11207/sub-11207_ses-30060503_behavior+ecephys.nwb
-  - sub-11265/sub-11265_ses-01020602_behavior+ecephys.nwb
+  - path: sub-11265/sub-11265_ses-01020602_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-11265/sub-11265_ses-02020601_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -471,7 +475,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-11207/sub-11207_ses-30060501_behavior+ecephys.nwb
-  - sub-11265/sub-11265_ses-01020602_behavior+ecephys.nwb
   - sub-11265/sub-11265_ses-03020601_behavior+ecephys.nwb
   - sub-11265/sub-11265_ses-09020601_behavior+ecephys.nwb
   - sub-11265/sub-11265_ses-31010601_behavior+ecephys.nwb
@@ -749,6 +752,11 @@ tests:
   - sub-11207/sub-11207_ses-27060501_behavior+ecephys.nwb
   - sub-11207/sub-11207_ses-27060504_behavior+ecephys.nwb
   - sub-11207/sub-11207_ses-30060503_behavior+ecephys.nwb
+  - path: sub-11265/sub-11265_ses-01020602_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-11265/sub-11265_ses-02020601_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
