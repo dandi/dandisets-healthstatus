@@ -500,7 +500,11 @@ tests:
       pynwb: 2.7.0
   - sub-SC006/sub-SC006_ses-SC006-011318_ecephys+ogen.nwb
   - sub-SC006/sub-SC006_ses-SC006-011418_ecephys+ogen.nwb
-  - sub-SC006/sub-SC006_ses-SC006-011518_ecephys+ogen.nwb
+  - path: sub-SC006/sub-SC006_ses-SC006-011518_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-SC006/sub-SC006_ses-SC006-011618_ecephys+ogen.nwb
     versions:
       hdmf: 3.12.2
@@ -1091,7 +1095,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-SC006/sub-SC006_ses-SC006-011318_ecephys+ogen.nwb
-  - sub-SC006/sub-SC006_ses-SC006-011518_ecephys+ogen.nwb
+  - path: sub-SC006/sub-SC006_ses-SC006-011518_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-SC006/sub-SC006_ses-SC006-011618_ecephys+ogen.nwb
     versions:
       hdmf: 3.12.2
