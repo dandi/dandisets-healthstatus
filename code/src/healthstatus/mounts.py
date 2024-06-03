@@ -37,7 +37,7 @@ class AssetInDandiset:
 
 class MountType(Enum):
     FUSEFS = "fusefs"
-    WEBDAVFS = "webdavfs"
+    # WEBDAVFS = "webdavfs"
     DAVFS2 = "davfs2"
 
 
@@ -119,6 +119,9 @@ class FuseMounter(Mounter):
         return self.mount_path / asset.dandiset_id / asset.asset_path
 
 
+# Currently disabled due to webdavfs not supporting redirects
+# <https://github.com/miquels/webdavfs/issues/30>
+"""
 @dataclass
 class WebDavFSMounter(Mounter):
     mount_path: Path
@@ -158,6 +161,7 @@ class WebDavFSMounter(Mounter):
             / "draft"
             / asset.asset_path
         )
+"""
 
 
 @dataclass
@@ -208,8 +212,8 @@ def iter_mounters(
             update=update_dataset,
             logdir=logdir,
         )
-    if MountType.WEBDAVFS in types:
-        yield WebDavFSMounter(mount_path=mount_path)
+    # if MountType.WEBDAVFS in types:
+    #     yield WebDavFSMounter(mount_path=mount_path)
     if MountType.DAVFS2 in types:
         yield DavFS2Mounter(mount_path=mount_path)
 
