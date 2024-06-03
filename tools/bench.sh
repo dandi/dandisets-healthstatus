@@ -22,4 +22,4 @@ dandisets-healthstatus time-mounts \
     -m "$MOUNT_PATH" \
     --no-update-dataset \
     --mounts fusefs,davfs2 \
-    000016/sub-mouse1-fni16/sub-mouse1-fni16_ses-161228151100.nwb
+    000005/sub-anm236462/sub-anm236462_ses-20140210_behavior+icephys.nwb
