@@ -12,7 +12,11 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-21-09-01-b-act/sub-21-09-01-b-act_ses-20210901-m1_ophys.nwb
+  - path: sub-21-09-01-b-act/sub-21-09-01-b-act_ses-20210901-m1_ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-21-09-20-b-act/sub-21-09-20-b-act_ses-20210920-m1_ophys.nwb
     versions:
       hdmf: 3.14.0
@@ -74,7 +78,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   assets_ok:
-  - sub-21-09-01-b-act/sub-21-09-01-b-act_ses-20210901-m1_ophys.nwb
+  - path: sub-21-09-01-b-act/sub-21-09-01-b-act_ses-20210901-m1_ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-21-09-20-b-act/sub-21-09-20-b-act_ses-20210920-m1_ophys.nwb
     versions:
       hdmf: 3.14.0

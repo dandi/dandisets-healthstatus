@@ -184,7 +184,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200727_behavior+ecephys.nwb
-  - sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200803_behavior+ecephys.nwb
+  - path: sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200803_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200809_behavior+ecephys.nwb
   - sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200812_behavior+ecephys.nwb
   - sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220117-raw_ecephys.nwb
@@ -425,7 +429,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200727_behavior+ecephys.nwb
-  - sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200803_behavior+ecephys.nwb
   - sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200812_behavior+ecephys.nwb
   - sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220117-raw_ecephys.nwb
   - path: sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220117_behavior+ecephys.nwb
@@ -646,6 +649,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200803_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220118-raw_ecephys.nwb
     versions:
       hdmf: 3.14.0

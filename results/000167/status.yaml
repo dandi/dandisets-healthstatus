@@ -7,53 +7,21 @@ nassets: 6
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-163/sub-163_ses-20200212T160655_ophys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
+  - sub-163/sub-163_ses-20200212T160655_ophys.nwb
   - sub-164/sub-164_ses-20200124T161514_image+ophys.nwb
-  - path: sub-7/sub-7_ses-20200213T113524_ophys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
-  - path: sub-8/sub-8_ses-20200204T180138_ophys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
-  - path: sub-9/sub-9_ses-20200204T154200_ophys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
+  - sub-7/sub-7_ses-20200213T113524_ophys.nwb
+  - sub-8/sub-8_ses-20200204T180138_ophys.nwb
+  - sub-9/sub-9_ses-20200204T154200_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - path: sub-163/sub-163_ses-20200212T160655_ophys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
+  - sub-163/sub-163_ses-20200212T160655_ophys.nwb
   - sub-164/sub-164_ses-20200124T161514_image+ophys.nwb
   assets_ok: []
   assets_timeout:
-  - path: sub-7/sub-7_ses-20200213T113524_ophys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
-  - path: sub-8/sub-8_ses-20200204T180138_ophys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
-  - path: sub-9/sub-9_ses-20200204T154200_ophys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
+  - sub-7/sub-7_ses-20200213T113524_ophys.nwb
+  - sub-8/sub-8_ses-20200204T180138_ophys.nwb
+  - sub-9/sub-9_ses-20200204T154200_ophys.nwb
   name: matnwb_nwbRead
 untested:
 - asset: sub-164/sub-164_ses-20200124T161514_image+ophys/dfbe7f63-8653-4084-aa84-c282ffcd7871_external_file_0.mkv
@@ -63,4 +31,4 @@ untested:
 versions:
   hdmf: 3.14.0
   matnwb: v2.6.0.2
-  pynwb: 2.7.0
+  pynwb: 2.8.0
