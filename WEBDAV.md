@@ -36,6 +36,9 @@ davfs2
     username ALL=(ALL:ALL) NOPASSWD: /usr/bin/umount /tmp/dandisets-fuse
     ```
 
+- Ensure that the `dandidav` instance at webdav.dandiarchive.org is being run
+  with the `--prefer-s3-redirects` option
+
 
 <!--
 webdavfs
