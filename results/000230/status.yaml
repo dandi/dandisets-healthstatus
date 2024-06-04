@@ -34,12 +34,21 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-70375/sub-70375_ses-20170318T135856_behavior+ecephys.nwb
+  - path: sub-70375/sub-70375_ses-20170318T135856_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-70375/sub-70375_ses-20170318T185915_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-70375/sub-70375_ses-20170317T094453_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
+  - path: sub-70375/sub-70375_ses-20170318T135856_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
@@ -68,7 +77,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-70375/sub-70375_ses-20170318T135856_behavior+ecephys.nwb
   - sub-70375/sub-70375_ses-20170318T185915_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []

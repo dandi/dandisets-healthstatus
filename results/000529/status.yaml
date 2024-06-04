@@ -32,7 +32,11 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-AIROF/sub-AIROF_obj-o40thn_ecephys.nwb
+  - path: sub-AIROF/sub-AIROF_obj-o40thn_ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-AIROF/sub-AIROF_obj-u7ou1v_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -124,8 +128,7 @@ tests:
       pynwb: 2.7.0
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-AIROF/sub-AIROF_obj-o40thn_ecephys.nwb
+- assets_nok: []
   assets_ok:
   - path: sub-AIROF/sub-AIROF_obj-122qg8l_ecephys.nwb
     versions:
@@ -152,6 +155,11 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-AIROF/sub-AIROF_obj-o40thn_ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-AIROF/sub-AIROF_obj-u7ou1v_ecephys.nwb
     versions:
       hdmf: 3.13.0

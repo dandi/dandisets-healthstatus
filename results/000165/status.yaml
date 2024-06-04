@@ -100,7 +100,11 @@ tests:
       pynwb: 2.6.0
   - sub-Beverly/sub-Beverly_ses-Beverly16-HomeCage_behavior+ecephys.nwb
   - sub-Beverly/sub-Beverly_ses-Beverly17-HomeCage_behavior+ecephys.nwb
-  - sub-Bones/sub-Bones_ses-Bones01_HomeCage_behavior+ecephys.nwb
+  - path: sub-Bones/sub-Bones_ses-Bones01_HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-Bones/sub-Bones_ses-Bones02-HomeCage_behavior+ecephys.nwb
   - sub-Bones/sub-Bones_ses-Bones03-HomeCage_behavior+ecephys.nwb
   - sub-Bones/sub-Bones_ses-Bones04-HomeCage_behavior+ecephys.nwb
@@ -1017,7 +1021,6 @@ tests:
   - sub-Beverly/sub-Beverly_ses-Beverly12-HomeCage_behavior+ecephys.nwb
   - sub-Beverly/sub-Beverly_ses-Beverly16-HomeCage_behavior+ecephys.nwb
   - sub-Beverly/sub-Beverly_ses-Beverly17-HomeCage_behavior+ecephys.nwb
-  - sub-Bones/sub-Bones_ses-Bones01_HomeCage_behavior+ecephys.nwb
   - sub-Bones/sub-Bones_ses-Bones02-HomeCage_behavior+ecephys.nwb
   - sub-Bones/sub-Bones_ses-Bones03-HomeCage_behavior+ecephys.nwb
   - sub-Bones/sub-Bones_ses-Bones04-HomeCage_behavior+ecephys.nwb
@@ -1577,6 +1580,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-Bones/sub-Bones_ses-Bones01_HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-Bones/sub-Bones_ses-Bones07_HomeCage_behavior+ecephys.nwb
   - sub-Caraway/sub-Caraway_ses-Caraway04-HomeCage_behavior+ecephys.nwb
   - path: sub-Caraway/sub-Caraway_ses-Caraway04-LinearTrack_behavior+ecephys.nwb

@@ -93,7 +93,11 @@ tests:
   - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-1e7v34_ophys.nwb
   - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-3bpi3r_ophys.nwb
   - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-6zao4_ophys.nwb
-  - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-dl3n2g_ophys.nwb
+  - path: sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-dl3n2g_ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-i44jjf_ophys.nwb
   - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-ti90r_ophys.nwb
   - sub-mouse6-DC1-5L-C2-5R-1 5Right/sub-mouse6-DC1-5L-C2-5R-1 5Right_obj-50e46p_ophys.nwb
@@ -1363,7 +1367,6 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-1kz5p4z_ophys.nwb
-  - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-dl3n2g_ophys.nwb
   - sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-1b9sdws_ophys.nwb
   - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1chlfru_ophys.nwb
   - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1paud1e_ophys.nwb
@@ -1626,6 +1629,11 @@ tests:
   - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-1e7v34_ophys.nwb
   - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-3bpi3r_ophys.nwb
   - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-6zao4_ophys.nwb
+  - path: sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-dl3n2g_ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-i44jjf_ophys.nwb
   - sub-mouse5-undDC1-1L-C2-1R-5 Right/sub-mouse5-undDC1-1L-C2-1R-5 Right_obj-ti90r_ophys.nwb
   - sub-mouse6-DC1-5L-C2-5R-1 5Right/sub-mouse6-DC1-5L-C2-5R-1 5Right_obj-50e46p_ophys.nwb
