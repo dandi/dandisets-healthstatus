@@ -431,7 +431,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c46_ecephys.nwb
-  - test2.nwb
+  - path: test2.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -509,7 +513,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c44_ecephys.nwb
-  - test2.nwb
   assets_ok:
   - path: sub-hybrid-janelia/sub-hybrid-janelia_ses-hybrid-drift-siprobe-rec-16c-1200s-11_ecephys.nwb
     versions:
@@ -861,6 +864,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c46_ecephys.nwb
+  - path: test2.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

@@ -283,7 +283,11 @@ tests:
   - sub-243/sub-243_ses-Ca-VS-VR-BTW-TRACKS-FWD-TP-2.nwb
   - sub-243/sub-243_ses-Ca-VS-VR-BWD-TP-2.nwb
   - sub-243/sub-243_ses-Ca-VS-VR-TP-BTW-TRACKS-2.nwb
-  - sub-244/sub-244_ses-Ca-VS-VR-BTW-TRACKS-FWD-TP-3.nwb
+  - path: sub-244/sub-244_ses-Ca-VS-VR-BTW-TRACKS-FWD-TP-3.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-244/sub-244_ses-Ca-VS-VR-BWD-TP-3.nwb
   - sub-244/sub-244_ses-Ca-VS-VR-TP-BTW-TRACKS-3.nwb
   - sub-245/sub-245_ses-Ca-VS-VR-BTW-TRACKS-FWD-TP-4.nwb
@@ -966,7 +970,6 @@ tests:
   - sub-243/sub-243_ses-Ca-VS-VR-BTW-TRACKS-FWD-TP-2.nwb
   - sub-243/sub-243_ses-Ca-VS-VR-BWD-TP-2.nwb
   - sub-243/sub-243_ses-Ca-VS-VR-TP-BTW-TRACKS-2.nwb
-  - sub-244/sub-244_ses-Ca-VS-VR-BTW-TRACKS-FWD-TP-3.nwb
   - sub-244/sub-244_ses-Ca-VS-VR-BWD-TP-3.nwb
   - sub-245/sub-245_ses-Ca-VS-VR-BTW-TRACKS-FWD-TP-4.nwb
   - sub-245/sub-245_ses-Ca-VS-VR-BWD-TP-4.nwb
@@ -1404,6 +1407,11 @@ tests:
   - sub-219/sub-219_ses-DAsensor-VS-VR-THREE-TP-9.nwb
   - sub-241/sub-241_ses-Ca-VS-VR-BWD-TP-1.nwb
   - sub-241/sub-241_ses-Ca-VS-VR-TP-BTW-TRACKS-1.nwb
+  - path: sub-244/sub-244_ses-Ca-VS-VR-BTW-TRACKS-FWD-TP-3.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-244/sub-244_ses-Ca-VS-VR-TP-BTW-TRACKS-3.nwb
   - path: sub-249/sub-249_ses-Ca-VS-VR-BTW-TRACKS-FWD-TP-5.nwb
     versions:

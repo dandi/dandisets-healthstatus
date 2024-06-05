@@ -724,7 +724,11 @@ tests:
   - sub-Mouse 2071/sub-Mouse 2071_ses-Session 34.nwb
   - sub-Mouse 2071/sub-Mouse 2071_ses-Session 35.nwb
   - sub-Mouse 2071/sub-Mouse 2071_ses-Session 36.nwb
-  - sub-Mouse 2071/sub-Mouse 2071_ses-Session 37.nwb
+  - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 37.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-Mouse 2071/sub-Mouse 2071_ses-Session 38.nwb
   - sub-Mouse 2072/sub-Mouse 2072_ses-Session 01_obj-30jj0.nwb
   - sub-Mouse 2072/sub-Mouse 2072_ses-Session 01_obj-jeu8jn.nwb
@@ -1644,7 +1648,6 @@ tests:
   - sub-Mouse 2071/sub-Mouse 2071_ses-Session 32.nwb
   - sub-Mouse 2071/sub-Mouse 2071_ses-Session 33.nwb
   - sub-Mouse 2071/sub-Mouse 2071_ses-Session 36.nwb
-  - sub-Mouse 2071/sub-Mouse 2071_ses-Session 37.nwb
   - sub-Mouse 2071/sub-Mouse 2071_ses-Session 38.nwb
   - sub-Mouse 2072/sub-Mouse 2072_ses-Session 01_obj-jeu8jn.nwb
   - sub-Mouse 2072/sub-Mouse 2072_ses-Session 02_obj-148l2kn.nwb
@@ -2227,6 +2230,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-Mouse 2071/sub-Mouse 2071_ses-Session 31_obj-nhzwi1.nwb
+  - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 37.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-Mouse 2072/sub-Mouse 2072_ses-Session 01_obj-30jj0.nwb
   - sub-Mouse 2072/sub-Mouse 2072_ses-Session 01_obj-y7cyou.nwb
   - sub-Mouse 2072/sub-Mouse 2072_ses-Session 02_obj-k487ut.nwb

@@ -249,7 +249,11 @@ tests:
   - sub-Dax/sub-Dax_ses-Dax02_HomeCage_behavior+ecephys.nwb
   - sub-Dax/sub-Dax_ses-Dax03_HomeCage_behavior+ecephys.nwb
   - sub-Dax/sub-Dax_ses-Dax04-HomeCage_behavior+ecephys.nwb
-  - sub-Dax/sub-Dax_ses-Dax05-HomeCage_behavior+ecephys.nwb
+  - path: sub-Dax/sub-Dax_ses-Dax05-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-Dax/sub-Dax_ses-Dax06-HomeCage_behavior+ecephys.nwb
   - sub-Dax/sub-Dax_ses-Dax07-HomeCage_behavior+ecephys.nwb
   - sub-Dill/sub-Dill_ses-Dill01-HomeCage_behavior+ecephys.nwb
@@ -1628,7 +1632,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-Dax/sub-Dax_ses-Dax05-HomeCage_behavior+ecephys.nwb
   - path: sub-Dill/sub-Dill_ses-Dill02-LinearTrack_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -1825,6 +1828,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-Dax/sub-Dax_ses-Dax05-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-Doctor/sub-Doctor_ses-Doctor03-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0

@@ -7,7 +7,11 @@ nassets: 9
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Fish03-GCaMP-vlgut-MBd-6dpf-RandomWave/sub-Fish03-GCaMP-vlgut-MBd-6dpf-RandomWave_ses-20210819T094801_behavior+ophys.nwb
+  - path: sub-Fish03-GCaMP-vlgut-MBd-6dpf-RandomWave/sub-Fish03-GCaMP-vlgut-MBd-6dpf-RandomWave_ses-20210819T094801_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-Fish06-GCaMP-vlgut-MBv-7dpf-RandomWave/sub-Fish06-GCaMP-vlgut-MBv-7dpf-RandomWave_ses-20210820T173047_behavior+ophys.nwb
     versions:
       hdmf: 3.14.0
@@ -45,7 +49,11 @@ tests:
 - assets_nok: []
   assets_ok: []
   assets_timeout:
-  - sub-Fish03-GCaMP-vlgut-MBd-6dpf-RandomWave/sub-Fish03-GCaMP-vlgut-MBd-6dpf-RandomWave_ses-20210819T094801_behavior+ophys.nwb
+  - path: sub-Fish03-GCaMP-vlgut-MBd-6dpf-RandomWave/sub-Fish03-GCaMP-vlgut-MBd-6dpf-RandomWave_ses-20210819T094801_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-Fish06-GCaMP-vlgut-MBv-7dpf-RandomWave/sub-Fish06-GCaMP-vlgut-MBv-7dpf-RandomWave_ses-20210820T173047_behavior+ophys.nwb
     versions:
       hdmf: 3.14.0

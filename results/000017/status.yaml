@@ -5,8 +5,7 @@ last_run_duration: 124749.274604
 last_run_ended: '2024-01-07T03:48:22.499523-05:00'
 nassets: 39
 tests:
-- assets_nok:
-  - sub-Lederberg/sub-Lederberg_ses-20171209T120000.nwb
+- assets_nok: []
   assets_ok:
   - sub-Cori/sub-Cori_ses-20161214T120000.nwb
   - path: sub-Cori/sub-Cori_ses-20161217T120000.nwb
@@ -63,6 +62,11 @@ tests:
       pynwb: 2.8.0
   - sub-Lederberg/sub-Lederberg_ses-20171207T120000.nwb
   - path: sub-Lederberg/sub-Lederberg_ses-20171208T120000.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
+  - path: sub-Lederberg/sub-Lederberg_ses-20171209T120000.nwb
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
@@ -195,7 +199,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-Lederberg/sub-Lederberg_ses-20171209T120000.nwb
   - path: sub-Lederberg/sub-Lederberg_ses-20171210T120000.nwb
     versions:
       hdmf: 3.13.0
@@ -295,6 +298,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - sub-Lederberg/sub-Lederberg_ses-20171207T120000.nwb
+  - path: sub-Lederberg/sub-Lederberg_ses-20171209T120000.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-Radnitz/sub-Radnitz_ses-20170111T120000.nwb
   assets_timeout:
   - sub-Forssmann/sub-Forssmann_ses-20171104T120000.nwb
