@@ -165,7 +165,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-R2/sub-R2_ses-20190206T210000_ophys.nwb
+  - path: sub-R2/sub-R2_ses-20190206T210000_ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-R2/sub-R2_ses-20190209T210000_behavior+ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -361,7 +365,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_ok:
-  - sub-R2/sub-R2_ses-20190206T210000_ophys.nwb
+  - path: sub-R2/sub-R2_ses-20190206T210000_ophys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   assets_timeout:
   - path: sub-F1/sub-F1_ses-20190407T210000_behavior+ophys.nwb
     versions:

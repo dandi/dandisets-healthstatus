@@ -1059,11 +1059,6 @@ tests:
   - Rat_persistent_RAF/sub-20141124/sub-20141124_ses-1411241rm-1-1-4_icephys.nwb
   - Rat_persistent_RAF/sub-20141124/sub-20141124_ses-1411241rm-2-1-4_icephys.nwb
   - Rat_persistent_RAF/sub-20141124/sub-20141124_ses-1411242rm-1-1,2-4_icephys.nwb
-  - path: Rat_persistent_RAF/sub-20141124/sub-20141124_ses-1411242rm-2-1-4_icephys.nwb
-    versions:
-      hdmf: 3.9.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
   - Rat_persistent_RAF/sub-20141124/sub-20141124_ses-1411242rm-3-1-4_icephys.nwb
   - Rat_persistent_RAF/sub-20141124/sub-20141124_ses-1411243rm-1-1-4_icephys.nwb
   - Rat_persistent_RAF/sub-20141124/sub-20141124_ses-1411244rm-1-1-4_icephys.nwb
@@ -1522,6 +1517,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: Rat_persistent_RAF/sub-20141124/sub-20141124_ses-1411242rm-2-1-4_icephys.nwb
+    versions:
+      hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: Rat_persistent_RAF/sub-20150306/sub-20150306_ses-1503061rm-1-1-4_icephys.nwb
     versions:
       hdmf: 3.9.0
@@ -3108,9 +3108,9 @@ tests:
       pynwb: 2.6.0
   - path: Rat_persistent_RAF/sub-20141124/sub-20141124_ses-1411242rm-2-1-4_icephys.nwb
     versions:
-      hdmf: 3.9.0
+      hdmf: 3.14.0
       matnwb: v2.6.0.2
-      pynwb: 2.5.0
+      pynwb: 2.8.0
   - path: Rat_persistent_RAF/sub-20141124/sub-20141124_ses-1411244rm-4-1-4_icephys.nwb
     versions:
       hdmf: 3.9.0
