@@ -11,12 +11,12 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
-  assets_ok:
+  assets_ok: []
+  assets_timeout:
   - sub-LC10ad-fly10/sub-LC10ad-fly10_ses-LC10ad-fly10-210923-1611_behavior+image.nwb
-  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.0
+  hdmf: 3.14.1
   matnwb: v2.6.0.2
   pynwb: 2.8.0

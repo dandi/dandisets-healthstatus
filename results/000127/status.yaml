@@ -8,14 +8,22 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-Han/sub-Han_desc-test_ecephys.nwb
-  - sub-Han/sub-Han_desc-train_behavior+ecephys.nwb
+  - path: sub-Han/sub-Han_desc-train_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
   - sub-Han/sub-Han_desc-test_ecephys.nwb
   assets_timeout:
-  - sub-Han/sub-Han_desc-train_behavior+ecephys.nwb
+  - path: sub-Han/sub-Han_desc-train_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   name: matnwb_nwbRead
 untested: []
 versions:

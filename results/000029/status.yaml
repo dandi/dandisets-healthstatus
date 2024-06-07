@@ -11,7 +11,11 @@ tests:
   - sub-anm369962/sub-anm369962_behavior+ecephys.nwb
   - sub-anm369963/sub-anm369963_behavior+ecephys.nwb
   - sub-anm369964/sub-anm369964_behavior+ecephys.nwb
-  - sub-monk-g/sub-monk-g.nwb
+  - path: sub-monk-g/sub-monk-g.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -21,7 +25,11 @@ tests:
   - sub-anm369964/sub-anm369964_behavior+ecephys.nwb
   assets_ok: []
   assets_timeout:
-  - sub-monk-g/sub-monk-g.nwb
+  - path: sub-monk-g/sub-monk-g.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   name: matnwb_nwbRead
 untested:
 - asset: baz

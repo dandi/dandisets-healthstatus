@@ -74,7 +74,7 @@ tests:
       pynwb: 2.7.0
   - path: sub-NR6/sub-NR6_ophys.nwb
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   assets_timeout: []
@@ -110,6 +110,11 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-NR6/sub-NR6_ophys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   assets_ok:
   - path: sub-012/sub-012_ophys.nwb
     versions:
@@ -142,11 +147,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-NR23/sub-NR23_ophys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
-  - path: sub-NR6/sub-NR6_ophys.nwb
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
