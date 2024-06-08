@@ -49,7 +49,11 @@ tests:
   - sub-Anise/sub-Anise_ses-Anise06-LinearTrack_behavior+ecephys.nwb
   - sub-Aphid/sub-Aphid_ses-Aphid01-HomeCage_behavior+ecephys.nwb
   - sub-Aphid/sub-Aphid_ses-Aphid02-HomeCage_behavior+ecephys.nwb
-  - sub-Aphid/sub-Aphid_ses-Aphid03-HomeCage_behavior+ecephys.nwb
+  - path: sub-Aphid/sub-Aphid_ses-Aphid03-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-Aphid/sub-Aphid_ses-Aphid04-HomeCage_behavior+ecephys.nwb
   - sub-Aphid/sub-Aphid_ses-Aphid05_HomeCage_behavior+ecephys.nwb
   - sub-Aphid/sub-Aphid_ses-Aphid06-HomeCage_behavior+ecephys.nwb
@@ -992,7 +996,11 @@ tests:
   - sub-Anise/sub-Anise_ses-Anise06-HomeCage_behavior+ecephys.nwb
   - sub-Anise/sub-Anise_ses-Anise06-LinearTrack_behavior+ecephys.nwb
   - sub-Aphid/sub-Aphid_ses-Aphid02-HomeCage_behavior+ecephys.nwb
-  - sub-Aphid/sub-Aphid_ses-Aphid03-HomeCage_behavior+ecephys.nwb
+  - path: sub-Aphid/sub-Aphid_ses-Aphid03-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-Aphid/sub-Aphid_ses-Aphid04-HomeCage_behavior+ecephys.nwb
   - sub-Aphid/sub-Aphid_ses-Aphid05_HomeCage_behavior+ecephys.nwb
   - sub-Aphid/sub-Aphid_ses-Aphid06-HomeCage_behavior+ecephys.nwb

@@ -32,7 +32,11 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-19o23001/sub-19o23001_icephys.nwb
+  - path: sub-19o23001/sub-19o23001_icephys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-19o23003/sub-19o23003_icephys.nwb
     versions:
       hdmf: 3.14.1
@@ -92,7 +96,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-19o23001/sub-19o23001_icephys.nwb
   - path: sub-19o23039/sub-19o23039_icephys.nwb
     versions:
       hdmf: 3.14.0
@@ -107,6 +110,11 @@ tests:
   - path: sub-18118024/sub-18118024_icephys.nwb
     versions:
       hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
+  - path: sub-19o23001/sub-19o23001_icephys.nwb
+    versions:
+      hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-19o23003/sub-19o23003_icephys.nwb

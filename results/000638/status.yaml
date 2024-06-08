@@ -10,10 +10,10 @@ tests:
   - sub-TS112-0/sub-TS112-0_ses-TS112-0_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok: []
-  assets_timeout:
+- assets_nok:
   - sub-TS112-0/sub-TS112-0_ses-TS112-0_behavior+ecephys.nwb
+  assets_ok: []
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

@@ -7,7 +7,11 @@ nassets: 9
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Jenkins/sub-Jenkins_ses-20090912_behavior+ecephys.nwb
+  - path: sub-Jenkins/sub-Jenkins_ses-20090912_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-Jenkins/sub-Jenkins_ses-20090916_behavior+ecephys.nwb
   - path: sub-Jenkins/sub-Jenkins_ses-20090918_behavior+ecephys.nwb
     versions:
@@ -22,10 +26,14 @@ tests:
   - sub-Nitschke/sub-Nitschke_ses-20090922_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-Jenkins/sub-Jenkins_ses-20090912_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   assets_ok: []
   assets_timeout:
-  - sub-Jenkins/sub-Jenkins_ses-20090912_behavior+ecephys.nwb
   - sub-Jenkins/sub-Jenkins_ses-20090916_behavior+ecephys.nwb
   - path: sub-Jenkins/sub-Jenkins_ses-20090918_behavior+ecephys.nwb
     versions:
