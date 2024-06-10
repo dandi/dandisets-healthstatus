@@ -3,7 +3,7 @@ set -ex
 
 PYTHON="$HOME"/miniconda3/bin/python
 DANDISETS_PATH="$HOME"/healthstatus-dandisets
-MOUNT_PATH=/tmp/dandisets-fuse
+MOUNT_PATH=/mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse
 
 cd "$(dirname "$0")"/..
 

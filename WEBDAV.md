@@ -9,13 +9,13 @@ davfs2
   Debian 12 (bookworm).
 
 - Create a directory to use as the mount point; `tools/bench.sh` uses
-  `/tmp/dandisets-fuse` by default, and this path will be used throughout the
-  following instructions.
+  `/mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse` by default, and
+  this path will be used throughout the following instructions.
 
 - Add the following to `/etc/davfs2/davfs2.conf`:
 
     ```
-    [/tmp/dandisets-fuse]
+    [/mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse]
     ask_auth 0
     follow_redirect 1
     ```
@@ -24,16 +24,16 @@ davfs2
   the following commands with `sudo` without entering a password:
 
     ```
-    mount -t davfs https://webdav.dandiarchive.org /tmp/dandisets-fuse
-    umount /tmp/dandisets-fuse
+    mount -t davfs https://webdav.dandiarchive.org /mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse
+    umount /mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse
     ```
 
   This can be done by adding the following lines to `/etc/sudoers`, where
   `username` is replaced by the name of the user account:
 
     ```
-    username ALL=(ALL:ALL) NOPASSWD: /usr/bin/mount -t davfs https\://webdav.dandiarchive.org /tmp/dandisets-fuse
-    username ALL=(ALL:ALL) NOPASSWD: /usr/bin/umount /tmp/dandisets-fuse
+    username ALL=(ALL:ALL) NOPASSWD: /usr/bin/mount -t davfs https\://webdav.dandiarchive.org /mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse
+    username ALL=(ALL:ALL) NOPASSWD: /usr/bin/umount /mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse
     ```
 
 - Ensure that the `dandidav` instance at webdav.dandiarchive.org is being run
@@ -49,22 +49,22 @@ webdavfs
   it.
 
 - Create a directory to use as the mount point; `tools/bench.sh` uses
-  `/tmp/dandisets-fuse` by default, and this path will be used throughout the
-  following instructions.
+  `/mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse` by default, and
+  this path will be used throughout the following instructions.
 
 - Grant the user who will be running `dandisets-healthstatus` permission to run
   the following commands with `sudo` without entering a password:
 
     ```
-    mount -t webdavfs -o allow_other https://webdav.dandiarchive.org /tmp/dandisets-fuse
-    umount /tmp/dandisets-fuse
+    mount -t webdavfs -o allow_other https://webdav.dandiarchive.org /mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse
+    umount /mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse
     ```
 
   This can be done by adding the following lines to `/etc/sudoers`, where
   `username` is replaced by the name of the user account:
 
     ```
-    username ALL=(ALL:ALL) NOPASSWD: /usr/bin/mount -t webdavfs -o allow_other https\://webdav.dandiarchive.org /tmp/dandisets-fuse
-    username ALL=(ALL:ALL) NOPASSWD: /usr/bin/umount /tmp/dandisets-fuse
+    username ALL=(ALL:ALL) NOPASSWD: /usr/bin/mount -t webdavfs -o allow_other https\://webdav.dandiarchive.org /mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse
+    username ALL=(ALL:ALL) NOPASSWD: /usr/bin/umount /mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse
     ```
 -->
