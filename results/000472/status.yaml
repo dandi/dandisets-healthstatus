@@ -7,7 +7,11 @@ nassets: 20
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-2021-12-03-w00-NP1/sub-2021-12-03-w00-NP1_ses-20211203_ophys.nwb
+  - path: sub-2021-12-03-w00-NP1/sub-2021-12-03-w00-NP1_ses-20211203_ophys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-2022-01-22-w04-NP1/sub-2022-01-22-w04-NP1_ses-20220122_ophys.nwb
     versions:
       hdmf: 3.14.1
@@ -58,7 +62,11 @@ tests:
 - assets_nok: []
   assets_ok: []
   assets_timeout:
-  - sub-2021-12-03-w00-NP1/sub-2021-12-03-w00-NP1_ses-20211203_ophys.nwb
+  - path: sub-2021-12-03-w00-NP1/sub-2021-12-03-w00-NP1_ses-20211203_ophys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-2022-01-22-w04-NP1/sub-2022-01-22-w04-NP1_ses-20220122_ophys.nwb
     versions:
       hdmf: 3.14.1

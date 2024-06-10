@@ -21,7 +21,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - sub-134/sub-134_ses-20220322T002800_ophys.nwb
-  - sub-134/sub-134_ses-20220322T033600_ophys.nwb
+  - path: sub-134/sub-134_ses-20220322T033600_ophys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-134/sub-134_ses-20220322T104100_ophys.nwb
   - sub-134/sub-134_ses-20220322T110600_ophys.nwb
   assets_timeout: []
@@ -43,7 +47,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - sub-134/sub-134_ses-20220322T002800_ophys.nwb
-  - sub-134/sub-134_ses-20220322T033600_ophys.nwb
+  - path: sub-134/sub-134_ses-20220322T033600_ophys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-134/sub-134_ses-20220322T110600_ophys.nwb
   assets_timeout: []
   name: matnwb_nwbRead

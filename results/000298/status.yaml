@@ -4,9 +4,19 @@ last_run: '2024-02-07T03:06:32.892681-05:00'
 last_run_duration: 0.058837
 last_run_ended: '2024-02-07T03:06:32.951518-05:00'
 nassets: 0
-tests: []
+tests:
+- assets_nok: []
+  assets_ok:
+  - sub-Rat203/sub-Rat203_ecephys.nwb
+  assets_timeout: []
+  name: pynwb_open_load_ns
+- assets_nok:
+  - sub-Rat203/sub-Rat203_ecephys.nwb
+  assets_ok: []
+  assets_timeout: []
+  name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.11.0
+  hdmf: 3.14.1
   matnwb: v2.6.0.2
-  pynwb: 2.5.0
+  pynwb: 2.8.0

@@ -7,7 +7,11 @@ nassets: 5
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-P1/sub-P1_ses-20200101T021616.nwb
+  - path: sub-P1/sub-P1_ses-20200101T021616.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-P2/sub-P2_ses-20200102T002921.nwb
     versions:
       hdmf: 3.14.1
@@ -23,7 +27,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-P1/sub-P1_ses-20200101T021616.nwb
+  - path: sub-P1/sub-P1_ses-20200101T021616.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-P2/sub-P2_ses-20200102T002921.nwb
     versions:
       hdmf: 3.14.1
