@@ -1,26 +1,59 @@
 from __future__ import annotations
 from collections import Counter, defaultdict
+from csv import DictWriter
+from enum import Enum
 import logging
 from operator import attrgetter
 from pathlib import Path
 import re
-from signal import SIGINT
-import subprocess
 import sys
-from time import sleep
-from typing import Optional
+import textwrap
+from typing import Generic, Optional, TypeVar
 import anyio
 import click
-from ghreq import Client
 from packaging.version import Version
 from .checker import AssetReport, Dandiset, HealthStatus
-from .config import MATNWB_INSTALL_DIR
-from .core import Asset, DandisetStatus, Outcome, TestSummary, log
-from .tests import TESTS
-from .util import MatNWBInstaller, get_package_versions
+from .core import AssetPath, AssetTestResult, DandisetStatus, Outcome, TestSummary, log
+from .mounts import (
+    AssetInDandiset,
+    FuseMounter,
+    MountBenchmark,
+    MountType,
+    iter_mounters,
+)
+from .tests import TESTS, TIMED_TESTS
+
+E = TypeVar("E", bound="Enum")
 
 
-@click.group()
+class EnumSet(click.ParamType, Generic[E]):
+    # The enum's values must be strs.
+    name = "enumset"
+
+    def __init__(self, klass: type[E]) -> None:
+        self.klass = klass
+
+    def convert(
+        self,
+        value: str | set[E],
+        param: click.Parameter | None,
+        ctx: click.Context | None,
+    ) -> set[E]:
+        if not isinstance(value, str):
+            return value
+        selected = set()
+        for v in re.split(r"\s*,\s*", value):
+            try:
+                selected.add(self.klass(v))
+            except ValueError:
+                self.fail(f"{value!r}: invalid option {v!r}", param, ctx)
+        return selected
+
+    def get_metavar(self, _param: click.Parameter) -> str:
+        return "[" + ",".join(v.value for v in self.klass) + "]"
+
+
+@click.group(context_settings={"help_option_names": ["-h", "--help"]})
 def main() -> None:
     logging.basicConfig(
         format="%(asctime)s [%(levelname)-8s] %(message)s",
@@ -33,7 +66,8 @@ def main() -> None:
 @click.option(
     "-d",
     "--dataset-path",
-    type=click.Path(file_okay=False, exists=True, path_type=anyio.Path),
+    type=click.Path(file_okay=False, path_type=Path),
+    help="Directory containing a clone of dandi/dandisets",
     required=True,
 )
 @click.option(
@@ -47,61 +81,55 @@ def main() -> None:
 @click.option(
     "-m",
     "--mount-point",
-    type=click.Path(file_okay=False, exists=True, path_type=anyio.Path),
+    type=click.Path(file_okay=False, exists=True, path_type=Path),
+    help="Directory at which to mount Dandisets",
     required=True,
 )
 @click.option(
     "--mode",
     type=click.Choice(["all", "random-asset", "random-outdated-asset-first"]),
+    help=(
+        "Strategy for selecting which assets to test on.  'all' - Test all"
+        " assets. 'random-asset' - Test one randomly-selected NWB per Dandiset."
+        "  'random-outdated-asset-first' - Test one randomly-selected NWB per"
+        " Dandiset that has not been tested with the latest package versions,"
+        " falling back to 'random-asset' if there are no such assets"
+    ),
     default="all",
     show_default=True,
 )
 @click.argument("dandisets", nargs=-1)
 def check(
-    dataset_path: anyio.Path,
-    mount_point: anyio.Path,
+    dataset_path: Path,
+    mount_point: Path,
     dandiset_jobs: int,
     dandisets: tuple[str, ...],
     mode: str,
 ) -> None:
-    update_dandisets(Path(dataset_path))
-    installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
-    installer.install(update=True)
+    """Run health status tests on Dandiset assets and record the results"""
+    pkg_versions = {}
+    for t in TESTS:
+        pkg_versions.update(t.prepare())
     hs = HealthStatus(
         backup_root=mount_point,
         reports_root=Path.cwd(),
         dandisets=dandisets,
         dandiset_jobs=dandiset_jobs,
+        versions=pkg_versions,
     )
-    hs.versions["matnwb"] = installer.get_version()
-    with open("fuse.log", "wb") as fp:
-        with subprocess.Popen(
-            [
-                "datalad",
-                "fusefs",
-                "-d",
-                str(dataset_path),
-                "--foreground",
-                "--mode-transparent",
-                str(mount_point),
-            ],
-            stdout=fp,
-            stderr=fp,
-        ) as p:
-            sleep(3)
-            try:
-                if mode == "all":
-                    anyio.run(hs.run_all)
-                elif mode in ("random-asset", "random-outdated-asset-first"):
-                    anyio.run(hs.run_random_assets, mode)
-                else:
-                    raise AssertionError(f"Unexpected mode: {mode!r}")
-            finally:
-                p.send_signal(SIGINT)
+    mnt = FuseMounter(dataset_path=dataset_path, mount_path=mount_point, update=True)
+    with mnt.mount():
+        if mode == "all":
+            anyio.run(hs.run_all)
+        elif mode in ("random-asset", "random-outdated-asset-first"):
+            anyio.run(hs.run_random_assets, mode)
+        else:
+            raise AssertionError(f"Unexpected mode: {mode!r}")
 
 
 @main.command()
 def report() -> None:
+    """Produce a README.md file summarizing `check` results"""
     dandiset_qtys: Counter[Outcome] = Counter()
     asset_qtys: Counter[Outcome] = Counter()
     # Mapping from package names to package versions to test outcomes to
@@ -165,51 +193,51 @@ def report() -> None:
         print(file=fp)
         print("# By Dandiset", file=fp)
         print("| Dandiset | " + " | ".join(TESTS.keys()) + " | Untested |", file=fp)
-        print("| --- | " + " | ".join("---" for _ in TESTS) + " | --- |", file=fp)
+        print(
+            "| --- | " + " | ".join("---" for _ in TESTS.keys()) + " | --- |", file=fp
+        )
         for s in sorted(all_statuses, key=attrgetter("dandiset")):
             print(s.as_row(), file=fp)
 
 
 @main.command()
-@click.option("--save-results", is_flag=True)
+@click.option(
+    "--save-results",
+    is_flag=True,
+    help="Record test results for Dandiset assets",
+)
 @click.argument("testname", type=click.Choice(list(TESTS.keys())))
 @click.argument(
     "files",
     nargs=-1,
-    type=click.Path(exists=True, dir_okay=False, path_type=anyio.Path),
+    type=click.Path(exists=True, dir_okay=False, path_type=Path),
 )
-def test_files(
-    testname: str, files: tuple[anyio.Path, ...], save_results: bool
-) -> None:
-    versions = get_package_versions()
-    installer = MatNWBInstaller(MATNWB_INSTALL_DIR)
-    if "matnwb" in testname.lower():
-        installer.install(update=True)
-    else:
-        installer.download(update=False)
-    versions["matnwb"] = installer.get_version()
-    testfunc = TESTS[testname]
+def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> None:
+    """Run a single health status test on some number of files"""
+    pkg_versions = {}
+    for t in TESTS:
+        pkg_versions.update(t.prepare(minimal=t.NAME != testname))
+    testfunc = TESTS.get(testname)
     ok = True
-    dandiset_cache: dict[Path, tuple[Dandiset, set[str]]] = {}
+    dandiset_cache: dict[Path, tuple[Dandiset, set[AssetPath]]] = {}
     for f in files:
         if save_results and (path := find_dandiset(Path(f))) is not None:
             try:
                 dandiset, asset_paths = dandiset_cache[path]
             except KeyError:
                 dandiset = Dandiset(
-                    path=anyio.Path(path), reports_root=Path.cwd(), versions=versions
+                    path=path, reports_root=Path.cwd(), versions=pkg_versions
                 )
                 asset_paths = anyio.run(dandiset.get_asset_paths)
                 dandiset_cache[path] = (dandiset, asset_paths)
             report = AssetReport(dandiset=dandiset)
-            ap = Path(f).relative_to(path).as_posix()
+            ap = AssetPath(Path(f).relative_to(path).as_posix())
         else:
             report = None
             asset_paths = None
-            ap = str(f)
-        asset = Asset(filepath=f, asset_path=ap)
+            ap = None
         log.info("Testing %s ...", f)
-        r = anyio.run(testfunc, asset)
+        r = anyio.run(testfunc.run, f)
         if r.output is not None:
             print(r.output, end="")
         log.info("%s: %s", f, r.outcome.name)
@@ -218,9 +246,146 @@ def test_files(
         if save_results:
             assert report is not None
             assert asset_paths is not None
-            report.register_test_result(r)
+            assert ap is not None
+            atr = AssetTestResult(
+                testname=testname,
+                asset_path=AssetPath(ap),
+                result=r,
+            )
+            report.register_test_result(atr)
             report.dump(asset_paths)
     sys.exit(0 if ok else 1)
+
+
+@main.command()
+@click.option(
+    "-d",
+    "--dataset-path",
+    type=click.Path(file_okay=False, path_type=Path),
+    help=(
+        "Directory containing a clone of dandi/dandisets.  Required when using"
+        " the fusefs mount."
+    ),
+)
+@click.option(
+    "-m",
+    "--mount-point",
+    type=click.Path(file_okay=False, exists=True, path_type=Path),
+    help="Directory at which to mount Dandisets",
+    required=True,
+)
+@click.option(
+    "-M",
+    "--mounts",
+    type=EnumSet(MountType),
+    help="Comma-separated list of mount types to test against",
+    default=set(MountType),
+    show_default="all",
+)
+@click.option(
+    "--update-dataset/--no-update-dataset",
+    help="Whether to update the dandi/dandisets clone before fuse-mounting",
+    default=True,
+    show_default=True,
+)
+@click.argument(
+    "assets",
+    nargs=-1,
+    type=AssetInDandiset.parse,
+    metavar="DANDISET_ID/ASSET_PATH ...",
+)
+def time_mounts(
+    assets: tuple[AssetInDandiset, ...],
+    dataset_path: Path | None,
+    mount_point: Path,
+    mounts: set[MountType],
+    update_dataset: bool,
+) -> None:
+    """Run timed tests on Dandiset assets using various mounting technologies"""
+    for t in TIMED_TESTS:
+        t.prepare()
+    results = []
+    for mounter in iter_mounters(
+        types=mounts,
+        dataset_path=dataset_path,
+        mount_path=mount_point,
+        update_dataset=update_dataset,
+    ):
+        log.info("Testing with mount type: %s", mounter.type.value)
+        with mounter.mount():
+            for a in assets:
+                log.info(
+                    "Testing Dandiset %s, asset %s ...", a.dandiset_id, a.asset_path
+                )
+                fpath = mounter.resolve(a)
+                for tfunc in TIMED_TESTS:
+                    log.info("Running test %r", tfunc.NAME)
+                    r = anyio.run(tfunc.run, fpath)
+                    if r.outcome is Outcome.PASS:
+                        assert r.elapsed is not None
+                        log.info("Test passed in %f seconds", r.elapsed)
+                        results.append(
+                            MountBenchmark(
+                                mount_type=mounter.type,
+                                asset=a,
+                                testname=tfunc.NAME,
+                                elapsed=r.elapsed,
+                            )
+                        )
+                    elif r.outcome is Outcome.FAIL:
+                        assert r.output is not None
+                        log.error(
+                            "Test failed; output:\n\n%s\n",
+                            textwrap.indent(r.output, " " * 4),
+                        )
+                        sys.exit(1)
+                    else:
+                        assert r.outcome is Outcome.TIMEOUT
+                        log.error("Test timed out")
+                        sys.exit(1)
+    csvout = DictWriter(
+        sys.stdout, ["mount_type", "dandiset", "asset", "test", "time_sec"]
+    )
+    csvout.writeheader()
+    for res in results:
+        csvout.writerow(
+            {
+                "mount_type": res.mount_type.value,
+                "dandiset": res.asset.dandiset_id,
+                "asset": res.asset.asset_path,
+                "test": res.testname,
+                "time_sec": res.elapsed,
+            }
+        )
+
+
+@main.command()
+@click.argument("testname", type=click.Choice(list(TIMED_TESTS.keys())))
+@click.argument(
+    "files",
+    nargs=-1,
+    type=click.Path(exists=True, dir_okay=False, path_type=Path),
+)
+def time_files(testname: str, files: tuple[Path, ...]) -> None:
+    """Run a single timed test on some number of files"""
+    testfunc = TIMED_TESTS.get(testname)
+    testfunc.prepare()
+    for f in files:
+        log.info("Testing %s ...", f)
+        r = anyio.run(testfunc.run, f)
+        if r.outcome is Outcome.PASS:
+            assert r.elapsed is not None
+            log.info("Test passed in %f seconds", r.elapsed)
+        elif r.outcome is Outcome.FAIL:
+            assert r.output is not None
+            log.error(
+                "Test failed; output:\n\n%s\n", textwrap.indent(r.output, " " * 4)
+            )
+            sys.exit(1)
+        else:
+            assert r.outcome is Outcome.TIMEOUT
+            log.error("Test timed out")
+            sys.exit(1)
 
 
 def find_dandiset(asset: Path) -> Optional[Path]:
@@ -230,30 +395,6 @@ def find_dandiset(asset: Path) -> Optional[Path]:
         if (p / "dandiset.yaml").exists():
             return p
     return None
-
-
-def update_dandisets(dataset_path: Path) -> None:
-    # Importing this at the top of the file leads to some weird import error
-    # when running tests:
-    from datalad.api import Dataset
-
-    log.info("Updating Dandisets dataset ...")
-    # Fetch just the public repositories from the dandisets org, and then get
-    # or update just those subdatasets rather than trying to get all
-    # subdatasets and failing on private/embargoed ones
-    datasets = set()
-    with Client() as client:
-        for repo in client.paginate("/users/dandisets/repos"):
-            name = repo["name"]
-            if re.fullmatch("[0-9]{6}", name):
-                datasets.add(name)
-    ds = Dataset(dataset_path)
-    ds.update(follow="parentds", how="ff-only", recursive=True, recursion_limit=1)
-    for sub in ds.subdatasets(state="present"):
-        name = Path(sub["path"]).relative_to(dataset_path).as_posix()
-        datasets.discard(name)
-    if datasets:
-        ds.get(path=list(datasets), jobs=5, get_data=False)
 
 
 if __name__ == "__main__":

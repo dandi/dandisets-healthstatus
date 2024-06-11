@@ -1,15 +1,9 @@
 from __future__ import annotations
 from dataclasses import dataclass
-from importlib.metadata import version
 from pathlib import Path
 import subprocess
 import requests
-from .config import PACKAGES_TO_VERSION
 from .core import log
-
-
-def get_package_versions() -> dict[str, str]:
-    return {pkg: version(pkg) for pkg in PACKAGES_TO_VERSION}
 
 
 @dataclass
@@ -64,7 +58,7 @@ class MatNWBInstaller:
 
     def install(self, update: bool = True) -> None:
         if self.download(update):
-            log.info("Installing NeurodataWithoutBorders/matnwb")
+            log.info("Cleaning NeurodataWithoutBorders/matnwb")
             subprocess.run(
                 ["git", "clean", "-dxf"], cwd=str(self.install_dir), check=True
             )
