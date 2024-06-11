@@ -12,7 +12,11 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-JDS-NFN-JS17/sub-JDS-NFN-JS17_behavior+ecephys.nwb
+  - path: sub-JDS-NFN-JS17/sub-JDS-NFN-JS17_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-JDS-NFN-JS21/sub-JDS-NFN-JS21_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.1
@@ -32,6 +36,11 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
+  - path: sub-JDS-NFN-JS17/sub-JDS-NFN-JS17_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-JDS-NFN-JS34/sub-JDS-NFN-JS34_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.1
@@ -40,7 +49,6 @@ tests:
   - sub-JDS-NFN-ZT2/sub-JDS-NFN-ZT2_behavior+ecephys.nwb
   assets_ok: []
   assets_timeout:
-  - sub-JDS-NFN-JS17/sub-JDS-NFN-JS17_behavior+ecephys.nwb
   - path: sub-JDS-NFN-JS21/sub-JDS-NFN-JS21_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.1

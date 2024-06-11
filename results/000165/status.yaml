@@ -426,7 +426,11 @@ tests:
   - sub-Kes/sub-Kes_ses-Kes07-HomeCage_behavior+ecephys.nwb
   - sub-Ladybug/sub-Ladybug_ses-Ladybug01_HomeCage_behavior+ecephys.nwb
   - sub-Ladybug/sub-Ladybug_ses-Ladybug02-HomeCage_behavior+ecephys.nwb
-  - sub-Ladybug/sub-Ladybug_ses-Ladybug03-HomeCage_behavior+ecephys.nwb
+  - path: sub-Ladybug/sub-Ladybug_ses-Ladybug03-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-Ladybug/sub-Ladybug_ses-Ladybug04-HomeCage_behavior+ecephys.nwb
   - path: sub-Ladybug/sub-Ladybug_ses-Ladybug05-HomeCage_behavior+ecephys.nwb
     versions:
@@ -1274,7 +1278,6 @@ tests:
   - sub-Kes/sub-Kes_ses-Kes03_HomeCage_behavior+ecephys.nwb
   - sub-Kes/sub-Kes_ses-Kes04-HomeCage_behavior+ecephys.nwb
   - sub-Kes/sub-Kes_ses-Kes06-HomeCage_behavior+ecephys.nwb
-  - sub-Ladybug/sub-Ladybug_ses-Ladybug03-HomeCage_behavior+ecephys.nwb
   - sub-Ladybug/sub-Ladybug_ses-Ladybug04-HomeCage_behavior+ecephys.nwb
   - path: sub-Ladybug/sub-Ladybug_ses-Ladybug05-HomeCage_behavior+ecephys.nwb
     versions:
@@ -1698,6 +1701,11 @@ tests:
   - sub-Kes/sub-Kes_ses-Kes07-HomeCage_behavior+ecephys.nwb
   - sub-Ladybug/sub-Ladybug_ses-Ladybug01_HomeCage_behavior+ecephys.nwb
   - sub-Ladybug/sub-Ladybug_ses-Ladybug02-HomeCage_behavior+ecephys.nwb
+  - path: sub-Ladybug/sub-Ladybug_ses-Ladybug03-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-Ladybug/sub-Ladybug_ses-Ladybug07-HomeCage_behavior+ecephys.nwb
   - sub-Mace/sub-Mace_ses-Mace02_HomeCage_behavior+ecephys.nwb
   - sub-Mace/sub-Mace_ses-Mace03-HomeCage_behavior+ecephys.nwb

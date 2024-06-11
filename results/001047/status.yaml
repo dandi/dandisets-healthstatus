@@ -6,10 +6,12 @@ last_run_ended: null
 nassets: null
 tests:
 - assets_nok: []
-  assets_ok: []
+  assets_ok:
+  - sub-013Control-x2/sub-013Control-x2_obj-m9iu82_image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-013Control-x2/sub-013Control-x2_obj-m9iu82_image.nwb
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
