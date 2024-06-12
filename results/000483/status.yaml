@@ -332,7 +332,11 @@ tests:
   - sub-SKKS095/sub-SKKS095_ses-20210217T112224_behavior+ophys.nwb
   - sub-SKKS097/sub-SKKS097_ses-20210217T114948_behavior+ophys.nwb
   - sub-SKKS097/sub-SKKS097_ses-20210217T120353_behavior+ophys.nwb
-  - sub-SKKS098/sub-SKKS098_ses-20210217T122711_behavior+ophys.nwb
+  - path: sub-SKKS098/sub-SKKS098_ses-20210217T122711_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - sub-SKKS098/sub-SKKS098_ses-20210217T124403_behavior+ophys.nwb
   - sub-SKKS100/sub-SKKS100_ses-20210216T163419_behavior+ophys.nwb
   - sub-SKKS100/sub-SKKS100_ses-20210216T165128_behavior+ophys.nwb
@@ -527,7 +531,6 @@ tests:
   - sub-SKKS094/sub-SKKS094_ses-20210304T100347_behavior+ophys.nwb
   - sub-SKKS095/sub-SKKS095_ses-20210217T110829_behavior+ophys.nwb
   - sub-SKKS097/sub-SKKS097_ses-20210217T120353_behavior+ophys.nwb
-  - sub-SKKS098/sub-SKKS098_ses-20210217T122711_behavior+ophys.nwb
   - sub-SKKS100/sub-SKKS100_ses-20210216T163419_behavior+ophys.nwb
   - sub-SKKS116/sub-SKKS116_ses-20210526T174455_behavior+ophys.nwb
   - sub-SKKS125/sub-SKKS125_ses-20220721T091136_behavior+ophys.nwb
@@ -775,6 +778,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-SKKS098/sub-SKKS098_ses-20210217T122711_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-SKKS100/sub-SKKS100_ses-20210311T104422_behavior+ophys.nwb
     versions:
       hdmf: 3.14.1

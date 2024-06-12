@@ -69,7 +69,7 @@ tests:
       pynwb: 2.8.0
   - path: sub-008/sub-008_ses-20230311T080000_ophys.nwb
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-009/sub-009_ses-20230311T120000_ophys.nwb
@@ -110,11 +110,6 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-008/sub-008_ses-20230311T080000_ophys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   assets_ok:
   - path: sub-000/sub-000_ophys.nwb
     versions:
@@ -144,6 +139,11 @@ tests:
   - path: sub-006/sub-006_ses-20230306T110000_ophys.nwb
     versions:
       hdmf: 3.14.0
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
+  - path: sub-008/sub-008_ses-20230311T080000_ophys.nwb
+    versions:
+      hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-009/sub-009_ses-20230311T120000_ophys.nwb

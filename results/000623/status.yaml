@@ -92,9 +92,9 @@ tests:
       pynwb: 2.7.0
   - path: sub-CS55/sub-CS55_ses-P55CSR1_behavior+ecephys.nwb
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.1
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.0
   - path: sub-CS55/sub-CS55_ses-P55CSR2_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.0
@@ -157,6 +157,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - sub-CS54/sub-CS54_ses-P54CSR2_behavior+ecephys.nwb
+  - path: sub-CS55/sub-CS55_ses-P55CSR1_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-CS56/sub-CS56_ses-P56CSR2_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.0
@@ -233,11 +238,6 @@ tests:
   - path: sub-CS54/sub-CS54_ses-P54CSR1_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
-  - path: sub-CS55/sub-CS55_ses-P55CSR1_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-CS55/sub-CS55_ses-P55CSR2_behavior+ecephys.nwb

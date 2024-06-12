@@ -9,7 +9,11 @@ tests:
   assets_ok:
   - sub-Fish03-GCaMP-vlgut-MBd-6dpf-RandomWave/sub-Fish03-GCaMP-vlgut-MBd-6dpf-RandomWave_ses-20210819T094801_behavior+ophys.nwb
   - sub-Fish06-GCaMP-vlgut-MBv-7dpf-RandomWave/sub-Fish06-GCaMP-vlgut-MBv-7dpf-RandomWave_ses-20210820T173047_behavior+ophys.nwb
-  - sub-Fish08-GCaMP-vlgut-MBd-5dpf-RandomWave/sub-Fish08-GCaMP-vlgut-MBd-5dpf-RandomWave_ses-20210825T171649_behavior+ophys.nwb
+  - path: sub-Fish08-GCaMP-vlgut-MBd-5dpf-RandomWave/sub-Fish08-GCaMP-vlgut-MBd-5dpf-RandomWave_ses-20210825T171649_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-Fish10-GCaMP-vlgut-MBv-6dpf-RandomWave/sub-Fish10-GCaMP-vlgut-MBv-6dpf-RandomWave_ses-20210826T175647_behavior+ophys.nwb
     versions:
       hdmf: 3.14.1
@@ -39,7 +43,11 @@ tests:
   assets_timeout:
   - sub-Fish03-GCaMP-vlgut-MBd-6dpf-RandomWave/sub-Fish03-GCaMP-vlgut-MBd-6dpf-RandomWave_ses-20210819T094801_behavior+ophys.nwb
   - sub-Fish06-GCaMP-vlgut-MBv-7dpf-RandomWave/sub-Fish06-GCaMP-vlgut-MBv-7dpf-RandomWave_ses-20210820T173047_behavior+ophys.nwb
-  - sub-Fish08-GCaMP-vlgut-MBd-5dpf-RandomWave/sub-Fish08-GCaMP-vlgut-MBd-5dpf-RandomWave_ses-20210825T171649_behavior+ophys.nwb
+  - path: sub-Fish08-GCaMP-vlgut-MBd-5dpf-RandomWave/sub-Fish08-GCaMP-vlgut-MBd-5dpf-RandomWave_ses-20210825T171649_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.1
+      matnwb: v2.6.0.2
+      pynwb: 2.8.0
   - path: sub-Fish10-GCaMP-vlgut-MBv-6dpf-RandomWave/sub-Fish10-GCaMP-vlgut-MBv-6dpf-RandomWave_ses-20210826T175647_behavior+ophys.nwb
     versions:
       hdmf: 3.14.1
