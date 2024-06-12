@@ -2,7 +2,6 @@
 set -ex
 
 PYTHON="$HOME"/miniconda3/bin/python
-DANDISETS_PATH=/mnt/backup/dandi/dandisets-healthstatus/dandisets
 MOUNT_PATH=/mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse
 
 cd "$(dirname "$0")"/..
@@ -18,7 +17,7 @@ cd "$(dirname "$0")"/..
 pip install ./code
 #pip install 'git+https://github.com/fsspec/filesystem_spec'
 #pip install 'git+https://github.com/jwodder/filesystem_spec@rlock-cache'
-dandisets-healthstatus check -d "$DANDISETS_PATH" -m "$MOUNT_PATH" -J 10 "$@"
+dandisets-healthstatus check -m "$MOUNT_PATH" -J 10 "$@"
 dandisets-healthstatus report
 
 # TODO: Uncomment this block when setting up the cronjob:

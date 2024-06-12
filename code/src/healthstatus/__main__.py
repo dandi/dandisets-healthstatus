@@ -16,7 +16,7 @@ from .checker import AssetReport, Dandiset, HealthStatus
 from .core import AssetPath, AssetTestResult, DandisetStatus, Outcome, TestSummary, log
 from .mounts import (
     AssetInDandiset,
-    FuseMounter,
+    DavFS2Mounter,
     MountBenchmark,
     MountType,
     iter_mounters,
@@ -64,13 +64,6 @@ def main() -> None:
 
 @main.command()
 @click.option(
-    "-d",
-    "--dataset-path",
-    type=click.Path(file_okay=False, path_type=Path),
-    help="Directory containing a clone of dandi/dandisets",
-    required=True,
-)
-@click.option(
     "-J",
     "--dandiset-jobs",
     type=int,
@@ -100,7 +93,6 @@ def main() -> None:
 )
 @click.argument("dandisets", nargs=-1)
 def check(
-    dataset_path: Path,
     mount_point: Path,
     dandiset_jobs: int,
     dandisets: tuple[str, ...],
@@ -117,7 +109,7 @@ def check(
         dandiset_jobs=dandiset_jobs,
         versions=pkg_versions,
     )
-    mnt = FuseMounter(dataset_path=dataset_path, mount_path=mount_point, update=True)
+    mnt = DavFS2Mounter(mount_path=mount_point)
     with mnt.mount():
         if mode == "all":
             anyio.run(hs.run_all)

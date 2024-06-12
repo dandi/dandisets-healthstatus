@@ -10,11 +10,13 @@ import re
 from signal import SIGINT
 import subprocess
 from time import sleep
-from typing import Any
+from typing import TYPE_CHECKING
 import click
-from datalad.api import Dataset
 from ghreq import Client
 from .core import AssetPath, log
+
+if TYPE_CHECKING:
+    from datalad.api import Dataset
 
 DANDIDAV_URL = "https://webdav.dandiarchive.org"
 
@@ -77,6 +79,8 @@ class FuseMounter(Mounter):
 
     @contextmanager
     def mount(self) -> Iterator[None]:
+        from datalad.api import Dataset
+
         if not self.dataset_path.exists():
             log.info("Cloning dandi/dandisets to %s ...", self.dataset_path)
             self.dataset_path.mkdir(parents=True, exist_ok=True)
@@ -91,7 +95,12 @@ class FuseMounter(Mounter):
             )
             get_dandisets(Dataset(self.dataset_path))
         elif self.update:
-            update_dandisets(self.dataset_path)
+            log.info("Updating Dandisets dataset ...")
+            ds = Dataset(self.dataset_path)
+            ds.update(
+                follow="parentds", how="ff-only", recursive=True, recursion_limit=1
+            )
+            get_dandisets(ds)
         self.mount_path.mkdir(parents=True, exist_ok=True)
         with (self.logdir / "fuse.log").open("wb") as fp:
             log.debug("Starting `datalad fusefs` process ...")
@@ -218,14 +227,7 @@ def iter_mounters(
         yield DavFS2Mounter(mount_path=mount_path)
 
 
-def update_dandisets(dataset_path: Path) -> None:
-    log.info("Updating Dandisets dataset ...")
-    ds = Dataset(dataset_path)
-    ds.update(follow="parentds", how="ff-only", recursive=True, recursion_limit=1)
-    get_dandisets(ds)
-
-
-def get_dandisets(ds: Any) -> None:
+def get_dandisets(ds: Dataset) -> None:
     # Fetch just the public repositories from the dandisets org, and then get
     # or update just those subdatasets rather than trying to get all
     # subdatasets and failing on private/embargoed ones
