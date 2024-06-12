@@ -108,12 +108,14 @@ class HealthStatus:
     async def aiterdandisets(self) -> AsyncGenerator[Dandiset, None]:
         if self.dandisets:
             for did in self.dandisets:
-                yield await self.get_dandiset(self.backup_root / did)
+                yield await self.get_dandiset(
+                    self.backup_root / "dandisets" / did / "draft"
+                )
         else:
-            async for p in anyio.Path(self.backup_root).iterdir():
+            async for p in anyio.Path(self.backup_root / "dandisets").iterdir():
                 if re.fullmatch(r"\d{6,}", p.name) and await p.is_dir():
                     log.info("Found Dandiset %s", p.name)
-                    yield await self.get_dandiset(Path(p))
+                    yield await self.get_dandiset(Path(p, "draft"))
 
     async def get_dandiset(self, path: Path) -> Dandiset:
         return Dandiset(
