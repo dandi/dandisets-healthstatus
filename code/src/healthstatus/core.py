@@ -152,7 +152,7 @@ class UntestedAsset(BaseModel):
 
 class DandisetStatus(BaseModel):
     dandiset: str
-    dandiset_version: str
+    draft_modified: Optional[datetime] = None
     last_run: Optional[datetime] = None
     last_run_ended: Optional[datetime] = None
     last_run_duration: Optional[float] = None

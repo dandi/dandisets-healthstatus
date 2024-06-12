@@ -2,12 +2,11 @@ from __future__ import annotations
 from collections import defaultdict, deque
 from collections.abc import AsyncGenerator, AsyncIterator
 from dataclasses import dataclass, field
-from datetime import datetime
+from datetime import datetime, timezone
 from os.path import getsize
 from pathlib import Path
 from random import choice
 import re
-import subprocess
 import textwrap
 from typing import Optional
 import anyio
@@ -126,19 +125,13 @@ class HealthStatus:
 @dataclass
 class Dandiset:
     path: Path
-    commit: str = field(init=False)
+    draft_mtime: datetime = field(init=False)
     reports_root: Path
     versions: dict[str, str]
 
     def __post_init__(self) -> None:
-        r = subprocess.run(
-            ["git", "show", "-s", "--format=%H"],
-            cwd=str(self.path),
-            check=True,
-            stdout=subprocess.PIPE,
-            text=True,
-        )
-        self.commit = r.stdout.strip()
+        mtime = self.path.stat().st_mtime
+        self.draft_mtime = datetime.fromtimestamp(mtime, timezone.utc)
 
     @property
     def identifier(self) -> str:
@@ -287,7 +280,7 @@ class DandisetReport:
         assert self.ended is not None
         return DandisetStatus(
             dandiset=self.dandiset.identifier,
-            dandiset_version=self.dandiset.commit,
+            draft_modified=self.dandiset.draft_mtime,
             last_run=self.started,
             last_run_ended=self.ended,
             last_run_duration=(self.ended - self.started).total_seconds(),
@@ -359,7 +352,7 @@ class AssetReport:
         except FileNotFoundError:
             status = DandisetStatus(
                 dandiset=self.dandiset.identifier,
-                dandiset_version=self.dandiset.commit,
+                draft_modified=self.dandiset.draft_mtime,
                 tests=[TestStatus(name=testname) for testname in TESTS.keys()],
                 versions=self.dandiset.versions,
             )
