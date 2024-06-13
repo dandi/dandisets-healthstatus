@@ -218,7 +218,10 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
                 dandiset, asset_paths = dandiset_cache[path]
             except KeyError:
                 dandiset = Dandiset(
-                    path=path, reports_root=Path.cwd(), versions=pkg_versions
+                    identifier=path.name,
+                    path=path,
+                    reports_root=Path.cwd(),
+                    versions=pkg_versions,
                 )
                 asset_paths = anyio.run(dandiset.get_asset_paths)
                 dandiset_cache[path] = (dandiset, asset_paths)
