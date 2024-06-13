@@ -108,22 +108,26 @@ class HealthStatus:
         if self.dandisets:
             for did in self.dandisets:
                 yield await self.get_dandiset(
-                    self.backup_root / "dandisets" / did / "draft"
+                    did, self.backup_root / "dandisets" / did / "draft"
                 )
         else:
             async for p in anyio.Path(self.backup_root / "dandisets").iterdir():
                 if re.fullmatch(r"\d{6,}", p.name) and await p.is_dir():
                     log.info("Found Dandiset %s", p.name)
-                    yield await self.get_dandiset(Path(p, "draft"))
+                    yield await self.get_dandiset(p.name, Path(p, "draft"))
 
-    async def get_dandiset(self, path: Path) -> Dandiset:
+    async def get_dandiset(self, identifier: str, path: Path) -> Dandiset:
         return Dandiset(
-            path=path, reports_root=self.reports_root, versions=self.versions
+            identifier=identifier,
+            path=path,
+            reports_root=self.reports_root,
+            versions=self.versions,
         )
 
 
 @dataclass
 class Dandiset:
+    identifier: str
     path: Path
     draft_mtime: datetime = field(init=False)
     reports_root: Path
@@ -132,10 +136,6 @@ class Dandiset:
     def __post_init__(self) -> None:
         mtime = self.path.stat().st_mtime
         self.draft_mtime = datetime.fromtimestamp(mtime, timezone.utc)
-
-    @property
-    def identifier(self) -> str:
-        return self.path.name
 
     @property
     def reportdir(self) -> Path:
