@@ -103,7 +103,7 @@ def check(
     for t in TESTS:
         pkg_versions.update(t.prepare())
     hs = HealthStatus(
-        backup_root=mount_point,
+        mount_point=mount_point,
         reports_root=Path.cwd(),
         dandisets=dandisets,
         dandiset_jobs=dandiset_jobs,
@@ -211,11 +211,11 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
         pkg_versions.update(t.prepare(minimal=t.NAME != testname))
     testfunc = TESTS.get(testname)
     ok = True
-    dandiset_cache: dict[Path, tuple[Dandiset, set[AssetPath]]] = {}
+    dandiset_cache: dict[Path, Dandiset] = {}
     for f in files:
         if save_results and (path := find_dandiset(Path(f))) is not None:
             try:
-                dandiset, asset_paths = dandiset_cache[path]
+                dandiset = dandiset_cache[path]
             except KeyError:
                 dandiset = Dandiset(
                     identifier=path.name,
@@ -223,13 +223,11 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
                     reports_root=Path.cwd(),
                     versions=pkg_versions,
                 )
-                asset_paths = anyio.run(dandiset.get_asset_paths)
-                dandiset_cache[path] = (dandiset, asset_paths)
+                dandiset_cache[path] = dandiset
             report = AssetReport(dandiset=dandiset)
             ap = AssetPath(Path(f).relative_to(path).as_posix())
         else:
             report = None
-            asset_paths = None
             ap = None
         log.info("Testing %s ...", f)
         r = anyio.run(testfunc.run, f)
@@ -240,7 +238,6 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
             ok = False
         if save_results:
             assert report is not None
-            assert asset_paths is not None
             assert ap is not None
             atr = AssetTestResult(
                 testname=testname,
@@ -248,7 +245,7 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
                 result=r,
             )
             report.register_test_result(atr)
-            report.dump(asset_paths)
+            report.dump()
     sys.exit(0 if ok else 1)
 
 

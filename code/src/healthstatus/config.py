@@ -1,5 +1,7 @@
 from pathlib import Path
 
+DANDI_API_URL = "https://api.dandiarchive.org/api"
+
 MATNWB_INSTALL_DIR = Path("matnwb")  # in current working directory
 
 PACKAGES_TO_VERSION = ["pynwb", "hdmf"]

@@ -1,17 +1,18 @@
 from __future__ import annotations
-from collections import defaultdict, deque
-from collections.abc import AsyncGenerator, AsyncIterator
+from collections import defaultdict
+from collections.abc import AsyncGenerator
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
+from datetime import datetime
 from os.path import getsize
 from pathlib import Path
 from random import choice
-import re
+import sys
 import textwrap
 from typing import Optional
 import anyio
+from .adandi import AsyncDandiClient, DandisetInfo
 from .aioutil import pool_tasks
-from .config import WORKERS_PER_DANDISET
+from .config import DANDI_API_URL, WORKERS_PER_DANDISET
 from .core import (
     Asset,
     AssetPath,
@@ -23,6 +24,11 @@ from .core import (
     log,
 )
 from .tests import TESTS, Test
+
+if sys.version_info[:2] >= (3, 10):
+    from contextlib import aclosing
+else:
+    from async_generator import aclosing
 
 
 @dataclass
@@ -77,11 +83,15 @@ class Untested:
 
 @dataclass
 class HealthStatus:
-    backup_root: Path
+    client: AsyncDandiClient = field(init=False)
+    mount_point: Path
     reports_root: Path
     dandisets: tuple[str, ...]
     dandiset_jobs: int
     versions: dict[str, str]
+
+    def __post_init__(self) -> None:
+        self.client = AsyncDandiClient(api_url=DANDI_API_URL)
 
     async def run_all(self) -> None:
         async def dowork(dandiset: Dandiset) -> None:
@@ -100,27 +110,26 @@ class HealthStatus:
         async def dowork(dandiset: Dandiset) -> None:
             report = await tester(dandiset)
             if report is not None:
-                report.dump(await dandiset.get_asset_paths())
+                report.dump()
 
         await pool_tasks(dowork, self.aiterdandisets(), self.dandiset_jobs)
 
     async def aiterdandisets(self) -> AsyncGenerator[Dandiset, None]:
         if self.dandisets:
             for did in self.dandisets:
-                yield await self.get_dandiset(
-                    did, self.backup_root / "dandisets" / did / "draft"
-                )
+                yield self.make_dandiset(await self.client.get_dandiset(did))
         else:
-            async for p in anyio.Path(self.backup_root / "dandisets").iterdir():
-                if re.fullmatch(r"\d{6,}", p.name) and await p.is_dir():
-                    log.info("Found Dandiset %s", p.name)
-                    yield await self.get_dandiset(p.name, Path(p, "draft"))
+            async with aclosing(self.client.get_dandisets()) as ait:
+                async for info in ait:
+                    log.info("Found Dandiset %s", info.identifier)
+                    yield self.make_dandiset(info)
 
-    async def get_dandiset(self, identifier: str, path: Path) -> Dandiset:
+    def make_dandiset(self, info: DandisetInfo) -> Dandiset:
         return Dandiset(
-            identifier=identifier,
-            path=path,
-            reports_root=self.reports_root,
+            identifier=info.identifier,
+            draft_modified=info.draft_modified,
+            path=self.mount_point / "dandisets" / info.identifier / "draft",
+            reportdir=self.reports_root / "results" / info.identifier,
             versions=self.versions,
         )
 
@@ -128,18 +137,10 @@ class HealthStatus:
 @dataclass
 class Dandiset:
     identifier: str
+    draft_modified: datetime
     path: Path
-    draft_mtime: datetime = field(init=False)
-    reports_root: Path
+    reportdir: Path
     versions: dict[str, str]
-
-    def __post_init__(self) -> None:
-        mtime = self.path.stat().st_mtime
-        self.draft_mtime = datetime.fromtimestamp(mtime, timezone.utc)
-
-    @property
-    def reportdir(self) -> Path:
-        return self.reports_root / "results" / self.identifier
 
     @property
     def statusfile(self) -> Path:
@@ -184,9 +185,12 @@ class Dandiset:
 
     async def test_random_asset(self) -> Optional[AssetReport]:
         log.info("Scanning Dandiset %s", self.identifier)
-        all_nwbs = [asset async for asset in self.aiterassets() if asset.is_nwb()]
+        all_assets = [asset async for asset in self.aiterassets()]
+        all_nwbs = [asset for asset in all_assets if asset.is_nwb()]
         if all_nwbs:
-            return await self.test_one_asset(choice(all_nwbs))
+            report = await self.test_one_asset(choice(all_nwbs))
+            report.set_asset_paths({asset.asset_path for asset in all_assets})
+            return report
         else:
             log.info("Dandiset %s: no NWB assets", self.identifier)
             return None
@@ -203,11 +207,15 @@ class Dandiset:
         if asset_paths:
             p = choice(list(asset_paths))
             asset = Asset(filepath=self.path / p, asset_path=p)
-            return await self.test_one_asset(asset)
+            report = await self.test_one_asset(asset)
+            report.set_asset_paths(
+                {asset.asset_path async for asset in self.aiterassets()}
+            )
+            return report
         else:
             log.info(
                 "Dandiset %s: no outdated assets in status.yaml; selecting from"
-                " all assets on disk",
+                " all assets in Archive",
                 self.identifier,
             )
             return await self.test_random_asset()
@@ -225,35 +233,15 @@ class Dandiset:
         await pool_tasks(dowork, aiterjobs(), WORKERS_PER_DANDISET)
         return report
 
-    async def aiterassets(self) -> AsyncIterator[Asset]:
-        def mkasset(filepath: anyio.Path) -> Asset:
-            return Asset(
-                filepath=Path(filepath),
-                asset_path=AssetPath(filepath.relative_to(self.path).as_posix()),
-            )
-
-        dirs = deque([anyio.Path(self.path)])
-        while dirs:
-            async for p in dirs.popleft().iterdir():
-                if p.name in (
-                    ".dandi",
-                    ".datalad",
-                    ".git",
-                    ".gitattributes",
-                    ".gitmodules",
-                ):
-                    continue
-                if await p.is_dir():
-                    if p.suffix in (".zarr", ".ngff"):
-                        yield mkasset(p)
-                    else:
-                        dirs.append(p)
-                elif p.name != "dandiset.yaml":
-                    yield mkasset(p)
-
-    async def get_asset_paths(self) -> set[AssetPath]:
-        log.info("Scanning Dandiset %s", self.identifier)
-        return {asset.asset_path async for asset in self.aiterassets()}
+    async def aiterassets(self) -> AsyncGenerator[Asset, None]:
+        async with aclosing(
+            self.healthstatus.client.get_asset_paths(self.identifier)
+        ) as ait:
+            async for path in ait:
+                yield Asset(
+                    filepath=self.path / path,
+                    asset_path=AssetPath(path),
+                )
 
 
 @dataclass
@@ -280,7 +268,7 @@ class DandisetReport:
         assert self.ended is not None
         return DandisetStatus(
             dandiset=self.dandiset.identifier,
-            draft_modified=self.dandiset.draft_mtime,
+            draft_modified=self.dandiset.draft_modified,
             last_run=self.started,
             last_run_ended=self.ended,
             last_run_duration=(self.ended - self.started).total_seconds(),
@@ -342,23 +330,28 @@ class AssetReport:
     dandiset: Dandiset
     results: list[AssetTestResult] = field(default_factory=list)
     started: datetime = field(default_factory=lambda: datetime.now().astimezone())
+    asset_paths: set[AssetPath] | None = None
 
     def register_test_result(self, r: AssetTestResult) -> None:
         self.results.append(r)
 
-    def dump(self, asset_paths: set[AssetPath]) -> None:
+    def set_asset_paths(self, paths: set[AssetPath]) -> None:
+        self.asset_paths = paths
+
+    def dump(self) -> None:
         try:
             status = self.dandiset.load_status()
         except FileNotFoundError:
             status = DandisetStatus(
                 dandiset=self.dandiset.identifier,
-                draft_modified=self.dandiset.draft_mtime,
+                draft_modified=self.dandiset.draft_modified,
                 tests=[TestStatus(name=testname) for testname in TESTS.keys()],
                 versions=self.dandiset.versions,
             )
         for r in self.results:
             status.update_asset(r, self.dandiset.versions)
-        status.retain(asset_paths, self.dandiset.versions)
+        if self.asset_paths is not None:
+            status.retain(self.asset_paths, self.dandiset.versions)
         self.dandiset.dump_status(status)
         for r in self.results:
             if r.outcome is Outcome.FAIL:
