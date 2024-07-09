@@ -106,7 +106,7 @@ class HealthStatus:
         if mode == "random-asset":
             tester = DandisetTester.test_random_asset
         elif mode == "random-outdated-asset-first":
-            tester = DandisetTester.test_random_outdated_asset_first
+            tester = DandisetTester.test_random_outdated_asset_first  # type: ignore[assignment]
         else:
             raise ValueError(f"Invalid random asset mode: {mode!r}")
 
@@ -180,10 +180,11 @@ class DandisetTester:
 
             await pool_tasks(dowork, aitercases(), WORKERS_PER_DANDISET)
 
-    async def test_random_asset(self) -> bool:
+    async def test_random_asset(self, all_assets: list[Asset] | None = None) -> bool:
         # Returns True if anything tested
         log.info("Scanning Dandiset %s", self.identifier)
-        all_assets = [asset async for asset in self.aiterassets()]
+        if all_assets is None:
+            all_assets = [asset async for asset in self.aiterassets()]
         all_nwbs = [asset for asset in all_assets if asset.is_nwb()]
         if all_nwbs:
             await self.test_one_asset(choice(all_nwbs))
@@ -195,13 +196,13 @@ class DandisetTester:
 
     async def test_random_outdated_asset_first(self) -> bool:
         # Returns True if anything tested
-        if outdated := self.reporter.outdated_assets():
+        all_assets = [asset async for asset in self.aiterassets()]
+        all_asset_paths = {asset.asset_path for asset in all_assets}
+        if outdated := (self.reporter.outdated_assets() & all_asset_paths):
             p = choice(list(outdated))
             asset = Asset(filepath=self.mount_path / p, asset_path=p)
             await self.test_one_asset(asset)
-            self.reporter.set_asset_paths(
-                {asset.asset_path async for asset in self.aiterassets()}
-            )
+            self.reporter.set_asset_paths(all_asset_paths)
             return True
         else:
             log.info(
@@ -209,7 +210,7 @@ class DandisetTester:
                 " all assets in Archive",
                 self.identifier,
             )
-            return await self.test_random_asset()
+            return await self.test_random_asset(all_assets)
 
     async def test_one_asset(self, asset: Asset) -> None:
         async def dowork(job: TestCase) -> None:
