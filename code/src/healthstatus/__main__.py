@@ -12,7 +12,7 @@ from typing import Generic, Optional, TypeVar
 import anyio
 import click
 from packaging.version import Version
-from .checker import AssetReport, Dandiset, HealthStatus
+from .checker import DandisetReporter, HealthStatus
 from .core import AssetPath, AssetTestResult, DandisetStatus, Outcome, TestSummary, log
 from .mounts import (
     AssetInDandiset,
@@ -211,23 +211,21 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
         pkg_versions.update(t.prepare(minimal=t.NAME != testname))
     testfunc = TESTS.get(testname)
     ok = True
-    dandiset_cache: dict[Path, Dandiset] = {}
+    dandiset_cache: dict[Path, DandisetReporter] = {}
     for f in files:
         if save_results and (path := find_dandiset(Path(f))) is not None:
             try:
-                dandiset = dandiset_cache[path]
+                reporter = dandiset_cache[path]
             except KeyError:
-                dandiset = Dandiset(
+                reporter = DandisetReporter(
                     identifier=path.name,
-                    path=path,
-                    reports_root=Path.cwd(),
+                    reportdir=Path("results", path.name),
                     versions=pkg_versions,
                 )
-                dandiset_cache[path] = dandiset
-            report = AssetReport(dandiset=dandiset)
+                dandiset_cache[path] = reporter
             ap = AssetPath(Path(f).relative_to(path).as_posix())
         else:
-            report = None
+            reporter = None
             ap = None
         log.info("Testing %s ...", f)
         r = anyio.run(testfunc.run, f)
@@ -237,15 +235,15 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
         if r.outcome is not Outcome.PASS:
             ok = False
         if save_results:
-            assert report is not None
+            assert reporter is not None
             assert ap is not None
             atr = AssetTestResult(
                 testname=testname,
                 asset_path=AssetPath(ap),
                 result=r,
             )
-            report.register_test_result(atr)
-            report.dump()
+            reporter.register_test_result(atr)
+            reporter.dump()
     sys.exit(0 if ok else 1)
 
 
