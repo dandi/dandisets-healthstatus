@@ -234,7 +234,7 @@ class DandisetTester:
 @dataclass
 class DandisetReporter:
     identifier: str
-    draft_modified: datetime
+    draft_modified: datetime | None
     reportdir: Path
     versions: dict[str, str]
     status: DandisetStatus = field(init=False)

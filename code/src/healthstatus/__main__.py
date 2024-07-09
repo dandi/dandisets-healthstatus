@@ -219,6 +219,7 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
             except KeyError:
                 reporter = DandisetReporter(
                     identifier=path.name,
+                    draft_modified=None,
                     reportdir=Path("results", path.name),
                     versions=pkg_versions,
                 )
