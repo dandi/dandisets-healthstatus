@@ -134,7 +134,7 @@ def report() -> None:
     assets_seen = 0
     for p in Path("results").iterdir():
         if re.fullmatch(r"\d{6,}", p.name) and p.is_dir():
-            status = DandisetStatus.from_file(p.name, p / "status.yaml")
+            status = DandisetStatus.from_file(p / "status.yaml")
             passed, failed, timedout = status.combined_counts()
             asset_qtys[Outcome.PASS] += passed
             asset_qtys[Outcome.FAIL] += failed

@@ -175,9 +175,9 @@ class DandisetStatus(BaseModel):
             return value
 
     @classmethod
-    def from_file(cls, dandiset: str, yamlfile: Path) -> DandisetStatus:
+    def from_file(cls, yamlfile: Path) -> DandisetStatus:
         with yamlfile.open() as fp:
-            return cls.model_validate({"dandiset": dandiset, **load_yaml_lineno(fp)})
+            return cls.model_validate(load_yaml_lineno(fp))
 
     def to_file(self, path: Path) -> None:
         path.parent.mkdir(parents=True, exist_ok=True)

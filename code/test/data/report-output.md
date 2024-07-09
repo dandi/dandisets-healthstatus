@@ -12,9 +12,9 @@
 # By Dandiset
 | Dandiset | pynwb_open_load_ns | matnwb_nwbRead | Untested |
 | --- | --- | --- | --- |
-| [000001](results/000001/status.yaml) | [3 passed](results/000001/status.yaml#L6), 0 failed, 0 timed out | [3 passed](results/000001/status.yaml#L13), 0 failed, 0 timed out | [2](results/000001/status.yaml#L19) |
-| [000002](results/000002/status.yaml) | 0 passed, [3 failed](results/000002/status.yaml#L5), 0 timed out | 0 passed, [3 failed](results/000002/status.yaml#L12), 0 timed out | — |
-| [000003](results/000003/status.yaml) | 0 passed, 0 failed, [3 timed out](results/000003/status.yaml#L7) | 0 passed, 0 failed, [3 timed out](results/000003/status.yaml#L14) | — |
-| [000004](results/000004/status.yaml) | [3 passed](results/000004/status.yaml#L6), 0 failed, 0 timed out | 0 passed, [3 failed](results/000004/status.yaml#L12), 0 timed out | — |
-| [000005](results/000005/status.yaml) | [3 passed](results/000005/status.yaml#L6), 0 failed, 0 timed out | [1 passed](results/000005/status.yaml#L14), [1 failed](results/000005/status.yaml#L12), [1 timed out](results/000005/status.yaml#L16) | — |
+| [000001](results/000001/status.yaml) | [3 passed](results/000001/status.yaml#L7), 0 failed, 0 timed out | [3 passed](results/000001/status.yaml#L14), 0 failed, 0 timed out | [2](results/000001/status.yaml#L20) |
+| [000002](results/000002/status.yaml) | 0 passed, [3 failed](results/000002/status.yaml#L6), 0 timed out | 0 passed, [3 failed](results/000002/status.yaml#L13), 0 timed out | — |
+| [000003](results/000003/status.yaml) | 0 passed, 0 failed, [3 timed out](results/000003/status.yaml#L8) | 0 passed, 0 failed, [3 timed out](results/000003/status.yaml#L15) | — |
+| [000004](results/000004/status.yaml) | [3 passed](results/000004/status.yaml#L7), 0 failed, 0 timed out | 0 passed, [3 failed](results/000004/status.yaml#L13), 0 timed out | — |
+| [000005](results/000005/status.yaml) | [3 passed](results/000005/status.yaml#L7), 0 failed, 0 timed out | [1 passed](results/000005/status.yaml#L15), [1 failed](results/000005/status.yaml#L13), [1 timed out](results/000005/status.yaml#L17) | — |
 | [000006](results/000006/status.yaml) | — | — | — |

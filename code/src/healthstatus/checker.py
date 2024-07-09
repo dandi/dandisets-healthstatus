@@ -243,7 +243,7 @@ class DandisetReporter:
 
     def __post_init__(self) -> None:
         try:
-            self.status = DandisetStatus.from_file(self.identifier, self.statusfile)
+            self.status = DandisetStatus.from_file(self.statusfile)
         except FileNotFoundError:
             self.status = DandisetStatus(
                 dandiset=self.identifier,
