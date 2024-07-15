@@ -29,7 +29,7 @@ class TestResult:
     elapsed: float | None = None  # Only set if outcome is PASS
 
 
-@dataclass
+@dataclass(frozen=True)
 class Asset:
     filepath: Path
     asset_path: AssetPath
