@@ -105,6 +105,7 @@ def check(
     pkg_versions = {}
     for t in TESTS:
         pkg_versions.update(t.prepare())
+    log.info("Software versions used: %r", pkg_versions)
     hs = HealthStatus(
         mount_point=mount_point,
         reports_root=Path.cwd(),
@@ -212,6 +213,7 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
     pkg_versions = {}
     for t in TESTS:
         pkg_versions.update(t.prepare(minimal=t.NAME != testname))
+    log.info("Software versions used: %r", pkg_versions)
     testfunc = TESTS.get(testname)
     ok = True
     dandiset_cache: dict[Path, DandisetReporter] = {}
