@@ -56,7 +56,7 @@ class EnumSet(click.ParamType, Generic[E]):
 @click.group(context_settings={"help_option_names": ["-h", "--help"]})
 def main() -> None:
     logging.basicConfig(
-        format="%(asctime)s [%(levelname)-8s] %(message)s",
+        format="%(asctime)s [%(levelname)-8s] %(name)s: %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
         level=logging.DEBUG,
     )
