@@ -25,8 +25,8 @@ class Outcome(Enum):
 @dataclass
 class TestResult:
     outcome: Outcome
+    elapsed: float
     output: str | None = None  # Only set if outcome is FAIL
-    elapsed: float | None = None  # Only set if outcome is PASS
 
 
 @dataclass
