@@ -251,6 +251,8 @@ class DandisetReporter:
                 tests=[TestStatus(name=testname) for testname in TESTS.keys()],
                 versions=self.versions,
             )
+        else:
+            self.status.draft_modified = self.draft_modified
 
     @property
     def statusfile(self) -> Path:
