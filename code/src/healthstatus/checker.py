@@ -40,13 +40,20 @@ class TestCase:
     testfunc: Test
 
     async def run(self) -> AssetTestResult:
+        log.info(
+            "Starting test: Dandiset %s, asset %s, test %s",
+            self.dandiset_id,
+            self.asset.asset_path,
+            self.testfunc.NAME,
+        )
         r = await self.testfunc.run(self.asset.filepath)
         log.info(
-            "Dandiset %s, asset %s, test %s: %s",
+            "Finished test: Dandiset %s, asset %s, test %s: %s (%f seconds)",
             self.dandiset_id,
             self.asset.asset_path,
             self.testfunc.NAME,
             r.outcome.name,
+            r.elapsed,
         )
         return AssetTestResult(
             testname=self.testfunc.NAME,

@@ -106,11 +106,10 @@ async def run_test_command(
 ) -> TestResult:
     if env is not None:
         env = {**os.environ, **env}
-    elapsed: float | None = None
+    log.debug("Running: %s", shlex.join(command))
+    start = time.perf_counter()
     try:
         with anyio.fail_after(TIMEOUT):
-            start = time.perf_counter()
-            log.debug("Running: %s", shlex.join(command))
             r = await anyio.run_process(
                 command,
                 stdout=subprocess.PIPE,
@@ -118,15 +117,16 @@ async def run_test_command(
                 check=False,
                 env=env,
             )
-            end = time.perf_counter()
-        elapsed = end - start
     except TimeoutError:
-        return TestResult(outcome=Outcome.TIMEOUT)
+        end = time.perf_counter()
+        return TestResult(outcome=Outcome.TIMEOUT, elapsed=end - start)
     else:
+        end = time.perf_counter()
         if r.returncode == 0:
-            return TestResult(outcome=Outcome.PASS, elapsed=elapsed)
+            return TestResult(outcome=Outcome.PASS, elapsed=end - start)
         else:
             return TestResult(
                 outcome=Outcome.FAIL,
+                elapsed=end - start,
                 output=r.stdout.decode("utf-8", "surrogateescape"),
             )
