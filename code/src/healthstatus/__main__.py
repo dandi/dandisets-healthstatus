@@ -12,7 +12,7 @@ from typing import Generic, Optional, TypeVar
 import anyio
 import click
 from packaging.version import Version
-from .checker import AssetReport, Dandiset, HealthStatus
+from .checker import DandisetReporter, HealthStatus
 from .core import AssetPath, AssetTestResult, DandisetStatus, Outcome, TestSummary, log
 from .mounts import (
     AssetInDandiset,
@@ -103,7 +103,7 @@ def check(
     for t in TESTS:
         pkg_versions.update(t.prepare())
     hs = HealthStatus(
-        backup_root=mount_point,
+        mount_point=mount_point,
         reports_root=Path.cwd(),
         dandisets=dandisets,
         dandiset_jobs=dandiset_jobs,
@@ -134,7 +134,7 @@ def report() -> None:
     assets_seen = 0
     for p in Path("results").iterdir():
         if re.fullmatch(r"\d{6,}", p.name) and p.is_dir():
-            status = DandisetStatus.from_file(p.name, p / "status.yaml")
+            status = DandisetStatus.from_file(p / "status.yaml")
             passed, failed, timedout = status.combined_counts()
             asset_qtys[Outcome.PASS] += passed
             asset_qtys[Outcome.FAIL] += failed
@@ -211,25 +211,22 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
         pkg_versions.update(t.prepare(minimal=t.NAME != testname))
     testfunc = TESTS.get(testname)
     ok = True
-    dandiset_cache: dict[Path, tuple[Dandiset, set[AssetPath]]] = {}
+    dandiset_cache: dict[Path, DandisetReporter] = {}
     for f in files:
         if save_results and (path := find_dandiset(Path(f))) is not None:
             try:
-                dandiset, asset_paths = dandiset_cache[path]
+                reporter = dandiset_cache[path]
             except KeyError:
-                dandiset = Dandiset(
+                reporter = DandisetReporter(
                     identifier=path.name,
-                    path=path,
-                    reports_root=Path.cwd(),
+                    draft_modified=None,
+                    reportdir=Path("results", path.name),
                     versions=pkg_versions,
                 )
-                asset_paths = anyio.run(dandiset.get_asset_paths)
-                dandiset_cache[path] = (dandiset, asset_paths)
-            report = AssetReport(dandiset=dandiset)
+                dandiset_cache[path] = reporter
             ap = AssetPath(Path(f).relative_to(path).as_posix())
         else:
-            report = None
-            asset_paths = None
+            reporter = None
             ap = None
         log.info("Testing %s ...", f)
         r = anyio.run(testfunc.run, f)
@@ -239,16 +236,15 @@ def test_files(testname: str, files: tuple[Path, ...], save_results: bool) -> No
         if r.outcome is not Outcome.PASS:
             ok = False
         if save_results:
-            assert report is not None
-            assert asset_paths is not None
+            assert reporter is not None
             assert ap is not None
             atr = AssetTestResult(
                 testname=testname,
                 asset_path=AssetPath(ap),
                 result=r,
             )
-            report.register_test_result(atr)
-            report.dump(asset_paths)
+            reporter.register_test_result(atr)
+            reporter.dump()
     sys.exit(0 if ok else 1)
 
 

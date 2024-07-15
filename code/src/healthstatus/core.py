@@ -144,7 +144,7 @@ class TestStatus(BaseModel):
 
 
 class UntestedAsset(BaseModel):
-    asset: str
+    asset: AssetPath
     size: int
     file_type: str
     mime_type: str
@@ -175,11 +175,12 @@ class DandisetStatus(BaseModel):
             return value
 
     @classmethod
-    def from_file(cls, dandiset: str, yamlfile: Path) -> DandisetStatus:
+    def from_file(cls, yamlfile: Path) -> DandisetStatus:
         with yamlfile.open() as fp:
-            return cls.model_validate({"dandiset": dandiset, **load_yaml_lineno(fp)})
+            return cls.model_validate(load_yaml_lineno(fp))
 
     def to_file(self, path: Path) -> None:
+        path.parent.mkdir(parents=True, exist_ok=True)
         jsonable = self.model_dump(mode="json")
         path.write_text(yaml.dump(jsonable))
 
@@ -206,6 +207,7 @@ class DandisetStatus(BaseModel):
             t.assets_timeout = [
                 a for a in t.assets_timeout if getpath(a) in asset_paths
             ]
+        self.nassets = len(asset_paths)
         self.prune_versions(current_versions)
 
     def prune_versions(self, current_versions: dict[str, str]) -> None:

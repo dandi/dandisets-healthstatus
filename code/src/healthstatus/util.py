@@ -1,5 +1,6 @@
 from __future__ import annotations
 from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
 import subprocess
 import requests
@@ -71,3 +72,7 @@ class MatNWBInstaller:
             text=True,
             check=True,
         ).stdout.strip()
+
+
+def nowstamp() -> datetime:
+    return datetime.now().astimezone()
