@@ -198,7 +198,9 @@ class DandisetTester:
         # Returns True if anything tested
         all_assets = [asset async for asset in self.aiterassets()]
         all_asset_paths = {asset.asset_path for asset in all_assets}
-        if outdated := (self.reporter.outdated_assets() & all_asset_paths):
+        if outdated := (self.reporter.outdated_assets() & all_asset_paths) | (
+            all_asset_paths - self.reporter.all_assets()
+        ):
             p = choice(list(outdated))
             asset = Asset(filepath=self.mount_path / p, asset_path=p)
             await self.test_one_asset(asset)
@@ -274,6 +276,9 @@ class DandisetReporter:
                         + textwrap.indent(e.output, " " * 4),
                         file=fp,
                     )
+
+    def all_assets(self) -> set[AssetPath]:
+        return {path for t in self.status.tests for path in t.all_assets()}
 
     def outdated_assets(self) -> set[AssetPath]:
         return {
