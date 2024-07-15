@@ -29,7 +29,7 @@ class TestResult:
     elapsed: float | None = None  # Only set if outcome is PASS
 
 
-@dataclass
+@dataclass(frozen=True)
 class Asset:
     filepath: Path
     asset_path: AssetPath
@@ -89,6 +89,10 @@ class TestStatus(BaseModel):
             yield (getpath(asset), Outcome.FAIL)
         for asset in self.assets_timeout:
             yield (getpath(asset), Outcome.TIMEOUT)
+
+    def all_assets(self) -> Iterator[AssetPath]:
+        for asset in [*self.assets_ok, *self.assets_nok, *self.assets_timeout]:
+            yield getpath(asset)
 
     def outdated_assets(self, current_versions: dict[str, str]) -> Iterator[AssetPath]:
         for asset in [*self.assets_ok, *self.assets_nok, *self.assets_timeout]:
