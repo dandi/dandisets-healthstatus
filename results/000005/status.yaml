@@ -1,5 +1,5 @@
 dandiset: '000005'
-dandiset_version: eaa5533301366b95dda600378e61a3f33d1fad49
+draft_modified: '2023-06-20T00:56:15.296753Z'
 last_run: '2024-01-03T12:21:19.640660-05:00'
 last_run_duration: 371179.771833
 last_run_ended: '2024-01-07T19:27:39.412493-05:00'
@@ -359,7 +359,11 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-anm300171/sub-anm300171_ses-20150827_obj-dcd6om_behavior+icephys+ogen.nwb
+  - path: sub-anm300171/sub-anm300171_ses-20150827_obj-dcd6om_behavior+icephys+ogen.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-anm300171/sub-anm300171_ses-20150827_obj-qlj97q_behavior+icephys+ogen.nwb
     versions:
       hdmf: 3.12.2
@@ -520,6 +524,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-anm300171/sub-anm300171_ses-20150827_obj-dcd6om_behavior+icephys+ogen.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - path: sub-anm199551/sub-anm199551_ses-20130626_behavior+ecephys.nwb
     versions:
@@ -650,7 +659,6 @@ tests:
   - sub-anm300169/sub-anm300169_ses-20150926_obj-rp0tw4_behavior+icephys+ogen.nwb
   - sub-anm300170/sub-anm300170_ses-20150917_behavior+icephys+ogen.nwb
   - sub-anm300170/sub-anm300170_ses-20150918_obj-1c4fz8_behavior+icephys+ogen.nwb
-  - sub-anm300171/sub-anm300171_ses-20150827_obj-dcd6om_behavior+icephys+ogen.nwb
   - path: sub-anm300171/sub-anm300171_ses-20150827_obj-qlj97q_behavior+icephys+ogen.nwb
     versions:
       hdmf: 3.12.2

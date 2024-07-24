@@ -1,5 +1,5 @@
 dandiset: '000301'
-dandiset_version: e45211b551047ee174e6778daf5cf1b80a4a0afa
+draft_modified: '2023-08-06T00:34:05.534747Z'
 last_run: '2024-02-07T03:20:15.633771-05:00'
 last_run_duration: 11727.649651
 last_run_ended: '2024-02-07T06:35:43.283422-05:00'
@@ -14,9 +14,9 @@ tests:
       pynwb: 2.8.0
   - path: sub-M27/sub-M27_ses-20200319T163241_behavior+ecephys.nwb
     versions:
-      hdmf: 3.14.1
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-M29/sub-M29_ses-20200612T143309_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.0
@@ -77,11 +77,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-M27/sub-M27_ses-20200319T163241_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-M29/sub-M29_ses-20200612T143309_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.0
@@ -124,6 +119,11 @@ tests:
       pynwb: 2.8.0
   assets_ok: []
   assets_timeout:
+  - path: sub-M27/sub-M27_ses-20200319T163241_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-M37/sub-M37_ses-20200829T154548_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.0

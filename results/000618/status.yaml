@@ -1,5 +1,5 @@
 dandiset: 000618
-dandiset_version: 99510c25df5de26ee64cc9fafa206026d51f27b6
+draft_modified: '2023-08-10T13:59:39.099562Z'
 last_run: '2024-02-24T03:46:56.043866-05:00'
 last_run_duration: 92799.674304
 last_run_ended: '2024-02-25T05:33:35.718170-05:00'
@@ -42,9 +42,9 @@ tests:
   - sub-hybrid-janelia/sub-hybrid-janelia_ses-hybrid-drift-siprobe-rec-16c-600s-32_ecephys.nwb
   - path: sub-hybrid-janelia/sub-hybrid-janelia_ses-hybrid-drift-siprobe-rec-32c-1200s-11_ecephys.nwb
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-hybrid-janelia/sub-hybrid-janelia_ses-hybrid-drift-siprobe-rec-32c-1200s-21_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -557,11 +557,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-hybrid-janelia/sub-hybrid-janelia_ses-hybrid-drift-siprobe-rec-16c-600s-32_ecephys.nwb
-  - path: sub-hybrid-janelia/sub-hybrid-janelia_ses-hybrid-drift-siprobe-rec-32c-1200s-11_ecephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-hybrid-janelia/sub-hybrid-janelia_ses-hybrid-drift-siprobe-rec-32c-600s-11_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -893,7 +888,12 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-hybrid-janelia/sub-hybrid-janelia_ses-hybrid-drift-siprobe-rec-32c-1200s-11_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

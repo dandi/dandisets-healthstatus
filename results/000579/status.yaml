@@ -1,5 +1,5 @@
 dandiset: 000579
-dandiset_version: b428b241095d832e6ff4f7db378446b082bc1bcd
+draft_modified: '2023-07-28T17:27:12.628948Z'
 last_run: '2024-02-23T05:30:08.426648-05:00'
 last_run_duration: 1017900.511702
 last_run_ended: '2024-03-06T00:15:08.938350-05:00'
@@ -296,7 +296,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-10-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-10-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-5/sub-5_ses-mouse-5-session-date-2017-07-11-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-12-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
     versions:
@@ -720,6 +724,11 @@ tests:
   - sub-5/sub-5_ses-mouse-5-session-date-2017-06-19-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
   - sub-5/sub-5_ses-mouse-5-session-date-2017-07-04-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
   - sub-5/sub-5_ses-mouse-5-session-date-2017-07-06-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-10-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-5/sub-5_ses-mouse-5-session-date-2017-07-11-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
   - sub-5/sub-5_ses-mouse-5-session-date-2017-07-14-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
   - sub-6/sub-6_ses-Mouse-6-widefield-retinotopy-and-window-vessel_ophys.nwb
@@ -1005,7 +1014,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-10-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-12-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
     versions:
       hdmf: 3.13.0

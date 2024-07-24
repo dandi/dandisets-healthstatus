@@ -1,5 +1,5 @@
 dandiset: '000402'
-dandiset_version: adfed971ef2a527bb2cd64b817d6712ff45643d1
+draft_modified: '2023-07-20T14:27:13.687019Z'
 last_run: '2024-02-09T11:06:55.059535-05:00'
 last_run_duration: 71908.119143
 last_run_ended: '2024-02-10T07:05:23.178678-05:00'
@@ -58,11 +58,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-17797/sub-17797_ses-7-scan-4_behavior+image+ophys.nwb
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-17797/sub-17797_ses-7-scan-5_behavior+image+ophys.nwb
     versions:
       hdmf: 3.14.1
@@ -86,7 +81,12 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - sub-17797/sub-17797_ses-9-scan-6_behavior+image+ophys.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-17797/sub-17797_ses-7-scan-4_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
@@ -144,9 +144,9 @@ tests:
       pynwb: 2.8.0
   - path: sub-17797/sub-17797_ses-7-scan-4_behavior+image+ophys.nwb
     versions:
-      hdmf: 3.14.1
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-17797/sub-17797_ses-7-scan-5_behavior+image+ophys.nwb
     versions:
       hdmf: 3.14.1

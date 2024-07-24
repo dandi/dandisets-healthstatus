@@ -1,5 +1,5 @@
 dandiset: 000049
-dandiset_version: 5afe3cd6ba64e63bfb1182bc4dfb4febd7b063d8
+draft_modified: '2023-06-20T00:56:25.048799Z'
 last_run: '2024-01-11T08:48:08.765051-05:00'
 last_run_duration: 141203.50113
 last_run_ended: '2024-01-13T00:01:32.266181-05:00'
@@ -263,7 +263,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-763247322/sub-763247322_ses-790856463_behavior+ophys.nwb
+  - path: sub-763247322/sub-763247322_ses-790856463_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-763248171/sub-763248171_ses-802548622_behavior+ophys.nwb
   - path: sub-763832038/sub-763832038_ses-796527576_behavior+ophys.nwb
     versions:
@@ -424,7 +428,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-763247322/sub-763247322_ses-790856463_behavior+ophys.nwb
   - path: sub-763832038/sub-763832038_ses-796527576_behavior+ophys.nwb
     versions:
       hdmf: 3.14.0
@@ -623,6 +626,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-763247322/sub-763247322_ses-790856463_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-763832038/sub-763832038_ses-797559679_behavior+ophys.nwb
     versions:
       hdmf: 3.14.0

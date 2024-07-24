@@ -1,5 +1,5 @@
 dandiset: 000582
-dandiset_version: e2289b2aeb7e956d951ed36c34ac59ef15e9b1cc
+draft_modified: '2023-09-16T14:35:08.448336Z'
 last_run: '2024-02-23T06:34:18.831054-05:00'
 last_run_duration: 70462.32733
 last_run_ended: '2024-02-24T02:08:41.158384-05:00'
@@ -146,7 +146,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-11016/sub-11016_ses-25010501_behavior+ecephys.nwb
-  - sub-11016/sub-11016_ses-28010501_behavior+ecephys.nwb
+  - path: sub-11016/sub-11016_ses-28010501_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-11016/sub-11016_ses-29010503_behavior+ecephys.nwb
   - sub-11016/sub-11016_ses-31010502_behavior+ecephys.nwb
   - path: sub-11025/sub-11025_ses-01060511_behavior+ecephys.nwb
@@ -604,7 +608,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-11016/sub-11016_ses-25010501_behavior+ecephys.nwb
-  - sub-11016/sub-11016_ses-28010501_behavior+ecephys.nwb
   - sub-11016/sub-11016_ses-31010502_behavior+ecephys.nwb
   - path: sub-11025/sub-11025_ses-01060511_behavior+ecephys.nwb
     versions:
@@ -815,7 +818,12 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-11016/sub-11016_ses-28010501_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

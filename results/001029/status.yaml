@@ -1,19 +1,29 @@
 dandiset: 001029
-dandiset_version: 9e8c9419e9cb6e34a372d6ffbdaa6c80e91a0085
+draft_modified: '2024-05-16T21:18:16.691912Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
-nassets: null
+nassets: 51
 tests:
 - assets_nok: []
   assets_ok:
   - sub-mouse-1/sub-mouse-1_ses-20230114T135024.nwb
+  - path: sub-mouse-1/sub-mouse-1_ses-20230114T143806.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
   - sub-mouse-1/sub-mouse-1_ses-20230114T135024.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-mouse-1/sub-mouse-1_ses-20230114T143806.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

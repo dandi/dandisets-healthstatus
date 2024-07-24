@@ -1,5 +1,5 @@
 dandiset: 000239
-dandiset_version: 4d2c0948717dd2e52a9f655eab29ab66b9d78832
+draft_modified: '2024-05-18T17:14:27.649852Z'
 last_run: '2024-02-02T08:01:48.282296-05:00'
 last_run_duration: 1616089.70464
 last_run_ended: '2024-02-21T00:56:37.986936-05:00'
@@ -960,11 +960,6 @@ tests:
       pynwb: 2.6.0
   - sub-MX200102/sub-MX200102_ses-20210120T170012.nwb
   - sub-MX200102/sub-MX200102_ses-20210120T170012_behavior.nwb
-  - path: sub-MX200103/sub-MX200103_ses-20210117T172940_behavior.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - sub-MX200103/sub-MX200103_ses-20210120T180225_behavior.nwb
   - sub-MX200105/sub-MX200105_ses-20201210T175011_behavior.nwb
   - sub-MX200105/sub-MX200105_ses-20201212T152521_behavior.nwb
@@ -1152,6 +1147,11 @@ tests:
   - sub-MX200102/sub-MX200102_ses-20201012T115512_behavior.nwb
   - sub-MX200102/sub-MX200102_ses-20201013T134043_behavior.nwb
   - sub-MX200102/sub-MX200102_ses-20201014T121113_behavior.nwb
+  - path: sub-MX200103/sub-MX200103_ses-20210117T172940_behavior.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-MX210301/sub-MX210301_ses-20210506T151300_behavior.nwb
     versions:
       hdmf: 3.13.0
@@ -2279,9 +2279,9 @@ tests:
   - sub-MX200102/sub-MX200102_ses-20210120T170012_behavior.nwb
   - path: sub-MX200103/sub-MX200103_ses-20210117T172940_behavior.nwb
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - sub-MX200105/sub-MX200105_ses-20201210T175011_behavior.nwb
   - sub-MX200105/sub-MX200105_ses-20201212T152521_behavior.nwb
   - sub-MX210203/sub-MX210203_ses-20210226T173552_behavior.nwb

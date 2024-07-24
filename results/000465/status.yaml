@@ -1,5 +1,5 @@
 dandiset: '000465'
-dandiset_version: f9b70f2c7dd1e84f4c24aa0dc68503c14d3b5ea5
+draft_modified: '2023-06-20T00:56:27.950903Z'
 last_run: '2024-02-12T18:41:32.135115-05:00'
 last_run_duration: 21608.614818
 last_run_ended: '2024-02-13T00:41:40.749933-05:00'
@@ -29,7 +29,6 @@ tests:
       pynwb: 2.8.0
   - sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T105715_ecephys.nwb
   - sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T105921_ecephys.nwb
-  - sub-YBT-Rat2-ECoG1024/sub-YBT-Rat2-ECoG1024_ses-20200317T142248_ecephys.nwb
   - path: sub-YBT-Rat2-ECoG1024/sub-YBT-Rat2-ECoG1024_ses-20200317T143959_ecephys.nwb
     versions:
       hdmf: 3.14.0
@@ -159,7 +158,12 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-YBT-Rat2-ECoG1024/sub-YBT-Rat2-ECoG1024_ses-20200317T142248_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-YBT-Rat3-ECoG1024/sub-YBT-Rat3-ECoG1024_ses-20200604T160742_ecephys.nwb
@@ -195,7 +199,6 @@ tests:
       pynwb: 2.8.0
   - sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T105715_ecephys.nwb
   - sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T105921_ecephys.nwb
-  - sub-YBT-Rat2-ECoG1024/sub-YBT-Rat2-ECoG1024_ses-20200317T142248_ecephys.nwb
   - path: sub-YBT-Rat2-ECoG1024/sub-YBT-Rat2-ECoG1024_ses-20200317T143959_ecephys.nwb
     versions:
       hdmf: 3.14.0
@@ -315,7 +318,12 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-YBT-Rat2-ECoG1024/sub-YBT-Rat2-ECoG1024_ses-20200317T142248_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

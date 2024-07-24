@@ -1,5 +1,5 @@
 dandiset: '000251'
-dandiset_version: 56a35bfcb39421b0171467ae86c65f0eb715e952
+draft_modified: '2023-06-20T00:56:22.602125Z'
 last_run: '2024-02-04T03:58:51.919873-05:00'
 last_run_duration: 159503.26758
 last_run_ended: '2024-02-06T00:17:15.187453-05:00'
@@ -763,7 +763,11 @@ tests:
   - sub-3048/sub-3048_ses-SU-VR-ALL-SPD-56.nwb
   - sub-3048/sub-3048_ses-SU-VR-ALL-SPD-57.nwb
   - sub-3048/sub-3048_ses-SU-VR-ALL-SPD-58.nwb
-  - sub-3048/sub-3048_ses-SU-VR-ALL-TP-55.nwb
+  - path: sub-3048/sub-3048_ses-SU-VR-ALL-TP-55.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-3048/sub-3048_ses-SU-VR-ALL-TP-56.nwb
   - sub-3048/sub-3048_ses-SU-VR-ALL-TP-57.nwb
   - path: sub-3048/sub-3048_ses-SU-VR-ALL-TP-58.nwb
@@ -1148,7 +1152,11 @@ tests:
   - sub-3048/sub-3048_ses-SU-VR-ALL-OL-56.nwb
   - sub-3048/sub-3048_ses-SU-VR-ALL-OL-58.nwb
   - sub-3048/sub-3048_ses-SU-VR-ALL-SPD-58.nwb
-  - sub-3048/sub-3048_ses-SU-VR-ALL-TP-55.nwb
+  - path: sub-3048/sub-3048_ses-SU-VR-ALL-TP-55.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-3048/sub-3048_ses-SU-VR-ALL-TP-56.nwb
   - sub-3048/sub-3048_ses-SU-VR-ALL-TP-57.nwb
   - path: sub-3048/sub-3048_ses-SU-VR-ALL-TP-58.nwb

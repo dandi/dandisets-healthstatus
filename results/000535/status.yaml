@@ -1,5 +1,5 @@
 dandiset: '000535'
-dandiset_version: e6310451b8883c9dcf39b683592c4653430a8136
+draft_modified: '2023-06-20T00:56:24.951269Z'
 last_run: '2024-02-17T07:33:39.838954-05:00'
 last_run_duration: 103004.797396
 last_run_ended: '2024-02-18T12:10:24.636350-05:00'
@@ -220,9 +220,9 @@ tests:
   - sub-505560/sub-505560_ses-20200512T202616_behavior+ophys.nwb
   - path: sub-505560/sub-505560_ses-20200514T161907_behavior+ophys.nwb
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-505560/sub-505560_ses-20200515T152153_behavior+ophys.nwb
     versions:
       hdmf: 3.12.2
@@ -611,11 +611,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-505560/sub-505560_ses-20200512T202616_behavior+ophys.nwb
-  - path: sub-505560/sub-505560_ses-20200514T161907_behavior+ophys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-505560/sub-505560_ses-20200515T152153_behavior+ophys.nwb
     versions:
       hdmf: 3.12.2
@@ -794,6 +789,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-505560/sub-505560_ses-20200514T161907_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

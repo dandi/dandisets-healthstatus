@@ -1,5 +1,5 @@
 dandiset: '000023'
-dandiset_version: bf96a011962eed2326bd79032b34429194a2623f
+draft_modified: '2023-06-20T00:56:17.847062Z'
 last_run: '2024-01-07T01:05:13.236318-05:00'
 last_run_duration: 497268.25477
 last_run_ended: '2024-01-12T19:13:01.491088-05:00'
@@ -476,7 +476,6 @@ tests:
   - sub-736890023/sub-736890023_ses-737424138_icephys.nwb
   - sub-737373545/sub-737373545_ses-737795448_icephys.nwb
   - sub-737373545/sub-737373545_ses-737820113_icephys.nwb
-  - sub-737373545/sub-737373545_ses-737988175_icephys.nwb
   - sub-737373545/sub-737373545_ses-738027216_icephys.nwb
   - sub-750786644/sub-750786644_ses-750842149_icephys.nwb
   - path: sub-750786644/sub-750786644_ses-750844594_icephys.nwb
@@ -690,6 +689,11 @@ tests:
   assets_timeout:
   - sub-676839274/sub-676839274_ses-677060420_icephys.nwb
   - sub-676839274/sub-676839274_ses-677094662_icephys.nwb
+  - path: sub-737373545/sub-737373545_ses-737988175_icephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-541516760/sub-541516760_ses-541549227_icephys.nwb
@@ -1096,7 +1100,6 @@ tests:
   - sub-736890023/sub-736890023_ses-737424138_icephys.nwb
   - sub-737373545/sub-737373545_ses-737795448_icephys.nwb
   - sub-737373545/sub-737373545_ses-737820113_icephys.nwb
-  - sub-737373545/sub-737373545_ses-737988175_icephys.nwb
   - sub-737373545/sub-737373545_ses-738027216_icephys.nwb
   - sub-750786644/sub-750786644_ses-750842149_icephys.nwb
   - path: sub-750786644/sub-750786644_ses-750844594_icephys.nwb
@@ -1376,6 +1379,11 @@ tests:
   assets_timeout:
   - sub-676839274/sub-676839274_ses-677060197_icephys.nwb
   - sub-676839274/sub-676839274_ses-677094662_icephys.nwb
+  - path: sub-737373545/sub-737373545_ses-737988175_icephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

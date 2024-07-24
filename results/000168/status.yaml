@@ -1,5 +1,5 @@
 dandiset: 000168
-dandiset_version: e03f93e002373abf13bf98be2b6be34cd922c671
+draft_modified: '2023-06-20T00:56:23.404776Z'
 last_run: '2024-01-17T02:33:32.822518-05:00'
 last_run_duration: 647800.927202
 last_run_ended: '2024-01-24T14:30:13.749720-05:00'
@@ -158,11 +158,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: jGCaMP8f/jGCaMP8f_ANM471994_cell07.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: jGCaMP8f/jGCaMP8f_ANM471994_cell08.nwb
     versions:
       hdmf: 3.13.0
@@ -520,6 +515,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_timeout:
+  - path: jGCaMP8f/jGCaMP8f_ANM471994_cell07.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - jGCaMP8m/jGCaMP8m_ANM479117_cell02.nwb
   - jGCaMP8s/jGCaMP8s_ANM479116_cell02.nwb
   name: pynwb_open_load_ns
@@ -726,9 +726,9 @@ tests:
       pynwb: 2.7.0
   - path: jGCaMP8f/jGCaMP8f_ANM471994_cell07.nwb
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - jGCaMP8f/jGCaMP8f_ANM478342_cell01.nwb
   - path: jGCaMP8f/jGCaMP8f_ANM478349_cell01.nwb
     versions:

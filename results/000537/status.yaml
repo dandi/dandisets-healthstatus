@@ -1,5 +1,5 @@
 dandiset: '000537'
-dandiset_version: fa1ce7def55db9619e46afe16ba522ec188104e5
+draft_modified: '2024-05-16T21:26:15.581889Z'
 last_run: '2024-02-15T19:29:22.442247-05:00'
 last_run_duration: 83355.102225
 last_run_ended: '2024-02-16T18:38:37.544472-05:00'
@@ -437,7 +437,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-232830cell16-spiral-hp/sub-232830cell16-spiral-hp_ses-20220505T232830_image.nwb
+  - path: sub-232830cell16-spiral-hp/sub-232830cell16-spiral-hp_ses-20220505T232830_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-233514cell17-spiral-hp/sub-233514cell17-spiral-hp_ses-20220505T233514_image.nwb
     versions:
       hdmf: 3.13.0
@@ -474,7 +478,6 @@ tests:
   - sub-192844cell16/sub-192844cell16_ses-20220528T192844_image.nwb
   - sub-193530cell19/sub-193530cell19_ses-20220528T193530_image.nwb
   - sub-194333cell24/sub-194333cell24_ses-20220528T194333_image.nwb
-  - sub-232830cell16-spiral-hp/sub-232830cell16-spiral-hp_ses-20220505T232830_image.nwb
   assets_ok:
   - path: sub-035955cell2-JF525/sub-035955cell2-JF525_ses-20220729T035955_image.nwb
     versions:
@@ -894,6 +897,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-232830cell16-spiral-hp/sub-232830cell16-spiral-hp_ses-20220505T232830_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

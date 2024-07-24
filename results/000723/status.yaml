@@ -1,0 +1,22 @@
+dandiset: '000723'
+draft_modified: '2024-07-16T14:14:24.914729Z'
+last_run: null
+last_run_duration: null
+last_run_ended: null
+nassets: 30
+tests:
+- assets_nok: []
+  assets_ok: []
+  assets_timeout:
+  - sub-L882/sub-L882_ses-Dendrite7a.nwb
+  name: pynwb_open_load_ns
+- assets_nok: []
+  assets_ok: []
+  assets_timeout:
+  - sub-L882/sub-L882_ses-Dendrite7a.nwb
+  name: matnwb_nwbRead
+untested: []
+versions:
+  hdmf: 3.14.2
+  matnwb: v2.6.0.2
+  pynwb: 2.8.1

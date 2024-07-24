@@ -1,5 +1,5 @@
 dandiset: 000068
-dandiset_version: 52a7b94898928de5c7c14d3d7485ad53af2ed90f
+draft_modified: '2024-02-22T22:02:55.070561Z'
 last_run: '2024-01-14T06:55:43.206415-05:00'
 last_run_duration: 716.4066
 last_run_ended: '2024-01-14T07:07:39.613015-05:00'
@@ -8,14 +8,22 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-abcd/icephys_example.nwb
-  - sub-abcd/sub-abcd_icephys.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-abcd/sub-abcd_icephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
   - sub-abcd/icephys_example.nwb
-  - sub-abcd/sub-abcd_icephys.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-abcd/sub-abcd_icephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

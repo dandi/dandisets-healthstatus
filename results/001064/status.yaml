@@ -1,0 +1,22 @@
+dandiset: '001064'
+draft_modified: '2024-06-23T02:44:17.231136Z'
+last_run: null
+last_run_duration: null
+last_run_ended: null
+nassets: 110
+tests:
+- assets_nok: []
+  assets_ok:
+  - sub-C-3301316517292898410/sub-C-3301316517292898410_ses-20221025T165737.nwb
+  assets_timeout: []
+  name: pynwb_open_load_ns
+- assets_nok: []
+  assets_ok: []
+  assets_timeout:
+  - sub-C-3301316517292898410/sub-C-3301316517292898410_ses-20221025T165737.nwb
+  name: matnwb_nwbRead
+untested: []
+versions:
+  hdmf: 3.14.2
+  matnwb: v2.6.0.2
+  pynwb: 2.8.1

@@ -1,5 +1,5 @@
 dandiset: '000056'
-dandiset_version: 52775e313345f63ac26426cc07fe7333745a1c1f
+draft_modified: '2024-05-18T18:02:26.982189Z'
 last_run: '2024-01-13T00:01:32.309086-05:00'
 last_run_duration: 49207.311818
 last_run_ended: '2024-01-13T13:41:39.620904-05:00'
@@ -45,11 +45,6 @@ tests:
   - path: sub-Mouse17/sub-Mouse17_ses-Mouse17-130129_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
-  - path: sub-Mouse17/sub-Mouse17_ses-Mouse17-130130_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-Mouse17/sub-Mouse17_ses-Mouse17-130131_behavior+ecephys.nwb
@@ -207,7 +202,12 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-Mouse17/sub-Mouse17_ses-Mouse17-130130_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Mouse24/sub-Mouse24_ses-Mouse24-131213_behavior+ecephys.nwb
@@ -264,9 +264,9 @@ tests:
       pynwb: 2.8.0
   - path: sub-Mouse17/sub-Mouse17_ses-Mouse17-130130_behavior+ecephys.nwb
     versions:
-      hdmf: 3.14.1
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-Mouse17/sub-Mouse17_ses-Mouse17-130131_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.0

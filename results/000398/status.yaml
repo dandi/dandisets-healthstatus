@@ -1,5 +1,5 @@
 dandiset: 000398
-dandiset_version: dbd1f3795b86009b933e1962833d1ed9a30bb15d
+draft_modified: '2023-06-20T00:56:15.171584Z'
 last_run: '2024-02-08T18:08:54.608014-05:00'
 last_run_duration: 19091.098579
 last_run_ended: '2024-02-08T23:27:05.706593-05:00'
@@ -152,11 +152,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-San4/sub-San4_ses-20200430T084358_ecephys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-San4/sub-San4_ses-20200430T084710_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -217,7 +212,12 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-San4/sub-San4_ses-20200430T084358_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Rat1/sub-Rat1_ses-20200921T131823_ecephys.nwb
@@ -366,11 +366,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-San4/sub-San4_ses-20200430T084358_ecephys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-San4/sub-San4_ses-20200430T084710_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -432,6 +427,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-San4/sub-San4_ses-20200430T084358_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

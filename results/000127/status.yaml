@@ -1,5 +1,5 @@
 dandiset: '000127'
-dandiset_version: 3b27a3d3dc70d646bda9f922b10db8a453870866
+draft_modified: '2023-06-20T00:56:14.874117Z'
 last_run: '2024-01-15T04:17:14.050638-05:00'
 last_run_duration: 2004.696744
 last_run_ended: '2024-01-15T04:50:38.747382-05:00'
@@ -7,14 +7,22 @@ nassets: 2
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Han/sub-Han_desc-test_ecephys.nwb
   - sub-Han/sub-Han_desc-train_behavior+ecephys.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-Han/sub-Han_desc-test_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok: []
-  assets_ok:
-  - sub-Han/sub-Han_desc-test_ecephys.nwb
+  assets_ok: []
   assets_timeout:
+  - path: sub-Han/sub-Han_desc-test_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-Han/sub-Han_desc-train_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []

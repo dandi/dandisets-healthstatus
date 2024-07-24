@@ -1,5 +1,5 @@
 dandiset: 000019
-dandiset_version: 0cecf68f4efc1db5a001624ec3c7a0397634dce3
+draft_modified: '2024-05-18T17:43:27.011394Z'
 last_run: '2024-01-05T22:33:16.380242-05:00'
 last_run_duration: 11358.780363
 last_run_ended: '2024-01-06T01:42:35.160605-05:00'
@@ -15,9 +15,9 @@ tests:
       pynwb: 2.7.0
   - path: sub-EC2/sub-EC2_ses-EC2-B105.nwb
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-EC2/sub-EC2_ses-EC2-B15.nwb
     versions:
       hdmf: 3.14.0
@@ -158,11 +158,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-EC2/sub-EC2_ses-EC2-B105.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-EC2/sub-EC2_ses-EC2-B15.nwb
     versions:
       hdmf: 3.14.0
@@ -297,7 +292,12 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-EC2/sub-EC2_ses-EC2-B105.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

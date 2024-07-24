@@ -1,19 +1,29 @@
 dandiset: 000891
-dandiset_version: 78ee2ade2b66747de1ab2b9140caa863f2e6d075
+draft_modified: '2024-02-15T08:31:58.587568Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
-nassets: null
+nassets: 87
 tests:
 - assets_nok: []
   assets_ok:
   - sub-M441/sub-M441_ses-M441_image.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-nm190911-A1/sub-nm190911-A1_ses-nm190911_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
   - sub-M441/sub-M441_ses-M441_image.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-nm190911-A1/sub-nm190911-A1_ses-nm190911_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

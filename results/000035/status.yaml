@@ -1,5 +1,5 @@
 dandiset: '000035'
-dandiset_version: 7bfa1bc0fbeecfc380c80265b55cb9d60b28d4c3
+draft_modified: '2024-05-18T17:57:27.188885Z'
 last_run: '2024-01-08T01:57:29.879171-05:00'
 last_run_duration: 559599.649389
 last_run_ended: '2024-01-14T13:24:09.528560-05:00'
@@ -266,7 +266,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-17_slice-20200414-slice-3_cell-20200414-sample-17_icephys.nwb
+  - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-17_slice-20200414-slice-3_cell-20200414-sample-17_icephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-18_slice-20200414-slice-3_cell-20200414-sample-18_icephys.nwb
     versions:
       hdmf: 3.13.0
@@ -575,7 +579,6 @@ tests:
   - sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-7_slice-20200409-slice-1_cell-20200409-sample-7_icephys.nwb
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-12_slice-20200414-slice-3_cell-20200414-sample-12_icephys.nwb
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-15_slice-20200414-slice-3_cell-20200414-sample-15_icephys.nwb
-  - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-17_slice-20200414-slice-3_cell-20200414-sample-17_icephys.nwb
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-19_slice-20200414-slice-3_cell-20200414-sample-19_icephys.nwb
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-21_slice-20200414-slice-3_cell-20200414-sample-21_icephys.nwb
   - sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-22_slice-20200414-slice-3_cell-20200414-sample-22_icephys.nwb
@@ -844,6 +847,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-17_slice-20200414-slice-3_cell-20200414-sample-17_icephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-18_slice-20200414-slice-3_cell-20200414-sample-18_icephys.nwb
     versions:
       hdmf: 3.13.0

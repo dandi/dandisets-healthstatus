@@ -1,5 +1,5 @@
 dandiset: '000013'
-dandiset_version: b5414f3812d8d41fb6f1d015ed9d9bc2c9a39a83
+draft_modified: '2024-05-18T17:42:27.066014Z'
 last_run: '2024-01-04T06:10:30.039272-05:00'
 last_run_duration: 145366.290248
 last_run_ended: '2024-01-05T22:33:16.329520-05:00'
@@ -238,9 +238,9 @@ tests:
       pynwb: 2.6.0
   - path: sub-jf42400/sub-jf42400_ses-20100612_behavior+icephys.nwb
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-jf42400/sub-jf42400_ses-20100613_behavior+icephys.nwb
     versions:
       hdmf: 3.13.0
@@ -484,11 +484,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-jf42400/sub-jf42400_ses-20100612_behavior+icephys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-jf42400/sub-jf42400_ses-20100613_behavior+icephys.nwb
     versions:
       hdmf: 3.13.0
@@ -499,7 +494,12 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-jf42400/sub-jf42400_ses-20100612_behavior+icephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

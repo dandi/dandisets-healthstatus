@@ -1,5 +1,5 @@
 dandiset: '000410'
-dandiset_version: fc5ede699cefd1aad783704e303dfbca471e07af
+draft_modified: '2023-09-05T22:32:34.404962Z'
 last_run: '2024-02-11T11:44:42.995081-05:00'
 last_run_duration: 81537.642956
 last_run_ended: '2024-02-12T10:23:40.638037-05:00'
@@ -40,11 +40,6 @@ tests:
   - path: sub-Lotus/sub-Lotus_ses-Lotus-04_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
-  - path: sub-Lotus/sub-Lotus_ses-Lotus-05_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-Lotus/sub-Lotus_ses-Lotus-06_behavior+ecephys.nwb
@@ -117,7 +112,12 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-Lotus/sub-Lotus_ses-Lotus-05_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
@@ -159,9 +159,9 @@ tests:
       pynwb: 2.8.0
   - path: sub-Lotus/sub-Lotus_ses-Lotus-05_behavior+ecephys.nwb
     versions:
-      hdmf: 3.14.1
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-Lotus/sub-Lotus_ses-Lotus-06_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.0

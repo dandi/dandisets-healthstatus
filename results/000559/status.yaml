@@ -1,19 +1,29 @@
 dandiset: 000559
-dandiset_version: b2253da723ce19c0ae236dd11c04e774c177e10f
+draft_modified: '2024-05-02T04:57:57.524548Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
-nassets: null
+nassets: 4425
 tests:
 - assets_nok: []
   assets_ok:
   - sub-209/sub-209_ses-reinforcement-9001154c-318b-4963-8aba-3b14f410ba59_behavior+image+ogen.nwb
+  - path: sub-dls-dlight-7/sub-dls-dlight-7_ses-photometry-9fa29de1-f06c-4ce5-99be-bff315e568a0_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
   - sub-209/sub-209_ses-reinforcement-9001154c-318b-4963-8aba-3b14f410ba59_behavior+image+ogen.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-dls-dlight-7/sub-dls-dlight-7_ses-photometry-9fa29de1-f06c-4ce5-99be-bff315e568a0_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

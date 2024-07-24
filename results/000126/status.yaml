@@ -1,5 +1,5 @@
 dandiset: '000126'
-dandiset_version: 8a03cb9fef69e7b187a1e26e31e642b72e32ef0b
+draft_modified: '2024-02-22T22:02:57.567351Z'
 last_run: '2024-01-15T03:20:38.140946-05:00'
 last_run_duration: 3395.896797
 last_run_ended: '2024-01-15T04:17:14.037743-05:00'
@@ -9,18 +9,26 @@ tests:
   assets_ok:
   - sub-1/sub-1.nwb
   - sub-1001658946/sub-1001658946_obj-17kkp88_icephys.nwb
-  - sub-1001658946/sub-1001658946_obj-831bdx_icephys.nwb
   - sub-1001658946/sub-1001658946_obj-n1u30_icephys.nwb
   - sub-1001658946/sub-1001658946_obj-wnwvr6_icephys.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-1001658946/sub-1001658946_obj-831bdx_icephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-1001658946/sub-1001658946_obj-17kkp88_icephys.nwb
-  - sub-1001658946/sub-1001658946_obj-831bdx_icephys.nwb
   - sub-1001658946/sub-1001658946_obj-wnwvr6_icephys.nwb
   assets_ok:
   - sub-1/sub-1.nwb
   assets_timeout:
+  - path: sub-1001658946/sub-1001658946_obj-831bdx_icephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-1001658946/sub-1001658946_obj-n1u30_icephys.nwb
   name: matnwb_nwbRead
 untested: []

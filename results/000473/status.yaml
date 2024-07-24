@@ -1,5 +1,5 @@
 dandiset: '000473'
-dandiset_version: 2e3c88c6e80ea5dc2b04a330828527a44210bbef
+draft_modified: '2023-06-20T00:56:25.486870Z'
 last_run: '2024-02-13T11:01:52.779483-05:00'
 last_run_duration: 22734.24826
 last_run_ended: '2024-02-13T17:20:47.027743-05:00'
@@ -22,7 +22,11 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-147463/sub-147463_ses-147463-20191113-probe0_ecephys+ogen.nwb
+  - path: sub-147463/sub-147463_ses-147463-20191113-probe0_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-147465/sub-147465_ses-147465-20191113-probe0_ecephys+ogen.nwb
     versions:
       hdmf: 3.14.1
@@ -175,7 +179,11 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-147463/sub-147463_ses-147463-20191113-probe0_ecephys+ogen.nwb
+  - path: sub-147463/sub-147463_ses-147463-20191113-probe0_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-147465/sub-147465_ses-147465-20191113-probe0_ecephys+ogen.nwb
     versions:
       hdmf: 3.14.1

@@ -1,5 +1,5 @@
 dandiset: 000339
-dandiset_version: 91d6eb3343faae7fb3ed0d64870c3d1fcddc1c66
+draft_modified: '2024-03-31T17:54:12.077872Z'
 last_run: '2024-02-07T07:50:38.781072-05:00'
 last_run_duration: 28072.801976
 last_run_ended: '2024-02-07T15:38:31.583048-05:00'
@@ -119,9 +119,9 @@ tests:
       pynwb: 2.8.0
   - path: sub-BH272/sub-BH272_ses-20210804T145437_ecephys.nwb
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-BH272/sub-BH272_ses-20210804T153125_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -469,11 +469,6 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-BH272/sub-BH272_ses-20210804T145437_ecephys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-BH272/sub-BH272_ses-20210804T153125_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -599,7 +594,12 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-BH272/sub-BH272_ses-20210804T145437_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

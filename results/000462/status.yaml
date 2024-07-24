@@ -1,5 +1,5 @@
 dandiset: '000462'
-dandiset_version: 5b579cff1c49614aded3fa0d03b65c38de8672b8
+draft_modified: '2023-06-20T00:56:24.694495Z'
 last_run: '2024-02-12T12:02:49.691445-05:00'
 last_run_duration: 6446.8336
 last_run_ended: '2024-02-12T13:50:16.525045-05:00'
@@ -47,11 +47,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-NR14/sub-NR14_ophys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-NR21/sub-NR21_ophys.nwb
     versions:
       hdmf: 3.14.1
@@ -77,7 +72,12 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-NR14/sub-NR14_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-009/sub-009_ophys.nwb
@@ -98,11 +98,6 @@ tests:
   - path: sub-CFC19/sub-CFC19_ophys.nwb
     versions:
       hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
-  - path: sub-NR14/sub-NR14_ophys.nwb
-    versions:
-      hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-NR23/sub-NR23_ophys.nwb
@@ -151,7 +146,12 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-NR14/sub-NR14_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

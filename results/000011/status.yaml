@@ -1,5 +1,5 @@
 dandiset: '000011'
-dandiset_version: 4ebe37b4c8899dc59a6929ec89f89998b54a2cfc
+draft_modified: '2024-05-18T17:44:27.159161Z'
 last_run: '2024-01-03T12:21:21.149759-05:00'
 last_run_duration: 190072.035513
 last_run_ended: '2024-01-05T17:09:13.185272-05:00'
@@ -119,9 +119,9 @@ tests:
       pynwb: 2.6.0
   - path: sub-257637/sub-257637_ses-20141223_behavior+ecephys+ogen.nwb
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-257637/sub-257637_ses-20141224_behavior+ecephys+ogen.nwb
     versions:
       hdmf: 3.14.1
@@ -467,11 +467,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-257637/sub-257637_ses-20141223_behavior+ecephys+ogen.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - sub-257772/sub-257772_ses-20141120_behavior+ecephys+ogen.nwb
   - path: sub-257772/sub-257772_ses-20141121_behavior+ecephys+ogen.nwb
     versions:
@@ -723,6 +718,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-257636/sub-257636_ses-20150403_behavior+ecephys+ogen.nwb
+  - path: sub-257637/sub-257637_ses-20141223_behavior+ecephys+ogen.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-257637/sub-257637_ses-20141224_behavior+ecephys+ogen.nwb
     versions:
       hdmf: 3.14.1

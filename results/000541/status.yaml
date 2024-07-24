@@ -1,5 +1,5 @@
 dandiset: '000541'
-dandiset_version: 607b3cafe5d84620390744663e9c05d6a32b1062
+draft_modified: '2024-06-25T04:52:47.584359Z'
 last_run: '2024-02-15T22:58:56.240475-05:00'
 last_run_duration: 72701.745722
 last_run_ended: '2024-02-16T19:10:37.986197-05:00'
@@ -68,11 +68,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-20190929-05/sub-20190929-05_ses-20190929_ophys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-20190929-06/sub-20190929-06_ses-20190929_ophys.nwb
     versions:
       hdmf: 3.14.0
@@ -109,6 +104,11 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
+  - path: sub-20190929-05/sub-20190929-05_ses-20190929_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-20191030-03/sub-20191030-03_ses-20191030_ophys.nwb
@@ -186,9 +186,9 @@ tests:
       pynwb: 2.7.0
   - path: sub-20190929-05/sub-20190929-05_ses-20190929_ophys.nwb
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-20190929-06/sub-20190929-06_ses-20190929_ophys.nwb
     versions:
       hdmf: 3.14.0

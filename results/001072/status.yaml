@@ -1,0 +1,22 @@
+dandiset: '001072'
+draft_modified: '2024-06-21T21:39:32.761323Z'
+last_run: null
+last_run_duration: null
+last_run_ended: null
+nassets: 1
+tests:
+- assets_nok: []
+  assets_ok:
+  - sub-Godzilla/sub-Godzilla_ecephys.nwb
+  assets_timeout: []
+  name: pynwb_open_load_ns
+- assets_nok: []
+  assets_ok: []
+  assets_timeout:
+  - sub-Godzilla/sub-Godzilla_ecephys.nwb
+  name: matnwb_nwbRead
+untested: []
+versions:
+  hdmf: 3.14.2
+  matnwb: v2.6.0.2
+  pynwb: 2.8.1

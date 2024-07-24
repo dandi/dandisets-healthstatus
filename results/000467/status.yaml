@@ -1,19 +1,29 @@
 dandiset: '000467'
-dandiset_version: 97ce33ab61c7a69e34d1fb8b1d05d88551c10195
+draft_modified: '2024-06-14T16:12:50.779963Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
-nassets: null
+nassets: 14685
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-ant3-m10-d11-y2022/sub-ant3-m10-d11-y2022_ses-m10-d11-y2022-ant3-0-48x-isopropanol-40-t168-z150um_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-ant3-m4-d27-y2022/sub-ant3-m4-d27-y2022_ses-m4-d27-y2022-ant3-0-0075x-4-methyl-3-hexanol-40-t127-z105um_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
   - sub-ant3-m4-d27-y2022/sub-ant3-m4-d27-y2022_ses-m4-d27-y2022-ant3-0-0075x-4-methyl-3-hexanol-40-t127-z105um_ophys.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-ant3-m10-d11-y2022/sub-ant3-m10-d11-y2022_ses-m10-d11-y2022-ant3-0-48x-isopropanol-40-t168-z150um_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

@@ -1,18 +1,28 @@
 dandiset: 000970
-dandiset_version: 1c172f58a217a5c9625b1aac58f9b3a4d2198015
+draft_modified: '2024-05-22T20:31:24.137732Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
-nassets: null
+nassets: 46
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-IS264/sub-IS264_ses-20240522.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-M3/sub-M3_ses-20240522.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
   assets_timeout:
+  - path: sub-IS264/sub-IS264_ses-20240522.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-M3/sub-M3_ses-20240522.nwb
   name: matnwb_nwbRead
 untested: []

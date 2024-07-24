@@ -1,5 +1,5 @@
 dandiset: 000482
-dandiset_version: a1455871208023988e125b47cc1356aff71e5b76
+draft_modified: '2023-06-20T00:56:24.614439Z'
 last_run: '2024-02-13T18:43:29.626089-05:00'
 last_run_duration: 605.975658
 last_run_ended: '2024-02-13T18:53:35.601747-05:00'
@@ -11,12 +11,12 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
-  assets_ok:
+  assets_ok: []
+  assets_timeout:
   - sub-Elon/sub-Elon_ses-ORTest-Session-YB-2022-08-08_ecephys.nwb
-  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.1
+  hdmf: 3.14.2
   matnwb: v2.6.0.2
-  pynwb: 2.8.0
+  pynwb: 2.8.1

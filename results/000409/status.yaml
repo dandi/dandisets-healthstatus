@@ -1,18 +1,28 @@
 dandiset: 000409
-dandiset_version: 5d51ab0d24e6a5ea380b650fee3cae59a1b92e64
+draft_modified: '2024-07-15T15:34:22.769952Z'
 last_run: '2023-03-05T02:50:38.373602-05:00'
 last_run_duration: 0.288341
 last_run_ended: '2023-03-05T02:50:38.661943-05:00'
-nassets: 0
+nassets: 1576
 tests:
 - assets_nok: []
   assets_ok:
   - sub-SWC-052/sub-SWC-052_ses-22e04698-b974-4805-b241-3b547dbf37bf_behavior+ecephys+image.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-DY-020/sub-DY-020_ses-26aa51ff-968c-42e4-85c8-8ff47d19254d_behavior+ecephys+image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
   assets_timeout:
+  - path: sub-DY-020/sub-DY-020_ses-26aa51ff-968c-42e4-85c8-8ff47d19254d_behavior+ecephys+image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-SWC-052/sub-SWC-052_ses-22e04698-b974-4805-b241-3b547dbf37bf_behavior+ecephys+image.nwb
   name: matnwb_nwbRead
 untested: []

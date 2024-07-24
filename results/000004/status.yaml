@@ -1,5 +1,5 @@
 dandiset: '000004'
-dandiset_version: 6c2d4a8de46531c1570f7f65953cef0c99c2fe36
+draft_modified: '2024-05-18T17:53:27.096283Z'
 last_run: '2024-01-03T12:21:19.479233-05:00'
 last_run_duration: 122718.029698
 last_run_ended: '2024-01-04T22:26:37.508931-05:00'
@@ -309,9 +309,9 @@ tests:
   - sub-P61CS/sub-P61CS_ses-20190201_ecephys+image.nwb
   - path: sub-P62CS/sub-P62CS_ses-20190401_ecephys+image.nwb
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - sub-P9HMH/sub-P9HMH_ses-20060301_obj-1otd1m8_ecephys+image.nwb
   - path: sub-P9HMH/sub-P9HMH_ses-20060301_obj-2arzt6_ecephys+image.nwb
     versions:
@@ -645,11 +645,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-P61CS/sub-P61CS_ses-20190201_ecephys+image.nwb
-  - path: sub-P62CS/sub-P62CS_ses-20190401_ecephys+image.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - sub-P9HMH/sub-P9HMH_ses-20060301_obj-1otd1m8_ecephys+image.nwb
   - path: sub-P9HMH/sub-P9HMH_ses-20060301_obj-2arzt6_ecephys+image.nwb
     versions:
@@ -698,6 +693,11 @@ tests:
   - sub-P19HMH/sub-P19HMH_ses-20080601_obj-uw5up9_ecephys+image.nwb
   - sub-P21HMH/sub-P21HMH_ses-20090101_obj-1femyyi_ecephys+image.nwb
   - sub-P48HMH/sub-P48HMH_ses-20141201_ecephys+image.nwb
+  - path: sub-P62CS/sub-P62CS_ses-20190401_ecephys+image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

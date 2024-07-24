@@ -1,19 +1,29 @@
 dandiset: 000953
-dandiset_version: 4a07ae26cc761cba7e181b2569db44bc4be6ade2
+draft_modified: '2024-04-17T15:57:59.596352Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
-nassets: null
+nassets: 20
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-MonkeyN-held-in-minival/sub-MonkeyN-held-in-minival_ses-2020-10-28-Run1_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-MonkeyN-held-out-calib/sub-MonkeyN-held-out-calib_ses-2020-11-24-Run1_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
   - sub-MonkeyN-held-out-calib/sub-MonkeyN-held-out-calib_ses-2020-11-24-Run1_behavior+ecephys.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-MonkeyN-held-in-minival/sub-MonkeyN-held-in-minival_ses-2020-10-28-Run1_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

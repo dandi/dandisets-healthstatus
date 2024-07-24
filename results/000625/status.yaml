@@ -1,5 +1,5 @@
 dandiset: '000625'
-dandiset_version: b9a9414df9dec637ad559ccb1405e3200cbfca1b
+draft_modified: '2023-11-14T00:19:40.990328Z'
 last_run: '2024-02-26T04:10:08.748374-05:00'
 last_run_duration: 3576.558552
 last_run_ended: '2024-02-26T05:09:45.306926-05:00'
@@ -9,15 +9,23 @@ tests:
   assets_ok:
   - sub-tg19/sub-tg19_ses-21322_behavior+ophys.nwb
   - sub-tg19/sub-tg19_ses-21324_behavior+ophys.nwb
-  - sub-tg19/sub-tg19_ses-21333_behavior+ophys.nwb
+  - path: sub-tg19/sub-tg19_ses-21333_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-tg19/sub-tg19_ses-21322_behavior+ophys.nwb
   - sub-tg19/sub-tg19_ses-21324_behavior+ophys.nwb
-  - sub-tg19/sub-tg19_ses-21333_behavior+ophys.nwb
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-tg19/sub-tg19_ses-21333_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

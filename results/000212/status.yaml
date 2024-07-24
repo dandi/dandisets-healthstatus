@@ -1,5 +1,5 @@
 dandiset: '000212'
-dandiset_version: ae84b14a5dcad670e3486fe20a7d49edb7a020e9
+draft_modified: '2023-06-20T00:56:15.103880Z'
 last_run: '2024-01-17T10:33:14.764004-05:00'
 last_run_duration: 1453939.971486
 last_run_ended: '2024-02-03T06:25:34.735490-05:00'
@@ -756,7 +756,6 @@ tests:
   - sub-0-200-VT040574-kirmutant-fly#-11/sub-0-200-VT040574-kirmutant-fly#-11_behavior.nwb
   - sub-0-200-VT040574-kirmutant-fly#-12/sub-0-200-VT040574-kirmutant-fly#-12_behavior.nwb
   - sub-0-200-VT040574-kirmutant-fly#-13/sub-0-200-VT040574-kirmutant-fly#-13_behavior.nwb
-  - sub-0-200-VT040574-kirmutant-fly#-14/sub-0-200-VT040574-kirmutant-fly#-14_behavior.nwb
   - sub-0-200-VT040574-kirmutant-fly#-15/sub-0-200-VT040574-kirmutant-fly#-15_behavior.nwb
   - sub-0-200-VT040574-kirmutant-fly#-16/sub-0-200-VT040574-kirmutant-fly#-16_behavior.nwb
   - sub-0-200-VT040574-kirmutant-fly#-17/sub-0-200-VT040574-kirmutant-fly#-17_behavior.nwb
@@ -1420,7 +1419,12 @@ tests:
   - sub-500-500-CS-fly#-7/sub-500-500-CS-fly#-7_behavior.nwb
   - sub-500-500-CS-fly#-8/sub-500-500-CS-fly#-8_behavior.nwb
   - sub-500-500-CS-fly#-9/sub-500-500-CS-fly#-9_behavior.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-0-200-VT040574-kirmutant-fly#-14/sub-0-200-VT040574-kirmutant-fly#-14_behavior.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-0-0-CS-fly#-24/sub-0-0-CS-fly#-24_behavior.nwb
@@ -2027,7 +2031,6 @@ tests:
   - sub-0-200-VT040574-kirmutant-fly#-1/sub-0-200-VT040574-kirmutant-fly#-1_behavior.nwb
   - sub-0-200-VT040574-kirmutant-fly#-10/sub-0-200-VT040574-kirmutant-fly#-10_behavior.nwb
   - sub-0-200-VT040574-kirmutant-fly#-13/sub-0-200-VT040574-kirmutant-fly#-13_behavior.nwb
-  - sub-0-200-VT040574-kirmutant-fly#-14/sub-0-200-VT040574-kirmutant-fly#-14_behavior.nwb
   - sub-0-200-VT040574-kirmutant-fly#-15/sub-0-200-VT040574-kirmutant-fly#-15_behavior.nwb
   - sub-0-200-VT040574-kirmutant-fly#-16/sub-0-200-VT040574-kirmutant-fly#-16_behavior.nwb
   - path: sub-0-200-VT040574-kirmutant-fly#-18/sub-0-200-VT040574-kirmutant-fly#-18_behavior.nwb
@@ -2832,6 +2835,11 @@ tests:
   - sub-0-200-TUT-fly#-9/sub-0-200-TUT-fly#-9_behavior.nwb
   - sub-0-200-VT040574-kir-fly#-14/sub-0-200-VT040574-kir-fly#-14_behavior.nwb
   - sub-0-200-VT040574-kir-fly#-17/sub-0-200-VT040574-kir-fly#-17_behavior.nwb
+  - path: sub-0-200-VT040574-kirmutant-fly#-14/sub-0-200-VT040574-kirmutant-fly#-14_behavior.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-500-0-200-CS-fly#-34/sub-500-0-200-CS-fly#-34_behavior.nwb
     versions:
       hdmf: 3.13.0

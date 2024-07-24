@@ -1,5 +1,5 @@
 dandiset: '000544'
-dandiset_version: 0791c8caf716a90168419455397ff02765935818
+draft_modified: '2023-06-20T00:56:24.985588Z'
 last_run: '2024-02-15T23:37:32.378224-05:00'
 last_run_duration: 7798.819923
 last_run_ended: '2024-02-16T01:47:31.198147-05:00'
@@ -9,7 +9,11 @@ tests:
   assets_ok:
   - sub-001/sub-001_ses-session-1234.nwb
   - sub-484677/sub-484677_behavior+ecephys+ogen.nwb
-  - sub-484677/sub-484677_ses-20210415T161621_behavior+ecephys+ogen.nwb
+  - path: sub-484677/sub-484677_ses-20210415T161621_behavior+ecephys+ogen.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
@@ -17,7 +21,11 @@ tests:
   - sub-001/sub-001_ses-session-1234.nwb
   assets_timeout:
   - sub-484677/sub-484677_behavior+ecephys+ogen.nwb
-  - sub-484677/sub-484677_ses-20210415T161621_behavior+ecephys+ogen.nwb
+  - path: sub-484677/sub-484677_ses-20210415T161621_behavior+ecephys+ogen.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

@@ -1,19 +1,29 @@
 dandiset: 000954
-dandiset_version: ff8bb4388071fe76c2b099ba5cd60db82812de8d
+draft_modified: '2024-04-02T21:47:20.046568Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
-nassets: null
+nassets: 40
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-HumanPitt-held-in-calib/sub-HumanPitt-held-in-calib_ses-19250108T111455.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-HumanPitt-held-out-calib/sub-HumanPitt-held-out-calib_ses-19250126T114029.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-HumanPitt-held-out-calib/sub-HumanPitt-held-out-calib_ses-19250126T114029.nwb
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-HumanPitt-held-in-calib/sub-HumanPitt-held-in-calib_ses-19250108T111455.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

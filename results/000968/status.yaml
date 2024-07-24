@@ -1,9 +1,9 @@
 dandiset: 000968
-dandiset_version: 335e453e1f37beaa2c34c82e50493a1bc31a4521
+draft_modified: '2024-04-30T16:23:37.714540Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
-nassets: null
+nassets: 1
 tests:
 - assets_nok: []
   assets_ok:
@@ -11,12 +11,12 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
-  assets_ok:
+  assets_ok: []
+  assets_timeout:
   - sub-NA/sub-NA_icephys.nwb
-  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.1
+  hdmf: 3.14.2
   matnwb: v2.6.0.2
-  pynwb: 2.8.0
+  pynwb: 2.8.1

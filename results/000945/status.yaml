@@ -1,19 +1,29 @@
 dandiset: 000945
-dandiset_version: 468ed4fd93a763a5dd2c1d2fadbe436fa0caaa31
+draft_modified: '2024-04-01T19:05:21.684670Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
-nassets: null
+nassets: 60
 tests:
 - assets_nok: []
   assets_ok:
   - sub-BH508/sub-BH508_ses-20240307T002354_ecephys.nwb
+  - path: sub-BH526/sub-BH526_ses-20231029T192529_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
   - sub-BH508/sub-BH508_ses-20240307T002354_ecephys.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-BH526/sub-BH526_ses-20231029T192529_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

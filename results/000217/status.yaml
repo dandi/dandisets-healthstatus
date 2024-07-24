@@ -1,5 +1,5 @@
 dandiset: '000217'
-dandiset_version: 78ffaa85dee5757807a3006b05688380e587dd70
+draft_modified: '2023-06-20T00:56:18.807951Z'
 last_run: '2024-01-19T05:10:05.698771-05:00'
 last_run_duration: 1095341.777236
 last_run_ended: '2024-01-31T21:25:47.476007-05:00'
@@ -535,7 +535,11 @@ tests:
   - sub-Mouse 2068/sub-Mouse 2068_ses-Session 04_obj-12yv144.nwb
   - sub-Mouse 2068/sub-Mouse 2068_ses-Session 04_obj-17u20j3.nwb
   - sub-Mouse 2068/sub-Mouse 2068_ses-Session 04_obj-1nro0yv.nwb
-  - sub-Mouse 2068/sub-Mouse 2068_ses-Session 04_obj-1xjki44.nwb
+  - path: sub-Mouse 2068/sub-Mouse 2068_ses-Session 04_obj-1xjki44.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-Mouse 2068/sub-Mouse 2068_ses-Session 05_obj-bqojkx.nwb
   - sub-Mouse 2068/sub-Mouse 2068_ses-Session 05_obj-cfeoga.nwb
   - sub-Mouse 2068/sub-Mouse 2068_ses-Session 06.nwb
@@ -2139,7 +2143,6 @@ tests:
   - sub-Mouse 2068/sub-Mouse 2068_ses-Session 03_obj-1cz22vw.nwb
   - sub-Mouse 2068/sub-Mouse 2068_ses-Session 03_obj-1muf4qn.nwb
   - sub-Mouse 2068/sub-Mouse 2068_ses-Session 04_obj-12yv144.nwb
-  - sub-Mouse 2068/sub-Mouse 2068_ses-Session 04_obj-1xjki44.nwb
   - sub-Mouse 2068/sub-Mouse 2068_ses-Session 05_obj-bqojkx.nwb
   - sub-Mouse 2068/sub-Mouse 2068_ses-Session 05_obj-cfeoga.nwb
   - sub-Mouse 2068/sub-Mouse 2068_ses-Session 06.nwb
@@ -3000,6 +3003,11 @@ tests:
   - sub-Mouse 2065/sub-Mouse 2065_ses-Session 02_obj-kltzyf.nwb
   - sub-Mouse 2068/sub-Mouse 2068_ses-Session 01_obj-16j1iqj.nwb
   - sub-Mouse 2068/sub-Mouse 2068_ses-Session 04_obj-17u20j3.nwb
+  - path: sub-Mouse 2068/sub-Mouse 2068_ses-Session 04_obj-1xjki44.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-Mouse 2068/sub-Mouse 2068_ses-Session 12.nwb
   - sub-Mouse 2069/sub-Mouse 2069_ses-Session 06.nwb
   - sub-Mouse 2070/sub-Mouse 2070_ses-Session 02_obj-indu4u.nwb

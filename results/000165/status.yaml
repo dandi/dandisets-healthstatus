@@ -1,5 +1,5 @@
 dandiset: '000165'
-dandiset_version: 163d72c49ff2bb9a7806c1742038d3db3c259130
+draft_modified: '2024-02-22T22:02:49.056989Z'
 last_run: '2024-01-15T14:47:01.865916-05:00'
 last_run_duration: 445432.513598
 last_run_ended: '2024-01-20T18:30:54.379514-05:00'
@@ -820,7 +820,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-Scotty/sub-Scotty_ses-Scotty02-HomeCage_behavior+ecephys.nwb
-  - sub-Scotty/sub-Scotty_ses-Scotty03-HomeCage_behavior+ecephys.nwb
   - sub-Scotty/sub-Scotty_ses-Scotty04-HomeCage_behavior+ecephys.nwb
   - sub-Scotty/sub-Scotty_ses-Scotty05-HomeCage_behavior+ecephys.nwb
   - sub-Scotty/sub-Scotty_ses-Scotty06-HomeCage_behavior+ecephys.nwb
@@ -975,7 +974,12 @@ tests:
   - sub-Worf/sub-Worf_ses-Worf15-HomeCage_behavior+ecephys.nwb
   - sub-Worf/sub-Worf_ses-Worf16-HomeCage_behavior+ecephys.nwb
   - sub-Worf/sub-Worf_ses-Worf17-HomeCage_behavior+ecephys.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-Scotty/sub-Scotty_ses-Scotty03-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-Adobo/sub-Adobo_ses-Adobo01_HomeCage_behavior+ecephys.nwb
@@ -1835,7 +1839,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-Scotty/sub-Scotty_ses-Scotty03-HomeCage_behavior+ecephys.nwb
   - path: sub-Scotty/sub-Scotty_ses-Scotty07-HomeCage_behavior+ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -1914,6 +1917,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-Scotty/sub-Scotty_ses-Scotty03-HomeCage_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-Tarragon/sub-Tarragon_ses-Tarragon04-HomeCage_behavior+ecephys.nwb
   - sub-Tarragon/sub-Tarragon_ses-Tarragon04-LinearTrack_behavior+ecephys.nwb
   - sub-Tarragon/sub-Tarragon_ses-Tarragon05-HomeCage_behavior+ecephys.nwb

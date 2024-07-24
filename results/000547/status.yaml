@@ -1,5 +1,5 @@
 dandiset: '000547'
-dandiset_version: 88673a8c899e2aeb05cf856dc3d6e093519abba5
+draft_modified: '2023-08-22T16:16:53.521302Z'
 last_run: '2024-02-16T19:10:38.033812-05:00'
 last_run_duration: 44581.744953
 last_run_ended: '2024-02-17T07:33:39.778765-05:00'
@@ -184,9 +184,9 @@ tests:
   - sub-312/sub-312_ses-2ndrec-100_ophys.nwb
   - path: sub-312/sub-312_ses-3rdrec-0_ophys.nwb
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-312/sub-312_ses-4threc-100_ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -505,11 +505,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-312/sub-312_ses-2ndrec-100_ophys.nwb
-  - path: sub-312/sub-312_ses-3rdrec-0_ophys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-312/sub-312_ses-4threc-100_ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -647,7 +642,12 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-312/sub-312_ses-3rdrec-0_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

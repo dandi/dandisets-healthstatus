@@ -1,5 +1,5 @@
 dandiset: '000070'
-dandiset_version: ef0ed7170df7d1e58b0efeb78ef64d1816f566a4
+draft_modified: '2024-02-22T22:02:52.433904Z'
 last_run: '2024-01-14T07:42:13.623732-05:00'
 last_run_duration: 21260.788258
 last_run_ended: '2024-01-14T13:36:34.411990-05:00'
@@ -33,14 +33,18 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-Nitschke/sub-Nitschke_ses-20090910_behavior+ecephys.nwb
   - path: sub-Nitschke/sub-Nitschke_ses-20090920_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - sub-Nitschke/sub-Nitschke_ses-20090922_behavior+ecephys.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-Nitschke/sub-Nitschke_ses-20090910_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Jenkins/sub-Jenkins_ses-20090912_behavior+ecephys.nwb
@@ -76,7 +80,11 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-Nitschke/sub-Nitschke_ses-20090910_behavior+ecephys.nwb
+  - path: sub-Nitschke/sub-Nitschke_ses-20090910_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-Nitschke/sub-Nitschke_ses-20090922_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []

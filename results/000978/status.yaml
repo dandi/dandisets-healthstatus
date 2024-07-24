@@ -1,19 +1,29 @@
 dandiset: 000978
-dandiset_version: de656de174842d214f515e9d05896ca0e9622a78
+draft_modified: '2024-05-11T03:07:11.054518Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
-nassets: null
+nassets: 9
 tests:
 - assets_nok: []
   assets_ok:
   - sub-JDS-SingleDay-JS21/sub-JDS-SingleDay-JS21_behavior+ecephys.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-JDS-SingleDay-JS34/sub-JDS-SingleDay-JS34_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
   assets_timeout:
   - sub-JDS-SingleDay-JS21/sub-JDS-SingleDay-JS21_behavior+ecephys.nwb
+  - path: sub-JDS-SingleDay-JS34/sub-JDS-SingleDay-JS34_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

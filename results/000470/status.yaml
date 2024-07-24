@@ -1,5 +1,5 @@
 dandiset: '000470'
-dandiset_version: e255703c4ddc2f54a2153f0d0e74f8df16efd7ce
+draft_modified: '2023-06-20T00:56:24.384242Z'
 last_run: '2024-02-13T00:41:40.770532-05:00'
 last_run_duration: 271.295243
 last_run_ended: '2024-02-13T00:46:12.065775-05:00'
@@ -11,12 +11,12 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
-  assets_ok:
+  assets_ok: []
+  assets_timeout:
   - sub-NR6/sub-NR6_ophys.nwb
-  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.1
+  hdmf: 3.14.2
   matnwb: v2.6.0.2
-  pynwb: 2.8.0
+  pynwb: 2.8.1

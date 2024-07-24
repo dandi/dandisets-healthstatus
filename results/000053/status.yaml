@@ -1,5 +1,5 @@
 dandiset: '000053'
-dandiset_version: cef39306122790e93c7e614793ab7171c263c334
+draft_modified: '2024-05-18T18:01:27.308863Z'
 last_run: '2024-01-11T23:59:34.151068-05:00'
 last_run_duration: 193890.094702
 last_run_ended: '2024-01-14T05:51:04.245770-05:00'
@@ -281,7 +281,11 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-Ford Prefect/sub-Ford Prefect_ses-20191110_obj-1flyl8s_behavior.nwb
+  - path: sub-Ford Prefect/sub-Ford Prefect_ses-20191110_obj-1flyl8s_behavior.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-Ford Prefect/sub-Ford Prefect_ses-20191110_obj-1ifr11m_behavior.nwb
   - path: sub-Ford Prefect/sub-Ford Prefect_ses-20191110_obj-1k8u0ds_behavior.nwb
     versions:
@@ -769,7 +773,6 @@ tests:
   - sub-Flip/sub-Flip_ses-20190808_behavior.nwb
   - sub-Flip/sub-Flip_ses-20191114_behavior.nwb
   - sub-Flip/sub-Flip_ses-20191210_behavior.nwb
-  - sub-Ford Prefect/sub-Ford Prefect_ses-20191110_obj-1flyl8s_behavior.nwb
   - sub-Ford Prefect/sub-Ford Prefect_ses-20191110_obj-1si63m5_behavior.nwb
   - sub-Ford Prefect/sub-Ford Prefect_ses-20191110_obj-81sba0_behavior.nwb
   - sub-James/sub-James_ses-20191108_obj-1e7amix_behavior.nwb
@@ -1435,6 +1438,11 @@ tests:
   - sub-npJ4/sub-npJ4_ses-20190511_behavior.nwb
   - sub-npJ5/sub-npJ5_ses-20190505_behavior.nwb
   assets_timeout:
+  - path: sub-Ford Prefect/sub-Ford Prefect_ses-20191110_obj-1flyl8s_behavior.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-npI1/sub-npI1_ses-20190414_behavior+ecephys.nwb
   - sub-npI1/sub-npI1_ses-20190416_behavior+ecephys.nwb
   - sub-npI3/sub-npI3_ses-20190420_behavior+ecephys.nwb

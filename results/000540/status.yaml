@@ -1,5 +1,5 @@
 dandiset: '000540'
-dandiset_version: 8371c39d36b6839506753b0ab6f3af95f19b0e9a
+draft_modified: '2023-06-20T00:56:24.901288Z'
 last_run: '2024-02-15T21:19:26.993901-05:00'
 last_run_duration: 303680.737399
 last_run_ended: '2024-02-19T09:40:47.731300-05:00'
@@ -762,7 +762,11 @@ tests:
   - sub-SLR121/sub-SLR121_ses-20220109_obj-19x0z2x_behavior+image.nwb
   - sub-SLR121/sub-SLR121_ses-20220109_obj-nz9j0h_behavior+image.nwb
   - sub-SLR121/sub-SLR121_ses-20220109_obj-t8vqw1_behavior+image.nwb
-  - sub-SLR121/sub-SLR121_ses-20220112_obj-19ubu6u_behavior+image.nwb
+  - path: sub-SLR121/sub-SLR121_ses-20220112_obj-19ubu6u_behavior+image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-SLR121/sub-SLR121_ses-20220112_obj-1ex8775_behavior+image.nwb
   - path: sub-SLR121/sub-SLR121_ses-20220112_obj-1j8fldk_behavior+image.nwb
     versions:
@@ -1004,7 +1008,6 @@ tests:
   - sub-SLR120/sub-SLR120_ses-20220106_obj-1uq39xq_behavior+image.nwb
   - sub-SLR120/sub-SLR120_ses-20220107_obj-1ky0it9_behavior+image.nwb
   - sub-SLR121/sub-SLR121_ses-20220109_obj-nz9j0h_behavior+image.nwb
-  - sub-SLR121/sub-SLR121_ses-20220112_obj-19ubu6u_behavior+image.nwb
   - sub-SLR121/sub-SLR121_ses-20220113_obj-1bl2t2j_behavior+image.nwb
   - sub-SLR122/sub-SLR122_ses-20220201_obj-1o8y7in_behavior+image.nwb
   - sub-SLR122/sub-SLR122_ses-20220201_obj-4bnxi0_behavior+image.nwb
@@ -1737,7 +1740,12 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-SLR126/sub-SLR126_ses-20220802_obj-2mqt3v_behavior+image.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-SLR121/sub-SLR121_ses-20220112_obj-19ubu6u_behavior+image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested:
 - asset: sub-SLR087/sub-SLR087_ses-20180706_obj-14ua2bs_behavior+image/9557b48e-46f0-45f2-a700-a2e15318c5bc_external_file_0.avi

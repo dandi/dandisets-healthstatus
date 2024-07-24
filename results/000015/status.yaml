@@ -1,5 +1,5 @@
 dandiset: '000015'
-dandiset_version: a06c8cb1751e6e1979fc4d34647c3e8e4b18c73f
+draft_modified: '2024-05-18T17:44:27.229043Z'
 last_run: '2024-01-04T10:46:52.968852-05:00'
 last_run_duration: 328049.29621
 last_run_ended: '2024-01-08T05:54:22.265062-05:00'
@@ -55,9 +55,9 @@ tests:
   - sub-an041/sub-an041_ses-20140826_obj-1q44jv8.nwb
   - path: sub-an041/sub-an041_ses-20140826_obj-4sg0j7.nwb
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-an041/sub-an041_ses-20140826_obj-9afqt.nwb
     versions:
       hdmf: 3.14.0
@@ -591,11 +591,6 @@ tests:
   - sub-an041/sub-an041_ses-20140826_obj-1i6sh43.nwb
   - sub-an041/sub-an041_ses-20140826_obj-1k8h9e8.nwb
   - sub-an041/sub-an041_ses-20140826_obj-1mwtqg6.nwb
-  - path: sub-an041/sub-an041_ses-20140826_obj-4sg0j7.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-an041/sub-an041_ses-20140827_obj-134wql9.nwb
     versions:
       hdmf: 3.13.0
@@ -1119,7 +1114,12 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-an041/sub-an041_ses-20140826_obj-4sg0j7.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

@@ -1,0 +1,22 @@
+dandiset: '001057'
+draft_modified: '2024-07-12T21:02:01.040224Z'
+last_run: null
+last_run_duration: null
+last_run_ended: null
+nassets: 4
+tests:
+- assets_nok: []
+  assets_ok:
+  - sub-Dataset-3-Animals-1-2-3-&-4/sub-Dataset-3-Animals-1-2-3-&-4.nwb
+  assets_timeout: []
+  name: pynwb_open_load_ns
+- assets_nok: []
+  assets_ok: []
+  assets_timeout:
+  - sub-Dataset-3-Animals-1-2-3-&-4/sub-Dataset-3-Animals-1-2-3-&-4.nwb
+  name: matnwb_nwbRead
+untested: []
+versions:
+  hdmf: 3.14.2
+  matnwb: v2.6.0.2
+  pynwb: 2.8.1

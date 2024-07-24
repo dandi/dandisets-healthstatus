@@ -1,5 +1,5 @@
 dandiset: 000549
-dandiset_version: b89173081fc1bf708e6a4fc88bf4d73c44a4e8cf
+draft_modified: '2023-06-20T00:56:27.608007Z'
 last_run: '2024-02-17T00:21:17.479743-05:00'
 last_run_duration: 19538.70764
 last_run_ended: '2024-02-17T05:46:56.187383-05:00'
@@ -121,9 +121,9 @@ tests:
       pynwb: 2.7.0
   - path: sub-Fig4-5-Uni50us-03/sub-Fig4-5-Uni50us-03_ses-BPAE-5xUnipolar-50us_obj-wlwhic_image.nwb
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-Fig4-5-Uni50us-05/sub-Fig4-5-Uni50us-05_ses-BPAE-5xUnipolar-50us_image.nwb
     versions:
       hdmf: 3.14.0
@@ -245,17 +245,17 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-Fig4-5-Uni50us-03/sub-Fig4-5-Uni50us-03_ses-BPAE-5xUnipolar-50us_obj-wlwhic_image.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-Fig4-5-Uni50us-05/sub-Fig4-5-Uni50us-05_ses-BPAE-5xUnipolar-50us_image.nwb
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-Fig4-5-Uni50us-03/sub-Fig4-5-Uni50us-03_ses-BPAE-5xUnipolar-50us_obj-wlwhic_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

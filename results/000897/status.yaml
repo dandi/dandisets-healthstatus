@@ -1,0 +1,22 @@
+dandiset: 000897
+draft_modified: '2024-06-05T17:10:34.881215Z'
+last_run: null
+last_run_duration: null
+last_run_ended: null
+nassets: 30
+tests:
+- assets_nok: []
+  assets_ok:
+  - sub-mahler/sub-mahler_ses-04132021_ecephys.nwb
+  assets_timeout: []
+  name: pynwb_open_load_ns
+- assets_nok: []
+  assets_ok: []
+  assets_timeout:
+  - sub-mahler/sub-mahler_ses-04132021_ecephys.nwb
+  name: matnwb_nwbRead
+untested: []
+versions:
+  hdmf: 3.14.2
+  matnwb: v2.6.0.2
+  pynwb: 2.8.1

@@ -1,9 +1,9 @@
 dandiset: '000246'
-dandiset_version: b4dec768646d9f928869ddeeb94ba8f18a49a280
+draft_modified: '2024-02-13T17:39:20.131820Z'
 last_run: '2024-02-03T17:33:05.303596-05:00'
 last_run_duration: 569642.711479
 last_run_ended: '2024-02-10T07:47:08.015075-05:00'
-nassets: 983
+nassets: 1027
 tests:
 - assets_nok:
   - path: sub-phpV7-6/sub-phpV7-6_ses-20230517_obj-kyfg7q_ophys.nwb
@@ -1353,7 +1353,11 @@ tests:
   - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-5rps9c_ophys.nwb
   - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-5tylm0_ophys.nwb
   - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-64pvuv_ophys.nwb
-  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-e7hyzz_ophys.nwb
+  - path: sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-e7hyzz_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-hvy02d_ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -2747,7 +2751,6 @@ tests:
   - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-1r2c1ye_ophys.nwb
   - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-1uw72cx_ophys.nwb
   - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-64pvuv_ophys.nwb
-  - sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-e7hyzz_ophys.nwb
   - path: sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-hvy02d_ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -2788,6 +2791,11 @@ tests:
   assets_timeout:
   - sub-phpV12-4/sub-phpV12-4_ses-20230510_obj-kv6fhz_ophys.nwb
   - sub-phpV8-6/sub-phpV8-6_ses-20230515_obj-cmr9fx_ophys.nwb
+  - path: sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-e7hyzz_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

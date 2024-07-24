@@ -1,0 +1,22 @@
+dandiset: 000935
+draft_modified: '2024-03-19T20:26:04.118823Z'
+last_run: null
+last_run_duration: null
+last_run_ended: null
+nassets: 6
+tests:
+- assets_nok: []
+  assets_ok:
+  - sub-interlum-ctrl-5/sub-interlum-ctrl-5_ses-20190907T120000_ecephys+ophys.nwb
+  assets_timeout: []
+  name: pynwb_open_load_ns
+- assets_nok: []
+  assets_ok: []
+  assets_timeout:
+  - sub-interlum-ctrl-5/sub-interlum-ctrl-5_ses-20190907T120000_ecephys+ophys.nwb
+  name: matnwb_nwbRead
+untested: []
+versions:
+  hdmf: 3.14.2
+  matnwb: v2.6.0.2
+  pynwb: 2.8.1

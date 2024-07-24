@@ -1,5 +1,5 @@
 dandiset: 000238
-dandiset_version: 63d03db6a175978ed1cba3ec7ee72ecea8e65103
+draft_modified: '2023-06-20T00:56:27.689455Z'
 last_run: '2024-02-02T01:03:23.819236-05:00'
 last_run_duration: 25104.441545
 last_run_ended: '2024-02-02T08:01:48.260781-05:00'
@@ -8,11 +8,6 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-RSpinal-Random-Wave-01/sub-RSpinal-Random-Wave-01_ses-20210724T194543_behavior+ophys.nwb
-  - path: sub-RSpinal-Random-Wave-03/sub-RSpinal-Random-Wave-03_ses-20211007T145521_behavior+ophys.nwb
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-RSpinal-Random-Wave-04/sub-RSpinal-Random-Wave-04_ses-20211008T101450_behavior+ophys.nwb
     versions:
       hdmf: 3.14.1
@@ -33,7 +28,12 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-RSpinal-Random-Wave-03/sub-RSpinal-Random-Wave-03_ses-20211007T145521_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
@@ -41,9 +41,9 @@ tests:
   - sub-RSpinal-Random-Wave-01/sub-RSpinal-Random-Wave-01_ses-20210724T194543_behavior+ophys.nwb
   - path: sub-RSpinal-Random-Wave-03/sub-RSpinal-Random-Wave-03_ses-20211007T145521_behavior+ophys.nwb
     versions:
-      hdmf: 3.14.1
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-RSpinal-Random-Wave-04/sub-RSpinal-Random-Wave-04_ses-20211008T101450_behavior+ophys.nwb
     versions:
       hdmf: 3.14.1

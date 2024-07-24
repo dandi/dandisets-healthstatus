@@ -1,5 +1,5 @@
 dandiset: 000149
-dandiset_version: 08567dbec7f264dabf770f84348b4c416909ffc5
+draft_modified: '2023-06-20T00:56:23.075736Z'
 last_run: '2024-01-15T10:43:24.385355-05:00'
 last_run_duration: 14617.195238
 last_run_ended: '2024-01-15T14:47:01.580593-05:00'
@@ -10,8 +10,12 @@ tests:
   - sub-70bf8cbd-d312-4654-a4ea-3a21ea2f541b/sub-70bf8cbd-d312-4654-a4ea-3a21ea2f541b_ses-4ecb5d24-f5cc-402c-be28-9d0f7cb14b3a_behavior+ecephys+image.nwb
   - sub-92130c1b-4fdb-4acc-86e0-1853d429c41a/sub-92130c1b-4fdb-4acc-86e0-1853d429c41a_ses-c7bd79c9-c47e-4ea5-aea3-74dda991b48e_behavior+ecephys+image.nwb
   - sub-9bebfe0b-082e-4d66-aca7-fae29317f708/sub-9bebfe0b-082e-4d66-aca7-fae29317f708_ses-4b7fbad4-f6de-43b4-9b15-c7c7ef44db4b_behavior+ecephys+image.nwb
-  - sub-c6e8125f-b6c7-4349-b74d-32e8bd606f63/sub-c6e8125f-b6c7-4349-b74d-32e8bd606f63_ses-aad23144-0e52-4eac-80c5-c4ee2decb198_behavior+ecephys+image.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-c6e8125f-b6c7-4349-b74d-32e8bd606f63/sub-c6e8125f-b6c7-4349-b74d-32e8bd606f63_ses-aad23144-0e52-4eac-80c5-c4ee2decb198_behavior+ecephys+image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
@@ -19,7 +23,11 @@ tests:
   - sub-70bf8cbd-d312-4654-a4ea-3a21ea2f541b/sub-70bf8cbd-d312-4654-a4ea-3a21ea2f541b_ses-4ecb5d24-f5cc-402c-be28-9d0f7cb14b3a_behavior+ecephys+image.nwb
   - sub-92130c1b-4fdb-4acc-86e0-1853d429c41a/sub-92130c1b-4fdb-4acc-86e0-1853d429c41a_ses-c7bd79c9-c47e-4ea5-aea3-74dda991b48e_behavior+ecephys+image.nwb
   - sub-9bebfe0b-082e-4d66-aca7-fae29317f708/sub-9bebfe0b-082e-4d66-aca7-fae29317f708_ses-4b7fbad4-f6de-43b4-9b15-c7c7ef44db4b_behavior+ecephys+image.nwb
-  - sub-c6e8125f-b6c7-4349-b74d-32e8bd606f63/sub-c6e8125f-b6c7-4349-b74d-32e8bd606f63_ses-aad23144-0e52-4eac-80c5-c4ee2decb198_behavior+ecephys+image.nwb
+  - path: sub-c6e8125f-b6c7-4349-b74d-32e8bd606f63/sub-c6e8125f-b6c7-4349-b74d-32e8bd606f63_ses-aad23144-0e52-4eac-80c5-c4ee2decb198_behavior+ecephys+image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

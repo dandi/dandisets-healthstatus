@@ -1,9 +1,9 @@
 dandiset: 000029
-dandiset_version: 513e570e84d83e495f6296a9cc26fa5cc43d8a18
+draft_modified: '2024-05-06T15:29:43.118523Z'
 last_run: '2024-02-08T06:00:57.963287-05:00'
 last_run_duration: 758.867923
 last_run_ended: '2024-02-08T06:13:36.831210-05:00'
-nassets: 9
+nassets: 5
 tests:
 - assets_nok: []
   assets_ok:
@@ -11,7 +11,11 @@ tests:
   - sub-anm369962/sub-anm369962_behavior+ecephys.nwb
   - sub-anm369963/sub-anm369963_behavior+ecephys.nwb
   - sub-anm369964/sub-anm369964_behavior+ecephys.nwb
-  - sub-monk-g/sub-monk-g.nwb
+  - path: sub-monk-g/sub-monk-g.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -21,7 +25,11 @@ tests:
   - sub-anm369964/sub-anm369964_behavior+ecephys.nwb
   assets_ok: []
   assets_timeout:
-  - sub-monk-g/sub-monk-g.nwb
+  - path: sub-monk-g/sub-monk-g.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested:
 - asset: baz

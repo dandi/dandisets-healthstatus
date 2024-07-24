@@ -1,5 +1,5 @@
 dandiset: 000218
-dandiset_version: c76f1f39d7ed35b2b2c4479b5d2ad73d65dcfdfd
+draft_modified: '2023-06-20T00:56:16.769481Z'
 last_run: '2024-01-20T18:30:54.846558-05:00'
 last_run_duration: 381378.307186
 last_run_ended: '2024-01-25T04:27:13.153744-05:00'
@@ -12,7 +12,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-DT1/sub-DT1_ses-DT1-rLS-20150723-1728um_ecephys.nwb
+  - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150723-1728um_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150724-1800um_ecephys.nwb
     versions:
       hdmf: 3.14.0
@@ -552,7 +556,11 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-DT1/sub-DT1_ses-DT1-rLS-20150723-1728um_ecephys.nwb
+  - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150723-1728um_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150724-1800um_ecephys.nwb
     versions:
       hdmf: 3.14.0

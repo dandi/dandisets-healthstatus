@@ -1,5 +1,5 @@
 dandiset: '000007'
-dandiset_version: e69b20396c2266f88f086ed9d5a7636395f15b16
+draft_modified: '2024-05-18T17:46:27.027987Z'
 last_run: '2024-01-03T12:21:20.025406-05:00'
 last_run_duration: 80732.919373
 last_run_ended: '2024-01-04T10:46:52.944779-05:00'
@@ -236,9 +236,9 @@ tests:
       pynwb: 2.6.0
   - path: sub-anm00314758/sub-anm00314758_ses-20151020T104930.nwb
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-anm00314758/sub-anm00314758_ses-20151021T101014.nwb
     versions:
       hdmf: 3.13.0
@@ -500,11 +500,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-anm00314758/sub-anm00314758_ses-20151020T104930.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-anm00314758/sub-anm00314758_ses-20151021T101014.nwb
     versions:
       hdmf: 3.13.0
@@ -535,7 +530,12 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-anm00314758/sub-anm00314758_ses-20151020T104930.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

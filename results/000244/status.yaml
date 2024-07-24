@@ -1,5 +1,5 @@
 dandiset: '000244'
-dandiset_version: cf171e1708b99bc891b747a16519f862b551f975
+draft_modified: '2023-06-20T00:56:23.425195Z'
 last_run: '2024-02-02T23:54:44.097795-05:00'
 last_run_duration: 118616.761416
 last_run_ended: '2024-02-04T08:51:40.859211-05:00'
@@ -86,7 +86,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-SLC12/sub-SLC12_ses-anest_ophys.nwb
-  - sub-SLC12/sub-SLC12_ses-awake_ophys.nwb
+  - path: sub-SLC12/sub-SLC12_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SLC13/sub-SLC13_ses-anest_ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -224,7 +228,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-SLC12/sub-SLC12_ses-anest_ophys.nwb
-  - sub-SLC12/sub-SLC12_ses-awake_ophys.nwb
+  - path: sub-SLC12/sub-SLC12_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SLC13/sub-SLC13_ses-anest_ophys.nwb
     versions:
       hdmf: 3.13.0

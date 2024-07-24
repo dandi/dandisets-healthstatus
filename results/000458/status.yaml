@@ -1,5 +1,5 @@
 dandiset: 000458
-dandiset_version: 6b7313449c00f5bb8fa7ebda40c996b4e446e52b
+draft_modified: '2023-06-20T00:56:24.150509Z'
 last_run: '2024-02-11T23:32:37.666948-05:00'
 last_run_duration: 68934.439331
 last_run_ended: '2024-02-12T18:41:32.106279-05:00'
@@ -93,11 +93,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-575102/sub-575102_ses-20210603_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-586466/sub-586466_ses-20210729_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.0
@@ -123,7 +118,12 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-575102/sub-575102_ses-20210603_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
@@ -216,9 +216,9 @@ tests:
       pynwb: 2.7.0
   - path: sub-575102/sub-575102_ses-20210603_behavior+ecephys.nwb
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-586466/sub-586466_ses-20210729_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.0

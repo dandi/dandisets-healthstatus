@@ -1,5 +1,5 @@
 dandiset: '000115'
-dandiset_version: 959d80612bbdfdb9ec6a78d9d80793bb81719221
+draft_modified: '2024-02-22T22:02:53.344374Z'
 last_run: '2024-01-14T14:29:38.739327-05:00'
 last_run_duration: 207950.201743
 last_run_ended: '2024-01-17T00:15:28.941070-05:00'
@@ -174,11 +174,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-montague/sub-montague_ses-montague-12_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - sub-montague/sub-montague_ses-montague-13_behavior+ecephys.nwb
   - path: sub-montague/sub-montague_ses-montague-14_behavior+ecephys.nwb
     versions:
@@ -280,7 +275,12 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-montague/sub-montague_ses-montague-12_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-roquefort/sub-roquefort_ses-roquefort-12_behavior+ecephys.nwb
@@ -454,9 +454,9 @@ tests:
       pynwb: 2.7.0
   - path: sub-montague/sub-montague_ses-montague-12_behavior+ecephys.nwb
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - sub-montague/sub-montague_ses-montague-13_behavior+ecephys.nwb
   - path: sub-montague/sub-montague_ses-montague-14_behavior+ecephys.nwb
     versions:

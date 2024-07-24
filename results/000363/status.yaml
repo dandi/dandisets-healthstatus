@@ -1,5 +1,5 @@
 dandiset: '000363'
-dandiset_version: 5b0ba6de6656627f0b6737c55252855af660e4e3
+draft_modified: '2023-10-12T21:29:44.261286Z'
 last_run: '2024-02-08T16:48:25.894319-05:00'
 last_run_duration: 627030.287121
 last_run_ended: '2024-02-15T22:58:56.181440-05:00'
@@ -312,11 +312,6 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-484672/sub-484672_ses-20210324T143423_behavior+ecephys+ogen.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-484673/sub-484673_ses-20210427T145157_behavior+ecephys+ogen.nwb
     versions:
       hdmf: 3.13.0
@@ -518,6 +513,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-484672/sub-484672_ses-20210324T143423_behavior+ecephys+ogen.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-442571/sub-442571_ses-20190301T140324_behavior+ecephys+ogen.nwb
@@ -965,9 +965,9 @@ tests:
       pynwb: 2.8.0
   - path: sub-484672/sub-484672_ses-20210324T143423_behavior+ecephys+ogen.nwb
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - sub-484673/sub-484673_ses-20210429T131158_behavior+ecephys+ogen.nwb
   - sub-484673/sub-484673_ses-20210430T132651_behavior+ecephys+ogen.nwb
   - path: sub-484673/sub-484673_ses-20210506T134206_behavior+ecephys+ogen.nwb

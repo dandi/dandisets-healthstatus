@@ -1,5 +1,5 @@
 dandiset: '000114'
-dandiset_version: f755fd5ed7196f6bb83a40dc7f10e25ea64a8c07
+draft_modified: '2024-05-18T17:15:26.995865Z'
 last_run: '2024-01-14T13:36:34.494268-05:00'
 last_run_duration: 58839.350703
 last_run_ended: '2024-01-15T05:57:13.844971-05:00'
@@ -67,9 +67,9 @@ tests:
       pynwb: 2.8.0
   - path: sub-ROV45/sub-ROV45_ses-Day 1-obs_ophys.nwb
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-ROV49/sub-ROV49_ses-Day 1-obs_ophys.nwb
     versions:
       hdmf: 3.14.0
@@ -193,11 +193,6 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-ROV45/sub-ROV45_ses-Day 1-obs_ophys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-ROV49/sub-ROV49_ses-Day 1-obs_ophys.nwb
     versions:
       hdmf: 3.14.0
@@ -210,6 +205,11 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
+  - path: sub-ROV45/sub-ROV45_ses-Day 1-obs_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-V110/sub-V110_ses-03032018_ecephys.nwb
     versions:
       hdmf: 3.14.1

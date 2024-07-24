@@ -1,19 +1,29 @@
 dandiset: 000933
-dandiset_version: 07bbcc848ac5f5401e6b98d26c8658aa857c57bd
+draft_modified: '2024-03-15T17:58:45.364720Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
-nassets: null
+nassets: 28
 tests:
 - assets_nok: []
   assets_ok:
   - sub-1295011705/sub-1295011705_ses-1297160609_icephys.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-1307828346/sub-1307828346_ses-1310113951_icephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-1295011705/sub-1295011705_ses-1297160609_icephys.nwb
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-1307828346/sub-1307828346_ses-1310113951_icephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

@@ -1,9 +1,9 @@
 dandiset: '000037'
-dandiset_version: f42702897e3dd69c89d682a404f23be88c56cf78
+draft_modified: '2024-02-09T16:23:29.455262Z'
 last_run: '2024-01-09T02:37:31.726787-05:00'
 last_run_duration: 422770.560479
 last_run_ended: '2024-01-14T00:03:42.287266-05:00'
-nassets: 150
+nassets: 151
 tests:
 - assets_nok:
   - path: sub-433448/sub-433448_ses-826338612_obj-raw_behavior+image+ophys.nwb
@@ -218,9 +218,9 @@ tests:
       pynwb: 2.8.0
   - path: sub-413663/sub-413663_ses-765193831_behavior+ophys.nwb
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-413663/sub-413663_ses-765193831_obj-raw_behavior+image+ophys.nwb
     versions:
       hdmf: 3.14.0
@@ -517,11 +517,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-413663/sub-413663_ses-764704289_behavior+ophys.nwb
-  - path: sub-413663/sub-413663_ses-765193831_behavior+ophys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-413663/sub-413663_ses-766502238_behavior+ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -757,6 +752,11 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
+  - path: sub-413663/sub-413663_ses-765193831_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-413663/sub-413663_ses-765193831_obj-raw_behavior+image+ophys.nwb
     versions:
       hdmf: 3.14.0

@@ -1,5 +1,5 @@
 dandiset: '000021'
-dandiset_version: e30a06ce015270b4696708929ac47f18f6fa4c17
+draft_modified: '2023-06-20T00:56:15.536575Z'
 last_run: '2024-01-06T01:42:35.175779-05:00'
 last_run_duration: 288777.633534
 last_run_ended: '2024-01-09T09:55:32.809313-05:00'
@@ -141,11 +141,6 @@ tests:
   - path: sub-719828686/sub-719828686_ses-754312389_probe-756781563_ecephys.nwb
     versions:
       hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-722882751/sub-722882751_ses-743475441.nwb
-    versions:
-      hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-722882751/sub-722882751_ses-743475441_probe-769325777_ecephys.nwb
@@ -557,7 +552,12 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-722882751/sub-722882751_ses-743475441.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-699733573/sub-699733573_ses-715093703_probe-810755803_ecephys.nwb
@@ -1036,9 +1036,9 @@ tests:
       pynwb: 2.8.0
   - path: sub-722882751/sub-722882751_ses-743475441.nwb
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-726141242/sub-726141242_ses-750332458.nwb
     versions:
       hdmf: 3.13.0

@@ -1,22 +1,22 @@
 dandiset: '000206'
-dandiset_version: 79d771c501e803c888403d7f5a524fc611c46989
+draft_modified: '2023-06-20T00:56:21.983153Z'
 last_run: '2024-01-17T03:11:43.447708-05:00'
 last_run_duration: 679.879238
 last_run_ended: '2024-01-17T03:23:03.326946-05:00'
 nassets: 1
 tests:
 - assets_nok: []
-  assets_ok:
+  assets_ok: []
+  assets_timeout:
   - sub-TIGRE296/sub-TIGRE296_behavior+ophys.nwb
-  assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
-  assets_ok:
+  assets_ok: []
+  assets_timeout:
   - sub-TIGRE296/sub-TIGRE296_behavior+ophys.nwb
-  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.1
+  hdmf: 3.14.2
   matnwb: v2.6.0.2
-  pynwb: 2.8.0
+  pynwb: 2.8.1

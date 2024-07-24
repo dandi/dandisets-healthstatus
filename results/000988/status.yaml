@@ -1,19 +1,29 @@
 dandiset: 000988
-dandiset_version: 5637f2c571f08f07a76c611cf2cd2114ca571d78
+draft_modified: '2024-05-13T23:57:18.283011Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
-nassets: null
+nassets: 185
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-120056voltron1608-cell1-sensitivity-vs-I-OD0-5/sub-120056voltron1608-cell1-sensitivity-vs-I-OD0-5_ses-20230309T120056_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-172612plate2-cell2-find-inversion2-OD0-5/sub-172612plate2-cell2-find-inversion2-OD0-5_ses-20230307T172612_image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
   - sub-172612plate2-cell2-find-inversion2-OD0-5/sub-172612plate2-cell2-find-inversion2-OD0-5_ses-20230307T172612_image.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-120056voltron1608-cell1-sensitivity-vs-I-OD0-5/sub-120056voltron1608-cell1-sensitivity-vs-I-OD0-5_ses-20230309T120056_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:
