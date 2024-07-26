@@ -233,7 +233,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-313/sub-313_ses-4threc-100_ophys.nwb
+  - path: sub-313/sub-313_ses-4threc-100_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-313/sub-313_ses-5threc-0_ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -336,7 +340,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - sub-311/sub-311_ses-311-2ndrec-100_ophys.nwb
-  - sub-313/sub-313_ses-4threc-100_ophys.nwb
   assets_ok:
   - path: sub-305/sub-305_ses-1strec-0_ophys.nwb
     versions:
@@ -644,6 +647,11 @@ tests:
       pynwb: 2.6.0
   assets_timeout:
   - path: sub-312/sub-312_ses-3rdrec-0_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-313/sub-313_ses-4threc-100_ophys.nwb
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

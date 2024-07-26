@@ -13,6 +13,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - sub-11-3/sub-11-3_ses-20kHz-sine-stimulation-15V_image.nwb
+  - path: sub-2-3/sub-2-3_ses-2kHz-sine-stimulation-7V_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
@@ -20,6 +25,11 @@ tests:
   - sub-11-3/sub-11-3_ses-20kHz-sine-stimulation-15V_image.nwb
   assets_timeout:
   - path: sub-10-3/sub-10-3_ses-2kHz-sine-stimulation-7V_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-2-3/sub-2-3_ses-2kHz-sine-stimulation-7V_image.nwb
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

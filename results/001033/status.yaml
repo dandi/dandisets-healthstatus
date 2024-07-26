@@ -8,6 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-3-2/sub-3-2_ses-2kHz-spindle-stimulation-5-2V_image.nwb
+  - path: sub-7-2/sub-7-2_ses-2kHz-sine-stimulation-4-8V_obj-cqxn3y_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-8-2/sub-8-2_ses-20Hz-sine-stimulation-4-4V_image.nwb
     versions:
       hdmf: 3.14.2
@@ -19,6 +24,11 @@ tests:
   assets_ok:
   - sub-3-2/sub-3-2_ses-2kHz-spindle-stimulation-5-2V_image.nwb
   assets_timeout:
+  - path: sub-7-2/sub-7-2_ses-2kHz-sine-stimulation-4-8V_obj-cqxn3y_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-8-2/sub-8-2_ses-20Hz-sine-stimulation-4-4V_image.nwb
     versions:
       hdmf: 3.14.2

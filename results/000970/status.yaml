@@ -7,6 +7,11 @@ nassets: 46
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-F2-3/sub-F2-3_ses-20240522.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-IS264/sub-IS264_ses-20240522.nwb
     versions:
       hdmf: 3.14.2
@@ -18,6 +23,11 @@ tests:
 - assets_nok: []
   assets_ok: []
   assets_timeout:
+  - path: sub-F2-3/sub-F2-3_ses-20240522.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-IS264/sub-IS264_ses-20240522.nwb
     versions:
       hdmf: 3.14.2

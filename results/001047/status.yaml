@@ -7,6 +7,11 @@ nassets: 54
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-011Control-x1/sub-011Control-x1_obj-1gqt54u_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-013Control-x1/sub-013Control-x1_obj-6stwj8_image.nwb
     versions:
       hdmf: 3.14.2
@@ -19,6 +24,11 @@ tests:
   - sub-013Control-x2/sub-013Control-x2_obj-m9iu82_image.nwb
   assets_ok: []
   assets_timeout:
+  - path: sub-011Control-x1/sub-011Control-x1_obj-1gqt54u_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-013Control-x1/sub-013Control-x1_obj-6stwj8_image.nwb
     versions:
       hdmf: 3.14.2

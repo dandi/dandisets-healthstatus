@@ -7,12 +7,14 @@ nassets: 10
 tests:
 - assets_nok: []
   assets_ok:
+  - sub-KP/sub-KP_ses-2019-07-22-005_ecephys.nwb
   - sub-KP/sub-KP_ses-2019-07-22-006_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
   assets_timeout:
+  - sub-KP/sub-KP_ses-2019-07-22-005_ecephys.nwb
   - sub-KP/sub-KP_ses-2019-07-22-006_ecephys.nwb
   name: matnwb_nwbRead
 untested: []

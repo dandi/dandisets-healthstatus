@@ -13,6 +13,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-BH527/sub-BH527_ses-20231030T000325_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
@@ -20,6 +25,11 @@ tests:
   - sub-BH508/sub-BH508_ses-20240307T002354_ecephys.nwb
   assets_timeout:
   - path: sub-BH526/sub-BH526_ses-20231029T192529_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-BH527/sub-BH527_ses-20231030T000325_ecephys.nwb
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

@@ -252,9 +252,9 @@ tests:
       pynwb: 2.7.0
   - path: sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-513-2-2_ecephys.nwb
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-513-2-3_ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -718,11 +718,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-513-2-2_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-513-2-3_ecephys.nwb
     versions:
       hdmf: 3.12.2
@@ -890,6 +885,11 @@ tests:
       pynwb: 2.8.0
   assets_timeout:
   - path: sub-hybrid-janelia/sub-hybrid-janelia_ses-hybrid-drift-siprobe-rec-32c-1200s-11_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-513-2-2_ecephys.nwb
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

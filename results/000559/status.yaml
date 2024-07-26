@@ -8,6 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-209/sub-209_ses-reinforcement-9001154c-318b-4963-8aba-3b14f410ba59_behavior+image+ogen.nwb
+  - path: sub-3442/sub-3442_ses-reinforcement-a682905a-a4af-4a91-856f-53477e10e7fe_behavior+image+ogen.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-dls-dlight-7/sub-dls-dlight-7_ses-photometry-9fa29de1-f06c-4ce5-99be-bff315e568a0_behavior+image+ophys.nwb
     versions:
       hdmf: 3.14.2
@@ -19,6 +24,11 @@ tests:
   assets_ok:
   - sub-209/sub-209_ses-reinforcement-9001154c-318b-4963-8aba-3b14f410ba59_behavior+image+ogen.nwb
   assets_timeout:
+  - path: sub-3442/sub-3442_ses-reinforcement-a682905a-a4af-4a91-856f-53477e10e7fe_behavior+image+ogen.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-dls-dlight-7/sub-dls-dlight-7_ses-photometry-9fa29de1-f06c-4ce5-99be-bff315e568a0_behavior+image+ophys.nwb
     versions:
       hdmf: 3.14.2

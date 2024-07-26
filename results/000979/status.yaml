@@ -8,6 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-SIROF/sub-SIROF_obj-1k8fnjk_ecephys.nwb
+  - path: sub-SIROF/sub-SIROF_obj-kg6r54_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SIROF/sub-SIROF_obj-tlc4i6_ecephys.nwb
     versions:
       hdmf: 3.14.2
@@ -19,6 +24,11 @@ tests:
   assets_ok:
   - sub-SIROF/sub-SIROF_obj-1k8fnjk_ecephys.nwb
   assets_timeout:
+  - path: sub-SIROF/sub-SIROF_obj-kg6r54_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SIROF/sub-SIROF_obj-tlc4i6_ecephys.nwb
     versions:
       hdmf: 3.14.2

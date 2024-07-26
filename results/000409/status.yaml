@@ -14,6 +14,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-ZFM-02370/sub-ZFM-02370_ses-6f6d2c8e-28be-49f4-ae4d-06be2d3148c1-processed-only_behavior.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
@@ -24,6 +29,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - sub-SWC-052/sub-SWC-052_ses-22e04698-b974-4805-b241-3b547dbf37bf_behavior+ecephys+image.nwb
+  - path: sub-ZFM-02370/sub-ZFM-02370_ses-6f6d2c8e-28be-49f4-ae4d-06be2d3148c1-processed-only_behavior.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

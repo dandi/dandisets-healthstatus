@@ -14,12 +14,22 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-M/sub-M_ses-RT-20140115_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
   assets_timeout:
   - sub-C/sub-C_ses-RT-20131011_behavior+ecephys.nwb
   - path: sub-J/sub-J_ses-CO-20160406_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-M/sub-M_ses-RT-20140115_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

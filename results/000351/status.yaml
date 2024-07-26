@@ -450,7 +450,6 @@ tests:
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day65.nwb
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day66-extinction.nwb
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day67.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day70-Poisson-cue.nwb
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day71.nwb
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day72.nwb
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day8.nwb
@@ -816,6 +815,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day70-Poisson-cue.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day1-30.nwb
@@ -1256,7 +1260,6 @@ tests:
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day65.nwb
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day66-extinction.nwb
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day67.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day70-Poisson-cue.nwb
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day71.nwb
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day72.nwb
   - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day8.nwb
@@ -1628,6 +1631,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day70-Poisson-cue.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

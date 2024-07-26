@@ -8,12 +8,14 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-ant2-m1-d17-y2023/sub-ant2-m1-d17-y2023_ses-m1-d17-y2023-ant2-0-03x-ethylpyrazine-40-t150-z50um_ophys.nwb
-  assets_timeout: []
+  assets_timeout:
+  - sub-ant5-m1-d11-y2023/sub-ant5-m1-d11-y2023_ses-m1-d11-y2023-ant5-0-03x-3-hexanone-40-t214-z100um_ophys.nwb
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
   assets_timeout:
   - sub-ant2-m1-d17-y2023/sub-ant2-m1-d17-y2023_ses-m1-d17-y2023-ant2-0-03x-ethylpyrazine-40-t150-z50um_ophys.nwb
+  - sub-ant5-m1-d11-y2023/sub-ant5-m1-d11-y2023_ses-m1-d11-y2023-ant5-0-03x-3-hexanone-40-t214-z100um_ophys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

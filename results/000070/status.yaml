@@ -1,9 +1,9 @@
 dandiset: '000070'
-draft_modified: '2024-02-22T22:02:52.433904Z'
+draft_modified: '2024-07-23T21:56:28.003338Z'
 last_run: '2024-01-14T07:42:13.623732-05:00'
 last_run_duration: 21260.788258
 last_run_ended: '2024-01-14T13:36:34.411990-05:00'
-nassets: 9
+nassets: 10
 tests:
 - assets_nok: []
   assets_ok:
@@ -13,11 +13,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-Jenkins/sub-Jenkins_ses-20090916_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
-  - path: sub-Jenkins/sub-Jenkins_ses-20090918_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
@@ -40,6 +35,11 @@ tests:
       pynwb: 2.8.0
   - sub-Nitschke/sub-Nitschke_ses-20090922_behavior+ecephys.nwb
   assets_timeout:
+  - path: sub-Jenkins/sub-Jenkins_ses-20090918_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Nitschke/sub-Nitschke_ses-20090910_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.2
@@ -66,9 +66,9 @@ tests:
   assets_timeout:
   - path: sub-Jenkins/sub-Jenkins_ses-20090918_behavior+ecephys.nwb
     versions:
-      hdmf: 3.14.1
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-Jenkins/sub-Jenkins_ses-20090923_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.1

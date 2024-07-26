@@ -8,6 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-11/sub-11_image.nwb
+  - path: sub-24/sub-24_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-27/sub-27_image.nwb
     versions:
       hdmf: 3.14.2
@@ -19,6 +24,11 @@ tests:
   assets_ok:
   - sub-11/sub-11_image.nwb
   assets_timeout:
+  - path: sub-24/sub-24_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-27/sub-27_image.nwb
     versions:
       hdmf: 3.14.2

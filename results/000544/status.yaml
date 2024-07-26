@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-001/sub-001_ses-session-1234.nwb
-  - sub-484677/sub-484677_behavior+ecephys+ogen.nwb
+  - path: sub-484677/sub-484677_behavior+ecephys+ogen.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-484677/sub-484677_ses-20210415T161621_behavior+ecephys+ogen.nwb
     versions:
       hdmf: 3.14.2
@@ -20,7 +24,11 @@ tests:
   assets_ok:
   - sub-001/sub-001_ses-session-1234.nwb
   assets_timeout:
-  - sub-484677/sub-484677_behavior+ecephys+ogen.nwb
+  - path: sub-484677/sub-484677_behavior+ecephys+ogen.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-484677/sub-484677_ses-20210415T161621_behavior+ecephys+ogen.nwb
     versions:
       hdmf: 3.14.2

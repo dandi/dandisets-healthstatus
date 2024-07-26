@@ -7,12 +7,14 @@ nassets: 6
 tests:
 - assets_nok: []
   assets_ok:
+  - sub-interlum-8/sub-interlum-8_ses-20190821T120000_ecephys+ophys.nwb
   - sub-interlum-ctrl-5/sub-interlum-ctrl-5_ses-20190907T120000_ecephys+ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
   assets_timeout:
+  - sub-interlum-8/sub-interlum-8_ses-20190821T120000_ecephys+ophys.nwb
   - sub-interlum-ctrl-5/sub-interlum-ctrl-5_ses-20190907T120000_ecephys+ophys.nwb
   name: matnwb_nwbRead
 untested: []

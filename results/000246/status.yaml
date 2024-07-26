@@ -118,7 +118,11 @@ tests:
   - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-18wfb4m_ophys.nwb
   - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1bi71hh_ophys.nwb
   - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1chlfru_ophys.nwb
-  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1ehzer_ophys.nwb
+  - path: sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1ehzer_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1ewggb2_ophys.nwb
   - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1jwb3wp_ophys.nwb
   - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1paud1e_ophys.nwb
@@ -1694,7 +1698,6 @@ tests:
       pynwb: 2.6.0
   - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-18wfb4m_ophys.nwb
   - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1bi71hh_ophys.nwb
-  - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1ehzer_ophys.nwb
   - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1ewggb2_ophys.nwb
   - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1jwb3wp_ophys.nwb
   - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-aj9pbb_ophys.nwb
@@ -2789,6 +2792,11 @@ tests:
   - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-topbtr_ophys.nwb
   - sub-phpV9-6/sub-phpV9-6_ses-20230502_obj-xu8kn2_ophys.nwb
   assets_timeout:
+  - path: sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1ehzer_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-phpV12-4/sub-phpV12-4_ses-20230510_obj-kv6fhz_ophys.nwb
   - sub-phpV8-6/sub-phpV8-6_ses-20230515_obj-cmr9fx_ophys.nwb
   - path: sub-phpV9-4/sub-phpV9-4_ses-20230425_obj-e7hyzz_ophys.nwb

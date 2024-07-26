@@ -128,9 +128,9 @@ tests:
       pynwb: 2.8.0
   - path: sub-Daisy/sub-Daisy_ses-20190510_behavior.nwb
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - sub-Daisy/sub-Daisy_ses-20190513_behavior.nwb
   - sub-Daisy/sub-Daisy_ses-20190520_behavior.nwb
   - sub-Daisy/sub-Daisy_ses-20190521_behavior.nwb
@@ -934,11 +934,6 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-Daisy/sub-Daisy_ses-20190510_behavior.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - sub-Daisy/sub-Daisy_ses-20190513_behavior.nwb
   - sub-Daisy/sub-Daisy_ses-20190521_behavior.nwb
   - sub-Daisy/sub-Daisy_ses-20190523_behavior.nwb
@@ -1438,6 +1433,11 @@ tests:
   - sub-npJ4/sub-npJ4_ses-20190511_behavior.nwb
   - sub-npJ5/sub-npJ5_ses-20190505_behavior.nwb
   assets_timeout:
+  - path: sub-Daisy/sub-Daisy_ses-20190510_behavior.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Ford Prefect/sub-Ford Prefect_ses-20191110_obj-1flyl8s_behavior.nwb
     versions:
       hdmf: 3.14.2

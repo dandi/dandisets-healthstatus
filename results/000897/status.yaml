@@ -8,12 +8,14 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-mahler/sub-mahler_ses-04132021_ecephys.nwb
-  assets_timeout: []
+  assets_timeout:
+  - sub-mahler/sub-mahler_ses-04142021_behavior+ecephys.nwb
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
   assets_timeout:
   - sub-mahler/sub-mahler_ses-04132021_ecephys.nwb
+  - sub-mahler/sub-mahler_ses-04142021_behavior+ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

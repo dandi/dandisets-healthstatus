@@ -8,6 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-BPAE-8bipolar-770kHz-02/sub-BPAE-8bipolar-770kHz-02_ses-Cross-directional-770kHz_image.nwb
+  - path: sub-BPAE-8bipolar-770kHz-09/sub-BPAE-8bipolar-770kHz-09_ses-Cross-directional-770kHz_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BPAE-8unipolar-1Hz-600ns-08/sub-BPAE-8unipolar-1Hz-600ns-08_ses-Co-directional-1Hz_image.nwb
     versions:
       hdmf: 3.14.2
@@ -19,6 +24,11 @@ tests:
   assets_ok:
   - sub-BPAE-8bipolar-770kHz-02/sub-BPAE-8bipolar-770kHz-02_ses-Cross-directional-770kHz_image.nwb
   assets_timeout:
+  - path: sub-BPAE-8bipolar-770kHz-09/sub-BPAE-8bipolar-770kHz-09_ses-Cross-directional-770kHz_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BPAE-8unipolar-1Hz-600ns-08/sub-BPAE-8unipolar-1Hz-600ns-08_ses-Co-directional-1Hz_image.nwb
     versions:
       hdmf: 3.14.2

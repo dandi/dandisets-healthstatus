@@ -8,6 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-G1-12A5D/sub-G1-12A5D_obj-1s9jq9q_ecephys.nwb
+  - path: sub-G1-12A62/sub-G1-12A62_obj-7ga94h_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-G2-11/sub-G2-11_obj-10f1i22_ecephys.nwb
     versions:
       hdmf: 3.14.2
@@ -19,6 +24,11 @@ tests:
   assets_ok:
   - sub-G1-12A5D/sub-G1-12A5D_obj-1s9jq9q_ecephys.nwb
   assets_timeout:
+  - path: sub-G1-12A62/sub-G1-12A62_obj-7ga94h_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-G2-11/sub-G2-11_obj-10f1i22_ecephys.nwb
     versions:
       hdmf: 3.14.2

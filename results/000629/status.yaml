@@ -9,6 +9,11 @@ tests:
   assets_ok:
   - sub-remy/sub-remy_ses-remy-25_behavior+ecephys.nwb
   assets_timeout:
+  - path: sub-gus/sub-gus_ses-gus-10_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-gus/sub-gus_ses-gus-17_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.2
@@ -18,6 +23,11 @@ tests:
 - assets_nok: []
   assets_ok: []
   assets_timeout:
+  - path: sub-gus/sub-gus_ses-gus-10_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-gus/sub-gus_ses-gus-17_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.2

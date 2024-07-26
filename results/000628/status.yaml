@@ -8,6 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-Fr/sub-Fr_ses-20220908T060207_image.nwb
+  - path: sub-Lo/sub-Lo_ses-20220901T162129.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout:
   - path: sub-Bf/sub-Bf_ses-20211222T151802_behavior.nwb
     versions:
@@ -24,6 +29,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - sub-Fr/sub-Fr_ses-20220908T060207_image.nwb
+  - path: sub-Lo/sub-Lo_ses-20220901T162129.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

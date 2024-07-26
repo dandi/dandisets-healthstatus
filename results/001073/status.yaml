@@ -7,12 +7,14 @@ nassets: 3
 tests:
 - assets_nok: []
   assets_ok:
+  - sub-Godzilla-0-STD/sub-Godzilla-0-STD_ses-LITMUS-Rat-0-STD_ecephys.nwb
   - sub-Godzilla-4-STD/sub-Godzilla-4-STD_ses-LITMUS-Rat-4-STD_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
   assets_timeout:
+  - sub-Godzilla-0-STD/sub-Godzilla-0-STD_ses-LITMUS-Rat-0-STD_ecephys.nwb
   - sub-Godzilla-4-STD/sub-Godzilla-4-STD_ses-LITMUS-Rat-4-STD_ecephys.nwb
   name: matnwb_nwbRead
 untested: []

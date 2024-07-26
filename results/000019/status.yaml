@@ -132,9 +132,9 @@ tests:
       pynwb: 2.8.0
   - path: sub-GP31/sub-GP31_ses-GP31-B9.nwb
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-GP33/sub-GP33_ses-GP33-B1.nwb
     versions:
       hdmf: 3.13.0
@@ -236,11 +236,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-GP31/sub-GP31_ses-GP31-B9.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   assets_ok:
   - path: sub-EC9/sub-EC9_ses-EC9-B15.nwb
     versions:
@@ -294,6 +289,11 @@ tests:
       pynwb: 2.8.0
   assets_timeout:
   - path: sub-EC2/sub-EC2_ses-EC2-B105.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-GP31/sub-GP31_ses-GP31-B9.nwb
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

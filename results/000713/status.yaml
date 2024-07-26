@@ -14,12 +14,22 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-556021/sub-556021_ses-20210127T144817_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
   assets_timeout:
   - sub-553963/sub-553963_ses-20210301T145817_image.nwb
   - path: sub-555304/sub-555304_ses-20210309T092244_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-556021/sub-556021_ses-20210127T144817_image.nwb
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

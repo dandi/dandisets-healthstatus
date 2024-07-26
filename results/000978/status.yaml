@@ -7,6 +7,11 @@ nassets: 9
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-JDS-SingleDay-JS15/sub-JDS-SingleDay-JS15_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-JDS-SingleDay-JS21/sub-JDS-SingleDay-JS21_behavior+ecephys.nwb
   assets_timeout:
   - path: sub-JDS-SingleDay-JS34/sub-JDS-SingleDay-JS34_behavior+ecephys.nwb
@@ -18,6 +23,11 @@ tests:
 - assets_nok: []
   assets_ok: []
   assets_timeout:
+  - path: sub-JDS-SingleDay-JS15/sub-JDS-SingleDay-JS15_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-JDS-SingleDay-JS21/sub-JDS-SingleDay-JS21_behavior+ecephys.nwb
   - path: sub-JDS-SingleDay-JS34/sub-JDS-SingleDay-JS34_behavior+ecephys.nwb
     versions:

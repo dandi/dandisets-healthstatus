@@ -8,6 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-BH499/sub-BH499_ses-20231026T154700_ecephys.nwb
+  - path: sub-BH511/sub-BH511_ses-20231017T211637_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-STTC-BH513/sub-STTC-BH513_ses-20240125T063300_ecephys.nwb
     versions:
       hdmf: 3.14.2
@@ -19,6 +24,11 @@ tests:
   assets_ok:
   - sub-BH499/sub-BH499_ses-20231026T154700_ecephys.nwb
   assets_timeout:
+  - path: sub-BH511/sub-BH511_ses-20231017T211637_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-STTC-BH513/sub-STTC-BH513_ses-20240125T063300_ecephys.nwb
     versions:
       hdmf: 3.14.2

@@ -8,10 +8,14 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-163/sub-163_ses-20200212T160655_ophys.nwb
-  - sub-164/sub-164_ses-20200124T161514_image+ophys.nwb
   - sub-7/sub-7_ses-20200213T113524_ophys.nwb
   - sub-9/sub-9_ses-20200204T154200_ophys.nwb
   assets_timeout:
+  - path: sub-164/sub-164_ses-20200124T161514_image+ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-8/sub-8_ses-20200204T180138_ophys.nwb
     versions:
       hdmf: 3.14.2
@@ -19,12 +23,16 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-164/sub-164_ses-20200124T161514_image+ophys.nwb
   - sub-7/sub-7_ses-20200213T113524_ophys.nwb
   - sub-9/sub-9_ses-20200204T154200_ophys.nwb
   assets_ok: []
   assets_timeout:
   - sub-163/sub-163_ses-20200212T160655_ophys.nwb
+  - path: sub-164/sub-164_ses-20200124T161514_image+ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-8/sub-8_ses-20200204T180138_ophys.nwb
     versions:
       hdmf: 3.14.2

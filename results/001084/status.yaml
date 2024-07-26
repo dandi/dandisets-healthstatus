@@ -8,12 +8,14 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-842/sub-842_ses-221123_ophys.nwb
+  - sub-DL18/sub-DL18_ses-211110_image+ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
   assets_timeout:
   - sub-842/sub-842_ses-221123_ophys.nwb
+  - sub-DL18/sub-DL18_ses-211110_image+ophys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

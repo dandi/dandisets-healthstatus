@@ -9,6 +9,11 @@ tests:
   assets_ok:
   - sub-H39/sub-H39_ses-H39-2020-04-29-13-33-40-Disc5_ecephys+image.nwb
   assets_timeout:
+  - path: sub-H09/sub-H09_ses-9-2019-08-30-16-32-13-Disc4_ecephys+image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-H28/sub-H28_ses-28-Disc4DLC-resnet50-Hao-MedPC-ephysFeb9shuffle1-800000-csv_image.nwb
     versions:
       hdmf: 3.14.2
@@ -18,6 +23,11 @@ tests:
 - assets_nok: []
   assets_ok: []
   assets_timeout:
+  - path: sub-H09/sub-H09_ses-9-2019-08-30-16-32-13-Disc4_ecephys+image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-H28/sub-H28_ses-28-Disc4DLC-resnet50-Hao-MedPC-ephysFeb9shuffle1-800000-csv_image.nwb
     versions:
       hdmf: 3.14.2

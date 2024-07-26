@@ -8,6 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-LC10ad-fly10/sub-LC10ad-fly10_ses-LC10ad-fly10-210923-1611_behavior+image.nwb
+  - path: sub-LC11-fly0/sub-LC11-fly0_ses-LC11-fly0-161111-1015_behavior+image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-LC11-fly3/sub-LC11-fly3_ses-LC11-fly3-170417-1532_behavior+image.nwb
     versions:
       hdmf: 3.14.2
@@ -15,7 +20,12 @@ tests:
       pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-LC11-fly0/sub-LC11-fly0_ses-LC11-fly0-161111-1015_behavior+image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - sub-LC10ad-fly10/sub-LC10ad-fly10_ses-LC10ad-fly10-210923-1611_behavior+image.nwb
   assets_timeout:

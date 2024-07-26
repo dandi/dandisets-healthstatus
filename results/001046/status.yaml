@@ -7,6 +7,11 @@ nassets: 9
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-Finch-z-r12r13-21-held-in-calib/sub-Finch-z-r12r13-21-held-in-calib_ses-20210628.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-Finch-z-r12r13-21-held-in-minival/sub-Finch-z-r12r13-21-held-in-minival_ses-20210626.nwb
   - path: sub-Finch-z-r12r13-21-held-in-minival/sub-Finch-z-r12r13-21-held-in-minival_ses-20210627.nwb
     versions:
@@ -19,6 +24,11 @@ tests:
   - sub-Finch-z-r12r13-21-held-in-minival/sub-Finch-z-r12r13-21-held-in-minival_ses-20210626.nwb
   assets_ok: []
   assets_timeout:
+  - path: sub-Finch-z-r12r13-21-held-in-calib/sub-Finch-z-r12r13-21-held-in-calib_ses-20210628.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Finch-z-r12r13-21-held-in-minival/sub-Finch-z-r12r13-21-held-in-minival_ses-20210627.nwb
     versions:
       hdmf: 3.14.2

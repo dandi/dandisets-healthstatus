@@ -7,6 +7,11 @@ nassets: 3
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-G2-09-LP-TDT-PBS/sub-G2-09-LP-TDT-PBS_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-G2-09-TER-NN-AIR/sub-G2-09-TER-NN-AIR_ecephys.nwb
     versions:
       hdmf: 3.14.2
@@ -19,6 +24,11 @@ tests:
   assets_ok:
   - sub-Gamry-REF-600P-OPEN-LEAD/sub-Gamry-REF-600P-OPEN-LEAD_ecephys.nwb
   assets_timeout:
+  - path: sub-G2-09-LP-TDT-PBS/sub-G2-09-LP-TDT-PBS_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-G2-09-TER-NN-AIR/sub-G2-09-TER-NN-AIR_ecephys.nwb
     versions:
       hdmf: 3.14.2

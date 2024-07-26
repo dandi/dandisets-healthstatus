@@ -8,6 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-Calcacre/sub-Calcacre_ses-20210426T153000_obj-6r2n64.nwb
+  - path: sub-PC12-cell/sub-PC12-cell_ses-20210221T153000_obj-1g8jeol.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-PC12-cell/sub-PC12-cell_ses-20210221T153000_obj-1nehnwv.nwb
     versions:
       hdmf: 3.14.2
@@ -19,6 +24,11 @@ tests:
   assets_ok:
   - sub-Calcacre/sub-Calcacre_ses-20210426T153000_obj-6r2n64.nwb
   assets_timeout:
+  - path: sub-PC12-cell/sub-PC12-cell_ses-20210221T153000_obj-1g8jeol.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-PC12-cell/sub-PC12-cell_ses-20210221T153000_obj-1nehnwv.nwb
     versions:
       hdmf: 3.14.2

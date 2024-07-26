@@ -13,12 +13,22 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-Pig5/sub-Pig5_ses-20230112T130625_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
   - sub-Pig5/sub-Pig5_ses-20230112T125852_ecephys.nwb
   assets_timeout:
+  - path: sub-Pig5/sub-Pig5_ses-20230112T130625_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Rat5/sub-Rat5_ses-20221107T120022_ecephys.nwb
     versions:
       hdmf: 3.14.2

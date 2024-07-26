@@ -8,6 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-BW041/sub-BW041_ses-20210831T133632.nwb
+  - path: sub-BW041/sub-BW041_ses-20210912T133340.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BW048/sub-BW048_ses-20211208T115314.nwb
     versions:
       hdmf: 3.14.2
@@ -19,6 +24,11 @@ tests:
   assets_ok: []
   assets_timeout:
   - sub-BW041/sub-BW041_ses-20210831T133632.nwb
+  - path: sub-BW041/sub-BW041_ses-20210912T133340.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BW048/sub-BW048_ses-20211208T115314.nwb
     versions:
       hdmf: 3.14.2
