@@ -5,8 +5,9 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
 import logging
+from operator import attrgetter
 from pathlib import Path
-from typing import Any, Dict, List, NewType, Optional, Sequence, Union
+from typing import Any, Dict, List, Literal, NewType, Optional, Sequence
 from pydantic import BaseModel, Field, field_validator
 import yaml
 from .yamllineno import load_yaml_lineno
@@ -53,30 +54,30 @@ class AssetTestResult:
         return self.result.output
 
 
-class VersionedPath(BaseModel):
-    path: str
-    versions: Dict[str, str]
+class AssetEntry(BaseModel):
+    path: AssetPath
+    test: str
+    status: Outcome
+    versions: Optional[Dict[str, str]] = None
 
-    @field_validator("versions", mode="before")
-    @classmethod
-    def _rmlinenos(cls, value: Any) -> Any:
-        if isinstance(value, dict):
-            return {
-                k: v
-                for k, v in value.items()
-                if isinstance(k, str) and not k.endswith("_lineno")
-            }
-        else:
-            return value
+    def to_asset_test_info(self, versions: dict[str, str]) -> AssetTestInfo:
+        if self.versions is not None:
+            versions = self.versions
+        return AssetTestInfo(
+            asset_path=self.path,
+            testname=self.test,
+            versions=versions,
+            outcome=self.status,
+        )
 
 
 class TestStatus(BaseModel):
     name: str
-    assets_nok: Sequence[Union[str, VersionedPath]] = Field(default_factory=list)
+    assets_nok: Sequence[AssetEntry] = Field(default_factory=list)
     assets_nok_lineno: Optional[int] = Field(default=None, exclude=True)
-    assets_ok: Sequence[Union[str, VersionedPath]] = Field(default_factory=list)
+    assets_ok: Sequence[AssetEntry] = Field(default_factory=list)
     assets_ok_lineno: Optional[int] = Field(default=None, exclude=True)
-    assets_timeout: Sequence[Union[str, VersionedPath]] = Field(default_factory=list)
+    assets_timeout: Sequence[AssetEntry] = Field(default_factory=list)
     assets_timeout_lineno: Optional[int] = Field(default=None, exclude=True)
 
     def counts(self) -> tuple[int, int, int]:
@@ -84,20 +85,20 @@ class TestStatus(BaseModel):
 
     def asset_outcomes(self) -> Iterator[tuple[str, Outcome]]:
         for asset in self.assets_ok:
-            yield (getpath(asset), Outcome.PASS)
+            yield (asset.path, Outcome.PASS)
         for asset in self.assets_nok:
-            yield (getpath(asset), Outcome.FAIL)
+            yield (asset.path, Outcome.FAIL)
         for asset in self.assets_timeout:
-            yield (getpath(asset), Outcome.TIMEOUT)
+            yield (asset.path, Outcome.TIMEOUT)
 
     def all_assets(self) -> Iterator[AssetPath]:
         for asset in [*self.assets_ok, *self.assets_nok, *self.assets_timeout]:
-            yield getpath(asset)
+            yield asset.path
 
     def outdated_assets(self, current_versions: dict[str, str]) -> Iterator[AssetPath]:
         for asset in [*self.assets_ok, *self.assets_nok, *self.assets_timeout]:
-            if getversions(asset) != current_versions:
-                yield getpath(asset)
+            if asset.versions != current_versions:
+                yield asset.path
 
     def update_asset(
         self,
@@ -105,11 +106,9 @@ class TestStatus(BaseModel):
         outcome: Outcome,
         versions: Optional[dict[str, str]],
     ) -> None:
-        self.assets_ok = [a for a in self.assets_ok if getpath(a) != asset_path]
-        self.assets_nok = [a for a in self.assets_nok if getpath(a) != asset_path]
-        self.assets_timeout = [
-            a for a in self.assets_timeout if getpath(a) != asset_path
-        ]
+        self.assets_ok = [a for a in self.assets_ok if a.path != asset_path]
+        self.assets_nok = [a for a in self.assets_nok if a.path != asset_path]
+        self.assets_timeout = [a for a in self.assets_timeout if a.path != asset_path]
         if outcome is Outcome.PASS:
             alist = self.assets_ok
         elif outcome is Outcome.FAIL:
@@ -118,11 +117,15 @@ class TestStatus(BaseModel):
             alist = self.assets_timeout
         else:
             raise AssertionError(f"Unexpected outcome {outcome!r}")
-        if versions is None:
-            alist.append(asset_path)
-        else:
-            alist.append(VersionedPath(path=asset_path, versions=versions))
-        alist.sort(key=getpath)
+        alist.append(
+            AssetEntry(
+                path=asset_path,
+                test=self.name,
+                status=outcome,
+                versions=versions,
+            )
+        )
+        alist.sort(key=attrgetter("path"))
 
     def summary(self, pagelink: str) -> str:
         passed, failed, timedout = self.counts()
@@ -152,6 +155,7 @@ class UntestedAsset(BaseModel):
     size: int
     file_type: str
     mime_type: str
+    status: Literal["untested"] = "untested"
 
 
 class DandisetStatus(BaseModel):
@@ -206,24 +210,22 @@ class DandisetStatus(BaseModel):
         self, asset_paths: set[AssetPath], current_versions: dict[str, str]
     ) -> None:
         for t in self.tests:
-            t.assets_ok = [a for a in t.assets_ok if getpath(a) in asset_paths]
-            t.assets_nok = [a for a in t.assets_nok if getpath(a) in asset_paths]
-            t.assets_timeout = [
-                a for a in t.assets_timeout if getpath(a) in asset_paths
-            ]
+            t.assets_ok = [a for a in t.assets_ok if a.path in asset_paths]
+            t.assets_nok = [a for a in t.assets_nok if a.path in asset_paths]
+            t.assets_timeout = [a for a in t.assets_timeout if a.path in asset_paths]
         self.nassets = len(asset_paths)
         self.prune_versions(current_versions)
 
     def prune_versions(self, current_versions: dict[str, str]) -> None:
         if all(
-            getversions(a) == current_versions
+            a.versions == current_versions
             for t in self.tests
             for a in [*t.assets_ok, *t.assets_nok, *t.assets_timeout]
         ):
             for t in self.tests:
-                t.assets_ok = [getpath(a) for a in t.assets_ok]
-                t.assets_nok = [getpath(a) for a in t.assets_nok]
-                t.assets_timeout = [getpath(a) for a in t.assets_timeout]
+                for alist in [t.assets_ok, t.assets_nok, t.assets_timeout]:
+                    for a in alist:
+                        a.versions = None
             self.versions = current_versions
 
     def test_counts(self, test_name: str) -> tuple[int, int, int]:
@@ -268,26 +270,11 @@ class DandisetStatus(BaseModel):
     def iter_each_asset_test(self) -> Iterator[AssetTestInfo]:
         for t in self.tests:
             for asset in t.assets_ok:
-                yield AssetTestInfo(
-                    asset_path=getpath(asset),
-                    testname=t.name,
-                    versions=getversions(asset) or self.versions,
-                    outcome=Outcome.PASS,
-                )
+                yield asset.to_asset_test_info(self.versions)
             for asset in t.assets_nok:
-                yield AssetTestInfo(
-                    asset_path=getpath(asset),
-                    testname=t.name,
-                    versions=getversions(asset) or self.versions,
-                    outcome=Outcome.FAIL,
-                )
+                yield asset.to_asset_test_info(self.versions)
             for asset in t.assets_timeout:
-                yield AssetTestInfo(
-                    asset_path=getpath(asset),
-                    testname=t.name,
-                    versions=getversions(asset) or self.versions,
-                    outcome=Outcome.TIMEOUT,
-                )
+                yield asset.to_asset_test_info(self.versions)
 
 
 @dataclass
@@ -344,17 +331,3 @@ class AssetTestInfo:
     testname: str
     versions: dict[str, str]
     outcome: Outcome
-
-
-def getpath(asset: str | VersionedPath) -> AssetPath:
-    if isinstance(asset, str):
-        return AssetPath(asset)
-    else:
-        return AssetPath(asset.path)
-
-
-def getversions(asset: str | VersionedPath) -> Optional[dict[str, str]]:
-    if isinstance(asset, str):
-        return None
-    else:
-        return asset.versions
