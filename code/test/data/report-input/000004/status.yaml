@@ -5,15 +5,27 @@ nassets: 3
 tests:
 - assets_nok: []
   assets_ok:
-  - asset01.nwb
-  - asset02.nwb
-  - asset03.nwb
+  - path: asset01.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: asset02.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: asset03.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - asset01.nwb
-  - asset02.nwb
-  - asset03.nwb
+  - path: asset01.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: asset02.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: asset03.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
