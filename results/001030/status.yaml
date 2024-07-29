@@ -8,35 +8,19 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-c6-1-0V/sub-c6-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
-  - path: sub-c7-1-0V/sub-c7-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-c8-1-0V/sub-c8-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  - sub-c7-1-0V/sub-c7-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
+  - sub-c8-1-0V/sub-c8-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok:
-  - sub-c6-1-0V/sub-c6-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
-  - path: sub-c8-1-0V/sub-c8-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  - sub-c8-1-0V/sub-c8-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
   assets_timeout:
-  - path: sub-c7-1-0V/sub-c7-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  - sub-c6-1-0V/sub-c6-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
+  - sub-c7-1-0V/sub-c7-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.1
+  hdmf: 3.14.2
   matnwb: v2.6.0.2
-  pynwb: 2.8.0
+  pynwb: 2.8.1

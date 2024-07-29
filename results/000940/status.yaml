@@ -7,12 +7,14 @@ nassets: 21
 tests:
 - assets_nok: []
   assets_ok:
+  - sub-22/sub-22_ecephys+image.nwb
   - sub-8/sub-8_ecephys+image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
   assets_timeout:
+  - sub-22/sub-22_ecephys+image.nwb
   - sub-8/sub-8_ecephys+image.nwb
   name: matnwb_nwbRead
 untested: []

@@ -12,7 +12,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-P2/sub-P2_ses-20200102T002921.nwb
+  - path: sub-P2/sub-P2_ses-20200102T002921.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-P3/sub-P3_ses-20200103T022038.nwb
     versions:
       hdmf: 3.14.2
@@ -28,11 +32,15 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-P2/sub-P2_ses-20200102T002921.nwb
   - sub-P4/sub-P4_ses-20200104T031322.nwb
   - sub-P5/sub-P5_ses-20200105T045735.nwb
   assets_ok: []
   assets_timeout:
+  - path: sub-P2/sub-P2_ses-20200102T002921.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-P3/sub-P3_ses-20200103T022038.nwb
     versions:
       hdmf: 3.14.2

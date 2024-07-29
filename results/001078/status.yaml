@@ -9,9 +9,11 @@ tests:
   assets_ok:
   - sub-1/sub-1_ses-2.nwb
   - sub-2/sub-2_ses-7.nwb
-  assets_timeout: []
+  assets_timeout:
+  - sub-1/sub-1_ses-4.nwb
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-1/sub-1_ses-4.nwb
   assets_ok: []
   assets_timeout:
   - sub-1/sub-1_ses-2.nwb

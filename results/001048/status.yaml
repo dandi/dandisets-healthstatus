@@ -7,6 +7,11 @@ nassets: 7
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-Cell03/sub-Cell03_ses-session-03_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Cell04/sub-Cell04_ses-session-04_image.nwb
     versions:
       hdmf: 3.14.2
@@ -24,6 +29,11 @@ tests:
   - sub-Cell07/sub-Cell07_ses-session-07_image.nwb
   assets_ok: []
   assets_timeout:
+  - path: sub-Cell03/sub-Cell03_ses-session-03_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Cell04/sub-Cell04_ses-session-04_image.nwb
     versions:
       hdmf: 3.14.2

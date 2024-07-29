@@ -6,7 +6,8 @@ last_run_ended: null
 nassets: 10
 tests:
 - assets_nok: []
-  assets_ok: []
+  assets_ok:
+  - sub-ground2204-15/sub-ground2204-15_image.nwb
   assets_timeout:
   - sub-ground0-4/sub-ground0-4_image.nwb
   - sub-ground2204-16/sub-ground2204-16_image.nwb
@@ -15,6 +16,7 @@ tests:
   assets_ok: []
   assets_timeout:
   - sub-ground0-4/sub-ground0-4_image.nwb
+  - sub-ground2204-15/sub-ground2204-15_image.nwb
   - sub-ground2204-16/sub-ground2204-16_image.nwb
   name: matnwb_nwbRead
 untested: []

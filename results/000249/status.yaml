@@ -704,7 +704,11 @@ tests:
       pynwb: 2.6.0
   - sub-NV33/sub-NV33_ses-20170713T164803_ophys.nwb
   - sub-NV33/sub-NV33_ses-20170713T165743_ophys.nwb
-  - sub-NV33/sub-NV33_ses-20170716T184842_ophys.nwb
+  - path: sub-NV33/sub-NV33_ses-20170716T184842_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-NV33/sub-NV33_ses-20170716T185720_ophys.nwb
   - sub-NV33/sub-NV33_ses-20170716T190302_ophys.nwb
   - sub-NV33/sub-NV33_ses-20170716T201243_ophys.nwb
@@ -1891,7 +1895,6 @@ tests:
       pynwb: 2.6.0
   - sub-NV33/sub-NV33_ses-20170713T164803_ophys.nwb
   - sub-NV33/sub-NV33_ses-20170713T165743_ophys.nwb
-  - sub-NV33/sub-NV33_ses-20170716T184842_ophys.nwb
   - sub-NV33/sub-NV33_ses-20170716T185720_ophys.nwb
   - sub-NV33/sub-NV33_ses-20170716T190302_ophys.nwb
   - sub-NV33/sub-NV33_ses-20170716T201243_ophys.nwb
@@ -2384,6 +2387,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - sub-NV119/sub-NV119_ses-20190410T121101_ophys.nwb
+  - path: sub-NV33/sub-NV33_ses-20170716T184842_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-OXTHALO-10/sub-OXTHALO-10_ses-20191212T191903_ophys.nwb
     versions:
       hdmf: 3.14.2

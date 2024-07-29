@@ -8,35 +8,19 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-001/sub-001_ses-20220411.nwb
-  - path: sub-001/sub-001_ses-20220706.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  - sub-001/sub-001_ses-20220706.nwb
   assets_timeout:
-  - path: sub-001/sub-001_ses-20220526.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  - sub-001/sub-001_ses-20220526.nwb
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
   assets_timeout:
   - sub-001/sub-001_ses-20220411.nwb
-  - path: sub-001/sub-001_ses-20220526.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-001/sub-001_ses-20220706.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  - sub-001/sub-001_ses-20220526.nwb
+  - sub-001/sub-001_ses-20220706.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.1
+  hdmf: 3.14.2
   matnwb: v2.6.0.2
-  pynwb: 2.8.0
+  pynwb: 2.8.1

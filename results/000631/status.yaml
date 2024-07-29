@@ -7,6 +7,12 @@ nassets: 15
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-15/sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-15_ses-600ns-4kV-0-8MHz
+      paired pulse trains_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-20/sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-20_ses-600ns-4kV-0-8MHz
     paired pulse trains_image.nwb
   - path: sub-600ns-5kV-1HzUP-7-31-21-BPAE-03/sub-600ns-5kV-1HzUP-7-31-21-BPAE-03_ses-600ns-5kV-1Hz
@@ -28,6 +34,12 @@ tests:
   - sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-20/sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-20_ses-600ns-4kV-0-8MHz
     paired pulse trains_image.nwb
   assets_timeout:
+  - path: sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-15/sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-15_ses-600ns-4kV-0-8MHz
+      paired pulse trains_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-600ns-5kV-1HzUP-7-31-21-BPAE-03/sub-600ns-5kV-1HzUP-7-31-21-BPAE-03_ses-600ns-5kV-1Hz
       single pulse trains_image.nwb
     versions:

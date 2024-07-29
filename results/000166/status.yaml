@@ -7,11 +7,6 @@ nassets: 19
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-YMV01/sub-YMV01_ses-YMV01-170818_ecephys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-YMV02/sub-YMV02_ses-YMV02-170815_ecephys.nwb
     versions:
       hdmf: 3.14.1
@@ -77,6 +72,11 @@ tests:
       pynwb: 2.8.0
   - sub-YMV19/sub-YMV19_ses-YMV19-180209_ecephys.nwb
   assets_timeout:
+  - path: sub-YMV01/sub-YMV01_ses-YMV01-170818_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-YMV03/sub-YMV03_ses-YMV03-170818_ecephys.nwb
     versions:
       hdmf: 3.14.2
@@ -93,9 +93,9 @@ tests:
   assets_timeout:
   - path: sub-YMV01/sub-YMV01_ses-YMV01-170818_ecephys.nwb
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-YMV02/sub-YMV02_ses-YMV02-170815_ecephys.nwb
     versions:
       hdmf: 3.14.1

@@ -7,6 +7,11 @@ nassets: 1238
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-Dat-2114/sub-Dat-2114_ses-20211103-0002.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Dat-D002/sub-Dat-D002_ses-20220509-0003.nwb
     versions:
       hdmf: 3.14.2
@@ -21,6 +26,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-Dat-2114/sub-Dat-2114_ses-20211103-0002.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-Dat-D095/sub-Dat-D095_ses-20200721-0001.nwb
   - path: sub-Raldh-2076/sub-Raldh-2076_ses-20211202-0004.nwb
     versions:

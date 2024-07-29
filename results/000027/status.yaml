@@ -10,10 +10,10 @@ tests:
   - sub-RAT123/sub-RAT123.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok:
-  - sub-RAT123/sub-RAT123.nwb
+- assets_nok: []
   assets_ok: []
-  assets_timeout: []
+  assets_timeout:
+  - sub-RAT123/sub-RAT123.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

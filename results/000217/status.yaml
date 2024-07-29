@@ -831,7 +831,6 @@ tests:
   - sub-Mouse 2073/sub-Mouse 2073_ses-Session 11_obj-srmeb2.nwb
   - sub-Mouse 2073/sub-Mouse 2073_ses-Session 12_obj-1khjjh0.nwb
   - sub-Mouse 2073/sub-Mouse 2073_ses-Session 12_obj-1yihe7n.nwb
-  - sub-Mouse 2073/sub-Mouse 2073_ses-Session 12_obj-6eycv0.nwb
   - sub-Mouse 2073/sub-Mouse 2073_ses-Session 12_obj-r5hiin.nwb
   - sub-Mouse 2073/sub-Mouse 2073_ses-Session 13_obj-1yzxgm8.nwb
   - sub-Mouse 2073/sub-Mouse 2073_ses-Session 13_obj-s232cc.nwb
@@ -1524,7 +1523,12 @@ tests:
   - sub-Mouse 2086/sub-Mouse 2086_ses-Session 21_obj-6jb4qq.nwb
   - sub-Mouse 2086/sub-Mouse 2086_ses-Session 21_obj-ha9emr.nwb
   - sub-Mouse 2086/sub-Mouse 2086_ses-Session 22.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-Mouse 2073/sub-Mouse 2073_ses-Session 12_obj-6eycv0.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-Mouse 2054/sub-Mouse 2054_ses-Session 01_obj-19zvma1.nwb
@@ -2332,7 +2336,6 @@ tests:
   - sub-Mouse 2073/sub-Mouse 2073_ses-Session 11_obj-1aotvt6.nwb
   - sub-Mouse 2073/sub-Mouse 2073_ses-Session 11_obj-3b85y3.nwb
   - sub-Mouse 2073/sub-Mouse 2073_ses-Session 12_obj-1yihe7n.nwb
-  - sub-Mouse 2073/sub-Mouse 2073_ses-Session 12_obj-6eycv0.nwb
   - sub-Mouse 2073/sub-Mouse 2073_ses-Session 12_obj-r5hiin.nwb
   - sub-Mouse 2073/sub-Mouse 2073_ses-Session 14_obj-7wbxc4.nwb
   - sub-Mouse 2073/sub-Mouse 2073_ses-Session 14_obj-p8k5tr.nwb
@@ -3046,6 +3049,11 @@ tests:
   - sub-Mouse 2073/sub-Mouse 2073_ses-Session 10_obj-1er2msz.nwb
   - sub-Mouse 2073/sub-Mouse 2073_ses-Session 10_obj-1gd3mq4.nwb
   - sub-Mouse 2073/sub-Mouse 2073_ses-Session 11_obj-hz69ji.nwb
+  - path: sub-Mouse 2073/sub-Mouse 2073_ses-Session 12_obj-6eycv0.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:
