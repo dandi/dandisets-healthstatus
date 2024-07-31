@@ -455,7 +455,11 @@ tests:
       pynwb: 2.8.0
   - sub-anm322808/sub-anm322808_ses-20170520T193115_behavior+icephys+ogen.nwb
   - sub-anm322808/sub-anm322808_ses-20170520T193233_behavior+icephys+ogen.nwb
-  - sub-anm323951/sub-anm323951_ses-20170520T185157_behavior+icephys+ogen.nwb
+  - path: sub-anm323951/sub-anm323951_ses-20170520T185157_behavior+icephys+ogen.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-anm323951/sub-anm323951_ses-20170520T185302_behavior+icephys+ogen.nwb
     versions:
       hdmf: 3.13.0
@@ -627,6 +631,11 @@ tests:
   - sub-anm00322807/sub-anm00322807_ses-20170627T094303_ecephys+ogen.nwb
   - sub-anm00323634/sub-anm00323634_ses-20170627T094322_ecephys+ogen.nwb
   - sub-anm300476/sub-anm300476_ses-20170520T183518_behavior+icephys+ogen.nwb
+  - path: sub-anm323951/sub-anm323951_ses-20170520T185157_behavior+icephys+ogen.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-anm323951/sub-anm323951_ses-20170520T190909_behavior+icephys+ogen.nwb
   - path: sub-anm323951/sub-anm323951_ses-20170520T191036_behavior+icephys+ogen.nwb
     versions:
@@ -997,7 +1006,6 @@ tests:
       pynwb: 2.8.0
   - sub-anm322808/sub-anm322808_ses-20170520T193115_behavior+icephys+ogen.nwb
   - sub-anm322808/sub-anm322808_ses-20170520T193233_behavior+icephys+ogen.nwb
-  - sub-anm323951/sub-anm323951_ses-20170520T185157_behavior+icephys+ogen.nwb
   - path: sub-anm323951/sub-anm323951_ses-20170520T185302_behavior+icephys+ogen.nwb
     versions:
       hdmf: 3.13.0

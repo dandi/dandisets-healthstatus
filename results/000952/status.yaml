@@ -8,11 +8,13 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-125/sub-125_ses-20200930.nwb
+  - sub-125/sub-125_ses-20201022.nwb
   - sub-163/sub-163_ses-20200930.nwb
   - sub-220/sub-220_ses-20201204.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-125/sub-125_ses-20201022.nwb
   assets_ok: []
   assets_timeout:
   - sub-125/sub-125_ses-20200930.nwb

@@ -32,11 +32,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-681539651/sub-681539651_ses-PLACEHOLDER_obj-v5bwie_icephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-681561759/sub-681561759_ses-PLACEHOLDER_icephys.nwb
     versions:
       hdmf: 3.14.1
@@ -113,6 +108,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-681539651/sub-681539651_ses-PLACEHOLDER_obj-v5bwie_icephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-1047717119/sub-1047717119_ses-1053917889_icephys.nwb
@@ -169,9 +169,9 @@ tests:
       pynwb: 2.7.0
   - path: sub-681539651/sub-681539651_ses-PLACEHOLDER_obj-v5bwie_icephys.nwb
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-681561759/sub-681561759_ses-PLACEHOLDER_icephys.nwb
     versions:
       hdmf: 3.14.1

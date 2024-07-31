@@ -6,14 +6,14 @@ last_run_ended: null
 nassets: 1
 tests:
 - assets_nok: []
-  assets_ok: []
-  assets_timeout:
+  assets_ok:
   - sub-MG/sub-MG_ecephys.nwb
+  assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok: []
-  assets_timeout:
+- assets_nok:
   - sub-MG/sub-MG_ecephys.nwb
+  assets_ok: []
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

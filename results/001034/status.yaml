@@ -7,6 +7,11 @@ nassets: 178
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-1-3/sub-1-3_ses-20Hz-sine-stimulation-7-5V_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-10-3/sub-10-3_ses-2kHz-sine-stimulation-7V_image.nwb
     versions:
       hdmf: 3.14.2
@@ -25,7 +30,12 @@ tests:
       pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-1-3/sub-1-3_ses-20Hz-sine-stimulation-7-5V_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - sub-11-3/sub-11-3_ses-20kHz-sine-stimulation-15V_image.nwb
   assets_timeout:

@@ -10,10 +10,10 @@ tests:
   - sub-Animal-1-&-2/sub-Animal-1-&-2.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok: []
-  assets_timeout:
+- assets_nok:
   - sub-Animal-1-&-2/sub-Animal-1-&-2.nwb
+  assets_ok: []
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

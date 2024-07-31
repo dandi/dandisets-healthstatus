@@ -18,6 +18,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-c3-6-05V/sub-c3-6-05V_ses-100kHz-stimulation-6-05V_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-c4-4-4V/sub-c4-4-4V_ses-100kHz-stimulation-4-4V_image.nwb
     versions:
       hdmf: 3.14.2
@@ -25,7 +30,12 @@ tests:
       pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-c3-6-05V/sub-c3-6-05V_ses-100kHz-stimulation-6-05V_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - sub-c3-4-8V/sub-c3-4-8V_ses-100kHz-stimulation-4-8V_image.nwb
   assets_timeout:

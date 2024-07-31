@@ -12,11 +12,11 @@ tests:
   - sub-SIROF/sub-SIROF_obj-tlc4i6_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-SIROF/sub-SIROF_obj-kg6r54_ecephys.nwb
   assets_ok: []
   assets_timeout:
   - sub-SIROF/sub-SIROF_obj-1k8fnjk_ecephys.nwb
-  - sub-SIROF/sub-SIROF_obj-kg6r54_ecephys.nwb
   - sub-SIROF/sub-SIROF_obj-tlc4i6_ecephys.nwb
   name: matnwb_nwbRead
 untested: []

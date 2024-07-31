@@ -7,12 +7,14 @@ nassets: 302
 tests:
 - assets_nok: []
   assets_ok:
+  - sub-Dory/sub-Dory_ses-2020-08-31-003_ecephys.nwb
   - sub-EPCNHP1/sub-EPCNHP1_ses-2019-07-01-006_ecephys.nwb
   - sub-EPCNHP1/sub-EPCNHP1_ses-2019-07-15-006_ecephys.nwb
   - sub-EPCNHP2/sub-EPCNHP2_ses-2020-09-28-004_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-Dory/sub-Dory_ses-2020-08-31-003_ecephys.nwb
   assets_ok: []
   assets_timeout:
   - sub-EPCNHP1/sub-EPCNHP1_ses-2019-07-01-006_ecephys.nwb

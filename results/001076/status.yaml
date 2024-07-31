@@ -8,11 +8,13 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-nan/sub-nan_ses-20230123T214030_obj-10jcyv7_ophys.nwb
+  - sub-nan/sub-nan_ses-20230124T182430_obj-10fo03e_ophys.nwb
   - sub-nan/sub-nan_ses-20230124T192928_obj-gk4q4w_ophys.nwb
   - sub-nan/sub-nan_ses-20230124T202931_obj-jc8h3f_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-nan/sub-nan_ses-20230124T182430_obj-10fo03e_ophys.nwb
   assets_ok: []
   assets_timeout:
   - sub-nan/sub-nan_ses-20230123T214030_obj-10jcyv7_ophys.nwb

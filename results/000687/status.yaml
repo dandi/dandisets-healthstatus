@@ -6,47 +6,23 @@ last_run_ended: null
 nassets: 11
 tests:
 - assets_nok: []
-  assets_ok:
-  - sub-swil11/sub-swil11_ses-20220413T171109_ecephys.nwb
+  assets_ok: []
   assets_timeout:
-  - path: sub-swil11/sub-swil11_ses-20220413T171108_ecephys.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-swil20/sub-swil20_ses-20220922T163606_ecephys.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-swil8/sub-swil8_ses-20210715T191215_ecephys.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  - sub-swil11/sub-swil11_ses-20220413T171108_ecephys.nwb
+  - sub-swil11/sub-swil11_ses-20220413T171109_ecephys.nwb
+  - sub-swil20/sub-swil20_ses-20220922T163606_ecephys.nwb
+  - sub-swil8/sub-swil8_ses-20210715T191215_ecephys.nwb
   name: pynwb_open_load_ns
 - assets_nok: []
-  assets_ok:
-  - sub-swil11/sub-swil11_ses-20220413T171109_ecephys.nwb
+  assets_ok: []
   assets_timeout:
-  - path: sub-swil11/sub-swil11_ses-20220413T171108_ecephys.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-swil20/sub-swil20_ses-20220922T163606_ecephys.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-swil8/sub-swil8_ses-20210715T191215_ecephys.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  - sub-swil11/sub-swil11_ses-20220413T171108_ecephys.nwb
+  - sub-swil11/sub-swil11_ses-20220413T171109_ecephys.nwb
+  - sub-swil20/sub-swil20_ses-20220922T163606_ecephys.nwb
+  - sub-swil8/sub-swil8_ses-20210715T191215_ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.1
+  hdmf: 3.14.2
   matnwb: v2.6.0.2
-  pynwb: 2.8.0
+  pynwb: 2.8.1

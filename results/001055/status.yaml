@@ -11,11 +11,11 @@ tests:
   - sub-Animal-2/sub-Animal-2_ses-43-to-47.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-Animal-2/sub-Animal-2_ses-43-to-47.nwb
   assets_ok: []
   assets_timeout:
   - sub-Animal-1/sub-Animal-1_ses-11-to-21.nwb
-  - sub-Animal-2/sub-Animal-2_ses-43-to-47.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

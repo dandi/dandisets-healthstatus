@@ -24,7 +24,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-mouse412804/sub-mouse412804_ses-20200824T155543.nwb
+  - path: sub-mouse412804/sub-mouse412804_ses-20200824T155543.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -33,8 +37,7 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  assets_ok:
-  - sub-mouse412804/sub-mouse412804_ses-20200824T155543.nwb
+  assets_ok: []
   assets_timeout:
   - path: sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
     versions:
@@ -48,6 +51,11 @@ tests:
       pynwb: 2.8.1
   - sub-c1/sub-c1_ecephys.nwb
   - sub-mouse412804/sub-mouse412804_ecephys.nwb
+  - path: sub-mouse412804/sub-mouse412804_ses-20200824T155543.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

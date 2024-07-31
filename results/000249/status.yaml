@@ -387,7 +387,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-NV115/sub-NV115_ses-20170110T161121_ophys.nwb
-  - sub-NV115/sub-NV115_ses-20170110T161824_ophys.nwb
+  - path: sub-NV115/sub-NV115_ses-20170110T161824_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-NV115/sub-NV115_ses-20170112T181753_ophys.nwb
     versions:
       hdmf: 3.14.0
@@ -1582,7 +1586,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-NV115/sub-NV115_ses-20170110T161121_ophys.nwb
-  - sub-NV115/sub-NV115_ses-20170110T161824_ophys.nwb
   - path: sub-NV115/sub-NV115_ses-20170112T181753_ophys.nwb
     versions:
       hdmf: 3.14.0
@@ -2382,6 +2385,11 @@ tests:
   - sub-OXTHALO-19/sub-OXTHALO-19_ses-20200304T185151_ophys.nwb
   assets_timeout:
   - path: sub-NV108/sub-NV108_ses-20190220T135253_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-NV115/sub-NV115_ses-20170110T161824_ophys.nwb
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

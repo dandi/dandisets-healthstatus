@@ -8,11 +8,13 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-F2-3/sub-F2-3_ses-20240522.nwb
+  - sub-F2/sub-F2_ses-20240522.nwb
   - sub-IS264/sub-IS264_ses-20240522.nwb
   - sub-M3/sub-M3_ses-20240522.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-F2/sub-F2_ses-20240522.nwb
   assets_ok: []
   assets_timeout:
   - sub-F2-3/sub-F2-3_ses-20240522.nwb

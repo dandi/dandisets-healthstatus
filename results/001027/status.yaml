@@ -12,12 +12,12 @@ tests:
   - sub-19/sub-19_image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-19/sub-19_image.nwb
   assets_ok: []
   assets_timeout:
   - sub-03/sub-03_image.nwb
   - sub-10/sub-10_image.nwb
-  - sub-19/sub-19_image.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

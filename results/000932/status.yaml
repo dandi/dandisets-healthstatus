@@ -14,6 +14,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_timeout:
+  - path: sub-Pig3/sub-Pig3_ses-20221116T121214_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Pig5/sub-Pig5_ses-20230112T130625_ecephys.nwb
     versions:
       hdmf: 3.14.2
@@ -29,6 +34,11 @@ tests:
   assets_ok:
   - sub-Pig5/sub-Pig5_ses-20230112T125852_ecephys.nwb
   assets_timeout:
+  - path: sub-Pig3/sub-Pig3_ses-20221116T121214_ecephys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Pig5/sub-Pig5_ses-20230112T130625_ecephys.nwb
     versions:
       hdmf: 3.14.2

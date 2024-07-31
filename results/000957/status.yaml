@@ -3,7 +3,7 @@ draft_modified: '2024-04-07T01:42:57.181196Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
-nassets: 9
+nassets: 10
 tests:
 - assets_nok: []
   assets_ok:
@@ -23,9 +23,19 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-ZYE-0040/sub-ZYE-0040_ecephys+image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-ZYE-0040/sub-ZYE-0040_ecephys+image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - path: sub-ZYE-0021/sub-ZYE-0021_ses-1_ecephys+image.nwb

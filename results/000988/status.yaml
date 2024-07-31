@@ -22,10 +22,20 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-122453voltron1608-cell2-find-inversion-OD0-5/sub-122453voltron1608-cell2-find-inversion-OD0-5_ses-20230309T122453_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-172612plate2-cell2-find-inversion2-OD0-5/sub-172612plate2-cell2-find-inversion2-OD0-5_ses-20230307T172612_image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-122453voltron1608-cell2-find-inversion-OD0-5/sub-122453voltron1608-cell2-find-inversion-OD0-5_ses-20230309T122453_image.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - sub-172612plate2-cell2-find-inversion2-OD0-5/sub-172612plate2-cell2-find-inversion2-OD0-5_ses-20230307T172612_image.nwb
   assets_timeout:

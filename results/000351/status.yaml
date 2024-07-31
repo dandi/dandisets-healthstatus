@@ -63,7 +63,6 @@ tests:
   - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day1-12.nwb
   - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day2-12.nwb
   - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day3-30.nwb
-  - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day4-30.nwb
   - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day5-6.nwb
   - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day6-6.nwb
   - sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day1-6.nwb
@@ -804,6 +803,11 @@ tests:
   - sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day7-Pavlovian.nwb
   - sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day8-Pavlovian.nwb
   assets_timeout:
+  - path: sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day4-30.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day12-learned.nwb
     versions:
       hdmf: 3.14.2
@@ -877,7 +881,6 @@ tests:
   - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day1-12.nwb
   - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day2-12.nwb
   - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day3-30.nwb
-  - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day4-30.nwb
   - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day5-6.nwb
   - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day6-6.nwb
   - sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day1-6.nwb
@@ -1624,6 +1627,11 @@ tests:
   - sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day8-Pavlovian.nwb
   assets_ok: []
   assets_timeout:
+  - path: sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day4-30.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day12-learned.nwb
     versions:
       hdmf: 3.14.2

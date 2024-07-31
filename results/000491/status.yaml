@@ -34,9 +34,9 @@ tests:
       pynwb: 2.8.1
   - path: sub-BPN-M4/sub-BPN-M4_ses-20210524-m1_obj-uvnt3v_ophys.nwb
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.2
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-BPN-M6/sub-BPN-M6_ses-20210526-m1_ophys.nwb
     versions:
       hdmf: 3.14.1
@@ -108,11 +108,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-BPN-M4/sub-BPN-M4_ses-20210524-m1_obj-uvnt3v_ophys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - sub-BPN-M6/sub-BPN-M6_ses-zstack-up-94min_ophys.nwb
   - sub-BPN-M7/sub-BPN-M7_ses-20210527-m1_obj-wuc3ag_ophys.nwb
   - path: sub-BPN-OLD-M3/sub-BPN-OLD-M3_ses-20210513-m1_obj-1u1mjbm_ophys.nwb
@@ -122,6 +117,11 @@ tests:
       pynwb: 2.8.0
   assets_timeout:
   - path: sub-BPN-M4/sub-BPN-M4_ses-20210524-m1_obj-1c8nyxo_ophys.nwb
+    versions:
+      hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-BPN-M4/sub-BPN-M4_ses-20210524-m1_obj-uvnt3v_ophys.nwb
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

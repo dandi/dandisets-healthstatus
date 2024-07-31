@@ -6,10 +6,10 @@ last_run_ended: '2024-01-14T07:07:39.613015-05:00'
 nassets: 2
 tests:
 - assets_nok: []
-  assets_ok: []
+  assets_ok:
+  - sub-abcd/sub-abcd_icephys.nwb
   assets_timeout:
   - sub-abcd/icephys_example.nwb
-  - sub-abcd/sub-abcd_icephys.nwb
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []

@@ -10,9 +10,11 @@ tests:
   - sub-Finch-z-r12r13-21-held-in-calib/sub-Finch-z-r12r13-21-held-in-calib_ses-20210628.nwb
   - sub-Finch-z-r12r13-21-held-in-minival/sub-Finch-z-r12r13-21-held-in-minival_ses-20210626.nwb
   - sub-Finch-z-r12r13-21-held-in-minival/sub-Finch-z-r12r13-21-held-in-minival_ses-20210627.nwb
+  - sub-Finch-z-r12r13-21-held-out-calib/sub-Finch-z-r12r13-21-held-out-calib_ses-20210705.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - sub-Finch-z-r12r13-21-held-out-calib/sub-Finch-z-r12r13-21-held-out-calib_ses-20210705.nwb
   assets_ok: []
   assets_timeout:
   - sub-Finch-z-r12r13-21-held-in-calib/sub-Finch-z-r12r13-21-held-in-calib_ses-20210628.nwb
