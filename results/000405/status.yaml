@@ -173,7 +173,6 @@ tests:
       pynwb: 2.6.0
   - sub-s1/sub-s1_ses-NE-OF-061118.nwb
   - sub-s1/sub-s1_ses-NE-OF-061218.nwb
-  - sub-s1/sub-s1_ses-NE-OF-061318.nwb
   - sub-s1/sub-s1_ses-NE-OF-061418-0001.nwb
   - path: sub-s1/sub-s1_ses-NE-OF-061418.nwb
     versions:
@@ -662,6 +661,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-s1/sub-s1_ses-NE-OF-061318.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-s1/sub-s1_ses-NE-T3g-072518.nwb
     versions:
       hdmf: 3.14.2
@@ -707,7 +711,11 @@ tests:
   - sub-s0/sub-s0_ses-Li-T3i-060618.nwb
   - sub-s1/sub-s1_ses-NE-OF-052818.nwb
   - sub-s1/sub-s1_ses-NE-OF-061118.nwb
-  - sub-s1/sub-s1_ses-NE-OF-061318.nwb
+  - path: sub-s1/sub-s1_ses-NE-OF-061318.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-s1/sub-s1_ses-NE-T3g-052918.nwb
   - sub-s1/sub-s1_ses-NE-T3g-053118.nwb
   - path: sub-s1/sub-s1_ses-NE-T3g-060418.nwb

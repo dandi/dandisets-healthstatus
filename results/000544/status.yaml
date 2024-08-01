@@ -7,7 +7,11 @@ nassets: 3
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-001/sub-001_ses-session-1234.nwb
+  - path: sub-001/sub-001_ses-session-1234.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-484677/sub-484677_behavior+ecephys+ogen.nwb
   - path: sub-484677/sub-484677_ses-20210415T161621_behavior+ecephys+ogen.nwb
     versions:
@@ -17,6 +21,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-001/sub-001_ses-session-1234.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-484677/sub-484677_ses-20210415T161621_behavior+ecephys+ogen.nwb
     versions:
       hdmf: 3.14.3
@@ -24,7 +33,6 @@ tests:
       pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
-  - sub-001/sub-001_ses-session-1234.nwb
   - sub-484677/sub-484677_behavior+ecephys+ogen.nwb
   name: matnwb_nwbRead
 untested: []

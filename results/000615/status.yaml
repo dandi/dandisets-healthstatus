@@ -6,9 +6,13 @@ last_run_ended: '2024-02-24T03:46:56.038196-05:00'
 nassets: 3
 tests:
 - assets_nok: []
-  assets_ok:
-  - sub-001/sub-001_ses-20220411.nwb
+  assets_ok: []
   assets_timeout:
+  - path: sub-001/sub-001_ses-20220411.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-001/sub-001_ses-20220526.nwb
     versions:
       hdmf: 3.14.3
@@ -17,6 +21,11 @@ tests:
   - sub-001/sub-001_ses-20220706.nwb
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-001/sub-001_ses-20220411.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-001/sub-001_ses-20220526.nwb
     versions:
       hdmf: 3.14.3
@@ -24,7 +33,6 @@ tests:
       pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
-  - sub-001/sub-001_ses-20220411.nwb
   - sub-001/sub-001_ses-20220706.nwb
   name: matnwb_nwbRead
 untested: []

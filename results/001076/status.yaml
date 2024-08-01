@@ -15,12 +15,22 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - sub-nan/sub-nan_ses-20230124T192928_obj-gk4q4w_ophys.nwb
+  - path: sub-nan/sub-nan_ses-20230124T202931_obj-1w8ujip_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-nan/sub-nan_ses-20230124T202931_obj-jc8h3f_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-nan/sub-nan_ses-20230124T182430_obj-10fo03e_ophys.nwb
   - path: sub-nan/sub-nan_ses-20230124T182430_obj-1nsudkb_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-nan/sub-nan_ses-20230124T202931_obj-1w8ujip_ophys.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2

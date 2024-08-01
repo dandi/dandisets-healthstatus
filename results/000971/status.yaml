@@ -14,12 +14,22 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-432-420/sub-432-420_ses-Opto-DMS-Inhibitory-NpHRScrambled-2020-11-11T11-09-04_ogen.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-479/sub-479_ses-Opto-DMS-Excitatory-ChR2-2019-05-29T11-09-34_behavior+ogen.nwb
   - sub-63-207/sub-63-207_ses-FP-PR-2018-10-26T10-35-29_behavior.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-431-419/sub-431-419_ses-Opto-DMS-Excitatory-ChR2Scrambled-2020-11-19T12-57-19_ogen.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-432-420/sub-432-420_ses-Opto-DMS-Inhibitory-NpHRScrambled-2020-11-11T11-09-04_ogen.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2

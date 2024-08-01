@@ -1059,7 +1059,11 @@ tests:
   - sub-NV58/sub-NV58_ses-20180306T125724_ophys.nwb
   - sub-NV58/sub-NV58_ses-20180306T130646_ophys.nwb
   - sub-NV58/sub-NV58_ses-20180308T030000_ophys.nwb
-  - sub-NV58/sub-NV58_ses-20180308T120953_ophys.nwb
+  - path: sub-NV58/sub-NV58_ses-20180308T120953_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-NV58/sub-NV58_ses-20180308T121743_ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -1224,6 +1228,11 @@ tests:
   - sub-NV119/sub-NV119_ses-20190411T165200_ophys.nwb
   - sub-NV21/sub-NV21_ses-20170322T000033_ophys.nwb
   - sub-NV32/sub-NV32_ses-20170612T164835_ophys.nwb
+  - path: sub-NV58/sub-NV58_ses-20180308T120953_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T185021_ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -2248,7 +2257,6 @@ tests:
   - sub-NV58/sub-NV58_ses-20180306T125724_ophys.nwb
   - sub-NV58/sub-NV58_ses-20180306T130646_ophys.nwb
   - sub-NV58/sub-NV58_ses-20180308T030000_ophys.nwb
-  - sub-NV58/sub-NV58_ses-20180308T120953_ophys.nwb
   - path: sub-NV58/sub-NV58_ses-20180308T121743_ophys.nwb
     versions:
       hdmf: 3.13.0

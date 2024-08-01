@@ -18,6 +18,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - sub-M441/sub-M441_ses-M441_image.nwb
+  - path: sub-nm200109-A3/sub-nm200109-A3_ses-nm200109-A3-KX_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-nm200330-A2/sub-nm200330-A2_ses-nm200330-A2-awake_image.nwb
     versions:
       hdmf: 3.14.2
@@ -37,6 +42,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-ID401/sub-ID401_ses-M401-03-baseline-iso_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-nm200109-A3/sub-nm200109-A3_ses-nm200109-A3-KX_image.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2

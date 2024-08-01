@@ -11,7 +11,11 @@ tests:
   - sub-U/sub-U_ses-001_obj-w5m5b3.nwb
   - sub-U/sub-U_ses-20231119T113000_obj-1yigkds_ecephys.nwb
   - sub-U/sub-U_ses-20231119T113000_obj-7c50zw_ecephys.nwb
-  - sub-U/sub-U_ses-20231119T113000_obj-oqeor8_ecephys.nwb
+  - path: sub-U/sub-U_ses-20231119T113000_obj-oqeor8_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-U/sub-U_ses-20231119T113000_obj-skejyf_ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -19,6 +23,11 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-U/sub-U_ses-20231119T113000_obj-oqeor8_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-U/sub-U_ses-20231119T113000_obj-skejyf_ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -29,7 +38,6 @@ tests:
   - sub-U/sub-U_ses-001_obj-w5m5b3.nwb
   - sub-U/sub-U_ses-20231119T113000_obj-1yigkds_ecephys.nwb
   - sub-U/sub-U_ses-20231119T113000_obj-7c50zw_ecephys.nwb
-  - sub-U/sub-U_ses-20231119T113000_obj-oqeor8_ecephys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

@@ -13,7 +13,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - sub-G2-09-TER-NN-AIR/sub-G2-09-TER-NN-AIR_ecephys.nwb
-  - sub-Gamry-REF-600P-OPEN-LEAD/sub-Gamry-REF-600P-OPEN-LEAD_ecephys.nwb
+  - path: sub-Gamry-REF-600P-OPEN-LEAD/sub-Gamry-REF-600P-OPEN-LEAD_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -23,9 +27,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - sub-G2-09-TER-NN-AIR/sub-G2-09-TER-NN-AIR_ecephys.nwb
+  - path: sub-Gamry-REF-600P-OPEN-LEAD/sub-Gamry-REF-600P-OPEN-LEAD_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
-  assets_timeout:
-  - sub-Gamry-REF-600P-OPEN-LEAD/sub-Gamry-REF-600P-OPEN-LEAD_ecephys.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

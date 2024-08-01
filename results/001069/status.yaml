@@ -7,6 +7,11 @@ nassets: 10
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-Dory/sub-Dory_ses-2021-05-19-004_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-Dory/sub-Dory_ses-2021-05-19-005_ecephys.nwb
   - sub-KP/sub-KP_ses-2019-07-22-005_ecephys.nwb
   - sub-KP/sub-KP_ses-2019-07-22-006_ecephys.nwb
@@ -18,6 +23,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-Dory/sub-Dory_ses-2021-05-19-004_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-Dory/sub-Dory_ses-2021-05-19-005_ecephys.nwb
   - path: sub-KP/sub-KP_ses-2019-10-21-002_ecephys.nwb
     versions:

@@ -34,6 +34,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-590563964/sub-590563964_ses-603224878-StimA_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-496001358/sub-496001358_ses-502974807-StimC_ophys.nwb
@@ -42,6 +47,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - sub-544888654/sub-544888654_ses-556344224-StimA_behavior+image+ophys.nwb
+  - path: sub-590563964/sub-590563964_ses-603224878-StimA_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - path: sub-496144063/sub-496144063_ses-502665019-StimC_ophys.nwb

@@ -15,10 +15,20 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - sub-A3723/sub-A3723_behavior+ecephys.nwb
+  - path: sub-A5508/sub-A5508_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-A3709/sub-A3709_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-A5508/sub-A5508_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2

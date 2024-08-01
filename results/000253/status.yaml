@@ -16,10 +16,20 @@ tests:
   - sub-637908/sub-637908_ses-1213341633_probe-5_ecephys.nwb
   - sub-637909/sub-637909_ses-1212569512_ogen.nwb
   - sub-637909/sub-637909_ses-1212569512_probe-5_ecephys.nwb
+  - path: sub-640507/sub-640507_ses-1217213788_probe-5_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-632487/sub-632487_ses-1204677304_probe-5_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-640507/sub-640507_ses-1217213788_probe-5_ecephys.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2

@@ -15,6 +15,11 @@ tests:
   - sub-Cell04/sub-Cell04_ses-session-04_image.nwb
   - sub-Cell07/sub-Cell07_ses-session-07_image.nwb
   - sub-Cell11/sub-Cell11_ses-session-11_image.nwb
+  - path: sub-Cell12/sub-Cell12_ses-session-12_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -24,6 +29,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - sub-Cell07/sub-Cell07_ses-session-07_image.nwb
+  - path: sub-Cell12/sub-Cell12_ses-session-12_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - sub-Cell04/sub-Cell04_ses-session-04_image.nwb

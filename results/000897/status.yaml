@@ -7,6 +7,11 @@ nassets: 30
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-amadeus/sub-amadeus_ses-08272019_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-amadeus/sub-amadeus_ses-08292019_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -18,6 +23,11 @@ tests:
   - sub-mahler/sub-mahler_ses-04142021_behavior+ecephys.nwb
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-amadeus/sub-amadeus_ses-08272019_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-amadeus/sub-amadeus_ses-08292019_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.3

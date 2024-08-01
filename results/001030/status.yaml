@@ -7,6 +7,11 @@ nassets: 17
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-c5-1-5V/sub-c5-1-5V_ses-2kHz-stimulation-1-5V_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-c6-1-0V/sub-c6-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
   - sub-c7-1-0V/sub-c7-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
   - sub-c7-1-25V/sub-c7-1-25V_ses-2kHz-stimulation-1-25V_image.nwb
@@ -19,6 +24,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-c5-1-5V/sub-c5-1-5V_ses-2kHz-stimulation-1-5V_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-c7-1-25V/sub-c7-1-25V_ses-2kHz-stimulation-1-25V_image.nwb
   - path: sub-c7-1-45V/sub-c7-1-45V_ses-2kHz-stimulation-1-45V_image.nwb
     versions:

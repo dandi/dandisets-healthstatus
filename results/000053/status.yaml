@@ -171,7 +171,6 @@ tests:
   - sub-Dorian/sub-Dorian_ses-20191110_obj-milwb3_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191110_obj-uldp4f_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191110_obj-vacba1_behavior.nwb
-  - sub-Dorian/sub-Dorian_ses-20191111_obj-1e7otef_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191111_obj-1ezfuhs_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191111_obj-1uxws40_behavior.nwb
   - path: sub-Dorian/sub-Dorian_ses-20191111_obj-jvrr1t_behavior.nwb
@@ -750,7 +749,12 @@ tests:
   - sub-npJ5/sub-npJ5_ses-20190505_behavior.nwb
   - sub-npJ5/sub-npJ5_ses-20190505_obj-10plzqh_behavior+ecephys.nwb
   - sub-npJ5/sub-npJ5_ses-20190505_obj-1ti12l8_behavior+ecephys.nwb
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-Dorian/sub-Dorian_ses-20191111_obj-1e7otef_behavior.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-Barbara/sub-Barbara_ses-20190502_behavior.nwb
@@ -779,7 +783,11 @@ tests:
   - sub-Dorian/sub-Dorian_ses-20191110_obj-eu13rc_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191110_obj-mf6bio_behavior.nwb
   - sub-Dorian/sub-Dorian_ses-20191110_obj-milwb3_behavior.nwb
-  - sub-Dorian/sub-Dorian_ses-20191111_obj-1e7otef_behavior.nwb
+  - path: sub-Dorian/sub-Dorian_ses-20191111_obj-1e7otef_behavior.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-Dorian/sub-Dorian_ses-20191111_obj-1uxws40_behavior.nwb
   - sub-Ella/sub-Ella_ses-20190102_behavior.nwb
   - sub-Ella/sub-Ella_ses-20190408_behavior.nwb

@@ -167,11 +167,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-5/sub-5_ses-2_ecephys+image.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-6/sub-6_ses-1_ecephys+image.nwb
     versions:
       hdmf: 3.13.0
@@ -212,7 +207,12 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-5/sub-5_ses-2_ecephys+image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-11/sub-11_ses-1_ecephys+image.nwb
@@ -226,6 +226,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-17/sub-17_ses-1_ecephys+image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-5/sub-5_ses-2_ecephys+image.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -377,11 +382,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-5/sub-5_ses-2_ecephys+image.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-6/sub-6_ses-1_ecephys+image.nwb
     versions:
       hdmf: 3.13.0

@@ -14,6 +14,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-813481439/sub-813481439_ses-813730092_icephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-832340431/sub-832340431_ses-832614721_icephys.nwb
     versions:
       hdmf: 3.14.3
@@ -36,6 +41,11 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-813481439/sub-813481439_ses-813730092_icephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-832340431/sub-832340431_ses-832614721_icephys.nwb
     versions:
       hdmf: 3.14.3

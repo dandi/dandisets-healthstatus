@@ -33,10 +33,20 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-dms-dlight-11/sub-dms-dlight-11_ses-photometry-a5d1d93a-6f50-4f9a-aa4f-2d3f7a3ee5c9_behavior+image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-10/sub-10_ses-reinforcement-592976d7-ed94-422b-85f8-7c701478f869_behavior+image+ogen.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-dms-dlight-11/sub-dms-dlight-11_ses-photometry-a5d1d93a-6f50-4f9a-aa4f-2d3f7a3ee5c9_behavior+image.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
