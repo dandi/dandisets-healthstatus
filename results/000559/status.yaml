@@ -7,6 +7,11 @@ nassets: 4425
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-10/sub-10_ses-reinforcement-592976d7-ed94-422b-85f8-7c701478f869_behavior+image+ogen.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-209/sub-209_ses-reinforcement-9001154c-318b-4963-8aba-3b14f410ba59_behavior+image+ogen.nwb
   - path: sub-3440/sub-3440_ses-reinforcement-34e1780c-47ff-458f-ad23-3ef5ccb1e822_behavior+image+ogen.nwb
     versions:
@@ -30,7 +35,12 @@ tests:
       pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-10/sub-10_ses-reinforcement-592976d7-ed94-422b-85f8-7c701478f869_behavior+image+ogen.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - sub-209/sub-209_ses-reinforcement-9001154c-318b-4963-8aba-3b14f410ba59_behavior+image+ogen.nwb
   assets_timeout:

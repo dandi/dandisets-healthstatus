@@ -12,6 +12,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_ok:
+  - path: sub-CaMPARI1-C150T-F198Y/sub-CaMPARI1-C150T-F198Y_ses-flourescence-recording_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-10xaxmr_ophys.nwb
   - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-18ryofc_ophys.nwb
   - sub-Mouse6-DC1-5L-C2-5R-1/sub-Mouse6-DC1-5L-C2-5R-1_obj-1n5lrz_ophys.nwb
@@ -1414,6 +1419,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-CaMPARI1-C150T-F198Y/sub-CaMPARI1-C150T-F198Y_ses-flourescence-recording_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-mouse1-DC1-1L-C2-1R-1 Left/sub-mouse1-DC1-1L-C2-1R-1 Left_obj-1kz5p4z_ophys.nwb
   - sub-mouse8-C2R 15degrees/sub-mouse8-C2R 15degrees_obj-1b9sdws_ophys.nwb
   - sub-phpV10-4/sub-phpV10-4_ses-20230420_obj-1chlfru_ophys.nwb

@@ -9,11 +9,19 @@ tests:
   assets_ok:
   - sub-ID-of-experimental-subject/sub-ID-of-experimental-subject_obj-15xi7bb_ophys.nwb
   - sub-ID-of-experimental-subject/sub-ID-of-experimental-subject_obj-put4sl_ophys.nwb
-  - sub-ID-of-experimental-subject/sub-ID-of-experimental-subject_obj-tj7hwp_ophys.nwb
+  - path: sub-ID-of-experimental-subject/sub-ID-of-experimental-subject_obj-tj7hwp_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-ID-of-experimental-subject/sub-ID-of-experimental-subject_obj-tj7hwp_ophys.nwb
+  - path: sub-ID-of-experimental-subject/sub-ID-of-experimental-subject_obj-tj7hwp_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - sub-ID-of-experimental-subject/sub-ID-of-experimental-subject_obj-15xi7bb_ophys.nwb

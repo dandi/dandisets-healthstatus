@@ -8,11 +8,19 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-842/sub-842_ses-221123_ophys.nwb
-  - sub-DL18/sub-DL18_ses-211110_image+ophys.nwb
+  - path: sub-DL18/sub-DL18_ses-211110_image+ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-DL18/sub-DL18_ses-211110_image+ophys.nwb
+  - path: sub-DL18/sub-DL18_ses-211110_image+ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - sub-842/sub-842_ses-221123_ophys.nwb

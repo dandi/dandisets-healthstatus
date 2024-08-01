@@ -9,6 +9,11 @@ tests:
   assets_ok:
   - sub-553963/sub-553963_ses-20210301T145817_image.nwb
   assets_timeout:
+  - path: sub-509808/sub-509808_ses-20200610T130353_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-548716/sub-548716_ses-20210113T085123_image.nwb
     versions:
       hdmf: 3.14.2
@@ -30,7 +35,12 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-509808/sub-509808_ses-20200610T130353_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - path: sub-548716/sub-548716_ses-20210113T085123_image.nwb

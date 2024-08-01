@@ -133,7 +133,11 @@ tests:
   - sub-EV31/sub-EV31_ses-20170621T180102_ophys.nwb
   - sub-EV31/sub-EV31_ses-20170621T180723_ophys.nwb
   - sub-EV31/sub-EV31_ses-20170621T182853_ophys.nwb
-  - sub-EV31/sub-EV31_ses-20170621T183925_ophys.nwb
+  - path: sub-EV31/sub-EV31_ses-20170621T183925_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-EV31/sub-EV31_ses-20170621T185051_ophys.nwb
   - path: sub-EV31/sub-EV31_ses-20170621T185641_ophys.nwb
     versions:
@@ -1209,6 +1213,11 @@ tests:
 - assets_nok:
   - sub-EV17/sub-EV17_ses-20170211T134254_ophys.nwb
   - sub-EV30/sub-EV30_ses-20170608T001958_ophys.nwb
+  - path: sub-EV31/sub-EV31_ses-20170621T183925_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-EV44/sub-EV44_ses-20171103T182317_ophys.nwb
   - sub-EV84/sub-EV84_ses-20180810T140422_ophys.nwb
   - sub-EV84/sub-EV84_ses-20180810T142153_ophys.nwb
@@ -1340,7 +1349,6 @@ tests:
   - sub-EV31/sub-EV31_ses-20170621T180102_ophys.nwb
   - sub-EV31/sub-EV31_ses-20170621T180723_ophys.nwb
   - sub-EV31/sub-EV31_ses-20170621T182853_ophys.nwb
-  - sub-EV31/sub-EV31_ses-20170621T183925_ophys.nwb
   - sub-EV31/sub-EV31_ses-20170621T185051_ophys.nwb
   - path: sub-EV31/sub-EV31_ses-20170621T185641_ophys.nwb
     versions:

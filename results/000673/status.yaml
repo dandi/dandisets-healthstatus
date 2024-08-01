@@ -14,6 +14,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_timeout:
+  - path: sub-1/sub-1_ses-2_ecephys+image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-17/sub-17_ses-1_ecephys+image.nwb
     versions:
       hdmf: 3.14.2
@@ -30,7 +35,12 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-1/sub-1_ses-2_ecephys+image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - path: sub-17/sub-17_ses-1_ecephys+image.nwb

@@ -9,11 +9,21 @@ tests:
   assets_ok: []
   assets_timeout:
   - sub-L698/sub-L698_ses-Dendrite2a.nwb
+  - path: sub-L831/sub-L831_ses-Dendrite1b.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-L882/sub-L882_ses-Dendrite2a.nwb
   - sub-L882/sub-L882_ses-Dendrite4c.nwb
   - sub-L882/sub-L882_ses-Dendrite7a.nwb
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-L831/sub-L831_ses-Dendrite1b.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - sub-L698/sub-L698_ses-Dendrite2a.nwb

@@ -11,9 +11,19 @@ tests:
   - sub-RuOx/sub-RuOx_obj-1cgrk56_ecephys.nwb
   - sub-RuOx/sub-RuOx_obj-1turh6t_ecephys.nwb
   - sub-RuOx/sub-RuOx_obj-byi2tl_ecephys.nwb
+  - path: sub-RuOx/sub-RuOx_obj-hh964y_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-SIROF/sub-SIROF_obj-18mw32i_ecephys.nwb
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-RuOx/sub-RuOx_obj-hh964y_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - sub-RuOx/sub-RuOx_obj-1cgrk56_ecephys.nwb

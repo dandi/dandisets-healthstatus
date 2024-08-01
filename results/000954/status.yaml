@@ -9,7 +9,7 @@ tests:
   assets_ok:
   - path: sub-HumanPitt-held-in-calib/sub-HumanPitt-held-in-calib_ses-19250108T111455.nwb
     versions:
-      hdmf: 3.14.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HumanPitt-held-in-minival/sub-HumanPitt-held-in-minival_ses-19250101T112404.nwb
@@ -31,6 +31,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-HumanPitt-held-in-calib/sub-HumanPitt-held-in-calib_ses-19250108T111455.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-HumanPitt-held-in-minival/sub-HumanPitt-held-in-minival_ses-19250101T112404.nwb
     versions:
       hdmf: 3.14.2
@@ -39,11 +44,6 @@ tests:
   - sub-HumanPitt-held-out-calib/sub-HumanPitt-held-out-calib_ses-19250126T114029.nwb
   assets_ok: []
   assets_timeout:
-  - path: sub-HumanPitt-held-in-calib/sub-HumanPitt-held-in-calib_ses-19250108T111455.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
   - path: sub-HumanPitt-held-in-minival/sub-HumanPitt-held-in-minival_ses-19250108T111022.nwb
     versions:
       hdmf: 3.14.2

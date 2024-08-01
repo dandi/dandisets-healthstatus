@@ -326,7 +326,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - sub-510077/sub-510077_ses-20200616T175628_behavior+ophys.nwb
-  - sub-510077/sub-510077_ses-20200618T154659_behavior+ophys.nwb
+  - path: sub-510077/sub-510077_ses-20200618T154659_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-510077/sub-510077_ses-20200620T143237_behavior+ophys.nwb
   - sub-510077/sub-510077_ses-20200622T181344_behavior+ophys.nwb
   - sub-510077/sub-510077_ses-20200623T180624_behavior+ophys.nwb
@@ -414,6 +418,11 @@ tests:
   - sub-509510/sub-509510_ses-20200516T164515_behavior+ophys.nwb
   - sub-509641/sub-509641_ses-20200608T194134_behavior+ophys.nwb
   - sub-510077/sub-510077_ses-20200616T175628_behavior+ophys.nwb
+  - path: sub-510077/sub-510077_ses-20200618T154659_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-510077/sub-510077_ses-20200623T180624_behavior+ophys.nwb
   - sub-510078/sub-510078_ses-20200529T164742_behavior+ophys.nwb
   - sub-525492/sub-525492_ses-20200708T190015_behavior+ophys.nwb
@@ -704,7 +713,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-510077/sub-510077_ses-20200618T154659_behavior+ophys.nwb
   - sub-510077/sub-510077_ses-20200620T143237_behavior+ophys.nwb
   - sub-510077/sub-510077_ses-20200622T181344_behavior+ophys.nwb
   - sub-510077/sub-510077_ses-20200624T160203_behavior+ophys.nwb

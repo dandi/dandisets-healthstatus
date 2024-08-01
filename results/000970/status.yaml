@@ -11,10 +11,20 @@ tests:
   - sub-F2/sub-F2_ses-20240522.nwb
   - sub-IS264/sub-IS264_ses-20240522.nwb
   - sub-M3/sub-M3_ses-20240522.nwb
+  - path: sub-WT6/sub-WT6_ses-20240522.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-F2/sub-F2_ses-20240522.nwb
+  - path: sub-WT6/sub-WT6_ses-20240522.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - sub-F2-3/sub-F2-3_ses-20240522.nwb

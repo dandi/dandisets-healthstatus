@@ -1,5 +1,5 @@
 dandiset: 000957
-draft_modified: '2024-04-07T01:42:57.181196Z'
+draft_modified: '2024-07-31T02:49:28.283296Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
@@ -12,7 +12,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-ZYE-0031/sub-ZYE-0031_ecephys+image.nwb
+  - path: sub-ZYE-0031/sub-ZYE-0031_ecephys+image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ZYE-0031/sub-ZYE-0031_ses-1_ecephys+image.nwb
     versions:
       hdmf: 3.14.2
@@ -31,6 +35,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-ZYE-0031/sub-ZYE-0031_ecephys+image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ZYE-0040/sub-ZYE-0040_ecephys+image.nwb
     versions:
       hdmf: 3.14.2
@@ -43,7 +52,6 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-ZYE-0031/sub-ZYE-0031_ecephys+image.nwb
   - path: sub-ZYE-0031/sub-ZYE-0031_ses-1_ecephys+image.nwb
     versions:
       hdmf: 3.14.2

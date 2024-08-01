@@ -7,12 +7,22 @@ nassets: 21
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-12/sub-12_ecephys+image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-22/sub-22_ecephys+image.nwb
   - sub-4/sub-4_ecephys+image.nwb
   - sub-8/sub-8_ecephys+image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-12/sub-12_ecephys+image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - sub-22/sub-22_ecephys+image.nwb

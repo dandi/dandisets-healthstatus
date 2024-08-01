@@ -11,15 +11,23 @@ tests:
   - sub-SST-tdTomato-1/sub-SST-tdTomato-1_ophys.nwb
   - sub-SST-tdTomato-1a/sub-SST-tdTomato-1a_ophys.nwb
   - sub-rbp4-jRGECO1a-21/sub-rbp4-jRGECO1a-21_ophys.nwb
-  - sub-wt-vpm-556-857-7/sub-wt-vpm-556-857-7_ophys.nwb
+  - path: sub-wt-vpm-556-857-7/sub-wt-vpm-556-857-7_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-wt-vpm-556-857-7/sub-wt-vpm-556-857-7_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - sub-SST-tdTomato-1/sub-SST-tdTomato-1_ophys.nwb
   - sub-SST-tdTomato-1a/sub-SST-tdTomato-1a_ophys.nwb
   - sub-rbp4-jRGECO1a-21/sub-rbp4-jRGECO1a-21_ophys.nwb
-  - sub-wt-vpm-556-857-7/sub-wt-vpm-556-857-7_ophys.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

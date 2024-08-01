@@ -9,12 +9,22 @@ tests:
   assets_ok:
   - sub-125/sub-125_ses-20200930.nwb
   - sub-125/sub-125_ses-20201022.nwb
+  - path: sub-136/sub-136_ses-20201013.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-163/sub-163_ses-20200930.nwb
   - sub-220/sub-220_ses-20201204.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-125/sub-125_ses-20201022.nwb
+  - path: sub-136/sub-136_ses-20201013.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - sub-125/sub-125_ses-20200930.nwb

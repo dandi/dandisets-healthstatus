@@ -10,9 +10,19 @@ tests:
   assets_timeout:
   - sub-jlh19/sub-jlh19_ses-jlh19-2022-07-28-g0_ecephys.nwb
   - sub-jlh31/sub-jlh31_ses-jlh31-2023-01-24-14-30-23_ecephys.nwb
+  - path: sub-jlh32/sub-jlh32_ses-jlh32-2023-02-18-16-07-58_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-jlh34/sub-jlh34_ses-jlh34-2023-05-15-16-03-21_ecephys.nwb
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-jlh32/sub-jlh32_ses-jlh32-2023-02-18-16-07-58_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - sub-jlh19/sub-jlh19_ses-jlh19-2022-07-28-g0_ecephys.nwb

@@ -64,7 +64,11 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-KSt106/sub-KSt106_ses-20150514T120000_obj-g7vu6s_behavior.nwb
+  - path: sub-KSt106/sub-KSt106_ses-20150514T120000_obj-g7vu6s_behavior.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-KSt107/sub-KSt107_ses-20150514T120000_behavior.nwb
     versions:
       hdmf: 3.13.0
@@ -291,6 +295,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-KSt106/sub-KSt106_ses-20150514T120000_obj-g7vu6s_behavior.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - path: sub-KSm11/sub-KSm11_ses-20160616T120000_behavior.nwb
@@ -324,7 +333,6 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-KSt106/sub-KSt106_ses-20150514T120000_obj-g7vu6s_behavior.nwb
   - path: sub-KSt107/sub-KSt107_ses-20150514T120000_behavior.nwb
     versions:
       hdmf: 3.13.0

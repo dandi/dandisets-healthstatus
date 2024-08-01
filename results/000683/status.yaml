@@ -6,17 +6,17 @@ last_run_ended: null
 nassets: 1
 tests:
 - assets_nok: []
-  assets_ok:
-  - sub-subject1/sub-subject1_ophys.nwb
-  assets_timeout: []
-  name: pynwb_open_load_ns
-- assets_nok: []
   assets_ok: []
   assets_timeout:
   - sub-subject1/sub-subject1_ophys.nwb
+  name: pynwb_open_load_ns
+- assets_nok:
+  - sub-subject1/sub-subject1_ophys.nwb
+  assets_ok: []
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.2
+  hdmf: 3.14.3
   matnwb: v2.6.0.2
   pynwb: 2.8.1

@@ -463,7 +463,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-13_slice-20200408-slice-3_cell-20200408-sample-13_icephys.nwb
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-14_slice-20200408-slice-3_cell-20200408-sample-14_icephys.nwb
     versions:
       hdmf: 3.13.0
@@ -549,6 +548,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-13_slice-20200408-slice-3_cell-20200408-sample-13_icephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-10_slice-20200407-slice-1_cell-20200407-sample-10_icephys.nwb
@@ -616,7 +620,11 @@ tests:
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-30_slice-20200406-slice-6_cell-20200406-sample-30_icephys.nwb
   - sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-3_slice-20200406-slice-1_cell-20200406-sample-3_icephys.nwb
   - sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-11_slice-20200408-slice-3_cell-20200408-sample-11_icephys.nwb
-  - sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-13_slice-20200408-slice-3_cell-20200408-sample-13_icephys.nwb
+  - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-13_slice-20200408-slice-3_cell-20200408-sample-13_icephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-16_slice-20200408-slice-3_cell-20200408-sample-16_icephys.nwb
   - sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-20_slice-20200408-slice-4_cell-20200408-sample-20_icephys.nwb
   - sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-26_slice-20200408-slice-4_cell-20200408-sample-26_icephys.nwb

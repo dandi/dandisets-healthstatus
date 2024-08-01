@@ -9,6 +9,11 @@ tests:
   - sub-2023-01-17-14-SWF702/sub-2023-01-17-14-SWF702_ses-20230117_behavior+image+ophys.nwb
   assets_ok: []
   assets_timeout:
+  - path: sub-2022-06-14-07-SWF702/sub-2022-06-14-07-SWF702_ses-20220614_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-2022-06-28-01-SWF702/sub-2022-06-28-01-SWF702_ses-20220628_behavior+image+ophys.nwb
     versions:
       hdmf: 3.14.2
@@ -30,7 +35,12 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-2022-06-14-07-SWF702/sub-2022-06-14-07-SWF702_ses-20220614_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - path: sub-2022-06-28-01-SWF702/sub-2022-06-28-01-SWF702_ses-20220628_behavior+image+ophys.nwb

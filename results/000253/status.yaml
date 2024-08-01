@@ -1,5 +1,5 @@
 dandiset: '000253'
-draft_modified: '2024-07-22T22:54:30.265213Z'
+draft_modified: '2024-07-30T23:12:08.336009Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
@@ -8,12 +8,22 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-632487/sub-632487_ses-1204677304_probe-4_ecephys.nwb
+  - path: sub-632487/sub-632487_ses-1204677304_probe-5_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-637908/sub-637908_ses-1213341633_probe-5_ecephys.nwb
   - sub-637909/sub-637909_ses-1212569512_ogen.nwb
   - sub-637909/sub-637909_ses-1212569512_probe-5_ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-632487/sub-632487_ses-1204677304_probe-5_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - sub-632487/sub-632487_ses-1204677304_probe-4_ecephys.nwb

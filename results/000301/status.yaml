@@ -32,11 +32,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-M38/sub-M38_ses-20200904T142415_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - sub-M40/sub-M40_ses-20201126T145724_behavior+ecephys.nwb
   - sub-M41/sub-M41_ses-20201127T144127_behavior+ecephys.nwb
   - path: sub-M42/sub-M42_ses-20201201T143600_behavior+ecephys.nwb
@@ -69,7 +64,12 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-M38/sub-M38_ses-20200904T142415_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-M26/sub-M26_ses-20200319T153237_behavior+ecephys.nwb
@@ -84,9 +84,9 @@ tests:
       pynwb: 2.7.0
   - path: sub-M38/sub-M38_ses-20200904T142415_behavior+ecephys.nwb
     versions:
-      hdmf: 3.14.1
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-M42/sub-M42_ses-20201201T143600_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.0

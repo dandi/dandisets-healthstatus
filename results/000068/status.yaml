@@ -6,16 +6,24 @@ last_run_ended: '2024-01-14T07:07:39.613015-05:00'
 nassets: 2
 tests:
 - assets_nok: []
-  assets_ok:
-  - sub-abcd/sub-abcd_icephys.nwb
-  assets_timeout:
-  - sub-abcd/icephys_example.nwb
-  name: pynwb_open_load_ns
-- assets_nok: []
   assets_ok: []
   assets_timeout:
   - sub-abcd/icephys_example.nwb
-  - sub-abcd/sub-abcd_icephys.nwb
+  - path: sub-abcd/sub-abcd_icephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  name: pynwb_open_load_ns
+- assets_nok:
+  - path: sub-abcd/sub-abcd_icephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  assets_ok: []
+  assets_timeout:
+  - sub-abcd/icephys_example.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

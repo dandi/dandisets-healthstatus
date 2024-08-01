@@ -9,6 +9,11 @@ tests:
   assets_ok:
   - sub-1/sub-1_ses-1.nwb
   - sub-1/sub-1_ses-2.nwb
+  - path: sub-2/sub-2_ses-6.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-2/sub-2_ses-7.nwb
   assets_timeout:
   - sub-1/sub-1_ses-4.nwb
@@ -16,6 +21,11 @@ tests:
 - assets_nok:
   - sub-1/sub-1_ses-1.nwb
   - sub-1/sub-1_ses-4.nwb
+  - path: sub-2/sub-2_ses-6.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - sub-1/sub-1_ses-2.nwb

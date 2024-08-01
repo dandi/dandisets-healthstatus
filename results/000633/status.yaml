@@ -8,14 +8,22 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-Paired-pulse-trains/sub-Paired-pulse-trains_ses-Paired-pulse-trains_image.nwb
-  assets_timeout:
-  - sub-Single-pulse-trains/sub-Single-pulse-trains_ses-Single-pulse-trains_image.nwb
+  - path: sub-Single-pulse-trains/sub-Single-pulse-trains_ses-Single-pulse-trains_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-Single-pulse-trains/sub-Single-pulse-trains_ses-Single-pulse-trains_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - sub-Paired-pulse-trains/sub-Paired-pulse-trains_ses-Paired-pulse-trains_image.nwb
-  - sub-Single-pulse-trains/sub-Single-pulse-trains_ses-Single-pulse-trains_image.nwb
   name: matnwb_nwbRead
 untested: []
 versions:

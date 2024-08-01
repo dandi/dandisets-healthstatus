@@ -7,6 +7,11 @@ nassets: 238
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-Pig3/sub-Pig3_ses-20221116T123815_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-Pig5/sub-Pig5_ses-20230112T125852_ecephys.nwb
   - path: sub-Rat5/sub-Rat5_ses-20221107T120022_ecephys.nwb
     versions:
@@ -30,7 +35,12 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-Pig3/sub-Pig3_ses-20221116T123815_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - sub-Pig5/sub-Pig5_ses-20230112T125852_ecephys.nwb
   assets_timeout:

@@ -8,6 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-BH459/sub-BH459_obj-s8wxn0_ecephys.nwb
+  - path: sub-BH464/sub-BH464_obj-12qjgb4_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout:
   - path: sub-BH456/sub-BH456_obj-1qm8qxi_ecephys.nwb
     versions:
@@ -30,7 +35,12 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-BH464/sub-BH464_obj-12qjgb4_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - sub-BH459/sub-BH459_obj-s8wxn0_ecephys.nwb
   assets_timeout:

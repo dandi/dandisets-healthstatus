@@ -10,13 +10,13 @@ tests:
   assets_timeout:
   - PS_Stimsets-20190906.nwb
   name: pynwb_open_load_ns
-- assets_nok: []
-  assets_ok: []
-  assets_timeout:
+- assets_nok:
   - PS_Stimsets-20190906.nwb
+  assets_ok: []
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.2
+  hdmf: 3.14.3
   matnwb: v2.6.0.2
   pynwb: 2.8.1

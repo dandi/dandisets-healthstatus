@@ -27,10 +27,20 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-ant3-m4-d27-y2022/sub-ant3-m4-d27-y2022_ses-m4-d27-y2022-ant3-0-0075x-4-methyl-3-heptanol-40-t131-z65um_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-ant3-m4-d27-y2022/sub-ant3-m4-d27-y2022_ses-m4-d27-y2022-ant3-0-0075x-4-methyl-3-hexanol-40-t127-z105um_ophys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
-- assets_nok: []
+- assets_nok:
+  - path: sub-ant3-m4-d27-y2022/sub-ant3-m4-d27-y2022_ses-m4-d27-y2022-ant3-0-0075x-4-methyl-3-heptanol-40-t131-z65um_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - sub-ant3-m4-d27-y2022/sub-ant3-m4-d27-y2022_ses-m4-d27-y2022-ant3-0-0075x-4-methyl-3-hexanol-40-t127-z105um_ophys.nwb
   assets_timeout:

@@ -7,17 +7,25 @@ nassets: 7
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Cell03/sub-Cell03_ses-session-03_image.nwb
+  - path: sub-Cell03/sub-Cell03_ses-session-03_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-Cell04/sub-Cell04_ses-session-04_image.nwb
   - sub-Cell07/sub-Cell07_ses-session-07_image.nwb
   - sub-Cell11/sub-Cell11_ses-session-11_image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-Cell03/sub-Cell03_ses-session-03_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-Cell07/sub-Cell07_ses-session-07_image.nwb
   assets_ok: []
   assets_timeout:
-  - sub-Cell03/sub-Cell03_ses-session-03_image.nwb
   - sub-Cell04/sub-Cell04_ses-session-04_image.nwb
   - sub-Cell11/sub-Cell11_ses-session-11_image.nwb
   name: matnwb_nwbRead

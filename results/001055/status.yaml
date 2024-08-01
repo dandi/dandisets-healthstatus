@@ -8,11 +8,19 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-Animal-1/sub-Animal-1_ses-11-to-21.nwb
-  - sub-Animal-2/sub-Animal-2_ses-43-to-47.nwb
+  - path: sub-Animal-2/sub-Animal-2_ses-43-to-47.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-Animal-2/sub-Animal-2_ses-43-to-47.nwb
+  - path: sub-Animal-2/sub-Animal-2_ses-43-to-47.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - sub-Animal-1/sub-Animal-1_ses-11-to-21.nwb

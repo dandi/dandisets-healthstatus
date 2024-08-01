@@ -6,16 +6,24 @@ last_run_ended: '2024-01-15T05:31:52.508731-05:00'
 nassets: 2
 tests:
 - assets_nok: []
-  assets_ok: []
+  assets_ok:
+  - path: sub-Jenkins/sub-Jenkins_ses-full_desc-test_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout:
-  - sub-Jenkins/sub-Jenkins_ses-full_desc-test_ecephys.nwb
   - sub-Jenkins/sub-Jenkins_ses-full_desc-train_behavior+ecephys.nwb
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-Jenkins/sub-Jenkins_ses-full_desc-test_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-Jenkins/sub-Jenkins_ses-full_desc-train_behavior+ecephys.nwb
   assets_ok: []
-  assets_timeout:
-  - sub-Jenkins/sub-Jenkins_ses-full_desc-test_ecephys.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

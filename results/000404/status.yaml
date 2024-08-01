@@ -23,11 +23,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-monk-g/sub-monk-g_ses-session6.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-monk-g/sub-monk-g_ses-session7.nwb
     versions:
       hdmf: 3.14.1
@@ -59,6 +54,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-monk-g/sub-monk-g_ses-session6.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-monk-g/sub-monk-g_ses-session8.nwb
     versions:
       hdmf: 3.14.2
@@ -71,6 +71,11 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-monk-g/sub-monk-g_ses-session6.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-monk-j/sub-monk-j_ses-session0.nwb
     versions:
       hdmf: 3.14.0
@@ -93,11 +98,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-monk-g/sub-monk-g_ses-session6.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-monk-g/sub-monk-g_ses-session7.nwb
     versions:
       hdmf: 3.14.1

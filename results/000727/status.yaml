@@ -26,12 +26,17 @@ tests:
       pynwb: 2.8.1
   - path: sub-fly-105/sub-fly-105_ses-20200704142706_behavior+image+ophys.nwb
     versions:
-      hdmf: 3.14.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-fly-099/sub-fly-099_ses-20200627142647_behavior+image+ophys.nwb
+  - path: sub-fly-105/sub-fly-105_ses-20200704142706_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - path: sub-fly-094/sub-fly-094_ses-20200620122048_behavior+image+ophys.nwb
@@ -45,11 +50,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-fly-100/sub-fly-100_ses-20200702083849_behavior+image+ophys.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-fly-105/sub-fly-105_ses-20200704142706_behavior+image+ophys.nwb
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

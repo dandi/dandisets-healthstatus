@@ -581,7 +581,11 @@ tests:
   - sub-SC009/sub-SC009_ses-SC009-112118_ecephys+ogen.nwb
   - sub-SC009/sub-SC009_ses-SC009-112218_ecephys+ogen.nwb
   - sub-SC009/sub-SC009_ses-SC009-112318_ecephys+ogen.nwb
-  - sub-SC009/sub-SC009_ses-SC009-112418_ecephys+ogen.nwb
+  - path: sub-SC009/sub-SC009_ses-SC009-112418_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-SC009/sub-SC009_ses-SC009-112518_ecephys+ogen.nwb
   - sub-SC009/sub-SC009_ses-SC009-112618_ecephys+ogen.nwb
   - sub-SC009/sub-SC009_ses-SC009-112718_ecephys+ogen.nwb
@@ -647,6 +651,11 @@ tests:
   - sub-SC002/sub-SC002_ses-SC002-120417_ecephys+ogen.nwb
   - sub-SC006/sub-SC006_ses-SC006-011418_ecephys+ogen.nwb
   - sub-SC008/sub-SC008_ses-SC008-112918_ecephys+ogen.nwb
+  - path: sub-SC009/sub-SC009_ses-SC009-112418_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - sub-SC002/sub-SC002_ses-SC002-120917_ecephys+ogen.nwb
   - sub-SC020/sub-SC020_ses-SC020-040219_ecephys+ogen.nwb
@@ -1216,7 +1225,6 @@ tests:
   - sub-SC009/sub-SC009_ses-SC009-112118_ecephys+ogen.nwb
   - sub-SC009/sub-SC009_ses-SC009-112218_ecephys+ogen.nwb
   - sub-SC009/sub-SC009_ses-SC009-112318_ecephys+ogen.nwb
-  - sub-SC009/sub-SC009_ses-SC009-112418_ecephys+ogen.nwb
   - sub-SC009/sub-SC009_ses-SC009-112518_ecephys+ogen.nwb
   - sub-SC009/sub-SC009_ses-SC009-112618_ecephys+ogen.nwb
   - sub-SC009/sub-SC009_ses-SC009-112718_ecephys+ogen.nwb
