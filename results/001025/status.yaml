@@ -25,7 +25,7 @@ tests:
       pynwb: 2.8.1
   - path: sub-16/sub-16_image.nwb
     versions:
-      hdmf: 3.14.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-24/sub-24_image.nwb
@@ -56,14 +56,14 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-16/sub-16_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - sub-11/sub-11_image.nwb
   assets_timeout:
-  - path: sub-16/sub-16_image.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
   - path: sub-24/sub-24_image.nwb
     versions:
       hdmf: 3.14.2

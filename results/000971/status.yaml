@@ -7,6 +7,11 @@ nassets: 4139
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-124-280/sub-124-280_ses-Opto-DMS-Excitatory-ChR2Scrambled-2019-07-12T10-16-25_behavior+ogen.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-300-405/sub-300-405_ses-Opto-DLS-Excitatory-ChR2Scrambled-2020-09-04T12-31-59_ogen.nwb
   - sub-361-427/sub-361-427_ses-Opto-DMS-Inhibitory-EYFP-2020-12-09T11-28-06_ogen.nwb
   - path: sub-431-419/sub-431-419_ses-Opto-DMS-Excitatory-ChR2Scrambled-2020-11-19T12-57-19_ogen.nwb
@@ -24,6 +29,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-124-280/sub-124-280_ses-Opto-DMS-Excitatory-ChR2Scrambled-2019-07-12T10-16-25_behavior+ogen.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-431-419/sub-431-419_ses-Opto-DMS-Excitatory-ChR2Scrambled-2020-11-19T12-57-19_ogen.nwb
     versions:
       hdmf: 3.14.3

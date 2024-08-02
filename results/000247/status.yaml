@@ -162,9 +162,9 @@ tests:
   - sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1207/sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1207_ses-2020-07-17-0003-oviDNSS1-GCaMP7f&CsChrimson-periodicstim-nwb.nwb
   - path: sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1216/sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1216_ses-2020-07-23-0003-oviDNSS1-GCaMP7f&CsChrimson-periodicstim-nwb.nwb
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1218/sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1218_ses-2020-07-23-0007-oviDNSS1-GCaMP7f&CsChrimson-periodicstim-nwb.nwb
     versions:
       hdmf: 3.13.0
@@ -553,6 +553,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-oviDNSS1-&-SS01048-driving-GCaMP7f-fly-ID#8008/sub-oviDNSS1-&-SS01048-driving-GCaMP7f-fly-ID#8008_ses-2019-11-25-0000-oviDNSS1&SS01048-GCaMP7f-nwb.nwb
+  - path: sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1216/sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1216_ses-2020-07-23-0003-oviDNSS1-GCaMP7f&CsChrimson-periodicstim-nwb.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-oviDNSS1-driving-GCaMP7f-fly-ID#6017/sub-oviDNSS1-driving-GCaMP7f-fly-ID#6017_ses-2019-06-13-0003-oviDNSS1-GCaMP7f-nwb.nwb
     versions:
       hdmf: 3.14.3
@@ -621,11 +626,6 @@ tests:
   - sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1204/sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1204_ses-2020-07-16-0007-oviDNSS1-GCaMP7f&CsChrimson-manualstim-nwb.nwb
   - sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1205/sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1205_ses-2020-07-17-0000-oviDNSS1-GCaMP7f&CsChrimson-manualstim-nwb.nwb
   - sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1207/sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1207_ses-2020-07-17-0003-oviDNSS1-GCaMP7f&CsChrimson-periodicstim-nwb.nwb
-  - path: sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1216/sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1216_ses-2020-07-23-0003-oviDNSS1-GCaMP7f&CsChrimson-periodicstim-nwb.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1219/sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1219_ses-2020-07-24-0000-oviDNSS1-GCaMP7f&CsChrimson-periodicstim-nwb.nwb
   - sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1221/sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#1221_ses-2020-07-24-0002-oviDNSS1-GCaMP7f&CsChrimson-periodicstim-nwb.nwb
   - sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#5000/sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#5000_ses-2019-08-27-0003-oviDNSS1-GCaMP7f&CsChrimson-manualstim-nwb.nwb

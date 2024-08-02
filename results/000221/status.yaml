@@ -14,7 +14,11 @@ tests:
   assets_ok:
   - sub-HI159/sub-HI159_ecephys+ogen.nwb
   - sub-HI159/sub-HI159_ses-HI159-090418_ecephys+ogen.nwb
-  - sub-HI159/sub-HI159_ses-HI159-090518_ecephys+ogen.nwb
+  - path: sub-HI159/sub-HI159_ses-HI159-090518_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-HI159/sub-HI159_ses-HI159-090618_ecephys+ogen.nwb
   - path: sub-HI159/sub-HI159_ses-HI159-090718_ecephys+ogen.nwb
     versions:
@@ -641,6 +645,11 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-HI159/sub-HI159_ses-HI159-090518_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-HI193/sub-HI193_ses-HI193-050719_ecephys+ogen.nwb
   - sub-HI204/sub-HI204_ses-HI204-062819_ecephys+ogen.nwb
   - sub-HI211/sub-HI211_ses-HI211-072419_ecephys+ogen.nwb
@@ -672,7 +681,6 @@ tests:
   assets_timeout:
   - sub-HI159/sub-HI159_ecephys+ogen.nwb
   - sub-HI159/sub-HI159_ses-HI159-090418_ecephys+ogen.nwb
-  - sub-HI159/sub-HI159_ses-HI159-090518_ecephys+ogen.nwb
   - sub-HI159/sub-HI159_ses-HI159-090618_ecephys+ogen.nwb
   - path: sub-HI159/sub-HI159_ses-HI159-090718_ecephys+ogen.nwb
     versions:

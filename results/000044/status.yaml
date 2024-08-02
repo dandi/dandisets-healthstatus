@@ -37,7 +37,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-Gatsby/sub-Gatsby_ses-Gatsby-08022013_behavior+ecephys.nwb
+  - path: sub-Gatsby/sub-Gatsby_ses-Gatsby-08022013_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-Gatsby/sub-Gatsby_ses-Gatsby-08282013_behavior+ecephys.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
@@ -52,8 +56,12 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Gatsby/sub-Gatsby_ses-Gatsby-08022013_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
-  - sub-Gatsby/sub-Gatsby_ses-Gatsby-08022013_behavior+ecephys.nwb
   - sub-Gatsby/sub-Gatsby_ses-Gatsby-08282013_behavior+ecephys.nwb
   assets_timeout:
   - path: sub-Achilles/sub-Achilles_ses-Achilles-11012013_behavior+ecephys.nwb

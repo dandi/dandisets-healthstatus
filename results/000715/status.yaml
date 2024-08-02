@@ -8,6 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-62-YAaLR/sub-62-YAaLR_ophys.nwb
+  - path: sub-70-YAaLR/sub-70-YAaLR_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout:
   - path: sub-11-YAaLR/sub-11-YAaLR_ophys.nwb
     versions:
@@ -37,6 +42,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-11-YAaLR/sub-11-YAaLR_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-70-YAaLR/sub-70-YAaLR_ophys.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2

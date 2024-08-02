@@ -7,6 +7,11 @@ nassets: 366
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-Calcacre/sub-Calcacre_ses-20210219T153000_obj-1soifgi.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-Calcacre/sub-Calcacre_ses-20210426T153000_obj-6r2n64.nwb
   - path: sub-PC12-cell/sub-PC12-cell_ses-20210221T153000_obj-1g8jeol.nwb
     versions:
@@ -42,6 +47,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Calcacre/sub-Calcacre_ses-20210219T153000_obj-13qd4jl.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Calcacre/sub-Calcacre_ses-20210219T153000_obj-1soifgi.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2

@@ -38,6 +38,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Raldh-2303/sub-Raldh-2303_ses-20220405-0003.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -65,6 +70,11 @@ tests:
   - path: sub-Raldh-2076/sub-Raldh-2076_ses-20211202-0004.nwb
     versions:
       hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Raldh-2303/sub-Raldh-2303_ses-20220405-0003.nwb
+    versions:
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok: []

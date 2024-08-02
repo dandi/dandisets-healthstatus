@@ -20,6 +20,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Cell13/sub-Cell13_ses-session-13_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -30,6 +35,11 @@ tests:
       pynwb: 2.8.1
   - sub-Cell07/sub-Cell07_ses-session-07_image.nwb
   - path: sub-Cell12/sub-Cell12_ses-session-12_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Cell13/sub-Cell13_ses-session-13_image.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2

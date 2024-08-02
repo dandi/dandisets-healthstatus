@@ -73,7 +73,7 @@ tests:
       pynwb: 2.8.1
   - path: sub-17797/sub-17797_ses-7-scan-4_behavior+image+ophys.nwb
     versions:
-      hdmf: 3.14.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-17797/sub-17797_ses-8-scan-5_behavior+image+ophys.nwb
@@ -94,6 +94,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-17797/sub-17797_ses-5-scan-6_behavior+image+ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-17797/sub-17797_ses-7-scan-4_behavior+image+ophys.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -151,11 +156,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-17797/sub-17797_ses-7-scan-4_behavior+image+ophys.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
   - path: sub-17797/sub-17797_ses-7-scan-5_behavior+image+ophys.nwb
     versions:
       hdmf: 3.14.1

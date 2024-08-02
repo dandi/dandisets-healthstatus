@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok: []
   assets_timeout:
-  - sub-swil11/sub-swil11_ses-20220413T171108_ecephys.nwb
+  - path: sub-swil11/sub-swil11_ses-20220413T171108_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-swil11/sub-swil11_ses-20220413T171109_ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -23,6 +27,11 @@ tests:
   - sub-swil8/sub-swil8_ses-20210715T191215_ecephys.nwb
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-swil11/sub-swil11_ses-20220413T171108_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-swil11/sub-swil11_ses-20220413T171109_ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -35,7 +44,6 @@ tests:
       pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
-  - sub-swil11/sub-swil11_ses-20220413T171108_ecephys.nwb
   - sub-swil20/sub-swil20_ses-20220922T163606_ecephys.nwb
   - sub-swil8/sub-swil8_ses-20210715T191215_ecephys.nwb
   name: matnwb_nwbRead

@@ -9,7 +9,7 @@ tests:
   assets_ok:
   - path: sub-JDS-SingleDay-JS15/sub-JDS-SingleDay-JS15_behavior+ecephys.nwb
     versions:
-      hdmf: 3.14.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-JDS-SingleDay-JS17/sub-JDS-SingleDay-JS17_behavior+ecephys.nwb
@@ -35,6 +35,11 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-JDS-SingleDay-JS15/sub-JDS-SingleDay-JS15_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-JDS-SingleDay-JS17/sub-JDS-SingleDay-JS17_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -52,11 +57,6 @@ tests:
       pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
-  - path: sub-JDS-SingleDay-JS15/sub-JDS-SingleDay-JS15_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
   - path: sub-JDS-SingleDay-JS34/sub-JDS-SingleDay-JS34_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.2

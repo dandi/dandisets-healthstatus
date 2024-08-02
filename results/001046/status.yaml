@@ -14,6 +14,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Finch-z-r12r13-21-held-in-minival/sub-Finch-z-r12r13-21-held-in-minival_ses-20210628.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Finch-z-r12r13-21-held-out-calib/sub-Finch-z-r12r13-21-held-out-calib_ses-20210701.nwb
     versions:
       hdmf: 3.14.3
@@ -24,6 +29,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Finch-z-r12r13-21-held-in-minival/sub-Finch-z-r12r13-21-held-in-minival_ses-20210627.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Finch-z-r12r13-21-held-in-minival/sub-Finch-z-r12r13-21-held-in-minival_ses-20210628.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2

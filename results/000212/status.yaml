@@ -1361,7 +1361,11 @@ tests:
   - sub-500-0-500-CS-fly#-5/sub-500-0-500-CS-fly#-5_behavior.nwb
   - sub-500-0-500-CS-fly#-6/sub-500-0-500-CS-fly#-6_behavior.nwb
   - sub-500-0-500-CS-fly#-7/sub-500-0-500-CS-fly#-7_behavior.nwb
-  - sub-500-0-500-CS-fly#-8/sub-500-0-500-CS-fly#-8_behavior.nwb
+  - path: sub-500-0-500-CS-fly#-8/sub-500-0-500-CS-fly#-8_behavior.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-500-0-500-CS-fly#-9/sub-500-0-500-CS-fly#-9_behavior.nwb
   - path: sub-500-200-CS-fly#-1/sub-500-200-CS-fly#-1_behavior.nwb
     versions:
@@ -1548,6 +1552,11 @@ tests:
   - sub-500-0-200-CS-fly#-14/sub-500-0-200-CS-fly#-14_behavior.nwb
   - sub-500-0-200-CS-fly#-27/sub-500-0-200-CS-fly#-27_behavior.nwb
   - sub-500-0-500-CS-fly#-11/sub-500-0-500-CS-fly#-11_behavior.nwb
+  - path: sub-500-0-500-CS-fly#-8/sub-500-0-500-CS-fly#-8_behavior.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-500-500-CS-fly#-15/sub-500-500-CS-fly#-15_behavior.nwb
   assets_ok:
   - sub-0-0-CS-fly#-1/sub-0-0-CS-fly#-1_behavior.nwb
@@ -2599,7 +2608,6 @@ tests:
   - sub-500-0-500-CS-fly#-5/sub-500-0-500-CS-fly#-5_behavior.nwb
   - sub-500-0-500-CS-fly#-6/sub-500-0-500-CS-fly#-6_behavior.nwb
   - sub-500-0-500-CS-fly#-7/sub-500-0-500-CS-fly#-7_behavior.nwb
-  - sub-500-0-500-CS-fly#-8/sub-500-0-500-CS-fly#-8_behavior.nwb
   - sub-500-0-500-CS-fly#-9/sub-500-0-500-CS-fly#-9_behavior.nwb
   - path: sub-500-200-CS-fly#-1/sub-500-200-CS-fly#-1_behavior.nwb
     versions:
