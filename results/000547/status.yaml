@@ -146,11 +146,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-311/sub-311_ses-311-5threc-0_ophys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-311/sub-311_ses-311-6threc-100_ophys.nwb
     versions:
       hdmf: 3.14.1
@@ -329,7 +324,12 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-311/sub-311_ses-311-5threc-0_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-307/sub-307_ses-1strec-0_ophys.nwb
@@ -345,6 +345,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - sub-311/sub-311_ses-311-2ndrec-100_ophys.nwb
+  - path: sub-311/sub-311_ses-311-5threc-0_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-311/sub-311_ses-311-8threc-100_ophys.nwb
     versions:
       hdmf: 3.14.3
@@ -477,11 +482,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-311/sub-311_ses-311-5threc-0_ophys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-311/sub-311_ses-311-6threc-100_ophys.nwb
     versions:
       hdmf: 3.14.1

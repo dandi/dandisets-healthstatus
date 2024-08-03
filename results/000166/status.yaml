@@ -12,11 +12,6 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - path: sub-YMV04/sub-YMV04_ses-YMV04-170907_ecephys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-YMV06/sub-YMV06_ses-YMV06-170913_ecephys.nwb
     versions:
       hdmf: 3.14.0
@@ -77,6 +72,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-YMV04/sub-YMV04_ses-YMV04-170907_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-YMV05/sub-YMV05_ses-YMV05-170912_ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -90,6 +90,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-YMV03/sub-YMV03_ses-YMV03-170818_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-YMV04/sub-YMV04_ses-YMV04-170907_ecephys.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -116,11 +121,6 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - path: sub-YMV04/sub-YMV04_ses-YMV04-170907_ecephys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-YMV06/sub-YMV06_ses-YMV06-170913_ecephys.nwb
     versions:
       hdmf: 3.14.0

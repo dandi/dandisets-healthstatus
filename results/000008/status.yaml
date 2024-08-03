@@ -1609,7 +1609,6 @@ tests:
   - sub-mouse-YUYDJ/sub-mouse-YUYDJ_ses-20190130-sample-17_slice-20190130-slice-10_cell-20190130-sample-17_icephys.nwb
   - sub-mouse-YUYDJ/sub-mouse-YUYDJ_ses-20190130-sample-18_slice-20190130-slice-12_cell-20190130-sample-18_icephys.nwb
   - sub-mouse-YUYDJ/sub-mouse-YUYDJ_ses-20190130-sample-8_slice-20190130-slice-9_cell-20190130-sample-8_icephys.nwb
-  - sub-mouse-YUYDJ/sub-mouse-YUYDJ_ses-20190130-sample-9_slice-20190130-slice-11_cell-20190130-sample-9_icephys.nwb
   - sub-mouse-YVQMA/sub-mouse-YVQMA_ses-20190501-sample-1_slice-20190501-slice-1_cell-20190501-sample-1_icephys.nwb
   - sub-mouse-YVQMA/sub-mouse-YVQMA_ses-20190501-sample-3_slice-20190501-slice-3_cell-20190501-sample-3_icephys.nwb
   - sub-mouse-YVQMA/sub-mouse-YVQMA_ses-20190501-sample-4_slice-20190501-slice-4_cell-20190501-sample-4_icephys.nwb
@@ -1775,6 +1774,11 @@ tests:
   - sub-mouse-LNBSR/sub-mouse-LNBSR_ses-20190122-sample-13_slice-20190122-slice-13_cell-20190122-sample-13_icephys.nwb
   - sub-mouse-LQFGN/sub-mouse-LQFGN_ses-20190318-sample-5_slice-20190318-slice-5_cell-20190318-sample-5_icephys.nwb
   - sub-mouse-LQFGN/sub-mouse-LQFGN_ses-20190318-sample-6_slice-20190318-slice-6_cell-20190318-sample-6_icephys.nwb
+  - path: sub-mouse-YUYDJ/sub-mouse-YUYDJ_ses-20190130-sample-9_slice-20190130-slice-11_cell-20190130-sample-9_icephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-mouse-ZZVQT/sub-mouse-ZZVQT_ses-20181003-sample-9_slice-20181003-slice-9_cell-20181003-sample-9_icephys.nwb
   name: pynwb_open_load_ns
 - assets_nok:
@@ -2234,6 +2238,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - sub-mouse-YMIOM/sub-mouse-YMIOM_ses-20180306-sample-5_slice-20180306-slice-5_cell-20180306-sample-5_icephys.nwb
+  - path: sub-mouse-YUYDJ/sub-mouse-YUYDJ_ses-20190130-sample-9_slice-20190130-slice-11_cell-20190130-sample-9_icephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-mouse-ZJZBS/sub-mouse-ZJZBS_ses-20190124-sample-4_slice-20190124-slice-3_cell-20190124-sample-4_icephys.nwb
   - sub-mouse-ZLYQM/sub-mouse-ZLYQM_ses-20190703-sample-15_slice-20190703-slice-15_cell-20190703-sample-15_icephys.nwb
   - sub-mouse-ZNFEK/sub-mouse-ZNFEK_ses-20190719-sample-10_slice-20190719-slice-8_cell-20190719-sample-10_icephys.nwb
@@ -3427,7 +3436,6 @@ tests:
   - sub-mouse-YUYDJ/sub-mouse-YUYDJ_ses-20190130-sample-17_slice-20190130-slice-10_cell-20190130-sample-17_icephys.nwb
   - sub-mouse-YUYDJ/sub-mouse-YUYDJ_ses-20190130-sample-18_slice-20190130-slice-12_cell-20190130-sample-18_icephys.nwb
   - sub-mouse-YUYDJ/sub-mouse-YUYDJ_ses-20190130-sample-8_slice-20190130-slice-9_cell-20190130-sample-8_icephys.nwb
-  - sub-mouse-YUYDJ/sub-mouse-YUYDJ_ses-20190130-sample-9_slice-20190130-slice-11_cell-20190130-sample-9_icephys.nwb
   - sub-mouse-YVQMA/sub-mouse-YVQMA_ses-20190501-sample-1_slice-20190501-slice-1_cell-20190501-sample-1_icephys.nwb
   - sub-mouse-YVQMA/sub-mouse-YVQMA_ses-20190501-sample-3_slice-20190501-slice-3_cell-20190501-sample-3_icephys.nwb
   - sub-mouse-YVQMA/sub-mouse-YVQMA_ses-20190501-sample-4_slice-20190501-slice-4_cell-20190501-sample-4_icephys.nwb

@@ -8,45 +8,21 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-Dataset-3-Animals-1-2-3-&-4/sub-Dataset-3-Animals-1-2-3-&-4.nwb
-  - path: sub-Dataset-4-Animal-2/sub-Dataset-4-Animal-2.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-Dataset-4-Animal-3/sub-Dataset-4-Animal-3.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-Dataset-5-Animals-1-&-2/sub-Dataset-5-Animals-1-&-2.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  - sub-Dataset-4-Animal-2/sub-Dataset-4-Animal-2.nwb
+  - sub-Dataset-4-Animal-3/sub-Dataset-4-Animal-3.nwb
+  - sub-Dataset-5-Animals-1-&-2/sub-Dataset-5-Animals-1-&-2.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - path: sub-Dataset-4-Animal-2/sub-Dataset-4-Animal-2.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-Dataset-4-Animal-3/sub-Dataset-4-Animal-3.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-Dataset-5-Animals-1-&-2/sub-Dataset-5-Animals-1-&-2.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  assets_ok: []
-  assets_timeout:
   - sub-Dataset-3-Animals-1-2-3-&-4/sub-Dataset-3-Animals-1-2-3-&-4.nwb
+  - sub-Dataset-4-Animal-2/sub-Dataset-4-Animal-2.nwb
+  - sub-Dataset-4-Animal-3/sub-Dataset-4-Animal-3.nwb
+  - sub-Dataset-5-Animals-1-&-2/sub-Dataset-5-Animals-1-&-2.nwb
+  assets_ok: []
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.2
+  hdmf: 3.14.3
   matnwb: v2.6.0.2
   pynwb: 2.8.1

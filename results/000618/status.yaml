@@ -241,9 +241,9 @@ tests:
   - sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-509-1-1_ecephys.nwb
   - path: sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-509-1-2_ecephys.nwb
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-513-1-1_ecephys.nwb
     versions:
       hdmf: 3.14.0
@@ -518,6 +518,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-509-1-1_ecephys.nwb
+  - path: sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-509-1-2_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-531-2-1_ecephys.nwb
     versions:
       hdmf: 3.14.1
@@ -706,11 +711,6 @@ tests:
   - sub-hybrid-janelia/sub-hybrid-janelia_ses-hybrid-static-tetrode-rec-4c-600s-31_ecephys.nwb
   - sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-1103-1-1_ecephys.nwb
   - path: sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-419-1-7_ecephys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-509-1-2_ecephys.nwb
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2

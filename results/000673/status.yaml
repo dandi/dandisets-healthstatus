@@ -34,6 +34,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-22/sub-22_ses-3_ecephys+image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-33/sub-33_ses-1_ecephys+image.nwb
     versions:
       hdmf: 3.14.3
@@ -47,6 +52,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-1/sub-1_ses-2_ecephys+image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-22/sub-22_ses-3_ecephys+image.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2

@@ -44,6 +44,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-T/sub-T_ses-CO-20130823_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-C/sub-C_ses-CO-20150716_behavior+ecephys.nwb
@@ -57,6 +62,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-C/sub-C_ses-RT-20131213_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-T/sub-T_ses-CO-20130823_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2

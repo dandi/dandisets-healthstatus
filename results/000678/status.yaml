@@ -29,6 +29,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-BW045/sub-BW045_ses-20211006T081853.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BW051/sub-BW051_ses-20220111T120836.nwb
     versions:
       hdmf: 3.14.3
@@ -47,6 +52,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-BW041/sub-BW041_ses-20210914T124217.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-BW045/sub-BW045_ses-20211006T081853.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2

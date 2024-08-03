@@ -27,7 +27,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-cell5/sub-cell5_image.nwb
+  - path: sub-cell5/sub-cell5_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -46,8 +50,12 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  assets_ok:
-  - sub-cell5/sub-cell5_image.nwb
+  - path: sub-cell5/sub-cell5_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  assets_ok: []
   assets_timeout:
   - path: sub-cell1/sub-cell1_image.nwb
     versions:

@@ -34,6 +34,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_timeout:
+  - path: sub-FB2314/sub-FB2314_ses-FB2314-baseline-iso_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-nm190911-A1/sub-nm190911-A1_ses-nm190911_image.nwb
     versions:
       hdmf: 3.14.2
@@ -46,6 +51,11 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-FB2314/sub-FB2314_ses-FB2314-baseline-iso_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-FB2320/sub-FB2320_ses-FB2320-whisker_image.nwb
     versions:
       hdmf: 3.14.3

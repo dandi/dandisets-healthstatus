@@ -9,6 +9,11 @@ tests:
   assets_ok:
   - sub-SWC-052/sub-SWC-052_ses-22e04698-b974-4805-b241-3b547dbf37bf_behavior+ecephys+image.nwb
   assets_timeout:
+  - path: sub-CSH-ZAD-025/sub-CSH-ZAD-025_ses-c557324b-b95d-414c-888f-6ee1329a2329-processed-only_behavior.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-DY-013/sub-DY-013_ses-2f63c555-eb74-4d8d-ada5-5c3ecf3b46be_behavior+ecephys+image.nwb
     versions:
       hdmf: 3.14.2
@@ -46,6 +51,11 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-CSH-ZAD-025/sub-CSH-ZAD-025_ses-c557324b-b95d-414c-888f-6ee1329a2329-processed-only_behavior.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-DY-014/sub-DY-014_ses-7622da34-51b6-4661-98ae-a57d40806008-processed-only_behavior.nwb
     versions:
       hdmf: 3.14.3
