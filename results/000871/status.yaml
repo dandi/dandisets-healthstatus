@@ -7,6 +7,11 @@ nassets: 284
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-644972/sub-644972_ses-1237338784-acq-1237809223-denoised-movies_image+ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-644972/sub-644972_ses-1238929581-acq-1239101622_image+ophys.nwb
   assets_timeout:
   - path: sub-644972/sub-644972_ses-1237081845-acq-1237345895-denoised-movies_image+ophys.nwb
@@ -51,6 +56,11 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-644972/sub-644972_ses-1237338784-acq-1237809223-denoised-movies_image+ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-644972/sub-644972_ses-1238455470-acq-1238610268_image+ophys.nwb
     versions:
       hdmf: 3.14.3

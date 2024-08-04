@@ -68,7 +68,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-CS49/sub-CS49_ses-P49CSR2_behavior+ecephys.nwb
+  - path: sub-CS49/sub-CS49_ses-P49CSR2_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-CS51/sub-CS51_ses-P51CSR1_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -164,6 +168,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-CS49/sub-CS49_ses-P49CSR2_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-CS53/sub-CS53_ses-P53CSR1_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -232,7 +241,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-CS49/sub-CS49_ses-P49CSR2_behavior+ecephys.nwb
   - path: sub-CS51/sub-CS51_ses-P51CSR1_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0

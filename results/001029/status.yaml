@@ -7,7 +7,11 @@ nassets: 51
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-mouse-1/sub-mouse-1_ses-20230114T135024.nwb
+  - path: sub-mouse-1/sub-mouse-1_ses-20230114T135024.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-1/sub-mouse-1_ses-20230114T135507_image.nwb
     versions:
       hdmf: 3.14.2
@@ -51,6 +55,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-mouse-1/sub-mouse-1_ses-20230114T135024.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-1/sub-mouse-1_ses-20230114T145111_image.nwb
     versions:
       hdmf: 3.14.3
@@ -76,8 +85,7 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  assets_ok:
-  - sub-mouse-1/sub-mouse-1_ses-20230114T135024.nwb
+  assets_ok: []
   assets_timeout:
   - path: sub-mouse-1/sub-mouse-1_ses-20230114T135507_image.nwb
     versions:

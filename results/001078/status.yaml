@@ -8,7 +8,11 @@ tests:
 - assets_nok: []
   assets_ok:
   - sub-1/sub-1_ses-1.nwb
-  - sub-1/sub-1_ses-2.nwb
+  - path: sub-1/sub-1_ses-2.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-1/sub-1_ses-3.nwb
     versions:
       hdmf: 3.14.3
@@ -34,6 +38,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - sub-1/sub-1_ses-1.nwb
+  - path: sub-1/sub-1_ses-2.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-1/sub-1_ses-3.nwb
     versions:
       hdmf: 3.14.3
@@ -56,8 +65,7 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok: []
-  assets_timeout:
-  - sub-1/sub-1_ses-2.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

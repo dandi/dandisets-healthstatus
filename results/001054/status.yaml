@@ -31,6 +31,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-EPCNHP2/sub-EPCNHP2_ses-2021-02-03-002_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -51,6 +56,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-EPCNHP2/sub-EPCNHP2_ses-2020-11-23-001_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-EPCNHP2/sub-EPCNHP2_ses-2021-02-03-002_ecephys.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2

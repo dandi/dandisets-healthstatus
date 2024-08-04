@@ -7,7 +7,6 @@ nassets: 13
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-monk-g/sub-monk-g_ses-session1.nwb
   - path: sub-monk-g/sub-monk-g_ses-session4.nwb
     versions:
       hdmf: 3.14.1
@@ -30,6 +29,11 @@ tests:
       pynwb: 2.8.0
   assets_timeout:
   - path: sub-monk-g/sub-monk-g_ses-session0.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-monk-g/sub-monk-g_ses-session1.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -76,6 +80,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-monk-g/sub-monk-g_ses-session1.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-monk-g/sub-monk-g_ses-session5.nwb
     versions:
       hdmf: 3.14.3
@@ -97,7 +106,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok:
-  - sub-monk-g/sub-monk-g_ses-session1.nwb
   - path: sub-monk-g/sub-monk-g_ses-session4.nwb
     versions:
       hdmf: 3.14.1

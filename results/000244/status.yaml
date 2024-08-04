@@ -120,7 +120,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-SOM14/sub-SOM14_ses-awake_ophys.nwb
+  - path: sub-SOM14/sub-SOM14_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SOM15/sub-SOM15_ses-awake_ophys.nwb
     versions:
       hdmf: 3.14.1
@@ -171,6 +175,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-SLC13/sub-SLC13_ses-awake_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-SOM14/sub-SOM14_ses-awake_ophys.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -270,7 +279,6 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-SOM14/sub-SOM14_ses-awake_ophys.nwb
   - path: sub-SOM15/sub-SOM15_ses-awake_ophys.nwb
     versions:
       hdmf: 3.14.1

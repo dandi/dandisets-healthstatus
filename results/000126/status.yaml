@@ -7,56 +7,24 @@ nassets: 5
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-1/sub-1.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - sub-1001658946/sub-1001658946_obj-17kkp88_icephys.nwb
+  - sub-1/sub-1.nwb
   assets_timeout:
-  - path: sub-1001658946/sub-1001658946_obj-831bdx_icephys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-1001658946/sub-1001658946_obj-n1u30_icephys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-1001658946/sub-1001658946_obj-wnwvr6_icephys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  - sub-1001658946/sub-1001658946_obj-17kkp88_icephys.nwb
+  - sub-1001658946/sub-1001658946_obj-831bdx_icephys.nwb
+  - sub-1001658946/sub-1001658946_obj-n1u30_icephys.nwb
+  - sub-1001658946/sub-1001658946_obj-wnwvr6_icephys.nwb
   name: pynwb_open_load_ns
 - assets_nok:
-  - path: sub-1/sub-1.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  - sub-1/sub-1.nwb
   - sub-1001658946/sub-1001658946_obj-17kkp88_icephys.nwb
-  - path: sub-1001658946/sub-1001658946_obj-831bdx_icephys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-1001658946/sub-1001658946_obj-n1u30_icephys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-1001658946/sub-1001658946_obj-wnwvr6_icephys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  - sub-1001658946/sub-1001658946_obj-831bdx_icephys.nwb
+  - sub-1001658946/sub-1001658946_obj-n1u30_icephys.nwb
+  - sub-1001658946/sub-1001658946_obj-wnwvr6_icephys.nwb
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.1
+  hdmf: 3.14.3
   matnwb: v2.6.0.2
-  pynwb: 2.8.0
+  pynwb: 2.8.1

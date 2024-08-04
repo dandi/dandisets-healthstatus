@@ -37,9 +37,9 @@ tests:
   - sub-BH396/sub-BH396_ses-20221117T224848_ecephys.nwb
   - path: sub-BH396/sub-BH396_ses-20221117T225429_ecephys.nwb
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-BH401/sub-BH401_ses-20230207T202916_ecephys.nwb
     versions:
       hdmf: 3.14.0
@@ -144,6 +144,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-BH396/sub-BH396_ses-20221117T225429_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BH401/sub-BH401_ses-20230207T231819_ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -187,11 +192,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - sub-BH396/sub-BH396_ses-20221117T224848_ecephys.nwb
-  - path: sub-BH396/sub-BH396_ses-20221117T225429_ecephys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-BH401/sub-BH401_ses-20230207T202916_ecephys.nwb
     versions:
       hdmf: 3.14.0

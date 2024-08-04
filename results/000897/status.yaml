@@ -7,6 +7,11 @@ nassets: 30
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-amadeus/sub-amadeus_ses-08212019_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-amadeus/sub-amadeus_ses-08272019_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -24,7 +29,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_timeout:
-  - sub-amadeus/sub-amadeus_ses-08212019_behavior+ecephys.nwb
   - sub-mahler/sub-mahler_ses-04142021_behavior+ecephys.nwb
   - path: sub-mahler/sub-mahler_ses-05072021_ecephys.nwb
     versions:
@@ -33,6 +37,11 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-amadeus/sub-amadeus_ses-08212019_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-amadeus/sub-amadeus_ses-08272019_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -55,7 +64,6 @@ tests:
       pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
-  - sub-amadeus/sub-amadeus_ses-08212019_behavior+ecephys.nwb
   - sub-mahler/sub-mahler_ses-04132021_ecephys.nwb
   - sub-mahler/sub-mahler_ses-04142021_behavior+ecephys.nwb
   name: matnwb_nwbRead

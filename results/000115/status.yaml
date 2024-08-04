@@ -103,11 +103,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-jaq/sub-jaq_ses-jaq-15_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-jaq/sub-jaq_ses-jaq-16_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -256,6 +251,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-jaq/sub-jaq_ses-jaq-15_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-montague/sub-montague_ses-montague-12_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.2
@@ -283,6 +283,11 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-jaq/sub-jaq_ses-jaq-15_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-montague/sub-montague_ses-montague-18_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -409,11 +414,6 @@ tests:
   - path: sub-jaq/sub-jaq_ses-jaq-14_behavior+ecephys.nwb
     versions:
       hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
-  - path: sub-jaq/sub-jaq_ses-jaq-15_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-jaq/sub-jaq_ses-jaq-16_behavior+ecephys.nwb

@@ -12,6 +12,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-interlum-6/sub-interlum-6_ses-20190605T120000_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-interlum-8/sub-interlum-8_ses-20190821T120000_ecephys+ophys.nwb
     versions:
       hdmf: 3.14.3
@@ -32,6 +37,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-interlum-4/sub-interlum-4_ses-20190515T120000_ecephys+ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-interlum-6/sub-interlum-6_ses-20190605T120000_ecephys.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
