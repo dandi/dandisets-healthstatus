@@ -13,6 +13,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-G2-09-TER-TDT-AIR/sub-G2-09-TER-TDT-AIR_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-G2-09-TER-TDT-PBS/sub-G2-09-TER-TDT-PBS_ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -39,6 +44,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-G2-09-LP-TDT-PBS/sub-G2-09-LP-TDT-PBS_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-G2-09-TER-TDT-AIR/sub-G2-09-TER-TDT-AIR_ecephys.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2

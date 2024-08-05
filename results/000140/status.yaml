@@ -6,9 +6,9 @@ last_run_ended: '2024-01-15T07:06:53.015549-05:00'
 nassets: 2
 tests:
 - assets_nok: []
-  assets_ok: []
-  assets_timeout:
+  assets_ok:
   - sub-Jenkins/sub-Jenkins_ses-small_desc-test_ecephys.nwb
+  assets_timeout:
   - sub-Jenkins/sub-Jenkins_ses-small_desc-train_behavior+ecephys.nwb
   name: pynwb_open_load_ns
 - assets_nok:

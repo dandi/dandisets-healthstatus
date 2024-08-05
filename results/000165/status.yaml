@@ -614,7 +614,6 @@ tests:
   - sub-Parsley/sub-Parsley_ses-Parsley04-HomeCage_behavior+ecephys.nwb
   - sub-Parsley/sub-Parsley_ses-Parsley04-LinearTrack_behavior+ecephys.nwb
   - sub-Parsley/sub-Parsley_ses-Parsley05-HomeCage_behavior+ecephys.nwb
-  - sub-Parsley/sub-Parsley_ses-Parsley05-LinearTrack_behavior+ecephys.nwb
   - sub-Parsley/sub-Parsley_ses-Parsley06-HomeCage_behavior+ecephys.nwb
   - sub-Parsley/sub-Parsley_ses-Parsley06-LinearTrack_behavior+ecephys.nwb
   - sub-Pepper/sub-Pepper_ses-Pepper02-HomeCage_behavior+ecephys.nwb
@@ -1005,6 +1004,11 @@ tests:
   - path: sub-Mustard/sub-Mustard_ses-Mustard05-LinearTrack_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Parsley/sub-Parsley_ses-Parsley05-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Scotty/sub-Scotty_ses-Scotty03-HomeCage_behavior+ecephys.nwb
@@ -1440,7 +1444,11 @@ tests:
   - sub-Parsley/sub-Parsley_ses-Parsley03-HomeCage_behavior+ecephys.nwb
   - sub-Parsley/sub-Parsley_ses-Parsley04-HomeCage_behavior+ecephys.nwb
   - sub-Parsley/sub-Parsley_ses-Parsley04-LinearTrack_behavior+ecephys.nwb
-  - sub-Parsley/sub-Parsley_ses-Parsley05-LinearTrack_behavior+ecephys.nwb
+  - path: sub-Parsley/sub-Parsley_ses-Parsley05-LinearTrack_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-Parsley/sub-Parsley_ses-Parsley06-HomeCage_behavior+ecephys.nwb
   - sub-Parsley/sub-Parsley_ses-Parsley06-LinearTrack_behavior+ecephys.nwb
   - path: sub-Pepper/sub-Pepper_ses-Pepper01-HomeCage_behavior+ecephys.nwb

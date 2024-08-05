@@ -12,6 +12,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Anxa-J079/sub-Anxa-J079_ses-20220419-0010.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Calb-1890/sub-Calb-1890_ses-20210721-0002.nwb
     versions:
       hdmf: 3.14.3
@@ -57,6 +62,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Anxa-J075/sub-Anxa-J075_ses-20220310-0004.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Anxa-J079/sub-Anxa-J079_ses-20220419-0010.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2

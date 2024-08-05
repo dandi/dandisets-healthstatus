@@ -6,8 +6,7 @@ last_run_ended: null
 nassets: 85
 tests:
 - assets_nok: []
-  assets_ok:
-  - sub-H39/sub-H39_ses-H39-2020-04-29-13-33-40-Disc5_ecephys+image.nwb
+  assets_ok: []
   assets_timeout:
   - path: sub-H09/sub-H09_ses-9-2019-08-30-16-32-13-Disc4_ecephys+image.nwb
     versions:
@@ -30,6 +29,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H37/sub-H37_ses-H37-2020-04-29-10-04-51-Disc5-9-11_ecephys+image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-H39/sub-H39_ses-H39-2020-04-29-13-33-40-Disc5_ecephys+image.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -71,6 +75,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-H39/sub-H39_ses-H39-2020-04-29-13-33-40-Disc5_ecephys+image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-H41/sub-H41_ses-H41-2020-04-29-16-55-26-Disc5-9_ecephys+image.nwb
     versions:
       hdmf: 3.14.3
@@ -93,7 +102,6 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-H39/sub-H39_ses-H39-2020-04-29-13-33-40-Disc5_ecephys+image.nwb
   - path: sub-M-1/sub-M-1_ses-FearLearning-earlyAcq-Mouse2_ophys.nwb
     versions:
       hdmf: 3.14.2

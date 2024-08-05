@@ -12,7 +12,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-c6-1-0V/sub-c6-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
+  - path: sub-c6-1-0V/sub-c6-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-c7-1-0V/sub-c7-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
     versions:
       hdmf: 3.14.3
@@ -42,6 +46,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-c6-1-0V/sub-c6-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-c7-1-0V/sub-c7-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
     versions:
       hdmf: 3.14.3
@@ -64,8 +73,7 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok: []
-  assets_timeout:
-  - sub-c6-1-0V/sub-c6-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

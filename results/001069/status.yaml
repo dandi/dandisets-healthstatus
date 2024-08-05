@@ -18,7 +18,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - sub-Dory/sub-Dory_ses-2021-05-19-005_ecephys.nwb
-  - sub-KP/sub-KP_ses-2019-07-22-005_ecephys.nwb
+  - path: sub-KP/sub-KP_ses-2019-07-22-005_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-KP/sub-KP_ses-2019-07-22-006_ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -48,6 +52,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - sub-Dory/sub-Dory_ses-2021-05-19-005_ecephys.nwb
+  - path: sub-KP/sub-KP_ses-2019-07-22-005_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-KP/sub-KP_ses-2019-07-22-006_ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -64,8 +73,7 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok: []
-  assets_timeout:
-  - sub-KP/sub-KP_ses-2019-07-22-005_ecephys.nwb
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

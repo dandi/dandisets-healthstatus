@@ -7,66 +7,26 @@ nassets: 6
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-interlum-4/sub-interlum-4_ses-20190515T120000_ecephys+ophys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-interlum-6/sub-interlum-6_ses-20190605T120000_ecephys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-interlum-8/sub-interlum-8_ses-20190821T120000_ecephys+ophys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-interlum-ctrl-4/sub-interlum-ctrl-4_ses-20190731T120000_ecephys+ophys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  - sub-interlum-4/sub-interlum-4_ses-20190515T120000_ecephys+ophys.nwb
+  - sub-interlum-6/sub-interlum-6_ses-20190605T120000_ecephys.nwb
+  - sub-interlum-8/sub-interlum-8_ses-20190821T120000_ecephys+ophys.nwb
+  - sub-interlum-ctrl-4/sub-interlum-ctrl-4_ses-20190731T120000_ecephys+ophys.nwb
   - sub-interlum-ctrl-5/sub-interlum-ctrl-5_ses-20190907T120000_ecephys+ophys.nwb
   assets_timeout:
-  - path: sub-interlum-ctrl-2/sub-interlum-ctrl-2_ses-20190709T120000_ecephys+ophys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  - sub-interlum-ctrl-2/sub-interlum-ctrl-2_ses-20190709T120000_ecephys+ophys.nwb
   name: pynwb_open_load_ns
 - assets_nok:
-  - path: sub-interlum-4/sub-interlum-4_ses-20190515T120000_ecephys+ophys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-interlum-6/sub-interlum-6_ses-20190605T120000_ecephys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-interlum-8/sub-interlum-8_ses-20190821T120000_ecephys+ophys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-interlum-ctrl-2/sub-interlum-ctrl-2_ses-20190709T120000_ecephys+ophys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-interlum-ctrl-4/sub-interlum-ctrl-4_ses-20190731T120000_ecephys+ophys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  assets_ok: []
-  assets_timeout:
+  - sub-interlum-4/sub-interlum-4_ses-20190515T120000_ecephys+ophys.nwb
+  - sub-interlum-6/sub-interlum-6_ses-20190605T120000_ecephys.nwb
+  - sub-interlum-8/sub-interlum-8_ses-20190821T120000_ecephys+ophys.nwb
+  - sub-interlum-ctrl-2/sub-interlum-ctrl-2_ses-20190709T120000_ecephys+ophys.nwb
+  - sub-interlum-ctrl-4/sub-interlum-ctrl-4_ses-20190731T120000_ecephys+ophys.nwb
   - sub-interlum-ctrl-5/sub-interlum-ctrl-5_ses-20190907T120000_ecephys+ophys.nwb
+  assets_ok: []
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.2
+  hdmf: 3.14.3
   matnwb: v2.6.0.2
   pynwb: 2.8.1

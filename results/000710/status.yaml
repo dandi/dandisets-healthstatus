@@ -8,73 +8,25 @@ tests:
 - assets_nok: []
   assets_ok: []
   assets_timeout:
-  - path: sub-VR31/sub-VR31_ecephys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-VR32/sub-VR32_ecephys.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-VR33/sub-VR33_ecephys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-VR34/sub-VR34_ecephys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-VR35/sub-VR35_ecephys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-VR36/sub-VR36_ecephys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  - sub-VR31/sub-VR31_ecephys.nwb
+  - sub-VR32/sub-VR32_ecephys.nwb
+  - sub-VR33/sub-VR33_ecephys.nwb
+  - sub-VR34/sub-VR34_ecephys.nwb
+  - sub-VR35/sub-VR35_ecephys.nwb
+  - sub-VR36/sub-VR36_ecephys.nwb
   name: pynwb_open_load_ns
 - assets_nok:
-  - path: sub-VR31/sub-VR31_ecephys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-VR33/sub-VR33_ecephys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-VR34/sub-VR34_ecephys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-VR35/sub-VR35_ecephys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-VR36/sub-VR36_ecephys.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  - sub-VR31/sub-VR31_ecephys.nwb
+  - sub-VR32/sub-VR32_ecephys.nwb
+  - sub-VR33/sub-VR33_ecephys.nwb
+  - sub-VR34/sub-VR34_ecephys.nwb
+  - sub-VR35/sub-VR35_ecephys.nwb
+  - sub-VR36/sub-VR36_ecephys.nwb
   assets_ok: []
-  assets_timeout:
-  - path: sub-VR32/sub-VR32_ecephys.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.1
+  hdmf: 3.14.3
   matnwb: v2.6.0.2
-  pynwb: 2.8.0
+  pynwb: 2.8.1

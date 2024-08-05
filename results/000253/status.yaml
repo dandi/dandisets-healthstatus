@@ -7,6 +7,11 @@ nassets: 113
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-621890/sub-621890_ses-1186358749_probe-0_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-632487/sub-632487_ses-1204677304_probe-4_ecephys.nwb
   - path: sub-632487/sub-632487_ses-1204677304_probe-5_ecephys.nwb
     versions:
@@ -39,6 +44,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-621890/sub-621890_ses-1186358749_probe-0_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-632487/sub-632487_ses-1204677304_probe-5_ecephys.nwb
     versions:
       hdmf: 3.14.3
