@@ -7,6 +7,11 @@ nassets: 87
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-FB2320/sub-FB2320_ses-FB2320-baseline_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-FB2320/sub-FB2320_ses-FB2320-whisker_image.nwb
     versions:
       hdmf: 3.14.3
@@ -62,6 +67,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-FB2314/sub-FB2314_ses-FB2314-baseline-iso_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-FB2320/sub-FB2320_ses-FB2320-baseline_image.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2

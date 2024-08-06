@@ -12,6 +12,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-G1-12A5D/sub-G1-12A5D_obj-1s2bq4s_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-G1-12A5D/sub-G1-12A5D_obj-1s9jq9q_ecephys.nwb
   - path: sub-G1-12A62/sub-G1-12A62_obj-10zzbbq_ecephys.nwb
     versions:
@@ -62,6 +67,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-G1-12A5B/sub-G1-12A5B_obj-ogtcqy_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-G1-12A5D/sub-G1-12A5D_obj-1s2bq4s_ecephys.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2

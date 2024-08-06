@@ -5,12 +5,7 @@ last_run_duration: 44581.744953
 last_run_ended: '2024-02-17T07:33:39.778765-05:00'
 nassets: 70
 tests:
-- assets_nok:
-  - path: sub-309/sub-309_ses-6threc-100_ophys.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
+- assets_nok: []
   assets_ok:
   - path: sub-305/sub-305_ses-1strec-0_ophys.nwb
     versions:
@@ -64,6 +59,11 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-309/sub-309_ses-6threc-100_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-309/sub-309_ses-7threc-0_ophys.nwb
     versions:
       hdmf: 3.13.0
@@ -336,9 +336,9 @@ tests:
   - sub-309/sub-309_ses-2ndrec-100_ophys.nwb
   - path: sub-309/sub-309_ses-6threc-100_ophys.nwb
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-310/sub-310_ses-4threc-100_ophys.nwb
     versions:
       hdmf: 3.14.3

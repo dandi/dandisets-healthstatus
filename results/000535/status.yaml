@@ -215,7 +215,11 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-503930/sub-503930_ses-20200608T181441_behavior+ophys.nwb
+  - path: sub-503930/sub-503930_ses-20200608T181441_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-505560/sub-505560_ses-20200511T173947_behavior+ophys.nwb
     versions:
       hdmf: 3.14.0
@@ -441,6 +445,11 @@ tests:
       pynwb: 2.8.1
   - sub-467422/sub-467422_ses-20190703T180758_behavior+ophys.nwb
   - sub-503930/sub-503930_ses-20200604T154209_behavior+ophys.nwb
+  - path: sub-503930/sub-503930_ses-20200608T181441_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-505560/sub-505560_ses-20200518T192438_behavior+ophys.nwb
   - sub-509510/sub-509510_ses-20200516T164515_behavior+ophys.nwb
   - path: sub-509510/sub-509510_ses-20200518T174917_behavior+ophys.nwb
@@ -638,7 +647,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-503930/sub-503930_ses-20200608T181441_behavior+ophys.nwb
   - path: sub-505560/sub-505560_ses-20200511T173947_behavior+ophys.nwb
     versions:
       hdmf: 3.14.0

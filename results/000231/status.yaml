@@ -306,9 +306,9 @@ tests:
   - sub-KF119/sub-KF119_ses-20180112T160910_behavior+image.nwb
   - path: sub-KF119/sub-KF119_ses-20180125T172804_behavior+ecephys+image.nwb
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-KF119/sub-KF119_ses-20180130T205030_behavior+image.nwb
     versions:
       hdmf: 3.13.0
@@ -509,6 +509,11 @@ tests:
       pynwb: 2.8.1
   - sub-267CR/sub-267CR_ses-20200325T173201_behavior+image.nwb
   - sub-KF119/sub-KF119_ses-20180112T160910_behavior+image.nwb
+  - path: sub-KF119/sub-KF119_ses-20180125T172804_behavior+ecephys+image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-KF132/sub-KF132_ses-20180220T135608_behavior+image.nwb
   - path: sub-KF132/sub-KF132_ses-20180225T174159_behavior+image.nwb
     versions:
@@ -783,11 +788,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-KF119/sub-KF119_ses-20180125T172804_behavior+ecephys+image.nwb
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-KF119/sub-KF119_ses-20180130T205030_behavior+image.nwb
     versions:
       hdmf: 3.13.0

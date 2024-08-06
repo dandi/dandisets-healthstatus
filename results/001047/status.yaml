@@ -58,6 +58,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-013Control-x5/sub-013Control-x5_obj-10b99bn_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -93,6 +98,11 @@ tests:
       pynwb: 2.8.1
   - sub-013Control-x2/sub-013Control-x2_obj-m9iu82_image.nwb
   - path: sub-013Control-x2/sub-013Control-x2_obj-mofylk_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-013Control-x5/sub-013Control-x5_obj-10b99bn_image.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2

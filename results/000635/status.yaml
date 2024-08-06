@@ -14,7 +14,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - sub-1271976045/sub-1271976045_ses-1272306985_icephys.nwb
-  - sub-1273579455/sub-1273579455_ses-1276524670_icephys.nwb
+  - path: sub-1273579455/sub-1273579455_ses-1276524670_icephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-1273579455/sub-1273579455_ses-1276758066_icephys.nwb
   - path: sub-1273579455/sub-1273579455_ses-1276917495_icephys.nwb
     versions:
@@ -49,6 +53,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-1273579455/sub-1273579455_ses-1276524670_icephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-1273579455/sub-1273579455_ses-1276917495_icephys.nwb
     versions:
       hdmf: 3.14.3
@@ -77,7 +86,6 @@ tests:
   assets_ok: []
   assets_timeout:
   - sub-1271976045/sub-1271976045_ses-1272306985_icephys.nwb
-  - sub-1273579455/sub-1273579455_ses-1276524670_icephys.nwb
   - sub-1273579455/sub-1273579455_ses-1276758066_icephys.nwb
   - sub-1273579455/sub-1273579455_ses-1276923441_icephys.nwb
   name: matnwb_nwbRead

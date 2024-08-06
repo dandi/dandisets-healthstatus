@@ -17,6 +17,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Gaia/sub-Gaia_ses-post-MPTP-G-170201-1_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Gaia/sub-Gaia_ses-post-MPTP-G-170203-2_ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -61,6 +66,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-Gaia/sub-Gaia_ses-post-MPTP-G-170201-1_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Gaia/sub-Gaia_ses-post-MPTP-G-170203-2_ecephys.nwb
     versions:
       hdmf: 3.14.3

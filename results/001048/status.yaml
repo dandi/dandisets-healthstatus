@@ -7,76 +7,28 @@ nassets: 7
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-Cell03/sub-Cell03_ses-session-03_image.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-Cell04/sub-Cell04_ses-session-04_image.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-Cell07/sub-Cell07_ses-session-07_image.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  - sub-Cell03/sub-Cell03_ses-session-03_image.nwb
+  - sub-Cell04/sub-Cell04_ses-session-04_image.nwb
+  - sub-Cell07/sub-Cell07_ses-session-07_image.nwb
   - sub-Cell11/sub-Cell11_ses-session-11_image.nwb
-  - path: sub-Cell12/sub-Cell12_ses-session-12_image.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-Cell13/sub-Cell13_ses-session-13_image.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-Cell16/sub-Cell16_ses-session-16_image.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  - sub-Cell12/sub-Cell12_ses-session-12_image.nwb
+  - sub-Cell13/sub-Cell13_ses-session-13_image.nwb
+  - sub-Cell16/sub-Cell16_ses-session-16_image.nwb
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - path: sub-Cell03/sub-Cell03_ses-session-03_image.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-Cell04/sub-Cell04_ses-session-04_image.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-Cell07/sub-Cell07_ses-session-07_image.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-Cell12/sub-Cell12_ses-session-12_image.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-Cell13/sub-Cell13_ses-session-13_image.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-Cell16/sub-Cell16_ses-session-16_image.nwb
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  assets_ok: []
-  assets_timeout:
+  - sub-Cell03/sub-Cell03_ses-session-03_image.nwb
+  - sub-Cell04/sub-Cell04_ses-session-04_image.nwb
+  - sub-Cell07/sub-Cell07_ses-session-07_image.nwb
   - sub-Cell11/sub-Cell11_ses-session-11_image.nwb
+  - sub-Cell12/sub-Cell12_ses-session-12_image.nwb
+  - sub-Cell13/sub-Cell13_ses-session-13_image.nwb
+  - sub-Cell16/sub-Cell16_ses-session-16_image.nwb
+  assets_ok: []
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.2
+  hdmf: 3.14.3
   matnwb: v2.6.0.2
   pynwb: 2.8.1

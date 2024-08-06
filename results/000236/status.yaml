@@ -46,7 +46,7 @@ tests:
   assets_timeout:
   - path: sub-Fish24-GCaMP-vlgut-MBv-7dpf-RandomWave/sub-Fish24-GCaMP-vlgut-MBv-7dpf-RandomWave_ses-20210908T162505_behavior+ophys.nwb
     versions:
-      hdmf: 3.14.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   name: pynwb_open_load_ns
@@ -71,6 +71,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Fish24-GCaMP-vlgut-MBv-7dpf-RandomWave/sub-Fish24-GCaMP-vlgut-MBv-7dpf-RandomWave_ses-20210908T162505_behavior+ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Fish35-GCaMP-vlgut-MBv-7dpf-RandomWave/sub-Fish35-GCaMP-vlgut-MBv-7dpf-RandomWave_ses-20210922T114356_behavior+ophys.nwb
     versions:
       hdmf: 3.14.3
@@ -89,11 +94,6 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-Fish24-GCaMP-vlgut-MBv-7dpf-RandomWave/sub-Fish24-GCaMP-vlgut-MBv-7dpf-RandomWave_ses-20210908T162505_behavior+ophys.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
   name: matnwb_nwbRead
 untested: []
 versions:

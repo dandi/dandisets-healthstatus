@@ -7,7 +7,11 @@ nassets: 10
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-G2-09-LP-TDT-AIR/sub-G2-09-LP-TDT-AIR_ecephys.nwb
+  - path: sub-G2-09-LP-TDT-AIR/sub-G2-09-LP-TDT-AIR_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-G2-09-LP-TDT-PBS/sub-G2-09-LP-TDT-PBS_ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -43,6 +47,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-G2-09-LP-TDT-AIR/sub-G2-09-LP-TDT-AIR_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-G2-09-LP-TDT-PBS/sub-G2-09-LP-TDT-PBS_ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -76,7 +85,6 @@ tests:
       pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
-  - sub-G2-09-LP-TDT-AIR/sub-G2-09-LP-TDT-AIR_ecephys.nwb
   - sub-G2-10-TER-NN-AIR/sub-G2-10-TER-NN-AIR_ecephys.nwb
   name: matnwb_nwbRead
 untested: []

@@ -24,9 +24,9 @@ tests:
       pynwb: 2.8.0
   - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150724-1872um_ecephys.nwb
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150725-1944um_ecephys.nwb
     versions:
       hdmf: 3.13.0
@@ -404,6 +404,11 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150724-1872um_ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3396um-1180um-20160220-160220-141839_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -611,11 +616,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150724-1872um_ecephys.nwb
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150725-1944um_ecephys.nwb
     versions:
       hdmf: 3.13.0

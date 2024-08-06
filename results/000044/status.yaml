@@ -24,9 +24,9 @@ tests:
       pynwb: 2.8.1
   - path: sub-Cicero/sub-Cicero_ses-Cicero-09012014_behavior+ecephys.nwb
     versions:
-      hdmf: 3.14.1
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-Cicero/sub-Cicero_ses-Cicero-09102014_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -61,6 +61,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Cicero/sub-Cicero_ses-Cicero-09012014_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Cicero/sub-Cicero_ses-Cicero-09102014_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -78,12 +83,7 @@ tests:
       pynwb: 2.8.1
   assets_ok:
   - sub-Gatsby/sub-Gatsby_ses-Gatsby-08282013_behavior+ecephys.nwb
-  assets_timeout:
-  - path: sub-Cicero/sub-Cicero_ses-Cicero-09012014_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

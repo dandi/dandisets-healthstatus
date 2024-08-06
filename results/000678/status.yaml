@@ -24,6 +24,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_timeout:
+  - path: sub-BW041/sub-BW041_ses-20210907T133507.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BW041/sub-BW041_ses-20210914T124217.nwb
     versions:
       hdmf: 3.14.3
@@ -61,6 +66,11 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-BW041/sub-BW041_ses-20210907T133507.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BW041/sub-BW041_ses-20210914T124217.nwb
     versions:
       hdmf: 3.14.3

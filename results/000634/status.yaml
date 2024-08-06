@@ -12,6 +12,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-ground0-10/sub-ground0-10_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ground0-2/sub-ground0-2_image.nwb
     versions:
       hdmf: 3.14.3
@@ -43,6 +48,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-ground0-1/sub-ground0-1_image.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-ground0-10/sub-ground0-10_image.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
