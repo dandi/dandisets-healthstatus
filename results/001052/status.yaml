@@ -7,6 +7,11 @@ nassets: 12
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-Rat406/sub-Rat406_ses-Rat406-PFC.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Rat424/sub-Rat424_ses-Rat424-MFB.nwb
     versions:
       hdmf: 3.14.3
@@ -55,6 +60,11 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-Rat406/sub-Rat406_ses-Rat406-PFC.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Rat424/sub-Rat424_ses-Rat424-MFB.nwb
     versions:
       hdmf: 3.14.3

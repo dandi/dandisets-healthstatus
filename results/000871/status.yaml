@@ -19,6 +19,11 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-644972/sub-644972_ses-1237338784-acq-1237809219-raw-movies_image+ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-644972/sub-644972_ses-1238455470-acq-1238610268_image+ophys.nwb
     versions:
       hdmf: 3.14.3
@@ -66,6 +71,11 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-644972/sub-644972_ses-1237338784-acq-1237809219-raw-movies_image+ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-644972/sub-644972_ses-1237338784-acq-1237809223-denoised-movies_image+ophys.nwb
     versions:
       hdmf: 3.14.3

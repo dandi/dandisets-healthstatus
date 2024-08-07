@@ -256,7 +256,11 @@ tests:
   - sub-EV84/sub-EV84_ses-20180810T144840_ophys.nwb
   - sub-EV84/sub-EV84_ses-20180810T150405_ophys.nwb
   - sub-EV84/sub-EV84_ses-20180810T151401_ophys.nwb
-  - sub-EV84/sub-EV84_ses-20180810T152002_ophys.nwb
+  - path: sub-EV84/sub-EV84_ses-20180810T152002_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-EV86/sub-EV86_ses-20180820T133354_ophys.nwb
   - sub-EV86/sub-EV86_ses-20180820T134243_ophys.nwb
   - sub-EV86/sub-EV86_ses-20180820T135013_ophys.nwb
@@ -1250,6 +1254,11 @@ tests:
   - sub-EV44/sub-EV44_ses-20171103T182317_ophys.nwb
   - sub-EV84/sub-EV84_ses-20180810T140422_ophys.nwb
   - sub-EV84/sub-EV84_ses-20180810T142153_ophys.nwb
+  - path: sub-EV84/sub-EV84_ses-20180810T152002_ophys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-NV108/sub-NV108_ses-20190221T113255_ophys.nwb
     versions:
       hdmf: 3.14.3
@@ -1513,7 +1522,6 @@ tests:
   - sub-EV84/sub-EV84_ses-20180810T144840_ophys.nwb
   - sub-EV84/sub-EV84_ses-20180810T150405_ophys.nwb
   - sub-EV84/sub-EV84_ses-20180810T151401_ophys.nwb
-  - sub-EV84/sub-EV84_ses-20180810T152002_ophys.nwb
   - sub-EV86/sub-EV86_ses-20180820T133354_ophys.nwb
   - sub-EV86/sub-EV86_ses-20180820T134243_ophys.nwb
   - sub-EV86/sub-EV86_ses-20180820T135013_ophys.nwb

@@ -12,6 +12,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-1529/sub-1529_ses-reinforcement-b1a6e2b5-b011-4d0c-8c58-2a2213837fbc_behavior+image+ogen.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-197/sub-197_ses-reinforcement-f4c3ac2a-d225-4872-af0c-14eb77c04741_behavior+image+ogen.nwb
     versions:
       hdmf: 3.14.3
@@ -67,6 +72,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-10/sub-10_ses-reinforcement-592976d7-ed94-422b-85f8-7c701478f869_behavior+image+ogen.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-1529/sub-1529_ses-reinforcement-b1a6e2b5-b011-4d0c-8c58-2a2213837fbc_behavior+image+ogen.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2

@@ -7,11 +7,6 @@ nassets: 14
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-M27/sub-M27_ses-20200319T163241_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
   - path: sub-M29/sub-M29_ses-20200612T143309_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.0
@@ -49,6 +44,11 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-M27/sub-M27_ses-20200319T163241_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-M37/sub-M37_ses-20200829T154548_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -77,6 +77,11 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-M26/sub-M26_ses-20200319T153237_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-M27/sub-M27_ses-20200319T163241_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -128,11 +133,6 @@ tests:
       pynwb: 2.8.0
   assets_ok: []
   assets_timeout:
-  - path: sub-M27/sub-M27_ses-20200319T163241_behavior+ecephys.nwb
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
   - path: sub-M36/sub-M36_ses-20200827T141103_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.2

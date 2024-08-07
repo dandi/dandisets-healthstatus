@@ -14,6 +14,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_timeout:
+  - path: sub-TS110-3/sub-TS110-3_ses-TS110-3_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-TS111-1/sub-TS111-1_ses-TS111-1_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.3
@@ -61,6 +66,11 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-TS110-3/sub-TS110-3_ses-TS110-3_behavior+ecephys.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-TS111-1/sub-TS111-1_ses-TS111-1_behavior+ecephys.nwb
     versions:
       hdmf: 3.14.3

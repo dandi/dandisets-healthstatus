@@ -179,7 +179,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - sub-HI204/sub-HI204_ses-HI204-062519_ecephys+ogen.nwb
-  - sub-HI204/sub-HI204_ses-HI204-062719_ecephys+ogen.nwb
+  - path: sub-HI204/sub-HI204_ses-HI204-062719_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-HI204/sub-HI204_ses-HI204-062819_ecephys+ogen.nwb
   - path: sub-HI207/sub-HI207_ses-HI207-062819_ecephys+ogen.nwb
     versions:
@@ -659,6 +663,11 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - sub-HI193/sub-HI193_ses-HI193-050719_ecephys+ogen.nwb
+  - path: sub-HI204/sub-HI204_ses-HI204-062719_ecephys+ogen.nwb
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - sub-HI204/sub-HI204_ses-HI204-062819_ecephys+ogen.nwb
   - sub-HI211/sub-HI211_ses-HI211-072419_ecephys+ogen.nwb
   - path: sub-HI215/sub-HI215_ses-HI215-071219_ecephys+ogen.nwb
@@ -868,7 +877,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - sub-HI204/sub-HI204_ses-HI204-062519_ecephys+ogen.nwb
-  - sub-HI204/sub-HI204_ses-HI204-062719_ecephys+ogen.nwb
   - path: sub-HI207/sub-HI207_ses-HI207-062819_ecephys+ogen.nwb
     versions:
       hdmf: 3.12.2
