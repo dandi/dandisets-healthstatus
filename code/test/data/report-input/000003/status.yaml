@@ -6,16 +6,28 @@ tests:
 - assets_nok: []
   assets_ok: []
   assets_timeout:
-  - asset01.nwb
-  - asset02.nwb
-  - asset03.nwb
+  - path: asset01.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: asset02.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: asset03.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
   assets_timeout:
-  - asset01.nwb
-  - asset02.nwb
-  - asset03.nwb
+  - path: asset01.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: asset02.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: asset03.nwb
+    status: timeout
+    test: matnwb_nwbRead
   name: matnwb_nwbRead
 versions:
   hdmf: 3.4.7
