@@ -60,6 +60,18 @@ class AssetEntry(BaseModel):
     status: Outcome
     versions: Optional[Dict[str, str]] = None
 
+    @field_validator("versions", mode="before")
+    @classmethod
+    def _rmlinenos(cls, value: Any) -> Any:
+        if isinstance(value, dict):
+            return {
+                k: v
+                for k, v in value.items()
+                if isinstance(k, str) and not k.endswith("_lineno")
+            }
+        else:
+            return value
+
     def to_asset_test_info(self, versions: dict[str, str]) -> AssetTestInfo:
         if self.versions is not None:
             versions = self.versions
