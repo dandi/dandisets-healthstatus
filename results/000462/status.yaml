@@ -8,72 +8,100 @@ tests:
 - assets_nok: []
   assets_ok:
   - path: sub-009/sub-009_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-011/sub-011_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-012/sub-012_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-014/sub-014_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-CFC16/sub-CFC16_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-CFC17/sub-CFC17_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-CFC19/sub-CFC19_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-CFC4/sub-CFC4_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-NR21/sub-NR21_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-NR23/sub-NR23_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-NR32/sub-NR32_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-NR6/sub-NR6_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_timeout:
   - path: sub-NR14/sub-NR14_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-NR34/sub-NR34_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -81,73 +109,101 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-011/sub-011_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-014/sub-014_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-CFC16/sub-CFC16_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-CFC19/sub-CFC19_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-CFC4/sub-CFC4_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-NR14/sub-NR14_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-NR23/sub-NR23_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-NR32/sub-NR32_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-NR34/sub-NR34_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-NR6/sub-NR6_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok:
   - path: sub-012/sub-012_ophys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-CFC17/sub-CFC17_ophys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-NR21/sub-NR21_ophys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   assets_timeout:
   - path: sub-009/sub-009_ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

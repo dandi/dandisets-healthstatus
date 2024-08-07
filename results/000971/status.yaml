@@ -8,98 +8,146 @@ tests:
 - assets_nok: []
   assets_ok:
   - path: sub-124-280/sub-124-280_ses-Opto-DMS-Excitatory-ChR2Scrambled-2019-07-12T10-16-25_behavior+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-229-431/sub-229-431_ses-Opto-DMS-Inhibitory-EYFP-2020-12-23T13-41-23_ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-286-409/sub-286-409_ses-Opto-DMS-Inhibitory-NpHR-2020-10-20T11-40-34_ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-290-407/sub-290-407_ses-Opto-DMS-Excitatory-ChR2Scrambled-2020-10-27T11-12-51_ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-300-405/sub-300-405_ses-Opto-DLS-Excitatory-ChR2Scrambled-2020-09-04T12-31-59_ogen.nwb
+  - path: sub-300-405/sub-300-405_ses-Opto-DLS-Excitatory-ChR2Scrambled-2020-09-04T12-31-59_ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-321-415/sub-321-415_ses-Opto-DMS-Inhibitory-NpHRScrambled-2020-11-20T10-56-07_ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-361-427/sub-361-427_ses-Opto-DMS-Inhibitory-EYFP-2020-12-09T11-28-06_ogen.nwb
+  - path: sub-361-427/sub-361-427_ses-Opto-DMS-Inhibitory-EYFP-2020-12-09T11-28-06_ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-414-405/sub-414-405_ses-Opto-DLS-Excitatory-ChR2-2020-09-11T12-32-35_ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-431-419/sub-431-419_ses-Opto-DMS-Excitatory-ChR2Scrambled-2020-11-19T12-57-19_ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-432-420/sub-432-420_ses-Opto-DMS-Inhibitory-NpHRScrambled-2020-11-11T11-09-04_ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-479/sub-479_ses-Opto-DMS-Excitatory-ChR2-2019-05-29T11-09-34_behavior+ogen.nwb
-  - sub-63-207/sub-63-207_ses-FP-PR-2018-10-26T10-35-29_behavior.nwb
+  - path: sub-479/sub-479_ses-Opto-DMS-Excitatory-ChR2-2019-05-29T11-09-34_behavior+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-63-207/sub-63-207_ses-FP-PR-2018-10-26T10-35-29_behavior.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-124-280/sub-124-280_ses-Opto-DMS-Excitatory-ChR2Scrambled-2019-07-12T10-16-25_behavior+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-229-431/sub-229-431_ses-Opto-DMS-Inhibitory-EYFP-2020-12-23T13-41-23_ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-286-409/sub-286-409_ses-Opto-DMS-Inhibitory-NpHR-2020-10-20T11-40-34_ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-290-407/sub-290-407_ses-Opto-DMS-Excitatory-ChR2Scrambled-2020-10-27T11-12-51_ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-321-415/sub-321-415_ses-Opto-DMS-Inhibitory-NpHRScrambled-2020-11-20T10-56-07_ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-414-405/sub-414-405_ses-Opto-DLS-Excitatory-ChR2-2020-09-11T12-32-35_ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-431-419/sub-431-419_ses-Opto-DMS-Excitatory-ChR2Scrambled-2020-11-19T12-57-19_ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-432-420/sub-432-420_ses-Opto-DMS-Inhibitory-NpHRScrambled-2020-11-11T11-09-04_ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-63-207/sub-63-207_ses-FP-PR-2018-10-26T10-35-29_behavior.nwb
+  - path: sub-63-207/sub-63-207_ses-FP-PR-2018-10-26T10-35-29_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout:
-  - sub-300-405/sub-300-405_ses-Opto-DLS-Excitatory-ChR2Scrambled-2020-09-04T12-31-59_ogen.nwb
-  - sub-361-427/sub-361-427_ses-Opto-DMS-Inhibitory-EYFP-2020-12-09T11-28-06_ogen.nwb
-  - sub-479/sub-479_ses-Opto-DMS-Excitatory-ChR2-2019-05-29T11-09-34_behavior+ogen.nwb
+  - path: sub-300-405/sub-300-405_ses-Opto-DLS-Excitatory-ChR2Scrambled-2020-09-04T12-31-59_ogen.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-361-427/sub-361-427_ses-Opto-DMS-Inhibitory-EYFP-2020-12-09T11-28-06_ogen.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-479/sub-479_ses-Opto-DMS-Excitatory-ChR2-2019-05-29T11-09-34_behavior+ogen.nwb
+    status: timeout
+    test: matnwb_nwbRead
   name: matnwb_nwbRead
 untested: []
 versions:

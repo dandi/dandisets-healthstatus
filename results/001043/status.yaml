@@ -7,11 +7,15 @@ nassets: null
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Loki/sub-Loki_behavior+ophys.nwb
+  - path: sub-Loki/sub-Loki_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-Loki/sub-Loki_behavior+ophys.nwb
+  - path: sub-Loki/sub-Loki_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

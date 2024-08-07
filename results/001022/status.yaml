@@ -7,15 +7,27 @@ nassets: 3
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-G2-09-LP-TDT-PBS/sub-G2-09-LP-TDT-PBS_ecephys.nwb
-  - sub-G2-09-TER-NN-AIR/sub-G2-09-TER-NN-AIR_ecephys.nwb
-  - sub-Gamry-REF-600P-OPEN-LEAD/sub-Gamry-REF-600P-OPEN-LEAD_ecephys.nwb
+  - path: sub-G2-09-LP-TDT-PBS/sub-G2-09-LP-TDT-PBS_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-G2-09-TER-NN-AIR/sub-G2-09-TER-NN-AIR_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Gamry-REF-600P-OPEN-LEAD/sub-Gamry-REF-600P-OPEN-LEAD_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-G2-09-LP-TDT-PBS/sub-G2-09-LP-TDT-PBS_ecephys.nwb
-  - sub-G2-09-TER-NN-AIR/sub-G2-09-TER-NN-AIR_ecephys.nwb
-  - sub-Gamry-REF-600P-OPEN-LEAD/sub-Gamry-REF-600P-OPEN-LEAD_ecephys.nwb
+  - path: sub-G2-09-LP-TDT-PBS/sub-G2-09-LP-TDT-PBS_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-G2-09-TER-NN-AIR/sub-G2-09-TER-NN-AIR_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Gamry-REF-600P-OPEN-LEAD/sub-Gamry-REF-600P-OPEN-LEAD_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

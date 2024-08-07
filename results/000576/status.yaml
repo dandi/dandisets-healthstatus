@@ -8,87 +8,123 @@ tests:
 - assets_nok: []
   assets_ok:
   - path: sub-01/sub-01_ses-20140828T132700_ecephys+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-01/sub-01_ses-20140828T132700_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-02/sub-02_ses-20160302T164800_ecephys+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-02/sub-02_ses-20160302T164800_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-03/sub-03_ses-20150304T164400_ecephys+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-03/sub-03_ses-20150304T164400_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-04/sub-04_ses-20120829T175200_ecephys+image.nwb
+  - path: sub-04/sub-04_ses-20120829T175200_ecephys+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-04/sub-04_ses-20120829T175200_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-05/sub-05_ses-20121207T173500_ecephys+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-05/sub-05_ses-20121207T173500_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-06/sub-06_ses-20131209T113600_ecephys+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-06/sub-06_ses-20131209T113600_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-07/sub-07_ses-20160212T171400_ecephys+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-07/sub-07_ses-20160212T171400_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-08/sub-08_ses-20161217T120200_ecephys+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-08/sub-08_ses-20161217T120200_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-09/sub-09_ses-20170311T170500_ecephys+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-09/sub-09_ses-20170311T170500_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
@@ -97,89 +133,125 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-01/sub-01_ses-20140828T132700_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-02/sub-02_ses-20160302T164800_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-02/sub-02_ses-20160302T164800_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-03/sub-03_ses-20150304T164400_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-04/sub-04_ses-20120829T175200_ecephys+image.nwb
+  - path: sub-04/sub-04_ses-20120829T175200_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-04/sub-04_ses-20120829T175200_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-05/sub-05_ses-20121207T173500_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-05/sub-05_ses-20121207T173500_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-06/sub-06_ses-20131209T113600_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-07/sub-07_ses-20160212T171400_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-09/sub-09_ses-20170311T170500_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok:
   - path: sub-01/sub-01_ses-20140828T132700_ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-03/sub-03_ses-20150304T164400_ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-06/sub-06_ses-20131209T113600_ecephys+image.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-08/sub-08_ses-20161217T120200_ecephys+image.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-08/sub-08_ses-20161217T120200_ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   assets_timeout:
   - path: sub-07/sub-07_ses-20160212T171400_ecephys+image.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-09/sub-09_ses-20170311T170500_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
@@ -190,38 +262,47 @@ untested:
   file_type: 'RIFF (little-endian) data, AVI, 640 x 480, ~25 fps, video: Indeo 5.0'
   mime_type: video/x-msvideo
   size: 207720448
+  status: untested
 - asset: sub-02/sub-02_ses-20160302T164800_ecephys+image/b2670e2b-931b-4252-bdec-5518f284f7c4_external_file_0.avi
   file_type: 'RIFF (little-endian) data, AVI, 640 x 480, ~25 fps, video: Indeo 5.0'
   mime_type: video/x-msvideo
   size: 207720448
+  status: untested
 - asset: sub-03/sub-03_ses-20150304T164400_ecephys+image/5f6936b7-752f-416f-b5bb-5f8649c7c4bc_external_file_0.avi
   file_type: 'RIFF (little-endian) data, AVI, 640 x 480, ~25 fps, video: Indeo 5.0'
   mime_type: video/x-msvideo
   size: 207720448
+  status: untested
 - asset: sub-04/sub-04_ses-20120829T175200_ecephys+image/fe217a3c-380b-4480-9e79-9383df92ee3c_external_file_0.avi
   file_type: 'RIFF (little-endian) data, AVI, 640 x 480, ~25 fps, video: Indeo 5.0'
   mime_type: video/x-msvideo
   size: 207720448
+  status: untested
 - asset: sub-05/sub-05_ses-20121207T173500_ecephys+image/75fe4cca-e26c-4fa2-ac68-bd4b422e37c7_external_file_0.avi
   file_type: 'RIFF (little-endian) data, AVI, 640 x 480, ~25 fps, video: Indeo 5.0'
   mime_type: video/x-msvideo
   size: 207720448
+  status: untested
 - asset: sub-06/sub-06_ses-20131209T113600_ecephys+image/2a349116-0412-4eac-bb6c-cdea8fe69b00_external_file_0.avi
   file_type: 'RIFF (little-endian) data, AVI, 640 x 480, ~25 fps, video: Indeo 5.0'
   mime_type: video/x-msvideo
   size: 207720448
+  status: untested
 - asset: sub-07/sub-07_ses-20160212T171400_ecephys+image/c1913d6e-8080-4684-b485-6e584920a2c0_external_file_0.avi
   file_type: 'RIFF (little-endian) data, AVI, 640 x 480, ~25 fps, video: Indeo 5.0'
   mime_type: video/x-msvideo
   size: 207720448
+  status: untested
 - asset: sub-08/sub-08_ses-20161217T120200_ecephys+image/089d7e42-af9a-4c22-9279-2d310e8b8097_external_file_0.avi
   file_type: 'RIFF (little-endian) data, AVI, 640 x 480, ~25 fps, video: Indeo 5.0'
   mime_type: video/x-msvideo
   size: 207720448
+  status: untested
 - asset: sub-09/sub-09_ses-20170311T170500_ecephys+image/8e874057-2aa1-40ac-b253-7fee23903462_external_file_0.avi
   file_type: 'RIFF (little-endian) data, AVI, 640 x 480, ~25 fps, video: Indeo 5.0'
   mime_type: video/x-msvideo
   size: 207720448
+  status: untested
 versions:
   hdmf: 3.13.0
   matnwb: v2.6.0.2

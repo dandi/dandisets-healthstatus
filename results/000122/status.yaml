@@ -7,19 +7,39 @@ nassets: 5
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-P1/sub-P1_ses-20200101T021616.nwb
-  - sub-P2/sub-P2_ses-20200102T002921.nwb
-  - sub-P3/sub-P3_ses-20200103T022038.nwb
-  - sub-P4/sub-P4_ses-20200104T031322.nwb
-  - sub-P5/sub-P5_ses-20200105T045735.nwb
+  - path: sub-P1/sub-P1_ses-20200101T021616.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-P2/sub-P2_ses-20200102T002921.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-P3/sub-P3_ses-20200103T022038.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-P4/sub-P4_ses-20200104T031322.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-P5/sub-P5_ses-20200105T045735.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-P1/sub-P1_ses-20200101T021616.nwb
-  - sub-P2/sub-P2_ses-20200102T002921.nwb
-  - sub-P3/sub-P3_ses-20200103T022038.nwb
-  - sub-P4/sub-P4_ses-20200104T031322.nwb
-  - sub-P5/sub-P5_ses-20200105T045735.nwb
+  - path: sub-P1/sub-P1_ses-20200101T021616.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-P2/sub-P2_ses-20200102T002921.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-P3/sub-P3_ses-20200103T022038.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-P4/sub-P4_ses-20200104T031322.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-P5/sub-P5_ses-20200105T045735.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

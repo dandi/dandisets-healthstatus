@@ -8,20 +8,44 @@ tests:
 - assets_nok: []
   assets_ok: []
   assets_timeout:
-  - sub-TR11/sub-TR11_ecephys.nwb
-  - sub-TR12-512ch/sub-TR12-512ch_ecephys.nwb
-  - sub-TR13/sub-TR13_ecephys.nwb
-  - sub-TR14-512ch/sub-TR14-512ch_ecephys.nwb
-  - sub-TR15-512ch/sub-TR15-512ch_ecephys.nwb
-  - sub-TR8/sub-TR8_ecephys.nwb
+  - path: sub-TR11/sub-TR11_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-TR12-512ch/sub-TR12-512ch_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-TR13/sub-TR13_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-TR14-512ch/sub-TR14-512ch_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-TR15-512ch/sub-TR15-512ch_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-TR8/sub-TR8_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-TR11/sub-TR11_ecephys.nwb
-  - sub-TR12-512ch/sub-TR12-512ch_ecephys.nwb
-  - sub-TR13/sub-TR13_ecephys.nwb
-  - sub-TR14-512ch/sub-TR14-512ch_ecephys.nwb
-  - sub-TR15-512ch/sub-TR15-512ch_ecephys.nwb
-  - sub-TR8/sub-TR8_ecephys.nwb
+  - path: sub-TR11/sub-TR11_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-TR12-512ch/sub-TR12-512ch_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-TR13/sub-TR13_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-TR14-512ch/sub-TR14-512ch_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-TR15-512ch/sub-TR15-512ch_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-TR8/sub-TR8_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

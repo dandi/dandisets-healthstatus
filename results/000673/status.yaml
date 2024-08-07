@@ -7,59 +7,83 @@ nassets: 44
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-22/sub-22_ses-2_ecephys+image.nwb
+  - path: sub-22/sub-22_ses-2_ecephys+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout:
   - path: sub-1/sub-1_ses-2_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-12/sub-12_ses-2_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-17/sub-17_ses-1_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-19/sub-19_ses-1_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-21/sub-21_ses-1_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-22/sub-22_ses-3_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-25/sub-25_ses-1_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-32/sub-32_ses-1_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-33/sub-33_ses-1_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-4/sub-4_ses-1_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-7/sub-7_ses-1_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -67,41 +91,57 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-1/sub-1_ses-2_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-12/sub-12_ses-2_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-22/sub-22_ses-3_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-25/sub-25_ses-1_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-32/sub-32_ses-1_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-33/sub-33_ses-1_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-4/sub-4_ses-1_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-7/sub-7_ses-1_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -109,21 +149,29 @@ tests:
   assets_ok: []
   assets_timeout:
   - path: sub-17/sub-17_ses-1_ecephys+image.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-19/sub-19_ses-1_ecephys+image.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-21/sub-21_ses-1_ecephys+image.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-22/sub-22_ses-2_ecephys+image.nwb
+  - path: sub-22/sub-22_ses-2_ecephys+image.nwb
+    status: timeout
+    test: matnwb_nwbRead
   name: matnwb_nwbRead
 untested: []
 versions:

@@ -7,21 +7,45 @@ nassets: 6
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-interlum-4/sub-interlum-4_ses-20190515T120000_ecephys+ophys.nwb
-  - sub-interlum-6/sub-interlum-6_ses-20190605T120000_ecephys.nwb
-  - sub-interlum-8/sub-interlum-8_ses-20190821T120000_ecephys+ophys.nwb
-  - sub-interlum-ctrl-4/sub-interlum-ctrl-4_ses-20190731T120000_ecephys+ophys.nwb
-  - sub-interlum-ctrl-5/sub-interlum-ctrl-5_ses-20190907T120000_ecephys+ophys.nwb
+  - path: sub-interlum-4/sub-interlum-4_ses-20190515T120000_ecephys+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-interlum-6/sub-interlum-6_ses-20190605T120000_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-interlum-8/sub-interlum-8_ses-20190821T120000_ecephys+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-interlum-ctrl-4/sub-interlum-ctrl-4_ses-20190731T120000_ecephys+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-interlum-ctrl-5/sub-interlum-ctrl-5_ses-20190907T120000_ecephys+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout:
-  - sub-interlum-ctrl-2/sub-interlum-ctrl-2_ses-20190709T120000_ecephys+ophys.nwb
+  - path: sub-interlum-ctrl-2/sub-interlum-ctrl-2_ses-20190709T120000_ecephys+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-interlum-4/sub-interlum-4_ses-20190515T120000_ecephys+ophys.nwb
-  - sub-interlum-6/sub-interlum-6_ses-20190605T120000_ecephys.nwb
-  - sub-interlum-8/sub-interlum-8_ses-20190821T120000_ecephys+ophys.nwb
-  - sub-interlum-ctrl-2/sub-interlum-ctrl-2_ses-20190709T120000_ecephys+ophys.nwb
-  - sub-interlum-ctrl-4/sub-interlum-ctrl-4_ses-20190731T120000_ecephys+ophys.nwb
-  - sub-interlum-ctrl-5/sub-interlum-ctrl-5_ses-20190907T120000_ecephys+ophys.nwb
+  - path: sub-interlum-4/sub-interlum-4_ses-20190515T120000_ecephys+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-interlum-6/sub-interlum-6_ses-20190605T120000_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-interlum-8/sub-interlum-8_ses-20190821T120000_ecephys+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-interlum-ctrl-2/sub-interlum-ctrl-2_ses-20190709T120000_ecephys+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-interlum-ctrl-4/sub-interlum-ctrl-4_ses-20190731T120000_ecephys+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-interlum-ctrl-5/sub-interlum-ctrl-5_ses-20190907T120000_ecephys+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

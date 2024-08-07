@@ -7,19 +7,39 @@ nassets: 6
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-163/sub-163_ses-20200212T160655_ophys.nwb
-  - sub-7/sub-7_ses-20200213T113524_ophys.nwb
-  - sub-8/sub-8_ses-20200204T180138_ophys.nwb
-  - sub-9/sub-9_ses-20200204T154200_ophys.nwb
+  - path: sub-163/sub-163_ses-20200212T160655_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-20200213T113524_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-20200204T180138_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-20200204T154200_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout:
-  - sub-164/sub-164_ses-20200124T161514_image+ophys.nwb
+  - path: sub-164/sub-164_ses-20200124T161514_image+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-163/sub-163_ses-20200212T160655_ophys.nwb
-  - sub-164/sub-164_ses-20200124T161514_image+ophys.nwb
-  - sub-7/sub-7_ses-20200213T113524_ophys.nwb
-  - sub-8/sub-8_ses-20200204T180138_ophys.nwb
-  - sub-9/sub-9_ses-20200204T154200_ophys.nwb
+  - path: sub-163/sub-163_ses-20200212T160655_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-164/sub-164_ses-20200124T161514_image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-20200213T113524_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-20200204T180138_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-20200204T154200_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
@@ -28,6 +48,7 @@ untested:
   file_type: Matroska data
   mime_type: video/x-matroska
   size: 200609925
+  status: untested
 versions:
   hdmf: 3.14.3
   matnwb: v2.6.0.2

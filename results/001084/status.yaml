@@ -7,13 +7,21 @@ nassets: 3
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-842/sub-842_ses-221123_ophys.nwb
-  - sub-DL18/sub-DL18_ses-211110_image+ophys.nwb
+  - path: sub-842/sub-842_ses-221123_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DL18/sub-DL18_ses-211110_image+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-842/sub-842_ses-221123_ophys.nwb
-  - sub-DL18/sub-DL18_ses-211110_image+ophys.nwb
+  - path: sub-842/sub-842_ses-221123_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DL18/sub-DL18_ses-211110_image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

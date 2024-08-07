@@ -8,45 +8,69 @@ tests:
 - assets_nok: []
   assets_ok:
   - path: sub-13/sub-13_ses-20201201T000000_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-30/sub-30_ses-20210617T101904_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-32/sub-32_ses-20210618T111407_behavior+ophys.nwb
-  - sub-33/sub-33_ses-20210913T134539_behavior+ophys.nwb
+  - path: sub-32/sub-32_ses-20210618T111407_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-33/sub-33_ses-20210913T134539_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-34/sub-34_ses-20210913T154459_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-36/sub-36_ses-20210922T144719_behavior+ophys.nwb
+  - path: sub-36/sub-36_ses-20210922T144719_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-38/sub-38_ses-20210924T155559_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-43/sub-43_ses-20211123T172659_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-47/sub-47_ses-20211130T164117_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-64/sub-64_ses-20210615T095324_behavior+ophys.nwb
+  - path: sub-64/sub-64_ses-20210615T095324_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-66/sub-66_ses-20210616T153458_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-68/sub-68_ses-20210618T140551_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -55,51 +79,75 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-13/sub-13_ses-20201201T000000_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-30/sub-30_ses-20210617T101904_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-34/sub-34_ses-20210913T154459_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-38/sub-38_ses-20210924T155559_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-43/sub-43_ses-20211123T172659_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-47/sub-47_ses-20211130T164117_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-64/sub-64_ses-20210615T095324_behavior+ophys.nwb
+  - path: sub-64/sub-64_ses-20210615T095324_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-66/sub-66_ses-20210616T153458_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-68/sub-68_ses-20210618T140551_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
-  - sub-32/sub-32_ses-20210618T111407_behavior+ophys.nwb
-  - sub-33/sub-33_ses-20210913T134539_behavior+ophys.nwb
-  - sub-36/sub-36_ses-20210922T144719_behavior+ophys.nwb
+  - path: sub-32/sub-32_ses-20210618T111407_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-33/sub-33_ses-20210913T134539_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-36/sub-36_ses-20210922T144719_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   name: matnwb_nwbRead
 untested: []
 versions:

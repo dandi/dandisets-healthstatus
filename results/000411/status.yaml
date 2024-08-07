@@ -7,11 +7,15 @@ nassets: 1
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-001/sub-001_ecephys.nwb
+  - path: sub-001/sub-001_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-001/sub-001_ecephys.nwb
+  - path: sub-001/sub-001_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

@@ -8,46 +8,70 @@ tests:
 - assets_nok: []
   assets_ok: []
   assets_timeout:
-  - sub-L698/sub-L698_ses-Dendrite2a.nwb
+  - path: sub-L698/sub-L698_ses-Dendrite2a.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   - path: sub-L734/sub-L734_ses-Dendrite1.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-L736/sub-L736_ses-Dendrite1.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-L831/sub-L831_ses-Dendrite1a.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-L831/sub-L831_ses-Dendrite1b.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-L882/sub-L882_ses-Dendrite2a.nwb
-  - sub-L882/sub-L882_ses-Dendrite4c.nwb
+  - path: sub-L882/sub-L882_ses-Dendrite2a.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-L882/sub-L882_ses-Dendrite4c.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   - path: sub-L882/sub-L882_ses-Dendrite5F2.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-L882/sub-L882_ses-Dendrite7a.nwb
+  - path: sub-L882/sub-L882_ses-Dendrite7a.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   - path: sub-L882/sub-L882_ses-Dendrite7b.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-L884/sub-L884_ses-Dendrite1a.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-L902/sub-L902_ses-Dendrite1.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -55,51 +79,75 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-L734/sub-L734_ses-Dendrite1.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-L736/sub-L736_ses-Dendrite1.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-L831/sub-L831_ses-Dendrite1a.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-L831/sub-L831_ses-Dendrite1b.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-L882/sub-L882_ses-Dendrite5F2.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-L882/sub-L882_ses-Dendrite7b.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-L884/sub-L884_ses-Dendrite1a.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-L902/sub-L902_ses-Dendrite1.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
-  - sub-L698/sub-L698_ses-Dendrite2a.nwb
-  - sub-L882/sub-L882_ses-Dendrite2a.nwb
-  - sub-L882/sub-L882_ses-Dendrite4c.nwb
-  - sub-L882/sub-L882_ses-Dendrite7a.nwb
+  - path: sub-L698/sub-L698_ses-Dendrite2a.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-L882/sub-L882_ses-Dendrite2a.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-L882/sub-L882_ses-Dendrite4c.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-L882/sub-L882_ses-Dendrite7a.nwb
+    status: timeout
+    test: matnwb_nwbRead
   name: matnwb_nwbRead
 untested: []
 versions:

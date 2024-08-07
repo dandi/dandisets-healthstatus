@@ -7,17 +7,33 @@ nassets: 5
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Animal-1/sub-Animal-1_ses-1-to-10.nwb
-  - sub-Animal-1/sub-Animal-1_ses-11-to-21.nwb
-  - sub-Animal-1/sub-Animal-1_ses-21-to-37.nwb
-  - sub-Animal-2/sub-Animal-2_ses-43-to-47.nwb
+  - path: sub-Animal-1/sub-Animal-1_ses-1-to-10.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Animal-1/sub-Animal-1_ses-11-to-21.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Animal-1/sub-Animal-1_ses-21-to-37.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Animal-2/sub-Animal-2_ses-43-to-47.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-Animal-1/sub-Animal-1_ses-1-to-10.nwb
-  - sub-Animal-1/sub-Animal-1_ses-11-to-21.nwb
-  - sub-Animal-1/sub-Animal-1_ses-21-to-37.nwb
-  - sub-Animal-2/sub-Animal-2_ses-43-to-47.nwb
+  - path: sub-Animal-1/sub-Animal-1_ses-1-to-10.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Animal-1/sub-Animal-1_ses-11-to-21.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Animal-1/sub-Animal-1_ses-21-to-37.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Animal-2/sub-Animal-2_ses-43-to-47.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

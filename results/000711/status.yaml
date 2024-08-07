@@ -7,64 +7,90 @@ nassets: 6015
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-431252/sub-431252_ses-20190201T094139_image.nwb
+  - path: sub-431252/sub-431252_ses-20190201T094139_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout:
   - path: sub-431023/sub-431023_ses-20190121T134417_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-445002/sub-445002_ses-20190328T121136_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-447663/sub-447663_ses-20190515T115709_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-456915/sub-456915_ses-20190509T084516_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-456916/sub-456916_ses-20190521T134439_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-467302/sub-467302_ses-20190724T143339_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-479426/sub-479426_ses-20191021T084807_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-482853/sub-482853_ses-20191014T135116_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-492395/sub-492395_ses-20200203T130529_image+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-498972/sub-498972_ses-20200217T122046_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-524158/sub-524158_ses-20200921T123129_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-561443/sub-561443_ses-20210402T085752_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
@@ -72,41 +98,57 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-445002/sub-445002_ses-20190328T121136_image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-456915/sub-456915_ses-20190509T084516_image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-456916/sub-456916_ses-20190521T134439_image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-467302/sub-467302_ses-20190724T143339_image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-479426/sub-479426_ses-20191021T084807_image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-482853/sub-482853_ses-20191014T135116_image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-492395/sub-492395_ses-20200203T130529_image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-498972/sub-498972_ses-20200217T122046_image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -114,22 +156,32 @@ tests:
   assets_ok: []
   assets_timeout:
   - path: sub-431023/sub-431023_ses-20190121T134417_image.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-431252/sub-431252_ses-20190201T094139_image.nwb
+  - path: sub-431252/sub-431252_ses-20190201T094139_image.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-447663/sub-447663_ses-20190515T115709_image.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-524158/sub-524158_ses-20200921T123129_image.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-561443/sub-561443_ses-20210402T085752_image.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

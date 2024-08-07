@@ -9,61 +9,85 @@ tests:
   assets_ok: []
   assets_timeout:
   - path: sub-H02/sub-H02_ses-2-2019-07-14-11-14-47-DiscS_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H09/sub-H09_ses-9-2019-08-30-16-32-13-Disc4_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H13/sub-H13_ses-13-2019-08-30-09-21-02-Disc4_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H28/sub-H28_ses-28-Disc4DLC-resnet50-Hao-MedPC-ephysFeb9shuffle1-800000-csv_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H32/sub-H32_ses-H32-2020-04-23-13-59-47-Disc5_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H35/sub-H35_ses-H35-2020-04-30-09-57-13-Disc7-8-22-23_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H37/sub-H37_ses-H37-2020-04-29-10-04-51-Disc5-9-11_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H39/sub-H39_ses-H39-2020-04-29-13-33-40-Disc5_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H41/sub-H41_ses-H41-2020-04-29-16-55-26-Disc5-9_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H42/sub-H42_ses-H42-2020-04-29-16-55-04-Disc5-5_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-M-1/sub-M-1_ses-FearLearning-earlyAcq-Mouse2_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-M-3/sub-M-3_ses-RewardLearning-lateAcq-Mouse4_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
@@ -71,41 +95,57 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-H02/sub-H02_ses-2-2019-07-14-11-14-47-DiscS_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H13/sub-H13_ses-13-2019-08-30-09-21-02-Disc4_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H32/sub-H32_ses-H32-2020-04-23-13-59-47-Disc5_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H35/sub-H35_ses-H35-2020-04-30-09-57-13-Disc7-8-22-23_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H37/sub-H37_ses-H37-2020-04-29-10-04-51-Disc5-9-11_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H39/sub-H39_ses-H39-2020-04-29-13-33-40-Disc5_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H41/sub-H41_ses-H41-2020-04-29-16-55-26-Disc5-9_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H42/sub-H42_ses-H42-2020-04-29-16-55-04-Disc5-5_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -113,21 +153,29 @@ tests:
   assets_ok: []
   assets_timeout:
   - path: sub-H09/sub-H09_ses-9-2019-08-30-16-32-13-Disc4_ecephys+image.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H28/sub-H28_ses-28-Disc4DLC-resnet50-Hao-MedPC-ephysFeb9shuffle1-800000-csv_image.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-M-1/sub-M-1_ses-FearLearning-earlyAcq-Mouse2_ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-M-3/sub-M-3_ses-RewardLearning-lateAcq-Mouse4_ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

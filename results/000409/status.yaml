@@ -7,64 +7,90 @@ nassets: 1576
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-SWC-052/sub-SWC-052_ses-22e04698-b974-4805-b241-3b547dbf37bf_behavior+ecephys+image.nwb
+  - path: sub-SWC-052/sub-SWC-052_ses-22e04698-b974-4805-b241-3b547dbf37bf_behavior+ecephys+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout:
   - path: sub-CSH-ZAD-025/sub-CSH-ZAD-025_ses-c557324b-b95d-414c-888f-6ee1329a2329-processed-only_behavior.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-DY-013/sub-DY-013_ses-2f63c555-eb74-4d8d-ada5-5c3ecf3b46be_behavior+ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-DY-014/sub-DY-014_ses-7622da34-51b6-4661-98ae-a57d40806008-processed-only_behavior.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-DY-016/sub-DY-016_ses-c3d9b6fb-7fa9-4413-a364-92a54df0fc5d-processed-only_behavior.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-DY-020/sub-DY-020_ses-26aa51ff-968c-42e4-85c8-8ff47d19254d_behavior+ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-KS094/sub-KS094_ses-c8d46ee6-eb68-4535-8756-7c9aa32f10e4_behavior+ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-KS096/sub-KS096_ses-1b9e349e-93f2-41cc-a4b5-b212d7ddc8df_behavior+ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-NR-0020/sub-NR-0020_ses-3e6a97d3-3991-49e2-b346-6948cb4580fb_behavior+ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-UCLA034/sub-UCLA034_ses-19b44992-d527-4a12-8bda-aa11379cb08c-processed-only_behavior.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-UCLA037/sub-UCLA037_ses-2bdf206a-820f-402f-920a-9e86cd5388a4_behavior+ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-ZFM-02370/sub-ZFM-02370_ses-6f6d2c8e-28be-49f4-ae4d-06be2d3148c1-processed-only_behavior.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-ZM-2241/sub-ZM-2241_ses-e49d8ee7-24b9-416a-9d04-9be33b655f40-processed-only_behavior.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -72,41 +98,57 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-CSH-ZAD-025/sub-CSH-ZAD-025_ses-c557324b-b95d-414c-888f-6ee1329a2329-processed-only_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-DY-014/sub-DY-014_ses-7622da34-51b6-4661-98ae-a57d40806008-processed-only_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-DY-016/sub-DY-016_ses-c3d9b6fb-7fa9-4413-a364-92a54df0fc5d-processed-only_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-KS094/sub-KS094_ses-c8d46ee6-eb68-4535-8756-7c9aa32f10e4_behavior+ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-KS096/sub-KS096_ses-1b9e349e-93f2-41cc-a4b5-b212d7ddc8df_behavior+ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-UCLA034/sub-UCLA034_ses-19b44992-d527-4a12-8bda-aa11379cb08c-processed-only_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-UCLA037/sub-UCLA037_ses-2bdf206a-820f-402f-920a-9e86cd5388a4_behavior+ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-ZM-2241/sub-ZM-2241_ses-e49d8ee7-24b9-416a-9d04-9be33b655f40-processed-only_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -114,22 +156,32 @@ tests:
   assets_ok: []
   assets_timeout:
   - path: sub-DY-013/sub-DY-013_ses-2f63c555-eb74-4d8d-ada5-5c3ecf3b46be_behavior+ecephys+image.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-DY-020/sub-DY-020_ses-26aa51ff-968c-42e4-85c8-8ff47d19254d_behavior+ecephys+image.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-NR-0020/sub-NR-0020_ses-3e6a97d3-3991-49e2-b346-6948cb4580fb_behavior+ecephys+image.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-SWC-052/sub-SWC-052_ses-22e04698-b974-4805-b241-3b547dbf37bf_behavior+ecephys+image.nwb
+  - path: sub-SWC-052/sub-SWC-052_ses-22e04698-b974-4805-b241-3b547dbf37bf_behavior+ecephys+image.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-ZFM-02370/sub-ZFM-02370_ses-6f6d2c8e-28be-49f4-ae4d-06be2d3148c1-processed-only_behavior.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

@@ -7,15 +7,27 @@ nassets: 3
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Godzilla-0-STD/sub-Godzilla-0-STD_ses-LITMUS-Rat-0-STD_ecephys.nwb
-  - sub-Godzilla-2-STD/sub-Godzilla-2-STD_ses-LITMUS-Rat-2-STD_ecephys.nwb
-  - sub-Godzilla-4-STD/sub-Godzilla-4-STD_ses-LITMUS-Rat-4-STD_ecephys.nwb
+  - path: sub-Godzilla-0-STD/sub-Godzilla-0-STD_ses-LITMUS-Rat-0-STD_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Godzilla-2-STD/sub-Godzilla-2-STD_ses-LITMUS-Rat-2-STD_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Godzilla-4-STD/sub-Godzilla-4-STD_ses-LITMUS-Rat-4-STD_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-Godzilla-0-STD/sub-Godzilla-0-STD_ses-LITMUS-Rat-0-STD_ecephys.nwb
-  - sub-Godzilla-2-STD/sub-Godzilla-2-STD_ses-LITMUS-Rat-2-STD_ecephys.nwb
-  - sub-Godzilla-4-STD/sub-Godzilla-4-STD_ses-LITMUS-Rat-4-STD_ecephys.nwb
+  - path: sub-Godzilla-0-STD/sub-Godzilla-0-STD_ses-LITMUS-Rat-0-STD_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Godzilla-2-STD/sub-Godzilla-2-STD_ses-LITMUS-Rat-2-STD_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Godzilla-4-STD/sub-Godzilla-4-STD_ses-LITMUS-Rat-4-STD_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

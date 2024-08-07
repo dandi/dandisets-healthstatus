@@ -8,10 +8,14 @@ tests:
 - assets_nok: []
   assets_ok: []
   assets_timeout:
-  - sub-M388/sub-M388_ecephys.nwb
+  - path: sub-M388/sub-M388_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-M388/sub-M388_ecephys.nwb
+  - path: sub-M388/sub-M388_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

@@ -7,849 +7,1317 @@ nassets: 117
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210302_behavior+ecephys.nwb
+  - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210302_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210312_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210314_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210315_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210317_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210319_behavior+ecephys.nwb
+  - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210319_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210322_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210328_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210331_behavior+ecephys.nwb
-  - sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200228_behavior+ecephys.nwb
-  - sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200229_behavior+ecephys.nwb
-  - sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200305_behavior+ecephys.nwb
+  - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210331_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200228_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200229_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200305_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200306_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200307_behavior+ecephys.nwb
-  - sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200220_behavior+ecephys.nwb
-  - sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200221_behavior+ecephys.nwb
-  - sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200222_behavior+ecephys.nwb
-  - sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200223_behavior+ecephys.nwb
-  - sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200224_behavior+ecephys.nwb
+  - path: sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200307_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200220_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200221_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200222_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200223_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200224_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200225_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200226_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200227_behavior+ecephys.nwb
-  - sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200228_behavior+ecephys.nwb
-  - sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200229_behavior+ecephys.nwb
-  - sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200305_behavior+ecephys.nwb
+  - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200227_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200228_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200229_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200305_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200306_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211019-raw_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211019_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211116-raw_ecephys.nwb
+  - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211116-raw_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211116_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211119_behavior+ecephys.nwb
-  - sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211124-raw_ecephys.nwb
+  - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211119_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211124-raw_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211124_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200130_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200201_behavior+ecephys.nwb
+  - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200201_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200203_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200204_behavior+ecephys.nwb
+  - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200204_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200205_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200206_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200207_behavior+ecephys.nwb
+  - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200207_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200208_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200210_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200211_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200212_behavior+ecephys.nwb
-  - sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200213_behavior+ecephys.nwb
-  - sub-e14-2m2/sub-e14-2m2_ses-e14-2m2-201013_behavior+ecephys.nwb
+  - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200212_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200213_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e14-2m2/sub-e14-2m2_ses-e14-2m2-201013_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e14-2m2/sub-e14-2m2_ses-e14-2m2-201017_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-e14-2m2/sub-e14-2m2_ses-e14-2m2-201019_behavior+ecephys.nwb
+  - path: sub-e14-2m2/sub-e14-2m2_ses-e14-2m2-201019_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e14-2m2/sub-e14-2m2_ses-e14-2m2-201022_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201017_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201019_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201118_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201121_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201125_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201129_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201206_behavior+ecephys.nwb
-  - sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201208_behavior+ecephys.nwb
+  - path: sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201206_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201208_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200716_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200719_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200723_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200727_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200803_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200809_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200812_behavior+ecephys.nwb
-  - sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220117-raw_ecephys.nwb
+  - path: sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200812_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220117-raw_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220117_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220118-raw_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220118_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220119-raw_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220119_behavior+ecephys.nwb
-  - sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220120_behavior+ecephys.nwb
-  - sub-e15-4m1/sub-e15-4m1_ses-e15-4m1-191121_behavior+ecephys.nwb
-  - sub-e15-4m1/sub-e15-4m1_ses-e15-4m1-191125_behavior+ecephys.nwb
+  - path: sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220119_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220120_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e15-4m1/sub-e15-4m1_ses-e15-4m1-191121_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e15-4m1/sub-e15-4m1_ses-e15-4m1-191125_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e15-4m1/sub-e15-4m1_ses-e15-4m1-191203_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-e15-4m2/sub-e15-4m2_ses-e15-4m2-191212_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e15-4m2/sub-e15-4m2_ses-e15-4m2-191213_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e15-4m2/sub-e15-4m2_ses-e15-4m2-191215_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e15-4m2/sub-e15-4m2_ses-e15-4m2-191216_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e15-5m1/sub-e15-5m1_ses-e15-5m1-200313-1_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e15-5m1/sub-e15-5m1_ses-e15-5m1-200313-2_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e15-5m1/sub-e15-5m1_ses-e15-5m1-200314_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e15-9f1/sub-e15-9f1_ses-e15-9f1-200715_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e15-9f1/sub-e15-9f1_ses-e15-9f1-200717_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-e15-9f1/sub-e15-9f1_ses-e15-9f1-200720_behavior+ecephys.nwb
+  - path: sub-e15-9f1/sub-e15-9f1_ses-e15-9f1-200720_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e15-9f1/sub-e15-9f1_ses-e15-9f1-200723_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-e15-9f1/sub-e15-9f1_ses-e15-9f1-200729_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-e15-9f1/sub-e15-9f1_ses-e15-9f1-200802_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e15-9f1/sub-e15-9f1_ses-e15-9f1-200809_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-200823_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-200917_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-200918_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-200919_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-200920_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-200923_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-201001_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-201002_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-201004_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-2m1/sub-e16-2m1_ses-e16-2m1-201116_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-e16-2m1/sub-e16-2m1_ses-e16-2m1-201119_behavior+ecephys.nwb
+  - path: sub-e16-2m1/sub-e16-2m1_ses-e16-2m1-201119_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e16-2m1/sub-e16-2m1_ses-e16-2m1-201121_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-e16-2m1/sub-e16-2m1_ses-e16-2m1-201129_behavior+ecephys.nwb
-  - sub-e16-2m1/sub-e16-2m1_ses-e16-2m1-201206_behavior+ecephys.nwb
+  - path: sub-e16-2m1/sub-e16-2m1_ses-e16-2m1-201129_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e16-2m1/sub-e16-2m1_ses-e16-2m1-201206_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210111_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210119_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210201-raw_ecephys.nwb
-  - sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210201_behavior+ecephys.nwb
+  - path: sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210201-raw_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210201_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210203-raw_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210203_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e16-3m2/sub-e16-3m2_ses-e16-3m2-211210-raw_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-e16-3m2/sub-e16-3m2_ses-e16-3m2-211210_behavior+ecephys.nwb
+  - path: sub-e16-3m2/sub-e16-3m2_ses-e16-3m2-211210_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-e16-3m2/sub-e16-3m2_ses-e16-3m2-211211-raw_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e16-3m2/sub-e16-3m2_ses-e16-3m2-211211_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-e16-3m2/sub-e16-3m2_ses-e16-3m2-211212-raw_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e16-3m2/sub-e16-3m2_ses-e16-3m2-211212_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-3m2/sub-e16-3m2_ses-e16-3m2-211213-raw_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e16-3m2/sub-e16-3m2_ses-e16-3m2-211213_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_timeout:
   - path: sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220120-raw_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210319_behavior+ecephys.nwb
+  - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210319_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210322_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210328_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210331_behavior+ecephys.nwb
-  - sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200228_behavior+ecephys.nwb
-  - sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200229_behavior+ecephys.nwb
-  - sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200305_behavior+ecephys.nwb
-  - sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200307_behavior+ecephys.nwb
-  - sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200221_behavior+ecephys.nwb
-  - sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200222_behavior+ecephys.nwb
-  - sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200224_behavior+ecephys.nwb
-  - sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200227_behavior+ecephys.nwb
-  - sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200229_behavior+ecephys.nwb
+  - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210331_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200228_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200229_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200305_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200307_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200221_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200222_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200224_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200227_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200229_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211116_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211119_behavior+ecephys.nwb
-  - sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200201_behavior+ecephys.nwb
-  - sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200204_behavior+ecephys.nwb
+  - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211119_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200201_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200204_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200206_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200213_behavior+ecephys.nwb
-  - sub-e14-2m2/sub-e14-2m2_ses-e14-2m2-201013_behavior+ecephys.nwb
+  - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200213_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-e14-2m2/sub-e14-2m2_ses-e14-2m2-201013_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201118_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201121_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201129_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201206_behavior+ecephys.nwb
+  - path: sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201206_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200719_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200812_behavior+ecephys.nwb
-  - sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220117-raw_ecephys.nwb
+  - path: sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200812_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220117-raw_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220120-raw_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-e15-4m1/sub-e15-4m1_ses-e15-4m1-191125_behavior+ecephys.nwb
+  - path: sub-e15-4m1/sub-e15-4m1_ses-e15-4m1-191125_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-e15-4m1/sub-e15-4m1_ses-e15-4m1-191203_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-e15-9f1/sub-e15-9f1_ses-e15-9f1-200715_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e15-9f1/sub-e15-9f1_ses-e15-9f1-200729_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-200918_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-201004_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-2m1/sub-e16-2m1_ses-e16-2m1-201121_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-e16-2m1/sub-e16-2m1_ses-e16-2m1-201206_behavior+ecephys.nwb
-  - sub-e16-3m2/sub-e16-3m2_ses-e16-3m2-211210_behavior+ecephys.nwb
+  - path: sub-e16-2m1/sub-e16-2m1_ses-e16-2m1-201206_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-e16-3m2/sub-e16-3m2_ses-e16-3m2-211210_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-e16-3m2/sub-e16-3m2_ses-e16-3m2-211211_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok:
-  - sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210302_behavior+ecephys.nwb
+  - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210302_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210314_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e13-1f1/sub-e13-1f1_ses-e13-1f1-200306_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200220_behavior+ecephys.nwb
-  - sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200223_behavior+ecephys.nwb
+  - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200220_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200223_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200225_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200226_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200228_behavior+ecephys.nwb
-  - sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200305_behavior+ecephys.nwb
+  - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200228_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200305_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-e13-1m1/sub-e13-1m1_ses-e13-1m1-200306_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200130_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200203_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200205_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200207_behavior+ecephys.nwb
+  - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200207_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200208_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200210_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200211_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200212_behavior+ecephys.nwb
-  - sub-e14-2m2/sub-e14-2m2_ses-e14-2m2-201019_behavior+ecephys.nwb
+  - path: sub-e14-1m1/sub-e14-1m1_ses-e14-1m1-200212_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-e14-2m2/sub-e14-2m2_ses-e14-2m2-201019_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201125_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201208_behavior+ecephys.nwb
-  - sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220119_behavior+ecephys.nwb
-  - sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220120_behavior+ecephys.nwb
-  - sub-e15-4m1/sub-e15-4m1_ses-e15-4m1-191121_behavior+ecephys.nwb
+  - path: sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201208_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220119_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220120_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-e15-4m1/sub-e15-4m1_ses-e15-4m1-191121_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-e15-4m2/sub-e15-4m2_ses-e15-4m2-191212_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e15-4m2/sub-e15-4m2_ses-e15-4m2-191213_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e15-4m2/sub-e15-4m2_ses-e15-4m2-191215_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e15-4m2/sub-e15-4m2_ses-e15-4m2-191216_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e15-5m1/sub-e15-5m1_ses-e15-5m1-200313-1_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e15-5m1/sub-e15-5m1_ses-e15-5m1-200313-2_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e15-5m1/sub-e15-5m1_ses-e15-5m1-200314_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-e15-9f1/sub-e15-9f1_ses-e15-9f1-200720_behavior+ecephys.nwb
-  - sub-e16-2m1/sub-e16-2m1_ses-e16-2m1-201119_behavior+ecephys.nwb
-  - sub-e16-2m1/sub-e16-2m1_ses-e16-2m1-201129_behavior+ecephys.nwb
-  - sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210201_behavior+ecephys.nwb
+  - path: sub-e15-9f1/sub-e15-9f1_ses-e15-9f1-200720_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-e16-2m1/sub-e16-2m1_ses-e16-2m1-201119_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-e16-2m1/sub-e16-2m1_ses-e16-2m1-201129_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210201_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-e16-3m2/sub-e16-3m2_ses-e16-3m2-211211-raw_ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e16-3m2/sub-e16-3m2_ses-e16-3m2-211213_behavior+ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_timeout:
   - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210312_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210315_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e13-16f1/sub-e13-16f1_ses-e13-16f1-210317_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211019-raw_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211019_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211116-raw_ecephys.nwb
-  - sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211124-raw_ecephys.nwb
+  - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211116-raw_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211124-raw_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211124_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e14-2m2/sub-e14-2m2_ses-e14-2m2-201017_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e14-2m2/sub-e14-2m2_ses-e14-2m2-201022_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201017_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201019_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200716_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200723_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200727_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200803_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e15-10m1/sub-e15-10m1_ses-e15-10m1-200809_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220117_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220118-raw_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220118_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220119-raw_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e15-9f1/sub-e15-9f1_ses-e15-9f1-200717_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-e15-9f1/sub-e15-9f1_ses-e15-9f1-200723_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-e15-9f1/sub-e15-9f1_ses-e15-9f1-200802_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e15-9f1/sub-e15-9f1_ses-e15-9f1-200809_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-200823_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-200917_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-200919_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-200920_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-200923_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-201001_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e16-1f1/sub-e16-1f1_ses-e16-1f1-201002_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-2m1/sub-e16-2m1_ses-e16-2m1-201116_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210111_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210119_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210201-raw_ecephys.nwb
+  - path: sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210201-raw_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210203-raw_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-3m1/sub-e16-3m1_ses-e16-3m1-210203_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e16-3m2/sub-e16-3m2_ses-e16-3m2-211210-raw_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-e16-3m2/sub-e16-3m2_ses-e16-3m2-211212-raw_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-e16-3m2/sub-e16-3m2_ses-e16-3m2-211212_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e16-3m2/sub-e16-3m2_ses-e16-3m2-211213-raw_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2

@@ -8,62 +8,88 @@ tests:
 - assets_nok: []
   assets_ok:
   - path: sub-BAYLORNL28/sub-BAYLORNL28_ses-20190609_ecephys+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORNL29/sub-BAYLORNL29_ses-20190609_ecephys+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORNL29/sub-BAYLORNL29_ses-20190610_ecephys+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-BAYLORNL29/sub-BAYLORNL29_ses-20190612_ecephys+ogen.nwb
+  - path: sub-BAYLORNL29/sub-BAYLORNL29_ses-20190612_ecephys+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-BAYLORNL30/sub-BAYLORNL30_ses-20191011_ecephys+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORNL33Z/sub-BAYLORNL33Z_ses-20200202_ecephys+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORNL49Z/sub-BAYLORNL49Z_ses-20200904_ecephys+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORNL54Z/sub-BAYLORNL54Z_ses-20201021_ecephys+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORZJA02/sub-BAYLORZJA02_ses-20211118_ecephys+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORZJA05/sub-BAYLORZJA05_ses-20210921_ecephys+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORZJC02/sub-BAYLORZJC02_ses-20211124_ecephys+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORZJP01/sub-BAYLORZJP01_obj-un9m5p_ecephys+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORZJP01/sub-BAYLORZJP01_ses-20230120_obj-6c0uc4_ecephys+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -72,41 +98,57 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-BAYLORNL28/sub-BAYLORNL28_ses-20190609_ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORNL29/sub-BAYLORNL29_ses-20190609_ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORNL30/sub-BAYLORNL30_ses-20191011_ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORNL49Z/sub-BAYLORNL49Z_ses-20200904_ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORZJA02/sub-BAYLORZJA02_ses-20211118_ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORZJA05/sub-BAYLORZJA05_ses-20210921_ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORZJP01/sub-BAYLORZJP01_obj-un9m5p_ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORZJP01/sub-BAYLORZJP01_ses-20230120_obj-6c0uc4_ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -114,22 +156,32 @@ tests:
   assets_ok: []
   assets_timeout:
   - path: sub-BAYLORNL29/sub-BAYLORNL29_ses-20190610_ecephys+ogen.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-BAYLORNL29/sub-BAYLORNL29_ses-20190612_ecephys+ogen.nwb
+  - path: sub-BAYLORNL29/sub-BAYLORNL29_ses-20190612_ecephys+ogen.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-BAYLORNL33Z/sub-BAYLORNL33Z_ses-20200202_ecephys+ogen.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORNL54Z/sub-BAYLORNL54Z_ses-20201021_ecephys+ogen.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORZJC02/sub-BAYLORZJC02_ses-20211124_ecephys+ogen.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

@@ -8,20 +8,44 @@ tests:
 - assets_nok: []
   assets_ok: []
   assets_timeout:
-  - sub-VR31/sub-VR31_ecephys.nwb
-  - sub-VR32/sub-VR32_ecephys.nwb
-  - sub-VR33/sub-VR33_ecephys.nwb
-  - sub-VR34/sub-VR34_ecephys.nwb
-  - sub-VR35/sub-VR35_ecephys.nwb
-  - sub-VR36/sub-VR36_ecephys.nwb
+  - path: sub-VR31/sub-VR31_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-VR32/sub-VR32_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-VR33/sub-VR33_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-VR34/sub-VR34_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-VR35/sub-VR35_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-VR36/sub-VR36_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-VR31/sub-VR31_ecephys.nwb
-  - sub-VR32/sub-VR32_ecephys.nwb
-  - sub-VR33/sub-VR33_ecephys.nwb
-  - sub-VR34/sub-VR34_ecephys.nwb
-  - sub-VR35/sub-VR35_ecephys.nwb
-  - sub-VR36/sub-VR36_ecephys.nwb
+  - path: sub-VR31/sub-VR31_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-VR32/sub-VR32_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-VR33/sub-VR33_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-VR34/sub-VR34_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-VR35/sub-VR35_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-VR36/sub-VR36_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

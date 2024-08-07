@@ -7,46 +7,70 @@ nassets: 302
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Dory/sub-Dory_ses-2020-08-31-003_ecephys.nwb
+  - path: sub-Dory/sub-Dory_ses-2020-08-31-003_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-Dory/sub-Dory_ses-2020-11-09-001_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Dory/sub-Dory_ses-2020-11-09-006_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Dory/sub-Dory_ses-2021-01-20-005_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Dory/sub-Dory_ses-2021-02-03-001_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-EPCNHP1/sub-EPCNHP1_ses-2019-07-01-006_ecephys.nwb
-  - sub-EPCNHP1/sub-EPCNHP1_ses-2019-07-15-006_ecephys.nwb
+  - path: sub-EPCNHP1/sub-EPCNHP1_ses-2019-07-01-006_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-EPCNHP1/sub-EPCNHP1_ses-2019-07-15-006_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-EPCNHP1/sub-EPCNHP1_ses-2019-09-03-002_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-EPCNHP2/sub-EPCNHP2_ses-2020-09-28-004_ecephys.nwb
+  - path: sub-EPCNHP2/sub-EPCNHP2_ses-2020-09-28-004_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-EPCNHP2/sub-EPCNHP2_ses-2020-10-12-002_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-EPCNHP2/sub-EPCNHP2_ses-2020-11-23-001_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-EPCNHP2/sub-EPCNHP2_ses-2021-02-03-002_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -54,52 +78,76 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-Dory/sub-Dory_ses-2020-08-31-003_ecephys.nwb
+  - path: sub-Dory/sub-Dory_ses-2020-08-31-003_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-Dory/sub-Dory_ses-2020-11-09-001_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Dory/sub-Dory_ses-2020-11-09-006_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Dory/sub-Dory_ses-2021-01-20-005_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Dory/sub-Dory_ses-2021-02-03-001_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-EPCNHP1/sub-EPCNHP1_ses-2019-09-03-002_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-EPCNHP2/sub-EPCNHP2_ses-2020-10-12-002_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-EPCNHP2/sub-EPCNHP2_ses-2020-11-23-001_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-EPCNHP2/sub-EPCNHP2_ses-2021-02-03-002_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
-  - sub-EPCNHP1/sub-EPCNHP1_ses-2019-07-01-006_ecephys.nwb
-  - sub-EPCNHP1/sub-EPCNHP1_ses-2019-07-15-006_ecephys.nwb
-  - sub-EPCNHP2/sub-EPCNHP2_ses-2020-09-28-004_ecephys.nwb
+  - path: sub-EPCNHP1/sub-EPCNHP1_ses-2019-07-01-006_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-EPCNHP1/sub-EPCNHP1_ses-2019-07-15-006_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-EPCNHP2/sub-EPCNHP2_ses-2020-09-28-004_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   name: matnwb_nwbRead
 untested: []
 versions:

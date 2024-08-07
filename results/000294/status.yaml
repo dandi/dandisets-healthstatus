@@ -8,12 +8,20 @@ tests:
 - assets_nok: []
   assets_ok: []
   assets_timeout:
-  - sub-3148/sub-3148_ses-20211006T112406_ecephys+icephys.nwb
-  - sub-3436/sub-3436_ses-20211011T115848_ecephys+icephys.nwb
+  - path: sub-3148/sub-3148_ses-20211006T112406_ecephys+icephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-3436/sub-3436_ses-20211011T115848_ecephys+icephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-3148/sub-3148_ses-20211006T112406_ecephys+icephys.nwb
-  - sub-3436/sub-3436_ses-20211011T115848_ecephys+icephys.nwb
+  - path: sub-3148/sub-3148_ses-20211006T112406_ecephys+icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-3436/sub-3436_ses-20211011T115848_ecephys+icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

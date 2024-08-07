@@ -8,140 +8,200 @@ tests:
 - assets_nok: []
   assets_ok:
   - path: sub-ROV40/sub-ROV40_ses-Day 1-obs_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-ROV40/sub-ROV40_ses-Day 1-retrieval_ophys.nwb
+  - path: sub-ROV40/sub-ROV40_ses-Day 1-retrieval_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-ROV40/sub-ROV40_ses-Day 2-obs_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-ROV40/sub-ROV40_ses-Day 2-retrieval_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-ROV40/sub-ROV40_ses-Day 3-obs_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-ROV40/sub-ROV40_ses-Day 3-retrieval_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-ROV41/sub-ROV41_ses-Day 1-obs_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-ROV41/sub-ROV41_ses-Day 2-obs_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-ROV41/sub-ROV41_ses-Day 2-retrieval_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-ROV41/sub-ROV41_ses-Day 3-obs_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-ROV41/sub-ROV41_ses-Day 3-retrieval_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-ROV43/sub-ROV43_ses-Day 1-obs_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-ROV49/sub-ROV49_ses-Day 1-obs_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-V110/sub-V110_ses-03032018_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-V111/sub-V111_ses-03052018_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-V111/sub-V111_ses-03062018_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-V116/sub-V116_ses-03082018_ecephys.nwb
+  - path: sub-V116/sub-V116_ses-03082018_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-V116/sub-V116_ses-03092018_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-V116/sub-V116_ses-03102018_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-V116/sub-V116_ses-03122018_ecephys.nwb
+  - path: sub-V116/sub-V116_ses-03122018_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-V118/sub-V118_ses-03182018_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-V118/sub-V118_ses-03192018_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-V118/sub-V118_ses-03212018_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-V118/sub-V118_ses-03222018_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-V85/sub-V85_ses-12102017-2_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-V85/sub-V85_ses-12102017_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   assets_timeout:
   - path: sub-ROV41/sub-ROV41_ses-Day 1-retrieval_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-ROV44/sub-ROV44_ses-Day 1-obs_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-ROV45/sub-ROV45_ses-Day 1-obs_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-V111/sub-V111_ses-03032018_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -149,82 +209,116 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-ROV40/sub-ROV40_ses-Day 1-obs_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-ROV40/sub-ROV40_ses-Day 1-retrieval_ophys.nwb
+  - path: sub-ROV40/sub-ROV40_ses-Day 1-retrieval_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-ROV40/sub-ROV40_ses-Day 2-obs_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-ROV40/sub-ROV40_ses-Day 2-retrieval_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-ROV40/sub-ROV40_ses-Day 3-retrieval_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-ROV41/sub-ROV41_ses-Day 1-obs_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-ROV41/sub-ROV41_ses-Day 2-obs_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-ROV41/sub-ROV41_ses-Day 2-retrieval_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-ROV41/sub-ROV41_ses-Day 3-obs_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-ROV41/sub-ROV41_ses-Day 3-retrieval_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-ROV43/sub-ROV43_ses-Day 1-obs_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-ROV44/sub-ROV44_ses-Day 1-obs_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-ROV45/sub-ROV45_ses-Day 1-obs_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-ROV49/sub-ROV49_ses-Day 1-obs_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-V111/sub-V111_ses-03032018_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-V118/sub-V118_ses-03192018_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-V85/sub-V85_ses-12102017-2_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -232,58 +326,84 @@ tests:
   assets_ok: []
   assets_timeout:
   - path: sub-ROV40/sub-ROV40_ses-Day 3-obs_ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-ROV41/sub-ROV41_ses-Day 1-retrieval_ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-V110/sub-V110_ses-03032018_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-V111/sub-V111_ses-03052018_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-V111/sub-V111_ses-03062018_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-V116/sub-V116_ses-03082018_ecephys.nwb
+  - path: sub-V116/sub-V116_ses-03082018_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-V116/sub-V116_ses-03092018_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-V116/sub-V116_ses-03102018_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-V116/sub-V116_ses-03122018_ecephys.nwb
+  - path: sub-V116/sub-V116_ses-03122018_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-V118/sub-V118_ses-03182018_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-V118/sub-V118_ses-03212018_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-V118/sub-V118_ses-03222018_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-V85/sub-V85_ses-12102017_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2

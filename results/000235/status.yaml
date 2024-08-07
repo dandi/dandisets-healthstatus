@@ -7,25 +7,57 @@ nassets: 8
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Fish01-GCaMP-vlgut-FBd-5dpf-RandomWave/sub-Fish01-GCaMP-vlgut-FBd-5dpf-RandomWave_ses-20210818T112556_behavior+ophys.nwb
-  - sub-Fish02-GCaMP-vlgut-FBv-5dpf-RandomWave/sub-Fish02-GCaMP-vlgut-FBv-5dpf-RandomWave_ses-20210818T173531_behavior+ophys.nwb
-  - sub-Fish13-GCaMP-vlgut-FBv-5dpf-RandomWave/sub-Fish13-GCaMP-vlgut-FBv-5dpf-RandomWave_ses-20210830T100716_behavior+ophys.nwb
-  - sub-Fish32-GCaMP-vlgut-FBv-5dpf-RandomWave/sub-Fish32-GCaMP-vlgut-FBv-5dpf-RandomWave_ses-20210920T181347_behavior+ophys.nwb
-  - sub-Fish41-GCaMP-vlgut-FBv-7dpf-RandomWave/sub-Fish41-GCaMP-vlgut-FBv-7dpf-RandomWave_ses-20210929T173736_behavior+ophys.nwb
-  - sub-Fish47-GCaMP-vlgut-FBd-7dpf-RandomWave/sub-Fish47-GCaMP-vlgut-FBd-7dpf-RandomWave_ses-20211124T174401_behavior+ophys.nwb
-  - sub-Fish58-GCaMP-vlgut-FBd-5dpf-RandomWave/sub-Fish58-GCaMP-vlgut-FBd-5dpf-RandomWave_ses-20220525T092829_behavior+ophys.nwb
+  - path: sub-Fish01-GCaMP-vlgut-FBd-5dpf-RandomWave/sub-Fish01-GCaMP-vlgut-FBd-5dpf-RandomWave_ses-20210818T112556_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Fish02-GCaMP-vlgut-FBv-5dpf-RandomWave/sub-Fish02-GCaMP-vlgut-FBv-5dpf-RandomWave_ses-20210818T173531_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Fish13-GCaMP-vlgut-FBv-5dpf-RandomWave/sub-Fish13-GCaMP-vlgut-FBv-5dpf-RandomWave_ses-20210830T100716_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Fish32-GCaMP-vlgut-FBv-5dpf-RandomWave/sub-Fish32-GCaMP-vlgut-FBv-5dpf-RandomWave_ses-20210920T181347_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Fish41-GCaMP-vlgut-FBv-7dpf-RandomWave/sub-Fish41-GCaMP-vlgut-FBv-7dpf-RandomWave_ses-20210929T173736_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Fish47-GCaMP-vlgut-FBd-7dpf-RandomWave/sub-Fish47-GCaMP-vlgut-FBd-7dpf-RandomWave_ses-20211124T174401_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Fish58-GCaMP-vlgut-FBd-5dpf-RandomWave/sub-Fish58-GCaMP-vlgut-FBd-5dpf-RandomWave_ses-20220525T092829_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout:
-  - sub-Fish31-GCaMP-vlgut-FBd-5dpf-RandomWave/sub-Fish31-GCaMP-vlgut-FBd-5dpf-RandomWave_ses-20210920T120959_behavior+ophys.nwb
+  - path: sub-Fish31-GCaMP-vlgut-FBd-5dpf-RandomWave/sub-Fish31-GCaMP-vlgut-FBd-5dpf-RandomWave_ses-20210920T120959_behavior+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-Fish01-GCaMP-vlgut-FBd-5dpf-RandomWave/sub-Fish01-GCaMP-vlgut-FBd-5dpf-RandomWave_ses-20210818T112556_behavior+ophys.nwb
-  - sub-Fish02-GCaMP-vlgut-FBv-5dpf-RandomWave/sub-Fish02-GCaMP-vlgut-FBv-5dpf-RandomWave_ses-20210818T173531_behavior+ophys.nwb
-  - sub-Fish13-GCaMP-vlgut-FBv-5dpf-RandomWave/sub-Fish13-GCaMP-vlgut-FBv-5dpf-RandomWave_ses-20210830T100716_behavior+ophys.nwb
-  - sub-Fish31-GCaMP-vlgut-FBd-5dpf-RandomWave/sub-Fish31-GCaMP-vlgut-FBd-5dpf-RandomWave_ses-20210920T120959_behavior+ophys.nwb
-  - sub-Fish32-GCaMP-vlgut-FBv-5dpf-RandomWave/sub-Fish32-GCaMP-vlgut-FBv-5dpf-RandomWave_ses-20210920T181347_behavior+ophys.nwb
-  - sub-Fish41-GCaMP-vlgut-FBv-7dpf-RandomWave/sub-Fish41-GCaMP-vlgut-FBv-7dpf-RandomWave_ses-20210929T173736_behavior+ophys.nwb
-  - sub-Fish47-GCaMP-vlgut-FBd-7dpf-RandomWave/sub-Fish47-GCaMP-vlgut-FBd-7dpf-RandomWave_ses-20211124T174401_behavior+ophys.nwb
-  - sub-Fish58-GCaMP-vlgut-FBd-5dpf-RandomWave/sub-Fish58-GCaMP-vlgut-FBd-5dpf-RandomWave_ses-20220525T092829_behavior+ophys.nwb
+  - path: sub-Fish01-GCaMP-vlgut-FBd-5dpf-RandomWave/sub-Fish01-GCaMP-vlgut-FBd-5dpf-RandomWave_ses-20210818T112556_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Fish02-GCaMP-vlgut-FBv-5dpf-RandomWave/sub-Fish02-GCaMP-vlgut-FBv-5dpf-RandomWave_ses-20210818T173531_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Fish13-GCaMP-vlgut-FBv-5dpf-RandomWave/sub-Fish13-GCaMP-vlgut-FBv-5dpf-RandomWave_ses-20210830T100716_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Fish31-GCaMP-vlgut-FBd-5dpf-RandomWave/sub-Fish31-GCaMP-vlgut-FBd-5dpf-RandomWave_ses-20210920T120959_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Fish32-GCaMP-vlgut-FBv-5dpf-RandomWave/sub-Fish32-GCaMP-vlgut-FBv-5dpf-RandomWave_ses-20210920T181347_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Fish41-GCaMP-vlgut-FBv-7dpf-RandomWave/sub-Fish41-GCaMP-vlgut-FBv-7dpf-RandomWave_ses-20210929T173736_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Fish47-GCaMP-vlgut-FBd-7dpf-RandomWave/sub-Fish47-GCaMP-vlgut-FBd-7dpf-RandomWave_ses-20211124T174401_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Fish58-GCaMP-vlgut-FBd-5dpf-RandomWave/sub-Fish58-GCaMP-vlgut-FBd-5dpf-RandomWave_ses-20220525T092829_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

@@ -8,44 +8,66 @@ tests:
 - assets_nok: []
   assets_ok:
   - path: sub-F1-3/sub-F1-3_ses-20240522.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-F2-3/sub-F2-3_ses-20240522.nwb
+  - path: sub-F2-3/sub-F2-3_ses-20240522.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-F2-4/sub-F2-4_ses-20240522.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-F2/sub-F2_ses-20240522.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-F7/sub-F7_ses-20240522.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-IS158/sub-IS158_ses-20240522.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-IS264/sub-IS264_ses-20240522.nwb
+  - path: sub-IS264/sub-IS264_ses-20240522.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-M1/sub-M1_ses-20240522.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-M2-3/sub-M2-3_ses-20240522.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-M3/sub-M3_ses-20240522.nwb
+  - path: sub-M3/sub-M3_ses-20240522.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-WT6/sub-WT6_ses-20240522.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -54,50 +76,72 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-F1-3/sub-F1-3_ses-20240522.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-F2-4/sub-F2-4_ses-20240522.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-F2/sub-F2_ses-20240522.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-F7/sub-F7_ses-20240522.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-IS158/sub-IS158_ses-20240522.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-M1/sub-M1_ses-20240522.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-M2-3/sub-M2-3_ses-20240522.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-WT6/sub-WT6_ses-20240522.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
-  - sub-F2-3/sub-F2-3_ses-20240522.nwb
-  - sub-IS264/sub-IS264_ses-20240522.nwb
-  - sub-M3/sub-M3_ses-20240522.nwb
+  - path: sub-F2-3/sub-F2-3_ses-20240522.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-IS264/sub-IS264_ses-20240522.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-M3/sub-M3_ses-20240522.nwb
+    status: timeout
+    test: matnwb_nwbRead
   name: matnwb_nwbRead
 untested: []
 versions:

@@ -7,13 +7,21 @@ nassets: 2
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-abcd/sub-abcd_icephys.nwb
+  - path: sub-abcd/sub-abcd_icephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout:
-  - sub-abcd/icephys_example.nwb
+  - path: sub-abcd/icephys_example.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-abcd/icephys_example.nwb
-  - sub-abcd/sub-abcd_icephys.nwb
+  - path: sub-abcd/icephys_example.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-abcd/sub-abcd_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

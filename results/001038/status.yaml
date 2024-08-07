@@ -8,62 +8,88 @@ tests:
 - assets_nok: []
   assets_ok:
   - path: sub-Anxa-J075/sub-Anxa-J075_ses-20220310-0004.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Anxa-J079/sub-Anxa-J079_ses-20220419-0010.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Calb-1890/sub-Calb-1890_ses-20210721-0002.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Calb-C006/sub-Calb-C006_ses-20220916-0001.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Dat-2114/sub-Dat-2114_ses-20211103-0002.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Dat-D001/sub-Dat-D001_ses-20220509-0001.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Dat-D002/sub-Dat-D002_ses-20220509-0003.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Dat-D003/sub-Dat-D003_ses-20220510-0004.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-Dat-D095/sub-Dat-D095_ses-20200721-0001.nwb
+  - path: sub-Dat-D095/sub-Dat-D095_ses-20200721-0001.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-Raldh-1846/sub-Raldh-1846_ses-20210615-0004.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Raldh-1846/sub-Raldh-1846_ses-20210621-0003.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Raldh-2076/sub-Raldh-2076_ses-20211202-0004.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Raldh-2303/sub-Raldh-2303_ses-20220405-0003.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -72,57 +98,81 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Anxa-J075/sub-Anxa-J075_ses-20220310-0004.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Anxa-J079/sub-Anxa-J079_ses-20220419-0010.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Calb-1890/sub-Calb-1890_ses-20210721-0002.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Calb-C006/sub-Calb-C006_ses-20220916-0001.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Dat-2114/sub-Dat-2114_ses-20211103-0002.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Dat-D001/sub-Dat-D001_ses-20220509-0001.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Dat-D003/sub-Dat-D003_ses-20220510-0004.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-Dat-D095/sub-Dat-D095_ses-20200721-0001.nwb
+  - path: sub-Dat-D095/sub-Dat-D095_ses-20200721-0001.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-Raldh-1846/sub-Raldh-1846_ses-20210615-0004.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Raldh-1846/sub-Raldh-1846_ses-20210621-0003.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Raldh-2076/sub-Raldh-2076_ses-20211202-0004.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Raldh-2303/sub-Raldh-2303_ses-20220405-0003.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -130,6 +180,8 @@ tests:
   assets_ok: []
   assets_timeout:
   - path: sub-Dat-D002/sub-Dat-D002_ses-20220509-0003.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

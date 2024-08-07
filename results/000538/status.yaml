@@ -8,56 +8,78 @@ tests:
 - assets_nok: []
   assets_ok:
   - path: sub-173732Voltron2JF525cell2-488/sub-173732Voltron2JF525cell2-488_ses-20230302T173732_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-180242Voltron2JF525cell3/sub-180242Voltron2JF525cell3_ses-20230302T180242_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-182405Voltron2JF525cell4t1/sub-182405Voltron2JF525cell4t1_ses-20230302T182405_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-184058Voltron2JF525cell5ref/sub-184058Voltron2JF525cell5ref_ses-20230302T184058_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-190334Voltron2JF525cell6t1/sub-190334Voltron2JF525cell6t1_ses-20230302T190334_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-193922J2Pcellt1/sub-193922J2Pcellt1_ses-20230302T193922_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-195654J2Pcell2t1hp/sub-195654J2Pcell2t1hp_ses-20230302T195654_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-195901J2Pcell2t2hp/sub-195901J2Pcell2t2hp_ses-20230302T195901_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-201125J2Pcell3t1hp/sub-201125J2Pcell3t1hp_ses-20230302T201125_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-203147J2Pcell4t1hp/sub-203147J2Pcell4t1hp_ses-20230302T203147_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-204028J2Pcell5t1hp/sub-204028J2Pcell5t1hp_ses-20230302T204028_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
@@ -66,58 +88,80 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-173732Voltron2JF525cell2-488/sub-173732Voltron2JF525cell2-488_ses-20230302T173732_image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-180242Voltron2JF525cell3/sub-180242Voltron2JF525cell3_ses-20230302T180242_image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-182405Voltron2JF525cell4t1/sub-182405Voltron2JF525cell4t1_ses-20230302T182405_image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-184058Voltron2JF525cell5ref/sub-184058Voltron2JF525cell5ref_ses-20230302T184058_image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-193922J2Pcellt1/sub-193922J2Pcellt1_ses-20230302T193922_image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-195654J2Pcell2t1hp/sub-195654J2Pcell2t1hp_ses-20230302T195654_image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-195901J2Pcell2t2hp/sub-195901J2Pcell2t2hp_ses-20230302T195901_image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-201125J2Pcell3t1hp/sub-201125J2Pcell3t1hp_ses-20230302T201125_image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok:
   - path: sub-190334Voltron2JF525cell6t1/sub-190334Voltron2JF525cell6t1_ses-20230302T190334_image.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-203147J2Pcell4t1hp/sub-203147J2Pcell4t1hp_ses-20230302T203147_image.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   assets_timeout:
   - path: sub-204028J2Pcell5t1hp/sub-204028J2Pcell5t1hp_ses-20230302T204028_image.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

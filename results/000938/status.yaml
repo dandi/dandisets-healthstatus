@@ -7,19 +7,39 @@ nassets: 5
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-cell1/sub-cell1_image.nwb
-  - sub-cell2/sub-cell2_image.nwb
-  - sub-cell3/sub-cell3_image.nwb
-  - sub-cell4/sub-cell4_image.nwb
-  - sub-cell5/sub-cell5_image.nwb
+  - path: sub-cell1/sub-cell1_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-cell2/sub-cell2_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-cell3/sub-cell3_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-cell4/sub-cell4_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-cell5/sub-cell5_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-cell1/sub-cell1_image.nwb
-  - sub-cell2/sub-cell2_image.nwb
-  - sub-cell3/sub-cell3_image.nwb
-  - sub-cell4/sub-cell4_image.nwb
-  - sub-cell5/sub-cell5_image.nwb
+  - path: sub-cell1/sub-cell1_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-cell2/sub-cell2_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-cell3/sub-cell3_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-cell4/sub-cell4_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-cell5/sub-cell5_image.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

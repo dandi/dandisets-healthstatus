@@ -7,23 +7,51 @@ nassets: 7
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Cell03/sub-Cell03_ses-session-03_image.nwb
-  - sub-Cell04/sub-Cell04_ses-session-04_image.nwb
-  - sub-Cell07/sub-Cell07_ses-session-07_image.nwb
-  - sub-Cell11/sub-Cell11_ses-session-11_image.nwb
-  - sub-Cell12/sub-Cell12_ses-session-12_image.nwb
-  - sub-Cell13/sub-Cell13_ses-session-13_image.nwb
-  - sub-Cell16/sub-Cell16_ses-session-16_image.nwb
+  - path: sub-Cell03/sub-Cell03_ses-session-03_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Cell04/sub-Cell04_ses-session-04_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Cell07/sub-Cell07_ses-session-07_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Cell11/sub-Cell11_ses-session-11_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Cell12/sub-Cell12_ses-session-12_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Cell13/sub-Cell13_ses-session-13_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Cell16/sub-Cell16_ses-session-16_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-Cell03/sub-Cell03_ses-session-03_image.nwb
-  - sub-Cell04/sub-Cell04_ses-session-04_image.nwb
-  - sub-Cell07/sub-Cell07_ses-session-07_image.nwb
-  - sub-Cell11/sub-Cell11_ses-session-11_image.nwb
-  - sub-Cell12/sub-Cell12_ses-session-12_image.nwb
-  - sub-Cell13/sub-Cell13_ses-session-13_image.nwb
-  - sub-Cell16/sub-Cell16_ses-session-16_image.nwb
+  - path: sub-Cell03/sub-Cell03_ses-session-03_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Cell04/sub-Cell04_ses-session-04_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Cell07/sub-Cell07_ses-session-07_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Cell11/sub-Cell11_ses-session-11_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Cell12/sub-Cell12_ses-session-12_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Cell13/sub-Cell13_ses-session-13_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Cell16/sub-Cell16_ses-session-16_image.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

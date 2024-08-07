@@ -7,13 +7,21 @@ nassets: 2
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Paired-pulse-trains/sub-Paired-pulse-trains_ses-Paired-pulse-trains_image.nwb
-  - sub-Single-pulse-trains/sub-Single-pulse-trains_ses-Single-pulse-trains_image.nwb
+  - path: sub-Paired-pulse-trains/sub-Paired-pulse-trains_ses-Paired-pulse-trains_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Single-pulse-trains/sub-Single-pulse-trains_ses-Single-pulse-trains_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-Paired-pulse-trains/sub-Paired-pulse-trains_ses-Paired-pulse-trains_image.nwb
-  - sub-Single-pulse-trains/sub-Single-pulse-trains_ses-Single-pulse-trains_image.nwb
+  - path: sub-Paired-pulse-trains/sub-Paired-pulse-trains_ses-Paired-pulse-trains_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Single-pulse-trains/sub-Single-pulse-trains_ses-Single-pulse-trains_image.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

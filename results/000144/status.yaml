@@ -7,13 +7,21 @@ nassets: 2
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-8675309/sub-8675309_ses-2000-01-01 00-00-00_ophys.nwb
+  - path: sub-8675309/sub-8675309_ses-2000-01-01 00-00-00_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout:
-  - sub-8675309/sub-8675309_ses-20211008T163543_ophys.nwb
+  - path: sub-8675309/sub-8675309_ses-20211008T163543_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-8675309/sub-8675309_ses-2000-01-01 00-00-00_ophys.nwb
-  - sub-8675309/sub-8675309_ses-20211008T163543_ophys.nwb
+  - path: sub-8675309/sub-8675309_ses-2000-01-01 00-00-00_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-8675309/sub-8675309_ses-20211008T163543_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

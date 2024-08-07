@@ -7,23 +7,51 @@ nassets: 11
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-BH549/sub-BH549_ses-20240331T132711_ecephys.nwb
-  - sub-BH549/sub-BH549_ses-20240331T132745_ecephys.nwb
-  - sub-BH549/sub-BH549_ses-20240402T183011_ecephys.nwb
-  - sub-BH549/sub-BH549_ses-20240402T185111_ecephys.nwb
-  - sub-BH549/sub-BH549_ses-20240402T191417_ecephys.nwb
-  - sub-BH549/sub-BH549_ses-20240402T205303_ecephys.nwb
-  - sub-BH549/sub-BH549_ses-20240402T225009_ecephys.nwb
+  - path: sub-BH549/sub-BH549_ses-20240331T132711_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-BH549/sub-BH549_ses-20240331T132745_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-BH549/sub-BH549_ses-20240402T183011_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-BH549/sub-BH549_ses-20240402T185111_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-BH549/sub-BH549_ses-20240402T191417_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-BH549/sub-BH549_ses-20240402T205303_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-BH549/sub-BH549_ses-20240402T225009_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-BH549/sub-BH549_ses-20240331T132711_ecephys.nwb
-  - sub-BH549/sub-BH549_ses-20240331T132745_ecephys.nwb
-  - sub-BH549/sub-BH549_ses-20240402T183011_ecephys.nwb
-  - sub-BH549/sub-BH549_ses-20240402T185111_ecephys.nwb
-  - sub-BH549/sub-BH549_ses-20240402T191417_ecephys.nwb
-  - sub-BH549/sub-BH549_ses-20240402T205303_ecephys.nwb
-  - sub-BH549/sub-BH549_ses-20240402T225009_ecephys.nwb
+  - path: sub-BH549/sub-BH549_ses-20240331T132711_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-BH549/sub-BH549_ses-20240331T132745_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-BH549/sub-BH549_ses-20240402T183011_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-BH549/sub-BH549_ses-20240402T185111_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-BH549/sub-BH549_ses-20240402T191417_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-BH549/sub-BH549_ses-20240402T205303_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-BH549/sub-BH549_ses-20240402T225009_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

@@ -7,13 +7,17 @@ nassets: 1
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-anm106211/sub-anm106211_behavior+icephys.nwb
+  - path: sub-anm106211/sub-anm106211_behavior+icephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok: []
   assets_ok: []
   assets_timeout:
-  - sub-anm106211/sub-anm106211_behavior+icephys.nwb
+  - path: sub-anm106211/sub-anm106211_behavior+icephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   name: matnwb_nwbRead
 untested: []
 versions:

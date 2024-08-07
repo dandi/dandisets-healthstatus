@@ -8,62 +8,88 @@ tests:
 - assets_nok: []
   assets_ok:
   - path: sub-G1-12A5B/sub-G1-12A5B_obj-ogtcqy_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G1-12A5D/sub-G1-12A5D_obj-1s2bq4s_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-G1-12A5D/sub-G1-12A5D_obj-1s9jq9q_ecephys.nwb
+  - path: sub-G1-12A5D/sub-G1-12A5D_obj-1s9jq9q_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-G1-12A62/sub-G1-12A62_obj-10zzbbq_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G1-12A62/sub-G1-12A62_obj-7ga94h_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G1-12A62/sub-G1-12A62_obj-wirgik_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G1-12A63/sub-G1-12A63_obj-sodrpm_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G2-11/sub-G2-11_obj-10f1i22_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G2-11/sub-G2-11_obj-5s40kd_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G2-11/sub-G2-11_obj-665x90_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G2-11/sub-G2-11_obj-9l6sy1_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G2-36/sub-G2-36_obj-h0tto2_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G2-39/sub-G2-39_obj-tygbkx_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -72,64 +98,90 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-G1-12A5B/sub-G1-12A5B_obj-ogtcqy_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G1-12A5D/sub-G1-12A5D_obj-1s2bq4s_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G1-12A62/sub-G1-12A62_obj-wirgik_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G1-12A63/sub-G1-12A63_obj-sodrpm_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G2-11/sub-G2-11_obj-5s40kd_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G2-11/sub-G2-11_obj-665x90_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G2-11/sub-G2-11_obj-9l6sy1_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G2-36/sub-G2-36_obj-h0tto2_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G2-39/sub-G2-39_obj-tygbkx_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok:
-  - sub-G1-12A5D/sub-G1-12A5D_obj-1s9jq9q_ecephys.nwb
+  - path: sub-G1-12A5D/sub-G1-12A5D_obj-1s9jq9q_ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
   assets_timeout:
   - path: sub-G1-12A62/sub-G1-12A62_obj-10zzbbq_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G1-12A62/sub-G1-12A62_obj-7ga94h_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-G2-11/sub-G2-11_obj-10f1i22_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

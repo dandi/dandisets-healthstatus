@@ -8,62 +8,88 @@ tests:
 - assets_nok: []
   assets_ok:
   - path: sub-10/sub-10_ses-reinforcement-592976d7-ed94-422b-85f8-7c701478f869_behavior+image+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-1529/sub-1529_ses-reinforcement-b1a6e2b5-b011-4d0c-8c58-2a2213837fbc_behavior+image+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-197/sub-197_ses-reinforcement-f4c3ac2a-d225-4872-af0c-14eb77c04741_behavior+image+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-209/sub-209_ses-reinforcement-9001154c-318b-4963-8aba-3b14f410ba59_behavior+image+ogen.nwb
+  - path: sub-209/sub-209_ses-reinforcement-9001154c-318b-4963-8aba-3b14f410ba59_behavior+image+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-3440/sub-3440_ses-reinforcement-34e1780c-47ff-458f-ad23-3ef5ccb1e822_behavior+image+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-3441/sub-3441_ses-reinforcement-2b8828f4-db5d-483c-9393-ddc2bf93befe_behavior+image+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-3442/sub-3442_ses-reinforcement-03c2e932-c8de-4234-babf-831d8894528c_behavior+image+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-3442/sub-3442_ses-reinforcement-a682905a-a4af-4a91-856f-53477e10e7fe_behavior+image+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-dlight-chrimson-9/sub-dlight-chrimson-9_ses-reinforcement-photometry-d8946385-6e18-41be-9488-036d0d7a69a0_behavior+image+ogen+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-dls-ai32jr-4/sub-dls-ai32jr-4_ses-velocity-modulation-c4ef84ca-694b-43fd-bac9-6a7e58da227a_behavior+image+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-dls-dlight-7/sub-dls-dlight-7_ses-photometry-9fa29de1-f06c-4ce5-99be-bff315e568a0_behavior+image+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-dms-dlight-11/sub-dms-dlight-11_ses-photometry-1727faac-16d2-4639-8867-8867d222797f_behavior+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-dms-dlight-11/sub-dms-dlight-11_ses-photometry-a5d1d93a-6f50-4f9a-aa4f-2d3f7a3ee5c9_behavior+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -72,64 +98,90 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-10/sub-10_ses-reinforcement-592976d7-ed94-422b-85f8-7c701478f869_behavior+image+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-1529/sub-1529_ses-reinforcement-b1a6e2b5-b011-4d0c-8c58-2a2213837fbc_behavior+image+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-197/sub-197_ses-reinforcement-f4c3ac2a-d225-4872-af0c-14eb77c04741_behavior+image+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-3441/sub-3441_ses-reinforcement-2b8828f4-db5d-483c-9393-ddc2bf93befe_behavior+image+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-dlight-chrimson-9/sub-dlight-chrimson-9_ses-reinforcement-photometry-d8946385-6e18-41be-9488-036d0d7a69a0_behavior+image+ogen+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-dls-ai32jr-4/sub-dls-ai32jr-4_ses-velocity-modulation-c4ef84ca-694b-43fd-bac9-6a7e58da227a_behavior+image+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-dms-dlight-11/sub-dms-dlight-11_ses-photometry-1727faac-16d2-4639-8867-8867d222797f_behavior+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-dms-dlight-11/sub-dms-dlight-11_ses-photometry-a5d1d93a-6f50-4f9a-aa4f-2d3f7a3ee5c9_behavior+image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok:
-  - sub-209/sub-209_ses-reinforcement-9001154c-318b-4963-8aba-3b14f410ba59_behavior+image+ogen.nwb
+  - path: sub-209/sub-209_ses-reinforcement-9001154c-318b-4963-8aba-3b14f410ba59_behavior+image+ogen.nwb
+    status: pass
+    test: matnwb_nwbRead
   assets_timeout:
   - path: sub-3440/sub-3440_ses-reinforcement-34e1780c-47ff-458f-ad23-3ef5ccb1e822_behavior+image+ogen.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-3442/sub-3442_ses-reinforcement-03c2e932-c8de-4234-babf-831d8894528c_behavior+image+ogen.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-3442/sub-3442_ses-reinforcement-a682905a-a4af-4a91-856f-53477e10e7fe_behavior+image+ogen.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-dls-dlight-7/sub-dls-dlight-7_ses-photometry-9fa29de1-f06c-4ce5-99be-bff315e568a0_behavior+image+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

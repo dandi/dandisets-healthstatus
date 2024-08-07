@@ -7,13 +7,21 @@ nassets: 2
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-525/sub-525_ecephys.nwb
-  - sub-525/sub-525_ses-20230412T102003.nwb
+  - path: sub-525/sub-525_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-525/sub-525_ses-20230412T102003.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-525/sub-525_ecephys.nwb
-  - sub-525/sub-525_ses-20230412T102003.nwb
+  - path: sub-525/sub-525_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-525/sub-525_ses-20230412T102003.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

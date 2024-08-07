@@ -7,59 +7,83 @@ nassets: 33
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-TS112-0/sub-TS112-0_ses-TS112-0_behavior+ecephys.nwb
+  - path: sub-TS112-0/sub-TS112-0_ses-TS112-0_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-TS89-1/sub-TS89-1_ses-TS89-1_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_timeout:
   - path: sub-TS110-3/sub-TS110-3_ses-TS110-3_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TS111-1/sub-TS111-1_ses-TS111-1_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TS111-2/sub-TS111-2_ses-TS111-2_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TS114-3/sub-TS114-3_ses-TS114-3_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TS115-2/sub-TS115-2_ses-TS115-2_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TS116-0/sub-TS116-0_ses-TS116-0_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TS116-1/sub-TS116-1_ses-TS116-1_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TS117-1/sub-TS117-1_ses-TS117-1_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TS86-1/sub-TS86-1_ses-TS86-1_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TS89-2/sub-TS89-2_ses-TS89-2_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -67,42 +91,60 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-TS110-3/sub-TS110-3_ses-TS110-3_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TS111-1/sub-TS111-1_ses-TS111-1_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TS111-2/sub-TS111-2_ses-TS111-2_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-TS112-0/sub-TS112-0_ses-TS112-0_behavior+ecephys.nwb
+  - path: sub-TS112-0/sub-TS112-0_ses-TS112-0_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-TS114-3/sub-TS114-3_ses-TS114-3_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TS116-0/sub-TS116-0_ses-TS116-0_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TS117-1/sub-TS117-1_ses-TS117-1_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TS86-1/sub-TS86-1_ses-TS86-1_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TS89-2/sub-TS89-2_ses-TS89-2_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -110,16 +152,22 @@ tests:
   assets_ok: []
   assets_timeout:
   - path: sub-TS115-2/sub-TS115-2_ses-TS115-2_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TS116-1/sub-TS116-1_ses-TS116-1_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TS89-1/sub-TS89-1_ses-TS89-1_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

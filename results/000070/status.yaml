@@ -8,48 +8,68 @@ tests:
 - assets_nok: []
   assets_ok:
   - path: sub-Jenkins/sub-Jenkins_ses-20090912_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Jenkins/sub-Jenkins_ses-20090916_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Jenkins/sub-Jenkins_ses-20090918_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Jenkins/sub-Jenkins_ses-20090923_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-Nitschke/sub-Nitschke_ses-20090812_behavior+ecephys.nwb
+  - path: sub-Nitschke/sub-Nitschke_ses-20090812_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-Nitschke/sub-Nitschke_ses-20090819_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Nitschke/sub-Nitschke_ses-20090922_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_timeout:
   - path: sub-Nitschke/sub-Nitschke_ses-20090910_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Nitschke/sub-Nitschke_ses-20090920_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Nitschke/sub-Nitschke_ses-20100923_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -57,49 +77,69 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Jenkins/sub-Jenkins_ses-20090912_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Jenkins/sub-Jenkins_ses-20090916_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Jenkins/sub-Jenkins_ses-20090918_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Jenkins/sub-Jenkins_ses-20090923_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Nitschke/sub-Nitschke_ses-20090819_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Nitschke/sub-Nitschke_ses-20090920_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Nitschke/sub-Nitschke_ses-20090922_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Nitschke/sub-Nitschke_ses-20100923_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
-  - sub-Nitschke/sub-Nitschke_ses-20090812_behavior+ecephys.nwb
+  - path: sub-Nitschke/sub-Nitschke_ses-20090812_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-Nitschke/sub-Nitschke_ses-20090910_behavior+ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

@@ -7,1379 +7,2611 @@ nassets: 308
 tests:
 - assets_nok:
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-06-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_ok:
-  - sub-10/sub-10_ses-Mouse-10-widefield-retinotopy-and-window-vessel_ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-09-21-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-09-22-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-Mouse-10-widefield-retinotopy-and-window-vessel_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-09-21-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-09-22-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-09-23-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-09-24-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-09-24-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-09-25-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-09-26-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-09-26-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-09-28-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-09-29-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-09-29-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-09-30-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-01-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-02-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-01-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-02-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-03-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-04-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-04-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-05-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-06-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-07-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-08-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-06-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-07-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-08-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-09-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-10-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-11-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-12-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-13-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-15-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-11-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-12-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-13-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-15-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-16-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-17-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-18-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-19-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-22-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-23-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-24-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-25-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-18-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-19-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-22-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-23-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-24-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-25-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-26-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-27-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-28-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-29-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-30-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-31-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-27-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-28-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-29-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-30-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-31-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-01-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-02-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-03-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-04-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-05-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-03-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-04-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-05-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-06-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-07-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-08-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-09-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-10-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-12-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-13-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-14-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-15-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-Mouse-3-widefield-retinotopy-and-window-vessel_ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-04-27-area-AM-L23-single-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-04-28-area-visA-L23-single-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-04-29-area-RSC-L23-single-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-01-area-RSC-L5-single-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-02-area-MM-L23-single-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-03-area-PM-L23-single-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-04-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-08-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-09-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-10-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-12-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-13-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-14-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-15-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-3/sub-3_ses-Mouse-3-widefield-retinotopy-and-window-vessel_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-04-27-area-AM-L23-single-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-04-28-area-visA-L23-single-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-04-29-area-RSC-L23-single-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-01-area-RSC-L5-single-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-02-area-MM-L23-single-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-03-area-PM-L23-single-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-04-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-05-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-07-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-08-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-08-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-09-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-10-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-11-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-10-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-11-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-12-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-13-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-13-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-14-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-15-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-15-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-16-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-17-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-18-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-21-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-22-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-23-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-Mouse-4-widefield-retinotopy-and-window-vessel_ophys.nwb
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-17-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-18-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-21-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-22-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-23-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-4/sub-4_ses-Mouse-4-widefield-retinotopy-and-window-vessel_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-13-area-V1-L23-single-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-15-area-visA-L23-single-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-16-area-MM-L23-single-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-18-area-AM-L23-single-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-05-21-area-RSC-L23-single-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-05-22-area-RSC-L23-single-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-05-23-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-05-24-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-21-area-RSC-L23-single-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-22-area-RSC-L23-single-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-23-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-24-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-25-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-26-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-28-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-05-29-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-05-30-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-29-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-30-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-31-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-01-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-02-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-05-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-06-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-07-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-08-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-09-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-10-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-13-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-15-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-19-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-20-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-01-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-02-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-05-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-06-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-07-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-08-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-09-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-10-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-13-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-15-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-19-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-20-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-21-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-22-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-22-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-23-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-24-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-5/sub-5_ses-Mouse-5-widefield-retinotopy-and-window-vessel_ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-06-13-area-V1-L23-single-plane-imaging_behavior+ophys.nwb
+  - path: sub-5/sub-5_ses-Mouse-5-widefield-retinotopy-and-window-vessel_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-13-area-V1-L23-single-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-15-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-06-16-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-06-19-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-06-20-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-16-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-19-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-20-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-21-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-06-22-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-06-23-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-22-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-23-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-24-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-06-27-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-27-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-28-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-29-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-06-30-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-01-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-30-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-01-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-03-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-04-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-05-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-06-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-04-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-05-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-06-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-07-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-09-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-10-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-11-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-11-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-12-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-13-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-14-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-15-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-16-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-13-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-14-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-15-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-16-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-17-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-18-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-19-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-20-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-21-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-Mouse-6-widefield-retinotopy-and-window-vessel_ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-06-27-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-06-28-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-06-29-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-20-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-21-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-6/sub-6_ses-Mouse-6-widefield-retinotopy-and-window-vessel_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-06-27-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-06-28-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-06-29-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-06-30-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-01-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-03-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-03-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-07-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-10-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-11-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-10-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-11-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-12-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-13-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-14-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-16-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-17-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-13-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-14-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-16-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-17-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-18-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-19-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-20-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-19-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-20-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-21-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-24-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-25-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-26-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-27-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-28-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-25-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-26-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-27-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-28-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-31-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-01-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-02-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-03-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-01-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-02-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-03-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-04-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-06-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-07-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-08-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-09-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-10-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-12-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-12-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-14-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-15-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-15-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-17-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-18-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-19-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-20-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-21-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-18-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-19-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-20-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-21-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-22-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-23-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-24-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-25-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-31-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-25-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-31-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-7/sub-7_ses-Mouse-7-widefield-retinotopy-and-window-vessel_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-14-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-14-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-16-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-17-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-18-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-19-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-17-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-18-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-19-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-20-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-21-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-24-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-25-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-26-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-27-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-28-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-31-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-01-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-02-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-24-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-25-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-26-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-27-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-28-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-31-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-01-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-02-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-06-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-07-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-07-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-08-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-09-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-10-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-11-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-12-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-14-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-09-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-10-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-11-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-12-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-14-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-15-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-16-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-17-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-18-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-19-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-20-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-21-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-22-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-16-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-17-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-18-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-19-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-20-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-21-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-22-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-23-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-24-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-25-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-30-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-Mouse-8-widefield-retinotopy-and-window-vessel_ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-07-25-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-07-26-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-07-27-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-07-28-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-07-31-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-01-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-02-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-24-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-25-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-30-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-Mouse-8-widefield-retinotopy-and-window-vessel_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-07-25-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-07-26-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-07-27-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-07-28-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-07-31-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-01-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-02-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-03-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-04-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-07-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-08-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-09-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-07-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-08-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-09-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-10-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-11-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-12-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-11-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-12-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-14-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-15-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-16-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-17-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-15-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-16-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-17-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-18-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-19-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-19-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-20-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-21-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-22-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-23-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-24-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-25-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-30-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-31-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-21-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-22-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-23-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-24-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-25-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-30-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-31-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-04-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-09-05-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-05-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-06-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-09-07-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-09-08-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-07-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-08-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-10-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-11-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-12-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-09-13-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-09-14-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-09-15-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-09-16-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-Mouse-9-widefield-retinotopy-and-window-vessel_ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-07-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-08-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-09-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-13-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-14-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-15-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-16-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-Mouse-9-widefield-retinotopy-and-window-vessel_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-07-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-08-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-09-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-10-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-11-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-11-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-12-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-14-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-15-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-16-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-17-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-18-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-19-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-20-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-21-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-15-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-16-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-17-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-18-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-19-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-20-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-21-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-22-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-23-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-24-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-23-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-24-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-25-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-30-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-30-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-31-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-01-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-04-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-05-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-06-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-07-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-04-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-05-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-06-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-07-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-08-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-10-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-11-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-10-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-11-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-12-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-13-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-14-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-15-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-16-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-18-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-19-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-20-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-21-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-22-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-23-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-13-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-14-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-15-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-16-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-18-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-19-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-20-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-21-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-22-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-23-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-24-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-25-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-25-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-09-21-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-09-24-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-09-26-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-02-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-09-21-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-09-24-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-09-26-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-02-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-05-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-07-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-07-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-09-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-12-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-15-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-18-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-23-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-24-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-27-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-29-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-30-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-31-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-08-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-10-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-14-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-15-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-04-28-area-visA-L23-single-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-12-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-15-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-18-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-23-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-24-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-27-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-29-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-30-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-31-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-08-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-10-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-14-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-15-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-04-28-area-visA-L23-single-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-05-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-11-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-17-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-21-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-22-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-05-23-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-11-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-17-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-21-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-22-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-23-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-28-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-05-30-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-01-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-06-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-15-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-19-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-06-13-area-V1-L23-single-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-06-19-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-30-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-01-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-06-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-15-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-19-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-13-area-V1-L23-single-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-19-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-24-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-04-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-06-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-04-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-06-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-10-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-11-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-14-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-Mouse-6-widefield-retinotopy-and-window-vessel_ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-06-27-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-11-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-19-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-20-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-25-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-27-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-28-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-11-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-14-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-6/sub-6_ses-Mouse-6-widefield-retinotopy-and-window-vessel_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-06-27-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-11-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-19-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-20-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-25-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-27-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-28-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-04-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-17-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-18-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-18-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-23-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-14-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-14-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-16-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-26-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-09-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-10-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-12-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-16-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-20-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-07-28-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-26-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-09-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-10-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-12-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-16-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-20-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-07-28-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-06-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-07-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-09-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-07-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-09-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-18-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-06-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-09-08-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-08-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-11-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-09-14-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-11-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-17-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-21-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-14-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-11-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-17-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-21-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-25-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-01-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-05-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-14-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-15-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-18-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-19-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-05-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-14-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-15-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-18-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-19-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok:
-  - sub-10/sub-10_ses-Mouse-10-widefield-retinotopy-and-window-vessel_ophys.nwb
-  - sub-3/sub-3_ses-Mouse-3-widefield-retinotopy-and-window-vessel_ophys.nwb
-  - sub-4/sub-4_ses-Mouse-4-widefield-retinotopy-and-window-vessel_ophys.nwb
-  - sub-5/sub-5_ses-Mouse-5-widefield-retinotopy-and-window-vessel_ophys.nwb
+  - path: sub-10/sub-10_ses-Mouse-10-widefield-retinotopy-and-window-vessel_ophys.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-3/sub-3_ses-Mouse-3-widefield-retinotopy-and-window-vessel_ophys.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-4/sub-4_ses-Mouse-4-widefield-retinotopy-and-window-vessel_ophys.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-5/sub-5_ses-Mouse-5-widefield-retinotopy-and-window-vessel_ophys.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-7/sub-7_ses-Mouse-7-widefield-retinotopy-and-window-vessel_ophys.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_timeout:
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-09-22-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-09-22-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-09-23-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-09-25-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-09-28-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-09-29-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-09-29-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-09-30-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-01-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-01-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-03-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-04-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-06-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-08-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-04-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-06-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-08-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-10-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-11-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-13-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-11-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-13-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-16-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-17-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-19-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-22-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-25-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-19-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-22-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-25-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-26-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-10-28-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-28-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-01-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-02-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-03-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-04-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-05-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-03-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-04-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-05-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-06-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-07-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-09-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-12-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-10/sub-10_ses-mouse-10-session-date-2017-11-13-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-04-27-area-AM-L23-single-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-04-29-area-RSC-L23-single-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-01-area-RSC-L5-single-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-02-area-MM-L23-single-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-03-area-PM-L23-single-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-04-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-09-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-12-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-10/sub-10_ses-mouse-10-session-date-2017-11-13-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-04-27-area-AM-L23-single-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-04-29-area-RSC-L23-single-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-01-area-RSC-L5-single-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-02-area-MM-L23-single-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-03-area-PM-L23-single-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-04-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-07-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-08-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-08-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-09-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-10-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-10-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-12-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-13-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-13-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-14-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-15-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-15-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-16-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-18-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-3/sub-3_ses-mouse-3-session-date-2017-05-23-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-18-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-3/sub-3_ses-mouse-3-session-date-2017-05-23-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-13-area-V1-L23-single-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-15-area-visA-L23-single-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-16-area-MM-L23-single-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-18-area-AM-L23-single-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-05-21-area-RSC-L23-single-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-05-22-area-RSC-L23-single-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-05-24-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-21-area-RSC-L23-single-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-22-area-RSC-L23-single-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-24-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-25-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-26-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-05-29-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-29-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-31-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-02-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-05-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-07-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-08-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-09-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-10-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-13-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-20-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-02-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-05-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-07-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-08-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-09-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-10-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-13-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-20-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-21-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-4/sub-4_ses-mouse-4-session-date-2017-06-22-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-22-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-23-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-06-24-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-15-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-06-16-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-06-20-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-16-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-20-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-21-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-06-22-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-06-23-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-06-27-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-22-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-23-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-27-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-28-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-29-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-06-30-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-01-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-06-30-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-01-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-03-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-05-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-05-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-07-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-09-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-12-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-13-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-15-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-16-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-13-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-15-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-16-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-17-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-18-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-19-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-20-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-5/sub-5_ses-mouse-5-session-date-2017-07-21-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-06-28-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-06-29-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-20-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-5/sub-5_ses-mouse-5-session-date-2017-07-21-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-06-28-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-06-29-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-06-30-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-01-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-03-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-03-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-07-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-10-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-10-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-12-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-13-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-14-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-16-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-17-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-13-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-14-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-16-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-17-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-18-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-21-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-24-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-07-26-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-26-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-07-31-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-01-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-02-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-03-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-01-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-02-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-03-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-06-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-07-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-08-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-09-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-10-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-12-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-12-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-14-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-15-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-19-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-20-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-21-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-15-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-19-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-20-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-21-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-22-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-24-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-25-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-6/sub-6_ses-mouse-6-session-date-2017-08-31-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-17-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-18-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-19-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-25-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-6/sub-6_ses-mouse-6-session-date-2017-08-31-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-17-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-18-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-19-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-20-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-21-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-24-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-25-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-27-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-28-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-07-31-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-01-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-02-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-24-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-25-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-27-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-28-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-07-31-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-01-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-02-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-06-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-07-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-07-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-08-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-11-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-14-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-11-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-14-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-15-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-17-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-18-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-19-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-21-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-22-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-17-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-18-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-19-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-21-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-22-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-23-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-24-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-25-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-7/sub-7_ses-mouse-7-session-date-2017-08-30-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-Mouse-8-widefield-retinotopy-and-window-vessel_ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-07-25-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-07-26-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-07-27-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-07-31-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-01-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-02-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-24-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-25-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-7/sub-7_ses-mouse-7-session-date-2017-08-30-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-Mouse-8-widefield-retinotopy-and-window-vessel_ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-07-25-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-07-26-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-07-27-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-07-31-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-01-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-02-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-03-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-04-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-08-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-08-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-10-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-11-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-12-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-11-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-12-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-14-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-15-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-16-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-17-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-19-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-15-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-16-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-17-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-19-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-20-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-21-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-22-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-23-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-24-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-25-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-30-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-08-31-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-21-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-22-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-23-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-24-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-25-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-30-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-08-31-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-04-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-09-05-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-09-07-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-05-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-07-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-10-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-12-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-09-13-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-09-15-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-8/sub-8_ses-mouse-8-session-date-2017-09-16-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-Mouse-9-widefield-retinotopy-and-window-vessel_ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-07-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-08-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-09-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-13-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-15-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-16-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-Mouse-9-widefield-retinotopy-and-window-vessel_ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-07-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-08-area-RSC-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-09-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-10-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-12-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-14-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-15-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-16-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-18-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-19-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-20-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-15-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-16-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-18-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-19-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-20-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-22-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-23-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-24-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-08-30-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-23-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-24-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-30-area-AM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-31-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-04-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-06-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-07-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-04-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-06-area-AM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-07-area-PM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-08-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-10-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-11-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-10-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-11-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-12-area-MM-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-13-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-16-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-20-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-21-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-22-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-23-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-13-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-16-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-20-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-21-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-22-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-23-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-24-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-9/sub-9_ses-mouse-9-session-date-2017-09-25-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+  - path: sub-9/sub-9_ses-mouse-9-session-date-2017-09-25-area-visA-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   name: matnwb_nwbRead
 untested: []
 versions:

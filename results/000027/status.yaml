@@ -7,11 +7,15 @@ nassets: 1
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-RAT123/sub-RAT123.nwb
+  - path: sub-RAT123/sub-RAT123.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-RAT123/sub-RAT123.nwb
+  - path: sub-RAT123/sub-RAT123.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

@@ -7,620 +7,1128 @@ nassets: 254
 tests:
 - assets_nok:
   - path: sub-176/sub-176_ses-20201001.nwb
+    status: fail
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_ok:
-  - sub-176/sub-176_ses-20200921.nwb
-  - sub-176/sub-176_ses-20200923.nwb
-  - sub-176/sub-176_ses-20200924.nwb
+  - path: sub-176/sub-176_ses-20200921.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-176/sub-176_ses-20200923.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-176/sub-176_ses-20200924.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-176/sub-176_ses-20200925.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-176/sub-176_ses-20200929.nwb
+  - path: sub-176/sub-176_ses-20200929.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-176/sub-176_ses-20201005.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-176/sub-176_ses-20201006.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-176/sub-176_ses-20201014.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-176/sub-176_ses-20201015.nwb
+  - path: sub-176/sub-176_ses-20201015.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-176/sub-176_ses-20201019.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-176/sub-176_ses-20201021.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-176/sub-176_ses-20201026.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-176/sub-176_ses-20201027.nwb
-  - sub-176/sub-176_ses-20201030.nwb
-  - sub-178/sub-178.nwb
+  - path: sub-176/sub-176_ses-20201027.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-176/sub-176_ses-20201030.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-178/sub-178.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-178/sub-178_ses-20200921.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-178/sub-178_ses-20200923.nwb
-  - sub-178/sub-178_ses-20200924.nwb
-  - sub-178/sub-178_ses-20200925.nwb
-  - sub-178/sub-178_ses-20200929.nwb
+  - path: sub-178/sub-178_ses-20200923.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-178/sub-178_ses-20200924.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-178/sub-178_ses-20200925.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-178/sub-178_ses-20200929.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-178/sub-178_ses-20201001.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-178/sub-178_ses-20201005.nwb
+  - path: sub-178/sub-178_ses-20201005.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-178/sub-178_ses-20201006.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-178/sub-178_ses-20201009.nwb
-  - sub-178/sub-178_ses-20201014.nwb
-  - sub-178/sub-178_ses-20201015.nwb
-  - sub-178/sub-178_ses-20201019.nwb
-  - sub-178/sub-178_ses-20201021.nwb
-  - sub-178/sub-178_ses-20201026.nwb
+  - path: sub-178/sub-178_ses-20201009.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-178/sub-178_ses-20201014.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-178/sub-178_ses-20201015.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-178/sub-178_ses-20201019.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-178/sub-178_ses-20201021.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-178/sub-178_ses-20201026.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-178/sub-178_ses-20201027.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-178/sub-178_ses-20201030.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-178/sub-178_ses-20210209.nwb
-  - sub-178/sub-178_ses-20210305.nwb
-  - sub-178/sub-178_ses-20210309.nwb
+  - path: sub-178/sub-178_ses-20210209.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-178/sub-178_ses-20210305.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-178/sub-178_ses-20210309.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-178/sub-178_ses-20210316.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-179/sub-179_ses-20200921.nwb
+  - path: sub-179/sub-179_ses-20200921.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-179/sub-179_ses-20200923.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-179/sub-179_ses-20200924.nwb
+  - path: sub-179/sub-179_ses-20200924.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-179/sub-179_ses-20200925.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-179/sub-179_ses-20200929.nwb
+  - path: sub-179/sub-179_ses-20200929.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-179/sub-179_ses-20200930.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-179/sub-179_ses-20201001.nwb
+  - path: sub-179/sub-179_ses-20201001.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-179/sub-179_ses-20201002.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-179/sub-179_ses-20201005.nwb
-  - sub-179/sub-179_ses-20201006.nwb
+  - path: sub-179/sub-179_ses-20201005.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-179/sub-179_ses-20201006.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-179/sub-179_ses-20201008.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-179/sub-179_ses-20201009.nwb
-  - sub-179/sub-179_ses-20201012.nwb
+  - path: sub-179/sub-179_ses-20201009.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-179/sub-179_ses-20201012.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-179/sub-179_ses-20201014.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-179/sub-179_ses-20201015.nwb
+  - path: sub-179/sub-179_ses-20201015.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-179/sub-179_ses-20201019.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-179/sub-179_ses-20201021.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-179/sub-179_ses-20201026.nwb
-  - sub-179/sub-179_ses-20201027.nwb
-  - sub-179/sub-179_ses-20201030.nwb
-  - sub-180/sub-180_ses-20200921.nwb
+  - path: sub-179/sub-179_ses-20201026.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-179/sub-179_ses-20201027.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-179/sub-179_ses-20201030.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-180/sub-180_ses-20200921.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-180/sub-180_ses-20200923.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-180/sub-180_ses-20200924.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-180/sub-180_ses-20200925.nwb
-  - sub-180/sub-180_ses-20200929.nwb
-  - sub-180/sub-180_ses-20201001.nwb
-  - sub-180/sub-180_ses-20201002.nwb
-  - sub-180/sub-180_ses-20201005.nwb
+  - path: sub-180/sub-180_ses-20200925.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-180/sub-180_ses-20200929.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-180/sub-180_ses-20201001.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-180/sub-180_ses-20201002.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-180/sub-180_ses-20201005.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-180/sub-180_ses-20201006.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-180/sub-180_ses-20201009.nwb
-  - sub-180/sub-180_ses-20201014.nwb
-  - sub-180/sub-180_ses-20201015.nwb
+  - path: sub-180/sub-180_ses-20201009.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-180/sub-180_ses-20201014.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-180/sub-180_ses-20201015.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-180/sub-180_ses-20201019.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-180/sub-180_ses-20201021.nwb
-  - sub-180/sub-180_ses-20201026.nwb
-  - sub-180/sub-180_ses-20201027.nwb
-  - sub-180/sub-180_ses-20201030.nwb
+  - path: sub-180/sub-180_ses-20201021.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-180/sub-180_ses-20201026.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-180/sub-180_ses-20201027.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-180/sub-180_ses-20201030.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-181/sub-181_ses-20200921.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-181/sub-181_ses-20200923.nwb
-  - sub-181/sub-181_ses-20200924.nwb
-  - sub-181/sub-181_ses-20200925.nwb
-  - sub-181/sub-181_ses-20200930.nwb
-  - sub-181/sub-181_ses-20201001.nwb
-  - sub-181/sub-181_ses-20201002.nwb
-  - sub-181/sub-181_ses-20201005.nwb
+  - path: sub-181/sub-181_ses-20200923.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-181/sub-181_ses-20200924.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-181/sub-181_ses-20200925.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-181/sub-181_ses-20200930.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-181/sub-181_ses-20201001.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-181/sub-181_ses-20201002.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-181/sub-181_ses-20201005.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-181/sub-181_ses-20201006.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-181/sub-181_ses-20201008.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-181/sub-181_ses-20201009.nwb
+  - path: sub-181/sub-181_ses-20201009.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-181/sub-181_ses-20201014.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-181/sub-181_ses-20201015.nwb
-  - sub-181/sub-181_ses-20201019.nwb
+  - path: sub-181/sub-181_ses-20201015.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-181/sub-181_ses-20201019.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-181/sub-181_ses-20201021.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-181/sub-181_ses-20201027.nwb
+  - path: sub-181/sub-181_ses-20201027.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-181/sub-181_ses-20201030.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-182/sub-182_ses-20200923.nwb
-  - sub-182/sub-182_ses-20200924.nwb
+  - path: sub-182/sub-182_ses-20200923.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-182/sub-182_ses-20200924.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-182/sub-182_ses-20200925.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-182/sub-182_ses-20200929.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-182/sub-182_ses-20200930.nwb
-  - sub-182/sub-182_ses-20201001.nwb
+  - path: sub-182/sub-182_ses-20200930.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-182/sub-182_ses-20201001.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-182/sub-182_ses-20201002.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-182/sub-182_ses-20201006.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-182/sub-182_ses-20201007.nwb
-  - sub-182/sub-182_ses-20201012.nwb
-  - sub-182/sub-182_ses-20201014.nwb
+  - path: sub-182/sub-182_ses-20201007.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-182/sub-182_ses-20201012.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-182/sub-182_ses-20201014.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-182/sub-182_ses-20201016.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-182/sub-182_ses-20201019.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-182/sub-182_ses-20201021.nwb
-  - sub-182/sub-182_ses-20201026.nwb
+  - path: sub-182/sub-182_ses-20201021.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-182/sub-182_ses-20201026.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-182/sub-182_ses-20201027.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-182/sub-182_ses-20201030.nwb
-  - sub-184/sub-184_ses-20200923.nwb
+  - path: sub-182/sub-182_ses-20201030.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-184/sub-184_ses-20200923.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-184/sub-184_ses-20200924.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-184/sub-184_ses-20200925.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-184/sub-184_ses-20200929.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-184/sub-184_ses-20200930.nwb
+  - path: sub-184/sub-184_ses-20200930.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-184/sub-184_ses-20201001.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-184/sub-184_ses-20201002.nwb
-  - sub-184/sub-184_ses-20201006.nwb
+  - path: sub-184/sub-184_ses-20201002.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-184/sub-184_ses-20201006.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-184/sub-184_ses-20201007.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-184/sub-184_ses-20201014.nwb
+  - path: sub-184/sub-184_ses-20201014.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-184/sub-184_ses-20201016.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-184/sub-184_ses-20201019.nwb
-  - sub-184/sub-184_ses-20201021.nwb
-  - sub-184/sub-184_ses-20201026.nwb
-  - sub-184/sub-184_ses-20201027.nwb
-  - sub-184/sub-184_ses-20201030.nwb
-  - sub-185/sub-185_ses-20200923.nwb
-  - sub-185/sub-185_ses-20200924.nwb
+  - path: sub-184/sub-184_ses-20201019.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-184/sub-184_ses-20201021.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-184/sub-184_ses-20201026.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-184/sub-184_ses-20201027.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-184/sub-184_ses-20201030.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-185/sub-185_ses-20200923.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-185/sub-185_ses-20200924.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-185/sub-185_ses-20200925.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-185/sub-185_ses-20200929.nwb
+  - path: sub-185/sub-185_ses-20200929.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-185/sub-185_ses-20200930.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-185/sub-185_ses-20201001.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-185/sub-185_ses-20201002.nwb
-  - sub-185/sub-185_ses-20201006.nwb
+  - path: sub-185/sub-185_ses-20201002.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-185/sub-185_ses-20201006.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-185/sub-185_ses-20201007.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-185/sub-185_ses-20201012.nwb
+  - path: sub-185/sub-185_ses-20201012.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-185/sub-185_ses-20201014.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-185/sub-185_ses-20201016.nwb
+  - path: sub-185/sub-185_ses-20201016.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-185/sub-185_ses-20201019.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-185/sub-185_ses-20201021.nwb
-  - sub-185/sub-185_ses-20201026.nwb
-  - sub-185/sub-185_ses-20201027.nwb
-  - sub-185/sub-185_ses-20201030.nwb
-  - sub-187/sub-187_ses-20200923.nwb
-  - sub-187/sub-187_ses-20200924.nwb
-  - sub-187/sub-187_ses-20200925.nwb
-  - sub-187/sub-187_ses-20200929.nwb
+  - path: sub-185/sub-185_ses-20201021.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-185/sub-185_ses-20201026.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-185/sub-185_ses-20201027.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-185/sub-185_ses-20201030.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-187/sub-187_ses-20200923.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-187/sub-187_ses-20200924.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-187/sub-187_ses-20200925.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-187/sub-187_ses-20200929.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-187/sub-187_ses-20200930.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-187/sub-187_ses-20201001.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-187/sub-187_ses-20201002.nwb
+  - path: sub-187/sub-187_ses-20201002.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-189/sub-189_ses-20200930.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-189/sub-189_ses-20201001.nwb
+  - path: sub-189/sub-189_ses-20201001.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-189/sub-189_ses-20201002.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-189/sub-189_ses-20201005.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-189/sub-189_ses-20201006.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-189/sub-189_ses-20201007.nwb
-  - sub-189/sub-189_ses-20201028.nwb
-  - sub-189/sub-189_ses-20201029.nwb
-  - sub-190/sub-190_ses-20200930.nwb
-  - sub-190/sub-190_ses-20201001.nwb
-  - sub-190/sub-190_ses-20201002.nwb
-  - sub-190/sub-190_ses-20201005.nwb
+  - path: sub-189/sub-189_ses-20201007.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-189/sub-189_ses-20201028.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-189/sub-189_ses-20201029.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-190/sub-190_ses-20200930.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-190/sub-190_ses-20201001.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-190/sub-190_ses-20201002.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-190/sub-190_ses-20201005.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-190/sub-190_ses-20201006.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-190/sub-190_ses-20201007.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-190/sub-190_ses-20201008.nwb
-  - sub-190/sub-190_ses-20201009.nwb
-  - sub-190/sub-190_ses-20201012.nwb
-  - sub-190/sub-190_ses-20201014.nwb
-  - sub-190/sub-190_ses-20201015.nwb
+  - path: sub-190/sub-190_ses-20201008.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-190/sub-190_ses-20201009.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-190/sub-190_ses-20201012.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-190/sub-190_ses-20201014.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-190/sub-190_ses-20201015.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-190/sub-190_ses-20201016.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-190/sub-190_ses-20201026.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-190/sub-190_ses-20201028.nwb
-  - sub-190/sub-190_ses-20201029.nwb
-  - sub-190/sub-190_ses-20210305.nwb
-  - sub-190/sub-190_ses-20210309.nwb
-  - sub-190/sub-190_ses-20210316.nwb
+  - path: sub-190/sub-190_ses-20201028.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-190/sub-190_ses-20201029.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-190/sub-190_ses-20210305.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-190/sub-190_ses-20210309.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-190/sub-190_ses-20210316.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-191/sub-191_ses-20200930.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-191/sub-191_ses-20201001.nwb
-  - sub-191/sub-191_ses-20201002.nwb
-  - sub-191/sub-191_ses-20201005.nwb
-  - sub-191/sub-191_ses-20201006.nwb
+  - path: sub-191/sub-191_ses-20201001.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-191/sub-191_ses-20201002.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-191/sub-191_ses-20201005.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-191/sub-191_ses-20201006.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-191/sub-191_ses-20201007.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-191/sub-191_ses-20201008.nwb
-  - sub-191/sub-191_ses-20201012.nwb
-  - sub-191/sub-191_ses-20201013.nwb
-  - sub-191/sub-191_ses-20201014.nwb
-  - sub-191/sub-191_ses-20201015.nwb
+  - path: sub-191/sub-191_ses-20201008.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-191/sub-191_ses-20201012.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-191/sub-191_ses-20201013.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-191/sub-191_ses-20201014.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-191/sub-191_ses-20201015.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-191/sub-191_ses-20201016.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-191/sub-191_ses-20201026.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-191/sub-191_ses-20201028.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-191/sub-191_ses-20201029.nwb
-  - sub-192/sub-192_ses-20200930.nwb
-  - sub-192/sub-192_ses-20201001.nwb
+  - path: sub-191/sub-191_ses-20201029.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-192/sub-192_ses-20200930.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-192/sub-192_ses-20201001.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-192/sub-192_ses-20201002.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-192/sub-192_ses-20201005.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-192/sub-192_ses-20201006.nwb
+  - path: sub-192/sub-192_ses-20201006.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-192/sub-192_ses-20201007.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-192/sub-192_ses-20201008.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-192/sub-192_ses-20201012.nwb
+  - path: sub-192/sub-192_ses-20201012.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-192/sub-192_ses-20201014.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-192/sub-192_ses-20201015.nwb
+  - path: sub-192/sub-192_ses-20201015.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-192/sub-192_ses-20201016.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-192/sub-192_ses-20201026.nwb
+  - path: sub-192/sub-192_ses-20201026.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-192/sub-192_ses-20201028.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-192/sub-192_ses-20201029.nwb
-  - sub-192/sub-192_ses-20210304.nwb
-  - sub-192/sub-192_ses-20210311.nwb
+  - path: sub-192/sub-192_ses-20201029.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-192/sub-192_ses-20210304.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-192/sub-192_ses-20210311.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-192/sub-192_ses-20210317.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-193/sub-193.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-193/sub-193_ses-20200930.nwb
-  - sub-193/sub-193_ses-20201001.nwb
-  - sub-193/sub-193_ses-20201002.nwb
-  - sub-193/sub-193_ses-20201005.nwb
+  - path: sub-193/sub-193_ses-20200930.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-193/sub-193_ses-20201001.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-193/sub-193_ses-20201002.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-193/sub-193_ses-20201005.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-193/sub-193_ses-20201006.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-193/sub-193_ses-20201007.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-193/sub-193_ses-20201008.nwb
+  - path: sub-193/sub-193_ses-20201008.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-193/sub-193_ses-20201012.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-193/sub-193_ses-20201014.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-193/sub-193_ses-20201015.nwb
-  - sub-193/sub-193_ses-20201016.nwb
-  - sub-193/sub-193_ses-20201026.nwb
+  - path: sub-193/sub-193_ses-20201015.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-193/sub-193_ses-20201016.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-193/sub-193_ses-20201026.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-193/sub-193_ses-20201028.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-193/sub-193_ses-20201029.nwb
+  - path: sub-193/sub-193_ses-20201029.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-193/sub-193_ses-20210209.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-193/sub-193_ses-20210304.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-193/sub-193_ses-20210310.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-193/sub-193_ses-20210317.nwb
-  - sub-195/sub-195_ses-20201015.nwb
-  - sub-195/sub-195_ses-20201019.nwb
+  - path: sub-193/sub-193_ses-20210317.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-195/sub-195_ses-20201015.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-195/sub-195_ses-20201019.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-195/sub-195_ses-20201020.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-195/sub-195_ses-20201026.nwb
+  - path: sub-195/sub-195_ses-20201026.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-195/sub-195_ses-20201028.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-195/sub-195_ses-20201029.nwb
-  - sub-196/sub-196.nwb
-  - sub-196/sub-196_ses-20201015.nwb
-  - sub-196/sub-196_ses-20201016.nwb
-  - sub-196/sub-196_ses-20201019.nwb
-  - sub-196/sub-196_ses-20201020.nwb
-  - sub-196/sub-196_ses-20201026.nwb
-  - sub-196/sub-196_ses-20201028.nwb
-  - sub-196/sub-196_ses-20210209.nwb
+  - path: sub-195/sub-195_ses-20201029.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-196/sub-196.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-196/sub-196_ses-20201015.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-196/sub-196_ses-20201016.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-196/sub-196_ses-20201019.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-196/sub-196_ses-20201020.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-196/sub-196_ses-20201026.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-196/sub-196_ses-20201028.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-196/sub-196_ses-20210209.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-197/sub-197_ses-20201015.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-197/sub-197_ses-20201016.nwb
+  - path: sub-197/sub-197_ses-20201016.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-197/sub-197_ses-20201019.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-197/sub-197_ses-20201020.nwb
-  - sub-197/sub-197_ses-20201029.nwb
+  - path: sub-197/sub-197_ses-20201020.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-197/sub-197_ses-20201029.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-198/sub-198_ses-20201019.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-198/sub-198_ses-20201026.nwb
-  - sub-198/sub-198_ses-20201028.nwb
-  - sub-199/sub-199_ses-20201019.nwb
-  - sub-199/sub-199_ses-20201026.nwb
-  - sub-199/sub-199_ses-20201028.nwb
+  - path: sub-198/sub-198_ses-20201026.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-198/sub-198_ses-20201028.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-199/sub-199_ses-20201019.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-199/sub-199_ses-20201026.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-199/sub-199_ses-20201028.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-199/sub-199_ses-20201029.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-200/sub-200_ses-20210210.nwb
-  - sub-200/sub-200_ses-20210305.nwb
+  - path: sub-200/sub-200_ses-20210210.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-200/sub-200_ses-20210305.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-200/sub-200_ses-20210311.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-200/sub-200_ses-20210318.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
@@ -628,621 +1136,1129 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-176/sub-176_ses-20200929.nwb
+  - path: sub-176/sub-176_ses-20200929.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-176/sub-176_ses-20201001.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-178/sub-178.nwb
-  - sub-178/sub-178_ses-20201009.nwb
-  - sub-178/sub-178_ses-20201026.nwb
-  - sub-178/sub-178_ses-20210209.nwb
-  - sub-178/sub-178_ses-20210309.nwb
-  - sub-179/sub-179_ses-20201009.nwb
-  - sub-180/sub-180_ses-20200921.nwb
-  - sub-180/sub-180_ses-20201015.nwb
-  - sub-180/sub-180_ses-20201026.nwb
-  - sub-181/sub-181_ses-20201005.nwb
-  - sub-182/sub-182_ses-20201007.nwb
-  - sub-184/sub-184_ses-20201019.nwb
-  - sub-185/sub-185_ses-20201006.nwb
-  - sub-185/sub-185_ses-20201027.nwb
-  - sub-187/sub-187_ses-20200925.nwb
-  - sub-190/sub-190_ses-20210309.nwb
-  - sub-191/sub-191_ses-20201013.nwb
-  - sub-192/sub-192_ses-20201026.nwb
-  - sub-192/sub-192_ses-20201029.nwb
-  - sub-193/sub-193_ses-20201002.nwb
-  - sub-193/sub-193_ses-20201008.nwb
-  - sub-193/sub-193_ses-20201026.nwb
-  - sub-198/sub-198_ses-20201028.nwb
+  - path: sub-178/sub-178.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-178/sub-178_ses-20201009.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-178/sub-178_ses-20201026.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-178/sub-178_ses-20210209.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-178/sub-178_ses-20210309.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-179/sub-179_ses-20201009.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-180/sub-180_ses-20200921.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-180/sub-180_ses-20201015.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-180/sub-180_ses-20201026.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-181/sub-181_ses-20201005.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-182/sub-182_ses-20201007.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-184/sub-184_ses-20201019.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-185/sub-185_ses-20201006.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-185/sub-185_ses-20201027.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-187/sub-187_ses-20200925.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-190/sub-190_ses-20210309.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-191/sub-191_ses-20201013.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-192/sub-192_ses-20201026.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-192/sub-192_ses-20201029.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-193/sub-193_ses-20201002.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-193/sub-193_ses-20201008.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-193/sub-193_ses-20201026.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-198/sub-198_ses-20201028.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-200/sub-200_ses-20210311.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_ok:
-  - sub-176/sub-176_ses-20200921.nwb
-  - sub-176/sub-176_ses-20200923.nwb
-  - sub-176/sub-176_ses-20200924.nwb
+  - path: sub-176/sub-176_ses-20200921.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-176/sub-176_ses-20200923.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-176/sub-176_ses-20200924.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-176/sub-176_ses-20200925.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-176/sub-176_ses-20201005.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-176/sub-176_ses-20201006.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-176/sub-176_ses-20201014.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-176/sub-176_ses-20201015.nwb
+  - path: sub-176/sub-176_ses-20201015.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-176/sub-176_ses-20201019.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-176/sub-176_ses-20201021.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-176/sub-176_ses-20201026.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-176/sub-176_ses-20201027.nwb
-  - sub-176/sub-176_ses-20201030.nwb
+  - path: sub-176/sub-176_ses-20201027.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-176/sub-176_ses-20201030.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-178/sub-178_ses-20200921.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-178/sub-178_ses-20200923.nwb
-  - sub-178/sub-178_ses-20200924.nwb
-  - sub-178/sub-178_ses-20200925.nwb
-  - sub-178/sub-178_ses-20200929.nwb
+  - path: sub-178/sub-178_ses-20200923.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-178/sub-178_ses-20200924.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-178/sub-178_ses-20200925.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-178/sub-178_ses-20200929.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-178/sub-178_ses-20201001.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-178/sub-178_ses-20201005.nwb
+  - path: sub-178/sub-178_ses-20201005.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-178/sub-178_ses-20201006.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-178/sub-178_ses-20201014.nwb
-  - sub-178/sub-178_ses-20201015.nwb
-  - sub-178/sub-178_ses-20201019.nwb
-  - sub-178/sub-178_ses-20201021.nwb
+  - path: sub-178/sub-178_ses-20201014.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-178/sub-178_ses-20201015.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-178/sub-178_ses-20201019.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-178/sub-178_ses-20201021.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-178/sub-178_ses-20201027.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-178/sub-178_ses-20201030.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-178/sub-178_ses-20210305.nwb
+  - path: sub-178/sub-178_ses-20210305.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-178/sub-178_ses-20210316.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-179/sub-179_ses-20200921.nwb
+  - path: sub-179/sub-179_ses-20200921.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-179/sub-179_ses-20200923.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-179/sub-179_ses-20200924.nwb
+  - path: sub-179/sub-179_ses-20200924.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-179/sub-179_ses-20200925.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-179/sub-179_ses-20200929.nwb
+  - path: sub-179/sub-179_ses-20200929.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-179/sub-179_ses-20200930.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-179/sub-179_ses-20201001.nwb
+  - path: sub-179/sub-179_ses-20201001.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-179/sub-179_ses-20201002.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-179/sub-179_ses-20201005.nwb
-  - sub-179/sub-179_ses-20201006.nwb
+  - path: sub-179/sub-179_ses-20201005.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-179/sub-179_ses-20201006.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-179/sub-179_ses-20201008.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-179/sub-179_ses-20201012.nwb
+  - path: sub-179/sub-179_ses-20201012.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-179/sub-179_ses-20201014.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-179/sub-179_ses-20201015.nwb
+  - path: sub-179/sub-179_ses-20201015.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-179/sub-179_ses-20201019.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-179/sub-179_ses-20201021.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-179/sub-179_ses-20201026.nwb
-  - sub-179/sub-179_ses-20201027.nwb
-  - sub-179/sub-179_ses-20201030.nwb
+  - path: sub-179/sub-179_ses-20201026.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-179/sub-179_ses-20201027.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-179/sub-179_ses-20201030.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-180/sub-180_ses-20200923.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-180/sub-180_ses-20200924.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-180/sub-180_ses-20200925.nwb
-  - sub-180/sub-180_ses-20200929.nwb
-  - sub-180/sub-180_ses-20201001.nwb
-  - sub-180/sub-180_ses-20201002.nwb
-  - sub-180/sub-180_ses-20201005.nwb
+  - path: sub-180/sub-180_ses-20200925.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-180/sub-180_ses-20200929.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-180/sub-180_ses-20201001.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-180/sub-180_ses-20201002.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-180/sub-180_ses-20201005.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-180/sub-180_ses-20201006.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-180/sub-180_ses-20201009.nwb
-  - sub-180/sub-180_ses-20201014.nwb
+  - path: sub-180/sub-180_ses-20201009.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-180/sub-180_ses-20201014.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-180/sub-180_ses-20201019.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-180/sub-180_ses-20201021.nwb
-  - sub-180/sub-180_ses-20201027.nwb
-  - sub-180/sub-180_ses-20201030.nwb
+  - path: sub-180/sub-180_ses-20201021.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-180/sub-180_ses-20201027.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-180/sub-180_ses-20201030.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-181/sub-181_ses-20200921.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-181/sub-181_ses-20200923.nwb
-  - sub-181/sub-181_ses-20200924.nwb
-  - sub-181/sub-181_ses-20200925.nwb
-  - sub-181/sub-181_ses-20200930.nwb
-  - sub-181/sub-181_ses-20201001.nwb
-  - sub-181/sub-181_ses-20201002.nwb
+  - path: sub-181/sub-181_ses-20200923.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-181/sub-181_ses-20200924.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-181/sub-181_ses-20200925.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-181/sub-181_ses-20200930.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-181/sub-181_ses-20201001.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-181/sub-181_ses-20201002.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-181/sub-181_ses-20201006.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-181/sub-181_ses-20201008.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-181/sub-181_ses-20201009.nwb
+  - path: sub-181/sub-181_ses-20201009.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-181/sub-181_ses-20201014.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-181/sub-181_ses-20201015.nwb
-  - sub-181/sub-181_ses-20201019.nwb
+  - path: sub-181/sub-181_ses-20201015.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-181/sub-181_ses-20201019.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-181/sub-181_ses-20201021.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-181/sub-181_ses-20201027.nwb
+  - path: sub-181/sub-181_ses-20201027.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-181/sub-181_ses-20201030.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-182/sub-182_ses-20200923.nwb
-  - sub-182/sub-182_ses-20200924.nwb
+  - path: sub-182/sub-182_ses-20200923.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-182/sub-182_ses-20200924.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-182/sub-182_ses-20200925.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-182/sub-182_ses-20200929.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-182/sub-182_ses-20200930.nwb
-  - sub-182/sub-182_ses-20201001.nwb
+  - path: sub-182/sub-182_ses-20200930.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-182/sub-182_ses-20201001.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-182/sub-182_ses-20201002.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-182/sub-182_ses-20201006.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-182/sub-182_ses-20201012.nwb
-  - sub-182/sub-182_ses-20201014.nwb
+  - path: sub-182/sub-182_ses-20201012.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-182/sub-182_ses-20201014.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-182/sub-182_ses-20201016.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-182/sub-182_ses-20201019.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-182/sub-182_ses-20201021.nwb
-  - sub-182/sub-182_ses-20201026.nwb
+  - path: sub-182/sub-182_ses-20201021.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-182/sub-182_ses-20201026.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-182/sub-182_ses-20201027.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-182/sub-182_ses-20201030.nwb
-  - sub-184/sub-184_ses-20200923.nwb
+  - path: sub-182/sub-182_ses-20201030.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-184/sub-184_ses-20200923.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-184/sub-184_ses-20200924.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-184/sub-184_ses-20200925.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-184/sub-184_ses-20200929.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-184/sub-184_ses-20200930.nwb
+  - path: sub-184/sub-184_ses-20200930.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-184/sub-184_ses-20201001.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-184/sub-184_ses-20201002.nwb
-  - sub-184/sub-184_ses-20201006.nwb
+  - path: sub-184/sub-184_ses-20201002.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-184/sub-184_ses-20201006.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-184/sub-184_ses-20201007.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-184/sub-184_ses-20201014.nwb
+  - path: sub-184/sub-184_ses-20201014.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-184/sub-184_ses-20201016.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-184/sub-184_ses-20201021.nwb
-  - sub-184/sub-184_ses-20201026.nwb
-  - sub-184/sub-184_ses-20201027.nwb
-  - sub-184/sub-184_ses-20201030.nwb
-  - sub-185/sub-185_ses-20200923.nwb
-  - sub-185/sub-185_ses-20200924.nwb
+  - path: sub-184/sub-184_ses-20201021.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-184/sub-184_ses-20201026.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-184/sub-184_ses-20201027.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-184/sub-184_ses-20201030.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-185/sub-185_ses-20200923.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-185/sub-185_ses-20200924.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-185/sub-185_ses-20200925.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-185/sub-185_ses-20200929.nwb
+  - path: sub-185/sub-185_ses-20200929.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-185/sub-185_ses-20200930.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-185/sub-185_ses-20201001.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-185/sub-185_ses-20201002.nwb
+  - path: sub-185/sub-185_ses-20201002.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-185/sub-185_ses-20201007.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-185/sub-185_ses-20201012.nwb
+  - path: sub-185/sub-185_ses-20201012.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-185/sub-185_ses-20201014.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-185/sub-185_ses-20201016.nwb
+  - path: sub-185/sub-185_ses-20201016.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-185/sub-185_ses-20201019.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-185/sub-185_ses-20201021.nwb
-  - sub-185/sub-185_ses-20201026.nwb
-  - sub-185/sub-185_ses-20201030.nwb
-  - sub-187/sub-187_ses-20200923.nwb
-  - sub-187/sub-187_ses-20200924.nwb
-  - sub-187/sub-187_ses-20200929.nwb
+  - path: sub-185/sub-185_ses-20201021.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-185/sub-185_ses-20201026.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-185/sub-185_ses-20201030.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-187/sub-187_ses-20200923.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-187/sub-187_ses-20200924.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-187/sub-187_ses-20200929.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-187/sub-187_ses-20200930.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-187/sub-187_ses-20201001.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-187/sub-187_ses-20201002.nwb
+  - path: sub-187/sub-187_ses-20201002.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-189/sub-189_ses-20200930.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-189/sub-189_ses-20201001.nwb
+  - path: sub-189/sub-189_ses-20201001.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-189/sub-189_ses-20201002.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-189/sub-189_ses-20201005.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-189/sub-189_ses-20201006.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-189/sub-189_ses-20201007.nwb
-  - sub-189/sub-189_ses-20201028.nwb
-  - sub-189/sub-189_ses-20201029.nwb
-  - sub-190/sub-190_ses-20200930.nwb
-  - sub-190/sub-190_ses-20201001.nwb
-  - sub-190/sub-190_ses-20201002.nwb
-  - sub-190/sub-190_ses-20201005.nwb
+  - path: sub-189/sub-189_ses-20201007.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-189/sub-189_ses-20201028.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-189/sub-189_ses-20201029.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-190/sub-190_ses-20200930.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-190/sub-190_ses-20201001.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-190/sub-190_ses-20201002.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-190/sub-190_ses-20201005.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-190/sub-190_ses-20201006.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-190/sub-190_ses-20201007.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-190/sub-190_ses-20201008.nwb
-  - sub-190/sub-190_ses-20201009.nwb
-  - sub-190/sub-190_ses-20201012.nwb
-  - sub-190/sub-190_ses-20201014.nwb
-  - sub-190/sub-190_ses-20201015.nwb
+  - path: sub-190/sub-190_ses-20201008.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-190/sub-190_ses-20201009.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-190/sub-190_ses-20201012.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-190/sub-190_ses-20201014.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-190/sub-190_ses-20201015.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-190/sub-190_ses-20201016.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-190/sub-190_ses-20201026.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-190/sub-190_ses-20201028.nwb
-  - sub-190/sub-190_ses-20201029.nwb
-  - sub-190/sub-190_ses-20210305.nwb
-  - sub-190/sub-190_ses-20210316.nwb
+  - path: sub-190/sub-190_ses-20201028.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-190/sub-190_ses-20201029.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-190/sub-190_ses-20210305.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-190/sub-190_ses-20210316.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-191/sub-191_ses-20200930.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-191/sub-191_ses-20201001.nwb
-  - sub-191/sub-191_ses-20201002.nwb
-  - sub-191/sub-191_ses-20201005.nwb
-  - sub-191/sub-191_ses-20201006.nwb
+  - path: sub-191/sub-191_ses-20201001.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-191/sub-191_ses-20201002.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-191/sub-191_ses-20201005.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-191/sub-191_ses-20201006.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-191/sub-191_ses-20201007.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-191/sub-191_ses-20201008.nwb
-  - sub-191/sub-191_ses-20201012.nwb
-  - sub-191/sub-191_ses-20201014.nwb
-  - sub-191/sub-191_ses-20201015.nwb
+  - path: sub-191/sub-191_ses-20201008.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-191/sub-191_ses-20201012.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-191/sub-191_ses-20201014.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-191/sub-191_ses-20201015.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-191/sub-191_ses-20201016.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-191/sub-191_ses-20201026.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-191/sub-191_ses-20201028.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-191/sub-191_ses-20201029.nwb
-  - sub-192/sub-192_ses-20200930.nwb
-  - sub-192/sub-192_ses-20201001.nwb
+  - path: sub-191/sub-191_ses-20201029.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-192/sub-192_ses-20200930.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-192/sub-192_ses-20201001.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-192/sub-192_ses-20201002.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-192/sub-192_ses-20201005.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-192/sub-192_ses-20201006.nwb
+  - path: sub-192/sub-192_ses-20201006.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-192/sub-192_ses-20201007.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-192/sub-192_ses-20201008.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-192/sub-192_ses-20201012.nwb
+  - path: sub-192/sub-192_ses-20201012.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-192/sub-192_ses-20201014.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-192/sub-192_ses-20201015.nwb
+  - path: sub-192/sub-192_ses-20201015.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-192/sub-192_ses-20201016.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-192/sub-192_ses-20201028.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-192/sub-192_ses-20210304.nwb
-  - sub-192/sub-192_ses-20210311.nwb
+  - path: sub-192/sub-192_ses-20210304.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-192/sub-192_ses-20210311.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-192/sub-192_ses-20210317.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-193/sub-193.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-193/sub-193_ses-20200930.nwb
-  - sub-193/sub-193_ses-20201001.nwb
-  - sub-193/sub-193_ses-20201005.nwb
+  - path: sub-193/sub-193_ses-20200930.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-193/sub-193_ses-20201001.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-193/sub-193_ses-20201005.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-193/sub-193_ses-20201006.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-193/sub-193_ses-20201007.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-193/sub-193_ses-20201012.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-193/sub-193_ses-20201014.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-193/sub-193_ses-20201015.nwb
-  - sub-193/sub-193_ses-20201016.nwb
+  - path: sub-193/sub-193_ses-20201015.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-193/sub-193_ses-20201016.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-193/sub-193_ses-20201028.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-193/sub-193_ses-20201029.nwb
+  - path: sub-193/sub-193_ses-20201029.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-193/sub-193_ses-20210209.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-193/sub-193_ses-20210304.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-193/sub-193_ses-20210310.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-193/sub-193_ses-20210317.nwb
-  - sub-195/sub-195_ses-20201015.nwb
-  - sub-195/sub-195_ses-20201019.nwb
+  - path: sub-193/sub-193_ses-20210317.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-195/sub-195_ses-20201015.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-195/sub-195_ses-20201019.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-195/sub-195_ses-20201020.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-195/sub-195_ses-20201026.nwb
+  - path: sub-195/sub-195_ses-20201026.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-195/sub-195_ses-20201028.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-195/sub-195_ses-20201029.nwb
-  - sub-196/sub-196.nwb
-  - sub-196/sub-196_ses-20201015.nwb
-  - sub-196/sub-196_ses-20201016.nwb
-  - sub-196/sub-196_ses-20201019.nwb
-  - sub-196/sub-196_ses-20201020.nwb
-  - sub-196/sub-196_ses-20201026.nwb
-  - sub-196/sub-196_ses-20201028.nwb
-  - sub-196/sub-196_ses-20210209.nwb
+  - path: sub-195/sub-195_ses-20201029.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-196/sub-196.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-196/sub-196_ses-20201015.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-196/sub-196_ses-20201016.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-196/sub-196_ses-20201019.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-196/sub-196_ses-20201020.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-196/sub-196_ses-20201026.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-196/sub-196_ses-20201028.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-196/sub-196_ses-20210209.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-197/sub-197_ses-20201015.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-197/sub-197_ses-20201016.nwb
+  - path: sub-197/sub-197_ses-20201016.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-197/sub-197_ses-20201019.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-197/sub-197_ses-20201020.nwb
-  - sub-197/sub-197_ses-20201029.nwb
+  - path: sub-197/sub-197_ses-20201020.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-197/sub-197_ses-20201029.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-198/sub-198_ses-20201019.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-198/sub-198_ses-20201026.nwb
-  - sub-199/sub-199_ses-20201019.nwb
-  - sub-199/sub-199_ses-20201026.nwb
-  - sub-199/sub-199_ses-20201028.nwb
+  - path: sub-198/sub-198_ses-20201026.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-199/sub-199_ses-20201019.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-199/sub-199_ses-20201026.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-199/sub-199_ses-20201028.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-199/sub-199_ses-20201029.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-200/sub-200_ses-20210210.nwb
-  - sub-200/sub-200_ses-20210305.nwb
+  - path: sub-200/sub-200_ses-20210210.nwb
+    status: pass
+    test: matnwb_nwbRead
+  - path: sub-200/sub-200_ses-20210305.nwb
+    status: pass
+    test: matnwb_nwbRead
   - path: sub-200/sub-200_ses-20210318.nwb
+    status: pass
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2

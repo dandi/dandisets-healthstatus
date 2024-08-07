@@ -7,23 +7,51 @@ nassets: 10
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Dory/sub-Dory_ses-2021-05-19-003_ecephys.nwb
-  - sub-Dory/sub-Dory_ses-2021-05-19-004_ecephys.nwb
-  - sub-Dory/sub-Dory_ses-2021-05-19-005_ecephys.nwb
-  - sub-KP/sub-KP_ses-2019-07-22-005_ecephys.nwb
-  - sub-KP/sub-KP_ses-2019-07-22-006_ecephys.nwb
-  - sub-KP/sub-KP_ses-2019-10-21-002_ecephys.nwb
-  - sub-KP/sub-KP_ses-2019-10-21-003_ecephys.nwb
+  - path: sub-Dory/sub-Dory_ses-2021-05-19-003_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Dory/sub-Dory_ses-2021-05-19-004_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-Dory/sub-Dory_ses-2021-05-19-005_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-KP/sub-KP_ses-2019-07-22-005_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-KP/sub-KP_ses-2019-07-22-006_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-KP/sub-KP_ses-2019-10-21-002_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-KP/sub-KP_ses-2019-10-21-003_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-Dory/sub-Dory_ses-2021-05-19-003_ecephys.nwb
-  - sub-Dory/sub-Dory_ses-2021-05-19-004_ecephys.nwb
-  - sub-Dory/sub-Dory_ses-2021-05-19-005_ecephys.nwb
-  - sub-KP/sub-KP_ses-2019-07-22-005_ecephys.nwb
-  - sub-KP/sub-KP_ses-2019-07-22-006_ecephys.nwb
-  - sub-KP/sub-KP_ses-2019-10-21-002_ecephys.nwb
-  - sub-KP/sub-KP_ses-2019-10-21-003_ecephys.nwb
+  - path: sub-Dory/sub-Dory_ses-2021-05-19-003_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Dory/sub-Dory_ses-2021-05-19-004_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-Dory/sub-Dory_ses-2021-05-19-005_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-KP/sub-KP_ses-2019-07-22-005_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-KP/sub-KP_ses-2019-07-22-006_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-KP/sub-KP_ses-2019-10-21-002_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-KP/sub-KP_ses-2019-10-21-003_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

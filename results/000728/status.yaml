@@ -7,64 +7,90 @@ nassets: 3036
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-544888654/sub-544888654_ses-556344224-StimA_behavior+image+ophys.nwb
+  - path: sub-544888654/sub-544888654_ses-556344224-StimA_behavior+image+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout:
   - path: sub-495727026/sub-495727026_ses-508366303-StimA_behavior+image+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-496001358/sub-496001358_ses-502974807-StimC_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-496144063/sub-496144063_ses-502665019-StimC_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-529503639/sub-529503639_ses-547315014-StimC2_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-558792472/sub-558792472_ses-570236381-StimA_behavior+image+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-558793503/sub-558793503_ses-569933532-StimC2_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-565865645/sub-565865645_ses-578917373-StimC2_behavior+image+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-571798360/sub-571798360_ses-583279803-StimA_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-575188353/sub-575188353_ses-591254266-StimC2_behavior+image+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-583710254/sub-583710254_ses-597028938-StimA_behavior+image+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-590563964/sub-590563964_ses-603224878-StimA_behavior+image+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-638237461/sub-638237461_ses-650885952-StimC2_behavior+image+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -72,42 +98,60 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-495727026/sub-495727026_ses-508366303-StimA_behavior+image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-496001358/sub-496001358_ses-502974807-StimC_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-544888654/sub-544888654_ses-556344224-StimA_behavior+image+ophys.nwb
+  - path: sub-544888654/sub-544888654_ses-556344224-StimA_behavior+image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-558792472/sub-558792472_ses-570236381-StimA_behavior+image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-558793503/sub-558793503_ses-569933532-StimC2_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-565865645/sub-565865645_ses-578917373-StimC2_behavior+image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-583710254/sub-583710254_ses-597028938-StimA_behavior+image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-590563964/sub-590563964_ses-603224878-StimA_behavior+image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-638237461/sub-638237461_ses-650885952-StimC2_behavior+image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -115,21 +159,29 @@ tests:
   assets_ok: []
   assets_timeout:
   - path: sub-496144063/sub-496144063_ses-502665019-StimC_ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-529503639/sub-529503639_ses-547315014-StimC2_ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-571798360/sub-571798360_ses-583279803-StimA_ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-575188353/sub-575188353_ses-591254266-StimC2_behavior+image+ophys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

@@ -8,10 +8,14 @@ tests:
 - assets_nok: []
   assets_ok: []
   assets_timeout:
-  - sub-4mm-mouse-1/sub-4mm-mouse-1_image+ophys.nwb
+  - path: sub-4mm-mouse-1/sub-4mm-mouse-1_image+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-4mm-mouse-1/sub-4mm-mouse-1_image+ophys.nwb
+  - path: sub-4mm-mouse-1/sub-4mm-mouse-1_image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

@@ -7,19 +7,39 @@ nassets: 5
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-RAT123/sub-RAT123.nwb
-  - sub-anm369962/sub-anm369962_behavior+ecephys.nwb
-  - sub-anm369963/sub-anm369963_behavior+ecephys.nwb
-  - sub-anm369964/sub-anm369964_behavior+ecephys.nwb
-  - sub-monk-g/sub-monk-g.nwb
+  - path: sub-RAT123/sub-RAT123.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-anm369962/sub-anm369962_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-anm369963/sub-anm369963_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-anm369964/sub-anm369964_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-monk-g/sub-monk-g.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-RAT123/sub-RAT123.nwb
-  - sub-anm369962/sub-anm369962_behavior+ecephys.nwb
-  - sub-anm369963/sub-anm369963_behavior+ecephys.nwb
-  - sub-anm369964/sub-anm369964_behavior+ecephys.nwb
-  - sub-monk-g/sub-monk-g.nwb
+  - path: sub-RAT123/sub-RAT123.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-anm369962/sub-anm369962_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-anm369963/sub-anm369963_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-anm369964/sub-anm369964_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-monk-g/sub-monk-g.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
@@ -28,18 +48,22 @@ untested:
   file_type: ASCII text
   mime_type: text/plain
   size: 4
+  status: untested
 - asset: test1234
   file_type: ASCII text
   mime_type: text/plain
   size: 9
+  status: untested
 - asset: test12345
   file_type: ASCII text
   mime_type: text/plain
   size: 9
+  status: untested
 - asset: bar-renamed-3334
   file_type: ASCII text
   mime_type: text/plain
   size: 4
+  status: untested
 versions:
   hdmf: 3.14.3
   matnwb: v2.6.0.2

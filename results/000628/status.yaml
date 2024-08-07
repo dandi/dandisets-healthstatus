@@ -8,63 +8,89 @@ tests:
 - assets_nok: []
   assets_ok:
   - path: sub-Bf/sub-Bf_ses-20220404T145726_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Bo/sub-Bo_ses-20201115T165413.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Bo/sub-Bo_ses-20220909T102347.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Fr/sub-Fr_ses-20201218T153134_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Fr/sub-Fr_ses-20211110T142439_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-Fr/sub-Fr_ses-20220908T060207_image.nwb
+  - path: sub-Fr/sub-Fr_ses-20220908T060207_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-Lo/sub-Lo_ses-20220901T162129.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_timeout:
   - path: sub-Bf/sub-Bf_ses-20211222T151802_behavior.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Bf/sub-Bf_ses-20220122T171057_behavior.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Bf/sub-Bf_ses-20220612T131921_behavior.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Bo/sub-Bo_ses-20200620T154122_behavior.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Pa/sub-Pa_ses-20200228T102946_behavior.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Pa/sub-Pa_ses-20210201T172143_behavior.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -72,41 +98,57 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Bf/sub-Bf_ses-20220122T171057_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Bf/sub-Bf_ses-20220404T145726_image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Bf/sub-Bf_ses-20220612T131921_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Bo/sub-Bo_ses-20201115T165413.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Bo/sub-Bo_ses-20220909T102347.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Fr/sub-Fr_ses-20201218T153134_image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Fr/sub-Fr_ses-20211110T142439_image.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Pa/sub-Pa_ses-20210201T172143_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -114,22 +156,32 @@ tests:
   assets_ok: []
   assets_timeout:
   - path: sub-Bf/sub-Bf_ses-20211222T151802_behavior.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Bo/sub-Bo_ses-20200620T154122_behavior.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-Fr/sub-Fr_ses-20220908T060207_image.nwb
+  - path: sub-Fr/sub-Fr_ses-20220908T060207_image.nwb
+    status: timeout
+    test: matnwb_nwbRead
   - path: sub-Lo/sub-Lo_ses-20220901T162129.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Pa/sub-Pa_ses-20200228T102946_behavior.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

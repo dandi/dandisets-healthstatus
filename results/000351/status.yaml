@@ -7,1703 +7,3415 @@ nassets: 428
 tests:
 - assets_nok:
   - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day1.nwb
+    status: fail
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_ok:
-  - sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day1-30.nwb
-  - sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day2-30.nwb
-  - sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day3-12.nwb
-  - sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day4-12.nwb
-  - sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day5-6.nwb
-  - sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day6-6.nwb
+  - path: sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day1-30.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day2-30.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day3-12.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day4-12.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day5-6.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day6-6.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-DB-longITI-C1-F2/sub-DB-longITI-C1-F2_ses-Day1-6.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-DB-longITI-C1-F2/sub-DB-longITI-C1-F2_ses-Day2-6.nwb
+  - path: sub-DB-longITI-C1-F2/sub-DB-longITI-C1-F2_ses-Day2-6.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-DB-longITI-C1-F2/sub-DB-longITI-C1-F2_ses-Day3-12.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-DB-longITI-C1-F2/sub-DB-longITI-C1-F2_ses-Day4-12.nwb
+  - path: sub-DB-longITI-C1-F2/sub-DB-longITI-C1-F2_ses-Day4-12.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-DB-longITI-C1-F2/sub-DB-longITI-C1-F2_ses-Day5-30.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-DB-longITI-C1-F2/sub-DB-longITI-C1-F2_ses-Day6-30.nwb
-  - sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day1-12.nwb
-  - sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day2-12.nwb
+  - path: sub-DB-longITI-C1-F2/sub-DB-longITI-C1-F2_ses-Day6-30.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day1-12.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day2-12.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day3-6.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day4-6.nwb
-  - sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day5-30.nwb
-  - sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day6-30.nwb
-  - sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day1-30.nwb
-  - sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day2-30.nwb
-  - sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day3-6.nwb
-  - sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day4-6.nwb
+  - path: sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day4-6.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day5-30.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day6-30.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day1-30.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day2-30.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day3-6.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day4-6.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day5-12.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day6-12.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day1-12.nwb
-  - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day2-12.nwb
-  - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day3-30.nwb
-  - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day5-6.nwb
-  - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day6-6.nwb
-  - sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day1-6.nwb
+  - path: sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day1-12.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day2-12.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day3-30.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day5-6.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day6-6.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day1-6.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day2-6.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day3-30.nwb
-  - sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day4-30.nwb
-  - sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day5-12.nwb
+  - path: sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day3-30.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day4-30.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day5-12.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day6-12.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day1.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day1.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day10.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day11.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day13.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day13.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day14.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day15.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day15.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day16.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day17.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day17.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day18.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day19-8s.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day2.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day20.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day21.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day22.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day23-8s-bgd6s.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day24.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day19-8s.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day2.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day20.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day21.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day22.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day23-8s-bgd6s.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day24.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day25.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day26.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day27.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day3.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day27.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day3.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day39-8s.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day4.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day4.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day40.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day41.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day42-extinction.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day43.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day46-Poisson-cue.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day47.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day48.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day41.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day42-extinction.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day43.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day46-Poisson-cue.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day47.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day48.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day49.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day5.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day7.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day8.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day9.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day1.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day13.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day14.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day17-learned.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day18.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day19.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day2.nwb
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day1.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day13.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day14.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day17-learned.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day18.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day19.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day2.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day20.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day21.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day22.nwb
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day21.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day22.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day23.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day24-8s.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day25.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day26.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day27.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day28-8s-bgd6s.nwb
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day24-8s.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day25.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day26.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day27.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day28-8s-bgd6s.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day29.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day3.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day30.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day31.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day32.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day33.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day4.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day43-8s.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day44.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day45.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day46-extinction.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day47.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day5.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day50-Poisson-cue.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day51.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day52.nwb
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day3.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day30.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day31.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day32.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day33.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day4.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day43-8s.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day44.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day45.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day46-extinction.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day47.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day5.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day50-Poisson-cue.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day51.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day52.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day53.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day54.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day6.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day7.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day1.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day10.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day11.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day16.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day17.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day18.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day19.nwb
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day54.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day6.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day7.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day1.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day10.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day11.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day16.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day17.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day18.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day19.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day2.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day20.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day21.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day22-learned.nwb
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day20.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day21.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day22-learned.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day24.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day26.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day27.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day28.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day29-8s.nwb
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day26.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day27.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day28.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day29-8s.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day3.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day30.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day31.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day32.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day33-8s-bgd6s.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day34.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day35.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day36.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day37.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day38.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day39.nwb
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day30.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day31.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day32.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day33-8s-bgd6s.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day34.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day35.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day36.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day37.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day38.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day39.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day4.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day40.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day41.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day42.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day43.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day5.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day6.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day67-8s.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day68.nwb
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day40.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day41.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day42.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day43.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day5.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day6.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day67-8s.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day68.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day69.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day7.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day70-extinction.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day71.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day72.nwb
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day7.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day70-extinction.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day71.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day72.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day75-Poisson-cue.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day76.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day77.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day78.nwb
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day76.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day77.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day78.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day8.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day9.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day1.nwb
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day9.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day1.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day12.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day13.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day14.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day13.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day14.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day15.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day17-learned.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day18.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day19.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day2.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day20.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day21.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day22.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day23.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day24-8s.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day17-learned.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day18.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day19.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day2.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day20.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day21.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day22.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day23.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day24-8s.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day25.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day26.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day27.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day26.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day27.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day28-8s-bgd6s.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day29.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day3.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day30.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day29.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day3.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day30.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day32.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day33.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day34.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day35.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day33.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day34.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day35.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day36.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day4.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day5.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day59-8s.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day6.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day60.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day4.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day5.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day59-8s.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day6.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day60.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day61-extinction.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day62.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day63.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day67-Poisson-cue.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day68.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day7.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day62.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day63.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day67-Poisson-cue.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day68.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day7.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day1.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day13.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day13.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day14.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day15.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day15.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day16.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day17.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day18.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day19.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day2.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day20.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day21.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day22.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day23.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day24.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day25-learned.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day26.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day17.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day18.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day19.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day2.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day20.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day21.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day22.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day23.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day24.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day25-learned.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day26.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day27.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day28.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day28.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day3.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day31.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day32-8s.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day33.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day31.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day32-8s.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day33.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day34.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day36.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day37.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day39.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day36.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day37.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day39.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day4.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day40.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day41.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day42.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day40.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day41.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day42.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day43.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day44.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day45.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day44.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day45.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day46.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day47.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day5.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day6.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day64-8s.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day65.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day66-extinction.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day67.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day71.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day72.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day8.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day1.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day10.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day11.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day12-learned.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day13.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day14.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day15.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day16.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day17.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day18.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day47.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day5.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day6.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day64-8s.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day65.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day66-extinction.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day67.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day71.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day72.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day8.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day1.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day10.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day11.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day12-learned.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day13.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day14.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day15.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day16.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day17.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day18.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day19-8s.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day2.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day20.nwb
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day2.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day20.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day21.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day22.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day23-8s-bgd6s.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day24.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day25.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day26.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day27.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day28.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day29.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day3.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day30.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day44-8s.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day45.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day46.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day47-extinction.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day48.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day5.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day50.nwb
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day22.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day23-8s-bgd6s.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day24.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day25.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day26.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day27.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day28.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day29.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day3.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day30.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day44-8s.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day45.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day46.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day47-extinction.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day48.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day5.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day50.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day53-Poisson-cue.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day54.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day55.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day6.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day7.nwb
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day55.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day6.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day7.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day8.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day9.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day10.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day11.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day12.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day13.nwb
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day10.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day11.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day12.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day13.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day14-learned.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day15.nwb
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day15.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day16.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day17.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day18.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day19.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day2.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day20-8s.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day21.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day22.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day23.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day24-8s-bgd6s.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day25.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day26.nwb
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day17.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day18.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day19.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day2.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day20-8s.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day21.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day22.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day23.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day24-8s-bgd6s.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day25.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day26.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day27.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day28.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day29.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day3.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day40-8s.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day41.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day42.nwb
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day29.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day3.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day40-8s.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day41.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day42.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day43-extinction.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day44.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day47-Poisson-cue.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day48.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day49.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day5.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day50.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day6.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day7.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day8.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day9.nwb
-  - sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day1.nwb
-  - sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day3.nwb
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day44.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day47-Poisson-cue.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day48.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day49.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day5.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day50.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day6.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day7.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day8.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day9.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day1.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day3.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day4.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day5.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day6.nwb
+  - path: sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day6.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day7.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day8.nwb
+  - path: sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day8.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day1-RandomRewards.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day2-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day3-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day4-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day5-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day6-Pavlovian.nwb
+  - path: sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day3-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day4-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day5-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day6-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day1-RandomRewards.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day2-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day3-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day4-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day5-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day6-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day1-RandomRewards.nwb
-  - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day2-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day3-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day4-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day5-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day6-Pavlovian.nwb
+  - path: sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day3-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day4-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day5-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day6-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day1-RandomRewards.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day2-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day3-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day4-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day5-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day6-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day7-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day1-RandomRewards.nwb
+  - path: sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day1-RandomRewards.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day2-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day3-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day4-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day5-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day6-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day1-RandomRewards.nwb
-  - sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day2-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day3-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day4-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day5-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day6-Pavlovian.nwb
+  - path: sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day3-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day4-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day5-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day6-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day1-RandomRewards.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day2-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day3-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day4-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day5-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day6-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-WT-stGtACR-M3/sub-HJ-FP-WT-stGtACR-M3_ses-Day1-RandomRewards.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-WT-stGtACR-M3/sub-HJ-FP-WT-stGtACR-M3_ses-Day2-Pavlovian.nwb
+  - path: sub-HJ-FP-WT-stGtACR-M3/sub-HJ-FP-WT-stGtACR-M3_ses-Day2-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-WT-stGtACR-M3/sub-HJ-FP-WT-stGtACR-M3_ses-Day3-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-WT-stGtACR-M3/sub-HJ-FP-WT-stGtACR-M3_ses-Day4-Pavlovian.nwb
+  - path: sub-HJ-FP-WT-stGtACR-M3/sub-HJ-FP-WT-stGtACR-M3_ses-Day4-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-WT-stGtACR-M3/sub-HJ-FP-WT-stGtACR-M3_ses-Day5-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-WT-stGtACR-M3/sub-HJ-FP-WT-stGtACR-M3_ses-Day6-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M2/sub-HJ-FP-datHT-stGtACR-M2_ses-Day3-Pavlovian.nwb
+  - path: sub-HJ-FP-WT-stGtACR-M3/sub-HJ-FP-WT-stGtACR-M3_ses-Day6-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M2/sub-HJ-FP-datHT-stGtACR-M2_ses-Day3-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-datHT-stGtACR-M2/sub-HJ-FP-datHT-stGtACR-M2_ses-Day4-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-datHT-stGtACR-M2/sub-HJ-FP-datHT-stGtACR-M2_ses-Day5-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-datHT-stGtACR-M2/sub-HJ-FP-datHT-stGtACR-M2_ses-Day6-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M2/sub-HJ-FP-datHT-stGtACR-M2_ses-Day7-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day1-RandomRewards.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M2/sub-HJ-FP-datHT-stGtACR-M2_ses-Day6-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M2/sub-HJ-FP-datHT-stGtACR-M2_ses-Day7-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day1-RandomRewards.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day2-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day3-Pavlovian.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day3-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day4-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day5-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day6-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day7-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day1-RandomRewards.nwb
-  - sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day2-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day3-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day4-Pavlovian.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day5-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day6-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day7-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day1-RandomRewards.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day2-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day3-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day4-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day5-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day6-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day7-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day1-RandomRewards.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day6-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day7-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day1-RandomRewards.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day10-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day3-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day4-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day5-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day6-Pavlovian.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day3-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day4-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day5-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day6-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day7-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day8-Pavlovian.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day8-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day9-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day1.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day1.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day2.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day3.nwb
-  - sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day4.nwb
-  - sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day5.nwb
-  - sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day6.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day3.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day4.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day5.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day6.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day7.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day8.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day1.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day1.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day10.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day11.nwb
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day12.nwb
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day13.nwb
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day2.nwb
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day3.nwb
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day4.nwb
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day5.nwb
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day6.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day11.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day12.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day13.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day2.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day3.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day4.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day5.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day6.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day7.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day8.nwb
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day9.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day8.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day9.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-datHT-stGtACR-M8/sub-HJ-FP-datHT-stGtACR-M8_ses-Day1-RandomRewards.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datHT-stGtACR-M8/sub-HJ-FP-datHT-stGtACR-M8_ses-Day2-Pavlovian.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M8/sub-HJ-FP-datHT-stGtACR-M8_ses-Day2-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-datHT-stGtACR-M8/sub-HJ-FP-datHT-stGtACR-M8_ses-Day3-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datHT-stGtACR-M8/sub-HJ-FP-datHT-stGtACR-M8_ses-Day4-Pavlovian.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M8/sub-HJ-FP-datHT-stGtACR-M8_ses-Day4-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-datHT-stGtACR-M8/sub-HJ-FP-datHT-stGtACR-M8_ses-Day5-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-HJ-FP-datHT-stGtACR-M8/sub-HJ-FP-datHT-stGtACR-M8_ses-Day6-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day1-RandomRewards.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day2-Pavlovian.nwb
-  - sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day3-Pavlovian.nwb
-  - sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day4-Pavlovian.nwb
-  - sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day5-Pavlovian.nwb
+  - path: sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day2-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day3-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day4-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day5-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day6-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day7-Pavlovian.nwb
-  - sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day8-Pavlovian.nwb
+  - path: sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day7-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day8-Pavlovian.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout:
   - path: sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day4-30.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day12-learned.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day15.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day8.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day25.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day37.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day38.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day29.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day35.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day7.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day70-Poisson-cue.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day4.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HJ-FP-datHT-stGtACR-M2/sub-HJ-FP-datHT-stGtACR-M2_ses-Day1-RandomRewards.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day1-30.nwb
-  - sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day2-30.nwb
-  - sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day3-12.nwb
-  - sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day4-12.nwb
-  - sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day5-6.nwb
-  - sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day6-6.nwb
+  - path: sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day1-30.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day2-30.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day3-12.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day4-12.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day5-6.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day6-6.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-DB-longITI-C1-F2/sub-DB-longITI-C1-F2_ses-Day1-6.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-DB-longITI-C1-F2/sub-DB-longITI-C1-F2_ses-Day2-6.nwb
+  - path: sub-DB-longITI-C1-F2/sub-DB-longITI-C1-F2_ses-Day2-6.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-DB-longITI-C1-F2/sub-DB-longITI-C1-F2_ses-Day3-12.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-DB-longITI-C1-F2/sub-DB-longITI-C1-F2_ses-Day4-12.nwb
+  - path: sub-DB-longITI-C1-F2/sub-DB-longITI-C1-F2_ses-Day4-12.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-DB-longITI-C1-F2/sub-DB-longITI-C1-F2_ses-Day5-30.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-DB-longITI-C1-F2/sub-DB-longITI-C1-F2_ses-Day6-30.nwb
-  - sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day1-12.nwb
-  - sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day2-12.nwb
+  - path: sub-DB-longITI-C1-F2/sub-DB-longITI-C1-F2_ses-Day6-30.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day1-12.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day2-12.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day3-6.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day4-6.nwb
-  - sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day5-30.nwb
-  - sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day6-30.nwb
-  - sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day1-30.nwb
-  - sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day2-30.nwb
-  - sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day3-6.nwb
-  - sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day4-6.nwb
+  - path: sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day4-6.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day5-30.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day6-30.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day1-30.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day2-30.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day3-6.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day4-6.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day5-12.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-DB-longITI-C1-M2/sub-DB-longITI-C1-M2_ses-Day6-12.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day1-12.nwb
-  - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day2-12.nwb
-  - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day3-30.nwb
-  - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day5-6.nwb
-  - sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day6-6.nwb
-  - sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day1-6.nwb
+  - path: sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day1-12.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day2-12.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day3-30.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day5-6.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day6-6.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day1-6.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day2-6.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day3-30.nwb
-  - sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day4-30.nwb
-  - sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day5-12.nwb
+  - path: sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day3-30.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day4-30.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day5-12.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-DB-longITI-C1-M4/sub-DB-longITI-C1-M4_ses-Day6-12.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day1.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day1.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day10.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day11.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day13.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day13.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day14.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day15.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day15.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day16.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day17.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day17.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day18.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day19-8s.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day2.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day20.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day21.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day22.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day23-8s-bgd6s.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day24.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day19-8s.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day2.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day20.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day21.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day22.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day23-8s-bgd6s.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day24.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day25.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day26.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day27.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day3.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day27.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day3.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day39-8s.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day4.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day4.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day40.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day41.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day42-extinction.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day43.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day46-Poisson-cue.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day47.nwb
-  - sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day48.nwb
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day41.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day42-extinction.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day43.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day46-Poisson-cue.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day47.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day48.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day49.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day5.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day7.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day8.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day9.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day1.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day13.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day14.nwb
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day1.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day13.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day14.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day15.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day17-learned.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day18.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day19.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day2.nwb
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day17-learned.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day18.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day19.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day2.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day20.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day21.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day22.nwb
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day21.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day22.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day23.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day24-8s.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day25.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day26.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day27.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day28-8s-bgd6s.nwb
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day24-8s.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day25.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day26.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day27.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day28-8s-bgd6s.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day29.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day3.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day30.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day31.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day32.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day33.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day4.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day43-8s.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day44.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day45.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day46-extinction.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day47.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day5.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day50-Poisson-cue.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day51.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day52.nwb
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day3.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day30.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day31.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day32.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day33.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day4.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day43-8s.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day44.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day45.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day46-extinction.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day47.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day5.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day50-Poisson-cue.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day51.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day52.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day53.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day54.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day6.nwb
-  - sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day7.nwb
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day54.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day6.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day7.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-F2/sub-HJ-FP-F2_ses-Day8.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day1.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day10.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day11.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day16.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day17.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day18.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day19.nwb
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day1.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day10.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day11.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day16.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day17.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day18.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day19.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day2.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day20.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day21.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day22-learned.nwb
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day20.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day21.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day22-learned.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day24.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day26.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day27.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day28.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day29-8s.nwb
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day26.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day27.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day28.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day29-8s.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day3.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day30.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day31.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day32.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day33-8s-bgd6s.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day34.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day35.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day36.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day37.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day38.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day39.nwb
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day30.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day31.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day32.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day33-8s-bgd6s.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day34.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day35.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day36.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day37.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day38.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day39.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day4.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day40.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day41.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day42.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day43.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day5.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day6.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day67-8s.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day68.nwb
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day40.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day41.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day42.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day43.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day5.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day6.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day67-8s.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day68.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day69.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day7.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day70-extinction.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day71.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day72.nwb
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day7.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day70-extinction.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day71.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day72.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day75-Poisson-cue.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day76.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day77.nwb
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day78.nwb
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day76.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day77.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day78.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day8.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day9.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day1.nwb
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day9.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day1.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day12.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day13.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day14.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day13.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day14.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day15.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day17-learned.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day18.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day19.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day2.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day20.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day21.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day22.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day23.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day24-8s.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day17-learned.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day18.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day19.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day2.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day20.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day21.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day22.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day23.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day24-8s.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day25.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day26.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day27.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day26.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day27.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day28-8s-bgd6s.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day29.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day3.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day30.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day29.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day3.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day30.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day32.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day33.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day34.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day35.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day33.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day34.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day35.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day36.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day37.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day38.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day4.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day5.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day59-8s.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day6.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day60.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day4.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day5.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day59-8s.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day6.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day60.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day61-extinction.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day62.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day63.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day67-Poisson-cue.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day68.nwb
-  - sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day7.nwb
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day62.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day63.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day67-Poisson-cue.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day68.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day7.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day1.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day13.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day13.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day14.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day15.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day15.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day16.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day17.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day18.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day19.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day2.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day20.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day21.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day22.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day23.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day24.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day25-learned.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day26.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day17.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day18.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day19.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day2.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day20.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day21.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day22.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day23.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day24.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day25-learned.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day26.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day27.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day28.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day28.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day29.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day3.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day31.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day32-8s.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day33.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day31.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day32-8s.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day33.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day34.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day35.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day36.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day37.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day39.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day36.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day37.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day39.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day4.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day40.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day41.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day42.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day40.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day41.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day42.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day43.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day44.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day45.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day44.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day45.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day46.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day47.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day5.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day6.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day64-8s.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day65.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day66-extinction.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day67.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day71.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day72.nwb
-  - sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day8.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day1.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day10.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day11.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day12-learned.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day13.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day14.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day15.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day16.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day17.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day18.nwb
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day47.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day5.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day6.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day64-8s.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day65.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day66-extinction.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day67.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day71.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day72.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day8.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day1.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day10.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day11.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day12-learned.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day13.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day14.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day15.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day16.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day17.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day18.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day19-8s.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day2.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day20.nwb
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day2.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day20.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day21.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day22.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day23-8s-bgd6s.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day24.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day25.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day26.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day27.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day28.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day29.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day3.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day30.nwb
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day22.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day23-8s-bgd6s.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day24.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day25.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day26.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day27.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day28.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day29.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day3.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day30.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day4.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day44-8s.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day45.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day46.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day47-extinction.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day48.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day5.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day50.nwb
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day44-8s.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day45.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day46.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day47-extinction.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day48.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day5.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day50.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day53-Poisson-cue.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day54.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day55.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day6.nwb
-  - sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day7.nwb
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day55.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day6.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day7.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day8.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-HJ-FP-M6/sub-HJ-FP-M6_ses-Day9.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day1.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day10.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day11.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day12.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day13.nwb
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day10.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day11.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day12.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day13.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day14-learned.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day15.nwb
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day15.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day16.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day17.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day18.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day19.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day2.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day20-8s.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day21.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day22.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day23.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day24-8s-bgd6s.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day25.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day26.nwb
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day17.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day18.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day19.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day2.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day20-8s.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day21.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day22.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day23.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day24-8s-bgd6s.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day25.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day26.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day27.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day28.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day29.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day3.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day40-8s.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day41.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day42.nwb
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day29.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day3.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day40-8s.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day41.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day42.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day43-extinction.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day44.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day47-Poisson-cue.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day48.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day49.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day5.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day50.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day6.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day7.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day8.nwb
-  - sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day9.nwb
-  - sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day1.nwb
-  - sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day3.nwb
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day44.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day47-Poisson-cue.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day48.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day49.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day5.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day50.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day6.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day7.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day8.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M7/sub-HJ-FP-M7_ses-Day9.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day1.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day3.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day4.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day5.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day6.nwb
+  - path: sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day6.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day7.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day8.nwb
+  - path: sub-HJ-FP-M8/sub-HJ-FP-M8_ses-Day8.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day1-RandomRewards.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day2-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day3-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day4-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day5-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day6-Pavlovian.nwb
+  - path: sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day3-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day4-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day5-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-F1/sub-HJ-FP-WT-stGtACR-F1_ses-Day6-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day1-RandomRewards.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day2-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day3-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day4-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day5-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day6-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day1-RandomRewards.nwb
-  - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day2-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day3-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day4-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day5-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day6-Pavlovian.nwb
+  - path: sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day3-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day4-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day5-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-F2/sub-HJ-FP-WT-stGtACR-F2_ses-Day6-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day1-RandomRewards.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day2-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day3-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day4-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day5-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day6-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day7-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day1-RandomRewards.nwb
+  - path: sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day1-RandomRewards.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day2-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day3-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day4-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day5-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day6-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day1-RandomRewards.nwb
-  - sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day2-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day3-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day4-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day5-Pavlovian.nwb
-  - sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day6-Pavlovian.nwb
+  - path: sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day3-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day4-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day5-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-M1/sub-HJ-FP-WT-stGtACR-M1_ses-Day6-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day1-RandomRewards.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day2-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day3-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day4-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day5-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-WT-stGtACR-M2/sub-HJ-FP-WT-stGtACR-M2_ses-Day6-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-WT-stGtACR-M3/sub-HJ-FP-WT-stGtACR-M3_ses-Day1-RandomRewards.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-WT-stGtACR-M3/sub-HJ-FP-WT-stGtACR-M3_ses-Day2-Pavlovian.nwb
+  - path: sub-HJ-FP-WT-stGtACR-M3/sub-HJ-FP-WT-stGtACR-M3_ses-Day2-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-WT-stGtACR-M3/sub-HJ-FP-WT-stGtACR-M3_ses-Day3-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-WT-stGtACR-M3/sub-HJ-FP-WT-stGtACR-M3_ses-Day4-Pavlovian.nwb
+  - path: sub-HJ-FP-WT-stGtACR-M3/sub-HJ-FP-WT-stGtACR-M3_ses-Day4-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-WT-stGtACR-M3/sub-HJ-FP-WT-stGtACR-M3_ses-Day5-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-WT-stGtACR-M3/sub-HJ-FP-WT-stGtACR-M3_ses-Day6-Pavlovian.nwb
+  - path: sub-HJ-FP-WT-stGtACR-M3/sub-HJ-FP-WT-stGtACR-M3_ses-Day6-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-datHT-stGtACR-M2/sub-HJ-FP-datHT-stGtACR-M2_ses-Day1-RandomRewards.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-HJ-FP-datHT-stGtACR-M2/sub-HJ-FP-datHT-stGtACR-M2_ses-Day3-Pavlovian.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M2/sub-HJ-FP-datHT-stGtACR-M2_ses-Day3-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-datHT-stGtACR-M2/sub-HJ-FP-datHT-stGtACR-M2_ses-Day4-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-datHT-stGtACR-M2/sub-HJ-FP-datHT-stGtACR-M2_ses-Day5-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-datHT-stGtACR-M2/sub-HJ-FP-datHT-stGtACR-M2_ses-Day6-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M2/sub-HJ-FP-datHT-stGtACR-M2_ses-Day7-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day1-RandomRewards.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M2/sub-HJ-FP-datHT-stGtACR-M2_ses-Day6-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M2/sub-HJ-FP-datHT-stGtACR-M2_ses-Day7-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day1-RandomRewards.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day2-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day3-Pavlovian.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day3-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day4-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day5-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day6-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day7-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day1-RandomRewards.nwb
-  - sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day2-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day3-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day4-Pavlovian.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day5-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day6-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M3/sub-HJ-FP-datHT-stGtACR-M3_ses-Day7-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day1-RandomRewards.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day2-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day3-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day4-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day5-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day6-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day7-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day1-RandomRewards.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day6-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M4/sub-HJ-FP-datHT-stGtACR-M4_ses-Day7-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day1-RandomRewards.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day10-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day3-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day4-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day5-Pavlovian.nwb
-  - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day6-Pavlovian.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day3-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day4-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day5-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day6-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day7-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day8-Pavlovian.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day8-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-datHT-stGtACR-M5/sub-HJ-FP-datHT-stGtACR-M5_ses-Day9-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day1.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day1.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day2.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day3.nwb
-  - sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day4.nwb
-  - sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day5.nwb
-  - sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day6.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day3.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day4.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day5.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day6.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day7.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-HJ-FP-datHT-stGtACR-M6/sub-HJ-FP-datHT-stGtACR-M6_ses-Day8.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day1.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day1.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day10.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day11.nwb
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day12.nwb
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day13.nwb
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day2.nwb
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day3.nwb
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day4.nwb
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day5.nwb
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day6.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day11.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day12.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day13.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day2.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day3.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day4.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day5.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day6.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day7.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day8.nwb
-  - sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day9.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day8.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datHT-stGtACR-M7/sub-HJ-FP-datHT-stGtACR-M7_ses-Day9.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-datHT-stGtACR-M8/sub-HJ-FP-datHT-stGtACR-M8_ses-Day1-RandomRewards.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datHT-stGtACR-M8/sub-HJ-FP-datHT-stGtACR-M8_ses-Day2-Pavlovian.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M8/sub-HJ-FP-datHT-stGtACR-M8_ses-Day2-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-datHT-stGtACR-M8/sub-HJ-FP-datHT-stGtACR-M8_ses-Day3-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datHT-stGtACR-M8/sub-HJ-FP-datHT-stGtACR-M8_ses-Day4-Pavlovian.nwb
+  - path: sub-HJ-FP-datHT-stGtACR-M8/sub-HJ-FP-datHT-stGtACR-M8_ses-Day4-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-datHT-stGtACR-M8/sub-HJ-FP-datHT-stGtACR-M8_ses-Day5-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-HJ-FP-datHT-stGtACR-M8/sub-HJ-FP-datHT-stGtACR-M8_ses-Day6-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day1-RandomRewards.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day2-Pavlovian.nwb
-  - sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day3-Pavlovian.nwb
-  - sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day4-Pavlovian.nwb
-  - sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day5-Pavlovian.nwb
+  - path: sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day2-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day3-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day4-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day5-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
   - path: sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day6-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day7-Pavlovian.nwb
-  - sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day8-Pavlovian.nwb
+  - path: sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day7-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-HJ-FP-datWT-stGtACR-F1/sub-HJ-FP-datWT-stGtACR-F1_ses-Day8-Pavlovian.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout:
   - path: sub-DB-longITI-C1-M3/sub-DB-longITI-C1-M3_ses-Day4-30.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HJ-FP-F1/sub-HJ-FP-F1_ses-Day12-learned.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day25.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day7.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-HJ-FP-M4/sub-HJ-FP-M4_ses-Day70-Poisson-cue.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

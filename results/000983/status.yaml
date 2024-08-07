@@ -8,57 +8,81 @@ tests:
 - assets_nok: []
   assets_ok:
   - path: sub-RuOx-15mTorr-310nm-2000um2-in-vitro/sub-RuOx-15mTorr-310nm-2000um2-in-vitro_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-RuOx-60mTorr-158nm-2000um2-in-vitro/sub-RuOx-60mTorr-158nm-2000um2-in-vitro_ecephys.nwb
+  - path: sub-RuOx-60mTorr-158nm-2000um2-in-vitro/sub-RuOx-60mTorr-158nm-2000um2-in-vitro_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-SIROF-30mTorr-320nm-2000um2--0-2V-vs-Eref-in-vitro/sub-SIROF-30mTorr-320nm-2000um2--0-2V-vs-Eref-in-vitro_obj-qskubp_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-SIROF-30mTorr-320nm-2000um2-0-2V-vs-Eref-in-vitro/sub-SIROF-30mTorr-320nm-2000um2-0-2V-vs-Eref-in-vitro_obj-jkigg7_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-SIROF-30mTorr-320nm-2000um2-0-4V-vs-Eref-in-vitro/sub-SIROF-30mTorr-320nm-2000um2-0-4V-vs-Eref-in-vitro_obj-11lpcdj_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-SIROF-30mTorr-320nm-2000um2-0-4V-vs-Eref-in-vitro/sub-SIROF-30mTorr-320nm-2000um2-0-4V-vs-Eref-in-vitro_obj-zltr2r_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-SIROF-30mTorr-320nm-2000um2-0V-vs-Eref-in-vitro/sub-SIROF-30mTorr-320nm-2000um2-0V-vs-Eref-in-vitro_obj-17xax5b_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-SIROF-30mTorr-320nm-80um2-in-vitro/sub-SIROF-30mTorr-320nm-80um2-in-vitro_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-SIROF-30mTorr-650nm-800um2-in-vitro/sub-SIROF-30mTorr-650nm-800um2-in-vitro_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-SIROF-30mTorr-650nm-80um2-in-vitro/sub-SIROF-30mTorr-650nm-80um2-in-vitro_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TiN-1200nm-2000um2-in-vitro/sub-TiN-1200nm-2000um2-in-vitro_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TiN-900nm-4000um2-in-vitro/sub-TiN-900nm-4000um2-in-vitro_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -67,59 +91,83 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-RuOx-15mTorr-310nm-2000um2-in-vitro/sub-RuOx-15mTorr-310nm-2000um2-in-vitro_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-SIROF-30mTorr-320nm-2000um2--0-2V-vs-Eref-in-vitro/sub-SIROF-30mTorr-320nm-2000um2--0-2V-vs-Eref-in-vitro_obj-qskubp_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-SIROF-30mTorr-320nm-2000um2-0-4V-vs-Eref-in-vitro/sub-SIROF-30mTorr-320nm-2000um2-0-4V-vs-Eref-in-vitro_obj-11lpcdj_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-SIROF-30mTorr-320nm-2000um2-0-4V-vs-Eref-in-vitro/sub-SIROF-30mTorr-320nm-2000um2-0-4V-vs-Eref-in-vitro_obj-zltr2r_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-SIROF-30mTorr-320nm-2000um2-0V-vs-Eref-in-vitro/sub-SIROF-30mTorr-320nm-2000um2-0V-vs-Eref-in-vitro_obj-17xax5b_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-SIROF-30mTorr-320nm-80um2-in-vitro/sub-SIROF-30mTorr-320nm-80um2-in-vitro_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-SIROF-30mTorr-650nm-800um2-in-vitro/sub-SIROF-30mTorr-650nm-800um2-in-vitro_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-SIROF-30mTorr-650nm-80um2-in-vitro/sub-SIROF-30mTorr-650nm-80um2-in-vitro_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TiN-1200nm-2000um2-in-vitro/sub-TiN-1200nm-2000um2-in-vitro_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TiN-900nm-4000um2-in-vitro/sub-TiN-900nm-4000um2-in-vitro_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok:
-  - sub-RuOx-60mTorr-158nm-2000um2-in-vitro/sub-RuOx-60mTorr-158nm-2000um2-in-vitro_ecephys.nwb
+  - path: sub-RuOx-60mTorr-158nm-2000um2-in-vitro/sub-RuOx-60mTorr-158nm-2000um2-in-vitro_ecephys.nwb
+    status: pass
+    test: matnwb_nwbRead
   assets_timeout:
   - path: sub-SIROF-30mTorr-320nm-2000um2-0-2V-vs-Eref-in-vitro/sub-SIROF-30mTorr-320nm-2000um2-0-2V-vs-Eref-in-vitro_obj-jkigg7_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
       matnwb: v2.6.0.2

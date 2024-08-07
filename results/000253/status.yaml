@@ -8,45 +8,69 @@ tests:
 - assets_nok: []
   assets_ok:
   - path: sub-621890/sub-621890_ses-1186358749_probe-0_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-632487/sub-632487_ses-1204677304_probe-4_ecephys.nwb
+  - path: sub-632487/sub-632487_ses-1204677304_probe-4_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-632487/sub-632487_ses-1204677304_probe-5_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-637542/sub-637542_ses-1211241460_ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-637908/sub-637908_ses-1213341633_probe-5_ecephys.nwb
-  - sub-637909/sub-637909_ses-1212569512_ogen.nwb
-  - sub-637909/sub-637909_ses-1212569512_probe-5_ecephys.nwb
+  - path: sub-637908/sub-637908_ses-1213341633_probe-5_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-637909/sub-637909_ses-1212569512_ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-637909/sub-637909_ses-1212569512_probe-5_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   - path: sub-640507/sub-640507_ses-1217213788_probe-5_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-645495/sub-645495_ses-1224930300_probe-4_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-647836/sub-647836_probe-3_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-647836/sub-647836_ses-1227858756-acq-test.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-649324/sub-649324_ses-1233182025_ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
@@ -55,51 +79,75 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-621890/sub-621890_ses-1186358749_probe-0_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-632487/sub-632487_ses-1204677304_probe-5_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-637542/sub-637542_ses-1211241460_ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-640507/sub-640507_ses-1217213788_probe-5_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-645495/sub-645495_ses-1224930300_probe-4_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-647836/sub-647836_probe-3_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-647836/sub-647836_ses-1227858756-acq-test.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-649324/sub-649324_ses-1233182025_ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
-  - sub-632487/sub-632487_ses-1204677304_probe-4_ecephys.nwb
-  - sub-637908/sub-637908_ses-1213341633_probe-5_ecephys.nwb
-  - sub-637909/sub-637909_ses-1212569512_ogen.nwb
-  - sub-637909/sub-637909_ses-1212569512_probe-5_ecephys.nwb
+  - path: sub-632487/sub-632487_ses-1204677304_probe-4_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-637908/sub-637908_ses-1213341633_probe-5_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-637909/sub-637909_ses-1212569512_ogen.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-637909/sub-637909_ses-1212569512_probe-5_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   name: matnwb_nwbRead
 untested: []
 versions:

@@ -7,19 +7,39 @@ nassets: 5
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-1/sub-1.nwb
+  - path: sub-1/sub-1.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout:
-  - sub-1001658946/sub-1001658946_obj-17kkp88_icephys.nwb
-  - sub-1001658946/sub-1001658946_obj-831bdx_icephys.nwb
-  - sub-1001658946/sub-1001658946_obj-n1u30_icephys.nwb
-  - sub-1001658946/sub-1001658946_obj-wnwvr6_icephys.nwb
+  - path: sub-1001658946/sub-1001658946_obj-17kkp88_icephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-1001658946/sub-1001658946_obj-831bdx_icephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-1001658946/sub-1001658946_obj-n1u30_icephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-1001658946/sub-1001658946_obj-wnwvr6_icephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-1/sub-1.nwb
-  - sub-1001658946/sub-1001658946_obj-17kkp88_icephys.nwb
-  - sub-1001658946/sub-1001658946_obj-831bdx_icephys.nwb
-  - sub-1001658946/sub-1001658946_obj-n1u30_icephys.nwb
-  - sub-1001658946/sub-1001658946_obj-wnwvr6_icephys.nwb
+  - path: sub-1/sub-1.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-1001658946/sub-1001658946_obj-17kkp88_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-1001658946/sub-1001658946_obj-831bdx_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-1001658946/sub-1001658946_obj-n1u30_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-1001658946/sub-1001658946_obj-wnwvr6_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

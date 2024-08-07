@@ -7,11 +7,15 @@ nassets: 1
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-Animal-1-2-and-3/sub-Animal-1-2-and-3.nwb
+  - path: sub-Animal-1-2-and-3/sub-Animal-1-2-and-3.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-Animal-1-2-and-3/sub-Animal-1-2-and-3.nwb
+  - path: sub-Animal-1-2-and-3/sub-Animal-1-2-and-3.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

@@ -8,10 +8,14 @@ tests:
 - assets_nok: []
   assets_ok: []
   assets_timeout:
-  - sub-001/sub-001.nwb
+  - path: sub-001/sub-001.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-001/sub-001.nwb
+  - path: sub-001/sub-001.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

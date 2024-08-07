@@ -8,98 +8,146 @@ tests:
 - assets_nok: []
   assets_ok: []
   assets_timeout:
-  - sub-RuOx/sub-RuOx_obj-1cgrk56_ecephys.nwb
-  - sub-RuOx/sub-RuOx_obj-1turh6t_ecephys.nwb
+  - path: sub-RuOx/sub-RuOx_obj-1cgrk56_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-RuOx/sub-RuOx_obj-1turh6t_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   - path: sub-RuOx/sub-RuOx_obj-1x8jyya_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-RuOx/sub-RuOx_obj-bdau0y_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-RuOx/sub-RuOx_obj-byi2tl_ecephys.nwb
+  - path: sub-RuOx/sub-RuOx_obj-byi2tl_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   - path: sub-RuOx/sub-RuOx_obj-cnsh2l_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-RuOx/sub-RuOx_obj-emsogx_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-RuOx/sub-RuOx_obj-hh964y_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-RuOx/sub-RuOx_obj-on5exx_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-RuOx/sub-RuOx_obj-ryv1fc_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-RuOx/sub-RuOx_obj-zsrwv5_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - sub-SIROF/sub-SIROF_obj-18mw32i_ecephys.nwb
+  - path: sub-SIROF/sub-SIROF_obj-18mw32i_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-RuOx/sub-RuOx_obj-1x8jyya_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-RuOx/sub-RuOx_obj-bdau0y_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-RuOx/sub-RuOx_obj-cnsh2l_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-RuOx/sub-RuOx_obj-emsogx_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-RuOx/sub-RuOx_obj-hh964y_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-RuOx/sub-RuOx_obj-on5exx_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-RuOx/sub-RuOx_obj-ryv1fc_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-RuOx/sub-RuOx_obj-zsrwv5_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
-  - sub-RuOx/sub-RuOx_obj-1cgrk56_ecephys.nwb
-  - sub-RuOx/sub-RuOx_obj-1turh6t_ecephys.nwb
-  - sub-RuOx/sub-RuOx_obj-byi2tl_ecephys.nwb
-  - sub-SIROF/sub-SIROF_obj-18mw32i_ecephys.nwb
+  - path: sub-RuOx/sub-RuOx_obj-1cgrk56_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-RuOx/sub-RuOx_obj-1turh6t_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-RuOx/sub-RuOx_obj-byi2tl_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
+  - path: sub-SIROF/sub-SIROF_obj-18mw32i_ecephys.nwb
+    status: timeout
+    test: matnwb_nwbRead
   name: matnwb_nwbRead
 untested: []
 versions:

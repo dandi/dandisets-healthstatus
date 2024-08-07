@@ -7,25 +7,57 @@ nassets: 10
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-jlh14/sub-jlh14_ses-jlh14-2022-06-14-g0_ecephys.nwb
-  - sub-jlh19/sub-jlh19_ses-jlh19-2022-07-28-g0_ecephys.nwb
-  - sub-jlh40/sub-jlh40_ses-jlh40-2023-08-21-16-01-34_ecephys.nwb
+  - path: sub-jlh14/sub-jlh14_ses-jlh14-2022-06-14-g0_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-jlh19/sub-jlh19_ses-jlh19-2022-07-28-g0_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-jlh40/sub-jlh40_ses-jlh40-2023-08-21-16-01-34_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout:
-  - sub-jlh31/sub-jlh31_ses-jlh31-2023-01-24-14-30-23_ecephys.nwb
-  - sub-jlh32/sub-jlh32_ses-jlh32-2023-02-18-16-07-58_ecephys.nwb
-  - sub-jlh33/sub-jlh33_ses-jlh33-2023-02-22-15-24-35_ecephys.nwb
-  - sub-jlh34/sub-jlh34_ses-jlh34-2023-05-15-16-03-21_ecephys.nwb
-  - sub-jlh39/sub-jlh39_ses-jlh39-2023-08-16-11-52-30_ecephys.nwb
+  - path: sub-jlh31/sub-jlh31_ses-jlh31-2023-01-24-14-30-23_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-jlh32/sub-jlh32_ses-jlh32-2023-02-18-16-07-58_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-jlh33/sub-jlh33_ses-jlh33-2023-02-22-15-24-35_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-jlh34/sub-jlh34_ses-jlh34-2023-05-15-16-03-21_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-jlh39/sub-jlh39_ses-jlh39-2023-08-16-11-52-30_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-jlh14/sub-jlh14_ses-jlh14-2022-06-14-g0_ecephys.nwb
-  - sub-jlh19/sub-jlh19_ses-jlh19-2022-07-28-g0_ecephys.nwb
-  - sub-jlh31/sub-jlh31_ses-jlh31-2023-01-24-14-30-23_ecephys.nwb
-  - sub-jlh32/sub-jlh32_ses-jlh32-2023-02-18-16-07-58_ecephys.nwb
-  - sub-jlh33/sub-jlh33_ses-jlh33-2023-02-22-15-24-35_ecephys.nwb
-  - sub-jlh34/sub-jlh34_ses-jlh34-2023-05-15-16-03-21_ecephys.nwb
-  - sub-jlh39/sub-jlh39_ses-jlh39-2023-08-16-11-52-30_ecephys.nwb
-  - sub-jlh40/sub-jlh40_ses-jlh40-2023-08-21-16-01-34_ecephys.nwb
+  - path: sub-jlh14/sub-jlh14_ses-jlh14-2022-06-14-g0_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-jlh19/sub-jlh19_ses-jlh19-2022-07-28-g0_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-jlh31/sub-jlh31_ses-jlh31-2023-01-24-14-30-23_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-jlh32/sub-jlh32_ses-jlh32-2023-02-18-16-07-58_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-jlh33/sub-jlh33_ses-jlh33-2023-02-22-15-24-35_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-jlh34/sub-jlh34_ses-jlh34-2023-05-15-16-03-21_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-jlh39/sub-jlh39_ses-jlh39-2023-08-16-11-52-30_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-jlh40/sub-jlh40_ses-jlh40-2023-08-21-16-01-34_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

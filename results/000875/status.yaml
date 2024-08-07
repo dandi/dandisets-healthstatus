@@ -7,25 +7,57 @@ nassets: 9
 tests:
 - assets_nok: []
   assets_ok:
-  - sub-10p-x4-600ns-200ms-3-2kV-YP-(dish11)/sub-10p-x4-600ns-200ms-3-2kV-YP-(dish11)_ses-10p-x4-600ns-200ms-3-2kV-YP_image.nwb
-  - sub-10p-x4-600ns-200ms-3-2kV-YP-(dish18)/sub-10p-x4-600ns-200ms-3-2kV-YP-(dish18)_ses-10p-x4-600ns-200ms-3-2kV-YP_image.nwb
-  - sub-1p-x4-600ns-200ms-3-2kV-YP-(dish25)/sub-1p-x4-600ns-200ms-3-2kV-YP-(dish25)_ses-1p-x4-600ns-200ms-3-2kV-YP_image.nwb
-  - sub-5p-x4-600ns-200ms-3-2kV-YP-(dish22)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish22)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
+  - path: sub-10p-x4-600ns-200ms-3-2kV-YP-(dish11)/sub-10p-x4-600ns-200ms-3-2kV-YP-(dish11)_ses-10p-x4-600ns-200ms-3-2kV-YP_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-10p-x4-600ns-200ms-3-2kV-YP-(dish18)/sub-10p-x4-600ns-200ms-3-2kV-YP-(dish18)_ses-10p-x4-600ns-200ms-3-2kV-YP_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-1p-x4-600ns-200ms-3-2kV-YP-(dish25)/sub-1p-x4-600ns-200ms-3-2kV-YP-(dish25)_ses-1p-x4-600ns-200ms-3-2kV-YP_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+  - path: sub-5p-x4-600ns-200ms-3-2kV-YP-(dish22)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish22)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
   assets_timeout:
-  - sub-10p-x4-600ns-200ms-3-2kV-YP-(dish04)/sub-10p-x4-600ns-200ms-3-2kV-YP-(dish04)_ses-10p-x4-600ns-200ms-3-2kV-YP_image.nwb
-  - sub-1p-x4-600ns-200ms-3-2kV-YP-(dish24)/sub-1p-x4-600ns-200ms-3-2kV-YP-(dish24)_ses-1p-x4-600ns-200ms-3-2kV-YP_image.nwb
-  - sub-5p-x4-600ns-200ms-3-2kV-YP-(dish09)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish09)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
-  - sub-5p-x4-600ns-200ms-3-2kV-YP-(dish20)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish20)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
+  - path: sub-10p-x4-600ns-200ms-3-2kV-YP-(dish04)/sub-10p-x4-600ns-200ms-3-2kV-YP-(dish04)_ses-10p-x4-600ns-200ms-3-2kV-YP_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-1p-x4-600ns-200ms-3-2kV-YP-(dish24)/sub-1p-x4-600ns-200ms-3-2kV-YP-(dish24)_ses-1p-x4-600ns-200ms-3-2kV-YP_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-5p-x4-600ns-200ms-3-2kV-YP-(dish09)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish09)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+  - path: sub-5p-x4-600ns-200ms-3-2kV-YP-(dish20)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish20)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
   name: pynwb_open_load_ns
 - assets_nok:
-  - sub-10p-x4-600ns-200ms-3-2kV-YP-(dish04)/sub-10p-x4-600ns-200ms-3-2kV-YP-(dish04)_ses-10p-x4-600ns-200ms-3-2kV-YP_image.nwb
-  - sub-10p-x4-600ns-200ms-3-2kV-YP-(dish11)/sub-10p-x4-600ns-200ms-3-2kV-YP-(dish11)_ses-10p-x4-600ns-200ms-3-2kV-YP_image.nwb
-  - sub-10p-x4-600ns-200ms-3-2kV-YP-(dish18)/sub-10p-x4-600ns-200ms-3-2kV-YP-(dish18)_ses-10p-x4-600ns-200ms-3-2kV-YP_image.nwb
-  - sub-1p-x4-600ns-200ms-3-2kV-YP-(dish24)/sub-1p-x4-600ns-200ms-3-2kV-YP-(dish24)_ses-1p-x4-600ns-200ms-3-2kV-YP_image.nwb
-  - sub-1p-x4-600ns-200ms-3-2kV-YP-(dish25)/sub-1p-x4-600ns-200ms-3-2kV-YP-(dish25)_ses-1p-x4-600ns-200ms-3-2kV-YP_image.nwb
-  - sub-5p-x4-600ns-200ms-3-2kV-YP-(dish09)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish09)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
-  - sub-5p-x4-600ns-200ms-3-2kV-YP-(dish20)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish20)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
-  - sub-5p-x4-600ns-200ms-3-2kV-YP-(dish22)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish22)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
+  - path: sub-10p-x4-600ns-200ms-3-2kV-YP-(dish04)/sub-10p-x4-600ns-200ms-3-2kV-YP-(dish04)_ses-10p-x4-600ns-200ms-3-2kV-YP_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-10p-x4-600ns-200ms-3-2kV-YP-(dish11)/sub-10p-x4-600ns-200ms-3-2kV-YP-(dish11)_ses-10p-x4-600ns-200ms-3-2kV-YP_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-10p-x4-600ns-200ms-3-2kV-YP-(dish18)/sub-10p-x4-600ns-200ms-3-2kV-YP-(dish18)_ses-10p-x4-600ns-200ms-3-2kV-YP_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-1p-x4-600ns-200ms-3-2kV-YP-(dish24)/sub-1p-x4-600ns-200ms-3-2kV-YP-(dish24)_ses-1p-x4-600ns-200ms-3-2kV-YP_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-1p-x4-600ns-200ms-3-2kV-YP-(dish25)/sub-1p-x4-600ns-200ms-3-2kV-YP-(dish25)_ses-1p-x4-600ns-200ms-3-2kV-YP_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-5p-x4-600ns-200ms-3-2kV-YP-(dish09)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish09)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-5p-x4-600ns-200ms-3-2kV-YP-(dish20)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish20)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+  - path: sub-5p-x4-600ns-200ms-3-2kV-YP-(dish22)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish22)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
+    status: fail
+    test: matnwb_nwbRead
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
