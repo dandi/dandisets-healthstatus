@@ -10,8 +10,16 @@ tests:
   - path: sub-SWC-052/sub-SWC-052_ses-22e04698-b974-4805-b241-3b547dbf37bf_behavior+ecephys+image.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   assets_timeout:
   - path: sub-CSH-ZAD-025/sub-CSH-ZAD-025_ses-c557324b-b95d-414c-888f-6ee1329a2329-processed-only_behavior.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-DY-009/sub-DY-009_ses-db4df448-e449-4a6f-a0e7-288711e7a75a-processed-only_behavior.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions:
@@ -104,6 +112,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-DY-009/sub-DY-009_ses-db4df448-e449-4a6f-a0e7-288711e7a75a-processed-only_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-DY-014/sub-DY-014_ses-7622da34-51b6-4661-98ae-a57d40806008-processed-only_behavior.nwb
     status: fail
     test: matnwb_nwbRead
@@ -179,6 +194,7 @@ tests:
   - path: sub-SWC-052/sub-SWC-052_ses-22e04698-b974-4805-b241-3b547dbf37bf_behavior+ecephys+image.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-ZFM-02370/sub-ZFM-02370_ses-6f6d2c8e-28be-49f4-ae4d-06be2d3148c1-processed-only_behavior.nwb
     status: timeout
     test: matnwb_nwbRead

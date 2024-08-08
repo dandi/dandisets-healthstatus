@@ -38,6 +38,7 @@ tests:
   - path: sub-300-405/sub-300-405_ses-Opto-DLS-Excitatory-ChR2Scrambled-2020-09-04T12-31-59_ogen.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-321-415/sub-321-415_ses-Opto-DMS-Inhibitory-NpHRScrambled-2020-11-20T10-56-07_ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -48,7 +49,15 @@ tests:
   - path: sub-361-427/sub-361-427_ses-Opto-DMS-Inhibitory-EYFP-2020-12-09T11-28-06_ogen.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-414-405/sub-414-405_ses-Opto-DLS-Excitatory-ChR2-2020-09-11T12-32-35_ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-430-420/sub-430-420_ses-Opto-DMS-Inhibitory-NpHR-2020-11-03T10-59-21_behavior+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
     versions:
@@ -72,9 +81,11 @@ tests:
   - path: sub-479/sub-479_ses-Opto-DMS-Excitatory-ChR2-2019-05-29T11-09-34_behavior+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-63-207/sub-63-207_ses-FP-PR-2018-10-26T10-35-29_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -120,6 +131,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-430-420/sub-430-420_ses-Opto-DMS-Inhibitory-NpHR-2020-11-03T10-59-21_behavior+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-431-419/sub-431-419_ses-Opto-DMS-Excitatory-ChR2Scrambled-2020-11-19T12-57-19_ogen.nwb
     status: fail
     test: matnwb_nwbRead
@@ -137,17 +155,21 @@ tests:
   - path: sub-63-207/sub-63-207_ses-FP-PR-2018-10-26T10-35-29_behavior.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   assets_ok: []
   assets_timeout:
   - path: sub-300-405/sub-300-405_ses-Opto-DLS-Excitatory-ChR2Scrambled-2020-09-04T12-31-59_ogen.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-361-427/sub-361-427_ses-Opto-DMS-Inhibitory-EYFP-2020-12-09T11-28-06_ogen.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-479/sub-479_ses-Opto-DMS-Excitatory-ChR2-2019-05-29T11-09-34_behavior+ogen.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   name: matnwb_nwbRead
 untested: []
 versions:

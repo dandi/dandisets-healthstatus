@@ -45,6 +45,7 @@ tests:
   - path: sub-EE/sub-EE_ses-EE-080_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-EE/sub-EE_ses-EE-081_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -55,6 +56,7 @@ tests:
   - path: sub-EE/sub-EE_ses-EE-082_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-EE/sub-EE_ses-EE-083_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -63,13 +65,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-EE/sub-EE_ses-EE-084_ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
-  - path: sub-EE/sub-EE_ses-EE-085_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
     versions:
@@ -121,6 +116,7 @@ tests:
   - path: sub-FF/sub-FF_ses-FF-103_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-FF/sub-FF_ses-FF-167_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -169,6 +165,13 @@ tests:
     test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-EE/sub-EE_ses-EE-085_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-FF/sub-FF_ses-FF-130_behavior+ecephys.nwb
@@ -222,6 +225,13 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-EE/sub-EE_ses-EE-085_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-EE/sub-EE_ses-EE-086_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -310,9 +320,11 @@ tests:
   - path: sub-EE/sub-EE_ses-EE-080_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-EE/sub-EE_ses-EE-082_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-EE/sub-EE_ses-EE-083_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
@@ -321,13 +333,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-EE/sub-EE_ses-EE-084_ecephys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
-  - path: sub-EE/sub-EE_ses-EE-085_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
     versions:
@@ -366,6 +371,7 @@ tests:
   - path: sub-FF/sub-FF_ses-FF-103_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-FF/sub-FF_ses-FF-167_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead

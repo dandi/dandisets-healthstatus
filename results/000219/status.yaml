@@ -101,9 +101,11 @@ tests:
   - path: sub-190211-190220-0/sub-190211-190220-0_ses-190220-a000_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-190211-190220-0/sub-190211-190220-0_ses-190220-a001_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-190211-190220-0/sub-190211-190220-0_ses-190220-a002_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -198,6 +200,7 @@ tests:
   - path: sub-190320-190327/sub-190320-190327_ses-190327-a000_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-190320-190327/sub-190320-190327_ses-190327-a001_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -243,6 +246,7 @@ tests:
   - path: sub-190921-190929-1/sub-190921-190929-1_ses-190929-a000_behavior+image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-190921-190930/sub-190921-190930_ses-190930-a001_behavior+image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -278,13 +282,6 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-191122-191204/sub-191122-191204_ses-191204-a000_behavior+image+ophys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-191122-191204/sub-191122-191204_ses-191204-a001_behavior+image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -337,6 +334,7 @@ tests:
   - path: sub-191205-191213/sub-191205-191213_ses-191213-a000_behavior+image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-191205-191213/sub-191205-191213_ses-191213-a001_behavior+image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -361,6 +359,7 @@ tests:
   - path: sub-200103-200110-0/sub-200103-200110-0_ses-200110-a001_behavior+image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-200108-200117-1/sub-200108-200117-1_ses-200117-a001_behavior+image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -418,6 +417,13 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-191122-191204/sub-191122-191204_ses-191204-a000_behavior+image+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-171211-171220/sub-171211-171220_ses-171220-a001_behavior+ophys.nwb
@@ -472,6 +478,7 @@ tests:
   - path: sub-190320-190327/sub-190320-190327_ses-190327-a000_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-190828-190909/sub-190828-190909_ses-190909-a000_behavior+image+ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -504,9 +511,9 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-191205-191210-0/sub-191205-191210-0_ses-191210-a001_behavior+image+ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -652,9 +659,11 @@ tests:
   - path: sub-190211-190220-0/sub-190211-190220-0_ses-190220-a000_behavior+ophys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-190211-190220-0/sub-190211-190220-0_ses-190220-a001_behavior+ophys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-190211-190220-0/sub-190211-190220-0_ses-190220-a002_behavior+ophys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -756,6 +765,7 @@ tests:
   - path: sub-190921-190929-1/sub-190921-190929-1_ses-190929-a000_behavior+image+ophys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-190921-190930/sub-190921-190930_ses-190930-a001_behavior+image+ophys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -808,6 +818,7 @@ tests:
   - path: sub-191205-191213/sub-191205-191213_ses-191213-a000_behavior+image+ophys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-200103-200110-0/sub-200103-200110-0_ses-200110-a000_behavior+image+ophys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -818,6 +829,7 @@ tests:
   - path: sub-200103-200110-0/sub-200103-200110-0_ses-200110-a001_behavior+image+ophys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-200108-200117-1/sub-200108-200117-1_ses-200117-a001_behavior+image+ophys.nwb
     status: timeout
     test: matnwb_nwbRead

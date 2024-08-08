@@ -11,41 +11,53 @@ tests:
   - path: sub-TR11/sub-TR11_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-TR12-512ch/sub-TR12-512ch_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-TR13/sub-TR13_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-TR14-512ch/sub-TR14-512ch_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-TR15-512ch/sub-TR15-512ch_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-TR8/sub-TR8_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
+    versions: null
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-TR11/sub-TR11_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-TR12-512ch/sub-TR12-512ch_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-TR13/sub-TR13_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-TR14-512ch/sub-TR14-512ch_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-TR15-512ch/sub-TR15-512ch_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-TR8/sub-TR8_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

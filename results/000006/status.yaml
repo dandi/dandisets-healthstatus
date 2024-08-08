@@ -10,9 +10,11 @@ tests:
   - path: sub-anm369962/sub-anm369962_ses-20170309.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-anm369962/sub-anm369962_ses-20170310.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-anm369962/sub-anm369962_ses-20170313.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -44,6 +46,7 @@ tests:
   - path: sub-anm369963/sub-anm369963_ses-20170226.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-anm369963/sub-anm369963_ses-20170227.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -55,15 +58,17 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-anm369963/sub-anm369963_ses-20170301.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-anm369963/sub-anm369963_ses-20170302.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-anm369963/sub-anm369963_ses-20170306.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -186,6 +191,7 @@ tests:
   - path: sub-anm372794/sub-anm372794_ses-20170627.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-anm372795/sub-anm372795_ses-20170714.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -360,6 +366,7 @@ tests:
   - path: sub-anm369962/sub-anm369962_ses-20170309.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-anm369962/sub-anm369962_ses-20170313.nwb
     status: fail
     test: matnwb_nwbRead
@@ -391,6 +398,7 @@ tests:
   - path: sub-anm369963/sub-anm369963_ses-20170226.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-anm369963/sub-anm369963_ses-20170227.nwb
     status: fail
     test: matnwb_nwbRead
@@ -402,15 +410,17 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-anm369963/sub-anm369963_ses-20170301.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-anm369963/sub-anm369963_ses-20170302.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-anm369963/sub-anm369963_ses-20170306.nwb
     status: fail
     test: matnwb_nwbRead
@@ -533,6 +543,7 @@ tests:
   - path: sub-anm372794/sub-anm372794_ses-20170627.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-anm372795/sub-anm372795_ses-20170714.nwb
     status: fail
     test: matnwb_nwbRead
@@ -692,6 +703,7 @@ tests:
   - path: sub-anm369962/sub-anm369962_ses-20170310.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-anm372795/sub-anm372795_ses-20170715.nwb
     status: timeout
     test: matnwb_nwbRead

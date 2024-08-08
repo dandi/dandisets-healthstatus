@@ -31,6 +31,7 @@ tests:
   - path: sub-JL005/sub-JL005_ses-20190723T130529_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-YT053/sub-YT053_ses-20181124T193421_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -396,6 +397,13 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-YT093/sub-YT093_ses-20210103T142711_behavior.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-EF0150/sub-EF0150_ses-20190223T143451_behavior+ecephys.nwb
@@ -415,6 +423,7 @@ tests:
   - path: sub-JL005/sub-JL005_ses-20190723T130529_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-YT053/sub-YT053_ses-20181124T193421_behavior.nwb
     status: fail
     test: matnwb_nwbRead
@@ -451,6 +460,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-YT092/sub-YT092_ses-20201126T135531_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-YT093/sub-YT093_ses-20210103T142711_behavior.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

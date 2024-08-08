@@ -10,48 +10,62 @@ tests:
   - path: sub-JDS-SingleDay-JS14/sub-JDS-SingleDay-JS14_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-JDS-SingleDay-JS15/sub-JDS-SingleDay-JS15_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-JDS-SingleDay-JS17/sub-JDS-SingleDay-JS17_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-JDS-SingleDay-JS21/sub-JDS-SingleDay-JS21_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-JDS-SingleDay-JS34/sub-JDS-SingleDay-JS34_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-JDS-SingleDay-ZT2/sub-JDS-SingleDay-ZT2_obj-1dss6zi_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-JDS-SingleDay-ZT2/sub-JDS-SingleDay-ZT2_obj-u40err_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-JDS-SingleDay-JS14/sub-JDS-SingleDay-JS14_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-JDS-SingleDay-JS15/sub-JDS-SingleDay-JS15_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-JDS-SingleDay-JS17/sub-JDS-SingleDay-JS17_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-JDS-SingleDay-JS21/sub-JDS-SingleDay-JS21_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-JDS-SingleDay-JS34/sub-JDS-SingleDay-JS34_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-JDS-SingleDay-ZT2/sub-JDS-SingleDay-ZT2_obj-1dss6zi_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-JDS-SingleDay-ZT2/sub-JDS-SingleDay-ZT2_obj-u40err_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

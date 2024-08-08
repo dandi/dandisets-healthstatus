@@ -10,7 +10,15 @@ tests:
   - path: sub-553963/sub-553963_ses-20210301T145817_image.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   assets_timeout:
+  - path: sub-506940/sub-506940_ses-20200804T163032_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-509808/sub-509808_ses-20200610T130353_image.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -97,6 +105,13 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-506940/sub-506940_ses-20200804T163032_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-509808/sub-509808_ses-20200610T130353_image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -172,6 +187,7 @@ tests:
   - path: sub-553963/sub-553963_ses-20210301T145817_image.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-555304/sub-555304_ses-20210309T092244_image.nwb
     status: timeout
     test: matnwb_nwbRead

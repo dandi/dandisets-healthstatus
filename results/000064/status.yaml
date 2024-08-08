@@ -11,11 +11,13 @@ tests:
   - path: sub-001/sub-001.nwb
     status: timeout
     test: pynwb_open_load_ns
+    versions: null
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-001/sub-001.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

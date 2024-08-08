@@ -116,9 +116,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-Fig4-5-Uni1200ns-01/sub-Fig4-5-Uni1200ns-01_ses-BPAE-5xUnipolar-1200ns_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -143,6 +143,7 @@ tests:
   - path: sub-Fig4-5-Uni300ns-16/sub-Fig4-5-Uni300ns-16_ses-BPAE-5xUnipolar-300ns_image.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-Fig4-5-Uni500us-07/sub-Fig4-5-Uni500us-07_ses-BPAE-5xUnipolar-500us_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -153,6 +154,7 @@ tests:
   - path: sub-Fig4-5-Uni500us-09/sub-Fig4-5-Uni500us-09_ses-BPAE-5xUnipolar-500us_image.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-Fig4-5-Uni50us-03/sub-Fig4-5-Uni50us-03_ses-BPAE-5xUnipolar-50us_obj-o92bhj_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -206,6 +208,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Fig4-5-Uni100us-08/sub-Fig4-5-Uni100us-08_ses-BPAE-5xUnipolar-100us_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Fig4-5-Uni100us-12/sub-Fig4-5-Uni100us-12_ses-BPAE-5xUnipolar-100us_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -297,13 +306,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-Fig4-5-Uni100us-12/sub-Fig4-5-Uni100us-12_ses-BPAE-5xUnipolar-100us_image.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-Fig4-5-Uni300ns-01/sub-Fig4-5-Uni300ns-01_ses-BPAE-5xUnipolar-300ns_image.nwb
     status: pass
     test: matnwb_nwbRead
@@ -321,9 +323,11 @@ tests:
   - path: sub-Fig4-5-Uni300ns-16/sub-Fig4-5-Uni300ns-16_ses-BPAE-5xUnipolar-300ns_image.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-Fig4-5-Uni500us-09/sub-Fig4-5-Uni500us-09_ses-BPAE-5xUnipolar-500us_image.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-Fig4-5-Uni50us-03/sub-Fig4-5-Uni50us-03_ses-BPAE-5xUnipolar-50us_obj-o92bhj_image.nwb
     status: pass
     test: matnwb_nwbRead

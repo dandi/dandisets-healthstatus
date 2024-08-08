@@ -10,6 +10,14 @@ tests:
   - path: sub-LC10ad-fly10/sub-LC10ad-fly10_ses-LC10ad-fly10-210923-1611_behavior+image.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
+  - path: sub-LC10ad-fly13/sub-LC10ad-fly13_ses-LC10ad-fly13-210927-1530_behavior+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-LC11-fly0/sub-LC11-fly0_ses-LC11-fly0-161111-1015_behavior+image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -97,6 +105,13 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-LC10ad-fly13/sub-LC10ad-fly13_ses-LC10ad-fly13-210927-1530_behavior+image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-LC11-fly0/sub-LC11-fly0_ses-LC11-fly0-161111-1015_behavior+image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -171,6 +186,7 @@ tests:
   - path: sub-LC10ad-fly10/sub-LC10ad-fly10_ses-LC10ad-fly10-210923-1611_behavior+image.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   assets_timeout:
   - path: sub-LC11-fly3/sub-LC11-fly3_ses-LC11-fly3-170417-1532_behavior+image.nwb
     status: timeout

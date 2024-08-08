@@ -94,6 +94,7 @@ tests:
   - path: sub-BAYLORCD14/sub-BAYLORCD14_ses-20171026T150956.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-BAYLORCD14/sub-BAYLORCD14_ses-20171027T115804.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -104,6 +105,7 @@ tests:
   - path: sub-BAYLORCD14/sub-BAYLORCD14_ses-20171028T165746.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-BAYLORCD6/sub-BAYLORCD6_ses-20170610T135720.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -325,9 +327,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-anm00314758/sub-anm00314758_ses-20151020T104930.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -390,9 +392,11 @@ tests:
   - path: sub-BAYLORCD14/sub-BAYLORCD14_ses-20171026T150956.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-BAYLORCD14/sub-BAYLORCD14_ses-20171028T165746.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-BAYLORCD8/sub-BAYLORCD8_ses-20171017T114425.nwb
     status: fail
     test: matnwb_nwbRead
@@ -429,6 +433,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-anm00314746/sub-anm00314746_ses-20151022T151738.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-anm00314757/sub-anm00314757_ses-20151021T180248.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -688,13 +699,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-anm00314757/sub-anm00314757_ses-20151021T180248.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-anm00314758/sub-anm00314758_ses-20151021T101014.nwb
     status: pass
     test: matnwb_nwbRead

@@ -17,6 +17,7 @@ tests:
   - path: sub-C-3301316517292898410/sub-C-3301316517292898410_ses-20221025T165737.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-C-3301316517292898411/sub-C-3301316517292898411_ses-20221025T165737.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -34,6 +35,7 @@ tests:
   - path: sub-C-XT-XCT-16858754531108060618/sub-C-XT-XCT-16858754531108060618_ses-20221026T170734.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-CX-5890366221766594114/sub-CX-5890366221766594114_ses-20221101T161925.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -65,6 +67,10 @@ tests:
   - path: sub-nosymm-1-1950818611313655264/sub-nosymm-1-1950818611313655264_ses-20230303T122145.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-nosymm-1-4770077565933519796/sub-nosymm-1-4770077565933519796_ses-20240426T143621.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -127,6 +133,10 @@ tests:
   - path: sub-nosymm-1-1950818611313655264/sub-nosymm-1-1950818611313655264_ses-20230303T122145.nwb
     status: fail
     test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-nosymm-1-4770077565933519796/sub-nosymm-1-4770077565933519796_ses-20240426T143621.nwb
     status: fail
     test: matnwb_nwbRead
@@ -139,9 +149,11 @@ tests:
   - path: sub-C-3301316517292898410/sub-C-3301316517292898410_ses-20221025T165737.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-C-XT-XCT-16858754531108060618/sub-C-XT-XCT-16858754531108060618_ses-20221026T170734.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   name: matnwb_nwbRead
 untested: []
 versions:

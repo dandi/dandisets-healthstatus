@@ -52,6 +52,7 @@ tests:
   - path: sub-T5-held-in-minival/sub-T5-held-in-minival_ses-20220601.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-T5-held-in-minival/sub-T5-held-in-minival_ses-20220622.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -78,6 +79,13 @@ tests:
     test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-T5-held-in-minival/sub-T5-held-in-minival_ses-20221215.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-T5-held-out-calib/sub-T5-held-out-calib_ses-20230531.nwb
@@ -146,10 +154,18 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-T5-held-in-minival/sub-T5-held-in-minival_ses-20221215.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - path: sub-T5-held-in-minival/sub-T5-held-in-minival_ses-20220601.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   assets_timeout:
   - path: sub-T5-held-in-calib/sub-T5-held-in-calib_ses-20220615.nwb
     status: timeout

@@ -109,9 +109,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-RuOx/sub-RuOx_obj-b9ezsh_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -164,6 +164,7 @@ tests:
   - path: sub-SIROF/sub-SIROF_obj-18mw32i_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-SIROF/sub-SIROF_obj-1q7tsgd_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -224,6 +225,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-RuOx/sub-RuOx_obj-3pfoo4_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-RuOx/sub-RuOx_obj-57wh23_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -315,13 +323,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-RuOx/sub-RuOx_obj-57wh23_ecephys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-RuOx/sub-RuOx_obj-b9ezsh_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
@@ -339,6 +340,7 @@ tests:
   - path: sub-SIROF/sub-SIROF_obj-18mw32i_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-SIROF/sub-SIROF_obj-1q7tsgd_ecephys.nwb
     status: pass
     test: matnwb_nwbRead

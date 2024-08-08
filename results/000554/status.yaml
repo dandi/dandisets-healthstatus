@@ -10,9 +10,11 @@ tests:
   - path: sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T102302_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T104800_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T105013_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -30,6 +32,7 @@ tests:
   - path: sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T105715_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T105921_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -54,9 +57,11 @@ tests:
   - path: sub-YBT-Rat2-ECoG1024/sub-YBT-Rat2-ECoG1024_ses-20200317T144139_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-YBT-Rat2-ECoG1024/sub-YBT-Rat2-ECoG1024_ses-20200317T144508_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-YBT-Rat2-ECoG1024/sub-YBT-Rat2-ECoG1024_ses-20200317T145821_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -130,6 +135,7 @@ tests:
   - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T135107_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T135649_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -161,6 +167,7 @@ tests:
   - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T140744_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T140942_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -171,13 +178,14 @@ tests:
   - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T141125_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T141318_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T142019_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -279,6 +287,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T141318_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T144133_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -290,9 +305,11 @@ tests:
   - path: sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T102302_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T104800_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T105013_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
@@ -310,12 +327,15 @@ tests:
   - path: sub-YBT-Rat1-ECoG1024/sub-YBT-Rat1-ECoG1024_ses-20200317T105715_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-YBT-Rat2-ECoG1024/sub-YBT-Rat2-ECoG1024_ses-20200317T144139_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-YBT-Rat2-ECoG1024/sub-YBT-Rat2-ECoG1024_ses-20200317T144508_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-YBT-Rat2-ECoG1024/sub-YBT-Rat2-ECoG1024_ses-20200317T145821_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
@@ -347,6 +367,7 @@ tests:
   - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T135107_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T135649_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
@@ -364,6 +385,7 @@ tests:
   - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T140744_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T140942_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
@@ -374,13 +396,7 @@ tests:
   - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T141125_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
-  - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T141318_ecephys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
+    versions: null
   - path: sub-YBT-Rat4-ECoG1024/sub-YBT-Rat4-ECoG1024_ses-20201030T142019_ecephys.nwb
     status: pass
     test: matnwb_nwbRead

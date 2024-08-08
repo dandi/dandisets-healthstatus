@@ -38,6 +38,7 @@ tests:
   - path: sub-307/sub-307_ses-1strec-0_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-307/sub-307_ses-2ndrec-100_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -62,6 +63,7 @@ tests:
   - path: sub-309/sub-309_ses-2ndrec-100_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-309/sub-309_ses-3rdrec-0_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -114,6 +116,7 @@ tests:
   - path: sub-310/sub-310_ses-10threc-100_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-310/sub-310_ses-1strec-0_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -194,6 +197,7 @@ tests:
   - path: sub-311/sub-311_ses-311-2ndrec-100_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-311/sub-311_ses-311-3rdrec-0_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -253,11 +257,12 @@ tests:
   - path: sub-312/sub-312_ses-2ndrec-100_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-312/sub-312_ses-3rdrec-0_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-312/sub-312_ses-4threc-100_ophys.nwb
@@ -298,6 +303,7 @@ tests:
   - path: sub-312/sub-312_ses-9threc-0_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-313/sub-313_ses-10threc-100_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -399,6 +405,7 @@ tests:
   - path: sub-314/sub-314_ses-4threc-100_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-314/sub-314_ses-5threc-0_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -475,9 +482,11 @@ tests:
   - path: sub-307/sub-307_ses-1strec-0_ophys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-309/sub-309_ses-2ndrec-100_ophys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-309/sub-309_ses-6threc-100_ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -502,6 +511,7 @@ tests:
   - path: sub-311/sub-311_ses-311-2ndrec-100_ophys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-311/sub-311_ses-311-5threc-0_ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -517,6 +527,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-312/sub-312_ses-1strec-0_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-312/sub-312_ses-3rdrec-0_ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -618,6 +635,7 @@ tests:
   - path: sub-310/sub-310_ses-10threc-100_ophys.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-310/sub-310_ses-1strec-0_ophys.nwb
     status: pass
     test: matnwb_nwbRead
@@ -733,6 +751,7 @@ tests:
   - path: sub-312/sub-312_ses-2ndrec-100_ophys.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-312/sub-312_ses-4threc-100_ophys.nwb
     status: pass
     test: matnwb_nwbRead
@@ -771,6 +790,7 @@ tests:
   - path: sub-312/sub-312_ses-9threc-0_ophys.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-313/sub-313_ses-10threc-100_ophys.nwb
     status: pass
     test: matnwb_nwbRead
@@ -851,6 +871,7 @@ tests:
   - path: sub-314/sub-314_ses-4threc-100_ophys.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-314/sub-314_ses-5threc-0_ophys.nwb
     status: pass
     test: matnwb_nwbRead
@@ -916,13 +937,6 @@ tests:
       pynwb: 2.6.0
   assets_timeout:
   - path: sub-305/sub-305_ses-3rdrec-0_ophys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-312/sub-312_ses-3rdrec-0_ophys.nwb
     status: timeout
     test: matnwb_nwbRead
     versions:

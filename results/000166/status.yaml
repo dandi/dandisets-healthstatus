@@ -49,9 +49,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-YMV11/sub-YMV11_ses-YMV11-171208_ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
   - path: sub-YMV12/sub-YMV12_ses-YMV12-171211_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -62,6 +59,7 @@ tests:
   - path: sub-YMV13/sub-YMV13_ses-YMV13-180127_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-YMV14/sub-YMV14_ses-YMV14-180128_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -72,9 +70,11 @@ tests:
   - path: sub-YMV16/sub-YMV16_ses-YMV16-180206_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-YMV19/sub-YMV19_ses-YMV19-180209_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   assets_timeout:
   - path: sub-YMV01/sub-YMV01_ses-YMV01-170818_ecephys.nwb
     status: timeout
@@ -98,6 +98,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-YMV05/sub-YMV05_ses-YMV05-170912_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-YMV11/sub-YMV11_ses-YMV11-171208_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions:
@@ -149,6 +156,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-YMV05/sub-YMV05_ses-YMV05-170912_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-YMV11/sub-YMV11_ses-YMV11-171208_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -227,12 +241,10 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-YMV11/sub-YMV11_ses-YMV11-171208_ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
   - path: sub-YMV13/sub-YMV13_ses-YMV13-180127_ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-YMV15/sub-YMV15_ses-YMV15-180205_ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -243,9 +255,11 @@ tests:
   - path: sub-YMV16/sub-YMV16_ses-YMV16-180206_ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-YMV19/sub-YMV19_ses-YMV19-180209_ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   name: matnwb_nwbRead
 untested: []
 versions:

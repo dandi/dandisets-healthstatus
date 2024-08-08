@@ -14,6 +14,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-amadeus/sub-amadeus_ses-08232019_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-amadeus/sub-amadeus_ses-08272019_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -31,6 +38,7 @@ tests:
   - path: sub-mahler/sub-mahler_ses-04132021_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-mahler/sub-mahler_ses-04212021_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -56,6 +64,7 @@ tests:
   - path: sub-mahler/sub-mahler_ses-04142021_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-mahler/sub-mahler_ses-04142021_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -73,6 +82,13 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-amadeus/sub-amadeus_ses-08212019_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-amadeus/sub-amadeus_ses-08232019_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -133,9 +149,11 @@ tests:
   - path: sub-mahler/sub-mahler_ses-04132021_ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-mahler/sub-mahler_ses-04142021_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   name: matnwb_nwbRead
 untested: []
 versions:

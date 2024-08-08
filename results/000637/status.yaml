@@ -17,6 +17,7 @@ tests:
   - path: sub-BH459/sub-BH459_obj-s8wxn0_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-BH464/sub-BH464_obj-12qjgb4_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -65,6 +66,13 @@ tests:
     test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-BH458/sub-BH458_obj-s4spdx_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BH460/sub-BH460_obj-tdgzck_ecephys.nwb
@@ -125,6 +133,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-BH458/sub-BH458_obj-s4spdx_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BH460/sub-BH460_obj-tdgzck_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -157,6 +172,7 @@ tests:
   - path: sub-BH459/sub-BH459_obj-s8wxn0_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   assets_timeout:
   - path: sub-BH456/sub-BH456_obj-1qm8qxi_ecephys.nwb
     status: timeout

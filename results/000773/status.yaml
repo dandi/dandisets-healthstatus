@@ -17,6 +17,7 @@ tests:
   - path: sub-ant2-m1-d17-y2023/sub-ant2-m1-d17-y2023_ses-m1-d17-y2023-ant2-0-03x-ethylpyrazine-40-t150-z50um_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-ant3-m1-d10-y2023/sub-ant3-m1-d10-y2023_ses-m1-d10-y2023-ant3-0-48x-4-methyl-3-heptanone-40-t130-z150um_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -38,10 +39,18 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-ant4-m1-d20-y2023/sub-ant4-m1-d20-y2023_ses-m1-d20-y2023-ant4-0-48x-ethylpyrazine-40-t181-z10um_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout:
   - path: sub-ant2-m1-d20-y2023/sub-ant2-m1-d20-y2023_ses-m1-d20-y2023-ant2-0-48x-isopropanol-40-t158-z125um_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-ant3-m1-d10-y2023/sub-ant3-m1-d10-y2023_ses-m1-d10-y2023-ant3-1x-paraffin-oil-40-t122-z60um_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -52,9 +61,11 @@ tests:
   - path: sub-ant5-m1-d10-y2023/sub-ant5-m1-d10-y2023_ses-m1-d10-y2023-ant5-0-48x-ethanol-40-t182-z95um_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-ant5-m1-d11-y2023/sub-ant5-m1-d11-y2023_ses-m1-d11-y2023-ant5-0-03x-3-hexanone-40-t214-z100um_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-ant5-m4-d6-y2023/sub-ant5-m4-d6-y2023_ses-m4-d6-y2023-ant5-0-48x-propionic-acid-40-t175-z140um_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -113,6 +124,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-ant4-m1-d20-y2023/sub-ant4-m1-d20-y2023_ses-m1-d20-y2023-ant4-0-48x-ethylpyrazine-40-t181-z10um_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ant5-m4-d6-y2023/sub-ant5-m4-d6-y2023_ses-m4-d6-y2023-ant5-0-48x-propionic-acid-40-t175-z140um_ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -139,15 +157,19 @@ tests:
   - path: sub-ant2-m1-d17-y2023/sub-ant2-m1-d17-y2023_ses-m1-d17-y2023-ant2-0-03x-ethylpyrazine-40-t150-z50um_ophys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-ant2-m1-d20-y2023/sub-ant2-m1-d20-y2023_ses-m1-d20-y2023-ant2-0-48x-isopropanol-40-t158-z125um_ophys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-ant5-m1-d10-y2023/sub-ant5-m1-d10-y2023_ses-m1-d10-y2023-ant5-0-48x-ethanol-40-t182-z95um_ophys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-ant5-m1-d11-y2023/sub-ant5-m1-d11-y2023_ses-m1-d11-y2023-ant5-0-03x-3-hexanone-40-t214-z100um_ophys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   name: matnwb_nwbRead
 untested: []
 versions:

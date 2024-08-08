@@ -45,6 +45,7 @@ tests:
   - path: sub-Fig6-5xBi-100kHz-11/sub-Fig6-5xBi-100kHz-11_ses-BPAE-5xBipolar-100kHz_image.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-Fig6-5xBi-10kHz-03/sub-Fig6-5xBi-10kHz-03_ses-BPAE-5xBipolar-10kHz_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -63,12 +64,13 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-Fig6-5xUni-0,83MHz-10/sub-Fig6-5xUni-0,83MHz-10_ses-BPAE-5xUnipolar-0,83MHz_image.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-Fig6-5xUni-100kHz-005/sub-Fig6-5xUni-100kHz-005_ses-BPAE-5xUnipolar-100kHz_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -149,6 +151,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Fig6-5xBi-10kHz-10/sub-Fig6-5xBi-10kHz-10_ses-BPAE-5xBipolar-10kHz_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Fig6-5xUni-0,83MHz-02/sub-Fig6-5xUni-0,83MHz-02_ses-BPAE-5xUnipolar-0,83MHz_image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -195,14 +204,8 @@ tests:
   - path: sub-Fig6-5xBi-100kHz-11/sub-Fig6-5xBi-100kHz-11_ses-BPAE-5xBipolar-100kHz_image.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-Fig6-5xBi-10kHz-09/sub-Fig6-5xBi-10kHz-09_ses-BPAE-5xBipolar-10kHz_image.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
-  - path: sub-Fig6-5xBi-10kHz-10/sub-Fig6-5xBi-10kHz-10_ses-BPAE-5xBipolar-10kHz_image.nwb
     status: pass
     test: matnwb_nwbRead
     versions:
@@ -212,6 +215,7 @@ tests:
   - path: sub-Fig6-5xUni-0,83MHz-10/sub-Fig6-5xUni-0,83MHz-10_ses-BPAE-5xUnipolar-0,83MHz_image.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-Fig6-5xUni-10kHz-01/sub-Fig6-5xUni-10kHz-01_ses-BPAE-5xUnipolar-10kHz_image.nwb
     status: pass
     test: matnwb_nwbRead

@@ -42,6 +42,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-20/sub-20_ecephys+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-22/sub-22_ecephys+image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -52,6 +59,7 @@ tests:
   - path: sub-4/sub-4_ecephys+image.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-7/sub-7_ecephys+image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -62,6 +70,7 @@ tests:
   - path: sub-8/sub-8_ecephys+image.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-9/sub-9_ecephys+image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -107,6 +116,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-20/sub-20_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-22/sub-22_ecephys+image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -133,9 +149,11 @@ tests:
   - path: sub-4/sub-4_ecephys+image.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-8/sub-8_ecephys+image.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   name: matnwb_nwbRead
 untested: []
 versions:

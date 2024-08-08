@@ -85,6 +85,13 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-M-3/sub-M-3_ses-RewardLearning-earlyAcq-Mouse4_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-M-3/sub-M-3_ses-RewardLearning-lateAcq-Mouse4_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -144,6 +151,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H42/sub-H42_ses-H42-2020-04-29-16-55-04-Disc5-5_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-M-3/sub-M-3_ses-RewardLearning-earlyAcq-Mouse4_ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

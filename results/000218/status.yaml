@@ -94,9 +94,11 @@ tests:
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3036um-362um-20160215-160215-122710_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3108um-434um-20160215-160215-161846_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3324um-1000um-20160217-160217-103121_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -121,6 +123,7 @@ tests:
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3396um-1180um-20160221-160221-135947_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3468um-1216um-20160222-160222-120902_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -145,6 +148,7 @@ tests:
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3468um-1252um-20160226-160226-124132_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3540um-1288um-20160227-160227-121226_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -155,6 +159,7 @@ tests:
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3540um-1288um-20160228-160228-135001_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3612um-1360um-20160304-160304-150220_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -179,9 +184,11 @@ tests:
   - path: sub-DT5/sub-DT5_ses-20161011-972um-1224um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT5/sub-DT5_ses-20161014-1296um-1476um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT5/sub-DT5_ses-20161015-1368um-1476um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -206,6 +213,7 @@ tests:
   - path: sub-DT5/sub-DT5_ses-20161018-1552um-2304um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT5/sub-DT5_ses-20161019-1624um-2340um-161019-095311_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -216,9 +224,11 @@ tests:
   - path: sub-DT5/sub-DT5_ses-20161020-1768um-2376um-161020-102642_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT5/sub-DT5_ses-20161021-1840um-2412um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT5/sub-DT5_ses-20161023-1872um-2448um-161023-123504_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -229,6 +239,7 @@ tests:
   - path: sub-DT5/sub-DT5_ses-20161025-1944um-2232um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT5/sub-DT5_ses-20161026-1944um-2232um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -253,6 +264,7 @@ tests:
   - path: sub-DT5/sub-DT5_ses-20161030-2052um-2232um-161030-111142_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT5/sub-DT5_ses-20161031-2088um-2232um-161031-104001_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -263,9 +275,11 @@ tests:
   - path: sub-DT5/sub-DT5_ses-20161101-2088um-2232um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT5/sub-DT5_ses-20161104-2124um-2232um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT7/sub-DT7_ses-20170314-72um-0um-170314-181434_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -297,6 +311,7 @@ tests:
   - path: sub-DT7/sub-DT7_ses-20170317-288um-0um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT7/sub-DT7_ses-20170318-288um-0um-170318-115923_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -325,16 +340,10 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-DT7/sub-DT7_ses-20170324-576um-144um-170324-123932_behavior+ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-DT7/sub-DT7_ses-20170325-576um-360um-170325-125511_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT7/sub-DT7_ses-20170327-864um-360um-170327-115803_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -394,6 +403,7 @@ tests:
   - path: sub-DT7/sub-DT7_ses-20170412-1440um-1170um-170412-103153_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT8/sub-DT8_ses-20170125-0um-0um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -404,6 +414,7 @@ tests:
   - path: sub-DT8/sub-DT8_ses-20170128-0um-72um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT8/sub-DT8_ses-20170201-72um-432um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -421,6 +432,7 @@ tests:
   - path: sub-DT8/sub-DT8_ses-20170206-72um-1872um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT8/sub-DT8_ses-20170207-144um-1944um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -438,6 +450,7 @@ tests:
   - path: sub-DT8/sub-DT8_ses-20170214-216um-1944um-170214-102804_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT8/sub-DT8_ses-20170215-216um-1944um-170215-140739_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -462,6 +475,7 @@ tests:
   - path: sub-DT8/sub-DT8_ses-20170218-216um-1944um-170218-114724_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT8/sub-DT8_ses-20170221-324um-1944um-170221-101929_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -493,6 +507,7 @@ tests:
   - path: sub-DT8/sub-DT8_ses-20170308-612um-2088um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT9/sub-DT9_ses-20170428-0um-0um-merge_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -503,6 +518,7 @@ tests:
   - path: sub-DT9/sub-DT9_ses-20170429-0um-0um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT9/sub-DT9_ses-20170430-0um-0um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -527,6 +543,7 @@ tests:
   - path: sub-DT9/sub-DT9_ses-20170504-396um-0um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-DT9/sub-DT9_ses-20170505-396um-0um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -597,7 +614,14 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-DT7/sub-DT7_ses-20170324-576um-144um-170324-123932_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-DT1/sub-DT1_ses-DT1-rLS-20150724-1872um_ecephys.nwb
@@ -657,6 +681,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-DT5/sub-DT5_ses-20161026-1944um-2232um-merge_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-DT7/sub-DT7_ses-20170324-576um-144um-170324-123932_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -811,13 +842,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-DT7/sub-DT7_ses-20170324-576um-144um-170324-123932_behavior+ecephys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-DT7/sub-DT7_ses-20170408-936um-1152um-merge_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
@@ -962,9 +986,11 @@ tests:
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3036um-362um-20160215-160215-122710_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3108um-434um-20160215-160215-161846_ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3324um-1000um-20160217-160217-103121_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -982,6 +1008,7 @@ tests:
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3396um-1180um-20160221-160221-135947_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3468um-1216um-20160222-160222-120902_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -1006,6 +1033,7 @@ tests:
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3468um-1252um-20160226-160226-124132_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3540um-1288um-20160227-160227-121226_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -1016,27 +1044,35 @@ tests:
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3540um-1288um-20160228-160228-135001_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT5/sub-DT5_ses-20161011-972um-1224um-merge_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT5/sub-DT5_ses-20161014-1296um-1476um-merge_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT5/sub-DT5_ses-20161018-1552um-2304um-merge_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT5/sub-DT5_ses-20161020-1768um-2376um-161020-102642_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT5/sub-DT5_ses-20161021-1840um-2412um-merge_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT5/sub-DT5_ses-20161025-1944um-2232um-merge_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT5/sub-DT5_ses-20161030-2052um-2232um-161030-111142_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT5/sub-DT5_ses-20161031-2088um-2232um-161031-104001_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -1047,9 +1083,11 @@ tests:
   - path: sub-DT5/sub-DT5_ses-20161101-2088um-2232um-merge_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT5/sub-DT5_ses-20161104-2124um-2232um-merge_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT7/sub-DT7_ses-20170315-288um-0um-170315-191240_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -1060,6 +1098,7 @@ tests:
   - path: sub-DT7/sub-DT7_ses-20170317-288um-0um-merge_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT7/sub-DT7_ses-20170318-288um-0um-170318-115923_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -1084,6 +1123,7 @@ tests:
   - path: sub-DT7/sub-DT7_ses-20170325-576um-360um-170325-125511_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT7/sub-DT7_ses-20170410-1152um-1152um-170410-102443_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -1094,6 +1134,7 @@ tests:
   - path: sub-DT7/sub-DT7_ses-20170412-1440um-1170um-170412-103153_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT8/sub-DT8_ses-20170125-0um-0um-merge_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -1104,12 +1145,15 @@ tests:
   - path: sub-DT8/sub-DT8_ses-20170128-0um-72um-merge_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT8/sub-DT8_ses-20170206-72um-1872um-merge_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT8/sub-DT8_ses-20170214-216um-1944um-170214-102804_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT8/sub-DT8_ses-20170217-216um-1944um-merge_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -1120,6 +1164,7 @@ tests:
   - path: sub-DT8/sub-DT8_ses-20170218-216um-1944um-170218-114724_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT8/sub-DT8_ses-20170306-468um-2088um-170306-113628_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -1130,9 +1175,11 @@ tests:
   - path: sub-DT8/sub-DT8_ses-20170308-612um-2088um-merge_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT9/sub-DT9_ses-20170429-0um-0um-merge_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT9/sub-DT9_ses-20170501-216um-0um-170501-112210_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -1143,6 +1190,7 @@ tests:
   - path: sub-DT9/sub-DT9_ses-20170504-396um-0um-merge_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-DT9/sub-DT9_ses-20170506-468um-36um-170506-111835_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead

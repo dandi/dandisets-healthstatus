@@ -7,6 +7,13 @@ nassets: 24
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-BPAE-8bipolar-1Hz-03/sub-BPAE-8bipolar-1Hz-03_ses-Cross-directional-1Hz_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BPAE-8bipolar-770kHz-02/sub-BPAE-8bipolar-770kHz-02_ses-Cross-directional-770kHz_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -73,6 +80,13 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-BPAE-8bipolar-1Hz-03/sub-BPAE-8bipolar-1Hz-03_ses-Cross-directional-1Hz_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BPAE-8bipolar-1Hz-600ns-04/sub-BPAE-8bipolar-1Hz-600ns-04_ses-Cross-directional-1Hz_image.nwb
     status: fail
     test: matnwb_nwbRead

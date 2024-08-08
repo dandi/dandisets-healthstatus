@@ -10,30 +10,38 @@ tests:
   - path: sub-Dataset-3-Animals-1-2-3-&-4/sub-Dataset-3-Animals-1-2-3-&-4.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-Dataset-4-Animal-2/sub-Dataset-4-Animal-2.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-Dataset-4-Animal-3/sub-Dataset-4-Animal-3.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-Dataset-5-Animals-1-&-2/sub-Dataset-5-Animals-1-&-2.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Dataset-3-Animals-1-2-3-&-4/sub-Dataset-3-Animals-1-2-3-&-4.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-Dataset-4-Animal-2/sub-Dataset-4-Animal-2.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-Dataset-4-Animal-3/sub-Dataset-4-Animal-3.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-Dataset-5-Animals-1-&-2/sub-Dataset-5-Animals-1-&-2.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

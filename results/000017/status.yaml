@@ -45,6 +45,7 @@ tests:
   - path: sub-Forssmann/sub-Forssmann_ses-20171104T120000.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-Forssmann/sub-Forssmann_ses-20171105T120000.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -63,9 +64,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-Hench/sub-Hench_ses-20170617T120000.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -139,6 +140,7 @@ tests:
   - path: sub-Moniz/sub-Moniz_ses-20170516T120000.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-Moniz/sub-Moniz_ses-20170518T120000.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -184,6 +186,7 @@ tests:
   - path: sub-Radnitz/sub-Radnitz_ses-20170110T120000.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-Radnitz/sub-Radnitz_ses-20170111T120000.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -222,6 +225,7 @@ tests:
   - path: sub-Richards/sub-Richards_ses-20171101T120000.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-Richards/sub-Richards_ses-20171102T120000.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -246,6 +250,7 @@ tests:
   - path: sub-Tatum/sub-Tatum_ses-20171208T120000.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-Tatum/sub-Tatum_ses-20171209T120000.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -256,6 +261,7 @@ tests:
   - path: sub-Theiler/sub-Theiler_ses-20171011T120000.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -291,9 +297,9 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-Hench/sub-Hench_ses-20170617T120000.nwb
     status: fail
     test: matnwb_nwbRead
@@ -360,6 +366,7 @@ tests:
   - path: sub-Moniz/sub-Moniz_ses-20170516T120000.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-Moniz/sub-Moniz_ses-20170518T120000.nwb
     status: fail
     test: matnwb_nwbRead
@@ -398,6 +405,7 @@ tests:
   - path: sub-Radnitz/sub-Radnitz_ses-20170110T120000.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-Radnitz/sub-Radnitz_ses-20170111T120000.nwb
     status: fail
     test: matnwb_nwbRead
@@ -429,6 +437,7 @@ tests:
   - path: sub-Richards/sub-Richards_ses-20171101T120000.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-Richards/sub-Richards_ses-20171102T120000.nwb
     status: fail
     test: matnwb_nwbRead
@@ -446,6 +455,7 @@ tests:
   - path: sub-Tatum/sub-Tatum_ses-20171208T120000.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-Tatum/sub-Tatum_ses-20171209T120000.nwb
     status: fail
     test: matnwb_nwbRead
@@ -456,6 +466,7 @@ tests:
   - path: sub-Theiler/sub-Theiler_ses-20171011T120000.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   assets_ok:
   - path: sub-Cori/sub-Cori_ses-20161217T120000.nwb
     status: pass
@@ -482,6 +493,7 @@ tests:
   - path: sub-Forssmann/sub-Forssmann_ses-20171104T120000.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-Forssmann/sub-Forssmann_ses-20171105T120000.nwb
     status: timeout
     test: matnwb_nwbRead

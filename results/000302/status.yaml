@@ -87,6 +87,7 @@ tests:
   - path: sub-ANM-0176/sub-ANM-0176_ses-20211108_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-ANM-0178/sub-ANM-0178_ses-20211115_behavior+ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -122,13 +123,6 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - path: sub-ANM-0178/sub-ANM-0178_ses-20211122_behavior+ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-ANM-0179/sub-ANM-0179_ses-20211121_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -181,6 +175,7 @@ tests:
   - path: sub-ANM-0188/sub-ANM-0188_ses-20211202_behavior+ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-ANM-0188/sub-ANM-0188_ses-20211203_behavior+ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -224,6 +219,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-ANM-0178/sub-ANM-0178_ses-20211122_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-ANM-0170/sub-ANM-0170_ses-20210905_behavior+ecephys.nwb
@@ -248,6 +250,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-ANM-0174/sub-ANM-0174_ses-20210910_behavior+ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-ANM-0178/sub-ANM-0178_ses-20211122_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -293,13 +302,7 @@ tests:
   - path: sub-ANM-0176/sub-ANM-0176_ses-20211108_behavior+ecephys.nwb
     status: pass
     test: matnwb_nwbRead
-  - path: sub-ANM-0178/sub-ANM-0178_ses-20211122_behavior+ecephys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
+    versions: null
   - path: sub-ANM-0190/sub-ANM-0190_ses-20211130_behavior+ecephys.nwb
     status: pass
     test: matnwb_nwbRead
@@ -430,6 +433,7 @@ tests:
   - path: sub-ANM-0188/sub-ANM-0188_ses-20211202_behavior+ecephys+ogen.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-ANM-0188/sub-ANM-0188_ses-20211203_behavior+ecephys+ogen.nwb
     status: timeout
     test: matnwb_nwbRead

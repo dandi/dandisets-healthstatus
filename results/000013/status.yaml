@@ -52,6 +52,7 @@ tests:
   - path: sub-anm106213/sub-anm106213_ses-20101215_obj-1copi4i_behavior+icephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-anm106213/sub-anm106213_ses-20101215_obj-1ykz3wz_behavior+icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -63,9 +64,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-anm134333/sub-anm134333_ses-20110601_behavior+icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -104,6 +105,7 @@ tests:
   - path: sub-anm211295/sub-anm211295_ses-20131015_behavior+icephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-anm215592/sub-anm215592_ses-20131015_obj-8s1awh_behavior+icephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -247,9 +249,11 @@ tests:
   - path: sub-anm244025/sub-anm244025_ses-20141026_obj-gspsia_behavior+icephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-anm244028/sub-anm244028_ses-20141021_obj-15ygrjz_behavior+icephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-anm244028/sub-anm244028_ses-20141021_obj-1a5sqoc_behavior+icephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -372,6 +376,13 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
+  - path: sub-anm131970/sub-anm131970_ses-20110511_behavior+icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-anm134333/sub-anm134333_ses-20110606_behavior+icephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -431,6 +442,7 @@ tests:
   - path: sub-anm244025/sub-anm244025_ses-20141026_obj-gspsia_behavior+icephys+ogen.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-anm244028/sub-anm244028_ses-20141021_obj-1a5sqoc_behavior+icephys+ogen.nwb
     status: fail
     test: matnwb_nwbRead
@@ -491,13 +503,7 @@ tests:
   - path: sub-anm106213/sub-anm106213_ses-20101215_obj-1copi4i_behavior+icephys.nwb
     status: pass
     test: matnwb_nwbRead
-  - path: sub-anm131970/sub-anm131970_ses-20110511_behavior+icephys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
+    versions: null
   - path: sub-anm134333/sub-anm134333_ses-20110601_behavior+icephys.nwb
     status: pass
     test: matnwb_nwbRead
@@ -529,6 +535,7 @@ tests:
   - path: sub-anm211295/sub-anm211295_ses-20131015_behavior+icephys+ogen.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-anm215592/sub-anm215592_ses-20131015_obj-8s1awh_behavior+icephys+ogen.nwb
     status: pass
     test: matnwb_nwbRead
@@ -616,6 +623,7 @@ tests:
   - path: sub-anm244028/sub-anm244028_ses-20141021_obj-15ygrjz_behavior+icephys+ogen.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   - path: sub-anm244028/sub-anm244028_ses-20141022_behavior+icephys+ogen.nwb
     status: pass
     test: matnwb_nwbRead

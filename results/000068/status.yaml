@@ -10,18 +10,22 @@ tests:
   - path: sub-abcd/sub-abcd_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   assets_timeout:
   - path: sub-abcd/icephys_example.nwb
     status: timeout
     test: pynwb_open_load_ns
+    versions: null
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-abcd/icephys_example.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-abcd/sub-abcd_icephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

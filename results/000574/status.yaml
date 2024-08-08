@@ -5,14 +5,7 @@ last_run_duration: 79500.722846
 last_run_ended: '2024-02-22T23:01:50.706373-05:00'
 nassets: 45
 tests:
-- assets_nok:
-  - path: sub-08/sub-08_ses-20170113T121600_behavior+ecephys.nwb
-    status: fail
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
+- assets_nok: []
   assets_ok:
   - path: sub-01/sub-01_ses-20161214T171300_behavior+ecephys.nwb
     status: pass
@@ -294,6 +287,13 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
+  - path: sub-08/sub-08_ses-20170113T121600_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-09/sub-09_ses-20150115T144300_obj-106jgmp_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -462,9 +462,9 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-09/sub-09_ses-20150115T144300_obj-13cfy3x_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead

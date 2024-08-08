@@ -17,6 +17,7 @@ tests:
   - path: sub-A1815/sub-A1815_behavior+ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-A1824/sub-A1824_behavior+ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -60,6 +61,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-A5801/sub-A5801_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-A9701/sub-A9701_behavior+ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
     versions:
@@ -125,11 +133,19 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-A9701/sub-A9701_behavior+ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - path: sub-A1815/sub-A1815_behavior+ecephys+ogen.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   name: matnwb_nwbRead
 untested: []
 versions:

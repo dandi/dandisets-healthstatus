@@ -10,36 +10,46 @@ tests:
   - path: sub-JDS-NFN-JS21/sub-JDS-NFN-JS21_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-JDS-NFN-JS34/sub-JDS-NFN-JS34_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
+  - path: sub-JDS-NFN-ZT2/sub-JDS-NFN-ZT2_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   assets_timeout:
   - path: sub-JDS-NFN-AM2/sub-JDS-NFN-AM2_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-JDS-NFN-JS17/sub-JDS-NFN-JS17_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
-  - path: sub-JDS-NFN-ZT2/sub-JDS-NFN-ZT2_behavior+ecephys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
+    versions: null
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-JDS-NFN-AM2/sub-JDS-NFN-AM2_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-JDS-NFN-JS17/sub-JDS-NFN-JS17_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-JDS-NFN-JS21/sub-JDS-NFN-JS21_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-JDS-NFN-JS34/sub-JDS-NFN-JS34_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-JDS-NFN-ZT2/sub-JDS-NFN-ZT2_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

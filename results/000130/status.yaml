@@ -10,18 +10,22 @@ tests:
   - path: sub-Haydn/sub-Haydn_desc-test_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-  assets_timeout:
+    versions: null
   - path: sub-Haydn/sub-Haydn_desc-train_ecephys.nwb
-    status: timeout
+    status: pass
     test: pynwb_open_load_ns
+    versions: null
+  assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Haydn/sub-Haydn_desc-test_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-Haydn/sub-Haydn_desc-train_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

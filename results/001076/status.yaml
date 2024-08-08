@@ -24,9 +24,11 @@ tests:
   - path: sub-nan/sub-nan_ses-20230123T214030_obj-10jcyv7_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-nan/sub-nan_ses-20230124T182430_obj-10fo03e_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-nan/sub-nan_ses-20230124T182430_obj-1nsudkb_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -48,9 +50,17 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-nan/sub-nan_ses-20230124T192928_obj-c3ckj7_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-nan/sub-nan_ses-20230124T192928_obj-gk4q4w_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-nan/sub-nan_ses-20230124T200241_obj-nnz9kq_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -68,6 +78,7 @@ tests:
   - path: sub-nan/sub-nan_ses-20230124T202931_obj-jc8h3f_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -88,6 +99,7 @@ tests:
   - path: sub-nan/sub-nan_ses-20230124T182430_obj-10fo03e_ophys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-nan/sub-nan_ses-20230124T182430_obj-1nsudkb_ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -103,6 +115,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-nan/sub-nan_ses-20230124T190228_obj-yuex5w_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-nan/sub-nan_ses-20230124T192928_obj-c3ckj7_ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -128,12 +147,15 @@ tests:
   - path: sub-nan/sub-nan_ses-20230123T214030_obj-10jcyv7_ophys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-nan/sub-nan_ses-20230124T192928_obj-gk4q4w_ophys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   - path: sub-nan/sub-nan_ses-20230124T202931_obj-jc8h3f_ophys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   name: matnwb_nwbRead
 untested: []
 versions:

@@ -49,6 +49,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Gaia/sub-Gaia_ses-pre-MPTP-G-140605-1_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Gaia/sub-Gaia_ses-pre-MPTP-G-140609-6_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -73,6 +80,7 @@ tests:
   - path: sub-Isis/sub-Isis_ses-pre-MPTP-I-160617-2_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-Isis/sub-Isis_ses-pre-MPTP-I-170525-1_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -119,6 +127,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Gaia/sub-Gaia_ses-pre-MPTP-G-140525-6_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Gaia/sub-Gaia_ses-pre-MPTP-G-140605-1_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -186,6 +201,7 @@ tests:
   - path: sub-Isis/sub-Isis_ses-pre-MPTP-I-160617-2_ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
+    versions: null
   name: matnwb_nwbRead
 untested: []
 versions:

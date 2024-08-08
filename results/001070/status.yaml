@@ -10,12 +10,14 @@ tests:
   - path: sub-Godzilla/sub-Godzilla_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Godzilla/sub-Godzilla_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

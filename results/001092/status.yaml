@@ -1,5 +1,5 @@
 dandiset: 001092
-draft_modified: '2024-07-22T16:57:37.586438Z'
+draft_modified: '2024-08-06T14:18:01.656738Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
@@ -10,24 +10,30 @@ tests:
   - path: sub-ID-of-experimental-subject/sub-ID-of-experimental-subject_obj-15xi7bb_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-ID-of-experimental-subject/sub-ID-of-experimental-subject_obj-put4sl_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-ID-of-experimental-subject/sub-ID-of-experimental-subject_obj-tj7hwp_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-ID-of-experimental-subject/sub-ID-of-experimental-subject_obj-15xi7bb_ophys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-ID-of-experimental-subject/sub-ID-of-experimental-subject_obj-put4sl_ophys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-ID-of-experimental-subject/sub-ID-of-experimental-subject_obj-tj7hwp_ophys.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

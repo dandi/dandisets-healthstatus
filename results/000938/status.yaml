@@ -10,36 +10,46 @@ tests:
   - path: sub-cell1/sub-cell1_image.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-cell2/sub-cell2_image.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-cell3/sub-cell3_image.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-cell4/sub-cell4_image.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-cell5/sub-cell5_image.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-cell1/sub-cell1_image.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-cell2/sub-cell2_image.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-cell3/sub-cell3_image.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-cell4/sub-cell4_image.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   - path: sub-cell5/sub-cell5_image.nwb
     status: fail
     test: matnwb_nwbRead
+    versions: null
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

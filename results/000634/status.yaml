@@ -66,10 +66,15 @@ tests:
   - path: sub-ground2204-15/sub-ground2204-15_image.nwb
     status: pass
     test: pynwb_open_load_ns
-  assets_timeout:
+    versions: null
   - path: sub-ground2204-16/sub-ground2204-16_image.nwb
-    status: timeout
+    status: pass
     test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-ground0-1/sub-ground0-1_image.nwb
@@ -128,14 +133,19 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-ground2204-16/sub-ground2204-16_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - path: sub-ground2204-15/sub-ground2204-15_image.nwb
     status: timeout
     test: matnwb_nwbRead
-  - path: sub-ground2204-16/sub-ground2204-16_image.nwb
-    status: timeout
-    test: matnwb_nwbRead
+    versions: null
   name: matnwb_nwbRead
 untested: []
 versions:

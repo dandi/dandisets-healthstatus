@@ -10,6 +10,7 @@ tests:
   - path: sub-608671/sub-608671_ses-None_probe-43_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
+    versions: null
   - path: sub-611160/sub-611160_ses-None_probe-83_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -94,6 +95,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-642504/sub-642504_ses-None_probe-569_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -160,10 +168,18 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-642504/sub-642504_ses-None_probe-569_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - path: sub-608671/sub-608671_ses-None_probe-43_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
+    versions: null
   assets_timeout:
   - path: sub-612090/sub-612090_ses-None_probe-118_ecephys.nwb
     status: timeout
