@@ -10,7 +10,10 @@ tests:
   - path: sub-20220512001/sub-20220512001_ses-20220512T161621_slice-20220512001_cell-20220512001_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-20220512002/sub-20220512002_ses-20220512T172916_slice-20220512002_cell-20220512002_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -186,7 +189,10 @@ tests:
   - path: sub-20220512001/sub-20220512001_ses-20220512T161621_slice-20220512001_cell-20220512001_icephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-20220512002/sub-20220512002_ses-20220512T172916_slice-20220512002_cell-20220512002_icephys.nwb
     status: fail
     test: matnwb_nwbRead

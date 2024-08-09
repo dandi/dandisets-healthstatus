@@ -1,12 +1,16 @@
 dandiset: 001084
-draft_modified: '2024-08-06T14:21:01.692388Z'
+draft_modified: '2024-08-08T11:04:08.881886Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
-nassets: 35
+nassets: 54
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-DL15/sub-DL15_ses-210824_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-DL18/sub-DL18_ses-211110_image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -18,6 +22,10 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-DL15/sub-DL15_ses-210824_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
   - path: sub-DL18/sub-DL18_ses-211110_image+ophys.nwb
     status: fail
     test: matnwb_nwbRead

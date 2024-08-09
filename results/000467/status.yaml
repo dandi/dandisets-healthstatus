@@ -14,6 +14,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-ant1-m10-d11-y2022/sub-ant1-m10-d11-y2022_ses-m10-d11-y2022-ant1-0-48x-isopropanol-40-t142-z135um_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ant1-m10-d11-y2022/sub-ant1-m10-d11-y2022_ses-m10-d11-y2022-ant1-0-48x-isopropanol-40-t142-z60um_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -106,6 +113,13 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-ant1-m10-d11-y2022/sub-ant1-m10-d11-y2022_ses-m10-d11-y2022-ant1-0-48x-ethylpyrazine-40-t130-z55um_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-ant1-m10-d11-y2022/sub-ant1-m10-d11-y2022_ses-m10-d11-y2022-ant1-0-48x-isopropanol-40-t142-z135um_ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

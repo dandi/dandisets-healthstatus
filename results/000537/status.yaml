@@ -187,7 +187,10 @@ tests:
   - path: sub-051434cell12-JF585/sub-051434cell12-JF585_ses-20220729T051434_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-051555cell13-JF585/sub-051555cell13-JF585_ses-20220729T051555_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -814,7 +817,10 @@ tests:
   - path: sub-051434cell12-JF585/sub-051434cell12-JF585_ses-20220729T051434_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-052253cell18-JF585/sub-052253cell18-JF585_ses-20220729T052253_image.nwb
     status: fail
     test: matnwb_nwbRead

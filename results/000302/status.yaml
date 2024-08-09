@@ -87,7 +87,10 @@ tests:
   - path: sub-ANM-0176/sub-ANM-0176_ses-20211108_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ANM-0178/sub-ANM-0178_ses-20211115_behavior+ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -256,6 +259,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-ANM-0176/sub-ANM-0176_ses-20211108_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ANM-0178/sub-ANM-0178_ses-20211122_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -299,10 +309,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-ANM-0176/sub-ANM-0176_ses-20211108_behavior+ecephys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
   - path: sub-ANM-0190/sub-ANM-0190_ses-20211130_behavior+ecephys.nwb
     status: pass
     test: matnwb_nwbRead

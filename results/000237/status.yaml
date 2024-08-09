@@ -11,6 +11,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-Fish07-GCaMP-vlgut-HBv-5dpf-RandomWave/sub-Fish07-GCaMP-vlgut-HBv-5dpf-RandomWave_ses-20210825T104044_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-Fish19-GCaMP-vlgut-HBd-5dpf-RandomWave/sub-Fish19-GCaMP-vlgut-HBd-5dpf-RandomWave_ses-20210906T112217_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -32,10 +36,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   assets_timeout:
-  - path: sub-Fish07-GCaMP-vlgut-HBv-5dpf-RandomWave/sub-Fish07-GCaMP-vlgut-HBv-5dpf-RandomWave_ses-20210825T104044_behavior+ophys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-Fish37-GCaMP-vlgut-HBd-5dpf-RandomWave/sub-Fish37-GCaMP-vlgut-HBd-5dpf-RandomWave_ses-20210927T113222_behavior+ophys.nwb
     status: timeout
     test: pynwb_open_load_ns

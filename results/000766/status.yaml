@@ -47,6 +47,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_timeout:
+  - path: sub-Calcacre/sub-Calcacre_obj-138r6m8.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Calcacre/sub-Calcacre_ses-20210219T153000_obj-13qd4jl.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -105,6 +112,13 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-Calcacre/sub-Calcacre_obj-138r6m8.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Calcacre/sub-Calcacre_ses-20210219T153000_obj-13qd4jl.nwb
     status: fail
     test: matnwb_nwbRead

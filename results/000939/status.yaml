@@ -67,6 +67,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-A6211/sub-A6211_behavior+ecephys+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-A9701/sub-A9701_behavior+ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -127,6 +134,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-A5801/sub-A5801_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-A6211/sub-A6211_behavior+ecephys+ogen.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

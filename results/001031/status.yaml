@@ -10,151 +10,91 @@ tests:
   - path: sub-c3-4-0V/sub-c3-4-0V_ses-100kHz-stimulation-4-0V_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-c3-4-5V/sub-c3-4-5V_ses-100kHz-stimulation-4-5V_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-c3-4-8V/sub-c3-4-8V_ses-100kHz-stimulation-4-8V_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-c3-5-0V/sub-c3-5-0V_ses-100kHz-stimulation-5-0V_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-c3-5-35V/sub-c3-5-35V_ses-100kHz-stimulation-5-35V_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-c3-6-05V/sub-c3-6-05V_ses-100kHz-stimulation-6-05V_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-c4-4-4V/sub-c4-4-4V_ses-100kHz-stimulation-4-4V_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-c4-4-55V/sub-c4-4-55V_ses-100kHz-stimulation-4-55V_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-c4-5-2V/sub-c4-5-2V_ses-100kHz-stimulation-5-2V_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-c4-5-8V/sub-c4-5-8V_ses-100kHz-stimulation-5-8V_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-c3-4-0V/sub-c3-4-0V_ses-100kHz-stimulation-4-0V_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-c3-4-5V/sub-c3-4-5V_ses-100kHz-stimulation-4-5V_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-c3-4-8V/sub-c3-4-8V_ses-100kHz-stimulation-4-8V_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-c3-5-0V/sub-c3-5-0V_ses-100kHz-stimulation-5-0V_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
+  - path: sub-c3-5-35V/sub-c3-5-35V_ses-100kHz-stimulation-5-35V_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
   - path: sub-c3-6-05V/sub-c3-6-05V_ses-100kHz-stimulation-6-05V_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-c4-4-4V/sub-c4-4-4V_ses-100kHz-stimulation-4-4V_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-c4-4-55V/sub-c4-4-55V_ses-100kHz-stimulation-4-55V_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-c4-5-2V/sub-c4-5-2V_ses-100kHz-stimulation-5-2V_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-c4-5-8V/sub-c4-5-8V_ses-100kHz-stimulation-5-8V_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   assets_ok: []
-  assets_timeout:
-  - path: sub-c3-5-35V/sub-c3-5-35V_ses-100kHz-stimulation-5-35V_image.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.1
+  hdmf: 3.14.3
   matnwb: v2.6.0.2
-  pynwb: 2.8.0
+  pynwb: 2.8.1

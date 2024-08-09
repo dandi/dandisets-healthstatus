@@ -46,9 +46,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-fCamk1/sub-fCamk1_ses-fCamk1-200904-sess15-no-raw-data_behavior+ecephys+image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -414,6 +414,13 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-fCamk1/sub-fCamk1_ses-fCamk1-200902-sess13_behavior+ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-fCamk1/sub-fCamk1_ses-fCamk1-200904-sess15_behavior+ecephys+image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -536,13 +543,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-fCamk1/sub-fCamk1_ses-fCamk1-200902-sess13_behavior+ecephys+image.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-fCamk1/sub-fCamk1_ses-fCamk1-200904-sess15-no-raw-data_behavior+ecephys+image.nwb
     status: timeout
     test: matnwb_nwbRead

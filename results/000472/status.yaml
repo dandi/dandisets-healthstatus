@@ -10,151 +10,91 @@ tests:
   - path: sub-2021-12-03-w00-NP1/sub-2021-12-03-w00-NP1_ses-20211203_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-2022-01-22-w04-NP1/sub-2022-01-22-w04-NP1_ses-20220122_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-2022-02-12-w00-NP1/sub-2022-02-12-w00-NP1_ses-20220212_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-2022-02-12-w01-NP1/sub-2022-02-12-w01-NP1_ses-20220212_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-2022-02-22-w04-NP1/sub-2022-02-22-w04-NP1_ses-20220222_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
+    versions: null
   - path: sub-2022-03-05-w00-NP1/sub-2022-03-05-w00-NP1_ses-20220305_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-2022-04-01-w00-NP1/sub-2022-04-01-w00-NP1_ses-20220401_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   assets_timeout:
   - path: sub-2022-02-11-w03-NP1/sub-2022-02-11-w03-NP1_ses-20220211_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-2022-04-26-w00-NP1/sub-2022-04-26-w00-NP1_ses-20220426_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-2022-04-26-w01-NP1/sub-2022-04-26-w01-NP1_ses-20220426_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-2021-12-03-w00-NP1/sub-2021-12-03-w00-NP1_ses-20211203_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-2022-01-22-w04-NP1/sub-2022-01-22-w04-NP1_ses-20220122_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-2022-02-11-w03-NP1/sub-2022-02-11-w03-NP1_ses-20220211_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-2022-02-12-w00-NP1/sub-2022-02-12-w00-NP1_ses-20220212_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-2022-02-12-w01-NP1/sub-2022-02-12-w01-NP1_ses-20220212_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
+  - path: sub-2022-02-22-w04-NP1/sub-2022-02-22-w04-NP1_ses-20220222_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
   - path: sub-2022-03-05-w00-NP1/sub-2022-03-05-w00-NP1_ses-20220305_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-2022-04-01-w00-NP1/sub-2022-04-01-w00-NP1_ses-20220401_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-2022-04-26-w00-NP1/sub-2022-04-26-w00-NP1_ses-20220426_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-2022-04-26-w01-NP1/sub-2022-04-26-w01-NP1_ses-20220426_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   assets_ok: []
-  assets_timeout:
-  - path: sub-2022-02-22-w04-NP1/sub-2022-02-22-w04-NP1_ses-20220222_ophys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.0
+  hdmf: 3.14.3
   matnwb: v2.6.0.2
-  pynwb: 2.7.0
+  pynwb: 2.8.1

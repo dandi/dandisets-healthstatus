@@ -6,13 +6,13 @@ last_run_ended: '2024-01-15T06:38:51.718531-05:00'
 nassets: 2
 tests:
 - assets_nok: []
-  assets_ok:
-  - path: sub-Jenkins/sub-Jenkins_ses-medium_desc-train_behavior+ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
+  assets_ok: []
   assets_timeout:
   - path: sub-Jenkins/sub-Jenkins_ses-medium_desc-test_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
+  - path: sub-Jenkins/sub-Jenkins_ses-medium_desc-train_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

@@ -82,6 +82,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-656228/sub-656228_ses-1246372987-acq-1246487558-raw-movies_image+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-656228/sub-656228_ses-1246372987-acq-1246487563-raw-movies_image+ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -141,6 +148,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-656228/sub-656228_ses-1245548523-acq-1245937734-raw-movies_image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-656228/sub-656228_ses-1246372987-acq-1246487558-raw-movies_image+ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

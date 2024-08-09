@@ -2151,7 +2151,10 @@ tests:
   - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 14_obj-qulv0u.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 15_obj-1xfvxbd.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -5365,6 +5368,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 14_obj-qulv0u.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 15_obj-w8akk6.nwb
     status: fail
     test: matnwb_nwbRead
@@ -9492,10 +9502,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 14_obj-g9ctju.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 14_obj-qulv0u.nwb
     status: timeout
     test: matnwb_nwbRead
     versions: null

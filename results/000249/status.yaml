@@ -3428,7 +3428,10 @@ tests:
   - path: sub-OXTHALO-19/sub-OXTHALO-19_ses-20200304T164257_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-OXTHALO-19/sub-OXTHALO-19_ses-20200304T164845_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -3562,6 +3565,13 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-OXTHALO-19/sub-OXTHALO-19_ses-20200304T164257_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - path: sub-EV06/sub-EV06_ses-20190121T202304_ophys.nwb
     status: pass
@@ -6840,10 +6850,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-OXTHALO-17/sub-OXTHALO-17_ses-20200226T191853_ophys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-OXTHALO-19/sub-OXTHALO-19_ses-20200304T164257_ophys.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

@@ -7,15 +7,15 @@ nassets: 2
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-8675309/sub-8675309_ses-2000-01-01 00-00-00_ophys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-8675309/sub-8675309_ses-20211008T163543_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-8675309/sub-8675309_ses-2000-01-01 00-00-00_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-8675309/sub-8675309_ses-2000-01-01 00-00-00_ophys.nwb

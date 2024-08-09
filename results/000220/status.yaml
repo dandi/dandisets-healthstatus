@@ -11,9 +11,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-20190117002/sub-20190117002_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -239,6 +239,13 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-20190114001/sub-20190114001_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-20190207002/sub-20190207002_icephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -304,13 +311,6 @@ tests:
       pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
-  - path: sub-20190114001/sub-20190114001_icephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-20190117001/sub-20190117001_icephys.nwb
     status: timeout
     test: matnwb_nwbRead

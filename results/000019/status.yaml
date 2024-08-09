@@ -54,9 +54,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-EC9/sub-EC9_ses-EC9-B39.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -250,6 +250,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-EC9/sub-EC9_ses-EC9-B15.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-EC9/sub-EC9_ses-EC9-B39.nwb
     status: fail
     test: matnwb_nwbRead
@@ -384,13 +391,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok:
-  - path: sub-EC9/sub-EC9_ses-EC9-B15.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-GP31/sub-GP31_ses-GP31-B1.nwb
     status: pass
     test: matnwb_nwbRead

@@ -666,7 +666,10 @@ tests:
   - path: sub-X2020-01-06-2020-01-06-0048/sub-X2020-01-06-2020-01-06-0048_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-X2020-01-06-2020-01-06-0063/sub-X2020-01-06-2020-01-06-0063_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1046,7 +1049,10 @@ tests:
   - path: sub-X2020-01-06-2020-01-06-0048/sub-X2020-01-06-2020-01-06-0048_icephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-X2020-01-06-2020-01-06-0082/sub-X2020-01-06-2020-01-06-0082_icephys.nwb
     status: fail
     test: matnwb_nwbRead

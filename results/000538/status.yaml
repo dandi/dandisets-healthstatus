@@ -39,9 +39,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.1
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-193922J2Pcellt1/sub-193922J2Pcellt1_ses-20230302T193922_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -115,6 +115,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-190334Voltron2JF525cell6t1/sub-190334Voltron2JF525cell6t1_ses-20230302T190334_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-193922J2Pcellt1/sub-193922J2Pcellt1_ses-20230302T193922_image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -151,13 +158,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok:
-  - path: sub-190334Voltron2JF525cell6t1/sub-190334Voltron2JF525cell6t1_ses-20230302T190334_image.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-203147J2Pcell4t1hp/sub-203147J2Pcell4t1hp_ses-20230302T203147_image.nwb
     status: pass
     test: matnwb_nwbRead

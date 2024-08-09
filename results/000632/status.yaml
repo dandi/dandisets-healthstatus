@@ -10,151 +10,91 @@ tests:
   - path: sub-BPAE-8bipolar-1Hz-03/sub-BPAE-8bipolar-1Hz-03_ses-Cross-directional-1Hz_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-BPAE-8bipolar-770kHz-02/sub-BPAE-8bipolar-770kHz-02_ses-Cross-directional-770kHz_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-BPAE-8bipolar-770kHz-09/sub-BPAE-8bipolar-770kHz-09_ses-Cross-directional-770kHz_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-BPAE-8bipolar-770kHz-600ns-01/sub-BPAE-8bipolar-770kHz-600ns-01_ses-Cross-directional-770kHz_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-BPAE-8bipolar-770kHz-600ns-10/sub-BPAE-8bipolar-770kHz-600ns-10_ses-Cross-directional-770kHz_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-BPAE-8unipolar-1Hz-04/sub-BPAE-8unipolar-1Hz-04_ses-Co-directional-1Hz_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-BPAE-8unipolar-1Hz-600ns-08/sub-BPAE-8unipolar-1Hz-600ns-08_ses-Co-directional-1Hz_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-BPAE-8unipolar-770kHz-600ns-02/sub-BPAE-8unipolar-770kHz-600ns-02_ses-Co-directional-770kHz_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   assets_timeout:
   - path: sub-BPAE-8bipolar-1Hz-600ns-04/sub-BPAE-8bipolar-1Hz-600ns-04_ses-Cross-directional-1Hz_image.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-BPAE-8bipolar-1Hz-600ns-11/sub-BPAE-8bipolar-1Hz-600ns-11_ses-Cross-directional-1Hz_image.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-BPAE-8bipolar-1Hz-03/sub-BPAE-8bipolar-1Hz-03_ses-Cross-directional-1Hz_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-BPAE-8bipolar-1Hz-600ns-04/sub-BPAE-8bipolar-1Hz-600ns-04_ses-Cross-directional-1Hz_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-BPAE-8bipolar-1Hz-600ns-11/sub-BPAE-8bipolar-1Hz-600ns-11_ses-Cross-directional-1Hz_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-BPAE-8bipolar-770kHz-02/sub-BPAE-8bipolar-770kHz-02_ses-Cross-directional-770kHz_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-BPAE-8bipolar-770kHz-09/sub-BPAE-8bipolar-770kHz-09_ses-Cross-directional-770kHz_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-BPAE-8bipolar-770kHz-600ns-01/sub-BPAE-8bipolar-770kHz-600ns-01_ses-Cross-directional-770kHz_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-BPAE-8bipolar-770kHz-600ns-10/sub-BPAE-8bipolar-770kHz-600ns-10_ses-Cross-directional-770kHz_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-BPAE-8unipolar-1Hz-04/sub-BPAE-8unipolar-1Hz-04_ses-Co-directional-1Hz_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
+  - path: sub-BPAE-8unipolar-1Hz-600ns-08/sub-BPAE-8unipolar-1Hz-600ns-08_ses-Co-directional-1Hz_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
   - path: sub-BPAE-8unipolar-770kHz-600ns-02/sub-BPAE-8unipolar-770kHz-600ns-02_ses-Co-directional-770kHz_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   assets_ok: []
-  assets_timeout:
-  - path: sub-BPAE-8unipolar-1Hz-600ns-08/sub-BPAE-8unipolar-1Hz-600ns-08_ses-Co-directional-1Hz_image.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.1
+  hdmf: 3.14.3
   matnwb: v2.6.0.2
-  pynwb: 2.8.0
+  pynwb: 2.8.1

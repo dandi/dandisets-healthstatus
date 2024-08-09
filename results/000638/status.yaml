@@ -75,6 +75,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-TS118-0/sub-TS118-0_ses-TS118-0_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-TS118-2/sub-TS118-2_ses-TS118-2_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -138,6 +145,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TS117-1/sub-TS117-1_ses-TS117-1_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-TS118-0/sub-TS118-0_ses-TS118-0_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

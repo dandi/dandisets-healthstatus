@@ -82,6 +82,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-BH461/sub-BH461_obj-h46w15_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BH462/sub-BH462_obj-yvewfl_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -141,6 +148,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BH460/sub-BH460_obj-tdgzck_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-BH461/sub-BH461_obj-h46w15_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
