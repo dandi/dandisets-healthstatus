@@ -88,6 +88,13 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Raldh-2071/sub-Raldh-2071_ses-20211201-0003.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Raldh-2076/sub-Raldh-2076_ses-20211201-0004.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -184,6 +191,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Raldh-2071/sub-Raldh-2071_ses-20211201-0003.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Raldh-2076/sub-Raldh-2076_ses-20211201-0004.nwb

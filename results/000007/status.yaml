@@ -53,9 +53,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-BAYLORCD13/sub-BAYLORCD13_ses-20171213T135007.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -389,6 +389,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-BAYLORCD13/sub-BAYLORCD13_ses-20171212T131814.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BAYLORCD14/sub-BAYLORCD14_ses-20171026T150956.nwb
     status: fail
     test: matnwb_nwbRead
@@ -503,13 +510,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-BAYLORCD13/sub-BAYLORCD13_ses-20171212T131814.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-BAYLORCD13/sub-BAYLORCD13_ses-20171213T135007.nwb
     status: pass
     test: matnwb_nwbRead

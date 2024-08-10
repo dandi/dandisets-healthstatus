@@ -1551,9 +1551,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-CGM58/sub-CGM58_ses-CGM58_0um_210314_153152_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1919,6 +1919,13 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-CGM58/sub-CGM58_ses-CGM58_0um_210308_150319_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-CGM58/sub-CGM58_ses-CGM58_0um_210314_091547_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -3310,13 +3317,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-CGM58/sub-CGM58_ses-CGM58_0um_210314_091547_ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-CGM58/sub-CGM58_ses-CGM58_0um_210316_085630_ecephys.nwb
     status: timeout
     test: matnwb_nwbRead

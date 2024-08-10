@@ -2163,7 +2163,10 @@ tests:
   - path: sub-NV36/sub-NV36_ses-20170811T183018_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-NV36/sub-NV36_ses-20170811T183528_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -3538,6 +3541,13 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-NV32/sub-NV32_ses-20170615T012558_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-NV36/sub-NV36_ses-20170811T183018_ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -5610,10 +5620,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-NV36/sub-NV36_ses-20170811T182405_ophys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-NV36/sub-NV36_ses-20170811T183018_ophys.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

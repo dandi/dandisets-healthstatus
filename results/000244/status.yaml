@@ -24,7 +24,10 @@ tests:
   - path: sub-PV04/sub-PV04_ses-awake_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-PV05/sub-PV05_ses-awake_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -236,6 +239,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-PV04/sub-PV04_ses-awake_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SLC06/sub-SLC06_ses-anest_ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -308,10 +318,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-PV04/sub-PV04_ses-awake_ophys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
   - path: sub-PV05/sub-PV05_ses-awake_ophys.nwb
     status: timeout
     test: matnwb_nwbRead

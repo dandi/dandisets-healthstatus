@@ -108,10 +108,6 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - path: jGCaMP7f/jGCaMP7f_ANM478347_cell02.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: jGCaMP7f/jGCaMP7f_ANM478347_cell04.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -914,6 +910,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: jGCaMP7f/jGCaMP7f_ANM478347_cell02.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: jGCaMP8f/jGCaMP8f_ANM471993_cell01.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -1006,7 +1009,10 @@ tests:
   - path: jGCaMP7f/jGCaMP7f_ANM478347_cell02.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: jGCaMP7f/jGCaMP7f_ANM478404_cell01.nwb
     status: fail
     test: matnwb_nwbRead

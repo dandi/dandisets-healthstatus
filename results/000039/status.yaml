@@ -419,7 +419,10 @@ tests:
   - path: sub-760933183/sub-760933183_ses-787336135_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-760933183/sub-760933183_ses-788395529_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -905,7 +908,10 @@ tests:
   - path: sub-760933183/sub-760933183_ses-787336135_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-760933183/sub-760933183_ses-788395529_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead

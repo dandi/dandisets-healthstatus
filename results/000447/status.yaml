@@ -7,6 +7,10 @@ nassets: 5
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-JDS-NFN-JS21/sub-JDS-NFN-JS21_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-JDS-NFN-JS34/sub-JDS-NFN-JS34_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -21,10 +25,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-JDS-NFN-JS17/sub-JDS-NFN-JS17_behavior+ecephys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-JDS-NFN-JS21/sub-JDS-NFN-JS21_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

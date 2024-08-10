@@ -31,6 +31,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-BPAE-8unipolar-1Hz-11/sub-BPAE-8unipolar-1Hz-11_ses-Co-directional-1Hz_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-BPAE-8unipolar-1Hz-600ns-08/sub-BPAE-8unipolar-1Hz-600ns-08_ses-Co-directional-1Hz_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -79,6 +83,10 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-BPAE-8unipolar-1Hz-04/sub-BPAE-8unipolar-1Hz-04_ses-Co-directional-1Hz_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-BPAE-8unipolar-1Hz-11/sub-BPAE-8unipolar-1Hz-11_ses-Co-directional-1Hz_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null
