@@ -186,7 +186,16 @@ class DavFS2Mounter(Mounter):
         log.debug("Mounting davfs2 mount ...")
         self.mount_path.mkdir(parents=True, exist_ok=True)
         subprocess.run(
-            ["sudo", "mount", "-t", "davfs", DANDIDAV_URL, os.fspath(self.mount_path)],
+            [
+                "sudo",
+                "mount",
+                "-t",
+                "davfs",
+                "-o",
+                "ro",
+                DANDIDAV_URL,
+                os.fspath(self.mount_path),
+            ],
             check=True,
         )
         try:

@@ -24,7 +24,7 @@ davfs2
   the following commands with `sudo` without entering a password:
 
     ```
-    mount -t davfs https://webdav.dandiarchive.org /mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse
+    mount -t davfs -o ro https://webdav.dandiarchive.org /mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse
     umount /mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse
     ```
 
@@ -32,7 +32,7 @@ davfs2
   `username` is replaced by the name of the user account:
 
     ```
-    username ALL=(ALL:ALL) NOPASSWD: /usr/bin/mount -t davfs https\://webdav.dandiarchive.org /mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse
+    username ALL=(ALL:ALL) NOPASSWD: /usr/bin/mount -t davfs -o ro https\://webdav.dandiarchive.org /mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse
     username ALL=(ALL:ALL) NOPASSWD: /usr/bin/umount /mnt/backup/dandi/dandisets-healthstatus/dandisets-fuse
     ```
 
