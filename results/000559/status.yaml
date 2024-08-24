@@ -32,6 +32,13 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-3440/sub-3440_ses-reinforcement-00e3f24f-be30-4a6b-9feb-b2222191a5a3_behavior+image+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-3440/sub-3440_ses-reinforcement-34e1780c-47ff-458f-ad23-3ef5ccb1e822_behavior+image+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -134,6 +141,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-197/sub-197_ses-reinforcement-f4c3ac2a-d225-4872-af0c-14eb77c04741_behavior+image+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-3440/sub-3440_ses-reinforcement-00e3f24f-be30-4a6b-9feb-b2222191a5a3_behavior+image+ogen.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

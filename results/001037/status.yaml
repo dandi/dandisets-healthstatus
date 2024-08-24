@@ -1,20 +1,20 @@
-dandiset: '001130'
-draft_modified: '2024-08-21T07:09:49.886174Z'
+dandiset: '001037'
+draft_modified: '2024-08-16T18:41:01.514310Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
-nassets: 1
+nassets: 2
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-subid012345/sub-subid012345_ecephys+ogen.nwb
+  - path: sub-M30L/sub-M30L_ses-20230517_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
     versions: null
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - path: sub-subid012345/sub-subid012345_ecephys+ogen.nwb
+  - path: sub-M30L/sub-M30L_ses-20230517_behavior.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

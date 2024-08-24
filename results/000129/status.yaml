@@ -6,13 +6,13 @@ last_run_ended: '2024-01-15T05:55:24.225395-05:00'
 nassets: 2
 tests:
 - assets_nok: []
-  assets_ok: []
-  assets_timeout:
-  - path: sub-Indy/sub-Indy_desc-test_ecephys.nwb
-    status: timeout
+  assets_ok:
+  - path: sub-Indy/sub-Indy_desc-train_behavior+ecephys.nwb
+    status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-Indy/sub-Indy_desc-train_behavior+ecephys.nwb
+  assets_timeout:
+  - path: sub-Indy/sub-Indy_desc-test_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

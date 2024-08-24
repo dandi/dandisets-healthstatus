@@ -25,6 +25,13 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-Calcacre/sub-Calcacre_ses-20210511T153000_obj-1kk7jzs.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Calcacre/sub-Calcacre_ses-20220224T153000_obj-16k2ab8.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -141,6 +148,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Calcacre/sub-Calcacre_ses-20210405T153000_obj-6qbdml.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Calcacre/sub-Calcacre_ses-20210511T153000_obj-1kk7jzs.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

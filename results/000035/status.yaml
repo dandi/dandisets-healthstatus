@@ -867,9 +867,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-16_slice-20200408-slice-3_cell-20200408-sample-16_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1326,6 +1326,13 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-13_slice-20200408-slice-3_cell-20200408-sample-13_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-15_slice-20200408-slice-3_cell-20200408-sample-15_icephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -1965,13 +1972,6 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
-  - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-15_slice-20200408-slice-3_cell-20200408-sample-15_icephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-17_slice-20200408-slice-3_cell-20200408-sample-17_icephys.nwb

@@ -525,7 +525,10 @@ tests:
   - path: sub-11610403743850174581/sub-11610403743850174581_ses-20170630T134906_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-11614933310848496837/sub-11614933310848496837_ses-20220309T173728_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -5473,6 +5476,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-11610403743850174581/sub-11610403743850174581_ses-20170630T134906_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-1258753975080204459/sub-1258753975080204459_ses-20180911T105343_ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -6082,10 +6092,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-11610403743850174581/sub-11610403743850174581_ses-20170630T131745_ophys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-11610403743850174581/sub-11610403743850174581_ses-20170630T134906_ophys.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

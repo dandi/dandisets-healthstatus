@@ -19,6 +19,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-5p-x4-600ns-200ms-3-2kV-YP-(dish20)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish20)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-5p-x4-600ns-200ms-3-2kV-YP-(dish22)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish22)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -33,10 +37,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-5p-x4-600ns-200ms-3-2kV-YP-(dish09)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish09)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-5p-x4-600ns-200ms-3-2kV-YP-(dish20)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish20)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

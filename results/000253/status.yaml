@@ -1,9 +1,9 @@
 dandiset: '000253'
-draft_modified: '2024-07-30T23:12:08.336009Z'
+draft_modified: '2024-08-20T13:56:43.358384Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
-nassets: 113
+nassets: 155
 tests:
 - assets_nok: []
   assets_ok:
@@ -55,6 +55,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-640507/sub-640507_ses-1217213788_probe-5_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-645324/sub-645324_ses-1226788689test_probe-4_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
     versions:
@@ -135,6 +142,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-640507/sub-640507_ses-1217213788_probe-5_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-645324/sub-645324_ses-1226788689test_probe-4_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

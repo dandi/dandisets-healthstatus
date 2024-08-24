@@ -23,6 +23,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-70375/sub-70375_ses-20170316T183021_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-70375/sub-70375_ses-20170317T094453_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -39,11 +43,7 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout:
-  - path: sub-70375/sub-70375_ses-20170316T183021_behavior+ecephys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
+  assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-58313/sub-58313_ses-20170320T113440_behavior+ecephys.nwb

@@ -691,7 +691,10 @@ tests:
   - path: sub-KM91/sub-KM91_ses-20170313T135620_behavior+image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout:
   - path: sub-KF132/sub-KF132_ses-20180222T194100_behavior+ecephys+image.nwb
     status: timeout
@@ -951,7 +954,10 @@ tests:
   - path: sub-KM91/sub-KM91_ses-20170313T135620_behavior+image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - path: sub-219CR/sub-219CR_ses-20190404T152625_behavior+image.nwb

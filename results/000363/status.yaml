@@ -5,7 +5,14 @@ last_run_duration: 627030.287121
 last_run_ended: '2024-02-15T22:58:56.181440-05:00'
 nassets: 174
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-456772/sub-456772_ses-20191119T130822_behavior+ecephys+image+ogen.nwb
+    status: fail
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - path: sub-440956/sub-440956_ses-20190207T120657_behavior+ecephys+image+ogen.nwb
     status: pass
@@ -882,13 +889,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-456772/sub-456772_ses-20191119T130822_behavior+ecephys+image+ogen.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-456772/sub-456772_ses-20191120T115527_behavior+ecephys+image+ogen.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -1015,6 +1015,13 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-449141/sub-449141_ses-20190602T155210_behavior+ecephys+image+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-456772/sub-456772_ses-20191119T130822_behavior+ecephys+image+ogen.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -1425,13 +1432,6 @@ tests:
     status: timeout
     test: matnwb_nwbRead
     versions: null
-  - path: sub-456772/sub-456772_ses-20191119T130822_behavior+ecephys+image+ogen.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-456772/sub-456772_ses-20191120T115527_behavior+ecephys+image+ogen.nwb
     status: timeout
     test: matnwb_nwbRead

@@ -11,13 +11,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-40p-Ctrl-600ns-200ms-6-4kV-(dish9)/sub-40p-Ctrl-600ns-200ms-6-4kV-(dish9)_ses-40p-Ctrl-600ns-200ms-6-4kV_image.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
   assets_timeout:
   - path: sub-1p-x4-10cycles-CC-600ns-200ms-6-4kV-(dish15)/sub-1p-x4-10cycles-CC-600ns-200ms-6-4kV-(dish15)_ses-1p-x-10cycles-CanCan-600ns-200ms-6-4kV_image.nwb
     status: timeout
@@ -90,6 +83,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-40p-Ctrl-600ns-200ms-6-4kV-(dish14)/sub-40p-Ctrl-600ns-200ms-6-4kV-(dish14)_ses-40p-Ctrl-600ns-200ms-6-4kV_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-40p-Ctrl-600ns-200ms-6-4kV-(dish9)/sub-40p-Ctrl-600ns-200ms-6-4kV-(dish9)_ses-40p-Ctrl-600ns-200ms-6-4kV_image.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions:
@@ -179,15 +179,15 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  assets_ok: []
-  assets_timeout:
   - path: sub-40p-Ctrl-600ns-200ms-6-4kV-(dish9)/sub-40p-Ctrl-600ns-200ms-6-4kV-(dish9)_ses-40p-Ctrl-600ns-200ms-6-4kV_image.nwb
-    status: timeout
+    status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.14.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  assets_ok: []
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

@@ -116,6 +116,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-VGlut-2443/sub-VGlut-2443_ses-20220818-0002.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -215,6 +222,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Raldh-2303/sub-Raldh-2303_ses-20220405-0003.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-VGlut-2443/sub-VGlut-2443_ses-20220818-0002.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

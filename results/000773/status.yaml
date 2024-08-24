@@ -7,6 +7,13 @@ nassets: 15246
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-ant1-m1-d11-y2023/sub-ant1-m1-d11-y2023_ses-m1-d11-y2023-ant1-0-03x-ethylpyrazine-40-t135-z60um_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ant1-m1-d20-y2023/sub-ant1-m1-d20-y2023_ses-m1-d20-y2023-ant1-0-48x-propionic-acid-40-t136-z30um_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -103,6 +110,13 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-ant1-m1-d11-y2023/sub-ant1-m1-d11-y2023_ses-m1-d11-y2023-ant1-0-03x-ethylpyrazine-40-t135-z60um_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ant1-m1-d20-y2023/sub-ant1-m1-d20-y2023_ses-m1-d20-y2023-ant1-0-48x-propionic-acid-40-t136-z30um_ophys.nwb
     status: fail
     test: matnwb_nwbRead

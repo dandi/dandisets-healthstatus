@@ -42,6 +42,13 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-120553voltron1608-cell1-sensitivity-vs-I-OD0-readjust-wholcell-sealtestoff/sub-120553voltron1608-cell1-sensitivity-vs-I-OD0-readjust-wholcell-sealtestoff_ses-20230309T120553_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-122453voltron1608-cell2-find-inversion-OD0-5/sub-122453voltron1608-cell2-find-inversion-OD0-5_ses-20230309T122453_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -127,6 +134,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-105110cell1-jf549-1040nm-Vsteps-hp1p/sub-105110cell1-jf549-1040nm-Vsteps-hp1p_ses-20230329T105110_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-120553voltron1608-cell1-sensitivity-vs-I-OD0-readjust-wholcell-sealtestoff/sub-120553voltron1608-cell1-sensitivity-vs-I-OD0-readjust-wholcell-sealtestoff_ses-20230309T120553_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

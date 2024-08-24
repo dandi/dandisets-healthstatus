@@ -7,6 +7,13 @@ nassets: 734
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-M10/sub-M10_ses-M10-D20-2021-06-04-10-03-15_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-M10/sub-M10_ses-M10-D3-2021-05-12-08-24-08_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -112,6 +119,13 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-M10/sub-M10_ses-M10-D20-2021-06-04-10-03-15_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-M11/sub-M11_ses-M11-D30-2021-06-18-10-06-11_ecephys.nwb
     status: fail
     test: matnwb_nwbRead

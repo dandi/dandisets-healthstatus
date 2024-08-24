@@ -25,6 +25,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-2023-01-05-18-SWF702/sub-2023-01-05-18-SWF702_ses-20230105_behavior+image+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-2023-01-09-22-SWF702/sub-2023-01-09-22-SWF702_ses-20230109_behavior+image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -120,6 +127,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-2022-06-28-01-SWF702/sub-2022-06-28-01-SWF702_ses-20220628_behavior+image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-2023-01-05-18-SWF702/sub-2023-01-05-18-SWF702_ses-20230105_behavior+image+ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

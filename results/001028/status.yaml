@@ -10,31 +10,19 @@ tests:
   - path: sub-03/sub-03_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-04/sub-04_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-05/sub-05_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-06/sub-06_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-07/sub-07_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -42,141 +30,87 @@ tests:
   - path: sub-08/sub-08_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-09/sub-09_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-10/sub-10_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-11/sub-11_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-12/sub-12_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-13/sub-13_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-14/sub-14_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-03/sub-03_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-04/sub-04_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-05/sub-05_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-06/sub-06_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
+  - path: sub-07/sub-07_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
   - path: sub-08/sub-08_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-09/sub-09_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-10/sub-10_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-11/sub-11_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-12/sub-12_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-13/sub-13_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-14/sub-14_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  assets_ok:
-  - path: sub-07/sub-07_image.nwb
-    status: pass
-    test: matnwb_nwbRead
     versions: null
+  assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.1
+  hdmf: 3.14.3
   matnwb: v2.6.0.2
-  pynwb: 2.8.0
+  pynwb: 2.8.1
