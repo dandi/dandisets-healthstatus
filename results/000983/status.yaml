@@ -7,6 +7,13 @@ nassets: 38
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-PEDOTPSS-on-Au-2000um2-baseline-invitro/sub-PEDOTPSS-on-Au-2000um2-baseline-invitro_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-RuOx-15mTorr-310nm-2000um2-in-vitro/sub-RuOx-15mTorr-310nm-2000um2-in-vitro_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -115,6 +122,13 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-PEDOTPSS-on-Au-2000um2-baseline-invitro/sub-PEDOTPSS-on-Au-2000um2-baseline-invitro_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-RuOx-15mTorr-310nm-2000um2-in-vitro/sub-RuOx-15mTorr-310nm-2000um2-in-vitro_ecephys.nwb
     status: fail
     test: matnwb_nwbRead

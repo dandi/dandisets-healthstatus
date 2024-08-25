@@ -83,7 +83,7 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-600ns-5kV-1HzUP-7-31-21-BPAE-5/sub-600ns-5kV-1HzUP-7-31-21-BPAE-5_ses-600ns-5kV-1Hz
@@ -192,6 +192,14 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-600ns-5kV-1HzUP-7-31-21-BPAE-18/sub-600ns-5kV-1HzUP-7-31-21-BPAE-18_ses-600ns-5kV-1Hz
+      single pulse trains_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-600ns-5kV-1HzUP-7-31-21-BPAE-5/sub-600ns-5kV-1HzUP-7-31-21-BPAE-5_ses-600ns-5kV-1Hz
       single pulse trains_image.nwb
     status: fail
@@ -220,14 +228,6 @@ tests:
   assets_timeout:
   - path: sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-15/sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-15_ses-600ns-4kV-0-8MHz
       paired pulse trains_image.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-600ns-5kV-1HzUP-7-31-21-BPAE-18/sub-600ns-5kV-1HzUP-7-31-21-BPAE-18_ses-600ns-5kV-1Hz
-      single pulse trains_image.nwb
     status: timeout
     test: matnwb_nwbRead
     versions:

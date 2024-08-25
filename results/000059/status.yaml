@@ -195,13 +195,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-MS13/sub-MS13_ses-Peter-MS13-171127-133330-concat_desc-raw_ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-MS13/sub-MS13_ses-Peter-MS13-171128-113924-concat_desc-processed_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -571,6 +564,13 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-MS13/sub-MS13_ses-Peter-MS13-171127-133330-concat_desc-raw_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-MS13/sub-MS13_ses-Peter-MS13-171130-121758-concat_desc-processed_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -655,6 +655,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-MS13/sub-MS13_ses-Peter-MS13-171127-133330-concat_desc-raw_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-MS13/sub-MS13_ses-Peter-MS13-171130-121758-concat_desc-processed_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -892,13 +899,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-MS13/sub-MS13_ses-Peter-MS13-171127-133330-concat_desc-raw_ecephys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-MS13/sub-MS13_ses-Peter-MS13-171128-113924-concat_desc-processed_behavior+ecephys.nwb
     status: pass
     test: matnwb_nwbRead

@@ -16,6 +16,10 @@ tests:
     status: timeout
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-swil105/sub-swil105_ses-20220415T160508_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-swil11/sub-swil11_ses-20220413T171108_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -51,6 +55,10 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-swil10/sub-swil10_ses-20210717T170731_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-swil105/sub-swil105_ses-20220415T160508_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

@@ -2795,7 +2795,10 @@ tests:
   - path: sub-MX200102/sub-MX200102_ses-20201214T151555.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-MX200102/sub-MX200102_ses-20201215T152510.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -3809,6 +3812,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-MX200102/sub-MX200102_ses-20201214T151555.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-MX200102/sub-MX200102_ses-20210117T161809.nwb
     status: fail
     test: matnwb_nwbRead
@@ -5968,10 +5978,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-MX200102/sub-MX200102_ses-20201214T151555.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
   - path: sub-MX200102/sub-MX200102_ses-20201215T152510.nwb
     status: pass
     test: matnwb_nwbRead

@@ -6,197 +6,119 @@ last_run_ended: '2024-02-10T08:28:59.880556-05:00'
 nassets: 13
 tests:
 - assets_nok: []
-  assets_ok:
-  - path: sub-monk-g/sub-monk-g_ses-session4.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
+  assets_ok: []
   assets_timeout:
   - path: sub-monk-g/sub-monk-g_ses-session0.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-g/sub-monk-g_ses-session1.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-g/sub-monk-g_ses-session2.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-g/sub-monk-g_ses-session3.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
+  - path: sub-monk-g/sub-monk-g_ses-session4.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-monk-g/sub-monk-g_ses-session5.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-g/sub-monk-g_ses-session6.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-g/sub-monk-g_ses-session7.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-g/sub-monk-g_ses-session8.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-j/sub-monk-j_ses-session0.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-j/sub-monk-j_ses-session1.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-j/sub-monk-j_ses-session2.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-j/sub-monk-j_ses-session3.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-monk-g/sub-monk-g_ses-session0.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-g/sub-monk-g_ses-session1.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-g/sub-monk-g_ses-session2.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-g/sub-monk-g_ses-session3.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
+  - path: sub-monk-g/sub-monk-g_ses-session4.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
   - path: sub-monk-g/sub-monk-g_ses-session5.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-g/sub-monk-g_ses-session6.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-g/sub-monk-g_ses-session7.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-g/sub-monk-g_ses-session8.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-j/sub-monk-j_ses-session0.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-j/sub-monk-j_ses-session1.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-j/sub-monk-j_ses-session2.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-monk-j/sub-monk-j_ses-session3.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  assets_ok:
-  - path: sub-monk-g/sub-monk-g_ses-session4.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
+    versions: null
+  assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.13.0
+  hdmf: 3.14.3
   matnwb: v2.6.0.2
-  pynwb: 2.7.0
+  pynwb: 2.8.1

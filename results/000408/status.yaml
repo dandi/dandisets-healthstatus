@@ -19,6 +19,13 @@ tests:
     status: timeout
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-RuOx/sub-RuOx_obj-1hdp6bg_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-RuOx/sub-RuOx_obj-1mafwxc_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -111,6 +118,13 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-RuOx/sub-RuOx_obj-1dec91l_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-RuOx/sub-RuOx_obj-1hdp6bg_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

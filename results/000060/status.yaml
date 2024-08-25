@@ -64,10 +64,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-353936/sub-353936_ses-20170623_behavior+ecephys+ogen.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-353936/sub-353936_ses-20170624_behavior+ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -549,6 +545,13 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-353936/sub-353936_ses-20170623_behavior+ecephys+ogen.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-353938/sub-353938_ses-20170614_behavior+ecephys+ogen.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -664,6 +667,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-353936/sub-353936_ses-20170623_behavior+ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-353936/sub-353936_ses-20170624_behavior+ecephys+ogen.nwb
     status: fail
     test: matnwb_nwbRead
@@ -788,10 +798,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-353936/sub-353936_ses-20170623_behavior+ecephys+ogen.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
   - path: sub-353938/sub-353938_ses-20170612_behavior+ecephys+ogen.nwb
     status: pass
     test: matnwb_nwbRead

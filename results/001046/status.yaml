@@ -11,6 +11,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-Finch-z-r12r13-21-held-in-calib/sub-Finch-z-r12r13-21-held-in-calib_ses-20210627.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-Finch-z-r12r13-21-held-in-calib/sub-Finch-z-r12r13-21-held-in-calib_ses-20210628.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -43,6 +47,10 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Finch-z-r12r13-21-held-in-calib/sub-Finch-z-r12r13-21-held-in-calib_ses-20210626.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-Finch-z-r12r13-21-held-in-calib/sub-Finch-z-r12r13-21-held-in-calib_ses-20210627.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

@@ -33,6 +33,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-1p-x4-10cycles-CC-600ns-200ms-6-4kV-(dish4)/sub-1p-x4-10cycles-CC-600ns-200ms-6-4kV-(dish4)_ses-1p-x-10cycles-CanCan-600ns-200ms-6-4kV_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish19)/sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish19)_ses-1p-x-10cycles-Control-600ns-200ms-6-4kV_image.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -113,6 +120,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-1p-x4-10cycles-CC-600ns-200ms-6-4kV-(dish2-2)/sub-1p-x4-10cycles-CC-600ns-200ms-6-4kV-(dish2-2)_ses-1p-x-10cycles-CanCan-600ns-200ms-6-4kV_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-1p-x4-10cycles-CC-600ns-200ms-6-4kV-(dish4)/sub-1p-x4-10cycles-CC-600ns-200ms-6-4kV-(dish4)_ses-1p-x-10cycles-CanCan-600ns-200ms-6-4kV_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

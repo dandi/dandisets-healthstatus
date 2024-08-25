@@ -46,9 +46,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.1
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-CFC19/sub-CFC19_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -143,6 +143,13 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-CFC17/sub-CFC17_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-CFC19/sub-CFC19_ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -199,14 +206,7 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  assets_ok:
-  - path: sub-CFC17/sub-CFC17_ophys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
+  assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []

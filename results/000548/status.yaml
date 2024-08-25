@@ -10,7 +10,10 @@ tests:
   - path: sub-Fig3-Bi10-08/sub-Fig3-Bi10-08_ses-BPAE-bipolar-10pulses_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Fig3-Bi15-07/sub-Fig3-Bi15-07_ses-BPAE-bipolar-15pulses_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -137,6 +140,13 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-Fig3-Bi10-08/sub-Fig3-Bi10-08_ses-BPAE-bipolar-10pulses_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Fig3-Bi15-09/sub-Fig3-Bi15-09_ses-BPAE-bipolar-15pulses_image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -222,10 +232,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok:
-  - path: sub-Fig3-Bi10-08/sub-Fig3-Bi10-08_ses-BPAE-bipolar-10pulses_image.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
   - path: sub-Fig3-Bi15-07/sub-Fig3-Bi15-07_ses-BPAE-bipolar-15pulses_image.nwb
     status: pass
     test: matnwb_nwbRead

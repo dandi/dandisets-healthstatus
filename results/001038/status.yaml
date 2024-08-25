@@ -28,6 +28,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Calb-C001/sub-Calb-C001_ses-20220913-0003.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Calb-C006/sub-Calb-C006_ses-20220916-0001.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -141,6 +148,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Calb-1890/sub-Calb-1890_ses-20210721-0002.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Calb-C001/sub-Calb-C001_ses-20220913-0003.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

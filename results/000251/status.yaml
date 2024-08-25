@@ -735,7 +735,10 @@ tests:
   - path: sub-253/sub-253_ses-Ca-VS-VR-TP-BTW-TRACKS-6.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-269/sub-269_ses-Ca-VS-VR-BTW-TRACKS-REWSIZE-1.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -2710,7 +2713,10 @@ tests:
   - path: sub-253/sub-253_ses-Ca-VS-VR-TP-BTW-TRACKS-6.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-269/sub-269_ses-Ca-VS-VR-BTW-TRACKS-REWSIZE-1.nwb
     status: fail
     test: matnwb_nwbRead

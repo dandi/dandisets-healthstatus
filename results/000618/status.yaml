@@ -724,7 +724,7 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c42_ecephys.nwb
@@ -986,6 +986,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c28_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c42_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1497,13 +1504,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-paired-boyden/sub-paired-boyden_ses-paired-boyden32c-513-2-2_ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-paired-kampff/sub-paired-kampff_ses-paired-kampff-c28_ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
     versions:

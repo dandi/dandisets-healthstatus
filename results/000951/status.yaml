@@ -46,6 +46,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-LC17-fly9/sub-LC17-fly9_ses-LC17-fly9-210803-1716_behavior+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-LC20-fly1/sub-LC20-fly1_ses-LC20-fly1-161111-1314_behavior+image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -148,6 +155,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-LC16-fly18/sub-LC16-fly18_ses-LC16-fly18-211018-1609_behavior+image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-LC17-fly9/sub-LC17-fly9_ses-LC17-fly9-210803-1716_behavior+image.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

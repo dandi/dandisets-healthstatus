@@ -124,6 +124,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Penkcre/sub-Penkcre_obj-myyo7.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Calcacre/sub-Calcacre_obj-138r6m8.nwb
@@ -204,6 +211,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-PC12-cell/sub-PC12-cell_ses-20210302T153000_obj-fsq276.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Penkcre/sub-Penkcre_obj-myyo7.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

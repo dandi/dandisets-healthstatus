@@ -49,6 +49,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-ID26/sub-ID26_ses-ID26-20201020_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ID401/sub-ID401_ses-M401-03-baseline-iso_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -169,6 +176,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-FB237/sub-FB237_ses-FB237_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-ID26/sub-ID26_ses-ID26-20201020_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

@@ -5,11 +5,7 @@ last_run_duration: 11358.780363
 last_run_ended: '2024-01-06T01:42:35.160605-05:00'
 nassets: 31
 tests:
-- assets_nok:
-  - path: sub-EC2/sub-EC2_ses-EC2-B9.nwb
-    status: fail
-    test: pynwb_open_load_ns
-    versions: null
+- assets_nok: []
   assets_ok:
   - path: sub-EC2/sub-EC2_ses-EC2-B1.nwb
     status: pass
@@ -50,6 +46,13 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-EC2/sub-EC2_ses-EC2-B9.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-EC9/sub-EC9_ses-EC9-B15.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -249,7 +252,10 @@ tests:
   - path: sub-EC2/sub-EC2_ses-EC2-B9.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-EC9/sub-EC9_ses-EC9-B15.nwb
     status: fail
     test: matnwb_nwbRead

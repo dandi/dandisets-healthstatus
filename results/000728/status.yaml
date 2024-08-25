@@ -110,6 +110,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-603221684/sub-603221684_ses-637672042-StimB_behavior+image+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-638237461/sub-638237461_ses-650885952-StimC2_behavior+image+ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -194,6 +201,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-590563964/sub-590563964_ses-603224878-StimA_behavior+image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-603221684/sub-603221684_ses-637672042-StimB_behavior+image+ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

@@ -140,13 +140,6 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - path: sub-Mouse28/sub-Mouse28_ses-Mouse28-140310_behavior+ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-Mouse28/sub-Mouse28_ses-Mouse28-140311_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -288,6 +281,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Mouse28/sub-Mouse28_ses-Mouse28-140310_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Mouse12/sub-Mouse12_ses-Mouse12-120807_behavior+ecephys.nwb
@@ -368,6 +368,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Mouse25/sub-Mouse25_ses-Mouse25-140206_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Mouse28/sub-Mouse28_ses-Mouse28-140310_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -523,13 +530,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-Mouse28/sub-Mouse28_ses-Mouse28-140310_behavior+ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-Mouse28/sub-Mouse28_ses-Mouse28-140311_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead

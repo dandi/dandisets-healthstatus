@@ -880,7 +880,10 @@ tests:
   - path: jGCaMP8s/jGCaMP8s_ANM479572_cell07.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: jGCaMP8s/jGCaMP8s_ANM479572_cell08.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1147,6 +1150,13 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: jGCaMP8s/jGCaMP8s_ANM479572_cell07.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - path: XCaMPgf/XCaMPgf_ANM478343_cell06.nwb
     status: pass
@@ -1919,10 +1929,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: jGCaMP8s/jGCaMP8s_ANM479572_cell07.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
   - path: jGCaMP8s/jGCaMP8s_ANM479572_cell09.nwb
     status: timeout
     test: matnwb_nwbRead

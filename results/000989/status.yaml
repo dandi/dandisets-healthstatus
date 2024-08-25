@@ -31,7 +31,10 @@ tests:
   - path: sub-G1-12A5D/sub-G1-12A5D_obj-1s9jq9q_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-G1-12A62/sub-G1-12A62_obj-10zzbbq_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -147,6 +150,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-G1-12A5D/sub-G1-12A5D_obj-1s9jq9q_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-G1-12A62/sub-G1-12A62_obj-wirgik_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -217,11 +227,7 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  assets_ok:
-  - path: sub-G1-12A5D/sub-G1-12A5D_obj-1s9jq9q_ecephys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
+  assets_ok: []
   assets_timeout:
   - path: sub-G1-12A62/sub-G1-12A62_obj-10zzbbq_ecephys.nwb
     status: timeout

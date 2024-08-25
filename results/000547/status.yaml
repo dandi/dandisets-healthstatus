@@ -116,7 +116,10 @@ tests:
   - path: sub-310/sub-310_ses-10threc-100_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-310/sub-310_ses-1strec-0_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -508,6 +511,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-310/sub-310_ses-10threc-100_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-310/sub-310_ses-4threc-100_ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -646,10 +656,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-310/sub-310_ses-10threc-100_ophys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
   - path: sub-310/sub-310_ses-1strec-0_ophys.nwb
     status: pass
     test: matnwb_nwbRead
