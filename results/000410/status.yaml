@@ -21,13 +21,6 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-Lotus/sub-Lotus_ses-Lotus-01_behavior+ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-Monty/sub-Monty_ses-Monty-04_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -65,6 +58,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Jaq/sub-Jaq_ses-jaq-03_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Lotus/sub-Lotus_ses-Lotus-01_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions:
@@ -178,6 +178,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Lotus/sub-Lotus_ses-Lotus-01_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Lotus/sub-Lotus_ses-Lotus-02_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -276,13 +283,6 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
-  - path: sub-Lotus/sub-Lotus_ses-Lotus-01_behavior+ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-Lotus/sub-Lotus_ses-Lotus-05_behavior+ecephys.nwb

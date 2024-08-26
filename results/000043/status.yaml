@@ -105,10 +105,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   assets_ok:
-  - path: sub-496035/sub-496035_ses-20191108T193629_icephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-496035/sub-496035_ses-20191108T203439_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -514,6 +510,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-496035/sub-496035_ses-20191108T193629_icephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-496035/sub-496035_ses-20191108T223842_icephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -603,7 +606,10 @@ tests:
   - path: sub-496035/sub-496035_ses-20191108T193629_icephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-496035/sub-496035_ses-20191108T203439_icephys.nwb
     status: fail
     test: matnwb_nwbRead

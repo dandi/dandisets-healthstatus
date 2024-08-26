@@ -1102,7 +1102,10 @@ tests:
   - path: sub-MX180804/sub-MX180804_ses-20181121T142506.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-MX180804/sub-MX180804_ses-20181122T122748.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -3608,7 +3611,10 @@ tests:
   - path: sub-MX180804/sub-MX180804_ses-20181121T142506.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-MX180804/sub-MX180804_ses-20181129T150336_behavior.nwb
     status: fail
     test: matnwb_nwbRead

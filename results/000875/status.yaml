@@ -36,6 +36,10 @@ tests:
     status: timeout
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-1p-x4-600ns-200ms-3-2kV-YP-(dish23)/sub-1p-x4-600ns-200ms-3-2kV-YP-(dish23)_ses-1p-x4-600ns-200ms-3-2kV-YP_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-1p-x4-600ns-200ms-3-2kV-YP-(dish24)/sub-1p-x4-600ns-200ms-3-2kV-YP-(dish24)_ses-1p-x4-600ns-200ms-3-2kV-YP_image.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -51,6 +55,10 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-10p-x4-600ns-200ms-3-2kV-YP-(dish18)/sub-10p-x4-600ns-200ms-3-2kV-YP-(dish18)_ses-10p-x4-600ns-200ms-3-2kV-YP_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-1p-x4-600ns-200ms-3-2kV-YP-(dish23)/sub-1p-x4-600ns-200ms-3-2kV-YP-(dish23)_ses-1p-x4-600ns-200ms-3-2kV-YP_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

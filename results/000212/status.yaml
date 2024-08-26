@@ -3017,7 +3017,10 @@ tests:
   - path: sub-0-500-200-CS-fly#-62/sub-0-500-200-CS-fly#-62_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-0-500-200-CS-fly#-63/sub-0-500-200-CS-fly#-63_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -4705,6 +4708,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-0-500-200-CS-fly#-62/sub-0-500-200-CS-fly#-62_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-0-500-500-500-200-CS-fly#-12/sub-0-500-500-500-200-CS-fly#-12_behavior.nwb
     status: fail
     test: matnwb_nwbRead
@@ -6769,10 +6779,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-0-500-200-CS-fly#-61/sub-0-500-200-CS-fly#-61_behavior.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-0-500-200-CS-fly#-62/sub-0-500-200-CS-fly#-62_behavior.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

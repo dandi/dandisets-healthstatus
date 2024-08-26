@@ -7,10 +7,6 @@ nassets: 33
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-TS112-0/sub-TS112-0_ses-TS112-0_behavior+ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-TS89-1/sub-TS89-1_ses-TS89-1_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -34,6 +30,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TS111-2/sub-TS111-2_ses-TS111-2_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-TS112-0/sub-TS112-0_ses-TS112-0_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions:
@@ -157,7 +160,10 @@ tests:
   - path: sub-TS112-0/sub-TS112-0_ses-TS112-0_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-TS112-1/sub-TS112-1_ses-TS112-1_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead

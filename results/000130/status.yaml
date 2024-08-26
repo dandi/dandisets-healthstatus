@@ -11,11 +11,11 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout:
   - path: sub-Haydn/sub-Haydn_desc-train_ecephys.nwb
-    status: timeout
+    status: pass
     test: pynwb_open_load_ns
     versions: null
+  assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Haydn/sub-Haydn_desc-test_ecephys.nwb

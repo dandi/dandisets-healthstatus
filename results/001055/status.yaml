@@ -19,6 +19,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-Animal-2/sub-Animal-2_ses-38-to-42.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-Animal-2/sub-Animal-2_ses-43-to-47.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -35,6 +39,10 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-Animal-1/sub-Animal-1_ses-21-to-37.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-Animal-2/sub-Animal-2_ses-38-to-42.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

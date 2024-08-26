@@ -14,10 +14,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_ok:
-  - path: sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day1-30.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day2-30.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1914,6 +1910,13 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   assets_timeout:
+  - path: sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day1-30.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-DB-longITI-C1-M1/sub-DB-longITI-C1-M1_ses-Day1-12.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -2052,7 +2055,10 @@ tests:
   - path: sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day1-30.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-DB-longITI-C1-F1/sub-DB-longITI-C1-F1_ses-Day2-30.nwb
     status: fail
     test: matnwb_nwbRead

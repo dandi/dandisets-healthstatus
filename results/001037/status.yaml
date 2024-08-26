@@ -7,6 +7,10 @@ nassets: 2
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-M1/sub-M1_ses-20230323_behavior.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-M30L/sub-M30L_ses-20230517_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -14,6 +18,10 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-M1/sub-M1_ses-20230323_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
   - path: sub-M30L/sub-M30L_ses-20230517_behavior.nwb
     status: fail
     test: matnwb_nwbRead

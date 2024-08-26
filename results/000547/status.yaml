@@ -469,9 +469,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   assets_timeout:
   - path: sub-311/sub-311_ses-311-5threc-0_ophys.nwb
     status: timeout
@@ -586,6 +586,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-315/sub-315_ses-2ndrec-100_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-315/sub-315_ses-4threc-100_ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -934,13 +941,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-315/sub-315_ses-4threc-100_ophys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   assets_timeout:
   - path: sub-305/sub-305_ses-3rdrec-0_ophys.nwb
     status: timeout

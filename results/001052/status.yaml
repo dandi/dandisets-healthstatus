@@ -35,6 +35,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-Rat463/sub-Rat463_ses-Rat463-PFC.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-Rat467/sub-Rat467_ses-Rat467-PFC.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -79,6 +83,10 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-Rat458/sub-Rat458_ses-Rat458-PFC.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-Rat463/sub-Rat463_ses-Rat463-PFC.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

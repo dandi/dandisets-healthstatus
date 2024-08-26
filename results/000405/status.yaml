@@ -1261,13 +1261,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-s4/sub-s4_ses-Ca-T3g-032119.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-s4/sub-s4_ses-Ca-T3g-032819.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1424,6 +1417,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-s4/sub-s4_ses-Ca-T3g-031319.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-s4/sub-s4_ses-Ca-T3g-032119.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions:
@@ -1951,6 +1951,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-s4/sub-s4_ses-Ca-T3g-032119.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-s4/sub-s4_ses-Ca-T3g-032819.nwb
     status: fail
     test: matnwb_nwbRead
@@ -2794,13 +2801,6 @@ tests:
     status: pass
     test: matnwb_nwbRead
     versions: null
-  - path: sub-s4/sub-s4_ses-Ca-T3g-032119.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-s4/sub-s4_ses-Ca-T3g-032919.nwb
     status: pass
     test: matnwb_nwbRead

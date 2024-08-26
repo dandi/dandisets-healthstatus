@@ -19,10 +19,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-0011/sub-0011_ses-20230226T130000_ophys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-002/sub-002_ses-20230226T130000_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -53,6 +49,10 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-001/sub-001_ses-20230311T120000_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
+  - path: sub-0011/sub-0011_ses-20230226T130000_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null
