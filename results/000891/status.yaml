@@ -39,7 +39,7 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-FB237/sub-FB237_ses-FB237_image.nwb
@@ -168,6 +168,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-FB2359/sub-FB2359_ses-FB2359-Hypercapnia_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-FB2362/sub-FB2362_ses-FB2362_image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -230,13 +237,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   assets_timeout:
-  - path: sub-FB2359/sub-FB2359_ses-FB2359-Hypercapnia_image.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
   - path: sub-nm190911-A1/sub-nm190911-A1_ses-nm190911_image.nwb
     status: timeout
     test: matnwb_nwbRead

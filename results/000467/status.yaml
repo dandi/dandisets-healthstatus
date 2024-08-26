@@ -77,6 +77,13 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-ant2-m4-d26-y2022/sub-ant2-m4-d26-y2022_ses-m4-d26-y2022-ant2-0-48x-4-methyl-3-hexanol-40-t188-z40um_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ant2-m4-d27-y2022/sub-ant2-m4-d27-y2022_ses-m4-d27-y2022-ant2-0-0075x-4-methyl-3-heptanol-40-t180-z95um_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -183,6 +190,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-ant2-m4-d21-y2022/sub-ant2-m4-d21-y2022_ses-m4-d21-y2022-ant2-0-48x-4-methyl-3-heptanol-40-t125-z95um_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-ant2-m4-d26-y2022/sub-ant2-m4-d26-y2022_ses-m4-d26-y2022-ant2-0-48x-4-methyl-3-hexanol-40-t188-z40um_ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

@@ -291,13 +291,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-mouse2-fni17/sub-mouse2-fni17_ses-170723060120.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-mouse2-fni17/sub-mouse2-fni17_ses-170723153322.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -705,6 +698,13 @@ tests:
     status: timeout
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-mouse2-fni17/sub-mouse2-fni17_ses-170723060120.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse2-fni17/sub-mouse2-fni17_ses-170723064341.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -861,6 +861,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-mouse2-fni17/sub-mouse2-fni17_ses-170719124221.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-mouse2-fni17/sub-mouse2-fni17_ses-170723060120.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -1382,13 +1389,6 @@ tests:
     status: timeout
     test: matnwb_nwbRead
     versions: null
-  - path: sub-mouse2-fni17/sub-mouse2-fni17_ses-170723060120.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-mouse2-fni17/sub-mouse2-fni17_ses-170723064341.nwb
     status: timeout
     test: matnwb_nwbRead

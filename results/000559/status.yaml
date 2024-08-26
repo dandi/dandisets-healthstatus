@@ -88,6 +88,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-dls-ai32jr-2/sub-dls-ai32jr-2_ses-velocity-modulation-5964553f-aca8-4e6d-a8d6-527db54b89bb_behavior+image+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-dls-ai32jr-3/sub-dls-ai32jr-3_ses-reinforcement-17106e67-0615-4bd3-85b7-d374485ba902_behavior+image+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -183,6 +190,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-dls-ai32jr-2/sub-dls-ai32jr-2_ses-velocity-modulation-41b3a5b6-2393-4d29-995a-f7136a5a5f39_behavior+image+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-dls-ai32jr-2/sub-dls-ai32jr-2_ses-velocity-modulation-5964553f-aca8-4e6d-a8d6-527db54b89bb_behavior+image+ogen.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

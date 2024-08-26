@@ -70,7 +70,10 @@ tests:
   - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-22_slice-20200407-slice-5_cell-20200407-sample-22_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-23_slice-20200407-slice-5_cell-20200407-sample-23_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1065,6 +1068,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-22_slice-20200407-slice-5_cell-20200407-sample-22_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-24_slice-20200407-slice-5_cell-20200407-sample-24_icephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1413,10 +1423,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-21_slice-20200407-slice-5_cell-20200407-sample-21_icephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-mouse-INETJ/sub-mouse-INETJ_ses-20200407-sample-22_slice-20200407-slice-5_cell-20200407-sample-22_icephys.nwb
     status: timeout
     test: matnwb_nwbRead
     versions: null

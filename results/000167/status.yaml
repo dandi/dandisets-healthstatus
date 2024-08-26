@@ -11,12 +11,12 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-7/sub-7_ses-20200213T113524_ophys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   assets_timeout:
   - path: sub-163/sub-163_ses-20200212T160655_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
+  - path: sub-7/sub-7_ses-20200213T113524_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

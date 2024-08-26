@@ -274,7 +274,10 @@ tests:
   - path: sub-BH254/sub-BH254_ses-20211113_obj-y1b5hu.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BH255/sub-BH255_ses-20211103_obj-7rijzx.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -771,6 +774,13 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-BH254/sub-BH254_ses-20211113_obj-y1b5hu.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BH255/sub-BH255_ses-20211103_obj-7rijzx.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1094,10 +1104,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-BH254/sub-BH254_ses-20211113_obj-15kmn5k.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-BH254/sub-BH254_ses-20211113_obj-y1b5hu.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

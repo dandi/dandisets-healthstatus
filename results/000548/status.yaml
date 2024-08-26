@@ -94,7 +94,10 @@ tests:
   - path: sub-Fig3-Uni10-14/sub-Fig3-Uni10-14_ses-BPAE-unipolar-10pulses_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Fig3-Uni15-01/sub-Fig3-Uni15-01_ses-BPAE-unipolar-15pulses_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -196,6 +199,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Fig3-Uni10-14/sub-Fig3-Uni10-14_ses-BPAE-unipolar-10pulses_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Fig3-Uni15-01/sub-Fig3-Uni15-01_ses-BPAE-unipolar-15pulses_image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -260,10 +270,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-Fig3-Uni10-14/sub-Fig3-Uni10-14_ses-BPAE-unipolar-10pulses_image.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
   - path: sub-Fig3-Uni15-09/sub-Fig3-Uni15-09_ses-BPAE-unipolar-15pulses_image.nwb
     status: pass
     test: matnwb_nwbRead

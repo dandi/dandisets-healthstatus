@@ -27,6 +27,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-JDS-SingleDay-KL8/sub-JDS-SingleDay-KL8_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-JDS-SingleDay-ZT2/sub-JDS-SingleDay-ZT2_obj-1dss6zi_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -55,6 +59,10 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-JDS-SingleDay-JS34/sub-JDS-SingleDay-JS34_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-JDS-SingleDay-KL8/sub-JDS-SingleDay-KL8_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

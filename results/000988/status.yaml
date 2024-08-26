@@ -123,6 +123,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-181730plate2-cell4-find-inversion2-OD0-5/sub-181730plate2-cell4-find-inversion2-OD0-5_ses-20230307T181730_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-181942plate2-cell4-vsteps-OD0/sub-181942plate2-cell4-vsteps-OD0_ses-20230307T181942_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -218,6 +225,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-172839voltron1549-cell2-vsteps-OD0-54/sub-172839voltron1549-cell2-vsteps-OD0-54_ses-20230309T172839_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-181730plate2-cell4-find-inversion2-OD0-5/sub-181730plate2-cell4-find-inversion2-OD0-5_ses-20230307T181730_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

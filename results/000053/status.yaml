@@ -1148,7 +1148,10 @@ tests:
   - path: sub-Pinky/sub-Pinky_ses-20191106_obj-luu3aw_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Pinky/sub-Pinky_ses-20191106_obj-xjieli_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -2043,7 +2046,10 @@ tests:
   - path: sub-Pinky/sub-Pinky_ses-20191106_obj-luu3aw_behavior.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Rascal/sub-Rascal_ses-20190612_behavior.nwb
     status: fail
     test: matnwb_nwbRead

@@ -6,17 +6,17 @@ last_run_ended: '2024-02-07T19:14:54.066140-05:00'
 nassets: 9
 tests:
 - assets_nok: []
-  assets_ok: []
+  assets_ok:
+  - path: sub-132/sub-132_ses-20211215T013700_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   assets_timeout:
   - path: sub-131/sub-131_ses-20211116T203100_image+ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null
   - path: sub-132/sub-132_ses-20211215T003200_ophys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-132/sub-132_ses-20211215T013700_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

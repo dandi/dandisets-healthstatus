@@ -613,7 +613,10 @@ tests:
   - path: sub-SKKS100/sub-SKKS100_ses-20210311T105810_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SKKS100/sub-SKKS100_ses-20210311T111240_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -958,7 +961,10 @@ tests:
   - path: sub-SKKS100/sub-SKKS100_ses-20210311T105810_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SKKS112/sub-SKKS112_ses-20210526T154632_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead

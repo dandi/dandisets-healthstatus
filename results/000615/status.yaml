@@ -11,15 +11,15 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-001/sub-001_ses-20220526.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-001/sub-001_ses-20220706.nwb
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-001/sub-001_ses-20220526.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-001/sub-001_ses-20220411.nwb
