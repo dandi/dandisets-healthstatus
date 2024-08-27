@@ -5,14 +5,7 @@ last_run_duration: 536338.25221
 last_run_ended: '2024-01-09T17:20:19.688256-05:00'
 nassets: 297
 tests:
-- assets_nok:
-  - path: sub-1/sub-1_ses-18516026_tis-1-2_cell-c4_icephys.nwb
-    status: fail
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
+- assets_nok: []
   assets_ok:
   - path: sub-1/sub-1_ses-18516000_tis-1-1_icephys.nwb
     status: pass
@@ -145,6 +138,13 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
+  - path: sub-1/sub-1_ses-18516026_tis-1-2_cell-c4_icephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-1/sub-1_ses-18516027_tis-1-2_cell-c5_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1578,9 +1578,9 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-1/sub-1_ses-18516028_tis-1-2_cell-c5_icephys.nwb
     status: fail
     test: matnwb_nwbRead

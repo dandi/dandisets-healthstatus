@@ -84,13 +84,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-Mouse24/sub-Mouse24_ses-Mouse24-131217_behavior+ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-Mouse24/sub-Mouse24_ses-Mouse24-131218_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -246,6 +239,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Mouse24/sub-Mouse24_ses-Mouse24-131217_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Mouse25/sub-Mouse25_ses-Mouse25-140123_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -340,6 +340,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Mouse24/sub-Mouse24_ses-Mouse24-131216_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Mouse24/sub-Mouse24_ses-Mouse24-131217_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -495,13 +502,6 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - path: sub-Mouse24/sub-Mouse24_ses-Mouse24-131217_behavior+ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-Mouse24/sub-Mouse24_ses-Mouse24-131218_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead

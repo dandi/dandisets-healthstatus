@@ -7,6 +7,10 @@ nassets: 9
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-JDS-SingleDay-ER1/sub-JDS-SingleDay-ER1_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-JDS-SingleDay-JS14/sub-JDS-SingleDay-JS14_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -42,6 +46,10 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-JDS-SingleDay-ER1/sub-JDS-SingleDay-ER1_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
   - path: sub-JDS-SingleDay-JS14/sub-JDS-SingleDay-JS14_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead

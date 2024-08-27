@@ -15,6 +15,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-BH549/sub-BH549_ses-20240402T174640_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-BH549/sub-BH549_ses-20240402T183011_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -43,6 +47,10 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-BH549/sub-BH549_ses-20240331T132745_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-BH549/sub-BH549_ses-20240402T174640_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

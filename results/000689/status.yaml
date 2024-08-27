@@ -99,6 +99,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-H40/sub-H40_ses-H40-2020-04-29-13-33-54-Disc5_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-H41/sub-H41_ses-H41-2020-04-29-16-55-26-Disc5-9_ecephys+image.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -214,6 +221,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-H39/sub-H39_ses-H39-2020-04-29-13-33-40-Disc5_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-H40/sub-H40_ses-H40-2020-04-29-13-33-54-Disc5_ecephys+image.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

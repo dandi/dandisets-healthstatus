@@ -7,6 +7,13 @@ nassets: 87
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-FB2312/sub-FB2312_ses-FB2312-baseline-awake_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-FB2319/sub-FB2319_ses-FB2319-whisker_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -141,6 +148,13 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-F136/sub-F136_ses-F136_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-FB2312/sub-FB2312_ses-FB2312-baseline-awake_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

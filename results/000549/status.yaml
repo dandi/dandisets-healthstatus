@@ -11,7 +11,7 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Fig4-5-Bi100us-11/sub-Fig4-5-Bi100us-11_ses-BPAE-5xBipolar-100us_image.nwb
@@ -189,6 +189,13 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-Fig4-5-Bi100us-09/sub-Fig4-5-Bi100us-09_ses-BPAE-5xBipolar-100us_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Fig4-5-Bi100us-13/sub-Fig4-5-Bi100us-13_ses-BPAE-5xBipolar-100us_image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -356,13 +363,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   assets_timeout:
-  - path: sub-Fig4-5-Bi100us-09/sub-Fig4-5-Bi100us-09_ses-BPAE-5xBipolar-100us_image.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
   - path: sub-Fig4-5-Bi300ns-15/sub-Fig4-5-Bi300ns-15_ses-BPAE-5xBipolar-300ns_image.nwb
     status: timeout
     test: matnwb_nwbRead
