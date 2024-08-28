@@ -35,6 +35,13 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-113740cell3-jf549-1040nm-findinv/sub-113740cell3-jf549-1040nm-findinv_ses-20230329T113740_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-120056voltron1608-cell1-sensitivity-vs-I-OD0-5/sub-120056voltron1608-cell1-sensitivity-vs-I-OD0-5_ses-20230309T120056_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -162,6 +169,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-105110cell1-jf549-1040nm-Vsteps-hp1p/sub-105110cell1-jf549-1040nm-Vsteps-hp1p_ses-20230329T105110_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-113740cell3-jf549-1040nm-findinv/sub-113740cell3-jf549-1040nm-findinv_ses-20230329T113740_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

@@ -265,7 +265,10 @@ tests:
   - path: sub-e14-2m2/sub-e14-2m2_ses-e14-2m2-201013_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-e14-2m2/sub-e14-2m2_ses-e14-2m2-201017_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -825,7 +828,10 @@ tests:
   - path: sub-e14-2m2/sub-e14-2m2_ses-e14-2m2-201013_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-e14-2m3/sub-e14-2m3_ses-e14-2m3-201118_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead

@@ -32,9 +32,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.1
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-Fig3-Bi5-06/sub-Fig3-Bi5-06_ses-BPAE-bipolar-5pulses_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -164,6 +164,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Fig3-Bi15-13/sub-Fig3-Bi15-13_ses-BPAE-bipolar-15pulses_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Fig3-Bi5-06/sub-Fig3-Bi5-06_ses-BPAE-bipolar-5pulses_image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -256,13 +263,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok:
-  - path: sub-Fig3-Bi15-13/sub-Fig3-Bi15-13_ses-BPAE-bipolar-15pulses_image.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-Fig3-Bi5-10/sub-Fig3-Bi5-10_ses-BPAE-bipolar-5pulses_image.nwb
     status: pass
     test: matnwb_nwbRead

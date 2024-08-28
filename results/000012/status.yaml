@@ -1213,7 +1213,10 @@ tests:
   - path: sub-4/sub-4_ses-18530032_tis-4-1_cell-c37_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-4/sub-4_ses-18530033_tis-4-1_cell-c37_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -2160,7 +2163,10 @@ tests:
   - path: sub-4/sub-4_ses-18530032_tis-4-1_cell-c37_icephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-4/sub-4_ses-18530033_tis-4-1_cell-c37_icephys.nwb
     status: fail
     test: matnwb_nwbRead

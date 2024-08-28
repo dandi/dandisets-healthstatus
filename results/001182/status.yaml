@@ -1,20 +1,20 @@
-dandiset: '000025'
-draft_modified: '2023-06-20T00:56:16.937243Z'
-last_run: '2024-01-07T03:48:22.534473-05:00'
-last_run_duration: 4110.373399
-last_run_ended: '2024-01-07T04:56:52.907872-05:00'
-nassets: 1
+dandiset: 001182
+draft_modified: '2024-08-27T16:06:47.531354Z'
+last_run: null
+last_run_duration: null
+last_run_ended: null
+nassets: 15
 tests:
 - assets_nok: []
   assets_ok:
-  - path: 001_140709EXP_A1.nwb
+  - path: sub-M2-session2/sub-M2-session2_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
     versions: null
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - path: 001_140709EXP_A1.nwb
+  - path: sub-M2-session2/sub-M2-session2_behavior.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

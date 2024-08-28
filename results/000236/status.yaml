@@ -7,10 +7,6 @@ nassets: 9
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-Fish03-GCaMP-vlgut-MBd-6dpf-RandomWave/sub-Fish03-GCaMP-vlgut-MBd-6dpf-RandomWave_ses-20210819T094801_behavior+ophys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-Fish06-GCaMP-vlgut-MBv-7dpf-RandomWave/sub-Fish06-GCaMP-vlgut-MBv-7dpf-RandomWave_ses-20210820T173047_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -32,6 +28,10 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   assets_timeout:
+  - path: sub-Fish03-GCaMP-vlgut-MBd-6dpf-RandomWave/sub-Fish03-GCaMP-vlgut-MBd-6dpf-RandomWave_ses-20210819T094801_behavior+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-Fish10-GCaMP-vlgut-MBv-6dpf-RandomWave/sub-Fish10-GCaMP-vlgut-MBv-6dpf-RandomWave_ses-20210826T175647_behavior+ophys.nwb
     status: timeout
     test: pynwb_open_load_ns

@@ -68,6 +68,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_timeout:
+  - path: sub-ant1-m2-d24-y2023/sub-ant1-m2-d24-y2023_ses-m2-d24-y2023-ant1-0-48x-4-methyl-3-heptanone-40-t141-z70um_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ant1-m2-d24-y2023/sub-ant1-m2-d24-y2023_ses-m2-d24-y2023-ant1-0-48x-ethylpyrazine-40-t128-z25um_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -146,6 +153,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-ant1-m1-d20-y2023/sub-ant1-m1-d20-y2023_ses-m1-d20-y2023-ant1-0-48x-propionic-acid-40-t136-z30um_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-ant1-m2-d24-y2023/sub-ant1-m2-d24-y2023_ses-m2-d24-y2023-ant1-0-48x-4-methyl-3-heptanone-40-t141-z70um_ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

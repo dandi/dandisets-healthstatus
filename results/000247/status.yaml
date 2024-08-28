@@ -392,9 +392,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#5012/sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#5012_ses-2019-09-06-0001-oviDNSS1-GCaMP7f&CsChrimson-manualstim-nwb.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1084,6 +1084,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#5011/sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#5011_ses-2019-09-06-0000-oviDNSS1-GCaMP7f&CsChrimson-manualstim-nwb.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-oviDNSS1-driving-GCaMP7f-fly-ID#2004/sub-oviDNSS1-driving-GCaMP7f-fly-ID#2004_ses-2020-07-15-0001-oviDNSS1-GCaMP7f-periodicstim-CsChrimsoncontrol-nwb.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1385,13 +1392,6 @@ tests:
     status: pass
     test: matnwb_nwbRead
     versions: null
-  - path: sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#5011/sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#5011_ses-2019-09-06-0000-oviDNSS1-GCaMP7f&CsChrimson-manualstim-nwb.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#5012/sub-oviDNSS1-driving-GCaMP7f-&-CsChrimson-fly-ID#5012_ses-2019-09-06-0001-oviDNSS1-GCaMP7f&CsChrimson-manualstim-nwb.nwb
     status: pass
     test: matnwb_nwbRead

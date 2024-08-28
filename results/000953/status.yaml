@@ -1,5 +1,5 @@
 dandiset: 000953
-draft_modified: '2024-08-11T23:18:45.051448Z'
+draft_modified: '2024-08-27T13:52:47.546168Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
@@ -64,6 +64,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-MonkeyN-held-in-minival/sub-MonkeyN-held-in-minival_ses-2020-10-19-Run2_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-MonkeyN-held-in-minival/sub-MonkeyN-held-in-minival_ses-2020-10-20-Run1_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
     versions:
@@ -186,6 +193,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-MonkeyN-held-in-minival/sub-MonkeyN-held-in-minival_ses-2020-10-19-Run2_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-MonkeyN-held-in-minival/sub-MonkeyN-held-in-minival_ses-2020-10-20-Run1_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

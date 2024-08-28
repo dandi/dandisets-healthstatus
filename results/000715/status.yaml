@@ -7,10 +7,6 @@ nassets: 10
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-38-YAaDV/sub-38-YAaDV_ophys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-70-YAaLR/sub-70-YAaLR_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -21,6 +17,10 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-20-YAaLR/sub-20-YAaLR_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
+  - path: sub-38-YAaDV/sub-38-YAaDV_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

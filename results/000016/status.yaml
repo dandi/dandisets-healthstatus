@@ -18,9 +18,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-mouse1-fni16/sub-mouse1-fni16_ses-161221134921.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -820,6 +820,13 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-mouse1-fni16/sub-mouse1-fni16_ses-161220141515.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse1-fni16/sub-mouse1-fni16_ses-161221145840.nwb
     status: fail
     test: matnwb_nwbRead
@@ -953,13 +960,6 @@ tests:
       pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
-  - path: sub-mouse1-fni16/sub-mouse1-fni16_ses-161220141515.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-mouse1-fni16/sub-mouse1-fni16_ses-161221134921.nwb
     status: timeout
     test: matnwb_nwbRead

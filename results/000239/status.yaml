@@ -1368,7 +1368,10 @@ tests:
   - path: sub-MX181002/sub-MX181002_ses-20181215T131653.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-MX181002/sub-MX181002_ses-20181216T110848.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -3658,6 +3661,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-MX181002/sub-MX181002_ses-20181215T131653.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-MX181002/sub-MX181002_ses-20181223T145116.nwb
     status: fail
     test: matnwb_nwbRead
@@ -4806,10 +4816,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-MX181002/sub-MX181002_ses-20181214T133257.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-MX181002/sub-MX181002_ses-20181215T131653.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

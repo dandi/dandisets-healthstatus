@@ -35,10 +35,6 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - path: sub-YMV19/sub-YMV19_ses-YMV19-180209_ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   assets_timeout:
   - path: sub-YMV01/sub-YMV01_ses-YMV01-170818_ecephys.nwb
     status: timeout
@@ -132,6 +128,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-YMV18/sub-YMV18_ses-YMV18-180208_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-YMV19/sub-YMV19_ses-YMV19-180209_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions:
@@ -252,6 +255,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-YMV19/sub-YMV19_ses-YMV19-180209_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - path: sub-YMV02/sub-YMV02_ses-YMV02-170815_ecephys.nwb
@@ -268,10 +278,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-YMV19/sub-YMV19_ses-YMV19-180209_ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
   name: matnwb_nwbRead
 untested: []
 versions:

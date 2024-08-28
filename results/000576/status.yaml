@@ -130,7 +130,7 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_timeout: []
@@ -248,6 +248,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-09/sub-09_ses-20170311T170500_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - path: sub-08/sub-08_ses-20161217T120200_ecephys.nwb
     status: pass
@@ -256,14 +263,7 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  assets_timeout:
-  - path: sub-09/sub-09_ses-20170311T170500_ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+  assets_timeout: []
   name: matnwb_nwbRead
 untested:
 - asset: sub-01/sub-01_ses-20140828T132700_ecephys+image/b154b52f-1818-4b7a-9e77-28fbbeef4b70_external_file_0.avi

@@ -81,6 +81,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-leica191115-A1/sub-leica191115-A1_ses-leica191115-A1-awake_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-nm190910/sub-nm190910_ses-nm190910-01001_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -232,6 +239,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-M443/sub-M443_ses-M443_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-leica191115-A1/sub-leica191115-A1_ses-leica191115-A1-awake_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
