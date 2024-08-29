@@ -383,9 +383,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-X2016-02-04-2016-02-04-0021/sub-X2016-02-04-2016-02-04-0021_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -934,6 +934,13 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-X2016-02-04-2016-02-04-0018/sub-X2016-02-04-2016-02-04-0018_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-X2016-02-04-2016-02-04-0021/sub-X2016-02-04-2016-02-04-0021_icephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1419,13 +1426,6 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-X2016-02-04-2016-02-04-0018/sub-X2016-02-04-2016-02-04-0018_icephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-X2016-02-25-2016-02-25-0073/sub-X2016-02-25-2016-02-25-0073_icephys.nwb

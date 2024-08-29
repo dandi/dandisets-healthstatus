@@ -1633,7 +1633,10 @@ tests:
   - path: sub-SLR114/sub-SLR114_ses-20210228_obj-1eimtt7_behavior+image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SLR114/sub-SLR114_ses-20210228_obj-qigr3m_behavior+image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -2814,7 +2817,10 @@ tests:
   - path: sub-SLR114/sub-SLR114_ses-20210228_obj-1eimtt7_behavior+image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SLR114/sub-SLR114_ses-20210305_obj-1puf7l5_behavior+image.nwb
     status: fail
     test: matnwb_nwbRead

@@ -60,9 +60,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-Hench/sub-Hench_ses-20170616T120000.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -306,6 +306,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Hench/sub-Hench_ses-20170615T120000.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Hench/sub-Hench_ses-20170616T120000.nwb
     status: fail
     test: matnwb_nwbRead
@@ -485,13 +492,6 @@ tests:
     versions: null
   assets_ok:
   - path: sub-Cori/sub-Cori_ses-20161217T120000.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
-  - path: sub-Hench/sub-Hench_ses-20170615T120000.nwb
     status: pass
     test: matnwb_nwbRead
     versions:

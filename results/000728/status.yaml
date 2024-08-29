@@ -1,5 +1,5 @@
 dandiset: 000728
-draft_modified: '2024-08-22T17:55:23.225925Z'
+draft_modified: '2024-08-27T18:09:52.163757Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
@@ -159,6 +159,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-657967213/sub-657967213_ses-673171110-StimC2_behavior+image+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-495727026/sub-495727026_ses-508366303-StimA_behavior+image+ophys.nwb
@@ -278,6 +285,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-651725217/sub-651725217_ses-663488086-StimB_behavior+image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-657967213/sub-657967213_ses-673171110-StimC2_behavior+image+ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

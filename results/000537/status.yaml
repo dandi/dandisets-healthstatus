@@ -502,9 +502,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-181229cell15-850/sub-181229cell15-850_ses-20220601T181229_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -867,6 +867,13 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-180301cell20q6a-900-700filter/sub-180301cell20q6a-900-700filter_ses-20220602T180301_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-180941cell14-850/sub-180941cell14-850_ses-20220601T180941_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -1313,13 +1320,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-180941cell14-850/sub-180941cell14-850_ses-20220601T180941_image.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-181229cell15-850/sub-181229cell15-850_ses-20220601T181229_image.nwb
     status: pass
     test: matnwb_nwbRead

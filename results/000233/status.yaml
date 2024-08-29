@@ -1453,7 +1453,10 @@ tests:
   - path: sub-CGM52/sub-CGM52_ses-CGM52_0um_210224_085028_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-CGM52/sub-CGM52_ses-CGM52_0um_210227_094011_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1964,6 +1967,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-CGM52/sub-CGM52_ses-CGM52_0um_210224_085028_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-CGM55/sub-CGM55_ses-CGM55_576um_210312_114050_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -2301,10 +2311,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-CGM52/sub-CGM52_ses-CGM52_0um_210224_085028_ecephys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
   - path: sub-CGM55/sub-CGM55_ses-CGM55_0um_210312_113228_ecephys.nwb
     status: pass
     test: matnwb_nwbRead

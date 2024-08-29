@@ -14,6 +14,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-FB2318/sub-FB2318_ses-FB2318-baseline_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-FB2319/sub-FB2319_ses-FB2319-whisker_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -169,6 +176,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-FB2314/sub-FB2314_ses-FB2314-baseline-iso_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-FB2318/sub-FB2318_ses-FB2318-baseline_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

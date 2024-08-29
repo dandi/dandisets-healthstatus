@@ -1679,10 +1679,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-Provence/sub-Provence_ses-Provence01-HomeCage_behavior+ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-Provence/sub-Provence_ses-Provence01-LinearTrack_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -2620,6 +2616,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Pepper/sub-Pepper_ses-Pepper06-HomeCage_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Provence/sub-Provence_ses-Provence01-HomeCage_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions:
@@ -4058,6 +4061,13 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-Provence/sub-Provence_ses-Provence01-HomeCage_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Provence/sub-Provence_ses-Provence01-LinearTrack_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -4923,10 +4933,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-Picard/sub-Picard_ses-Picard15-HomeCage_behavior+ecephys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-Provence/sub-Provence_ses-Provence01-HomeCage_behavior+ecephys.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

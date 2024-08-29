@@ -126,6 +126,13 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-TiN-350nm-2000um2-in-vitro/sub-TiN-350nm-2000um2-in-vitro_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-TiN-900nm-4000um2-in-vitro/sub-TiN-900nm-4000um2-in-vitro_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -253,6 +260,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-TiN-350nm-2000um2-in-vitro/sub-TiN-350nm-2000um2-in-vitro_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-TiN-900nm-4000um2-in-vitro/sub-TiN-900nm-4000um2-in-vitro_ecephys.nwb

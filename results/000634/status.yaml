@@ -7,10 +7,6 @@ nassets: 10
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-ground0-1/sub-ground0-1_image.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-ground0-10/sub-ground0-10_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -47,7 +43,11 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-ground0-1/sub-ground0-1_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-ground0-1/sub-ground0-1_image.nwb
