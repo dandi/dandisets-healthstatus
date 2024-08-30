@@ -19,6 +19,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-c6-1-25V/sub-c6-1-25V_ses-2kHz-stimulation-1-25V_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-c6-1-45V/sub-c6-1-45V_ses-2kHz-stimulation-1-45V_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -71,6 +75,10 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-c6-1-0V/sub-c6-1-0V_ses-2kHz-stimulation-1-0V_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-c6-1-25V/sub-c6-1-25V_ses-2kHz-stimulation-1-25V_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

@@ -23,12 +23,12 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout:
-  - path: sub-RSpinal-Random-Wave-05/sub-RSpinal-Random-Wave-05_ses-20211008T163009_behavior+ophys.nwb
-    status: timeout
+  - path: sub-RSpinal-Random-Wave-07/sub-RSpinal-Random-Wave-07_ses-20211028T210141_behavior+ophys.nwb
+    status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-RSpinal-Random-Wave-07/sub-RSpinal-Random-Wave-07_ses-20211028T210141_behavior+ophys.nwb
+  assets_timeout:
+  - path: sub-RSpinal-Random-Wave-05/sub-RSpinal-Random-Wave-05_ses-20211008T163009_behavior+ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

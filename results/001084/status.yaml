@@ -39,6 +39,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-DL31/sub-DL31_ses-231020_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-Opto2/sub-Opto2_ses-230315c_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -83,6 +87,10 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-DL20/sub-DL20_ses-220111_image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-DL31/sub-DL31_ses-231020_ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

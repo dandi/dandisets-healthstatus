@@ -144,6 +144,13 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-172757voltron1549-cell2-sensitivity-OD0-54/sub-172757voltron1549-cell2-sensitivity-OD0-54_ses-20230309T172757_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-172839voltron1549-cell2-vsteps-OD0-54/sub-172839voltron1549-cell2-vsteps-OD0-54_ses-20230309T172839_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -274,6 +281,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-172531voltron1549-cell2-sensitivity-OD1-04/sub-172531voltron1549-cell2-sensitivity-OD1-04_ses-20230309T172531_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-172757voltron1549-cell2-sensitivity-OD0-54/sub-172757voltron1549-cell2-sensitivity-OD0-54_ses-20230309T172757_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

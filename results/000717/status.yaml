@@ -6,11 +6,7 @@ last_run_ended: null
 nassets: 5
 tests:
 - assets_nok: []
-  assets_ok:
-  - path: sub-mock/sub-mock_ses-ecephys1.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
+  assets_ok: []
   assets_timeout:
   - path: sub-1214579789_ses-1214621812_icephys/sub-1214579789_ses-1214621812_icephys.nwb
     status: timeout
@@ -21,6 +17,10 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-R6_ses-20200206T210000_behavior+ophys/sub-R6_ses-20200206T210000_behavior+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
+  - path: sub-mock/sub-mock_ses-ecephys1.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

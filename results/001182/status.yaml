@@ -11,10 +11,18 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-M5-session3/sub-M5-session3_behavior.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-M2-session2/sub-M2-session2_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-M5-session3/sub-M5-session3_behavior.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

@@ -259,7 +259,10 @@ tests:
   - path: sub-CGM3/sub-CGM3_ses-CGM3-681um-190306-153647_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-CGM3/sub-CGM3_ses-CGM3-681um-190306-154307_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1768,6 +1771,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-CGM3/sub-CGM3_ses-CGM3-681um-190306-153647_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-CGM3/sub-CGM3_ses-CGM3-681um-190311-162732_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -2069,10 +2079,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-CGM3/sub-CGM3_ses-CGM3-609um-190301-183547_ecephys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-CGM3/sub-CGM3_ses-CGM3-681um-190306-153647_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

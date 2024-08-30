@@ -11,6 +11,13 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-BH500/sub-BH500_ses-20230926T113347_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BH500/sub-BH500_ses-20230928T130700_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -168,6 +175,13 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-BH500/sub-BH500_ses-20230926T113347_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BH500/sub-BH500_ses-20230928T130700_ecephys.nwb
     status: fail
     test: matnwb_nwbRead

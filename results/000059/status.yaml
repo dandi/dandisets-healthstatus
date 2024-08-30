@@ -5,14 +5,7 @@ last_run_duration: 60203.442466
 last_run_ended: '2024-01-14T06:27:37.846688-05:00'
 nassets: 100
 tests:
-- assets_nok:
-  - path: sub-MS21/sub-MS21_ses-Peter-MS21-180621-141817-concat_desc-processed_behavior+ecephys.nwb
-    status: fail
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
+- assets_nok: []
   assets_ok:
   - path: sub-MS10/sub-MS10_ses-Peter-MS10-170311-180956-concat_desc-processed_behavior+ecephys.nwb
     status: pass
@@ -563,6 +556,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-MS21/sub-MS21_ses-Peter-MS21-180621-141817-concat_desc-processed_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-MS21/sub-MS21_ses-Peter-MS21-180622-174411_desc-raw_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -682,9 +682,9 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-MS21/sub-MS21_ses-Peter-MS21-180622-174411_desc-raw_ecephys.nwb
     status: fail
     test: matnwb_nwbRead

@@ -81,6 +81,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-A5505/sub-A5505_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-A5506/sub-A5506_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -204,6 +211,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-A3730/sub-A3730_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-A5505/sub-A5505_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

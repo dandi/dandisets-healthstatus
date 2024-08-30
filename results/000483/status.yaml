@@ -673,10 +673,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-SKKS116/sub-SKKS116_ses-20210526T174455_behavior+ophys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-SKKS116/sub-SKKS116_ses-20210526T175539_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -771,7 +767,14 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-SKKS116/sub-SKKS116_ses-20210526T174455_behavior+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-SKKS080/sub-SKKS080_ses-20201119T155743_behavior+ophys.nwb
@@ -986,6 +989,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-SKKS116/sub-SKKS116_ses-20210526T174455_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SKKS116/sub-SKKS116_ses-20210526T175539_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1096,10 +1106,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-SKKS100/sub-SKKS100_ses-20210216T163419_behavior+ophys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-SKKS116/sub-SKKS116_ses-20210526T174455_behavior+ophys.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

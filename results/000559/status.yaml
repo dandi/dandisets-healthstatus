@@ -165,6 +165,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-vta-nacc-ctrl-6/sub-vta-nacc-ctrl-6_ses-reinforcement-432a5345-fe29-4a77-b266-a864e56606cf_behavior+image+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -288,6 +295,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-snc-dls-ctrl-6/sub-snc-dls-ctrl-6_ses-reinforcement-5b2ae380-1ba2-4185-9da0-10c20d962a6d_behavior+image+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-vta-nacc-ctrl-6/sub-vta-nacc-ctrl-6_ses-reinforcement-432a5345-fe29-4a77-b266-a864e56606cf_behavior+image+ogen.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

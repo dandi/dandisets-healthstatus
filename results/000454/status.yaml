@@ -11,11 +11,11 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  assets_timeout:
   - path: sub-SST-tdTomato-1a/sub-SST-tdTomato-1a_ophys.nwb
-    status: pass
+    status: timeout
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout:
   - path: sub-rbp4-jRGECO1a-21/sub-rbp4-jRGECO1a-21_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns

@@ -7,10 +7,6 @@ nassets: 14
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-M36/sub-M36_ses-20200827T141103_behavior+ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-M38/sub-M38_ses-20200904T142415_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -29,6 +25,10 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-M29/sub-M29_ses-20200612T143309_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
+  - path: sub-M36/sub-M36_ses-20200827T141103_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null
