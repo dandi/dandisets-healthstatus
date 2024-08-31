@@ -35,7 +35,10 @@ tests:
   - path: sub-040732cell5-JF525/sub-040732cell5-JF525_ses-20220729T040732_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-040926cell6-JF525/sub-040926cell6-JF525_ses-20220729T040926_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -785,7 +788,10 @@ tests:
   - path: sub-040732cell5-JF525/sub-040732cell5-JF525_ses-20220729T040732_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-041154cell7-JF525/sub-041154cell7-JF525_ses-20220729T041154_image.nwb
     status: fail
     test: matnwb_nwbRead

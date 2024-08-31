@@ -95,7 +95,10 @@ tests:
   - path: sub-P21HMH/sub-P21HMH_ses-20090101_obj-1femyyi_ecephys+image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-P21HMH/sub-P21HMH_ses-20090101_obj-3ljvpn_ecephys+image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -643,6 +646,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-P21HMH/sub-P21HMH_ses-20090101_obj-1femyyi_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-P21HMH/sub-P21HMH_ses-20090101_obj-3ljvpn_ecephys+image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1093,10 +1103,6 @@ tests:
       pynwb: 2.8.0
   assets_ok: []
   assets_timeout:
-  - path: sub-P21HMH/sub-P21HMH_ses-20090101_obj-1femyyi_ecephys+image.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
   - path: sub-P23HMH/sub-P23HMH_ses-20090201_obj-q3na3m_ecephys+image.nwb
     status: timeout
     test: matnwb_nwbRead

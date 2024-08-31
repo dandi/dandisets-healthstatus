@@ -95,6 +95,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-dlight-chrimson-9/sub-dlight-chrimson-9_ses-reinforcement-photometry-b146ce67-3439-4cda-a4f3-087fa86eb305_behavior+image+ogen+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-dlight-chrimson-9/sub-dlight-chrimson-9_ses-reinforcement-photometry-d8946385-6e18-41be-9488-036d0d7a69a0_behavior+image+ogen+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -239,6 +246,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-dlight-chrimson-8/sub-dlight-chrimson-8_ses-reinforcement-photometry-502e94b9-3f7d-4c7b-9613-a3ed9c19b1a8_behavior+image+ogen+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-dlight-chrimson-9/sub-dlight-chrimson-9_ses-reinforcement-photometry-b146ce67-3439-4cda-a4f3-087fa86eb305_behavior+image+ogen+ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

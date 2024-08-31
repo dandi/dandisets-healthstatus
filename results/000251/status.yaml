@@ -185,7 +185,10 @@ tests:
   - path: sub-128/sub-128_ses-Ca-VS-MB-6.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-128/sub-128_ses-Ca-VS-MB-SPD-6.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -2486,6 +2489,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-128/sub-128_ses-Ca-VS-MB-6.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-128/sub-128_ses-Ca-VS-MB-SPD-6.nwb
     status: fail
     test: matnwb_nwbRead
@@ -3753,10 +3763,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-127/sub-127_ses-Ca-VS-MB-TP-PAUSE-3.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-128/sub-128_ses-Ca-VS-MB-6.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

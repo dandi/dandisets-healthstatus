@@ -109,9 +109,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-20220701004/sub-20220701004_ses-20220701T180834_slice-20220701004_cell-20220701004_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -308,9 +308,9 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-20220701003/sub-20220701003_ses-20220701T174937_slice-20220701003_cell-20220701003_icephys.nwb
     status: fail
     test: matnwb_nwbRead

@@ -130,7 +130,10 @@ tests:
   - path: jGCaMP7f/jGCaMP7f_ANM478404_cell05.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: jGCaMP7f/jGCaMP7f_ANM478404_cell06.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1043,7 +1046,10 @@ tests:
   - path: jGCaMP7f/jGCaMP7f_ANM478404_cell05.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: jGCaMP7f/jGCaMP7f_ANM478404_cell06.nwb
     status: fail
     test: matnwb_nwbRead

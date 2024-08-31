@@ -91,6 +91,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-142652cell3/sub-142652cell3_ses-20230316T142652_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-151226voltron2549-cell1-inversion-OD2/sub-151226voltron2549-cell1-inversion-OD2_ses-20230309T151226_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -239,6 +246,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-140253cell2-blueonly-no2p/sub-140253cell2-blueonly-no2p_ses-20230117T140253_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-142652cell3/sub-142652cell3_ses-20230316T142652_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

@@ -2594,7 +2594,10 @@ tests:
   - path: sub-0-200-suzukii-fly#-22/sub-0-200-suzukii-fly#-22_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-0-200-suzukii-fly#-23/sub-0-200-suzukii-fly#-23_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -4702,6 +4705,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-0-200-suzukii-fly#-22/sub-0-200-suzukii-fly#-22_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-0-200-suzukii-fly#-24/sub-0-200-suzukii-fly#-24_behavior.nwb
     status: fail
     test: matnwb_nwbRead
@@ -6435,10 +6445,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-0-200-suzukii-fly#-20/sub-0-200-suzukii-fly#-20_behavior.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-0-200-suzukii-fly#-22/sub-0-200-suzukii-fly#-22_behavior.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

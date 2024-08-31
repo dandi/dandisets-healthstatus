@@ -19,6 +19,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-jlh41/sub-jlh41_ses-jlh41-2023-09-18-14-52-47_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   assets_timeout:
   - path: sub-jlh15/sub-jlh15_ses-jlh15-2022-06-15g0_ecephys.nwb
     status: timeout
@@ -79,6 +83,10 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-jlh40/sub-jlh40_ses-jlh40-2023-08-21-16-01-34_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-jlh41/sub-jlh41_ses-jlh41-2023-09-18-14-52-47_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

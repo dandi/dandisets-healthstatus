@@ -7,6 +7,13 @@ nassets: 28
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-1295011705/sub-1295011705_ses-1298530094_icephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-1303030608/sub-1303030608_ses-1303080158_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -249,6 +256,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-1295011705/sub-1295011705_ses-1298320190_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-1295011705/sub-1295011705_ses-1298530094_icephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

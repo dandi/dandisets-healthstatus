@@ -7,6 +7,10 @@ nassets: 309
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-115/sub-115_ses-session-hheise-M115-2022-08-08-01_behavior+image+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-63/sub-63_ses-session-hheise-M063-2021-03-04-01_behavior+image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -14,6 +18,10 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-115/sub-115_ses-session-hheise-M115-2022-08-08-01_behavior+image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
   - path: sub-63/sub-63_ses-session-hheise-M063-2021-03-04-01_behavior+image+ophys.nwb
     status: fail
     test: matnwb_nwbRead

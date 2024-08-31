@@ -21,6 +21,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-U/sub-U_ses-001_obj-2pivir.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-U/sub-U_ses-20231119T113000_obj-1kcinv8_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -191,6 +198,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-U/sub-U_ses-001_obj-1u8n1k8.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-U/sub-U_ses-001_obj-2pivir.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

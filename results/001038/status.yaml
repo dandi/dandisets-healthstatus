@@ -7,6 +7,13 @@ nassets: 1238
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-Anxa-A001/sub-Anxa-A001_ses-20220901-0002.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Anxa-J075/sub-Anxa-J075_ses-20220310-0004.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -182,6 +189,13 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-Anxa-A001/sub-Anxa-A001_ses-20220901-0002.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Anxa-J075/sub-Anxa-J075_ses-20220310-0004.nwb
     status: fail
     test: matnwb_nwbRead

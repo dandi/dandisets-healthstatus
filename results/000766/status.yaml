@@ -60,6 +60,13 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-PC12-cell/sub-PC12-cell_ses-20210302T153000_obj-1xxa31h.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout:
   - path: sub-Calcacre/sub-Calcacre_obj-11t7g5r.nwb
     status: timeout
@@ -281,6 +288,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-PC12-cell/sub-PC12-cell_ses-20210302T153000_obj-1hw2rqb.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-PC12-cell/sub-PC12-cell_ses-20210302T153000_obj-1xxa31h.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

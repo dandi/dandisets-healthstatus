@@ -2009,7 +2009,10 @@ tests:
   - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 04_obj-abkusb.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 04_obj-j1a46.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -5377,7 +5380,10 @@ tests:
   - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 04_obj-abkusb.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Mouse 2071/sub-Mouse 2071_ses-Session 05_obj-1cawq5m.nwb
     status: fail
     test: matnwb_nwbRead
