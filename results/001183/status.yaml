@@ -1,20 +1,20 @@
-dandiset: '001075'
-draft_modified: '2024-08-30T03:57:28.600362Z'
+dandiset: 001183
+draft_modified: '2024-08-29T00:08:32.863167Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
-nassets: 2
+nassets: 38
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-211104/sub-211104_ophys.nwb
+  - path: sub-2020-02-15-0044/sub-2020-02-15-0044_ses-20200215T215035_slice-2020-02-15-0044-abf_cell-2020-02-15-0044-abf_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
     versions: null
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - path: sub-211104/sub-211104_ophys.nwb
+  - path: sub-2020-02-15-0044/sub-2020-02-15-0044_ses-20200215T215035_slice-2020-02-15-0044-abf_cell-2020-02-15-0044-abf_icephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

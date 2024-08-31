@@ -110,6 +110,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-220/sub-220_ses-20201203.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-220/sub-220_ses-20201204.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -248,6 +255,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-163/sub-163_ses-20201007.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-220/sub-220_ses-20201203.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

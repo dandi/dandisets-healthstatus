@@ -155,6 +155,13 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-M-4/sub-M-4_ses-FearLearning-lateAcq-Mouse5_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-M-5/sub-M-5_ses-FearLearning-earlyAcq-Mouse6_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -284,6 +291,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-M-3/sub-M-3_ses-RewardLearning-earlyAcq-Mouse4_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-M-4/sub-M-4_ses-FearLearning-lateAcq-Mouse5_ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

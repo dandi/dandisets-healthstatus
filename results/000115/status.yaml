@@ -5,14 +5,7 @@ last_run_duration: 207950.201743
 last_run_ended: '2024-01-17T00:15:28.941070-05:00'
 nassets: 57
 tests:
-- assets_nok:
-  - path: sub-roquefort/sub-roquefort_ses-roquefort-12_behavior+ecephys.nwb
-    status: fail
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
+- assets_nok: []
   assets_ok:
   - path: sub-despereaux/sub-despereaux_ses-despereaux-03_behavior+ecephys.nwb
     status: pass
@@ -373,6 +366,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-roquefort/sub-roquefort_ses-roquefort-12_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-roquefort/sub-roquefort_ses-roquefort-14_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -512,9 +512,9 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-roquefort/sub-roquefort_ses-roquefort-14_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead

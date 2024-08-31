@@ -117,6 +117,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-BW051/sub-BW051_ses-20220109T133229.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BW051/sub-BW051_ses-20220111T120836.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -253,6 +260,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BW048/sub-BW048_ses-20220109T141638.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-BW051/sub-BW051_ses-20220109T133229.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

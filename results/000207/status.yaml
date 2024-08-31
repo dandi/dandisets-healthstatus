@@ -43,6 +43,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-6/sub-6_ses-6_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-8/sub-8_ses-8_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -73,10 +77,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-3/sub-3_ses-3_ecephys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-6/sub-6_ses-6_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

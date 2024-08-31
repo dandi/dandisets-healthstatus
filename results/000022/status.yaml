@@ -696,7 +696,10 @@ tests:
   - path: sub-800249582/sub-800249582_ses-819186360_probe-820311762_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-800249582/sub-800249582_ses-819186360_probe-820311764_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1100,6 +1103,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-800249582/sub-800249582_ses-819186360_probe-820311760_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-800249582/sub-800249582_ses-819186360_probe-820311762_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -1596,10 +1606,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-800249582/sub-800249582_ses-819186360_probe-820311756_ecephys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-800249582/sub-800249582_ses-819186360_probe-820311762_ecephys.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

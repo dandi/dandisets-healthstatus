@@ -14,6 +14,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_ok:
+  - path: sub-KSt112/sub-KSt112_ses-20150606T120000_behavior.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-KSt119/sub-KSt119_ses-20150702T120000_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -138,13 +145,6 @@ tests:
     status: timeout
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-KSt112/sub-KSt112_ses-20150606T120000_behavior.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-KSt112/sub-KSt112_ses-20150610T120000_behavior.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -456,6 +456,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-KSt112/sub-KSt112_ses-20150606T120000_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-KSt117/sub-KSt117_ses-20150629T120000_behavior.nwb
     status: fail
     test: matnwb_nwbRead
@@ -623,13 +630,6 @@ tests:
     status: timeout
     test: matnwb_nwbRead
     versions: null
-  - path: sub-KSt112/sub-KSt112_ses-20150606T120000_behavior.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-KSt112/sub-KSt112_ses-20150610T120000_behavior.nwb
     status: timeout
     test: matnwb_nwbRead

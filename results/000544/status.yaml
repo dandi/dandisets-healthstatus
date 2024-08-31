@@ -11,15 +11,15 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-484677/sub-484677_behavior+ecephys+ogen.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-484677/sub-484677_ses-20210415T161621_behavior+ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-484677/sub-484677_behavior+ecephys+ogen.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-001/sub-001_ses-session-1234.nwb

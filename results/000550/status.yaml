@@ -11,10 +11,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-Fig6-5xBi-0,83MHz-11/sub-Fig6-5xBi-0,83MHz-11_ses-BPAE-5xBipolar-0,83MHz_image.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-Fig6-5xBi-0,83MHz-13/sub-Fig6-5xBi-0,83MHz-13_ses-BPAE-5xBipolar-0,83MHz_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -72,6 +68,10 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   assets_timeout:
+  - path: sub-Fig6-5xBi-0,83MHz-11/sub-Fig6-5xBi-0,83MHz-11_ses-BPAE-5xBipolar-0,83MHz_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-Fig6-5xUni-0,83MHz-02/sub-Fig6-5xUni-0,83MHz-02_ses-BPAE-5xUnipolar-0,83MHz_image.nwb
     status: timeout
     test: pynwb_open_load_ns

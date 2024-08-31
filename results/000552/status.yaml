@@ -182,10 +182,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211124-raw_ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211124_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -712,6 +708,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_timeout:
+  - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211124-raw_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-e15-13f1/sub-e15-13f1_ses-e15-13f1-220120-raw_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -806,6 +809,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211124-raw_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211124_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1199,10 +1209,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211116-raw_ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-e13-26m1/sub-e13-26m1_ses-e13-26m1-211124-raw_ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
     versions: null

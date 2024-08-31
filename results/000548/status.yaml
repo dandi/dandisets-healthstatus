@@ -31,10 +31,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-Fig3-Bi5-12/sub-Fig3-Bi5-12_ses-BPAE-bipolar-5pulses_image.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-Fig3-Bi5-13/sub-Fig3-Bi5-13_ses-BPAE-bipolar-5pulses_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -80,6 +76,10 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   assets_timeout:
+  - path: sub-Fig3-Bi5-12/sub-Fig3-Bi5-12_ses-BPAE-bipolar-5pulses_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-Fig3-Uni5-07/sub-Fig3-Uni5-07_ses-BPAE-unipolar-5pulses_image.nwb
     status: timeout
     test: pynwb_open_load_ns

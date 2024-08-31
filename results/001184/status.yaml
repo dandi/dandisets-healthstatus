@@ -1,20 +1,20 @@
-dandiset: 000482
-draft_modified: '2023-06-20T00:56:24.614439Z'
-last_run: '2024-02-13T18:43:29.626089-05:00'
-last_run_duration: 605.975658
-last_run_ended: '2024-02-13T18:53:35.601747-05:00'
-nassets: 1
+dandiset: 001184
+draft_modified: '2024-08-29T14:58:46.766644Z'
+last_run: null
+last_run_duration: null
+last_run_ended: null
+nassets: 309
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-Elon/sub-Elon_ses-ORTest-Session-YB-2022-08-08_ecephys.nwb
+  - path: sub-63/sub-63_ses-session-hheise-M063-2021-03-04-01_behavior+image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
     versions: null
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
-  - path: sub-Elon/sub-Elon_ses-ORTest-Session-YB-2022-08-08_ecephys.nwb
+  - path: sub-63/sub-63_ses-session-hheise-M063-2021-03-04-01_behavior+image+ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

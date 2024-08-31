@@ -7,6 +7,10 @@ nassets: 10
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-Dory/sub-Dory_ses-2021-05-19-001_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-Dory/sub-Dory_ses-2021-05-19-003_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -42,6 +46,10 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-Dory/sub-Dory_ses-2021-05-19-001_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
   - path: sub-Dory/sub-Dory_ses-2021-05-19-003_ecephys.nwb
     status: fail
     test: matnwb_nwbRead

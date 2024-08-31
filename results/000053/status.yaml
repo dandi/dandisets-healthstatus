@@ -1696,13 +1696,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-npJ3/sub-npJ3_ses-20190506_behavior+ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-npJ4/sub-npJ4_ses-20190511_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1753,6 +1746,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Snoopy/sub-Snoopy_ses-20190307_behavior.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-npJ3/sub-npJ3_ses-20190506_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions:
@@ -2212,6 +2212,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-npJ3/sub-npJ3_ses-20190506_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - path: sub-Azalea/sub-Azalea_ses-20190129_behavior.nwb
     status: pass
@@ -3492,13 +3499,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-npJ3/sub-npJ3_ses-20190506_behavior+ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-npJ4/sub-npJ4_ses-20190512_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead

@@ -5,11 +5,7 @@ last_run_duration: 72701.745722
 last_run_ended: '2024-02-16T19:10:37.986197-05:00'
 nassets: 21
 tests:
-- assets_nok:
-  - path: sub-20191030-03/sub-20191030-03_ses-20191030_ophys.nwb
-    status: fail
-    test: pynwb_open_load_ns
-    versions: null
+- assets_nok: []
   assets_ok:
   - path: sub-20190924-01/sub-20190924-01_ses-20190924_ophys.nwb
     status: pass
@@ -132,6 +128,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-20190929-07/sub-20190929-07_ses-20190929_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-20191030-03/sub-20191030-03_ses-20191030_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions:
@@ -269,7 +272,10 @@ tests:
   - path: sub-20191030-03/sub-20191030-03_ses-20191030_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-20191030-07/sub-20191030-07_ses-20191030_ophys.nwb
     status: fail
     test: matnwb_nwbRead

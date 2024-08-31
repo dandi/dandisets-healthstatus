@@ -6,12 +6,12 @@ last_run_ended: '2024-02-11T23:32:37.600936-05:00'
 nassets: 4
 tests:
 - assets_nok: []
-  assets_ok:
+  assets_ok: []
+  assets_timeout:
   - path: sub-SST-tdTomato-1/sub-SST-tdTomato-1_ophys.nwb
-    status: pass
+    status: timeout
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout:
   - path: sub-SST-tdTomato-1a/sub-SST-tdTomato-1a_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns

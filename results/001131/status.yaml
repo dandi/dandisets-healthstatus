@@ -7,6 +7,10 @@ nassets: 2
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-ControlMouse/sub-ControlMouse_ses-20230201_behavior.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-MutantMouse/sub-MutantMouse_ses-20221220_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -14,6 +18,10 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-ControlMouse/sub-ControlMouse_ses-20230201_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
   - path: sub-MutantMouse/sub-MutantMouse_ses-20221220_behavior.nwb
     status: fail
     test: matnwb_nwbRead

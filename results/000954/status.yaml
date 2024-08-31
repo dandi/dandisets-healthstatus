@@ -144,7 +144,7 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HumanPitt-held-out-calib/sub-HumanPitt-held-out-calib_ses-19250209T111826.nwb
@@ -283,6 +283,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-HumanPitt-held-out-calib/sub-HumanPitt-held-out-calib_ses-19250206T112219.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-HumanPitt-held-out-calib/sub-HumanPitt-held-out-calib_ses-19250209T111826.nwb
     status: fail
     test: matnwb_nwbRead
@@ -293,13 +300,6 @@ tests:
   assets_ok: []
   assets_timeout:
   - path: sub-HumanPitt-held-in-minival/sub-HumanPitt-held-in-minival_ses-19250108T111022.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
-  - path: sub-HumanPitt-held-out-calib/sub-HumanPitt-held-out-calib_ses-19250206T112219.nwb
     status: timeout
     test: matnwb_nwbRead
     versions:
