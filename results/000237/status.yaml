@@ -31,15 +31,15 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-Fish37-GCaMP-vlgut-HBd-5dpf-RandomWave/sub-Fish37-GCaMP-vlgut-HBd-5dpf-RandomWave_ses-20210927T113222_behavior+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-Fish39-GCaMP-vlgut-HBv-6dpf-RandomWave/sub-Fish39-GCaMP-vlgut-HBv-6dpf-RandomWave_ses-20210928T112121_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout:
-  - path: sub-Fish37-GCaMP-vlgut-HBd-5dpf-RandomWave/sub-Fish37-GCaMP-vlgut-HBd-5dpf-RandomWave_ses-20210927T113222_behavior+ophys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
+  assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Fish05-GCaMP-vlgut-HBd-7dpf-RandomWave/sub-Fish05-GCaMP-vlgut-HBd-7dpf-RandomWave_ses-20210820T112219_behavior+ophys.nwb

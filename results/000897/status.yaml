@@ -76,6 +76,10 @@ tests:
     status: timeout
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-amadeus/sub-amadeus_ses-08212019_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-amadeus/sub-amadeus_ses-08232019_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -95,6 +99,10 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-amadeus/sub-amadeus_ses-08212019_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-amadeus/sub-amadeus_ses-08212019_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

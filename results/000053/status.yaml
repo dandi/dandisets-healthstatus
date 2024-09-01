@@ -1717,7 +1717,10 @@ tests:
   - path: sub-npJ5/sub-npJ5_ses-20190505_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-npJ5/sub-npJ5_ses-20190505_obj-10plzqh_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -2223,6 +2226,13 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-npJ3/sub-npJ3_ses-20190506_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-npJ5/sub-npJ5_ses-20190505_behavior.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -3432,10 +3442,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-npJ4/sub-npJ4_ses-20190511_behavior.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-npJ5/sub-npJ5_ses-20190505_behavior.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

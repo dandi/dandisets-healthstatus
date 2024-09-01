@@ -166,6 +166,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-ID402/sub-ID402_ses-M402-03-baseline-iso_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-nm190911-A1/sub-nm190911-A1_ses-nm190911_image.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -281,6 +288,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-ID401/sub-ID401_ses-M401-03-baseline-iso_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-ID402/sub-ID402_ses-M402-03-baseline-iso_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

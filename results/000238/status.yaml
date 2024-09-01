@@ -27,11 +27,11 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  assets_timeout:
   - path: sub-RSpinal-Random-Wave-07/sub-RSpinal-Random-Wave-07_ses-20211028T210141_behavior+ophys.nwb
-    status: pass
+    status: timeout
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-RSpinal-Random-Wave-01/sub-RSpinal-Random-Wave-01_ses-20210724T194543_behavior+ophys.nwb

@@ -71,6 +71,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-T-XC-XCT-12318734159920924707/sub-T-XC-XCT-12318734159920924707_ses-20221108T171654.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-T-XC-XCT-2435717344540924017/sub-T-XC-XCT-2435717344540924017_ses-20221108T170538.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -215,6 +222,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-T-2730105421769785692/sub-T-2730105421769785692_ses-20221025T170809.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-T-XC-XCT-12318734159920924707/sub-T-XC-XCT-12318734159920924707_ses-20221108T171654.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

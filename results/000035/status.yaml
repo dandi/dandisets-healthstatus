@@ -585,13 +585,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-12_slice-20200413-slice-2_cell-20200413-sample-12_icephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-13_slice-20200413-slice-2_cell-20200413-sample-13_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1033,6 +1026,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-12_slice-20200413-slice-2_cell-20200413-sample-12_icephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-17_slice-20200413-slice-2_cell-20200413-sample-17_icephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -1294,6 +1294,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-12_slice-20200413-slice-2_cell-20200413-sample-12_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-14_slice-20200413-slice-2_cell-20200413-sample-14_icephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1838,13 +1845,6 @@ tests:
     status: timeout
     test: matnwb_nwbRead
     versions: null
-  - path: sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-12_slice-20200413-slice-2_cell-20200413-sample-12_icephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-mouse-UEQOU/sub-mouse-UEQOU_ses-20200413-sample-13_slice-20200413-slice-2_cell-20200413-sample-13_icephys.nwb
     status: timeout
     test: matnwb_nwbRead

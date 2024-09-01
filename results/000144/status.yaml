@@ -6,13 +6,13 @@ last_run_ended: '2024-01-15T07:32:35.599807-05:00'
 nassets: 2
 tests:
 - assets_nok: []
-  assets_ok: []
-  assets_timeout:
-  - path: sub-8675309/sub-8675309_ses-2000-01-01 00-00-00_ophys.nwb
-    status: timeout
+  assets_ok:
+  - path: sub-8675309/sub-8675309_ses-20211008T163543_ophys.nwb
+    status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-8675309/sub-8675309_ses-20211008T163543_ophys.nwb
+  assets_timeout:
+  - path: sub-8675309/sub-8675309_ses-2000-01-01 00-00-00_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

@@ -70,13 +70,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-ANM-0174/sub-ANM-0174_ses-20210915_behavior+ecephys+ogen.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-ANM-0176/sub-ANM-0176_ses-20211108_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -208,6 +201,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-ANM-0174/sub-ANM-0174_ses-20210915_behavior+ecephys+ogen.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ANM-0178/sub-ANM-0178_ses-20211116_behavior+ecephys+ogen.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -281,6 +281,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-ANM-0174/sub-ANM-0174_ses-20210910_behavior+ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-ANM-0174/sub-ANM-0174_ses-20210915_behavior+ecephys+ogen.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -402,13 +409,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-ANM-0173/sub-ANM-0173_ses-20211004_behavior+ecephys+ogen.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
-  - path: sub-ANM-0174/sub-ANM-0174_ses-20210915_behavior+ecephys+ogen.nwb
     status: timeout
     test: matnwb_nwbRead
     versions:

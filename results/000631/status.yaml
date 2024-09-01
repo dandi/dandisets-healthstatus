@@ -16,6 +16,11 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-20/sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-20_ses-600ns-4kV-0-8MHz
+      paired pulse trains_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-600ns-4kV-0,8MHz-UP-10-5-21-BPAE-05/sub-600ns-4kV-0,8MHz-UP-10-5-21-BPAE-05_ses-600ns-4kV-0-8MHz
       single pulse trains_image.nwb
     status: pass
@@ -71,12 +76,7 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout:
-  - path: sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-20/sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-20_ses-600ns-4kV-0-8MHz
-      paired pulse trains_image.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
+  assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-13/sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-13_ses-BPAE-5xBipolar-0,83MHz_image.nwb

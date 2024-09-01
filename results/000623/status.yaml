@@ -183,7 +183,7 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-CS60/sub-CS60_ses-P60CSR1_behavior+ecephys.nwb
@@ -358,6 +358,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-CS58/sub-CS58_ses-P58CSR1_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-CS60/sub-CS60_ses-P60CSR1_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -395,13 +402,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-CS58/sub-CS58_ses-P58CSR1_behavior+ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.2
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
   - path: sub-CS62/sub-CS62_ses-P62CSR2_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead

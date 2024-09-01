@@ -7,6 +7,10 @@ nassets: 10
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-P1/sub-P1_ses-2018-10-12_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-P1/sub-P1_ses-2018-10-15_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -33,10 +37,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-P1/sub-P1_ses-2018-10-01_ecephys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-P1/sub-P1_ses-2018-10-12_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null
