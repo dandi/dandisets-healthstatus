@@ -7,6 +7,13 @@ nassets: 185
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-104648voltron2-608-cell2-findinversion-OD0-5/sub-104648voltron2-608-cell2-findinversion-OD0-5_ses-20230330T104648_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-104828cell1-jf549-1040nm-Vsteps/sub-104828cell1-jf549-1040nm-Vsteps_ses-20230329T104828_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -196,6 +203,13 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-104648voltron2-608-cell2-findinversion-OD0-5/sub-104648voltron2-608-cell2-findinversion-OD0-5_ses-20230330T104648_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-104828cell1-jf549-1040nm-Vsteps/sub-104828cell1-jf549-1040nm-Vsteps_ses-20230329T104828_image.nwb
     status: fail
     test: matnwb_nwbRead

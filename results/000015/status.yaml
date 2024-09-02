@@ -26,7 +26,10 @@ tests:
   - path: sub-an041/sub-an041_ses-20140823_obj-6xh5s8.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-an041/sub-an041_ses-20140823_obj-9l0ag0.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1168,7 +1171,10 @@ tests:
   - path: sub-an041/sub-an041_ses-20140823_obj-6xh5s8.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-an041/sub-an041_ses-20140825_obj-1k6balg.nwb
     status: fail
     test: matnwb_nwbRead

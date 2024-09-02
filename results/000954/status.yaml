@@ -91,6 +91,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-HumanPitt-held-in-minival/sub-HumanPitt-held-in-minival_ses-19250119T113543.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-HumanPitt-held-in-minival/sub-HumanPitt-held-in-minival_ses-19250119T114045.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -242,6 +249,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HumanPitt-held-in-minival/sub-HumanPitt-held-in-minival_ses-19250115T110633.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-HumanPitt-held-in-minival/sub-HumanPitt-held-in-minival_ses-19250119T113543.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

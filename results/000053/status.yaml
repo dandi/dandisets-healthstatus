@@ -315,7 +315,10 @@ tests:
   - path: sub-Dorian/sub-Dorian_ses-20191109_obj-hka0xx_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Dorian/sub-Dorian_ses-20191109_obj-uf981b_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1843,6 +1846,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-Dorian/sub-Dorian_ses-20191109_obj-hka0xx_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Dorian/sub-Dorian_ses-20191109_obj-uf981b_behavior.nwb
     status: fail
     test: matnwb_nwbRead
@@ -2452,10 +2462,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-Dorian/sub-Dorian_ses-20191109_obj-1xk9h3b_behavior.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-Dorian/sub-Dorian_ses-20191109_obj-hka0xx_behavior.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

@@ -7,6 +7,13 @@ nassets: 179
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-EF0148/sub-EF0148_ses-20190305T143046_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-EF0150/sub-EF0150_ses-20190223T143451_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -152,13 +159,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-EF0148/sub-EF0148_ses-20190305T143046_behavior+ecephys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-EF0148/sub-EF0148_ses-20190306T134049_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -469,6 +469,13 @@ tests:
       pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-EF0148/sub-EF0148_ses-20190305T143046_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-EF0150/sub-EF0150_ses-20190223T143451_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -664,13 +671,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-EF0148/sub-EF0148_ses-20190305T143046_behavior+ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-EF0148/sub-EF0148_ses-20190306T134049_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead

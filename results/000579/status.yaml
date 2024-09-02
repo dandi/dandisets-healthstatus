@@ -1343,7 +1343,10 @@ tests:
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-16-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-9/sub-9_ses-Mouse-9-widefield-retinotopy-and-window-vessel_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1949,6 +1952,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-16-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-9/sub-9_ses-mouse-9-session-date-2017-08-11-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -2943,10 +2953,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-15-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-8/sub-8_ses-mouse-8-session-date-2017-09-16-area-RSC-L5-multi-plane-imaging_behavior+ophys.nwb
     status: timeout
     test: matnwb_nwbRead
     versions: null

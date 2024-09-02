@@ -6,7 +6,11 @@ last_run_ended: null
 nassets: 18
 tests:
 - assets_nok: []
-  assets_ok: []
+  assets_ok:
+  - path: sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish5)/sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish5)_ses-1p-x-10cycles-Control-600ns-200ms-6-4kV_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   assets_timeout:
   - path: sub-1p-x4-10cycles-CC-600ns-200ms-6-4kV-(dish15)/sub-1p-x4-10cycles-CC-600ns-200ms-6-4kV-(dish15)_ses-1p-x-10cycles-CanCan-600ns-200ms-6-4kV_image.nwb
     status: timeout
@@ -29,10 +33,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish3)/sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish3)_ses-1p-x-10cycles-Control-600ns-200ms-6-4kV_image.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish5)/sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish5)_ses-1p-x-10cycles-Control-600ns-200ms-6-4kV_image.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

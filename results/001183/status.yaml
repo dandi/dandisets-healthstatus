@@ -7,6 +7,10 @@ nassets: 38
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-2020-02-15-0000/sub-2020-02-15-0000_ses-20200215T161436_slice-2020-02-15-0000-abf_cell-2020-02-15-0000-abf_icephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-2020-02-15-0040/sub-2020-02-15-0040_ses-20200215T213715_slice-2020-02-15-0040-abf_cell-2020-02-15-0040-abf_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -22,6 +26,10 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-2020-02-15-0000/sub-2020-02-15-0000_ses-20200215T161436_slice-2020-02-15-0000-abf_cell-2020-02-15-0000-abf_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
   - path: sub-2020-02-15-0040/sub-2020-02-15-0040_ses-20200215T213715_slice-2020-02-15-0040-abf_cell-2020-02-15-0040-abf_icephys.nwb
     status: fail
     test: matnwb_nwbRead

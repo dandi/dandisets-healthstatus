@@ -15,6 +15,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-P1/sub-P1_ses-2018-10-22_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   assets_timeout:
   - path: sub-P1/sub-P1_ses-2018-09-10_ecephys.nwb
     status: timeout
@@ -41,10 +45,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-P1/sub-P1_ses-2018-10-17_ecephys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-P1/sub-P1_ses-2018-10-22_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

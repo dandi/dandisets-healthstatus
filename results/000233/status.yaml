@@ -1690,7 +1690,10 @@ tests:
   - path: sub-flex1/sub-flex1_ses-flex1_191207_175745_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ros/sub-ros_ses-ros_210319_163951_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -2064,6 +2067,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-flex1/sub-flex1_ses-flex1_191207_175745_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - path: sub-CGM1/sub-CGM1_ses-CGM1-144um-181130-121628_ecephys.nwb
     status: pass
@@ -3419,10 +3429,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-dt15/sub-dt15_ses-dt15_6705um_200213_091923_ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-flex1/sub-flex1_ses-flex1_191207_175745_ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
     versions: null

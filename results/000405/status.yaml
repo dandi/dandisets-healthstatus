@@ -1074,10 +1074,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-s3/sub-s3_ses-Al-T3g-100418.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-s3/sub-s3_ses-Al-T3g-100518.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1405,6 +1401,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-s3/sub-s3_ses-Al-T3g-100318.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-s3/sub-s3_ses-Al-T3g-100418.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions:
@@ -1929,6 +1932,13 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-s3/sub-s3_ses-Al-T3g-100318.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-s3/sub-s3_ses-Al-T3g-100418.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -2714,10 +2724,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-s3/sub-s3_ses-Al-T3g-100418.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
   - path: sub-s3/sub-s3_ses-Al-T3g-101018.nwb
     status: pass
     test: matnwb_nwbRead

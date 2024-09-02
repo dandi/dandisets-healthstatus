@@ -7,6 +7,10 @@ nassets: 14
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-000/sub-000_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-000/sub-000_ses-20230311T080000_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -44,10 +48,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   assets_timeout:
-  - path: sub-000/sub-000_ophys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-001/sub-001_ses-20230311T120000_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns

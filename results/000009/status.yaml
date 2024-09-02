@@ -804,7 +804,10 @@ tests:
   - path: sub-anm300476/sub-anm300476_ses-20170520T183518_behavior+icephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-anm300476/sub-anm300476_ses-20170520T184255_behavior+icephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1360,7 +1363,10 @@ tests:
   - path: sub-anm300476/sub-anm300476_ses-20170520T183518_behavior+icephys+ogen.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-anm322808/sub-anm322808_ses-20170520T192714_behavior+icephys+ogen.nwb
     status: fail
     test: matnwb_nwbRead
