@@ -1462,10 +1462,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day2-Pavlovian.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day3-Pavlovian.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -2041,6 +2037,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day1-RandomRewards.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day2-Pavlovian.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions:
@@ -3668,7 +3671,10 @@ tests:
   - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day2-Pavlovian.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-HJ-FP-WT-stGtACR-F3/sub-HJ-FP-WT-stGtACR-F3_ses-Day3-Pavlovian.nwb
     status: fail
     test: matnwb_nwbRead

@@ -112,13 +112,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-Rat11/sub-Rat11_ses-Rat11-20150403_ecephys+image.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   assets_timeout:
   - path: sub-Rat08/sub-Rat08_ses-Rat08-20130708_ecephys+image.nwb
     status: timeout
@@ -282,6 +275,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Rat11/sub-Rat11_ses-Rat11-20150401_ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Rat11/sub-Rat11_ses-Rat11-20150403_ecephys+image.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions:
@@ -451,6 +451,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Rat11/sub-Rat11_ses-Rat11-20150403_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - path: sub-Rat08/sub-Rat08_ses-Rat08-20130709_ecephys+image.nwb
@@ -565,13 +572,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-Rat11/sub-Rat11_ses-Rat11-20150403_ecephys+image.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   name: matnwb_nwbRead
 untested: []
 versions:

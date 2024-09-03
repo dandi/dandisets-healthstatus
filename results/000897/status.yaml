@@ -67,6 +67,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-mahler/sub-mahler_ses-05062021_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-mahler/sub-mahler_ses-05062021_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -167,6 +171,10 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-mahler/sub-mahler_ses-05042021_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-mahler/sub-mahler_ses-05062021_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

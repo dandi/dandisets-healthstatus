@@ -116,9 +116,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-258419/sub-258419_ses-258419-20200921-probe0_ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -297,6 +297,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-258414/sub-258414_ses-258414-20200915-probe0_ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-258416/sub-258416_ses-258416-20200921-probe0_ecephys+ogen.nwb
     status: fail
     test: matnwb_nwbRead
@@ -354,14 +361,7 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   assets_ok: []
-  assets_timeout:
-  - path: sub-258414/sub-258414_ses-258414-20200915-probe0_ecephys+ogen.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
+  assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:

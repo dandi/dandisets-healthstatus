@@ -457,7 +457,10 @@ tests:
   - path: sub-HI209/sub-HI209_ses-HI209-080919_ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-HI209/sub-HI209_ses-HI209-081019_ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1444,6 +1447,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-HI209/sub-HI209_ses-HI209-080919_ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-HI211/sub-HI211_ses-HI211-072419_ecephys+ogen.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1967,10 +1977,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-HI209/sub-HI209_ses-HI209-080819_ecephys+ogen.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-HI209/sub-HI209_ses-HI209-080919_ecephys+ogen.nwb
     status: timeout
     test: matnwb_nwbRead
     versions: null

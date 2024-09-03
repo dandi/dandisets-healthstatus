@@ -1453,10 +1453,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-Odo/sub-Odo_ses-Odo06_HomeCage_behavior+ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-Odo/sub-Odo_ses-Odo07-HomeCage_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -2590,6 +2586,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-OBrien/sub-OBrien_ses-OBrien05-HomeCage_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Odo/sub-Odo_ses-Odo06_HomeCage_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions:
@@ -3886,6 +3889,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-Odo/sub-Odo_ses-Odo06_HomeCage_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Odo/sub-Odo_ses-Odo07-HomeCage_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -4902,10 +4912,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-OBrien/sub-OBrien_ses-OBrien07-HomeCage_behavior+ecephys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-Odo/sub-Odo_ses-Odo06_HomeCage_behavior+ecephys.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

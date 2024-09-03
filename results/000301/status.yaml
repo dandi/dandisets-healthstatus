@@ -11,6 +11,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-M52/sub-M52_ses-20211102T155806_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   assets_timeout:
   - path: sub-M26/sub-M26_ses-20200319T153237_behavior+ecephys.nwb
     status: timeout
@@ -57,10 +61,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-M50/sub-M50_ses-20211026T152836_behavior+ecephys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-M52/sub-M52_ses-20211102T155806_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

@@ -51,6 +51,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-3/sub-3_ecephys+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-4/sub-4_ecephys+image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -111,6 +115,10 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-22/sub-22_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-3/sub-3_ecephys+image.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

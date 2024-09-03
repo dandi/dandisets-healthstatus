@@ -7,6 +7,13 @@ nassets: 54
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-011C-x5/sub-011C-x5_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-011CC-x1/sub-011CC-x1_obj-1drpw33_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -178,6 +185,13 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-011C-x5/sub-011C-x5_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-011CC-x1/sub-011CC-x1_obj-1drpw33_image.nwb
     status: fail
     test: matnwb_nwbRead

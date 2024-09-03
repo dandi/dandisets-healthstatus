@@ -19,16 +19,16 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-interlum-ctrl-4/sub-interlum-ctrl-4_ses-20190731T120000_ecephys+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-interlum-ctrl-5/sub-interlum-ctrl-5_ses-20190907T120000_ecephys+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
     versions: null
   assets_timeout:
   - path: sub-interlum-ctrl-2/sub-interlum-ctrl-2_ses-20190709T120000_ecephys+ophys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-interlum-ctrl-4/sub-interlum-ctrl-4_ses-20190731T120000_ecephys+ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

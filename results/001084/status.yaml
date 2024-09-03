@@ -7,6 +7,10 @@ nassets: 180
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-842/sub-842_ses-221118_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-DL15/sub-DL15_ses-210824_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -70,6 +74,10 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-842/sub-842_ses-221118_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
   - path: sub-DL15/sub-DL15_ses-210824_ophys.nwb
     status: fail
     test: matnwb_nwbRead

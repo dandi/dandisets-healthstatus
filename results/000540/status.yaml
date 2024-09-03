@@ -128,7 +128,10 @@ tests:
   - path: sub-SLR089/sub-SLR089_ses-20180725_obj-1n5jf88_behavior+image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SLR089/sub-SLR089_ses-20180725_obj-1rdxalu_behavior+image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -2383,6 +2386,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-SLR089/sub-SLR089_ses-20180725_obj-1n5jf88_behavior+image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SLR089/sub-SLR089_ses-20180725_obj-r8sgmu_behavior+image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -3137,10 +3147,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-SLR089/sub-SLR089_ses-20180725_obj-1n5jf88_behavior+image.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
   - path: sub-SLR089/sub-SLR089_ses-20180725_obj-1rdxalu_behavior+image.nwb
     status: pass
     test: matnwb_nwbRead

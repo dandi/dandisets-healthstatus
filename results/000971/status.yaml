@@ -148,6 +148,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-429-419/sub-429-419_ses-Opto-DMS-Excitatory-ChR2-2020-10-30T12-45-26_behavior+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-430-420/sub-430-420_ses-Opto-DMS-Inhibitory-NpHR-2020-11-03T10-59-21_behavior+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -314,6 +321,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-414-405/sub-414-405_ses-Opto-DLS-Excitatory-ChR2-2020-09-11T12-32-35_ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-429-419/sub-429-419_ses-Opto-DMS-Excitatory-ChR2-2020-10-30T12-45-26_behavior+ogen.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

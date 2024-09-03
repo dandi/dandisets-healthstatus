@@ -109,9 +109,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.1
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-GP31/sub-GP31_ses-GP31-B2.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -318,6 +318,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-GP31/sub-GP31_ses-GP31-B1.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-GP31/sub-GP31_ses-GP31-B2.nwb
     status: fail
     test: matnwb_nwbRead
@@ -424,13 +431,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok:
-  - path: sub-GP31/sub-GP31_ses-GP31-B1.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-GP33/sub-GP33_ses-GP33-B5.nwb
     status: pass
     test: matnwb_nwbRead
