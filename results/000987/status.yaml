@@ -5,7 +5,11 @@ last_run_duration: null
 last_run_ended: null
 nassets: 14
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-A7803/sub-A7803_ses-20240509T224110_behavior+ecephys.nwb
+    status: fail
+    test: pynwb_open_load_ns
+    versions: null
   assets_ok:
   - path: sub-A7801/sub-A7801_ses-20240509T185057_behavior+ecephys.nwb
     status: pass
@@ -56,10 +60,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-A7803/sub-A7803_ses-20240509T222731_behavior+ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-A7803/sub-A7803_ses-20240509T224110_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
     versions: null

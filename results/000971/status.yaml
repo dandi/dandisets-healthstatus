@@ -191,6 +191,13 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-75-214/sub-75-214_ses-FP-PS-2018-11-01T13-48-44_behavior.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -366,6 +373,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-75-214/sub-75-214_ses-FP-PS-2018-11-01T13-48-44_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - path: sub-300-405/sub-300-405_ses-Opto-DLS-Excitatory-ChR2Scrambled-2020-09-04T12-31-59_ogen.nwb

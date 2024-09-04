@@ -67,6 +67,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-Opto9/sub-Opto9_ses-231004a_image+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-Opto9/sub-Opto9_ses-231004b_image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -131,6 +135,10 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-Opto9/sub-Opto9_ses-231003c_image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-Opto9/sub-Opto9_ses-231004a_image+ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

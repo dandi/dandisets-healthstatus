@@ -15,6 +15,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-122/sub-122_ses-session-hheise-M122-2022-08-27-01_behavior+image+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-63/sub-63_ses-session-hheise-M063-2021-03-04-01_behavior+image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -35,6 +39,10 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-115/sub-115_ses-session-hheise-M115-2022-08-08-01_behavior+image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-122/sub-122_ses-session-hheise-M122-2022-08-27-01_behavior+image+ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

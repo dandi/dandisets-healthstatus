@@ -11,6 +11,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-BPAE-8bipolar-1Hz-05/sub-BPAE-8bipolar-1Hz-05_ses-Cross-directional-1Hz_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-BPAE-8bipolar-1Hz-12/sub-BPAE-8bipolar-1Hz-12_ses-Cross-directional-1Hz_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -71,6 +75,10 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-BPAE-8bipolar-1Hz-03/sub-BPAE-8bipolar-1Hz-03_ses-Cross-directional-1Hz_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-BPAE-8bipolar-1Hz-05/sub-BPAE-8bipolar-1Hz-05_ses-Cross-directional-1Hz_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

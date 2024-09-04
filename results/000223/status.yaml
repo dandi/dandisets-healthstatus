@@ -23,6 +23,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-2610/sub-2610_ses-20201005T153308_ecephys+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-2615/sub-2615_ses-20201007T162625_ecephys+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -81,10 +85,6 @@ tests:
     versions: null
   assets_timeout:
   - path: sub-2282/sub-2282_ses-20190914T170145_ecephys+ophys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-2610/sub-2610_ses-20201005T153308_ecephys+ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

@@ -11,6 +11,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-Jenkins/sub-Jenkins_ses-20090923_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-Nitschke/sub-Nitschke_ses-20090812_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -29,10 +33,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-Jenkins/sub-Jenkins_ses-20090918_behavior+ecephys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-Jenkins/sub-Jenkins_ses-20090923_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

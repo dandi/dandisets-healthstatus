@@ -95,6 +95,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-M2-2/sub-M2-2_ses-20240522.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-M2-3/sub-M2-3_ses-20240522.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -264,6 +271,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-M1/sub-M1_ses-20240522.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-M2-2/sub-M2-2_ses-20240522.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

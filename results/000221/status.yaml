@@ -1259,7 +1259,10 @@ tests:
   - path: sub-SC009/sub-SC009_ses-SC009-112518_ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SC009/sub-SC009_ses-SC009-112618_ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1577,6 +1580,13 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-SC009/sub-SC009_ses-SC009-112418_ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-SC009/sub-SC009_ses-SC009-112518_ecephys+ogen.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -2660,10 +2670,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-SC009/sub-SC009_ses-SC009-112318_ecephys+ogen.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-SC009/sub-SC009_ses-SC009-112518_ecephys+ogen.nwb
     status: timeout
     test: matnwb_nwbRead
     versions: null

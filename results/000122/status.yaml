@@ -15,12 +15,12 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout:
-  - path: sub-P1/sub-P1_ses-20200101T021616.nwb
-    status: timeout
+  - path: sub-P4/sub-P4_ses-20200104T031322.nwb
+    status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-P4/sub-P4_ses-20200104T031322.nwb
+  assets_timeout:
+  - path: sub-P1/sub-P1_ses-20200101T021616.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

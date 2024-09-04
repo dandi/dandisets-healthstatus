@@ -158,6 +158,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-PDB-control-fly16/sub-PDB-control-fly16_ses-PDB-control-fly16-210528-1413_behavior+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-PDB-control-fly17/sub-PDB-control-fly17_ses-PDB-control-fly17-210602-1355_behavior+image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -337,6 +344,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-LPLC1-fly15/sub-LPLC1-fly15_ses-(-LPLC1-fly15-211117-1622--).nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-PDB-control-fly16/sub-PDB-control-fly16_ses-PDB-control-fly16-210528-1413_behavior+image.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

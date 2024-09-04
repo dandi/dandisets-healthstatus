@@ -7,13 +7,6 @@ nassets: 39
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-Cori/sub-Cori_ses-20161214T120000.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-Cori/sub-Cori_ses-20161217T120000.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -265,6 +258,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_timeout:
+  - path: sub-Cori/sub-Cori_ses-20161214T120000.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Tatum/sub-Tatum_ses-20171209T120000.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -278,9 +278,9 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.14.1
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-Cori/sub-Cori_ses-20161218T120000.nwb
     status: fail
     test: matnwb_nwbRead

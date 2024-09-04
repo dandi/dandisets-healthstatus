@@ -137,6 +137,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-nm200330-A2/sub-nm200330-A2_ses-nm200330-A2-KX_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-nm200330-A2/sub-nm200330-A2_ses-nm200330-A2-awake_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -358,6 +365,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-nm200113-A1/sub-nm200113-A1_ses-nm200113-A1-KX_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-nm200330-A2/sub-nm200330-A2_ses-nm200330-A2-KX_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

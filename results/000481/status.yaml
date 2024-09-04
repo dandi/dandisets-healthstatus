@@ -11,11 +11,11 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout:
   - path: sub-525/sub-525_ses-20230412T102003.nwb
-    status: timeout
+    status: pass
     test: pynwb_open_load_ns
     versions: null
+  assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-525/sub-525_ecephys.nwb

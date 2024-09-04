@@ -11,6 +11,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-M45/sub-M45_ses-20201209T141009_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-M52/sub-M52_ses-20211102T155806_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -53,10 +57,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-M44/sub-M44_ses-20201207T155850_behavior+ecephys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-M45/sub-M45_ses-20201209T141009_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

@@ -203,7 +203,10 @@ tests:
   - path: sub-CS62/sub-CS62_ses-P62CSR2_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -386,6 +389,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-CS62/sub-CS62_ses-P62CSR2_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout:
   - path: sub-CS41/sub-CS41_ses-P41CSR2_behavior+ecephys.nwb
@@ -402,10 +412,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-CS62/sub-CS62_ses-P62CSR2_behavior+ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
   name: matnwb_nwbRead
 untested: []
 versions:

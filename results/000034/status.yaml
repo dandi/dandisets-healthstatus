@@ -15,10 +15,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-c1/sub-c1_ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-mouse412804/sub-mouse412804_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -31,7 +27,11 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-c1/sub-c1_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb

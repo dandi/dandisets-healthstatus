@@ -4067,7 +4067,10 @@ tests:
   - path: sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-11yt6ns_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-12coff8_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -5091,6 +5094,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-ihpuxz_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-11yt6ns_ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -8424,10 +8434,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-phpV9-13/sub-phpV9-13_ses-20230822_obj-qww47_ophys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-phpV9-3/sub-phpV9-3_ses-20230424_obj-11yt6ns_ophys.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

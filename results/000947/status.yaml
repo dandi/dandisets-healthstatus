@@ -5,7 +5,14 @@ last_run_duration: null
 last_run_ended: null
 nassets: 378
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-Gaia/sub-Gaia_ses-post-MPTP-G-161223-2_ecephys.nwb
+    status: fail
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - path: sub-Gaia/sub-Gaia_ses-post-MPTP-G-150324-2_ecephys.nwb
     status: pass
@@ -211,6 +218,13 @@ tests:
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Gaia/sub-Gaia_ses-post-MPTP-G-150324-2_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Gaia/sub-Gaia_ses-post-MPTP-G-161223-2_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

@@ -126,10 +126,6 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-Aphid/sub-Aphid_ses-Aphid04-HomeCage_behavior+ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-Aphid/sub-Aphid_ses-Aphid05_HomeCage_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -2487,6 +2483,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Aphid/sub-Aphid_ses-Aphid04-HomeCage_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Basil/sub-Basil_ses-Basil01-LinearTrack_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -2771,7 +2774,10 @@ tests:
   - path: sub-Aphid/sub-Aphid_ses-Aphid04-HomeCage_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Aphid/sub-Aphid_ses-Aphid05_HomeCage_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead

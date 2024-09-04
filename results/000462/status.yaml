@@ -27,10 +27,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-CFC19/sub-CFC19_ophys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-NR14/sub-NR14_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -49,6 +45,10 @@ tests:
     versions: null
   assets_timeout:
   - path: sub-014/sub-014_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
+  - path: sub-CFC19/sub-CFC19_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null
