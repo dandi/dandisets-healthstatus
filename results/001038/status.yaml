@@ -200,6 +200,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-VGlut-2293/sub-VGlut-2293_ses-20220401-0003.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-VGlut-2443/sub-VGlut-2443_ses-20220818-0002.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -397,6 +404,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-VGlut-2147/sub-VGlut-2147_ses-20220208-0004.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-VGlut-2293/sub-VGlut-2293_ses-20220401-0003.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

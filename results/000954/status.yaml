@@ -7,6 +7,10 @@ nassets: 40
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-HumanPitt-held-in-calib/sub-HumanPitt-held-in-calib_ses-19250101T112404.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-HumanPitt-held-in-calib/sub-HumanPitt-held-in-calib_ses-19250108T111022.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -110,6 +114,10 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-HumanPitt-held-in-calib/sub-HumanPitt-held-in-calib_ses-19250101T112404.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
   - path: sub-HumanPitt-held-in-calib/sub-HumanPitt-held-in-calib_ses-19250108T111022.nwb
     status: fail
     test: matnwb_nwbRead

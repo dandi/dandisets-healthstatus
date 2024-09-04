@@ -138,6 +138,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-NYU-11/sub-NYU-11_ses-6713a4a7-faed-4df2-acab-ee4e63326f8d_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-PL017/sub-PL017_ses-cea755db-4eee-4138-bdd6-fc23a572f5a1_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -316,6 +323,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-NR-0021/sub-NR-0021_ses-27ef44c0-acb2-4220-b776-477d0d5abd35_behavior+ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-NYU-11/sub-NYU-11_ses-6713a4a7-faed-4df2-acab-ee4e63326f8d_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

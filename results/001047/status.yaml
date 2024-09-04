@@ -70,6 +70,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-011Control-x5/sub-011Control-x5_obj-kydq4g_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-013CC-x1/sub-013CC-x1_obj-1ldbf6s_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -249,6 +256,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-011Control-x1/sub-011Control-x1_obj-x9urjb_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-011Control-x5/sub-011Control-x5_obj-kydq4g_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

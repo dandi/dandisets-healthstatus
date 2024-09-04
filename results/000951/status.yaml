@@ -214,9 +214,23 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-210820/sub-210820_ses-20210820T000000_image+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-210820/sub-210820_ses-20210820T000000_image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-LC10ad-fly13/sub-LC10ad-fly13_ses-LC10ad-fly13-210927-1530_behavior+image.nwb
     status: fail
     test: matnwb_nwbRead

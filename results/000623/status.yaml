@@ -5,11 +5,7 @@ last_run_duration: 70561.527543
 last_run_ended: '2024-02-26T01:09:37.303676-05:00'
 nassets: 29
 tests:
-- assets_nok:
-  - path: sub-CS54/sub-CS54_ses-P54CSR2_behavior+ecephys.nwb
-    status: fail
-    test: pynwb_open_load_ns
-    versions: null
+- assets_nok: []
   assets_ok:
   - path: sub-CS41/sub-CS41_ses-P41CSR1_behavior+ecephys.nwb
     status: pass
@@ -131,6 +127,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-CS54/sub-CS54_ses-P54CSR1_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-CS54/sub-CS54_ses-P54CSR2_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
     versions:
@@ -332,7 +335,10 @@ tests:
   - path: sub-CS54/sub-CS54_ses-P54CSR2_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-CS55/sub-CS55_ses-P55CSR1_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead

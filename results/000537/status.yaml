@@ -271,9 +271,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-130515JEDI-cell4-hp/sub-130515JEDI-cell4-hp_ses-20220617T130515_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -860,6 +860,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-130028JEDI-cell2-hp-roifix/sub-130028JEDI-cell2-hp-roifix_ses-20220617T130028_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-171945cell4q6a-900-700filter/sub-171945cell4q6a-900-700filter_ses-20220602T171945_image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1176,13 +1183,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.7.0
   - path: sub-125456JEDI-cell1-hp/sub-125456JEDI-cell1-hp_ses-20220617T125456_image.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-130028JEDI-cell2-hp-roifix/sub-130028JEDI-cell2-hp-roifix_ses-20220617T130028_image.nwb
     status: pass
     test: matnwb_nwbRead
     versions:

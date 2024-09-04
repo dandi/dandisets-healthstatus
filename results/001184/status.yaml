@@ -31,6 +31,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-90/sub-90_ses-session-hheise-M090-2021-07-09-01_behavior+image+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -55,6 +59,10 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-89/sub-89_ses-session-hheise-M089-2021-08-11-01_behavior+image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-90/sub-90_ses-session-hheise-M090-2021-07-09-01_behavior+image+ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

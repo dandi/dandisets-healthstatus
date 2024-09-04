@@ -6,11 +6,7 @@ last_run_ended: null
 nassets: 9
 tests:
 - assets_nok: []
-  assets_ok:
-  - path: sub-6/sub-6_ophys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
+  assets_ok: []
   assets_timeout:
   - path: sub-1/sub-1_ophys.nwb
     status: timeout
@@ -29,6 +25,10 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-5/sub-5_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
+  - path: sub-6/sub-6_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

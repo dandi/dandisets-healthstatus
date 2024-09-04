@@ -7,15 +7,15 @@ nassets: 4
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-SST-tdTomato-1/sub-SST-tdTomato-1_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-wt-vpm-556-857-7/sub-wt-vpm-556-857-7_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
     versions: null
   assets_timeout:
-  - path: sub-SST-tdTomato-1/sub-SST-tdTomato-1_ophys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-SST-tdTomato-1a/sub-SST-tdTomato-1a_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns

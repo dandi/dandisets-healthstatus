@@ -23,6 +23,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-569069/sub-569069_ses-20210312_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-569073/sub-569073_ses-20210415_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -69,10 +73,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-569068/sub-569068_ses-20210304_behavior+ecephys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-569069/sub-569069_ses-20210312_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

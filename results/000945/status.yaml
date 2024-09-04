@@ -196,6 +196,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-BH527/sub-BH527_ses-20240304T222814_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BH527/sub-BH527_ses-20240305T165812_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -368,6 +375,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BH527/sub-BH527_ses-20231201T162833_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-BH527/sub-BH527_ses-20240304T222814_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

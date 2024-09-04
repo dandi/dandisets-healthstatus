@@ -7,6 +7,10 @@ nassets: 11
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-BH549/sub-BH549_ses-20240331T132633_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-BH549/sub-BH549_ses-20240331T132711_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -46,6 +50,10 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-BH549/sub-BH549_ses-20240331T132633_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
   - path: sub-BH549/sub-BH549_ses-20240331T132711_ecephys.nwb
     status: fail
     test: matnwb_nwbRead

@@ -15,10 +15,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-Fish18-GCaMP-vlgut-MBv-7dpf-RandomWave/sub-Fish18-GCaMP-vlgut-MBv-7dpf-RandomWave_ses-20210901T181919_behavior+ophys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-Fish24-GCaMP-vlgut-MBv-7dpf-RandomWave/sub-Fish24-GCaMP-vlgut-MBv-7dpf-RandomWave_ses-20210908T162505_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -41,6 +37,10 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-Fish14-GCaMP-vlgut-MBd-5dpf-RandomWave/sub-Fish14-GCaMP-vlgut-MBd-5dpf-RandomWave_ses-20210830T162840_behavior+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
+  - path: sub-Fish18-GCaMP-vlgut-MBv-7dpf-RandomWave/sub-Fish18-GCaMP-vlgut-MBv-7dpf-RandomWave_ses-20210901T181919_behavior+ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

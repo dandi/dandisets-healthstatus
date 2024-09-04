@@ -331,13 +331,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-DT9/sub-DT9_ses-20170430-0um-0um-merge_behavior+ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-DT9/sub-DT9_ses-20170502-288um-0um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -442,6 +435,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-DT7/sub-DT7_ses-20170401-864um-936um-merge_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-DT9/sub-DT9_ses-20170430-0um-0um-merge_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions:
@@ -632,6 +632,13 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-DT9/sub-DT9_ses-20170430-0um-0um-merge_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-DT9/sub-DT9_ses-20170501-216um-0um-170501-112210_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -861,13 +868,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-DT9/sub-DT9_ses-20170429-0um-0um-merge_behavior+ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-DT9/sub-DT9_ses-20170430-0um-0um-merge_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
     versions:

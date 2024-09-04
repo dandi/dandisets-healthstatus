@@ -47,6 +47,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-008-R/sub-008-R_ses-08-05-2022-cell22-R_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   assets_timeout:
   - path: sub-003-R/sub-003-R_ses-08-05-2022-cell19-R_image.nwb
     status: timeout
@@ -65,10 +69,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-007-R/sub-007-R_ses-08-05-2022-cell16-R_image.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-008-R/sub-008-R_ses-08-05-2022-cell22-R_image.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

@@ -382,9 +382,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-mouse4-fni19/sub-mouse4-fni19_ses-170625231642.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -969,6 +969,13 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-mouse4-fni19/sub-mouse4-fni19_ses-170625163621.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse4-fni19/sub-mouse4-fni19_ses-170626102537.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1615,13 +1622,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-mouse4-fni19/sub-mouse4-fni19_ses-170625163621.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-mouse4-fni19/sub-mouse4-fni19_ses-170625231642.nwb
     status: timeout
     test: matnwb_nwbRead

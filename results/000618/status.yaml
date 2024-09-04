@@ -318,9 +318,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.3
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-hybrid-janelia/sub-hybrid-janelia_ses-hybrid-static-siprobe-rec-64c-600s-12_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -906,6 +906,13 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-hybrid-janelia/sub-hybrid-janelia_ses-hybrid-static-siprobe-rec-64c-600s-11_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-hybrid-janelia/sub-hybrid-janelia_ses-hybrid-static-siprobe-rec-64c-600s-12_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1247,13 +1254,6 @@ tests:
     status: pass
     test: matnwb_nwbRead
     versions: null
-  - path: sub-hybrid-janelia/sub-hybrid-janelia_ses-hybrid-static-siprobe-rec-64c-600s-11_ecephys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-hybrid-janelia/sub-hybrid-janelia_ses-hybrid-static-tetrode-rec-4c-1200s-11_ecephys.nwb
     status: pass
     test: matnwb_nwbRead

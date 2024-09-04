@@ -19,6 +19,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-134/sub-134_ses-20220322T033600_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   assets_timeout:
   - path: sub-132/sub-132_ses-20211215T003200_ophys.nwb
     status: timeout
@@ -29,10 +33,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-132/sub-132_ses-20211215T222300_ophys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-134/sub-134_ses-20220322T033600_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

@@ -43,6 +43,10 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-009/sub-009_ses-20230311T120000_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   assets_timeout:
   - path: sub-001/sub-001_ses-20230311T120000_ophys.nwb
     status: timeout
@@ -57,10 +61,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-004/sub-004_ses-20230306T110000_ophys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-009/sub-009_ses-20230311T120000_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null

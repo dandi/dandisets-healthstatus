@@ -5,7 +5,11 @@ last_run_duration: 69852.204657
 last_run_ended: '2024-01-10T12:44:32.321938-05:00'
 nassets: 22
 tests:
-- assets_nok: []
+- assets_nok:
+  - path: sub-BWRat19/sub-BWRat19_ses-BWRat19-032413_ecephys.nwb
+    status: fail
+    test: pynwb_open_load_ns
+    versions: null
   assets_ok:
   - path: sub-BWRat17/sub-BWRat17_ses-BWRat17-121712_ecephys.nwb
     status: pass
@@ -16,10 +20,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-BWRat18/sub-BWRat18_ses-BWRat18-020513_ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-BWRat19/sub-BWRat19_ses-BWRat19-032413_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
     versions: null
