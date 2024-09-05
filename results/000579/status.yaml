@@ -197,7 +197,10 @@ tests:
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-30-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-31-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1638,7 +1641,10 @@ tests:
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-30-area-V1-L5-multi-plane-imaging_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-10-31-area-PM-L23-multi-plane-imaging_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead

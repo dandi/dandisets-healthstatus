@@ -15,6 +15,13 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-122/sub-122_ses-session-hheise-M122-2022-08-24-01_behavior+image+ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-122/sub-122_ses-session-hheise-M122-2022-08-27-01_behavior+image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -46,6 +53,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-122/sub-122_ses-session-hheise-M122-2022-08-24-01_behavior+image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-122/sub-122_ses-session-hheise-M122-2022-08-27-01_behavior+image+ophys.nwb
     status: fail
     test: matnwb_nwbRead

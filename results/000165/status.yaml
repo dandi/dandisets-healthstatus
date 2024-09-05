@@ -1901,10 +1901,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-Saffron/sub-Saffron_ses-Saffron04-HomeCage_behavior+ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-Saffron/sub-Saffron_ses-Saffron04-LinearTrack_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -2645,6 +2641,13 @@ tests:
     test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Saffron/sub-Saffron_ses-Saffron04-HomeCage_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Sage/sub-Sage_ses-Sage03-HomeCage_behavior+ecephys.nwb
@@ -4319,7 +4322,10 @@ tests:
   - path: sub-Saffron/sub-Saffron_ses-Saffron04-HomeCage_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Saffron/sub-Saffron_ses-Saffron05-HomeCage_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead

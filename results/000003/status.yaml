@@ -613,9 +613,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.1
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161011_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -992,6 +992,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161010_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161011_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1267,13 +1274,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161010_behavior+ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.1
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
   - path: sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161014_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead

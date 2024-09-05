@@ -18,7 +18,10 @@ tests:
   - path: sub-Cell07/sub-Cell07_ses-session-07_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Cell11/sub-Cell11_ses-session-11_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -49,7 +52,10 @@ tests:
   - path: sub-Cell07/sub-Cell07_ses-session-07_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Cell11/sub-Cell11_ses-session-11_image.nwb
     status: fail
     test: matnwb_nwbRead

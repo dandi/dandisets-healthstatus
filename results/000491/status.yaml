@@ -30,7 +30,10 @@ tests:
   - path: sub-BPN-M4/sub-BPN-M4_ses-20210524-m1_obj-uvnt3v_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BPN-M6/sub-BPN-M6_ses-20210526-m1_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -89,7 +92,10 @@ tests:
   - path: sub-BPN-M4/sub-BPN-M4_ses-20210524-m1_obj-uvnt3v_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BPN-M6/sub-BPN-M6_ses-20210526-m1_ophys.nwb
     status: fail
     test: matnwb_nwbRead

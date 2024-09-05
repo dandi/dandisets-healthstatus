@@ -47,7 +47,10 @@ tests:
   - path: sub-2022-04-26-w01-NP1/sub-2022-04-26-w01-NP1_ses-20220426_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-2021-12-03-w00-NP1/sub-2021-12-03-w00-NP1_ses-20211203_ophys.nwb
@@ -89,7 +92,10 @@ tests:
   - path: sub-2022-04-26-w01-NP1/sub-2022-04-26-w01-NP1_ses-20220426_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

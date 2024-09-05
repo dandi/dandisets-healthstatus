@@ -23,10 +23,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-Fish34-GCaMP-vlgut-HBv-6dpf-RandomWave/sub-Fish34-GCaMP-vlgut-HBv-6dpf-RandomWave_ses-20210921T162252_behavior+ophys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-Fish37-GCaMP-vlgut-HBd-5dpf-RandomWave/sub-Fish37-GCaMP-vlgut-HBd-5dpf-RandomWave_ses-20210927T113222_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -40,6 +36,13 @@ tests:
     status: timeout
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-Fish34-GCaMP-vlgut-HBv-6dpf-RandomWave/sub-Fish34-GCaMP-vlgut-HBv-6dpf-RandomWave_ses-20210921T162252_behavior+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Fish05-GCaMP-vlgut-HBd-7dpf-RandomWave/sub-Fish05-GCaMP-vlgut-HBd-7dpf-RandomWave_ses-20210820T112219_behavior+ophys.nwb
@@ -65,7 +68,10 @@ tests:
   - path: sub-Fish34-GCaMP-vlgut-HBv-6dpf-RandomWave/sub-Fish34-GCaMP-vlgut-HBv-6dpf-RandomWave_ses-20210921T162252_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Fish37-GCaMP-vlgut-HBd-5dpf-RandomWave/sub-Fish37-GCaMP-vlgut-HBd-5dpf-RandomWave_ses-20210927T113222_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead

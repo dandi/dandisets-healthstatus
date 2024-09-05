@@ -27,7 +27,10 @@ tests:
   - path: sub-monk-g/sub-monk-g_ses-session4.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-monk-g/sub-monk-g_ses-session5.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -81,7 +84,10 @@ tests:
   - path: sub-monk-g/sub-monk-g_ses-session4.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-monk-g/sub-monk-g_ses-session5.nwb
     status: fail
     test: matnwb_nwbRead

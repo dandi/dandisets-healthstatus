@@ -10,7 +10,10 @@ tests:
   - path: sub-173732Voltron2JF525cell2-488/sub-173732Voltron2JF525cell2-488_ses-20230302T173732_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-180242Voltron2JF525cell3/sub-180242Voltron2JF525cell3_ses-20230302T180242_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -57,7 +60,10 @@ tests:
   - path: sub-173732Voltron2JF525cell2-488/sub-173732Voltron2JF525cell2-488_ses-20230302T173732_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-180242Voltron2JF525cell3/sub-180242Voltron2JF525cell3_ses-20230302T180242_image.nwb
     status: fail
     test: matnwb_nwbRead

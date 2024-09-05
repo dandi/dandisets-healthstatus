@@ -71,16 +71,19 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-Fig3-Uni5-07/sub-Fig3-Uni5-07_ses-BPAE-unipolar-5pulses_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout:
   - path: sub-Fig3-Bi5-12/sub-Fig3-Bi5-12_ses-BPAE-bipolar-5pulses_image.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null
   - path: sub-Fig3-Uni15-05/sub-Fig3-Uni15-05_ses-BPAE-unipolar-15pulses_image.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-Fig3-Uni5-07/sub-Fig3-Uni5-07_ses-BPAE-unipolar-5pulses_image.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null
@@ -161,7 +164,10 @@ tests:
   - path: sub-Fig3-Uni5-07/sub-Fig3-Uni5-07_ses-BPAE-unipolar-5pulses_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

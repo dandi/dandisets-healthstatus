@@ -22,7 +22,10 @@ tests:
   - path: sub-ground0-3/sub-ground0-3_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ground0-4/sub-ground0-4_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -65,7 +68,10 @@ tests:
   - path: sub-ground0-3/sub-ground0-3_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ground0-4/sub-ground0-4_image.nwb
     status: fail
     test: matnwb_nwbRead

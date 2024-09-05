@@ -68,6 +68,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-DY-013/sub-DY-013_ses-2f63c555-eb74-4d8d-ada5-5c3ecf3b46be-processed-only_behavior.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-DY-013/sub-DY-013_ses-2f63c555-eb74-4d8d-ada5-5c3ecf3b46be_behavior+ecephys+image.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -278,6 +285,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-DY-013/sub-DY-013_ses-2f63c555-eb74-4d8d-ada5-5c3ecf3b46be-processed-only_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-DY-014/sub-DY-014_ses-7622da34-51b6-4661-98ae-a57d40806008-processed-only_behavior.nwb

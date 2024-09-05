@@ -186,6 +186,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-7-3/sub-7-3_ses-2kHz-sine-stimulation-4V_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-7-3/sub-7-3_ses-2kHz-sine-stimulation-5-5V_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -376,6 +383,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-7-3/sub-7-3_ses-2kHz-sine-stimulation-4V_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-7-3/sub-7-3_ses-2kHz-sine-stimulation-5-5V_image.nwb

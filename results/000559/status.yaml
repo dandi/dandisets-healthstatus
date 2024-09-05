@@ -207,6 +207,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-dms-dlight-11/sub-dms-dlight-11_ses-photometry-afd0cd17-78ba-4c2a-9a36-ac677354cd44_behavior+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-snc-dls-ctrl-6/sub-snc-dls-ctrl-6_ses-reinforcement-5b2ae380-1ba2-4185-9da0-10c20d962a6d_behavior+image+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -390,6 +397,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-dms-dlight-11/sub-dms-dlight-11_ses-photometry-afd0cd17-78ba-4c2a-9a36-ac677354cd44_behavior+image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-snc-dls-ctrl-6/sub-snc-dls-ctrl-6_ses-reinforcement-5b2ae380-1ba2-4185-9da0-10c20d962a6d_behavior+image+ogen.nwb

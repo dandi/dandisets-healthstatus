@@ -202,9 +202,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-9_slice-20200403-slice-2_cell-20200403-sample-9_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1163,6 +1163,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-8_slice-20200403-slice-2_cell-20200403-sample-8_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-MITSU/sub-mouse-MITSU_ses-20200410-sample-15_slice-20200410-slice-1_cell-20200410-sample-15_icephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1593,13 +1600,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-8_slice-20200403-slice-2_cell-20200403-sample-8_icephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-mouse-KIYRP/sub-mouse-KIYRP_ses-20200403-sample-9_slice-20200403-slice-2_cell-20200403-sample-9_icephys.nwb
     status: timeout
     test: matnwb_nwbRead

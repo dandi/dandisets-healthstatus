@@ -7,21 +7,27 @@ nassets: 2
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-abcd/icephys_example.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-abcd/sub-abcd_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-abcd/icephys_example.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-abcd/icephys_example.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-abcd/sub-abcd_icephys.nwb
     status: fail
     test: matnwb_nwbRead

@@ -10,7 +10,10 @@ tests:
   - path: sub-interlum-4/sub-interlum-4_ses-20190515T120000_ecephys+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-interlum-6/sub-interlum-6_ses-20190605T120000_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -37,7 +40,10 @@ tests:
   - path: sub-interlum-4/sub-interlum-4_ses-20190515T120000_ecephys+ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-interlum-6/sub-interlum-6_ses-20190605T120000_ecephys.nwb
     status: fail
     test: matnwb_nwbRead

@@ -14,13 +14,6 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - path: sub-U/sub-U_ses-001_obj-1ivyiyb.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
   - path: sub-U/sub-U_ses-001_obj-2pivir.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -48,6 +41,13 @@ tests:
     test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-U/sub-U_ses-001_obj-1ivyiyb.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-U/sub-U_ses-001_obj-1m4ijjf.nwb
@@ -225,7 +225,7 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.14.3
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-U/sub-U_ses-001_obj-1m4ijjf.nwb

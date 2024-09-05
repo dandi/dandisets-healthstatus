@@ -23,7 +23,10 @@ tests:
   - path: sub-c6e8125f-b6c7-4349-b74d-32e8bd606f63/sub-c6e8125f-b6c7-4349-b74d-32e8bd606f63_ses-aad23144-0e52-4eac-80c5-c4ee2decb198_behavior+ecephys+image.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-70bf8cbd-d312-4654-a4ea-3a21ea2f541b/sub-70bf8cbd-d312-4654-a4ea-3a21ea2f541b_ses-4ecb5d24-f5cc-402c-be28-9d0f7cb14b3a_behavior+ecephys+image.nwb
@@ -41,7 +44,10 @@ tests:
   - path: sub-c6e8125f-b6c7-4349-b74d-32e8bd606f63/sub-c6e8125f-b6c7-4349-b74d-32e8bd606f63_ses-aad23144-0e52-4eac-80c5-c4ee2decb198_behavior+ecephys+image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

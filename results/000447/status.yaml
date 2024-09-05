@@ -7,6 +7,13 @@ nassets: 5
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-JDS-NFN-AM2/sub-JDS-NFN-AM2_behavior+ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-JDS-NFN-JS17/sub-JDS-NFN-JS17_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -16,10 +23,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   assets_timeout:
-  - path: sub-JDS-NFN-AM2/sub-JDS-NFN-AM2_behavior+ecephys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-JDS-NFN-JS34/sub-JDS-NFN-JS34_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -33,7 +36,10 @@ tests:
   - path: sub-JDS-NFN-AM2/sub-JDS-NFN-AM2_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-JDS-NFN-JS17/sub-JDS-NFN-JS17_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead

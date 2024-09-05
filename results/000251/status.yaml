@@ -1824,7 +1824,10 @@ tests:
   - path: sub-3045/sub-3045_ses-SU-VR-ALL-TP-50.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-3045/sub-3045_ses-SU-VR-ALL-TP-51.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -3301,7 +3304,10 @@ tests:
   - path: sub-3045/sub-3045_ses-SU-VR-ALL-TP-50.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-3045/sub-3045_ses-SU-VR-ALL-TP-52.nwb
     status: fail
     test: matnwb_nwbRead

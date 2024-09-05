@@ -46,7 +46,10 @@ tests:
   - path: sub-DL18/sub-DL18_ses-211110_image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-DL20/sub-DL20_ses-220111_image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -121,7 +124,10 @@ tests:
   - path: sub-DL18/sub-DL18_ses-211110_image+ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-DL20/sub-DL20_ses-220111_image+ophys.nwb
     status: fail
     test: matnwb_nwbRead

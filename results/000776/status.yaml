@@ -7,13 +7,6 @@ nassets: 38
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-2022-06-14-01-SWF702/sub-2022-06-14-01-SWF702_ses-20220614_behavior+image+ophys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
   - path: sub-2022-06-14-13-SWF702/sub-2022-06-14-13-SWF702_ses-20220614_behavior+image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -92,6 +85,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_timeout:
+  - path: sub-2022-06-14-01-SWF702/sub-2022-06-14-01-SWF702_ses-20220614_behavior+image+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-2022-06-14-07-SWF702/sub-2022-06-14-07-SWF702_ses-20220614_behavior+image+ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -203,7 +203,7 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.14.3
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-2022-06-14-07-SWF702/sub-2022-06-14-07-SWF702_ses-20220614_behavior+image+ophys.nwb
