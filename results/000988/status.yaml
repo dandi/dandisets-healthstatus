@@ -77,6 +77,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-121106session2-voltron2-JF585-cell2-vsteps-matchingcounts/sub-121106session2-voltron2-JF585-cell2-vsteps-matchingcounts_ses-20230316T121106_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-122453voltron1608-cell2-find-inversion-OD0-5/sub-122453voltron1608-cell2-find-inversion-OD0-5_ses-20230309T122453_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -166,6 +173,13 @@ tests:
     test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-160014V1-549-cell2-vsteps-OD0-54/sub-160014V1-549-cell2-vsteps-OD0-54_ses-20230404T160014_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-161728pp-cell4-try1-supergood/sub-161728pp-cell4-try1-supergood_ses-20230906T161728_image.nwb
@@ -280,6 +294,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-121106session2-voltron2-JF585-cell2-vsteps-matchingcounts/sub-121106session2-voltron2-JF585-cell2-vsteps-matchingcounts_ses-20230316T121106_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-122453voltron1608-cell2-find-inversion-OD0-5/sub-122453voltron1608-cell2-find-inversion-OD0-5_ses-20230309T122453_image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -369,6 +390,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-160014V1-549-cell2-vsteps-OD0-54/sub-160014V1-549-cell2-vsteps-OD0-54_ses-20230404T160014_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-161728pp-cell4-try1-supergood/sub-161728pp-cell4-try1-supergood_ses-20230906T161728_image.nwb

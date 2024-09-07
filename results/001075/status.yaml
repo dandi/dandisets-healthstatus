@@ -14,10 +14,7 @@ tests:
   - path: sub-211104/sub-211104_ses-20211104-163944_desc-segmentation_ophys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.4
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -28,15 +25,12 @@ tests:
   - path: sub-211104/sub-211104_ses-20211104-163944_desc-segmentation_ophys+ogen.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.4
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.3
+  hdmf: 3.14.4
   matnwb: v2.6.0.2
   pynwb: 2.8.1

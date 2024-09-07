@@ -531,7 +531,10 @@ tests:
   - path: sub-HI211/sub-HI211_ses-HI211-072919_ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-HI211/sub-HI211_ses-HI211-073019_ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1349,7 +1352,10 @@ tests:
   - path: sub-SC391203/sub-SC391203_ses-SC391203-101917_ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SC391203/sub-SC391203_ses-SC391203-102017_ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1465,6 +1471,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-HI211/sub-HI211_ses-HI211-072919_ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-HI213/sub-HI213_ses-HI213-070419_ecephys+ogen.nwb
@@ -1611,6 +1624,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-SC391203/sub-SC391203_ses-SC391203-101917_ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   assets_ok:
@@ -2070,10 +2090,6 @@ tests:
     status: timeout
     test: matnwb_nwbRead
     versions: null
-  - path: sub-HI211/sub-HI211_ses-HI211-072919_ecephys+ogen.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
   - path: sub-HI211/sub-HI211_ses-HI211-073019_ecephys+ogen.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -2755,10 +2771,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-SC028/sub-SC028_ses-SC028-100419_ecephys+ogen.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-SC391203/sub-SC391203_ses-SC391203-101917_ecephys+ogen.nwb
     status: timeout
     test: matnwb_nwbRead
     versions: null

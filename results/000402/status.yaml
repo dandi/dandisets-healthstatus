@@ -26,7 +26,10 @@ tests:
   - path: sub-17797/sub-17797_ses-5-scan-3_behavior+image+ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-17797/sub-17797_ses-5-scan-6_behavior+image+ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -54,7 +57,10 @@ tests:
   - path: sub-17797/sub-17797_ses-7-scan-3_behavior+image+ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-17797/sub-17797_ses-7-scan-4_behavior+image+ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -107,7 +113,10 @@ tests:
   - path: sub-17797/sub-17797_ses-5-scan-3_behavior+image+ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-17797/sub-17797_ses-5-scan-6_behavior+image+ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -135,7 +144,10 @@ tests:
   - path: sub-17797/sub-17797_ses-7-scan-3_behavior+image+ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-17797/sub-17797_ses-7-scan-4_behavior+image+ophys.nwb
     status: fail
     test: matnwb_nwbRead

@@ -15,10 +15,7 @@ tests:
   - path: sub-3436/sub-3436_ses-20211011T115848_ecephys+icephys.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.4
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-3148/sub-3148_ses-20211006T112406_ecephys+icephys.nwb
@@ -28,15 +25,12 @@ tests:
   - path: sub-3436/sub-3436_ses-20211011T115848_ecephys+icephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.4
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.3
+  hdmf: 3.14.4
   matnwb: v2.6.0.2
   pynwb: 2.8.1

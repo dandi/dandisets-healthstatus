@@ -22,7 +22,10 @@ tests:
   - path: sub-21-10-08-b-act/sub-21-10-08-b-act_ses-20211008-m1_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BPN-M4/sub-BPN-M4_ses-20210524-m1_obj-1c8nyxo_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -57,7 +60,10 @@ tests:
   - path: sub-BPN-OLD-M2/sub-BPN-OLD-M2_ses-20210511-m1_obj-z4hlsa_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BPN-OLD-M3/sub-BPN-OLD-M3_ses-20210513-m1_obj-1ph4cqe_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -84,7 +90,10 @@ tests:
   - path: sub-21-10-08-b-act/sub-21-10-08-b-act_ses-20211008-m1_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BPN-M4/sub-BPN-M4_ses-20210524-m1_obj-1c8nyxo_ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -119,7 +128,10 @@ tests:
   - path: sub-BPN-OLD-M2/sub-BPN-OLD-M2_ses-20210511-m1_obj-z4hlsa_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BPN-OLD-M3/sub-BPN-OLD-M3_ses-20210513-m1_obj-1ph4cqe_ophys.nwb
     status: fail
     test: matnwb_nwbRead

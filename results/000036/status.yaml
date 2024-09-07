@@ -46,9 +46,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-389014/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -172,9 +172,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-390958/sub-390958_ses-20180712T175204_behavior+image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -434,6 +434,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-389014/sub-389014_ses-20180713T154058_behavior+image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-389014/sub-389014_ses-20180718T153707_behavior+image+ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -481,6 +488,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-390958/sub-390958_ses-20180711T194424_behavior+image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-392392/sub-392392_ses-20180716T175039_behavior+image+ophys.nwb
@@ -604,13 +618,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-389014/sub-389014_ses-20180713T154058_behavior+image+ophys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-389014/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -675,13 +682,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.0
   - path: sub-390958/sub-390958_ses-20180709T200603_behavior+image+ophys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-390958/sub-390958_ses-20180711T194424_behavior+image+ophys.nwb
     status: timeout
     test: matnwb_nwbRead
     versions:

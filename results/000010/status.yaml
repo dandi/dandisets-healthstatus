@@ -169,7 +169,10 @@ tests:
   - path: sub-216219/sub-216219_ses-20130816_obj-1hn4ta1_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-216219/sub-216219_ses-20130816_obj-n71k1t_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -909,7 +912,10 @@ tests:
   - path: sub-226244/sub-226244_ses-20131112_obj-ypcznw_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-226244/sub-226244_ses-20131114_obj-1bk2zc4_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1049,7 +1055,10 @@ tests:
   - path: sub-216219/sub-216219_ses-20130816_obj-1hn4ta1_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-216219/sub-216219_ses-20130816_obj-n71k1t_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1682,6 +1691,13 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-226244/sub-226244_ses-20131112_obj-ypcznw_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok:
   - path: sub-216219/sub-216219_ses-20130816_obj-1do4dq2_behavior+ophys.nwb
     status: pass
@@ -1732,10 +1748,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-226244/sub-226244_ses-20131112_obj-rluajx_behavior+ophys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-226244/sub-226244_ses-20131112_obj-ypcznw_behavior+ophys.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

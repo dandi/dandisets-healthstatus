@@ -10,10 +10,7 @@ tests:
   - path: sub-ID-of-experimental-subject/sub-ID-of-experimental-subject_obj-15xi7bb_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.4
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-ID-of-experimental-subject/sub-ID-of-experimental-subject_obj-put4sl_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -28,10 +25,7 @@ tests:
   - path: sub-ID-of-experimental-subject/sub-ID-of-experimental-subject_obj-15xi7bb_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.4
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-ID-of-experimental-subject/sub-ID-of-experimental-subject_obj-put4sl_ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -45,6 +39,6 @@ tests:
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.3
+  hdmf: 3.14.4
   matnwb: v2.6.0.2
   pynwb: 2.8.1

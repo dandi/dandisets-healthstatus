@@ -1,0 +1,36 @@
+dandiset: '001044'
+draft_modified: '2024-09-05T01:59:54.002842Z'
+last_run: null
+last_run_duration: null
+last_run_ended: null
+nassets: 162
+tests:
+- assets_nok: []
+  assets_ok:
+  - path: sub-RatE2/sub-RatE2_ses-20190706-non_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
+  - path: sub-RatZ11/sub-RatZ11_ses-20211118-ictal2_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
+  assets_timeout: []
+  name: pynwb_open_load_ns
+- assets_nok:
+  - path: sub-RatE2/sub-RatE2_ses-20190706-non_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-RatZ11/sub-RatZ11_ses-20211118-ictal2_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  assets_ok: []
+  assets_timeout: []
+  name: matnwb_nwbRead
+untested: []
+versions:
+  hdmf: 3.14.4
+  matnwb: v2.6.0.2
+  pynwb: 2.8.1

@@ -2097,7 +2097,10 @@ tests:
   - path: sub-SLR122/sub-SLR122_ses-20220201_obj-4bnxi0_behavior+image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SLR122/sub-SLR122_ses-20220202_obj-11izc0s_behavior+image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -2129,7 +2132,10 @@ tests:
   - path: sub-SLR122/sub-SLR122_ses-20220203_obj-1a5tesq_behavior+image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SLR122/sub-SLR122_ses-20220203_obj-i96gz_behavior+image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -3025,7 +3031,10 @@ tests:
   - path: sub-SLR122/sub-SLR122_ses-20220201_obj-4bnxi0_behavior+image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SLR122/sub-SLR122_ses-20220202_obj-1sc7a4r_behavior+image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -3038,6 +3047,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-SLR122/sub-SLR122_ses-20220203_obj-1a5tesq_behavior+image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SLR123/sub-SLR123_ses-20220218_obj-1pa0sf3_behavior+image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -4518,10 +4534,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-SLR122/sub-SLR122_ses-20220202_obj-rkrdwd_behavior+image.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-SLR122/sub-SLR122_ses-20220203_obj-1a5tesq_behavior+image.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

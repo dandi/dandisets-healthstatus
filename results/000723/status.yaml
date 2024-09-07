@@ -16,6 +16,13 @@ tests:
     status: timeout
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-L731/sub-L731_ses-Dendrite1b.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-L734/sub-L734_ses-Dendrite1.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -39,7 +46,10 @@ tests:
   - path: sub-L882/sub-L882_ses-Dendrite1.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-L882/sub-L882_ses-Dendrite2a.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -121,6 +131,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-L731/sub-L731_ses-Dendrite1b.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-L734/sub-L734_ses-Dendrite1.nwb
     status: fail
     test: matnwb_nwbRead
@@ -144,7 +161,10 @@ tests:
   - path: sub-L882/sub-L882_ses-Dendrite1.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-L882/sub-L882_ses-Dendrite2a.nwb
     status: fail
     test: matnwb_nwbRead

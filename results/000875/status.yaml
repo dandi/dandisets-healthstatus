@@ -22,7 +22,10 @@ tests:
   - path: sub-1p-x4-600ns-200ms-3-2kV-YP-(dish25)/sub-1p-x4-600ns-200ms-3-2kV-YP-(dish25)_ses-1p-x4-600ns-200ms-3-2kV-YP_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-5p-x4-600ns-200ms-3-2kV-YP-(dish09)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish09)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -30,7 +33,10 @@ tests:
   - path: sub-5p-x4-600ns-200ms-3-2kV-YP-(dish20)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish20)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-5p-x4-600ns-200ms-3-2kV-YP-(dish22)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish22)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -72,7 +78,10 @@ tests:
   - path: sub-1p-x4-600ns-200ms-3-2kV-YP-(dish25)/sub-1p-x4-600ns-200ms-3-2kV-YP-(dish25)_ses-1p-x4-600ns-200ms-3-2kV-YP_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-5p-x4-600ns-200ms-3-2kV-YP-(dish09)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish09)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -80,7 +89,10 @@ tests:
   - path: sub-5p-x4-600ns-200ms-3-2kV-YP-(dish20)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish20)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-5p-x4-600ns-200ms-3-2kV-YP-(dish22)/sub-5p-x4-600ns-200ms-3-2kV-YP-(dish22)_ses-5p-x4-600ns-200ms-3-2kV-YP_image.nwb
     status: fail
     test: matnwb_nwbRead

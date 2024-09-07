@@ -38,7 +38,10 @@ tests:
   - path: sub-monk-g/sub-monk-g_ses-session6.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-monk-g/sub-monk-g_ses-session7.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -54,7 +57,10 @@ tests:
   - path: sub-monk-j/sub-monk-j_ses-session1.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-monk-j/sub-monk-j_ses-session2.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -95,7 +101,10 @@ tests:
   - path: sub-monk-g/sub-monk-g_ses-session6.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-monk-g/sub-monk-g_ses-session7.nwb
     status: fail
     test: matnwb_nwbRead
@@ -111,7 +120,10 @@ tests:
   - path: sub-monk-j/sub-monk-j_ses-session1.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-monk-j/sub-monk-j_ses-session2.nwb
     status: fail
     test: matnwb_nwbRead

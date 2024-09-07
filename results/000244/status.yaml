@@ -45,7 +45,10 @@ tests:
   - path: sub-SLC02/sub-SLC02_ses-awake_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SLC03/sub-SLC03_ses-anest_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -141,7 +144,7 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.3
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-SLC13/sub-SLC13_ses-anest_ophys.nwb
@@ -263,6 +266,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-SLC02/sub-SLC02_ses-awake_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SLC03/sub-SLC03_ses-anest_ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -351,7 +361,7 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.14.3
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-SLC13/sub-SLC13_ses-anest_ophys.nwb
@@ -426,10 +436,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-SLC02/sub-SLC02_ses-awake_ophys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
   - path: sub-SLC07/sub-SLC07_ses-anest_ophys.nwb
     status: timeout
     test: matnwb_nwbRead

@@ -10,7 +10,10 @@ tests:
   - path: sub-ZYE-0021/sub-ZYE-0021_ses-1_ecephys+image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ZYE-0021/sub-ZYE-0021_ses-4_ecephys+image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -26,7 +29,10 @@ tests:
   - path: sub-ZYE-0031/sub-ZYE-0031_ses-4_ecephys+image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ZYE-0039/sub-ZYE-0039_ecephys+image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -56,7 +62,10 @@ tests:
   - path: sub-ZYE-0021/sub-ZYE-0021_ses-1_ecephys+image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ZYE-0021/sub-ZYE-0021_ses-4_ecephys+image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -72,7 +81,10 @@ tests:
   - path: sub-ZYE-0031/sub-ZYE-0031_ses-4_ecephys+image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ZYE-0039/sub-ZYE-0039_ecephys+image.nwb
     status: fail
     test: matnwb_nwbRead

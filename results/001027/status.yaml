@@ -10,7 +10,10 @@ tests:
   - path: sub-03/sub-03_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-10/sub-10_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -26,7 +29,10 @@ tests:
   - path: sub-13/sub-13_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-14/sub-14_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -56,7 +62,10 @@ tests:
   - path: sub-03/sub-03_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-10/sub-10_image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -72,7 +81,10 @@ tests:
   - path: sub-13/sub-13_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-14/sub-14_image.nwb
     status: fail
     test: matnwb_nwbRead

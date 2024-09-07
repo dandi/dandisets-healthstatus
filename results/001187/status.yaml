@@ -1,0 +1,28 @@
+dandiset: 001187
+draft_modified: '2024-09-04T23:47:36.735021Z'
+last_run: null
+last_run_duration: null
+last_run_ended: null
+nassets: 46
+tests:
+- assets_nok: []
+  assets_ok:
+  - path: sub-21/sub-21_ses-1_ecephys+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
+  assets_timeout: []
+  name: pynwb_open_load_ns
+- assets_nok:
+  - path: sub-21/sub-21_ses-1_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  assets_ok: []
+  assets_timeout: []
+  name: matnwb_nwbRead
+untested: []
+versions:
+  hdmf: 3.14.4
+  matnwb: v2.6.0.2
+  pynwb: 2.8.1

@@ -10,7 +10,10 @@ tests:
   - path: sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-P29-16-05-14-retina02-left/sub-P29-16-05-14-retina02-left_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -22,7 +25,10 @@ tests:
   - path: sub-mouse412804/sub-mouse412804_ses-20200824T155542.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse412804/sub-mouse412804_ses-20200824T155543.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -40,7 +46,10 @@ tests:
   - path: sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-P29-16-05-14-retina02-left/sub-P29-16-05-14-retina02-left_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -56,7 +65,10 @@ tests:
   - path: sub-mouse412804/sub-mouse412804_ses-20200824T155542.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse412804/sub-mouse412804_ses-20200824T155543.nwb
     status: fail
     test: matnwb_nwbRead

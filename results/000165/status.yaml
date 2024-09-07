@@ -609,10 +609,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-Cricket/sub-Cricket_ses-Cricket02-HomeCage_behavior+ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-Cricket/sub-Cricket_ses-Cricket03-HomeCage_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -690,10 +686,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-Dax/sub-Dax_ses-Dax01_HomeCage_behavior+ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-Dax/sub-Dax_ses-Dax02_HomeCage_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
     versions: null
@@ -2517,11 +2509,25 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Cricket/sub-Cricket_ses-Cricket02-HomeCage_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Cumin/sub-Cumin_ses-Cumin03-LinearTrack_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Dax/sub-Dax_ses-Dax02_HomeCage_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Dill/sub-Dill_ses-Dill03-HomeCage_behavior+ecephys.nwb
@@ -3210,7 +3216,10 @@ tests:
   - path: sub-Cricket/sub-Cricket_ses-Cricket02-HomeCage_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Cricket/sub-Cricket_ses-Cricket03-HomeCage_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -3287,7 +3296,10 @@ tests:
   - path: sub-Dax/sub-Dax_ses-Dax02_HomeCage_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Dax/sub-Dax_ses-Dax03_HomeCage_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead

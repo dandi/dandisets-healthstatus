@@ -19,10 +19,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-Fish32-GCaMP-vlgut-FBv-5dpf-RandomWave/sub-Fish32-GCaMP-vlgut-FBv-5dpf-RandomWave_ses-20210920T181347_behavior+ophys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-Fish47-GCaMP-vlgut-FBd-7dpf-RandomWave/sub-Fish47-GCaMP-vlgut-FBd-7dpf-RandomWave_ses-20211124T174401_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -35,7 +31,17 @@ tests:
   - path: sub-Fish13-GCaMP-vlgut-FBv-5dpf-RandomWave/sub-Fish13-GCaMP-vlgut-FBv-5dpf-RandomWave_ses-20210830T100716_behavior+ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Fish32-GCaMP-vlgut-FBv-5dpf-RandomWave/sub-Fish32-GCaMP-vlgut-FBv-5dpf-RandomWave_ses-20210920T181347_behavior+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Fish41-GCaMP-vlgut-FBv-7dpf-RandomWave/sub-Fish41-GCaMP-vlgut-FBv-7dpf-RandomWave_ses-20210929T173736_behavior+ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -56,7 +62,10 @@ tests:
   - path: sub-Fish13-GCaMP-vlgut-FBv-5dpf-RandomWave/sub-Fish13-GCaMP-vlgut-FBv-5dpf-RandomWave_ses-20210830T100716_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Fish31-GCaMP-vlgut-FBd-5dpf-RandomWave/sub-Fish31-GCaMP-vlgut-FBd-5dpf-RandomWave_ses-20210920T120959_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -64,7 +73,10 @@ tests:
   - path: sub-Fish32-GCaMP-vlgut-FBv-5dpf-RandomWave/sub-Fish32-GCaMP-vlgut-FBv-5dpf-RandomWave_ses-20210920T181347_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Fish41-GCaMP-vlgut-FBv-7dpf-RandomWave/sub-Fish41-GCaMP-vlgut-FBv-7dpf-RandomWave_ses-20210929T173736_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead

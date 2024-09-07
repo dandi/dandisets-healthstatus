@@ -151,11 +151,25 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-BAYLORNL58Z/sub-BAYLORNL58Z_ses-20201205_ecephys+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BAYLORZJA01/sub-BAYLORZJA01_ses-20210811_ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-BAYLORZJA01/sub-BAYLORZJA01_ses-20210823_ecephys+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORZJA02/sub-BAYLORZJA02_ses-20211118_ecephys+ogen.nwb
@@ -350,11 +364,25 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-BAYLORNL58Z/sub-BAYLORNL58Z_ses-20201205_ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BAYLORZJA01/sub-BAYLORZJA01_ses-20210811_ecephys+ogen.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-BAYLORZJA01/sub-BAYLORZJA01_ses-20210823_ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORZJA02/sub-BAYLORZJA02_ses-20211118_ecephys+ogen.nwb

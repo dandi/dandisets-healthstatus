@@ -165,7 +165,10 @@ tests:
   - path: sub-anm220466/sub-anm220466_ses-20140403_behavior+icephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-anm220470/sub-anm220470_ses-20140409_obj-1huvip7_behavior+icephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -551,7 +554,7 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.3
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-anm273341/sub-anm273341_ses-20150307_behavior+icephys+ogen.nwb
@@ -953,6 +956,13 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-anm220466/sub-anm220466_ses-20140403_behavior+icephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-anm220470/sub-anm220470_ses-20140409_obj-1huvip7_behavior+icephys+ogen.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1100,7 +1110,7 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.14.3
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-anm273341/sub-anm273341_ses-20150307_behavior+icephys+ogen.nwb
@@ -1186,10 +1196,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-anm214848/sub-anm214848_ses-20131011_behavior+icephys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-anm220466/sub-anm220466_ses-20140403_behavior+icephys+ogen.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

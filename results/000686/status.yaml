@@ -26,7 +26,10 @@ tests:
   - path: sub-1p-x4-10cycles-CC-600ns-200ms-6-4kV-(dish2)/sub-1p-x4-10cycles-CC-600ns-200ms-6-4kV-(dish2)_ses-1p-x-10cycles-CanCan-600ns-200ms-6-4kV_image.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-1p-x4-10cycles-CC-600ns-200ms-6-4kV-(dish2-2)/sub-1p-x4-10cycles-CC-600ns-200ms-6-4kV-(dish2-2)_ses-1p-x-10cycles-CanCan-600ns-200ms-6-4kV_image.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -42,7 +45,10 @@ tests:
   - path: sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish3)/sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish3)_ses-1p-x-10cycles-Control-600ns-200ms-6-4kV_image.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish5-2)/sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish5-2)_ses-1p-x-10cycles-Control-600ns-200ms-6-4kV_image.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -84,7 +90,10 @@ tests:
   - path: sub-1p-x4-10cycles-CC-600ns-200ms-6-4kV-(dish2)/sub-1p-x4-10cycles-CC-600ns-200ms-6-4kV-(dish2)_ses-1p-x-10cycles-CanCan-600ns-200ms-6-4kV_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-1p-x4-10cycles-CC-600ns-200ms-6-4kV-(dish2-2)/sub-1p-x4-10cycles-CC-600ns-200ms-6-4kV-(dish2-2)_ses-1p-x-10cycles-CanCan-600ns-200ms-6-4kV_image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -107,7 +116,10 @@ tests:
   - path: sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish3)/sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish3)_ses-1p-x-10cycles-Control-600ns-200ms-6-4kV_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish5)/sub-1p-x4-10cycles-Ctrl-600ns-200ms-6-4kV-(dish5)_ses-1p-x-10cycles-Control-600ns-200ms-6-4kV_image.nwb
     status: fail
     test: matnwb_nwbRead

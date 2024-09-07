@@ -17,7 +17,10 @@ tests:
   - path: sub-JDS-SingleDay-JS14/sub-JDS-SingleDay-JS14_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-JDS-SingleDay-JS15/sub-JDS-SingleDay-JS15_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -37,7 +40,10 @@ tests:
   - path: sub-JDS-SingleDay-KL8/sub-JDS-SingleDay-KL8_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-JDS-SingleDay-ZT2/sub-JDS-SingleDay-ZT2_obj-1dss6zi_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -59,7 +65,10 @@ tests:
   - path: sub-JDS-SingleDay-JS14/sub-JDS-SingleDay-JS14_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-JDS-SingleDay-JS15/sub-JDS-SingleDay-JS15_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -79,7 +88,10 @@ tests:
   - path: sub-JDS-SingleDay-KL8/sub-JDS-SingleDay-KL8_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-JDS-SingleDay-ZT2/sub-JDS-SingleDay-ZT2_obj-1dss6zi_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead

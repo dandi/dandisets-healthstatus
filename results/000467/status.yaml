@@ -98,6 +98,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-ant2-m4-d26-y2022/sub-ant2-m4-d26-y2022_ses-m4-d26-y2022-ant2-0-48x-6-methyl-5-hepten-2-one-120-t194-z115um_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ant2-m4-d27-y2022/sub-ant2-m4-d27-y2022_ses-m4-d27-y2022-ant2-0-0075x-4-methyl-3-heptanol-40-t180-z95um_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -198,6 +205,13 @@ tests:
     test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-ant4-m4-d26-y2022/sub-ant4-m4-d26-y2022_ses-m4-d26-y2022-ant4-1x-isopropanol-40-t232-z140um_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-ant5-m10-d11-y2022/sub-ant5-m10-d11-y2022_ses-m10-d11-y2022-ant5-0-48x-propionic-acid-40-t202-z50um_ophys.nwb
@@ -315,6 +329,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-ant2-m4-d26-y2022/sub-ant2-m4-d26-y2022_ses-m4-d26-y2022-ant2-0-48x-6-methyl-5-hepten-2-one-120-t194-z115um_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ant2-m4-d27-y2022/sub-ant2-m4-d27-y2022_ses-m4-d27-y2022-ant2-0-0075x-4-methyl-3-heptanol-40-t180-z95um_ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -404,6 +425,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-ant4-m4-d26-y2022/sub-ant4-m4-d26-y2022_ses-m4-d26-y2022-ant4-1x-isopropanol-40-t232-z140um_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-ant5-m10-d11-y2022/sub-ant5-m10-d11-y2022_ses-m10-d11-y2022-ant5-0-48x-propionic-acid-40-t202-z50um_ophys.nwb

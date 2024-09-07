@@ -152,7 +152,7 @@ tests:
     status: timeout
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.3
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-2023-01-16-15-SWF702/sub-2023-01-16-15-SWF702_ses-20230116_behavior+image+ophys.nwb
@@ -181,6 +181,13 @@ tests:
     test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-2023-01-19-08-SWF702/sub-2023-01-19-08-SWF702_ses-20230119_behavior+image+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-2023-01-23-08-SWF702/sub-2023-01-23-08-SWF702_ses-20230123_behavior+image+ophys.nwb
@@ -287,7 +294,7 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.14.3
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-2023-01-10-07-SWF702/sub-2023-01-10-07-SWF702_ses-20230110_behavior+image+ophys.nwb
@@ -351,6 +358,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-2023-01-19-08-SWF702/sub-2023-01-19-08-SWF702_ses-20230119_behavior+image+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-2023-01-19-22-SWF702/sub-2023-01-19-22-SWF702_ses-20230119_behavior+image+ophys.nwb

@@ -109,9 +109,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-03/sub-03_ses-20150305T085500_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -221,9 +221,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-07/sub-07_ses-20160302T170100_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -388,6 +388,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-03/sub-03_ses-20150304T165900_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-03/sub-03_ses-20150305T085500_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -463,6 +470,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-06/sub-06_ses-20140828T152100_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-07/sub-07_ses-20160302T170100_behavior+ecephys.nwb
@@ -586,13 +600,6 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-03/sub-03_ses-20150304T165900_behavior+ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-05/sub-05_ses-20170706T115300_obj-1m3bzkg_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -621,13 +628,6 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-06/sub-06_ses-20140828T152100_behavior+ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-07/sub-07_ses-20160305T103200_obj-9hzkt8_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead

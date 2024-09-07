@@ -62,6 +62,13 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-Opto2/sub-Opto2_ses-230321h_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Opto4/sub-Opto4_ses-231002a_image+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -140,6 +147,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-Opto2/sub-Opto2_ses-230321h_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Opto4/sub-Opto4_ses-231002a_image+ophys.nwb
     status: fail
     test: matnwb_nwbRead

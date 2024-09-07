@@ -7,6 +7,13 @@ nassets: 1885
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-BH499/sub-BH499_ses-20231024T113300_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BH499/sub-BH499_ses-20231026T154700_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -193,6 +200,13 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-STTC-BH495/sub-STTC-BH495_ses-20240119T090100_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-STTC-BH495/sub-STTC-BH495_ses-20240119T200700_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -231,6 +245,13 @@ tests:
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
+  - path: sub-BH499/sub-BH499_ses-20231024T113300_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BH500/sub-BH500_ses-20230926T113347_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -390,6 +411,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-STTC-BH495/sub-STTC-BH495_ses-20240119T090100_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-STTC-BH495/sub-STTC-BH495_ses-20240119T200700_ecephys.nwb

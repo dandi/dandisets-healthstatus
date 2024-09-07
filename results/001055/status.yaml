@@ -21,7 +21,10 @@ tests:
   - path: sub-Animal-1/sub-Animal-1_ses-21-to-37.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Animal-2/sub-Animal-2_ses-38-to-42.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -29,7 +32,10 @@ tests:
   - path: sub-Animal-2/sub-Animal-2_ses-43-to-47.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -47,7 +53,10 @@ tests:
   - path: sub-Animal-1/sub-Animal-1_ses-21-to-37.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Animal-2/sub-Animal-2_ses-38-to-42.nwb
     status: fail
     test: matnwb_nwbRead
@@ -55,7 +64,10 @@ tests:
   - path: sub-Animal-2/sub-Animal-2_ses-43-to-47.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

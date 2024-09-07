@@ -316,10 +316,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-s1/sub-s1_ses-NE-OF-061218.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-s1/sub-s1_ses-NE-OF-061418-0001.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1083,10 +1079,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-s3/sub-s3_ses-Al-T3g-111418.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-s3/sub-s3_ses-Al-T3g-111618.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1304,6 +1296,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-s1/sub-s1_ses-NE-OF-061218.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-s1/sub-s1_ses-NE-OF-061318.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -1414,6 +1413,13 @@ tests:
     test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-s3/sub-s3_ses-Al-T3g-111418.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-s4/sub-s4_ses-Ca-OF-030819.nwb
@@ -1581,6 +1587,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-s1/sub-s1_ses-NE-OF-061218.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-s1/sub-s1_ses-NE-OF-061318.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1979,7 +1992,10 @@ tests:
   - path: sub-s3/sub-s3_ses-Al-T3g-111418.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-s3/sub-s3_ses-Al-T3g-111618.nwb
     status: fail
     test: matnwb_nwbRead
@@ -2270,10 +2286,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-s1/sub-s1_ses-NE-OF-061218.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
   - path: sub-s1/sub-s1_ses-NE-OF-061418-0001.nwb
     status: pass
     test: matnwb_nwbRead

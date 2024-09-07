@@ -152,6 +152,20 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-NYU-47/sub-NYU-47_ses-fc43390d-457e-463a-9fd4-b94a0a8b48f5-processed-only_behavior.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-PL017/sub-PL017_ses-68775ca0-b056-48d5-b6ae-a4c2a76ae48f-processed-only_behavior.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-PL017/sub-PL017_ses-cea755db-4eee-4138-bdd6-fc23a572f5a1_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -348,6 +362,20 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-NYU-47/sub-NYU-47_ses-fc43390d-457e-463a-9fd4-b94a0a8b48f5-processed-only_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-PL017/sub-PL017_ses-68775ca0-b056-48d5-b6ae-a4c2a76ae48f-processed-only_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-PL017/sub-PL017_ses-cea755db-4eee-4138-bdd6-fc23a572f5a1_behavior+ecephys.nwb

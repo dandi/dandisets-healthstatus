@@ -10,7 +10,10 @@ tests:
   - path: sub-Dataset-3-Animals-1-2-3-&-4/sub-Dataset-3-Animals-1-2-3-&-4.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Dataset-4-Animal-2/sub-Dataset-4-Animal-2.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -18,7 +21,10 @@ tests:
   - path: sub-Dataset-4-Animal-3/sub-Dataset-4-Animal-3.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Dataset-5-Animals-1-&-2/sub-Dataset-5-Animals-1-&-2.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -32,7 +38,10 @@ tests:
   - path: sub-Dataset-3-Animals-1-2-3-&-4/sub-Dataset-3-Animals-1-2-3-&-4.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Dataset-4-Animal-2/sub-Dataset-4-Animal-2.nwb
     status: fail
     test: matnwb_nwbRead
@@ -40,7 +49,10 @@ tests:
   - path: sub-Dataset-4-Animal-3/sub-Dataset-4-Animal-3.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Dataset-5-Animals-1-&-2/sub-Dataset-5-Animals-1-&-2.nwb
     status: fail
     test: matnwb_nwbRead

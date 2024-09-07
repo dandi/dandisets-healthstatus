@@ -3,7 +3,7 @@ draft_modified: '2024-09-03T20:11:32.042178Z'
 last_run: null
 last_run_duration: null
 last_run_ended: null
-nassets: 64
+nassets: 67
 tests:
 - assets_nok: []
   assets_ok:
@@ -18,6 +18,13 @@ tests:
       hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-U/sub-U_ses-20230323T110437_obj-1wghz5k_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -26,6 +33,13 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-Q/sub-Q_ses-20221028T123313_obj-nd2865_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-U/sub-U_ses-20230323T110437_obj-1wghz5k_ophys.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

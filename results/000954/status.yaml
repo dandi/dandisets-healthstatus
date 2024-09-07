@@ -22,7 +22,10 @@ tests:
   - path: sub-HumanPitt-held-in-calib/sub-HumanPitt-held-in-calib_ses-19250115T110633.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-HumanPitt-held-in-calib/sub-HumanPitt-held-in-calib_ses-19250115T111328.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -102,6 +105,13 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-HumanPitt-held-out-calib/sub-HumanPitt-held-out-calib_ses-19250129T112555.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-HumanPitt-held-out-calib/sub-HumanPitt-held-out-calib_ses-19250129T113059.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -136,7 +146,10 @@ tests:
   - path: sub-HumanPitt-held-in-calib/sub-HumanPitt-held-in-calib_ses-19250115T110633.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-HumanPitt-held-in-calib/sub-HumanPitt-held-in-calib_ses-19250115T111328.nwb
     status: fail
     test: matnwb_nwbRead
@@ -216,6 +229,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-HumanPitt-held-out-calib/sub-HumanPitt-held-out-calib_ses-19250129T112555.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-HumanPitt-held-out-calib/sub-HumanPitt-held-out-calib_ses-19250129T113059.nwb
     status: fail
     test: matnwb_nwbRead

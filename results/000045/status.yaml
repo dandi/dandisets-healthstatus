@@ -9090,9 +9090,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.11.0
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.5.0
+      pynwb: 2.8.1
   - path: sub-41583c63-9f18-4f43-a53d-eb5388afd1b1/sub-41583c63-9f18-4f43-a53d-eb5388afd1b1_ses-e3f3548f-5c8a-4e70-b170-ced0aa919ca6_behavior+image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -15281,7 +15281,10 @@ tests:
   - path: sub-808d713e-2e6e-4b2e-ac84-a946a5a5fa9e/sub-808d713e-2e6e-4b2e-ac84-a946a5a5fa9e_ses-caa7bd33-32d4-4cba-9a27-f3bfac4f2c66_behavior+image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-808d713e-2e6e-4b2e-ac84-a946a5a5fa9e/sub-808d713e-2e6e-4b2e-ac84-a946a5a5fa9e_ses-caa86764-3e5d-4685-a0dc-a6a49290fbcb_behavior+image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -38215,6 +38218,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-41583c63-9f18-4f43-a53d-eb5388afd1b1/sub-41583c63-9f18-4f43-a53d-eb5388afd1b1_ses-d8197961-6ffd-473b-80e6-6e2b4828fe74_behavior+image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-41583c63-9f18-4f43-a53d-eb5388afd1b1/sub-41583c63-9f18-4f43-a53d-eb5388afd1b1_ses-e3f3548f-5c8a-4e70-b170-ced0aa919ca6_behavior+image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -43500,7 +43510,10 @@ tests:
   - path: sub-808d713e-2e6e-4b2e-ac84-a946a5a5fa9e/sub-808d713e-2e6e-4b2e-ac84-a946a5a5fa9e_ses-caa7bd33-32d4-4cba-9a27-f3bfac4f2c66_behavior+image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-808d713e-2e6e-4b2e-ac84-a946a5a5fa9e/sub-808d713e-2e6e-4b2e-ac84-a946a5a5fa9e_ses-caa86764-3e5d-4685-a0dc-a6a49290fbcb_behavior+image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -59747,13 +59760,6 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.9.0
-      matnwb: v2.6.0.2
-      pynwb: 2.5.0
-  - path: sub-41583c63-9f18-4f43-a53d-eb5388afd1b1/sub-41583c63-9f18-4f43-a53d-eb5388afd1b1_ses-d8197961-6ffd-473b-80e6-6e2b4828fe74_behavior+image.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.11.0
       matnwb: v2.6.0.2
       pynwb: 2.5.0
   - path: sub-4db0b36d-9b85-4cae-8d93-a68998c581fc/sub-4db0b36d-9b85-4cae-8d93-a68998c581fc_ses-24145406-79cf-4684-8c75-3c0e29030c86_behavior+image.nwb

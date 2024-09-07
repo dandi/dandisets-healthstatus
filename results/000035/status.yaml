@@ -360,9 +360,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-18_slice-20200409-slice-4_cell-20200409-sample-18_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -820,9 +820,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-7_slice-20200406-slice-2_cell-20200406-sample-7_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1233,6 +1233,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-17_slice-20200409-slice-3_cell-20200409-sample-17_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-20_slice-20200409-slice-4_cell-20200409-sample-20_icephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1435,6 +1442,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-6_slice-20200406-slice-2_cell-20200406-sample-6_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-mouse-ZUDOB/sub-mouse-ZUDOB_ses-20200408-sample-11_slice-20200408-slice-3_cell-20200408-sample-11_icephys.nwb
@@ -1709,13 +1723,6 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-17_slice-20200409-slice-3_cell-20200409-sample-17_icephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-18_slice-20200409-slice-4_cell-20200409-sample-18_icephys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -2000,13 +2007,6 @@ tests:
     status: timeout
     test: matnwb_nwbRead
     versions: null
-  - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-6_slice-20200406-slice-2_cell-20200406-sample-6_icephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-mouse-WPOGH/sub-mouse-WPOGH_ses-20200406-sample-7_slice-20200406-slice-2_cell-20200406-sample-7_icephys.nwb
     status: timeout
     test: matnwb_nwbRead

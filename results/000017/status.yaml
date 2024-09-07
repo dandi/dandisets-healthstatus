@@ -88,9 +88,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.8.0
+      pynwb: 2.8.1
   - path: sub-Lederberg/sub-Lederberg_ses-20171207T120000.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -162,7 +162,7 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.3
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Radnitz/sub-Radnitz_ses-20170108T120000.nwb
@@ -351,6 +351,13 @@ tests:
       hdmf: 3.14.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
+  - path: sub-Lederberg/sub-Lederberg_ses-20171206T120000.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Lederberg/sub-Lederberg_ses-20171207T120000.nwb
     status: fail
     test: matnwb_nwbRead
@@ -422,7 +429,7 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.14.3
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Radnitz/sub-Radnitz_ses-20170108T120000.nwb
@@ -517,14 +524,7 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  assets_ok:
-  - path: sub-Lederberg/sub-Lederberg_ses-20171206T120000.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.8.0
+  assets_ok: []
   assets_timeout:
   - path: sub-Forssmann/sub-Forssmann_ses-20171105T120000.nwb
     status: timeout

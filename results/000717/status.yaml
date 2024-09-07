@@ -11,7 +11,10 @@ tests:
   - path: sub-1214579789_ses-1214621812_icephys/sub-1214579789_ses-1214621812_icephys.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-IBL-ecephys/sub-IBL-ecephys_ses-3e7ae7c0_desc-18000000-frames-13653-by-384-chunking.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -26,7 +29,10 @@ tests:
   - path: sub-mock/sub-mock_ses-ecephys1.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-npI3_ses-20190421_behavior+ecephys/sub-npI3_ses-20190421_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -36,7 +42,10 @@ tests:
   - path: sub-1214579789_ses-1214621812_icephys/sub-1214579789_ses-1214621812_icephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-IBL-ecephys/sub-IBL-ecephys_ses-3e7ae7c0_desc-18000000-frames-13653-by-384-chunking.nwb
     status: fail
     test: matnwb_nwbRead
@@ -51,7 +60,10 @@ tests:
   - path: sub-mock/sub-mock_ses-ecephys1.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-npI3_ses-20190421_behavior+ecephys/sub-npI3_ses-20190421_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead

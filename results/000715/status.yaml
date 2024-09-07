@@ -20,6 +20,13 @@ tests:
     status: timeout
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-55-YAaDV/sub-55-YAaDV_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-56-YAaDV/sub-56-YAaDV_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -35,7 +42,10 @@ tests:
   - path: sub-7-YAaLR/sub-7-YAaLR_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-70-YAaLR/sub-70-YAaLR_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -61,6 +71,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-55-YAaDV/sub-55-YAaDV_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-56-YAaDV/sub-56-YAaDV_ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -76,7 +93,10 @@ tests:
   - path: sub-7-YAaLR/sub-7-YAaLR_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-70-YAaLR/sub-70-YAaLR_ophys.nwb
     status: fail
     test: matnwb_nwbRead

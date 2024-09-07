@@ -96,6 +96,13 @@ tests:
       hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Calcacre/sub-Calcacre_ses-20210401T153000_obj-vliqcj.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Calcacre/sub-Calcacre_ses-20210426T153000_obj-8mm4az.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -215,6 +222,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Penkcre/sub-Penkcre_obj-ey1kbd.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Penkcre/sub-Penkcre_obj-myyo7.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -267,6 +281,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Calcacre/sub-Calcacre_ses-20210219T153000_obj-zr6o54.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Calcacre/sub-Calcacre_ses-20210401T153000_obj-vliqcj.nwb
     status: fail
     test: matnwb_nwbRead
     versions:
@@ -404,6 +425,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Penkcre/sub-Penkcre_obj-ey1kbd.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Penkcre/sub-Penkcre_obj-myyo7.nwb

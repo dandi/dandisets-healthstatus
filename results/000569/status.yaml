@@ -151,13 +151,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-1223010848/sub-1223010848_ses-1223050885_icephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-1223010848/sub-1223010848_ses-1223050946_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -353,13 +346,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-1256313642/sub-1256313642_ses-1256446225_icephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-1256313642/sub-1256313642_ses-1256469559_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -526,6 +512,13 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-1223010848/sub-1223010848_ses-1223050885_icephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-1223010848/sub-1223010848_ses-1223057941_icephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -615,6 +608,13 @@ tests:
     test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-1256313642/sub-1256313642_ses-1256446225_icephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-1256313642/sub-1256313642_ses-1256468441_icephys.nwb
@@ -718,9 +718,9 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-1223010848/sub-1223010848_ses-1223050946_icephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1025,9 +1025,9 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-1256313642/sub-1256313642_ses-1256468441_icephys.nwb
     status: fail
     test: matnwb_nwbRead

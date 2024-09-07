@@ -14,13 +14,6 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  - path: sub-EE/sub-EE_ses-EE-047_ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.3
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
   - path: sub-EE/sub-EE_ses-EE-082_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -85,6 +78,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-EE/sub-EE_ses-EE-047_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-EE/sub-EE_ses-EE-048_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -117,7 +117,7 @@ tests:
     status: timeout
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.3
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-EE/sub-EE_ses-EE-083_ecephys.nwb
@@ -245,7 +245,7 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.14.3
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-EE/sub-EE_ses-EE-048_ecephys.nwb
@@ -280,7 +280,7 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.14.3
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-EE/sub-EE_ses-EE-082_ecephys.nwb

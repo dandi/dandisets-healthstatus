@@ -1731,7 +1731,10 @@ tests:
   - path: sub-NV32/sub-NV32_ses-20170612T151703_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-NV32/sub-NV32_ses-20170612T152547_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1945,7 +1948,10 @@ tests:
   - path: sub-NV33/sub-NV33_ses-20170711T182740_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-NV33/sub-NV33_ses-20170711T183931_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -3651,6 +3657,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-NV32/sub-NV32_ses-20170612T151703_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-NV32/sub-NV32_ses-20170612T164835_ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -3660,6 +3673,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-NV33/sub-NV33_ses-20170711T182740_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-NV33/sub-NV33_ses-20170713T154954_ophys.nwb
@@ -5296,10 +5316,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-NV32/sub-NV32_ses-20170612T151703_ophys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
   - path: sub-NV32/sub-NV32_ses-20170612T152547_ophys.nwb
     status: pass
     test: matnwb_nwbRead
@@ -5496,10 +5512,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-NV33/sub-NV33_ses-20170711T182108_ophys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-NV33/sub-NV33_ses-20170711T182740_ophys.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

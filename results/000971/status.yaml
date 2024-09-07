@@ -14,6 +14,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-114-273/sub-114-273_ses-FP-PS-2019-07-17T12-43-23_behavior.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-118-279/sub-118-279_ses-Opto-DMS-Excitatory-EYFP-2019-07-17T13-47-04_behavior+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -40,6 +47,13 @@ tests:
     test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-239-388/sub-239-388_ses-Opto-DLS-Excitatory-ChR2Scrambled-2020-07-12T12-19-53_behavior+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-242-388/sub-242-388_ses-Opto-DLS-Excitatory-ChR2-2020-06-29T12-18-24_behavior+ogen.nwb
@@ -222,6 +236,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-114-273/sub-114-273_ses-FP-PS-2019-07-17T12-43-23_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-118-279/sub-118-279_ses-Opto-DMS-Excitatory-EYFP-2019-07-17T13-47-04_behavior+ogen.nwb
     status: fail
     test: matnwb_nwbRead
@@ -248,6 +269,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-239-388/sub-239-388_ses-Opto-DLS-Excitatory-ChR2Scrambled-2020-07-12T12-19-53_behavior+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-242-388/sub-242-388_ses-Opto-DLS-Excitatory-ChR2-2020-06-29T12-18-24_behavior+ogen.nwb

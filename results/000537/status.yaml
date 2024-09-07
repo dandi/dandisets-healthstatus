@@ -311,9 +311,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-171424cell3q6a-900-700filter/sub-171424cell3q6a-900-700filter_ses-20220602T171424_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -676,9 +676,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-215344cell6-spiral-hp-lastwaslp/sub-215344cell6-spiral-hp-lastwaslp_ses-20220505T215344_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -867,6 +867,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-170507cell2q6a-900/sub-170507cell2q6a-900_ses-20220602T170507_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-171945cell4q6a-900-700filter/sub-171945cell4q6a-900-700filter_ses-20220602T171945_image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -995,6 +1002,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-215248cell6-spiral-hp/sub-215248cell6-spiral-hp_ses-20220505T215248_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-231949cell15-spiral-hp/sub-231949cell15-spiral-hp_ses-20220505T231949_image.nwb
@@ -1215,13 +1229,6 @@ tests:
     status: pass
     test: matnwb_nwbRead
     versions: null
-  - path: sub-170507cell2q6a-900/sub-170507cell2q6a-900_ses-20220602T170507_image.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-171424cell3q6a-900-700filter/sub-171424cell3q6a-900-700filter_ses-20220602T171424_image.nwb
     status: pass
     test: matnwb_nwbRead
@@ -1436,13 +1443,6 @@ tests:
     status: pass
     test: matnwb_nwbRead
     versions: null
-  - path: sub-215248cell6-spiral-hp/sub-215248cell6-spiral-hp_ses-20220505T215248_image.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-215344cell6-spiral-hp-lastwaslp/sub-215344cell6-spiral-hp-lastwaslp_ses-20220505T215344_image.nwb
     status: pass
     test: matnwb_nwbRead

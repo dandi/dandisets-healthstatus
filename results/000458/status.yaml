@@ -78,7 +78,10 @@ tests:
   - path: sub-569068/sub-569068_ses-20210304_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-569070/sub-569070_ses-20210401_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -98,7 +101,10 @@ tests:
   - path: sub-586468/sub-586468_ses-20210819_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-590479/sub-590479_ses-20210921_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -155,7 +161,10 @@ tests:
   - path: sub-569068/sub-569068_ses-20210304_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-569069/sub-569069_ses-20210312_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -195,7 +204,10 @@ tests:
   - path: sub-586468/sub-586468_ses-20210819_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-590479/sub-590479_ses-20210921_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead

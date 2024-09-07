@@ -22,7 +22,10 @@ tests:
   - path: sub-Finch-z-r12r13-21-held-in-minival/sub-Finch-z-r12r13-21-held-in-minival_ses-20210626.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Finch-z-r12r13-21-held-in-minival/sub-Finch-z-r12r13-21-held-in-minival_ses-20210627.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -41,7 +44,10 @@ tests:
   - path: sub-Finch-z-r12r13-21-held-out-calib/sub-Finch-z-r12r13-21-held-out-calib_ses-20210701.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Finch-z-r12r13-21-held-out-calib/sub-Finch-z-r12r13-21-held-out-calib_ses-20210705.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -64,7 +70,10 @@ tests:
   - path: sub-Finch-z-r12r13-21-held-in-minival/sub-Finch-z-r12r13-21-held-in-minival_ses-20210626.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Finch-z-r12r13-21-held-in-minival/sub-Finch-z-r12r13-21-held-in-minival_ses-20210627.nwb
     status: fail
     test: matnwb_nwbRead
@@ -83,7 +92,10 @@ tests:
   - path: sub-Finch-z-r12r13-21-held-out-calib/sub-Finch-z-r12r13-21-held-out-calib_ses-20210701.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Finch-z-r12r13-21-held-out-calib/sub-Finch-z-r12r13-21-held-out-calib_ses-20210705.nwb
     status: fail
     test: matnwb_nwbRead

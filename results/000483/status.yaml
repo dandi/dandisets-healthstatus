@@ -52,9 +52,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-SKKS081/sub-SKKS081_ses-20201119T163121_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -470,9 +470,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-SKKS091/sub-SKKS091_ses-20210526T141845_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -813,6 +813,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-SKKS081/sub-SKKS081_ses-20201119T162607_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SKKS081/sub-SKKS081_ses-20201119T163121_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -959,6 +966,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-SKKS091/sub-SKKS091_ses-20210518T175848_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-SKKS091/sub-SKKS091_ses-20210526T142953_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1193,13 +1207,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-SKKS081/sub-SKKS081_ses-20201119T162607_behavior+ophys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-SKKS088/sub-SKKS088_ses-20210118T162630_behavior+ophys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -1410,13 +1417,6 @@ tests:
       hdmf: 3.14.1
       matnwb: v2.6.0.2
       pynwb: 2.8.0
-  - path: sub-SKKS091/sub-SKKS091_ses-20210518T175848_behavior+ophys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-SKKS091/sub-SKKS091_ses-20210526T141845_behavior+ophys.nwb
     status: timeout
     test: matnwb_nwbRead

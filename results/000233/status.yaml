@@ -371,10 +371,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-CGM30/sub-CGM30_ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-CGM30/sub-CGM30_ses-CGM30-0um-210123-103256_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -996,7 +992,10 @@ tests:
   - path: sub-CGM37/sub-CGM37_ses-992um_634um_210121_103917_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-CGM37/sub-CGM37_ses-CGM37_1210um_634um_210122_075004_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1725,6 +1724,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   assets_timeout:
+  - path: sub-CGM30/sub-CGM30_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-CGM32/sub-CGM32_ses-CGM32-576um-210123-095610_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -1832,6 +1838,13 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-CGM30/sub-CGM30_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-CGM30/sub-CGM30_ses-CGM30-0um-210123-103256_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1971,6 +1984,13 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
+  - path: sub-CGM37/sub-CGM37_ses-992um_634um_210121_103917_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-CGM39/sub-CGM39_ses-0um_210201_111930_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -2637,10 +2657,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-CGM30/sub-CGM30_ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
   - path: sub-CGM30/sub-CGM30_ses-CGM30-0um-210131-101140_ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
@@ -3016,10 +3032,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-CGM37/sub-CGM37_ses-848um_634um_210121_101926_ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-CGM37/sub-CGM37_ses-992um_634um_210121_103917_ecephys.nwb
     status: timeout
     test: matnwb_nwbRead
     versions: null

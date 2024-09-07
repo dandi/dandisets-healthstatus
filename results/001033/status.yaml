@@ -70,6 +70,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-2-2/sub-2-2_ses-2kHz-spindle-stimulation-5-2V_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-2-2/sub-2-2_ses-2kHz-spindle-stimulation-5V_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -107,6 +114,13 @@ tests:
     test: pynwb_open_load_ns
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-5-2/sub-5-2_ses-20Hz-sine-stimulation-4V_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-6-2/sub-6-2_ses-20Hz-sine-stimulation-4-4V_image.nwb
@@ -294,6 +308,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-2-2/sub-2-2_ses-2kHz-spindle-stimulation-5-2V_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-2-2/sub-2-2_ses-2kHz-spindle-stimulation-5V_image.nwb
     status: fail
     test: matnwb_nwbRead
@@ -327,6 +348,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-5-2/sub-5-2_ses-20Hz-sine-stimulation-4V_image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-6-2/sub-6-2_ses-20Hz-sine-stimulation-4-4V_image.nwb

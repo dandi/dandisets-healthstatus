@@ -14,10 +14,7 @@ tests:
   - path: sub-Godzilla-2-STD/sub-Godzilla-2-STD_ses-LITMUS-Rat-2-STD_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.4
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-Godzilla-4-STD/sub-Godzilla-4-STD_ses-LITMUS-Rat-4-STD_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -32,10 +29,7 @@ tests:
   - path: sub-Godzilla-2-STD/sub-Godzilla-2-STD_ses-LITMUS-Rat-2-STD_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.4
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-Godzilla-4-STD/sub-Godzilla-4-STD_ses-LITMUS-Rat-4-STD_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -45,6 +39,6 @@ tests:
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.3
+  hdmf: 3.14.4
   matnwb: v2.6.0.2
   pynwb: 2.8.1

@@ -7,10 +7,6 @@ nassets: 9
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-132/sub-132_ses-20211215T013700_ophys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-134/sub-134_ses-20220322T002800_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -19,6 +15,13 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-134/sub-134_ses-20220322T110600_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout:
   - path: sub-131/sub-131_ses-20211116T203100_image+ophys.nwb
     status: timeout
@@ -31,6 +34,13 @@ tests:
     status: timeout
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-132/sub-132_ses-20211215T013700_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-132/sub-132_ses-20211215T194900_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -40,10 +50,6 @@ tests:
     test: pynwb_open_load_ns
     versions: null
   - path: sub-134/sub-134_ses-20220322T104100_ophys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-134/sub-134_ses-20220322T110600_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null
@@ -63,7 +69,10 @@ tests:
   - path: sub-132/sub-132_ses-20211215T013700_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-132/sub-132_ses-20211215T194900_ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -87,7 +96,10 @@ tests:
   - path: sub-134/sub-134_ses-20220322T110600_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

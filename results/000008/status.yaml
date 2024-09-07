@@ -4587,7 +4587,10 @@ tests:
   - path: sub-mouse-XECLH/sub-mouse-XECLH_ses-20180327-sample-1_slice-20180327-slice-1_cell-20180327-sample-1_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-XECLH/sub-mouse-XECLH_ses-20180327-sample-2_slice-20180327-slice-2_cell-20180327-sample-2_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -4680,7 +4683,10 @@ tests:
   - path: sub-mouse-XHGCQ/sub-mouse-XHGCQ_ses-20180726-sample-5_slice-20180726-slice-5_cell-20180726-sample-5_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-XHGCQ/sub-mouse-XHGCQ_ses-20180726-sample-6_slice-20180726-slice-6_cell-20180726-sample-6_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -7208,6 +7214,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-mouse-XECLH/sub-mouse-XECLH_ses-20180327-sample-1_slice-20180327-slice-1_cell-20180327-sample-1_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-XECLH/sub-mouse-XECLH_ses-20180327-sample-5_slice-20180327-slice-5_cell-20180327-sample-5_icephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -7237,7 +7250,10 @@ tests:
   - path: sub-mouse-XHGCQ/sub-mouse-XHGCQ_ses-20180726-sample-5_slice-20180726-slice-5_cell-20180726-sample-5_icephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-XKIBL/sub-mouse-XKIBL_ses-20190731-sample-6_slice-20190731-slice-6_cell-20190731-sample-6_icephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -10630,10 +10646,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-mouse-XBMZN/sub-mouse-XBMZN_ses-20190624-sample-5_slice-20190624-slice-5_cell-20190624-sample-5_icephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-mouse-XECLH/sub-mouse-XECLH_ses-20180327-sample-1_slice-20180327-slice-1_cell-20180327-sample-1_icephys.nwb
     status: timeout
     test: matnwb_nwbRead
     versions: null

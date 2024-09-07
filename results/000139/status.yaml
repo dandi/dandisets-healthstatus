@@ -10,24 +10,18 @@ tests:
   - path: sub-Jenkins/sub-Jenkins_ses-medium_desc-test_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.4
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
+  assets_timeout:
   - path: sub-Jenkins/sub-Jenkins_ses-medium_desc-train_behavior+ecephys.nwb
-    status: pass
+    status: timeout
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Jenkins/sub-Jenkins_ses-medium_desc-test_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.4
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-Jenkins/sub-Jenkins_ses-medium_desc-train_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -37,6 +31,6 @@ tests:
   name: matnwb_nwbRead
 untested: []
 versions:
-  hdmf: 3.14.3
+  hdmf: 3.14.4
   matnwb: v2.6.0.2
   pynwb: 2.8.1

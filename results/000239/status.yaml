@@ -770,7 +770,10 @@ tests:
   - path: sub-MX180803/sub-MX180803_ses-20180816T124518.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-MX180803/sub-MX180803_ses-20180817T115148.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -2428,7 +2431,10 @@ tests:
   - path: sub-MX200101/sub-MX200101_ses-20201019T121943.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-MX200101/sub-MX200101_ses-20201020T120913.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -3627,6 +3633,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-MX180803/sub-MX180803_ses-20180816T124518.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-MX180803/sub-MX180803_ses-20180819T133906.nwb
     status: fail
     test: matnwb_nwbRead
@@ -3865,6 +3878,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-MX200101/sub-MX200101_ses-20201019T121943.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-MX200101/sub-MX200101_ses-20201025T132233.nwb
     status: fail
     test: matnwb_nwbRead
@@ -4433,10 +4453,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-MX180803/sub-MX180803_ses-20180815T123725.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-MX180803/sub-MX180803_ses-20180816T124518.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null
@@ -5720,10 +5736,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.7.0
-  - path: sub-MX200101/sub-MX200101_ses-20201019T121943.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
   - path: sub-MX200101/sub-MX200101_ses-20201020T120913.nwb
     status: pass
     test: matnwb_nwbRead
