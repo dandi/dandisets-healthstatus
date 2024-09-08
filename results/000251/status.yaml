@@ -1990,7 +1990,10 @@ tests:
   - path: sub-3048/sub-3048_ses-SU-VR-OL-71.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-3048/sub-3048_ses-SU-VR-OL-72.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -3443,6 +3446,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-3048/sub-3048_ses-SU-VR-OL-71.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-3048/sub-3048_ses-SU-VR-OL-74.nwb
     status: fail
     test: matnwb_nwbRead
@@ -4679,10 +4689,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-3048/sub-3048_ses-SU-VR-ALL-SPD-57.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-3048/sub-3048_ses-SU-VR-OL-71.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

@@ -56,7 +56,10 @@ tests:
   - path: sub-BPAE-8bipolar-770kHz-600ns-10/sub-BPAE-8bipolar-770kHz-600ns-10_ses-Cross-directional-770kHz_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BPAE-8unipolar-1Hz-04/sub-BPAE-8unipolar-1Hz-04_ses-Co-directional-1Hz_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -140,7 +143,10 @@ tests:
   - path: sub-BPAE-8bipolar-770kHz-600ns-10/sub-BPAE-8bipolar-770kHz-600ns-10_ses-Cross-directional-770kHz_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BPAE-8unipolar-1Hz-04/sub-BPAE-8unipolar-1Hz-04_ses-Co-directional-1Hz_image.nwb
     status: fail
     test: matnwb_nwbRead

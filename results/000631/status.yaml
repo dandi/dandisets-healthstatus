@@ -58,7 +58,10 @@ tests:
       single pulse trains_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-600ns-5kV-1HzUP-7-31-21-BPAE-18/sub-600ns-5kV-1HzUP-7-31-21-BPAE-18_ses-600ns-5kV-1Hz
       single pulse trains_image.nwb
     status: pass
@@ -139,7 +142,10 @@ tests:
       single pulse trains_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-600ns-5kV-1HzUP-7-31-21-BPAE-18/sub-600ns-5kV-1HzUP-7-31-21-BPAE-18_ses-600ns-5kV-1Hz
       single pulse trains_image.nwb
     status: fail

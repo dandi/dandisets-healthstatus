@@ -7,15 +7,15 @@ nassets: 2
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-001/sub-001_ses-20170101.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-002/sub-002_ses-20160101.nwb
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-001/sub-001_ses-20170101.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions: null
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-001/sub-001_ses-20170101.nwb

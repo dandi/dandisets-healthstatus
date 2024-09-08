@@ -1230,9 +1230,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-Mouse 2062/sub-Mouse 2062_ses-Session 27.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -5205,6 +5205,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-Mouse 2062/sub-Mouse 2062_ses-Session 26.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Mouse 2063/sub-Mouse 2063_ses-Session 01_obj-g0n8no.nwb
     status: fail
     test: matnwb_nwbRead
@@ -6713,13 +6720,6 @@ tests:
     status: pass
     test: matnwb_nwbRead
     versions: null
-  - path: sub-Mouse 2062/sub-Mouse 2062_ses-Session 26.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-Mouse 2062/sub-Mouse 2062_ses-Session 27.nwb
     status: pass
     test: matnwb_nwbRead

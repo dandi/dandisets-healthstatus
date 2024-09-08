@@ -10,7 +10,10 @@ tests:
   - path: sub-RSpinal-Random-Wave-01/sub-RSpinal-Random-Wave-01_ses-20210724T194543_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-RSpinal-Random-Wave-04/sub-RSpinal-Random-Wave-04_ses-20211008T101450_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -46,7 +49,10 @@ tests:
   - path: sub-RSpinal-Random-Wave-01/sub-RSpinal-Random-Wave-01_ses-20210724T194543_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-RSpinal-Random-Wave-03/sub-RSpinal-Random-Wave-03_ses-20211007T145521_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead

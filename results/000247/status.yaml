@@ -971,9 +971,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-oviDNSS1-driving-GCaMP7f-fly-ID#6091/sub-oviDNSS1-driving-GCaMP7f-fly-ID#6091_ses-2020-07-21-0000-oviDNSS1-GCaMP7f-nwb.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1261,6 +1261,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-oviDNSS1-driving-GCaMP7f-fly-ID#6090/sub-oviDNSS1-driving-GCaMP7f-fly-ID#6090_ses-2020-07-20-0005-oviDNSS1-GCaMP7f-nwb.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-oviDNSS1-driving-GCaMP7f-fly-ID#6096/sub-oviDNSS1-driving-GCaMP7f-fly-ID#6096_ses-2020-07-21-0005-oviDNSS1-GCaMP7f-nwb.nwb
@@ -2118,13 +2125,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-oviDNSS1-driving-GCaMP7f-fly-ID#6090/sub-oviDNSS1-driving-GCaMP7f-fly-ID#6090_ses-2020-07-20-0005-oviDNSS1-GCaMP7f-nwb.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-oviDNSS1-driving-GCaMP7f-fly-ID#6094/sub-oviDNSS1-driving-GCaMP7f-fly-ID#6094_ses-2020-07-21-0003-oviDNSS1-GCaMP7f-nwb.nwb
     status: timeout
     test: matnwb_nwbRead

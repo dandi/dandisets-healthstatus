@@ -19,6 +19,13 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-DL15/sub-DL15_ses-210906_ophys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-DL15/sub-DL15_ses-210919_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -104,6 +111,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-DL15/sub-DL15_ses-210906_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-DL15/sub-DL15_ses-210919_ophys.nwb
     status: fail
     test: matnwb_nwbRead

@@ -45,6 +45,13 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-2020-02-15-0047/sub-2020-02-15-0047_ses-20200215T221613_slice-2020-02-15-0047-abf_cell-2020-02-15-0047-abf_icephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
@@ -86,6 +93,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-2020-02-15-0047/sub-2020-02-15-0047_ses-20200215T221613_slice-2020-02-15-0047-abf_cell-2020-02-15-0047-abf_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead

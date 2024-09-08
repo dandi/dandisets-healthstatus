@@ -375,10 +375,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-Cardamom/sub-Cardamom_ses-Cardamom01-HomeCage_behavior+ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-Cardamom/sub-Cardamom_ses-Cardamom01-LinearTrack_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -2488,6 +2484,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-Cardamom/sub-Cardamom_ses-Cardamom01-HomeCage_behavior+ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Cinnamon/sub-Cinnamon_ses-Cinnamon01-LinearTrack_behavior+ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -3002,7 +3005,10 @@ tests:
   - path: sub-Cardamom/sub-Cardamom_ses-Cardamom01-HomeCage_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Cardamom/sub-Cardamom_ses-Cardamom01-LinearTrack_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead

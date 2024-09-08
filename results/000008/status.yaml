@@ -4093,7 +4093,10 @@ tests:
   - path: sub-mouse-UWACR/sub-mouse-UWACR_ses-20180910-sample-3_slice-20180910-slice-3_cell-20180910-sample-3_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-UWILU/sub-mouse-UWILU_ses-20181114-sample-1_slice-20181114-slice-1_cell-20181114-sample-1_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -7129,6 +7132,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-mouse-UWACR/sub-mouse-UWACR_ses-20180910-sample-3_slice-20180910-slice-3_cell-20180910-sample-3_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-UWILU/sub-mouse-UWILU_ses-20181114-sample-2_slice-20181114-slice-1_cell-20181114-sample-2_icephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -10237,10 +10247,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-mouse-UWACR/sub-mouse-UWACR_ses-20180910-sample-2_slice-20180910-slice-2_cell-20180910-sample-2_icephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-mouse-UWACR/sub-mouse-UWACR_ses-20180910-sample-3_slice-20180910-slice-3_cell-20180910-sample-3_icephys.nwb
     status: timeout
     test: matnwb_nwbRead
     versions: null

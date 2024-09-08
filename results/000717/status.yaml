@@ -25,7 +25,10 @@ tests:
   - path: sub-R6_ses-20200206T210000_behavior+ophys/sub-R6_ses-20200206T210000_behavior+ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mock/sub-mock_ses-ecephys1.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -56,7 +59,10 @@ tests:
   - path: sub-R6_ses-20200206T210000_behavior+ophys/sub-R6_ses-20200206T210000_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mock/sub-mock_ses-ecephys1.nwb
     status: fail
     test: matnwb_nwbRead

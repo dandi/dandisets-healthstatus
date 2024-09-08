@@ -635,7 +635,10 @@ tests:
   - path: sub-219038/sub-219038_ses-20131028_behavior+ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-219247/sub-219247_ses-20130919_behavior+ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1471,7 +1474,10 @@ tests:
   - path: sub-219038/sub-219038_ses-20131028_behavior+ecephys+ogen.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-219247/sub-219247_ses-20130919_behavior+ecephys+ogen.nwb
     status: fail
     test: matnwb_nwbRead

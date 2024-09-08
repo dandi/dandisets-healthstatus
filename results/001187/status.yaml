@@ -11,10 +11,18 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-24/sub-24_ses-2_ecephys+image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-21/sub-21_ses-1_ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions: null
+  - path: sub-24/sub-24_ses-2_ecephys+image.nwb
     status: fail
     test: matnwb_nwbRead
     versions: null

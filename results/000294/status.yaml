@@ -6,12 +6,12 @@ last_run_ended: '2024-02-04T23:38:49.249843-05:00'
 nassets: 2
 tests:
 - assets_nok: []
-  assets_ok: []
-  assets_timeout:
+  assets_ok:
   - path: sub-3148/sub-3148_ses-20211006T112406_ecephys+icephys.nwb
-    status: timeout
+    status: pass
     test: pynwb_open_load_ns
     versions: null
+  assets_timeout:
   - path: sub-3436/sub-3436_ses-20211011T115848_ecephys+icephys.nwb
     status: timeout
     test: pynwb_open_load_ns

@@ -29,7 +29,10 @@ tests:
   - path: sub-M4-session1/sub-M4-session1_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-M4-session3/sub-M4-session3_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -66,7 +69,10 @@ tests:
   - path: sub-M4-session1/sub-M4-session1_behavior.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-M4-session3/sub-M4-session3_behavior.nwb
     status: fail
     test: matnwb_nwbRead

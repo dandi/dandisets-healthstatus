@@ -47,7 +47,10 @@ tests:
   - path: sub-G2-10-TER-NN-PBS/sub-G2-10-TER-NN-PBS_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Gamry-Ref-600-Open-lead/sub-Gamry-Ref-600-Open-lead_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -99,7 +102,10 @@ tests:
   - path: sub-G2-10-TER-NN-PBS/sub-G2-10-TER-NN-PBS_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Gamry-Ref-600-Open-lead/sub-Gamry-Ref-600-Open-lead_ecephys.nwb
     status: fail
     test: matnwb_nwbRead

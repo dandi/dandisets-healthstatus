@@ -14,7 +14,10 @@ tests:
   - path: sub-Fig6-5xBi-0,83MHz-13/sub-Fig6-5xBi-0,83MHz-13_ses-BPAE-5xBipolar-0,83MHz_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Fig6-5xBi-100kHz-006/sub-Fig6-5xBi-100kHz-006_ses-BPAE-5xBipolar-100kHz_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -98,7 +101,10 @@ tests:
   - path: sub-Fig6-5xBi-0,83MHz-13/sub-Fig6-5xBi-0,83MHz-13_ses-BPAE-5xBipolar-0,83MHz_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Fig6-5xBi-100kHz-006/sub-Fig6-5xBi-100kHz-006_ses-BPAE-5xBipolar-100kHz_image.nwb
     status: fail
     test: matnwb_nwbRead

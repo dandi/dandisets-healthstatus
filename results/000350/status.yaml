@@ -19,7 +19,10 @@ tests:
   - path: sub-20161206-1/sub-20161206-1_ses-20161206T123501_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-20161206-2/sub-20161206-2_ses-20161206T161111_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -78,7 +81,10 @@ tests:
   - path: sub-20161206-1/sub-20161206-1_ses-20161206T123501_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-20161206-2/sub-20161206-2_ses-20161206T161111_ophys.nwb
     status: fail
     test: matnwb_nwbRead

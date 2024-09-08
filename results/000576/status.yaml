@@ -83,7 +83,10 @@ tests:
   - path: sub-09/sub-09_ses-20170311T170500_ecephys+image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-09/sub-09_ses-20170311T170500_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -167,7 +170,10 @@ tests:
   - path: sub-09/sub-09_ses-20170311T170500_ecephys+image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-09/sub-09_ses-20170311T170500_ecephys.nwb
     status: fail
     test: matnwb_nwbRead

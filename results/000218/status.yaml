@@ -116,7 +116,10 @@ tests:
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3396um-1180um-20160221-160221-135947_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3468um-1216um-20160222-160222-120902_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -660,6 +663,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3396um-1180um-20160221-160221-135947_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3468um-1252um-20160226-160226-124132_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -1076,10 +1086,6 @@ tests:
       hdmf: 3.13.0
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3396um-1180um-20160221-160221-135947_behavior+ecephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
   - path: sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3468um-1216um-20160222-160222-120902_behavior+ecephys.nwb
     status: timeout
     test: matnwb_nwbRead

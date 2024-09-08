@@ -21,7 +21,10 @@ tests:
   - path: sub-Dory/sub-Dory_ses-2021-05-19-004_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Dory/sub-Dory_ses-2021-05-19-005_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -69,7 +72,10 @@ tests:
   - path: sub-Dory/sub-Dory_ses-2021-05-19-004_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Dory/sub-Dory_ses-2021-05-19-005_ecephys.nwb
     status: fail
     test: matnwb_nwbRead

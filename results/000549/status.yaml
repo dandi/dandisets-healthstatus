@@ -58,7 +58,10 @@ tests:
   - path: sub-Fig4-5-Uni100us-08/sub-Fig4-5-Uni100us-08_ses-BPAE-5xUnipolar-100us_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Fig4-5-Uni100us-10/sub-Fig4-5-Uni100us-10_ses-BPAE-5xUnipolar-100us_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -178,7 +181,10 @@ tests:
   - path: sub-Fig4-5-Uni100us-08/sub-Fig4-5-Uni100us-08_ses-BPAE-5xUnipolar-100us_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Fig4-5-Uni100us-10/sub-Fig4-5-Uni100us-10_ses-BPAE-5xUnipolar-100us_image.nwb
     status: fail
     test: matnwb_nwbRead

@@ -7,15 +7,15 @@ nassets: 2
 tests:
 - assets_nok: []
   assets_ok:
+  - path: sub-Han/sub-Han_desc-test_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions: null
   - path: sub-Han/sub-Han_desc-train_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout:
-  - path: sub-Han/sub-Han_desc-test_ecephys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
+  assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Han/sub-Han_desc-test_ecephys.nwb
