@@ -388,13 +388,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-3_slice-20200409-slice-1_cell-20200409-sample-3_icephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-4_slice-20200409-slice-1_cell-20200409-sample-4_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1028,6 +1021,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-3_slice-20200409-slice-1_cell-20200409-sample-3_icephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-SCEAC/sub-mouse-SCEAC_ses-20200414-sample-26_slice-20200414-slice-3_cell-20200414-sample-26_icephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -1248,6 +1248,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-3_slice-20200409-slice-1_cell-20200409-sample-3_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-4_slice-20200409-slice-1_cell-20200409-sample-4_icephys.nwb
@@ -1758,13 +1765,6 @@ tests:
     status: timeout
     test: matnwb_nwbRead
     versions: null
-  - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-3_slice-20200409-slice-1_cell-20200409-sample-3_icephys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-mouse-NDKCQ/sub-mouse-NDKCQ_ses-20200409-sample-8_slice-20200409-slice-1_cell-20200409-sample-8_icephys.nwb
     status: timeout
     test: matnwb_nwbRead

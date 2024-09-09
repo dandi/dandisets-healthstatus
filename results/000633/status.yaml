@@ -11,11 +11,11 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  assets_timeout:
   - path: sub-Single-pulse-trains/sub-Single-pulse-trains_ses-Single-pulse-trains_image.nwb
-    status: pass
+    status: timeout
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-Paired-pulse-trains/sub-Paired-pulse-trains_ses-Paired-pulse-trains_image.nwb

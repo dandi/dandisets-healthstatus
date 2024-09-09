@@ -7,10 +7,6 @@ nassets: 15
 tests:
 - assets_nok: []
   assets_ok:
-  - path: sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-13/sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-13_ses-BPAE-5xBipolar-0,83MHz_image.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-15/sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-15_ses-600ns-4kV-0-8MHz
       paired pulse trains_image.nwb
     status: pass
@@ -88,13 +84,23 @@ tests:
       hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-13/sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-13_ses-BPAE-5xBipolar-0,83MHz_image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-13/sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-13_ses-BPAE-5xBipolar-0,83MHz_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-15/sub-600ns-4kV-0,8MHz-BP-8-24-21-BPAE-15_ses-600ns-4kV-0-8MHz
       paired pulse trains_image.nwb
     status: fail

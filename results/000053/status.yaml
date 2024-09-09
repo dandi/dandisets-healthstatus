@@ -1467,7 +1467,10 @@ tests:
   - path: sub-Snoopy/sub-Snoopy_ses-20190308_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Snoopy/sub-Snoopy_ses-20190312_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -2235,6 +2238,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-Snoopy/sub-Snoopy_ses-20190308_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-Snoopy/sub-Snoopy_ses-20190312_behavior.nwb
@@ -3317,10 +3327,6 @@ tests:
       hdmf: 3.12.2
       matnwb: v2.6.0.2
       pynwb: 2.6.0
-  - path: sub-Snoopy/sub-Snoopy_ses-20190308_behavior.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
   - path: sub-Snoopy/sub-Snoopy_ses-20190327_behavior.nwb
     status: pass
     test: matnwb_nwbRead

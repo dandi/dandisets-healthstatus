@@ -34,6 +34,13 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-004-R/sub-004-R_ses-08-05-2022-cell23-R_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-006-F/sub-006-F_ses-08-05-2022-cell13-F_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -52,10 +59,6 @@ tests:
     versions: null
   assets_timeout:
   - path: sub-003-R/sub-003-R_ses-08-05-2022-cell19-R_image.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
-  - path: sub-004-R/sub-004-R_ses-08-05-2022-cell23-R_image.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions: null
@@ -128,7 +131,10 @@ tests:
   - path: sub-004-R/sub-004-R_ses-08-05-2022-cell23-R_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-005-F/sub-005-F_ses-08-05-2022-cell08-F_image.nwb
     status: fail
     test: matnwb_nwbRead

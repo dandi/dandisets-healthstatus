@@ -44,13 +44,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-MS10/sub-MS10_ses-Peter-MS10-170320-212321-concat_desc-raw_ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-MS10/sub-MS10_ses-Peter-MS10-170321-164406-concat_desc-processed_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -499,6 +492,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-MS10/sub-MS10_ses-Peter-MS10-170320-212321-concat_desc-raw_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-MS12/sub-MS12_ses-Peter-MS12-170716-172307-concat_desc-raw_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -678,6 +678,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-MS10/sub-MS10_ses-Peter-MS10-170320-212321-concat_desc-raw_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-MS12/sub-MS12_ses-Peter-MS12-170716-172307-concat_desc-raw_ecephys.nwb
@@ -879,13 +886,6 @@ tests:
     status: pass
     test: matnwb_nwbRead
     versions: null
-  - path: sub-MS10/sub-MS10_ses-Peter-MS10-170320-212321-concat_desc-raw_ecephys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-MS10/sub-MS10_ses-Peter-MS10-170321-164406-concat_desc-processed_behavior+ecephys.nwb
     status: pass
     test: matnwb_nwbRead

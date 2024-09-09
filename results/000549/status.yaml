@@ -38,7 +38,10 @@ tests:
   - path: sub-Fig4-5-Bi300ns-08/sub-Fig4-5-Bi300ns-08_ses-BPAE-5xBipolar-300ns_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Fig4-5-Bi500us-08/sub-Fig4-5-Bi500us-08_ses-BPAE-5xBipolar-500us_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -157,7 +160,10 @@ tests:
   - path: sub-Fig4-5-Bi300ns-08/sub-Fig4-5-Bi300ns-08_ses-BPAE-5xBipolar-300ns_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-Fig4-5-Bi300ns-15/sub-Fig4-5-Bi300ns-15_ses-BPAE-5xBipolar-300ns_image.nwb
     status: fail
     test: matnwb_nwbRead

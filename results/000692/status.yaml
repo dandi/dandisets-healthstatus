@@ -33,7 +33,10 @@ tests:
   - path: sub-230928-03/sub-230928-03_ses-20230928T142700_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-230928-04/sub-230928-04_ses-20230928T160000_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -83,7 +86,10 @@ tests:
   - path: sub-230928-03/sub-230928-03_ses-20230928T142700_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-230928-04/sub-230928-04_ses-20230928T160000_ophys.nwb
     status: fail
     test: matnwb_nwbRead

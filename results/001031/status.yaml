@@ -46,7 +46,10 @@ tests:
   - path: sub-c4-4-4V/sub-c4-4-4V_ses-100kHz-stimulation-4-4V_image.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-c4-4-55V/sub-c4-4-55V_ses-100kHz-stimulation-4-55V_image.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -101,7 +104,10 @@ tests:
   - path: sub-c4-4-4V/sub-c4-4-4V_ses-100kHz-stimulation-4-4V_image.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-c4-4-55V/sub-c4-4-55V_ses-100kHz-stimulation-4-55V_image.nwb
     status: fail
     test: matnwb_nwbRead

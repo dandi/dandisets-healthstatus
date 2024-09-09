@@ -277,13 +277,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-20/sub-20_ses-20210813_obj-1yv2dfq_ecephys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.13.0
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
   - path: sub-20/sub-20_ses-20210901_obj-15f4pr7_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -582,6 +575,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-19/sub-19_ses-20210816_obj-buuqt4_ecephys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-20/sub-20_ses-20210813_obj-1yv2dfq_ecephys.nwb
     status: timeout
     test: pynwb_open_load_ns
     versions:
@@ -1018,9 +1018,9 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.13.0
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-20/sub-20_ses-20210901_obj-15f4pr7_ecephys.nwb
     status: fail
     test: matnwb_nwbRead

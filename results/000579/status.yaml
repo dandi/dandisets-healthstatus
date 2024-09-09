@@ -431,10 +431,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-24-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions: null
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-25-area-MM-L23-multi-plane-imaging_behavior+ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1569,7 +1565,14 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout: []
+  assets_timeout:
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-24-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-10/sub-10_ses-mouse-10-session-date-2017-09-21-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
@@ -1709,6 +1712,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-24-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-28-area-visA-L23-multi-plane-imaging_behavior+ophys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -2361,10 +2371,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-22-area-RSC-L23-single-plane-imaging_behavior+ophys.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-4/sub-4_ses-mouse-4-session-date-2017-05-24-area-V1-L23-multi-plane-imaging_behavior+ophys.nwb
     status: timeout
     test: matnwb_nwbRead
     versions: null

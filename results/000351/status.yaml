@@ -629,13 +629,6 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
-  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day69.nwb
-    status: pass
-    test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.0
-      matnwb: v2.6.0.2
-      pynwb: 2.7.0
   - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day7.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1942,6 +1935,13 @@ tests:
       hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day69.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-HJ-FP-M3/sub-HJ-FP-M3_ses-Day15.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -2787,9 +2787,9 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions:
-      hdmf: 3.14.0
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.7.0
+      pynwb: 2.8.1
   - path: sub-HJ-FP-M2/sub-HJ-FP-M2_ses-Day7.nwb
     status: fail
     test: matnwb_nwbRead

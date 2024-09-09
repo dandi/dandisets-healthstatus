@@ -168,6 +168,13 @@ tests:
       hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-mouse-1/sub-mouse-1_ses-20230114T155836_image.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-1/sub-mouse-1_ses-20230114T160423.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -361,6 +368,13 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-mouse-1/sub-mouse-1_ses-20230114T155657.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-mouse-1/sub-mouse-1_ses-20230114T155836_image.nwb
     status: fail
     test: matnwb_nwbRead
     versions:

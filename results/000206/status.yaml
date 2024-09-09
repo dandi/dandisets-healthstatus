@@ -6,12 +6,12 @@ last_run_ended: '2024-01-17T03:23:03.326946-05:00'
 nassets: 1
 tests:
 - assets_nok: []
-  assets_ok:
+  assets_ok: []
+  assets_timeout:
   - path: sub-TIGRE296/sub-TIGRE296_behavior+ophys.nwb
-    status: pass
+    status: timeout
     test: pynwb_open_load_ns
     versions: null
-  assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-TIGRE296/sub-TIGRE296_behavior+ophys.nwb

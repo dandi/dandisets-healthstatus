@@ -201,6 +201,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-UCLA037/sub-UCLA037_ses-8d316998-28c3-4265-b029-e2ca82375b2f_behavior+ecephys+image.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-UCLA037/sub-UCLA037_ses-fa8ad50d-76f2-45fa-a52f-08fe3d942345-processed-only_behavior.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -418,6 +425,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-UCLA037/sub-UCLA037_ses-8d316998-28c3-4265-b029-e2ca82375b2f_behavior+ecephys+image.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-UCLA037/sub-UCLA037_ses-fa8ad50d-76f2-45fa-a52f-08fe3d942345-processed-only_behavior.nwb

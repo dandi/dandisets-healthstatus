@@ -165,6 +165,13 @@ tests:
       hdmf: 3.14.2
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-LPLC1-fly1/sub-LPLC1-fly1_ses-(-LPLC1-fly1-161017-1610--).nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-LPLC1-fly15/sub-LPLC1-fly15_ses-(-LPLC1-fly15-211117-1622--).nwb
     status: pass
     test: pynwb_open_load_ns
@@ -397,6 +404,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.2
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-LPLC1-fly1/sub-LPLC1-fly1_ses-(-LPLC1-fly1-161017-1610--).nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-LPLC1-fly15/sub-LPLC1-fly15_ses-(-LPLC1-fly15-211117-1622--).nwb

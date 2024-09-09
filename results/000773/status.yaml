@@ -145,6 +145,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-ant2-m1-d11-y2023/sub-ant2-m1-d11-y2023_ses-m1-d11-y2023-ant2-0-03x-4-methyl-3-heptanol-40-t159-z110um_ophys.nwb
+    status: timeout
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-ant2-m1-d11-y2023/sub-ant2-m1-d11-y2023_ses-m1-d11-y2023-ant2-0-03x-4-methyl-3-heptanone-40-t157-z20um_ophys.nwb
     status: timeout
     test: pynwb_open_load_ns
@@ -283,6 +290,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-ant2-m1-d11-y2023/sub-ant2-m1-d11-y2023_ses-m1-d11-y2023-ant2-0-03x-4-methyl-3-heptanol-40-t159-z110um_ophys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-ant2-m1-d11-y2023/sub-ant2-m1-d11-y2023_ses-m1-d11-y2023-ant2-0-03x-4-methyl-3-heptanone-40-t157-z20um_ophys.nwb

@@ -420,9 +420,9 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions:
-      hdmf: 3.12.2
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
-      pynwb: 2.6.0
+      pynwb: 2.8.1
   - path: sub-DT8/sub-DT8_ses-20170211-144um-1944um-merge_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -852,6 +852,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-DT8/sub-DT8_ses-20170207-144um-1944um-merge_behavior+ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-DT8/sub-DT8_ses-20170211-144um-1944um-merge_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -945,13 +952,6 @@ tests:
       matnwb: v2.6.0.2
       pynwb: 2.6.0
   - path: sub-DT7/sub-DT7_ses-20170319-288um-0um-170319-123708_ecephys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions:
-      hdmf: 3.12.2
-      matnwb: v2.6.0.2
-      pynwb: 2.6.0
-  - path: sub-DT8/sub-DT8_ses-20170207-144um-1944um-merge_behavior+ecephys.nwb
     status: pass
     test: matnwb_nwbRead
     versions:

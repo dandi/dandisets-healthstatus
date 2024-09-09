@@ -2442,7 +2442,10 @@ tests:
   - path: sub-mouse-MLEFZ/sub-mouse-MLEFZ_ses-20190716-sample-9_slice-20190716-slice-9_cell-20190716-sample-9_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-MOUPV/sub-mouse-MOUPV_ses-20190409-sample-2_slice-20190409-slice-2_cell-20190409-sample-2_icephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -6676,6 +6679,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-mouse-MLEFZ/sub-mouse-MLEFZ_ses-20190716-sample-9_slice-20190716-slice-9_cell-20190716-sample-9_icephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse-MOUPV/sub-mouse-MOUPV_ses-20190409-sample-4_slice-20190409-slice-4_cell-20190409-sample-4_icephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -7443,10 +7453,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-mouse-MLEFZ/sub-mouse-MLEFZ_ses-20190716-sample-8_slice-20190716-slice-8_cell-20190716-sample-8_icephys.nwb
-    status: pass
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-mouse-MLEFZ/sub-mouse-MLEFZ_ses-20190716-sample-9_slice-20190716-slice-9_cell-20190716-sample-9_icephys.nwb
     status: pass
     test: matnwb_nwbRead
     versions: null

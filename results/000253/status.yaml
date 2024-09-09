@@ -35,6 +35,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-632485/sub-632485_ses-1203581890_probe-2_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-632487/sub-632487_ses-1204677304_probe-4_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -258,6 +265,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-632485/sub-632485_ses-1203581890_probe-2_ecephys.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-632487/sub-632487_ses-1204677304_ogen.nwb

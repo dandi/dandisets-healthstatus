@@ -18,6 +18,13 @@ tests:
     status: pass
     test: pynwb_open_load_ns
     versions: null
+  - path: sub-c1/sub-c1_ecephys.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse412804/sub-mouse412804_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -39,11 +46,7 @@ tests:
       hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
-  assets_timeout:
-  - path: sub-c1/sub-c1_ecephys.nwb
-    status: timeout
-    test: pynwb_open_load_ns
-    versions: null
+  assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-MEAREC-250neuron-Neuropixels/sub-MEAREC-250neuron-Neuropixels_ecephys.nwb
@@ -60,7 +63,10 @@ tests:
   - path: sub-c1/sub-c1_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-mouse412804/sub-mouse412804_ecephys.nwb
     status: fail
     test: matnwb_nwbRead

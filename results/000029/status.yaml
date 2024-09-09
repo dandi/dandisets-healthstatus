@@ -10,24 +10,15 @@ tests:
   - path: sub-RAT123/sub-RAT123.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.4
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-anm369962/sub-anm369962_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.4
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-anm369963/sub-anm369963_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.4
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-anm369964/sub-anm369964_behavior+ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -35,34 +26,22 @@ tests:
   - path: sub-monk-g/sub-monk-g.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions:
-      hdmf: 3.14.4
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   assets_timeout: []
   name: pynwb_open_load_ns
 - assets_nok:
   - path: sub-RAT123/sub-RAT123.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.4
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-anm369962/sub-anm369962_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.4
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-anm369963/sub-anm369963_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.4
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   - path: sub-anm369964/sub-anm369964_behavior+ecephys.nwb
     status: fail
     test: matnwb_nwbRead
@@ -70,10 +49,7 @@ tests:
   - path: sub-monk-g/sub-monk-g.nwb
     status: fail
     test: matnwb_nwbRead
-    versions:
-      hdmf: 3.14.4
-      matnwb: v2.6.0.2
-      pynwb: 2.8.1
+    versions: null
   assets_ok: []
   assets_timeout: []
   name: matnwb_nwbRead
@@ -99,6 +75,6 @@ untested:
   size: 4
   status: untested
 versions:
-  hdmf: 3.14.3
+  hdmf: 3.14.4
   matnwb: v2.6.0.2
   pynwb: 2.8.1

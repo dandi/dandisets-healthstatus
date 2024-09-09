@@ -70,7 +70,10 @@ tests:
   - path: sub-BPN-OLD-M3/sub-BPN-OLD-M3_ses-20210513-m1_obj-1ph4cqe_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BPN-OLD-M3/sub-BPN-OLD-M3_ses-20210513-m1_obj-1u1mjbm_ophys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -141,7 +144,10 @@ tests:
   - path: sub-BPN-OLD-M3/sub-BPN-OLD-M3_ses-20210513-m1_obj-1ph4cqe_ophys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BPN-OLD-M3/sub-BPN-OLD-M3_ses-20210513-m1_obj-1u1mjbm_ophys.nwb
     status: fail
     test: matnwb_nwbRead

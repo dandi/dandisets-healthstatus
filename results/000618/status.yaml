@@ -579,7 +579,10 @@ tests:
   - path: sub-paired-english/sub-paired-english_ses-paired-english-m14-190326-155432_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-paired-english/sub-paired-english_ses-paired-english-m14-190326-160710-cell1_ecephys.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -1034,7 +1037,10 @@ tests:
   - path: sub-paired-english/sub-paired-english_ses-paired-english-m14-190326-155432_ecephys.nwb
     status: fail
     test: matnwb_nwbRead
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-paired-english/sub-paired-english_ses-paired-english-m15-190315-152315-cell1_ecephys.nwb
     status: fail
     test: matnwb_nwbRead

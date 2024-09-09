@@ -221,6 +221,13 @@ tests:
       hdmf: 3.14.3
       matnwb: v2.6.0.2
       pynwb: 2.8.1
+  - path: sub-BAYLORZJC01/sub-BAYLORZJC01_ses-20211206_ecephys+ogen.nwb
+    status: pass
+    test: pynwb_open_load_ns
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-BAYLORZJC02/sub-BAYLORZJC02_ses-20211124_ecephys+ogen.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -439,6 +446,13 @@ tests:
     test: matnwb_nwbRead
     versions:
       hdmf: 3.14.3
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
+  - path: sub-BAYLORZJC01/sub-BAYLORZJC01_ses-20211206_ecephys+ogen.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
       matnwb: v2.6.0.2
       pynwb: 2.8.1
   - path: sub-BAYLORZJP01/sub-BAYLORZJP01_obj-un9m5p_ecephys+ogen.nwb

@@ -1830,7 +1830,10 @@ tests:
   - path: sub-0-200-Dop1R2-mutant-2-fly#-13/sub-0-200-Dop1R2-mutant-2-fly#-13_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
-    versions: null
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-0-200-Dop1R2-mutant-2-fly#-14/sub-0-200-Dop1R2-mutant-2-fly#-14_behavior.nwb
     status: pass
     test: pynwb_open_load_ns
@@ -4605,6 +4608,13 @@ tests:
     status: fail
     test: matnwb_nwbRead
     versions: null
+  - path: sub-0-200-Dop1R2-mutant-2-fly#-13/sub-0-200-Dop1R2-mutant-2-fly#-13_behavior.nwb
+    status: fail
+    test: matnwb_nwbRead
+    versions:
+      hdmf: 3.14.4
+      matnwb: v2.6.0.2
+      pynwb: 2.8.1
   - path: sub-0-200-Dop1R2-mutant-2-fly#-24/sub-0-200-Dop1R2-mutant-2-fly#-24_behavior.nwb
     status: fail
     test: matnwb_nwbRead
@@ -8723,10 +8733,6 @@ tests:
     test: matnwb_nwbRead
     versions: null
   - path: sub-0-200-Dop1R2-mutant-2-fly#-12/sub-0-200-Dop1R2-mutant-2-fly#-12_behavior.nwb
-    status: timeout
-    test: matnwb_nwbRead
-    versions: null
-  - path: sub-0-200-Dop1R2-mutant-2-fly#-13/sub-0-200-Dop1R2-mutant-2-fly#-13_behavior.nwb
     status: timeout
     test: matnwb_nwbRead
     versions: null
